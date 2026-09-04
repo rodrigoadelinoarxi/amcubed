@@ -1,0 +1,34 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* arxi_amcubed
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-10 10:22+0000\n"
+"PO-Revision-Date: 2026-04-10 10:22+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: arxi_amcubed
+#: model:ir.model,name:arxi_amcubed.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: arxi_amcubed
+#. odoo-python
+#: code:addons/arxi_amcubed/models/res_partner.py:0
+#, python-format
+msgid "VAT %(vat)s already exists on partner %(partner)s"
+msgstr "NIF %(vat)s já existe no contacto %(partner)s"
+
+#. module: arxi_amcubed
+#: model:ir.model.fields,field_description:arxi_amcubed.field_res_partner__vat_normalized
+#: model:ir.model.fields,field_description:arxi_amcubed.field_res_users__vat_normalized
+msgid "Vat Normalized"
+msgstr "NIF nº"

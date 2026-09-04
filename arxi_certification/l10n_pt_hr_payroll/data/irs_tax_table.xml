@@ -1,0 +1,3855 @@
+<odoo>
+    <record id="not_married_and_dependents" model="irs.tax.table">
+        <field name="name">Not Married and Dependents</field>
+        <field name="code">not_married_and_dependents</field>
+        <field name="date_start">2024-01-01</field>
+        <field name="date_end">2024-08-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 820,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 935,
+                'marginal_rate': 0.1325,
+                'to_be_deducted': '0.1325 * 2.6 * (1135.39 - %%VALUE%%)',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1001,
+                'marginal_rate': 0.18,
+                'to_be_deducted': '0.18*1.4*(1385.20 - %%VALUE%%)',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1123,
+                'marginal_rate': 0.18,
+                'to_be_deducted': '96.82',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1765,
+                'marginal_rate': 0.26,
+                'to_be_deducted': '186.66',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 2057,
+                'marginal_rate': 0.3275,
+                'to_be_deducted': '305.80',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 2664,
+                'marginal_rate': 0.37,
+                'to_be_deducted': '393.23',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 3193,
+                'marginal_rate': 0.3872,
+                'to_be_deducted': '439.05',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 4173,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '481.52',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 5470,
+                'marginal_rate': 0.41,
+                'to_be_deducted': '521.17',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 6540,
+                'marginal_rate': 0.4270,
+                'to_be_deducted': '614.16',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 20067,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '761.31',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1206.80',
+                'dependent_val': 34.29,
+            }),
+        ]"/>
+    </record>
+    <record id="married_with_dependents" model="irs.tax.table">
+        <field name="name">Married With Dependents</field>
+        <field name="code">married_with_dependents</field>
+        <field name="date_start">2024-01-01</field>
+        <field name="date_end">2024-08-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 820,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 935,
+                'marginal_rate': 0.1325,
+                'to_be_deducted': '0.1325 * 2.6 * (1135.39 - %%VALUE%%)',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1001,
+                'marginal_rate': 0.18,
+                'to_be_deducted': '0.18*1.4*(1385.20 - %%VALUE%%)',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1123,
+                'marginal_rate': 0.18,
+                'to_be_deducted': '96.82',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1765,
+                'marginal_rate': 0.26,
+                'to_be_deducted': '186.66',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2057,
+                'marginal_rate': 0.3275,
+                'to_be_deducted': '305.80',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2664,
+                'marginal_rate': 0.37,
+                'to_be_deducted': '393.23',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 3193,
+                'marginal_rate': 0.3872,
+                'to_be_deducted': '439.05',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 4173,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '481.52',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 5470,
+                'marginal_rate': 0.41,
+                'to_be_deducted': '521.17',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 6540,
+                'marginal_rate': 0.4270,
+                'to_be_deducted': '614.16',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 20067,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '761.31',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1206.80',
+                'dependent_val': 21.43,
+            }),
+        ]"/>
+    </record>
+    <record id="married_unique_with_dependents" model="irs.tax.table">
+        <field name="name">Married Unique With Dependents</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2024-01-01</field>
+        <field name="date_end">2024-08-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 857,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 935,
+                'marginal_rate': 0.1325,
+                'to_be_deducted': '0.1325*2.6*(1186.62 - %%VALUE%%)',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1001,
+                'marginal_rate': 0.1325,
+                'to_be_deducted': '0.1325*1.4*(1402.30 - %%VALUE%%)',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1393,
+                'marginal_rate': 0.1325,
+                'to_be_deducted': '74.44',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1900,
+                'marginal_rate': 0.1850,
+                'to_be_deducted': '147.57',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2801,
+                'marginal_rate': 0.26,
+                'to_be_deducted': '290.07',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 3423,
+                'marginal_rate': 0.28,
+                'to_be_deducted': '346.09',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 4099,
+                'marginal_rate': 0.2915,
+                'to_be_deducted': '385.46',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 5800,
+                'marginal_rate': 0.3250,
+                'to_be_deducted': '522.78',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6422,
+                'marginal_rate': 0.36,
+                'to_be_deducted': '725.78',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20064.21,
+                'marginal_rate': 0.4250,
+                'to_be_deducted': '1143.21',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '2080.20',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+    <record id="not_married_handicap_with_dependents" model="irs.tax.table">
+        <field name="name">Not Married With Dependents - Handicap</field>
+        <field name="code">not_married_handicap_with_dependents</field>
+        <field name="date_start">2024-01-01</field>
+        <field name="date_end">2024-08-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1677.09,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 1994.61,
+                'marginal_rate': 0.23,
+                'to_be_deducted': '385.73',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2410.71,
+                'marginal_rate': 0.3275,
+                'to_be_deducted': '580.21',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 4373.75,
+                'marginal_rate': 0.37,
+                'to_be_deducted': '682.67',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6621.18,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '816.07',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6717.41,
+                'marginal_rate': 0.4228,
+                'to_be_deducted': '963.73',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20264.85,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1143.09',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1592.97',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+    <record id="married_handicap_with_dependents" model="irs.tax.table">
+        <field name="name">Married With Dependents - Handicap</field>
+        <field name="code">married_handicap_with_dependents</field>
+        <field name="date_start">2024-01-01</field>
+        <field name="date_end">2024-08-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1574.66,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 1648.29,
+                'marginal_rate': 0.1325,
+                'to_be_deducted': '208.64',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1994.61,
+                'marginal_rate': 0.23,
+                'to_be_deducted': '369.35',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2410.71,
+                'marginal_rate': 0.3275,
+                'to_be_deducted': '563.83',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 4373.75,
+                'marginal_rate': 0.37,
+                'to_be_deducted': '666.29',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 6621.18,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '799.69',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 6717.41,
+                'marginal_rate': 0.4228,
+                'to_be_deducted': '947.35',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 20264.85,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1126.71',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1576.59',
+                'dependent_val': 21.43,
+            }),
+        ]"/>
+    </record>
+    <record id="not_married_and_handicap_no_dependents" model="irs.tax.table">
+        <field name="name">Not Married Without Dependents - Handicap</field>
+        <field name="code">not_married_and_handicap_no_dependents</field>
+        <field name="date_start">2024-01-01</field>
+        <field name="date_end">2024-08-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1519.41,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 1648.29,
+                'marginal_rate': 0.1325,
+                'to_be_deducted': '201.32',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 1994.61,
+                'marginal_rate': 0.23,
+                'to_be_deducted': '362.03',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2410.71,
+                'marginal_rate': 0.3275,
+                'to_be_deducted': '556.51',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 4373.75,
+                'marginal_rate': 0.37,
+                'to_be_deducted': '658.97',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 6621.18,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '792.37',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 6717.41,
+                'marginal_rate': 0.4228,
+                'to_be_deducted': '940.03',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 20264.85,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1139.39',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1569.27',
+                'dependent_val': 0,
+            }),
+        ]"/>
+    </record>
+    <record id="married_unique_handicap" model="irs.tax.table">
+        <field name="name">Married Unique - Handicap</field>
+        <field name="code">married_unique_handicap</field>
+        <field name="date_start">2024-01-01</field>
+        <field name="date_end">2024-08-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 2105.51,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 3622.95,
+                'marginal_rate': 0.3160,
+                'to_be_deducted': '719.35',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6587.01,
+                'marginal_rate': 0.33,
+                'to_be_deducted': '770.07',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20264.85,
+                'marginal_rate': 0.4250,
+                'to_be_deducted': '1395.84',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '2342.21',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+
+    <!--    TABLES FROM SEPTEMBER 1 2024 TO OCTOBER 31 2024-->
+
+    <record id="married_with_dependents_01_09_31_10" model="irs.tax.table">
+        <field name="name">Married With Dependents (01/09/24 - 31/10/24)</field>
+        <field name="code">married_with_dependents</field>
+        <field name="date_start">2024-09-01</field>
+        <field name="date_end">2024-10-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 820,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 935,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 989,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1125,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1175,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1769,
+                'marginal_rate': 0.0375,
+                'to_be_deducted': '44.07',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2057,
+                'marginal_rate': 0.08,
+                'to_be_deducted': '119.25',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2408,
+                'marginal_rate': 0.1065,
+                'to_be_deducted': '173.76',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 3201,
+                'marginal_rate': 0.1936,
+                'to_be_deducted': '383.44',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 5492,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '1045.80',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 20021,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1314.64',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1760.10',
+                'dependent_val': 21.43,
+            }),
+        ]"/>
+    </record>
+    <record id="not_married_and_dependents_01_09_31_10" model="irs.tax.table">
+        <field name="name">Not Married and Dependents (01/09/24 - 31/10/24)</field>
+        <field name="code">not_married_and_dependents</field>
+        <field name="date_start">2024-09-01</field>
+        <field name="date_end">2024-10-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 820,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 935,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 989,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1125,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1175,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1769,
+                'marginal_rate': 0.0375,
+                'to_be_deducted': '44.07',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 2057,
+                'marginal_rate': 0.08,
+                'to_be_deducted': '119.25',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 2408,
+                'marginal_rate': 0.1065,
+                'to_be_deducted': '173.76',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 3201,
+                'marginal_rate': 0.1936,
+                'to_be_deducted': '383.44',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 5492,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '1045.80',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 20021,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1314.64',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1760.10',
+                'dependent_val': 34.29,
+            }),
+        ]"/>
+    </record>
+    <record id="married_unique_with_dependents_01_09_31_10" model="irs.tax.table">
+        <field name="name">Married Unique With Dependents (01/09/24 - 31/10/24)</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2024-09-01</field>
+        <field name="date_end">2024-10-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 904,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 935,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 989,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1070,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1394,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1912,
+                'marginal_rate': 0.0165,
+                'to_be_deducted': '23.01',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2178,
+                'marginal_rate': 0.0505,
+                'to_be_deducted': '87.95',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2671,
+                'marginal_rate': 0.0591,
+                'to_be_deducted': '106.69',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 3284,
+                'marginal_rate': 0.1297,
+                'to_be_deducted': '295.33',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 5906,
+                'marginal_rate': 0.3072,
+                'to_be_deducted': '878.33',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20064.21,
+                'marginal_rate': 0.3872,
+                'to_be_deducted': '1350.25',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '3046.68',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+    <record id="not_married_and_handicap_no_dependents_01_09_31_10" model="irs.tax.table">
+        <field name="name">Not Married Without Dependents - Handicap (01/09/24 - 31/10/24)</field>
+        <field name="code">not_married_and_handicap_no_dependents</field>
+        <field name="date_start">2024-09-01</field>
+        <field name="date_end">2024-10-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1677,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2012,
+                'marginal_rate': 0.05,
+                'to_be_deducted': '83.83',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2428,
+                'marginal_rate': 0.08,
+                'to_be_deducted': '144.20',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 4376,
+                'marginal_rate': 0.1065,
+                'to_be_deducted': '208.55',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 4634,
+                'marginal_rate': 0.1936,
+                'to_be_deducted': '589.61',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 6621,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '1548.47',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 20265,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1872.58',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '2323.47',
+                'dependent_val': 0,
+            }),
+        ]"/>
+    </record>
+    <record id="not_married_handicap_with_dependents_01_09_31_10" model="irs.tax.table">
+        <field name="name">Not Married With Dependents - Handicap (01/09/24 - 31/10/24)</field>
+        <field name="code">not_married_handicap_with_dependents</field>
+        <field name="date_start">2024-09-01</field>
+        <field name="date_end">2024-10-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1919,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2012,
+                'marginal_rate': 0.0553,
+                'to_be_deducted': '106.10',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2785,
+                'marginal_rate': 0.08,
+                'to_be_deducted': '155.82',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 4394,
+                'marginal_rate': 0.1775,
+                'to_be_deducted': '427.41',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6687,
+                'marginal_rate': 0.3484,
+                'to_be_deducted': '1178.52',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6978,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '1526.70',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20264.85,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1868.29',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '2319.18',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+    <record id="married_handicap_with_dependents_01_09_31_10" model="irs.tax.table">
+        <field name="name">Married With Dependents - Handicap (01/09/24 - 31/10/24)</field>
+        <field name="code">married_handicap_with_dependents</field>
+        <field name="date_start">2024-09-01</field>
+        <field name="date_end">2024-10-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1651,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2023,
+                'marginal_rate': 0.0550,
+                'to_be_deducted': '90.81',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2441,
+                'marginal_rate': 0.0625,
+                'to_be_deducted': '105.98',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 3037,
+                'marginal_rate': 0.096,
+                'to_be_deducted': '187.75',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 4394,
+                'marginal_rate': 0.1775,
+                'to_be_deducted': '435.26',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 6687,
+                'marginal_rate': 0.3484,
+                'to_be_deducted': '1186.37',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 6978,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '1534.55',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 20264.85,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1876.14',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '2327.03',
+                'dependent_val': 21.43,
+            }),
+        ]"/>
+    </record>
+    <record id="married_unique_handicap_01_09_31_10" model="irs.tax.table">
+        <field name="name">Married Unique - Handicap (01/09/24 - 31/10/24)</field>
+        <field name="code">married_unique_handicap</field>
+        <field name="date_start">2024-09-01</field>
+        <field name="date_end">2024-10-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 2302,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 3394,
+                'marginal_rate': 0.0709,
+                'to_be_deducted': '163.15',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 3652,
+                'marginal_rate': 0.1297,
+                'to_be_deducted': '362.80',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6621,
+                'marginal_rate': 0.2765,
+                'to_be_deducted': '898.97',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20265,
+                'marginal_rate': 0.4244,
+                'to_be_deducted': '1878.34',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '2836.10',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+
+    <!--    TABLES FROM NOVEMBER 1 2024 UNTIL DECEMBER 31 2024-->
+    <record id="married_with_dependents_01_11_31_12" model="irs.tax.table">
+        <field name="name">Married With Dependents (01/11/24 - 31/12/24)</field>
+        <field name="code">married_with_dependents</field>
+        <field name="date_start">2024-11-01</field>
+        <field name="date_end">2024-12-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 820,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 935,
+                'marginal_rate': 0.13,
+                'to_be_deducted': '0.13 * 2.6 * (1135.39 - %%VALUE%%)',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 989,
+                'marginal_rate': 0.1650,
+                'to_be_deducted': '0.165*1.35*(1386.11 - %%VALUE%%)',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1125,
+                'marginal_rate': 0.1650,
+                'to_be_deducted': '88.39',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1175,
+                'marginal_rate': 0.22,
+                'to_be_deducted': '150.26',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1769,
+                'marginal_rate': 0.25,
+                'to_be_deducted': '185.50',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2057,
+                'marginal_rate': 0.32,
+                'to_be_deducted': '309.36',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2408,
+                'marginal_rate': 0.3550,
+                'to_be_deducted': '381.35',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 3201,
+                'marginal_rate': 0.3872,
+                'to_be_deducted': '458.76',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 5492,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '501.49',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 20021,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '770.33',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1215.80',
+                'dependent_val': 21.43,
+            }),
+        ]"/>
+    </record>
+    <record id="not_married_and_dependents_01_11_31_12" model="irs.tax.table">
+        <field name="name">Not Married and Dependents (01/11/24 - 31/12/24)</field>
+        <field name="code">not_married_and_dependents</field>
+        <field name="date_start">2024-11-01</field>
+        <field name="date_end">2024-12-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 820,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 935,
+                'marginal_rate': 0.13,
+                'to_be_deducted': '0.13 * 2.6 * (1135.39 - %%VALUE%%)',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 989,
+                'marginal_rate': 0.165,
+                'to_be_deducted': '0.165*1.35*(1386.11 - %%VALUE%%)',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1125,
+                'marginal_rate': 0.165,
+                'to_be_deducted': '88.39',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1175,
+                'marginal_rate': 0.22,
+                'to_be_deducted': '150.26',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1769,
+                'marginal_rate': 0.25,
+                'to_be_deducted': '185.50',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 2057,
+                'marginal_rate': 0.32,
+                'to_be_deducted': '309.36',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 2408,
+                'marginal_rate': 0.355,
+                'to_be_deducted': '381.35',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 3201,
+                'marginal_rate': 0.3872,
+                'to_be_deducted': '458.76',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 5492,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '501.49',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 20021,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '770.33',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1215.80',
+                'dependent_val': 34.29,
+            }),
+        ]"/>
+    </record>
+    <record id="married_unique_with_dependents_01_11_31_12" model="irs.tax.table">
+        <field name="name">Married Unique With Dependents (01/11/24 - 31/12/24)</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2024-11-01</field>
+        <field name="date_end">2024-12-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 904,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 935,
+                'marginal_rate': 0.13,
+                'to_be_deducted': '0.13*2.6*(1251.62 - %%VALUE%%)',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 989,
+                'marginal_rate': 0.13,
+                'to_be_deducted': '0.13*1.35*(1545.09 - %%VALUE%%)',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1070,
+                'marginal_rate': 0.13,
+                'to_be_deducted': '97.54',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1394,
+                'marginal_rate': 0.132,
+                'to_be_deducted': '99.68',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1912,
+                'marginal_rate': 0.165,
+                'to_be_deducted': '145.69',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2178,
+                'marginal_rate': 0.2018,
+                'to_be_deducted': '216.11',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2671,
+                'marginal_rate': 0.2362,
+                'to_be_deducted': '291.09',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 3284,
+                'marginal_rate': 0.2594,
+                'to_be_deducted': '352.90',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 5906,
+                'marginal_rate': 0.3072,
+                'to_be_deducted': '510.04',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20064,
+                'marginal_rate': 0.3872,
+                'to_be_deducted': '981.97',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '2678.40',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+
+    <record id="not_married_and_handicap_no_dependents_01_11_31_12" model="irs.tax.table">
+        <field name="name">Not Married Without Dependents - Handicap (01/11/24 - 31/12/24)</field>
+        <field name="code">not_married_and_handicap_no_dependents</field>
+        <field name="date_start">2024-11-01</field>
+        <field name="date_end">2024-12-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1677,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2012,
+                'marginal_rate': 0.22,
+                'to_be_deducted': '368.86',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2428,
+                'marginal_rate': 0.32,
+                'to_be_deducted': '570.08',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 4376,
+                'marginal_rate': 0.355,
+                'to_be_deducted': '655.08',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 4634,
+                'marginal_rate': 0.3872,
+                'to_be_deducted': '795.77',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 6621,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '857.63',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 20265,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1181.74',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1632.63',
+                'dependent_val': 0,
+            }),
+        ]"/>
+    </record>
+
+    <record id="not_married_handicap_with_dependents_01_11_31_12" model="irs.tax.table">
+        <field name="name">Not Married With Dependents - Handicap (01/11/24 - 31/12/24)</field>
+        <field name="code">not_married_handicap_with_dependents</field>
+        <field name="date_start">2024-11-01</field>
+        <field name="date_end">2024-12-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1919,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2012,
+                'marginal_rate': 0.2212,
+                'to_be_deducted': '424.35',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2785,
+                'marginal_rate': 0.32,
+                'to_be_deducted': '623.26',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 4394,
+                'marginal_rate': 0.355,
+                'to_be_deducted': '720.75',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6687,
+                'marginal_rate': 0.3872,
+                'to_be_deducted': '862.02',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6978,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '951.30',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20265,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1292.88',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1743.78',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+
+    <record id="married_handicap_with_dependents_01_11_31_12" model="irs.tax.table">
+        <field name="name">Married With Dependents - Handicap (01/11/24 - 31/12/24)</field>
+        <field name="code">married_handicap_with_dependents</field>
+        <field name="date_start">2024-11-01</field>
+        <field name="date_end">2024-12-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1651,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2023,
+                'marginal_rate': 0.22,
+                'to_be_deducted': '363.15',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2441,
+                'marginal_rate': 0.25,
+                'to_be_deducted': '423.84',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 3037,
+                'marginal_rate': 0.32,
+                'to_be_deducted': '594.69',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 4394,
+                'marginal_rate': 0.355,
+                'to_be_deducted': '700.99',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 6687,
+                'marginal_rate': 0.3872,
+                'to_be_deducted': '842.26',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 6978,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '931.54',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 20265,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1273.12',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1724.02',
+                'dependent_val': 21.43,
+            }),
+        ]"/>
+    </record>
+
+    <record id="married_unique_handicap_01_11_31_12" model="irs.tax.table">
+        <field name="name">Married Unique - Handicap (01/11/24 - 31/12/24)</field>
+        <field name="code">married_unique_handicap</field>
+        <field name="date_start">2024-11-01</field>
+        <field name="date_end">2024-12-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 2302,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 3394,
+                'marginal_rate': 0.2362,
+                'to_be_deducted': '543.85',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 3652,
+                'marginal_rate': 0.2594,
+                'to_be_deducted': '622.41',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6621,
+                'marginal_rate': 0.3072,
+                'to_be_deducted': '797.17',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20265,
+                'marginal_rate': 0.4244,
+                'to_be_deducted': '1573.11',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '2530.87',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+    <!--    2025-->
+    <record id="married_with_dependents_01_2025" model="irs.tax.table">
+        <field name="name">Married With Dependents (01/01/2025 - 31/07/2025)</field>
+        <field name="code">married_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-07-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 870,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 992,
+                'marginal_rate': 0.13,
+                'to_be_deducted': '0.13 * 2.6 * (1208.32 - %%VALUE%%)',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1070,
+                'marginal_rate': 0.1650,
+                'to_be_deducted': '0.165 * 1.35 *(1477.67 - %%VALUE%%)',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1136,
+                'marginal_rate': 0.1650,
+                'to_be_deducted': '90.81',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1187,
+                'marginal_rate': 0.22,
+                'to_be_deducted': '153.29',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1787,
+                'marginal_rate': 0.25,
+                'to_be_deducted': '188.90',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2078,
+                'marginal_rate': 0.32,
+                'to_be_deducted': '313.99',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2432,
+                'marginal_rate': 0.3550,
+                'to_be_deducted': '386.72',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 3233,
+                'marginal_rate': 0.3872,
+                'to_be_deducted': '465.03',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 5547,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '508.03',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 20221,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '779.83',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1228.74',
+                'dependent_val': 21.43,
+            }),
+        ]"/>
+    </record>
+    <record id="not_married_and_dependents_01_2025" model="irs.tax.table">
+        <field name="name">Not Married and Dependents (01/01/2025 - 31/07/2025)</field>
+        <field name="code">not_married_and_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-07-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 870,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 992,
+                'marginal_rate': 0.13,
+                'to_be_deducted': '0.13 * 2.6 * (1208.32 - %%VALUE%%)',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1070,
+                'marginal_rate': 0.1650,
+                'to_be_deducted': '0.165 * 1.35 * (1477.67 - %%VALUE%%)',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1136,
+                'marginal_rate': 0.1650,
+                'to_be_deducted': '90.81',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1187,
+                'marginal_rate': 0.22,
+                'to_be_deducted': '153.29',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1787,
+                'marginal_rate': 0.25,
+                'to_be_deducted': '188.90',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 2078,
+                'marginal_rate': 0.32,
+                'to_be_deducted': '313.99',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 2432,
+                'marginal_rate': 0.3550,
+                'to_be_deducted': '386.72',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 3233,
+                'marginal_rate': 0.3872,
+                'to_be_deducted': '465.03',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 5547,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '508.03',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 20221,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '779.83',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1228.74',
+                'dependent_val': 34.29,
+            }),
+        ]"/>
+    </record>
+    <record id="married_unique_with_dependents_01_2025" model="irs.tax.table">
+        <field name="name">Married Unique With Dependents (01/01/2025 - 31/07/2025)</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-07-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 957,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 992,
+                'marginal_rate': 0.13,
+                'to_be_deducted': '0.13 * 2.6 * (1324.55 - %%VALUE%%)',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1070,
+                'marginal_rate': 0.13,
+                'to_be_deducted': '0.13 * 1.35 * (1632.65 - %%VALUE%%)',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1081,
+                'marginal_rate': 0.13,
+                'to_be_deducted': '98.75',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1408,
+                'marginal_rate': 0.1320,
+                'to_be_deducted': '100.91',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1931,
+                'marginal_rate': 0.1650,
+                'to_be_deducted': '147.37',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2200,
+                'marginal_rate': 0.2018,
+                'to_be_deducted': '218.43',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2698,
+                'marginal_rate': 0.2362,
+                'to_be_deducted': '294.11',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 3317,
+                'marginal_rate': 0.2594,
+                'to_be_deducted': '356.70',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 5965,
+                'marginal_rate': 0.3072,
+                'to_be_deducted': '515.25',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20265,
+                'marginal_rate': 0.3872,
+                'to_be_deducted': '992.45',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '2704.84',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+    <record id="not_married_and_handicap_no_dependents_01_2025" model="irs.tax.table">
+        <field name="name">Not Married Without Dependents - Handicap (01/01/2025 - 31/07/2025)</field>
+        <field name="code">not_married_and_handicap_no_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-07-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1694,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2032,
+                'marginal_rate': 0.22,
+                'to_be_deducted': '372.68',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2452,
+                'marginal_rate': 0.32,
+                'to_be_deducted': '575.88',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 4420,
+                'marginal_rate': 0.3550,
+                'to_be_deducted': '661.70',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 4680,
+                'marginal_rate': 0.3872,
+                'to_be_deducted': '804.02',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 6687,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '866.26',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 20468,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1193.92',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1648.31',
+                'dependent_val': 0,
+            }),
+        ]"/>
+    </record>
+    <record id="not_married_handicap_with_dependents_01_2025" model="irs.tax.table">
+        <field name="name">Not Married With Dependents - Handicap (01/01/2025 - 31/07/2025)</field>
+        <field name="code">not_married_handicap_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-07-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1938,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2032,
+                'marginal_rate': 0.2212,
+                'to_be_deducted': '428.69',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2813,
+                'marginal_rate': 0.32,
+                'to_be_deducted': '629.45',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 4438,
+                'marginal_rate': 0.3550,
+                'to_be_deducted': '727.91',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6754,
+                'marginal_rate': 0.3872,
+                'to_be_deducted': '870.81',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 7048,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '960.64',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20468,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1305.99',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1760.38',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+    <record id="married_handicap_with_dependents_01_2025" model="irs.tax.table">
+        <field name="name">Married With Dependents - Handicap (01/01/2025 - 31/07/2025)</field>
+        <field name="code">married_handicap_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-07-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1668,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2043,
+                'marginal_rate': 0.22,
+                'to_be_deducted': '366.96',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2465,
+                'marginal_rate': 0.25,
+                'to_be_deducted': '428.25',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 3067,
+                'marginal_rate': 0.32,
+                'to_be_deducted': '600.80',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 4438,
+                'marginal_rate': 0.3550,
+                'to_be_deducted': '708.15',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 6754,
+                'marginal_rate': 0.3872,
+                'to_be_deducted': '851.05',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 7048,
+                'marginal_rate': 0.4005,
+                'to_be_deducted': '940.88',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 20468,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1286.23',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1740.62',
+                'dependent_val': 21.43,
+            }),
+        ]"/>
+    </record>
+    <record id="married_unique_handicap_01_2025" model="irs.tax.table">
+        <field name="name">Married Unique - Handicap (01/01/2025 - 31/07/2025)</field>
+        <field name="code">married_unique_handicap</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-07-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 2325,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 3428,
+                'marginal_rate': 0.2362,
+                'to_be_deducted': '549.17',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 3689,
+                'marginal_rate': 0.2594,
+                'to_be_deducted': '628.70',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6687,
+                'marginal_rate': 0.3072,
+                'to_be_deducted': '805.03',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20468,
+                'marginal_rate': 0.4244,
+                'to_be_deducted': '1588.75',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '2556.89',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+    <record id="married_with_dependents_01_2025_RM" model="irs.tax.table">
+        <field name="name">Married With Dependents - Madeira (01/01/2025 - 31/12/2025)</field>
+        <field name="code">married_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RM</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 915,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 949,
+                'marginal_rate': 0.0928,
+                'to_be_deducted': '0.0928 * 2.6 * (1176.97 - %%VALUE%%)',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1015,
+                'marginal_rate': 0.1260,
+                'to_be_deducted': '0.1260 * 1.35 * (1457.56 - %%VALUE%%)',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1125,
+                'marginal_rate': 0.1260,
+                'to_be_deducted': '75.31',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1521,
+                'marginal_rate': 0.1820,
+                'to_be_deducted': '138.30',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2185,
+                'marginal_rate': 0.2293,
+                'to_be_deducted': '210.18',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 3001,
+                'marginal_rate': 0.2305,
+                'to_be_deducted': '212.93',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 3387,
+                'marginal_rate': 0.3523,
+                'to_be_deducted': '578.40',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 6171,
+                'marginal_rate': 0.3885,
+                'to_be_deducted': '700.95',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 6517,
+                'marginal_rate': 0.4144,
+                'to_be_deducted': '860.76',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 20064,
+                'marginal_rate': 0.4316,
+                'to_be_deducted': '972.95',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4670,
+                'to_be_deducted': '1682.88',
+                'dependent_val': 21.43,
+            }),
+        ]"/>
+    </record>
+    <record id="not_married_and_dependents_01_2025_RM" model="irs.tax.table">
+        <field name="name">Not Married and Dependents - Madeira (01/01/2025 - 31/12/2025)</field>
+        <field name="code">not_married_and_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RM</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 915,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 949,
+                'marginal_rate': 0.0928,
+                'to_be_deducted': '0.0928 * 2.6 * (1176.97 - %%VALUE%%)',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1015,
+                'marginal_rate': 0.1260,
+                'to_be_deducted': '0.1260 * 1.35 * (1457.56 - %%VALUE%%)',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1125,
+                'marginal_rate': 0.1260,
+                'to_be_deducted': '75.31',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1521,
+                'marginal_rate': 0.1820,
+                'to_be_deducted': '138.30',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 2185,
+                'marginal_rate': 0.2293,
+                'to_be_deducted': '210.18',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 3001,
+                'marginal_rate': 0.2305,
+                'to_be_deducted': '212.93',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 3387,
+                'marginal_rate': 0.3523,
+                'to_be_deducted': '578.40',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 6171,
+                'marginal_rate': 0.3885,
+                'to_be_deducted': '700.95',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 6517,
+                'marginal_rate': 0.4144,
+                'to_be_deducted': '860.76',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 20064,
+                'marginal_rate': 0.4316,
+                'to_be_deducted': '972.95',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4670,
+                'to_be_deducted': '1682.88',
+                'dependent_val': 34.29,
+            }),
+        ]"/>
+    </record>
+    <record id="married_unique_with_dependents_01_2025_RM" model="irs.tax.table">
+        <field name="name">Married Unique With Dependents - Madeira (01/01/2025 - 31/12/2025)</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RM</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 977,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 1015,
+                'marginal_rate': 0.0928,
+                'to_be_deducted': '0.0928 * 1.35 * (1701.40 - %%VALUE%%)',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1070,
+                'marginal_rate': 0.0928,
+                'to_be_deducted': '85.97',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1741,
+                'marginal_rate': 0.1092,
+                'to_be_deducted': '103.56',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2328,
+                'marginal_rate': 0.1260,
+                'to_be_deducted': '132.81',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 3122,
+                'marginal_rate': 0.1774,
+                'to_be_deducted': '252.37',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 3650,
+                'marginal_rate': 0.1942,
+                'to_be_deducted': '305',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6253,
+                'marginal_rate': 0.2283,
+                'to_be_deducted': '429.58',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6445,
+                'marginal_rate': 0.3605,
+                'to_be_deducted': '1256.08',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20064,
+                'marginal_rate': 0.3885,
+                'to_be_deducted': '1436.36',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4670,
+                'to_be_deducted': '3011.36',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+    <record id="not_married_and_handicap_no_dependents_01_2025_RM" model="irs.tax.table">
+        <field name="name">Not Married Without Dependents - Handicap - Madeira (01/01/2025 - 31/12/2025)</field>
+        <field name="code">not_married_and_handicap_no_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RM</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1924,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2428,
+                'marginal_rate': 0.1820,
+                'to_be_deducted': '350.10',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 3394,
+                'marginal_rate': 0.2305,
+                'to_be_deducted': '467.90',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 4374,
+                'marginal_rate': 0.3523,
+                'to_be_deducted': '881.29',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 6621,
+                'marginal_rate': 0.3885,
+                'to_be_deducted': '1039.53',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 6717,
+                'marginal_rate': 0.4144,
+                'to_be_deducted': '1211.01',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 20265,
+                'marginal_rate': 0.4450,
+                'to_be_deducted': '1416.37',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4670,
+                'to_be_deducted': '1862.76',
+                'dependent_val': 0,
+            }),
+        ]"/>
+    </record>
+    <record id="not_married_handicap_with_dependents_01_2025_RM" model="irs.tax.table">
+        <field name="name">Not Married With Dependents - Handicap - Madeira (01/01/2025 - 31/12/2025)</field>
+        <field name="code">not_married_handicap_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RM</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 2197,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2428,
+                'marginal_rate': 0.2028,
+                'to_be_deducted': '445.52',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 3394,
+                'marginal_rate': 0.2305,
+                'to_be_deducted': '512.82',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 4374,
+                'marginal_rate': 0.3523,
+                'to_be_deducted': '926.21',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6621,
+                'marginal_rate': 0.3885,
+                'to_be_deducted': '1084.45',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6717,
+                'marginal_rate': 0.4144,
+                'to_be_deducted': '1255.93',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20265,
+                'marginal_rate': 0.4450,
+                'to_be_deducted': '1461.29',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4670,
+                'to_be_deducted': '1907.67',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+    <record id="not_married_handicap_with_dependents_01_2025_RM" model="irs.tax.table">
+        <field name="name">Not Married With Dependents - Handicap - Madeira (01/01/2025 - 31/12/2025)</field>
+        <field name="code">not_married_handicap_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RM</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1892,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2369,
+                'marginal_rate': 0.1820,
+                'to_be_deducted': '344.39',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2857,
+                'marginal_rate': 0.2293,
+                'to_be_deducted': '456.34',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 4003,
+                'marginal_rate': 0.2305,
+                'to_be_deducted': '459.94',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 5374,
+                'marginal_rate': 0.3523,
+                'to_be_deducted': '947.46',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 6621,
+                'marginal_rate': 0.3885,
+                'to_be_deducted': '1141.88',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 7075,
+                'marginal_rate': 0.4144,
+                'to_be_deducted': '1313.36',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 20265,
+                'marginal_rate': 0.4450,
+                'to_be_deducted': '1529.64',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4670,
+                'to_be_deducted': '1976.02',
+                'dependent_val': 21.43,
+            }),
+        ]"/>
+    </record>
+    <record id="married_unique_handicap_01_2025_RM" model="irs.tax.table">
+        <field name="name">Married Unique - Handicap - Madeira (01/01/2025 - 31/12/2025)</field>
+        <field name="code">married_unique_handicap</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RM</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 2868,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 4374,
+                'marginal_rate': 0.1942,
+                'to_be_deducted': '556.94',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6621,
+                'marginal_rate': 0.2603,
+                'to_be_deducted': '845.94',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6717,
+                'marginal_rate': 0.3895,
+                'to_be_deducted': '1701.63',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20265,
+                'marginal_rate': 0.4202,
+                'to_be_deducted': '1907.67',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4670,
+                'to_be_deducted': '2855.85',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+    <record id="married_unique_handicap_01_2025_RA" model="irs.tax.table">
+        <field name="name">Casado, único titular - Pessoa com deficiência - Açores (01/01/2025 - 31/12/2025)</field>
+        <field name="code">married_unique_handicap</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RA</field>
+        <field name="category">A</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 2897.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 4418.0, 'marginal_rate': 0.1654, 'to_be_deducted': '479.08', 'dependent_val': 42.86}),
+               (0, 0, {'value': 6687.0, 'marginal_rate': 0.1816, 'to_be_deducted': '550.66', 'dependent_val': 42.86}),
+               (0, 0, {'value': 6784.0, 'marginal_rate': 0.2151, 'to_be_deducted': '774.67', 'dependent_val': 42.86}),
+               (0, 0, {'value': 20468.0, 'marginal_rate': 0.2926, 'to_be_deducted': '1300.56', 'dependent_val': 42.86}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.3255, 'to_be_deducted': '1974.12', 'dependent_val': 42.86})]"/>
+    </record>
+    <record id="married_unique_with_dependents_01_2025_H_C" model="irs.tax.table">
+        <field name="name">Casado, único titular - Pensões - Continente (01/01/2025 - 31/07/2025)</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-07-31</field>
+        <field name="income_locale">C</field>
+        <field name="category">H</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 870.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 992.0, 'marginal_rate': 0.13, 'to_be_deducted': '0.13 * 2.6 * (1337.23 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1063.0, 'marginal_rate': 0.13, 'to_be_deducted': '0.13 * 1.713 * (1517.45 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1152.0, 'marginal_rate': 0.13, 'to_be_deducted': '101.20', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1502.0, 'marginal_rate': 0.165, 'to_be_deducted': '141.52', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1852.0, 'marginal_rate': 0.2, 'to_be_deducted': '194.09', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2273.0, 'marginal_rate': 0.224, 'to_be_deducted': '238.54', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3185.0, 'marginal_rate': 0.284, 'to_be_deducted': '374.92', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3416.0, 'marginal_rate': 0.3263, 'to_be_deducted': '509.65', 'dependent_val': 0.0}),
+               (0, 0, {'value': 6085.0, 'marginal_rate': 0.3452, 'to_be_deducted': '574.21', 'dependent_val': 0.0}),
+               (0, 0, {'value': 18350.0, 'marginal_rate': 0.435, 'to_be_deducted': '1120.64', 'dependent_val': 0.0}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.53, 'to_be_deducted': '2863.89', 'dependent_val': 0.0})]"/>
+    </record>
+    <record id="married_unique_with_dependents_01_2025_H_RA" model="irs.tax.table">
+        <field name="name">Casado, único titular - Pensões - Açores (01/01/2025 - 31/12/2025)</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RA</field>
+        <field name="category">H</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 1003.98, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1062.93, 'marginal_rate': 0.091, 'to_be_deducted': '0.091 * 1,713 * (1648.86 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1141.0, 'marginal_rate': 0.091, 'to_be_deducted': '91.36', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1487.0, 'marginal_rate': 0.1155, 'to_be_deducted': '119.32', 'dependent_val': 0.0})
+               ,(0, 0, {'value': 1834.0, 'marginal_rate': 0.14, 'to_be_deducted': '155.75', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2250.0, 'marginal_rate': 0.1568, 'to_be_deducted': '186.56', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3153.0, 'marginal_rate': 0.1988, 'to_be_deducted': '281.06', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3382.0, 'marginal_rate': 0.2284, 'to_be_deducted': '374.39', 'dependent_val': 0.0}),
+               (0, 0, {'value': 6025.0, 'marginal_rate': 0.2417, 'to_be_deducted': '419.37', 'dependent_val': 0.0}),
+               (0, 0, {'value': 18168.0, 'marginal_rate': 0.3045, 'to_be_deducted': '797.74', 'dependent_val': 0.0}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.3445, 'to_be_deducted': '1524.46', 'dependent_val': 0.0})]"/>
+    </record>
+    <record id="married_unique_with_dependents_01_2025_H_RM" model="irs.tax.table">
+        <field name="name">Casado, único titular - Pensões - Madeira (01/01/2025 - 31/12/2025)</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RM</field>
+        <field name="category">H</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 1008.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1015.0, 'marginal_rate': 0.0928, 'to_be_deducted': '0.928 * 1,834 * (1528.14 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1141.0, 'marginal_rate': 0.0928, 'to_be_deducted': '87.31', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1691.0, 'marginal_rate': 0.1365, 'to_be_deducted': '137.23', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2035.0, 'marginal_rate': 0.1834, 'to_be_deducted': '216.53', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2796.0, 'marginal_rate': 0.2072, 'to_be_deducted': '264.96', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3668.0, 'marginal_rate': 0.3167, 'to_be_deducted': '571.06', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3882.0, 'marginal_rate': 0.3492, 'to_be_deducted': '690.33', 'dependent_val': 0.0}),
+               (0, 0, {'value': 4325.0, 'marginal_rate': 0.4051, 'to_be_deducted': '907.23', 'dependent_val': 0.0}),
+               (0, 0, {'value': 18111.0, 'marginal_rate': 0.4365, 'to_be_deducted': '1043.16', 'dependent_val': 0.0}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.5247, 'to_be_deducted': '2640.52', 'dependent_val': 0.0})]"/>
+    </record>
+    <record id="married_unique_with_dependents_01_2025_RA" model="irs.tax.table">
+        <field name="name">Casado, único titular - Açores (01/01/2025 - 31/12/2025)</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RA</field>
+        <field name="category">A</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 1184.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1224.0, 'marginal_rate': 0.0751, 'to_be_deducted': '88.92', 'dependent_val': 42.86}),
+               (0, 0, {'value': 1575.0, 'marginal_rate': 0.1001, 'to_be_deducted': '119.52', 'dependent_val': 42.86}),
+               (0, 0, {'value': 1931.0, 'marginal_rate': 0.1155, 'to_be_deducted': '143.78', 'dependent_val': 42.86}),
+               (0, 0, {'value': 2200.0, 'marginal_rate': 0.1413, 'to_be_deducted': '193.6', 'dependent_val': 42.86}),
+               (0, 0, {'value': 2698.0, 'marginal_rate': 0.1654, 'to_be_deducted': '246.62', 'dependent_val': 42.86}),
+               (0, 0, {'value': 3317.0, 'marginal_rate': 0.1816, 'to_be_deducted': '290.33', 'dependent_val': 42.86}),
+               (0, 0, {'value': 5965.0, 'marginal_rate': 0.2151, 'to_be_deducted': '401.45', 'dependent_val': 42.86}),
+               (0, 0, {'value': 20265.0, 'marginal_rate': 0.271, 'to_be_deducted': '734.89', 'dependent_val': 42.86}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.3302, 'to_be_deducted': '1934.58', 'dependent_val': 42.86})]"/>
+    </record>
+    <record id="married_with_dependents_01_2025_H_C" model="irs.tax.table">
+        <field name="name">Não casado ou casado dois titulares - Pensões - Continente (01/01/2025 - 31/07/2025)</field>
+        <field name="code">married_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-07-31</field>
+        <field name="income_locale">C</field>
+        <field name="category">H</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 870.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 992.0, 'marginal_rate': 0.13, 'to_be_deducted': '0.13 * 2.6 * (1282.29 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1063.0, 'marginal_rate': 0.165, 'to_be_deducted': '0.165 * 1.35 * (1589.9 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1116.0, 'marginal_rate': 0.175, 'to_be_deducted': '128', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1214.0, 'marginal_rate': 0.25, 'to_be_deducted': '211.7', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1837.0, 'marginal_rate': 0.26, 'to_be_deducted': '223.84', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2074.0, 'marginal_rate': 0.325, 'to_be_deducted': '343.25', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2301.0, 'marginal_rate': 0.355, 'to_be_deducted': '405.47', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3398.0, 'marginal_rate': 0.435, 'to_be_deducted': '589.55', 'dependent_val': 0.0}),
+               (0, 0, {'value': 5833.0, 'marginal_rate': 0.4495, 'to_be_deducted': '640.52', 'dependent_val': 0.0}),
+               (0, 0, {'value': 18332.0, 'marginal_rate': 0.505, 'to_be_deducted': '961.34', 'dependent_val': 0.0}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.53, 'to_be_deducted': '1419.64', 'dependent_val': 0.0})]"/>
+    </record>
+    <record id="married_with_dependents_01_2025_H_RA" model="irs.tax.table">
+        <field name="name">Não casado ou casado dois titulares - Pensões - Açores (01/01/2025 - 31/12/2025)</field>
+        <field name="code">married_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RA</field>
+        <field name="category">H</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 914.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 992.0, 'marginal_rate': 0.091, 'to_be_deducted': '0.091 * 2.6 * (1370.62 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1063.0, 'marginal_rate': 0.1155, 'to_be_deducted': '0.116 * 1.35 * (1685.58 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1116.0, 'marginal_rate': 0.1255, 'to_be_deducted': '97.08', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1214.0, 'marginal_rate': 0.184, 'to_be_deducted': '162.36', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1837.0, 'marginal_rate': 0.185, 'to_be_deducted': '163.57', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2074.0, 'marginal_rate': 0.229, 'to_be_deducted': '244.4', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2301.0, 'marginal_rate': 0.2485, 'to_be_deducted': '284.84', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3398.0, 'marginal_rate': 0.2828, 'to_be_deducted': '363.76', 'dependent_val': 0.0}),
+               (0, 0, {'value': 5833.0, 'marginal_rate': 0.2925, 'to_be_deducted': '396.72', 'dependent_val': 0.0}),
+               (0, 0, {'value': 18332.0, 'marginal_rate': 0.3283, 'to_be_deducted': '605.54', 'dependent_val': 0.0}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.3445, 'to_be_deducted': '902.52', 'dependent_val': 0.0})]"/>
+    </record>
+    <record id="married_with_dependents_01_2025_H_RM" model="irs.tax.table">
+        <field name="name">Não casado ou casado dois titulares - Pensões - Madeira (01/01/2025 - 31/12/2025)</field>
+        <field name="code">married_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RM</field>
+        <field name="category">H</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 915.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 949.0, 'marginal_rate': 0.0928, 'to_be_deducted': '0.0928 * 2.6 * (1258.42 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1015.0, 'marginal_rate': 0.126, 'to_be_deducted': '0.126 * 1.35 * (1573.04 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1141.0, 'marginal_rate': 0.136, 'to_be_deducted': '105.10', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1727.0, 'marginal_rate': 0.212, 'to_be_deducted': '191.81', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2107.0, 'marginal_rate': 0.2393, 'to_be_deducted': '238.86', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2296.0, 'marginal_rate': 0.264, 'to_be_deducted': '291.01', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3150.0, 'marginal_rate': 0.3959, 'to_be_deducted': '593.71', 'dependent_val': 0.0}),
+               (0, 0, {'value': 4596.0, 'marginal_rate': 0.4365, 'to_be_deducted': '721.75', 'dependent_val': 0.0}),
+               (0, 0, {'value': 5396.0, 'marginal_rate': 0.4656, 'to_be_deducted': '855.5', 'dependent_val': 0.0}),
+               (0, 0, {'value': 18111.0, 'marginal_rate': 0.5, 'to_be_deducted': '1040.87', 'dependent_val': 0.0}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.5247, 'to_be_deducted': '1489.11', 'dependent_val': 0.0})]"/>
+    </record>
+    <record id="married_with_dependents_01_2025_RA" model="irs.tax.table">
+        <field name="name">Não casado ou casado dois titulares sem dependentes - Açores (01/01/2025 - 31/12/2025)</field>
+        <field name="code">married_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RA</field>
+        <field name="category">A</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 914.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 992.0, 'marginal_rate': 0.091, 'to_be_deducted': '0.091 * 2.6 * (1264.96 - %%VALUE%%)', 'dependent_val': 21.43}),
+               (0, 0, {'value': 1070.0, 'marginal_rate': 0.1155, 'to_be_deducted': '0.1155 * 1.35 * (1525.25 - %%VALUE%%)', 'dependent_val': 21.43}),
+               (0, 0, {'value': 1136.0, 'marginal_rate': 0.1155, 'to_be_deducted': '70.98', 'dependent_val': 21.43}),
+               (0, 0, {'value': 1187.0, 'marginal_rate': 0.154, 'to_be_deducted': '114.72', 'dependent_val': 21.43}),
+               (0, 0, {'value': 1787.0, 'marginal_rate': 0.175, 'to_be_deducted': '139.96', 'dependent_val': 21.43}),
+               (0, 0, {'value': 2078.0, 'marginal_rate': 0.224, 'to_be_deducted': '227.52', 'dependent_val': 21.43}),
+               (0, 0, {'value': 2432.0, 'marginal_rate': 0.2485, 'to_be_deducted': '278.43', 'dependent_val': 21.43}),
+               (0, 0, {'value': 3233.0, 'marginal_rate': 0.271, 'to_be_deducted': '333.15', 'dependent_val': 21.43}),
+               (0, 0, {'value': 5547.0, 'marginal_rate': 0.2804, 'to_be_deducted': '363.54', 'dependent_val': 21.43}),
+               (0, 0, {'value': 20221.0, 'marginal_rate': 0.3146, 'to_be_deducted': '553.25', 'dependent_val': 21.43}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.3302, 'to_be_deducted': '868.7', 'dependent_val': 21.43})]"/>
+    </record>
+    <record id="not_married_and_dependents_01_2025_RA" model="irs.tax.table">
+        <field name="name">Não casado com um ou mais dependentes - Açores (01/01/2025 - 31/12/2025)</field>
+        <field name="code">not_married_and_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RA</field>
+        <field name="category">A</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 914.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 992.0, 'marginal_rate': 0.091, 'to_be_deducted': '0.091 * 2.6 * (1264.96 - %%VALUE%%)', 'dependent_val': 34.29}),
+               (0, 0, {'value': 1070.0, 'marginal_rate': 0.1155, 'to_be_deducted': '0.1155 * 1.35 * (1525.25 - %%VALUE%%)', 'dependent_val': 34.29}),
+               (0, 0, {'value': 1136.0, 'marginal_rate': 0.1155, 'to_be_deducted': '70.98', 'dependent_val': 34.29}),
+               (0, 0, {'value': 1187.0, 'marginal_rate': 0.154, 'to_be_deducted': '114.72', 'dependent_val': 34.29}),
+               (0, 0, {'value': 1787.0, 'marginal_rate': 0.175, 'to_be_deducted': '139.96', 'dependent_val': 34.29}),
+               (0, 0, {'value': 2078.0, 'marginal_rate': 0.224, 'to_be_deducted': '227.52', 'dependent_val': 34.29}),
+               (0, 0, {'value': 2432.0, 'marginal_rate': 0.2485, 'to_be_deducted': '278.43', 'dependent_val': 34.29}),
+               (0, 0, {'value': 3233.0, 'marginal_rate': 0.271, 'to_be_deducted': '333.15', 'dependent_val': 34.29}),
+               (0, 0, {'value': 5547.0, 'marginal_rate': 0.2804, 'to_be_deducted': '363.54', 'dependent_val': 34.29}),
+               (0, 0, {'value': 20221.0, 'marginal_rate': 0.3146, 'to_be_deducted': '553.25', 'dependent_val': 34.29}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.3302, 'to_be_deducted': '868.7', 'dependent_val': 34.29})]"/>
+    </record>
+    <record id="not_married_and_handicap_no_dependents_01_2025_RA"
+            model="irs.tax.table">
+        <field name="name">Não casado ou casado dois titulares sem dependentes - Pessoa com deficiência - Açores
+            (01/01/2025 - 31/12/2025)
+        </field>
+        <field name="code">not_married_and_handicap_no_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RA</field>
+        <field name="category">A</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 2087.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2452.0, 'marginal_rate': 0.2240, 'to_be_deducted': '467.49', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2707.0, 'marginal_rate': 0.2485, 'to_be_deducted': '527.56', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2966.0, 'marginal_rate': 0.271, 'to_be_deducted': '588.47', 'dependent_val': 0.0}),
+               (0, 0, {'value': 4883.0, 'marginal_rate': 0.2804, 'to_be_deducted': '616.35', 'dependent_val': 0.0}),
+               (0, 0, {'value': 20468.0, 'marginal_rate': 0.3102, 'to_be_deducted': '761.86', 'dependent_val': 0.0}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.3255, 'to_be_deducted': '1075.02', 'dependent_val': 0.0})]"/>
+    </record>
+    <record id="not_married_handicap_with_dependents_01_2025_RA"
+            model="irs.tax.table">
+        <field name="name">Não casado com um ou mais dependentes - Pessoa com deficiência - Açores (01/01/2025 - 31/12/2025)</field>
+        <field name="code">not_married_handicap_with_dependents</field>
+        <field name="date_start">2025-01-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">RA</field>
+        <field name="category">A</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 2304.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2452.0, 'marginal_rate': 0.2240, 'to_be_deducted': '516.1', 'dependent_val': 42.86}),
+               (0, 0, {'value': 3428.0, 'marginal_rate': 0.2485, 'to_be_deducted': '576.17', 'dependent_val': 42.86}),
+               (0, 0, {'value': 3689.0, 'marginal_rate': 0.271, 'to_be_deducted': '653.32', 'dependent_val': 42.86}),
+               (0, 0, {'value': 6687.0, 'marginal_rate': 0.2804, 'to_be_deducted': '687.98', 'dependent_val': 42.86}),
+               (0, 0, {'value': 20468.0, 'marginal_rate': 0.3102, 'to_be_deducted': '887.25', 'dependent_val': 42.86}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.3255, 'to_be_deducted': '1200.41', 'dependent_val': 42.86})]"/>
+    </record>
+    <record id="married_with_dependents_08_09_2025" model="irs.tax.table">
+        <field name="name">Married With Dependents (01/08/2025 - 30/09/2025)</field>
+        <field name="code">married_with_dependents</field>
+        <field name="date_start">2025-08-01</field>
+        <field name="date_end">2025-09-30</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 870,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 992,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1070,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1136,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1187,
+                'marginal_rate': 0.0108,
+                'to_be_deducted': '12.27',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1787,
+                'marginal_rate': 0.0244,
+                'to_be_deducted': '28.42',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2078,
+                'marginal_rate': 0.0314,
+                'to_be_deducted': '40.93',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2432,
+                'marginal_rate': 0.0524,
+                'to_be_deducted': '84.57',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 3233,
+                'marginal_rate': 0.0767,
+                'to_be_deducted': '143.67',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 5547,
+                'marginal_rate': 0.1389,
+                'to_be_deducted': '344.77',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 20221,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '2067.67',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '2516.58',
+                'dependent_val': 21.43,
+            }),
+        ]"/>
+    </record>
+
+    <record id="not_married_and_dependents_08_09_2025" model="irs.tax.table">
+        <field name="name">Not Married and Dependents (01/08/2025 - 30/09/2025)</field>
+        <field name="code">not_married_and_dependents</field>
+        <field name="date_start">2025-08-01</field>
+        <field name="date_end">2025-09-30</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 870,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 992,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1070,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1136,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1187,
+                'marginal_rate': 0.0108,
+                'to_be_deducted': '12.27',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1787,
+                'marginal_rate': 0.0244,
+                'to_be_deducted': '28.42',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 2078,
+                'marginal_rate': 0.0314,
+                'to_be_deducted': '40.93',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 2432,
+                'marginal_rate': 0.0524,
+                'to_be_deducted': '84.57',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 3233,
+                'marginal_rate': 0.0767,
+                'to_be_deducted': '143.67',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 5547,
+                'marginal_rate': 0.1389,
+                'to_be_deducted': '344.77',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 20221,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '2067.67',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '2516.58',
+                'dependent_val': 34.29,
+            }),
+        ]"/>
+    </record>
+
+    <record id="married_unique_with_dependents_08_09_2025" model="irs.tax.table">
+        <field name="name">Married Unique With Dependents (01/08/2025 - 30/09/2025)</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2025-08-01</field>
+        <field name="date_end">2025-09-30</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 957,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 992,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1070,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1081,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1408,
+                'marginal_rate': 0.00605,
+                'to_be_deducted': '7.03',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1931,
+                'marginal_rate': 0.016,
+                'to_be_deducted': '20.41',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2200,
+                'marginal_rate': 0.0197,
+                'to_be_deducted': '27.56',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2698,
+                'marginal_rate': 0.0346,
+                'to_be_deducted': '60.34',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 3317,
+                'marginal_rate': 0.0514,
+                'to_be_deducted': '105.67',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 5965,
+                'marginal_rate': 0.1027,
+                'to_be_deducted': '275.84',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20265,
+                'marginal_rate': 0.3843,
+                'to_be_deducted': '1955.59',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '3726.76',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+
+    <record id="not_married_and_handicap_no_dependents_08_09_2025" model="irs.tax.table">
+        <field name="name">Not Married Without Dependents - Handicap (01/08/2025 - 30/09/2025)</field>
+        <field name="code">not_married_and_handicap_no_dependents</field>
+        <field name="date_start">2025-08-01</field>
+        <field name="date_end">2025-09-30</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1694,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2032,
+                'marginal_rate': 0.0133,
+                'to_be_deducted': '22.54',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2452,
+                'marginal_rate': 0.0148,
+                'to_be_deducted': '25.59',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 4420,
+                'marginal_rate': 0.0326,
+                'to_be_deducted': '69.24',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 4680,
+                'marginal_rate': 0.0506,
+                'to_be_deducted': '148.80',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 6687,
+                'marginal_rate': 0.1069,
+                'to_be_deducted': '412.29',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 20468,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '2703.26',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '3157.65',
+                'dependent_val': 0,
+            }),
+        ]"/>
+    </record>
+
+    <record id="not_married_handicap_with_dependents_08_09_2025" model="irs.tax.table">
+        <field name="name">Not Married With Dependents - Handicap (01/08/2025 - 30/09/2025)</field>
+        <field name="code">not_married_handicap_with_dependents</field>
+        <field name="date_start">2025-08-01</field>
+        <field name="date_end">2025-09-30</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1938,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2032,
+                'marginal_rate': 0.0108,
+                'to_be_deducted': '20.94',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2813,
+                'marginal_rate': 0.0157,
+                'to_be_deducted': '30.90',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 4438,
+                'marginal_rate': 0.0349,
+                'to_be_deducted': '84.91',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6754,
+                'marginal_rate': 0.0575,
+                'to_be_deducted': '185.21',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 7048,
+                'marginal_rate': 0.1191,
+                'to_be_deducted': '601.26',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20468,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '2929.92',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1760.38',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+
+    <record id="not_married_handicap_with_dependents_08_09_2025" model="irs.tax.table">
+        <field name="name">Not Married With Dependents - Handicap (01/08/2025 - 30/09/2025)</field>
+        <field name="code">not_married_handicap_with_dependents</field>
+        <field name="date_start">2025-08-01</field>
+        <field name="date_end">2025-09-30</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1938,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2032,
+                'marginal_rate': 0.0108,
+                'to_be_deducted': '20.94',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2813,
+                'marginal_rate': 0.0157,
+                'to_be_deducted': '30.90',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 4438,
+                'marginal_rate': 0.0349,
+                'to_be_deducted': '84.91',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6754,
+                'marginal_rate': 0.0575,
+                'to_be_deducted': '185.21',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 7048,
+                'marginal_rate': 0.1191,
+                'to_be_deducted': '601.26',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20468,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '2929.92',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '3384.31',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+
+    <record id="married_handicap_with_dependents_08_09_2025" model="irs.tax.table">
+        <field name="name">Married With Dependents - Handicap (01/08/2025 - 30/09/2025)</field>
+        <field name="code">married_handicap_with_dependents</field>
+        <field name="date_start">2025-08-01</field>
+        <field name="date_end">2025-09-30</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1668,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2043,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2465,
+                'marginal_rate': 0.0122,
+                'to_be_deducted': '24.93',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 3067,
+                'marginal_rate': 0.0157,
+                'to_be_deducted': '33.56',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 4438,
+                'marginal_rate': 0.0349,
+                'to_be_deducted': '92.45',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 6754,
+                'marginal_rate': 0.0575,
+                'to_be_deducted': '192.75',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 7048,
+                'marginal_rate': 0.1191,
+                'to_be_deducted': '608.80',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 20468,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '2937.46',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '3391.85',
+                'dependent_val': 21.43,
+            }),
+        ]"/>
+    </record>
+
+    <record id="married_unique_handicap_08_09_2025" model="irs.tax.table">
+        <field name="name">Married Unique - Handicap (01/08/2025 - 30/09/2025)</field>
+        <field name="code">married_unique_handicap</field>
+        <field name="date_start">2025-08-01</field>
+        <field name="date_end">2025-09-30</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 2325,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 3428,
+                'marginal_rate': 0.0231,
+                'to_be_deducted': '53.71',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 3689,
+                'marginal_rate': 0.0386,
+                'to_be_deducted': '106.85',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6687,
+                'marginal_rate': 0.088,
+                'to_be_deducted': '289.09',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20468,
+                'marginal_rate': 0.4244,
+                'to_be_deducted': '2538.60',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '3506.74',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+
+    <record id="married_unique_with_dependents_08_09_2025_H_C" model="irs.tax.table">
+        <field name="name">Casado, único titular - Pensões - Continente (01/08/2025 - 30/09/2025)</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2025-08-01</field>
+        <field name="date_end">2025-09-30</field>
+        <field name="income_locale">C</field>
+        <field name="category">H</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 870.0, 'marginal_rate': 0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 992.0, 'marginal_rate': 0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1063.0, 'marginal_rate': 0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1152.0, 'marginal_rate': 0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1502.0, 'marginal_rate': 0.0081, 'to_be_deducted': '9.34', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1852.0, 'marginal_rate': 0.0195, 'to_be_deducted': '26.47', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2273.0, 'marginal_rate': 0.022, 'to_be_deducted': '31.10', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3185.0, 'marginal_rate': 0.0419, 'to_be_deducted': '76.34', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3416.0, 'marginal_rate': 0.0647, 'to_be_deducted': '148.96', 'dependent_val': 0.0}),
+               (0, 0, {'value': 6085.0, 'marginal_rate': 0.1153, 'to_be_deducted': '321.81', 'dependent_val': 0.0}),
+               (0, 0, {'value': 18350.0, 'marginal_rate': 0.4293, 'to_be_deducted': '1120.64', 'dependent_val': 0.0}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.53, 'to_be_deducted': '2863.89', 'dependent_val': 0.0})]"/>
+    </record>
+
+    <record id="married_with_dependents_08_09_2025_H_C" model="irs.tax.table">
+        <field name="name">Não casado ou casado dois titulares - Pensões - Continente (01/08/2025 - 30/09/2025)</field>
+        <field name="code">married_with_dependents</field>
+        <field name="date_start">2025-08-01</field>
+        <field name="date_end">2025-09-30</field>
+        <field name="income_locale">C</field>
+        <field name="category">H</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 870.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 992.0, 'marginal_rate': 0.13, 'to_be_deducted': '0.13 * 2.6 * (1282.29 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1063.0, 'marginal_rate': 0.165, 'to_be_deducted': '0.165 * 1.35 * (1589.9 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1116.0, 'marginal_rate': 0.175, 'to_be_deducted': '128', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1214.0, 'marginal_rate': 0.25, 'to_be_deducted': '211.7', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1837.0, 'marginal_rate': 0.26, 'to_be_deducted': '223.84', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2074.0, 'marginal_rate': 0.325, 'to_be_deducted': '343.25', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2301.0, 'marginal_rate': 0.355, 'to_be_deducted': '405.47', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3398.0, 'marginal_rate': 0.435, 'to_be_deducted': '589.55', 'dependent_val': 0.0}),
+               (0, 0, {'value': 5833.0, 'marginal_rate': 0.45, 'to_be_deducted': '640.52', 'dependent_val': 0.0}),
+               (0, 0, {'value': 18332.0, 'marginal_rate': 0.505, 'to_be_deducted': '961.34', 'dependent_val': 0.0}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.53, 'to_be_deducted': '1419.64', 'dependent_val': 0.0})]"/>
+    </record>
+
+    <record id="married_with_dependents_10_12_2025" model="irs.tax.table">
+        <field name="name">Married With Dependents (01/10/2025 - 31/12/2025)</field>
+        <field name="code">married_with_dependents</field>
+        <field name="date_start">2025-10-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 870,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 992,
+                'marginal_rate': 0.125,
+                'to_be_deducted': '0.125 * 2.6 * (1205.71 - %%VALUE%%)',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1070,
+                'marginal_rate': 0.16,
+                'to_be_deducted': '0.16 * 1.35 * (1476.91 - %%VALUE%%)',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1136,
+                'marginal_rate': 0.16,
+                'to_be_deducted': '87.90',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1187,
+                'marginal_rate': 0.215,
+                'to_be_deducted': '150.38',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 1787,
+                'marginal_rate': 0.244,
+                'to_be_deducted': '184.81',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2078,
+                'marginal_rate': 0.314,
+                'to_be_deducted': '309.90',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2432,
+                'marginal_rate': 0.349,
+                'to_be_deducted': '382.63',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 3233,
+                'marginal_rate': 0.3836,
+                'to_be_deducted': '466.78',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 5547,
+                'marginal_rate': 0.3969,
+                'to_be_deducted': '509.78',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 20221,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '801.56',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1250.47',
+                'dependent_val': 21.43,
+            }),
+        ]"/>
+    </record>
+
+    <record id="not_married_and_dependents_10_12_2025" model="irs.tax.table">
+        <field name="name">Not Married and Dependents (01/10/2025 - 31/12/2025)</field>
+        <field name="code">not_married_and_dependents</field>
+        <field name="date_start">2025-10-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 870,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 992,
+                'marginal_rate': 0.125,
+                'to_be_deducted': '0.125 * 2.6 * (1205.71 - %%VALUE%%)',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1070,
+                'marginal_rate': 0.16,
+                'to_be_deducted': '0.16 * 1.35 * (1476.91 - %%VALUE%%)',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1136,
+                'marginal_rate': 0.16,
+                'to_be_deducted': '87.90',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1187,
+                'marginal_rate': 0.215,
+                'to_be_deducted': '150.38',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 1787,
+                'marginal_rate': 0.244,
+                'to_be_deducted': '184.81',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 2078,
+                'marginal_rate': 0.314,
+                'to_be_deducted': '309.90',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 2432,
+                'marginal_rate': 0.349,
+                'to_be_deducted': '382.63',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 3233,
+                'marginal_rate': 0.3836,
+                'to_be_deducted': '466.78',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 5547,
+                'marginal_rate': 0.3969,
+                'to_be_deducted': '509.78',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 20221,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '801.56',
+                'dependent_val': 34.29,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1250.47',
+                'dependent_val': 34.29,
+            }),
+        ]"/>
+    </record>
+
+    <record id="married_unique_with_dependents_10_12_2025" model="irs.tax.table">
+        <field name="name">Married Unique With Dependents (01/10/2025 - 31/12/2025)</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2025-10-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 957,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 992,
+                'marginal_rate': 0.125,
+                'to_be_deducted': '0.125 * 2.6 * (1325.49 - %%VALUE%%)',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1070,
+                'marginal_rate': 0.125,
+                'to_be_deducted': '0.125 * 1.35 * (1637.94 - %%VALUE%%)',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1081,
+                'marginal_rate': 0.125,
+                'to_be_deducted': '95.84',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1408,
+                'marginal_rate': 0.129,
+                'to_be_deducted': '100.17',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 1931,
+                'marginal_rate': 0.16,
+                'to_be_deducted': '143.82',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2200,
+                'marginal_rate': 0.1968,
+                'to_be_deducted': '214.89',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2698,
+                'marginal_rate': 0.2307,
+                'to_be_deducted': '289.47',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 3317,
+                'marginal_rate': 0.257,
+                'to_be_deducted': '360.43',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 5965,
+                'marginal_rate': 0.2933,
+                'to_be_deducted': '480.84',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20265,
+                'marginal_rate': 0.3843,
+                'to_be_deducted': '1023.66',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '2794.83',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+
+    <record id="not_married_and_handicap_no_dependents_10_12_2025" model="irs.tax.table">
+        <field name="name">Not Married Without Dependents - Handicap (01/10/2025 - 31/12/2025)</field>
+        <field name="code">not_married_and_handicap_no_dependents</field>
+        <field name="date_start">2025-10-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1694,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2032,
+                'marginal_rate': 0.215,
+                'to_be_deducted': '364.21',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2452,
+                'marginal_rate': 0.314,
+                'to_be_deducted': '565.38',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 4420,
+                'marginal_rate': 0.349,
+                'to_be_deducted': '651.20',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 4680,
+                'marginal_rate': 0.3836,
+                'to_be_deducted': '804.14',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 6687,
+                'marginal_rate': 0.3969,
+                'to_be_deducted': '866.39',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 20468,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1218.13',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1672.52',
+                'dependent_val': 0,
+            }),
+        ]"/>
+    </record>
+
+    <record id="not_married_handicap_with_dependents_10_12_2025" model="irs.tax.table">
+        <field name="name">Not Married With Dependents - Handicap (01/10/2025 - 30/12/2025)</field>
+        <field name="code">not_married_handicap_with_dependents</field>
+        <field name="date_start">2025-10-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1938,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2032,
+                'marginal_rate': 0.2158,
+                'to_be_deducted': '418.23',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 2813,
+                'marginal_rate': 0.314,
+                'to_be_deducted': '617.78',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 4438,
+                'marginal_rate': 0.349,
+                'to_be_deducted': '716.24',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6754,
+                'marginal_rate': 0.3836,
+                'to_be_deducted': '869.80',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 7048,
+                'marginal_rate': 0.3969,
+                'to_be_deducted': '959.63',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20468,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1330.36',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1784.75',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+
+    <record id="married_unique_handicap_10_12_2025" model="irs.tax.table">
+        <field name="name">Married Unique - Handicap (01/10/2025 - 31/12/2025)</field>
+        <field name="code">married_unique_handicap</field>
+        <field name="date_start">2025-10-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 2325,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 3428,
+                'marginal_rate': 0.2307,
+                'to_be_deducted': '536.38',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 3689,
+                'marginal_rate': 0.257,
+                'to_be_deducted': '626.54',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 6687,
+                'marginal_rate': 0.2933,
+                'to_be_deducted': '760.46',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 20468,
+                'marginal_rate': 0.4244,
+                'to_be_deducted': '1637.13',
+                'dependent_val': 42.86,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '2605.27',
+                'dependent_val': 42.86,
+            }),
+        ]"/>
+    </record>
+
+    <record id="married_handicap_with_dependents_10_12_2025" model="irs.tax.table">
+        <field name="name">Married With Dependents - Handicap (01/10/2025 - 31/12/2025)</field>
+        <field name="code">married_handicap_with_dependents</field>
+        <field name="date_start">2025-10-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="table_line_ids" eval="[(5, 0, 0),
+            (0, 0, {
+                'value': 1668,
+                'marginal_rate': 0,
+                'to_be_deducted': '0',
+                'dependent_val': 0,
+            }),
+            (0, 0, {
+                'value': 2043,
+                'marginal_rate': 0.2074,
+                'to_be_deducted': '345.95',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 2465,
+                'marginal_rate': 0.2440,
+                'to_be_deducted': '420.73',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 3067,
+                'marginal_rate': 0.3140,
+                'to_be_deducted': '593.28',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 4438,
+                'marginal_rate': 0.3490,
+                'to_be_deducted': '700.63',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 6754,
+                'marginal_rate': 0.3836,
+                'to_be_deducted': '854.19',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 7048,
+                'marginal_rate': 0.3969,
+                'to_be_deducted': '944.02',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 20468,
+                'marginal_rate': 0.4495,
+                'to_be_deducted': '1314.75',
+                'dependent_val': 21.43,
+            }),
+            (0, 0, {
+                'value': 99999999,
+                'marginal_rate': 0.4717,
+                'to_be_deducted': '1769.14',
+                'dependent_val': 21.43,
+            }),
+        ]"/>
+    </record>
+
+    <record id="married_unique_with_dependents_08_09_2025_H_C" model="irs.tax.table">
+        <field name="name">Casado, único titular - Pensões - Continente (01/08/2025 - 30/09/2025)</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2025-08-01</field>
+        <field name="date_end">2025-09-30</field>
+        <field name="income_locale">C</field>
+        <field name="category">H</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 870.0, 'marginal_rate': 0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 992.0, 'marginal_rate': 0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1063.0, 'marginal_rate': 0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1152.0, 'marginal_rate': 0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1502.0, 'marginal_rate': 0.0081, 'to_be_deducted': '9.34', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1852.0, 'marginal_rate': 0.0195, 'to_be_deducted': '26.47', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2273.0, 'marginal_rate': 0.022, 'to_be_deducted': '31.10', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3185.0, 'marginal_rate': 0.0419, 'to_be_deducted': '76.34', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3416.0, 'marginal_rate': 0.0647, 'to_be_deducted': '148.96', 'dependent_val': 0.0}),
+               (0, 0, {'value': 6085.0, 'marginal_rate': 0.1153, 'to_be_deducted': '321.81', 'dependent_val': 0.0}),
+               (0, 0, {'value': 18350.0, 'marginal_rate': 0.4293, 'to_be_deducted': '1120.64', 'dependent_val': 0.0}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.53, 'to_be_deducted': '2863.89', 'dependent_val': 0.0})]"/>
+    </record>
+
+    <record id="married_unique_with_dependents_10_12_2025_H_C" model="irs.tax.table">
+        <field name="name">Casado, único titular - Pensões - Continente (01/10/2025 - 31/12/2025)</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2025-10-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">C</field>
+        <field name="category">H</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 870.0, 'marginal_rate': 0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 992.0, 'marginal_rate': 0.1250, 'to_be_deducted': '0.125 * 2.6 * (1338.82 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1063.0, 'marginal_rate': 0.1250, 'to_be_deducted': '0.125 * 1.728 * (1516.20 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1152.0, 'marginal_rate': 0.1250, 'to_be_deducted': '97.90', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1502.0, 'marginal_rate': 0.1613, 'to_be_deducted': '139.72', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1852.0, 'marginal_rate': 0.1952, 'to_be_deducted': '190.64', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2273.0, 'marginal_rate': 0.2198, 'to_be_deducted': '236.20', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3185.0, 'marginal_rate': 0.2792, 'to_be_deducted': '371.22', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3416.0, 'marginal_rate': 0.3233, 'to_be_deducted': '511.68', 'dependent_val': 0.0}),
+               (0, 0, {'value': 6085.0, 'marginal_rate': 0.3296, 'to_be_deducted': '533.21', 'dependent_val': 0.0}),
+               (0, 0, {'value': 18350.0, 'marginal_rate': 0.4293, 'to_be_deducted': '1139.89', 'dependent_val': 0.0}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.53, 'to_be_deducted': '2987.74', 'dependent_val': 0.0})]"/>
+    </record>
+
+    <record id="married_with_dependents_10_12_2025_H_C" model="irs.tax.table">
+        <field name="name">Não casado ou casado dois titulares - Pensões - Continente (01/10/2025 - 31/12/2025)</field>
+        <field name="code">married_with_dependents</field>
+        <field name="date_start">2025-10-01</field>
+        <field name="date_end">2025-12-31</field>
+        <field name="income_locale">C</field>
+        <field name="category">H</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 870.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 992.0, 'marginal_rate': 0.125, 'to_be_deducted': '0.125 * 2.6 * (1282.54 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1063.0, 'marginal_rate': 0.16, 'to_be_deducted': '0.16 * 1.35 * (1591.00 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1116.0, 'marginal_rate': 0.16, 'to_be_deducted': '114.05', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1214.0, 'marginal_rate': 0.2150, 'to_be_deducted': '175.43', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1837.0, 'marginal_rate': 0.2440, 'to_be_deducted': '210.64', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2074.0, 'marginal_rate': 0.3140, 'to_be_deducted': '339.23', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2301.0, 'marginal_rate': 0.3490, 'to_be_deducted': '411.82', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3398.0, 'marginal_rate': 0.4310, 'to_be_deducted': '600.51', 'dependent_val': 0.0}),
+               (0, 0, {'value': 5833.0, 'marginal_rate': 0.4460, 'to_be_deducted': '651.48', 'dependent_val': 0.0}),
+               (0, 0, {'value': 18332.0, 'marginal_rate': 0.5050, 'to_be_deducted': '995.63', 'dependent_val': 0.0}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.53, 'to_be_deducted': '1453.93', 'dependent_val': 0.0})]"/>
+    </record>
+
+    <record id="l10n_pt_hr_payroll.married_with_dependents_2026" model="irs.tax.table">
+        <field name="name">Casado com dependentes (01/01/2026 - 31/12/2026)</field>
+        <field name="code">married_with_dependents</field>
+        <field name="date_start">2026-01-01</field>
+        <field name="date_end">2026-12-31</field>
+        <field name="income_locale">C</field>
+        <field name="category">A</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 920.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1042.0, 'marginal_rate': 0.125, 'to_be_deducted': '0.125 * 2.6 * (1273.85 - %%VALUE%%)', 'dependent_val': 21.43}),
+               (0, 0, {'value': 1108.0, 'marginal_rate': 0.157, 'to_be_deducted': '0.157 * 1.35 * (1554.83 - %%VALUE%%)', 'dependent_val': 21.43}),
+               (0, 0, {'value': 1154.0, 'marginal_rate': 0.157, 'to_be_deducted': '94.71', 'dependent_val': 21.43}),
+               (0, 0, {'value': 1212.0, 'marginal_rate': 0.212, 'to_be_deducted': '158.18', 'dependent_val': 21.43}),
+               (0, 0, {'value': 1819.0, 'marginal_rate': 0.241, 'to_be_deducted': '193.33', 'dependent_val': 21.43}),
+               (0, 0, {'value': 2119.0, 'marginal_rate': 0.311, 'to_be_deducted': '320.66', 'dependent_val': 21.43}),
+               (0, 0, {'value': 2499.0, 'marginal_rate': 0.349, 'to_be_deducted': '401.19', 'dependent_val': 21.43}),
+               (0, 0, {'value': 3305.0, 'marginal_rate': 0.3836, 'to_be_deducted': '487.66', 'dependent_val': 21.43}),
+               (0, 0, {'value': 5547.0, 'marginal_rate': 0.3969, 'to_be_deducted': '531.62', 'dependent_val': 21.43}),
+               (0, 0, {'value': 20221.0, 'marginal_rate': 0.4495, 'to_be_deducted': '823.40', 'dependent_val': 21.43}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.4717, 'to_be_deducted': '1272.31', 'dependent_val': 21.43})]"/>
+    </record>
+
+    <record id="l10n_pt_hr_payroll.not_married_and_dependents_2026" model="irs.tax.table">
+        <field name="name">Não casado com um ou mais dependentes (01/01/2026 - 31/12/2026)</field>
+        <field name="code">not_married_and_dependents</field>
+        <field name="date_start">2026-01-01</field>
+        <field name="date_end">2026-12-31</field>
+        <field name="income_locale">C</field>
+        <field name="category">A</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 920.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1042.0, 'marginal_rate': 0.125, 'to_be_deducted': '0.125 * 2.6 * (1273.85 - %%VALUE%%)', 'dependent_val': 34.29}),
+               (0, 0, {'value': 1108.0, 'marginal_rate': 0.157, 'to_be_deducted': '0.157 * 1.35 * (1554.83 - %%VALUE%%)', 'dependent_val': 34.29}),
+               (0, 0, {'value': 1154.0, 'marginal_rate': 0.157, 'to_be_deducted': '94.71', 'dependent_val': 34.29}),
+               (0, 0, {'value': 1212.0, 'marginal_rate': 0.212, 'to_be_deducted': '158.18', 'dependent_val': 34.29}),
+               (0, 0, {'value': 1819.0, 'marginal_rate': 0.241, 'to_be_deducted': '193.33', 'dependent_val': 34.29}),
+               (0, 0, {'value': 2119.0, 'marginal_rate': 0.311, 'to_be_deducted': '320.66', 'dependent_val': 34.29}),
+               (0, 0, {'value': 2499.0, 'marginal_rate': 0.349, 'to_be_deducted': '401.19', 'dependent_val': 34.29}),
+               (0, 0, {'value': 3305.0, 'marginal_rate': 0.3836, 'to_be_deducted': '487.66', 'dependent_val': 34.29}),
+               (0, 0, {'value': 5547.0, 'marginal_rate': 0.3969, 'to_be_deducted': '531.62', 'dependent_val': 34.29}),
+               (0, 0, {'value': 20221.0, 'marginal_rate': 0.4495, 'to_be_deducted': '823.40', 'dependent_val': 34.29}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.4717, 'to_be_deducted': '1272.31', 'dependent_val': 34.29})]"/>
+    </record>
+
+    <record id="l10n_pt_hr_payroll.married_unique_with_dependents_2026" model="irs.tax.table">
+        <field name="name">Casado. único titular (01/01/2026 - 31/12/2026)</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2026-01-01</field>
+        <field name="date_end">2026-12-31</field>
+        <field name="income_locale">C</field>
+        <field name="category">A</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 991.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1042.0, 'marginal_rate': 0.125, 'to_be_deducted': '0.125 * 2.6 * (1372.15 - %%VALUE%%)', 'dependent_val': 42.86}),
+               (0, 0, {'value': 1108.0, 'marginal_rate': 0.125, 'to_be_deducted': '0.125 * 1.35 * (1677.85 - %%VALUE%%)', 'dependent_val': 42.86}),
+               (0, 0, {'value': 1119.0, 'marginal_rate': 0.125, 'to_be_deducted': '96.17', 'dependent_val': 42.86}),
+               (0, 0, {'value': 1432.0, 'marginal_rate': 0.1272, 'to_be_deducted': '98.64', 'dependent_val': 42.86}),
+               (0, 0, {'value': 1962.0, 'marginal_rate': 0.157, 'to_be_deducted': '141.32', 'dependent_val': 42.86}),
+               (0, 0, {'value': 2240.0, 'marginal_rate': 0.1938, 'to_be_deducted': '213.53', 'dependent_val': 42.86}),
+               (0, 0, {'value': 2773.0, 'marginal_rate': 0.2277, 'to_be_deducted': '289.47', 'dependent_val': 42.86}),
+               (0, 0, {'value': 3389.0, 'marginal_rate': 0.257, 'to_be_deducted': '370.72', 'dependent_val': 42.86}),
+               (0, 0, {'value': 5965.0, 'marginal_rate': 0.2881, 'to_be_deducted': '476.12', 'dependent_val': 42.86}),
+               (0, 0, {'value': 20265.0, 'marginal_rate': 0.3843, 'to_be_deducted': '1049.96', 'dependent_val': 42.86}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.4717, 'to_be_deducted': '2821.13', 'dependent_val': 42.86})]"/>
+    </record>
+
+    <record id="l10n_pt_hr_payroll.not_married_and_handicap_no_dependents_2026" model="irs.tax.table">
+        <field name="name">Não casado ou casado dois titulares sem dependentes - Pessoa com deficiência (01/01/2026 - 31/12/2026)</field>
+        <field name="code">not_married_and_handicap_no_dependents</field>
+        <field name="date_start">2026-01-01</field>
+        <field name="date_end">2026-12-31</field>
+        <field name="income_locale">C</field>
+        <field name="category">A</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 1694.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2063.0, 'marginal_rate': 0.212, 'to_be_deducted': '359.13', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2492.0, 'marginal_rate': 0.311, 'to_be_deducted': '563.37', 'dependent_val': 0.0}),
+               (0, 0, {'value': 4487.0, 'marginal_rate': 0.349, 'to_be_deducted': '658.07', 'dependent_val': 0.0}),
+               (0, 0, {'value': 4753.0, 'marginal_rate': 0.3836, 'to_be_deducted': '813.33', 'dependent_val': 0.0}),
+               (0, 0, {'value': 6687.0, 'marginal_rate': 0.3969, 'to_be_deducted': '876.55', 'dependent_val': 0.0}),
+               (0, 0, {'value': 20468.0, 'marginal_rate': 0.4495, 'to_be_deducted': '1228.29', 'dependent_val': 0.0}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.4717, 'to_be_deducted': '1682.68', 'dependent_val': 0.0})]"/>
+    </record>
+
+    <record id="l10n_pt_hr_payroll.married_handicap_with_dependents_2026" model="irs.tax.table">
+        <field name="name">Casado com dependentes - Pessoa com deficiência (01/01/2026 - 31/12/2026)</field>
+        <field name="code">married_handicap_with_dependents</field>
+        <field name="date_start">2026-01-01</field>
+        <field name="date_end">2026-12-31</field>
+        <field name="income_locale">C</field>
+        <field name="category">A</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 1668.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2068.0, 'marginal_rate': 0.2049, 'to_be_deducted': '341.78', 'dependent_val': 21.43}),
+               (0, 0, {'value': 2497.0, 'marginal_rate': 0.2410, 'to_be_deducted': '416.44', 'dependent_val': 21.43}),
+               (0, 0, {'value': 3107.0, 'marginal_rate': 0.3110, 'to_be_deducted': '591.23', 'dependent_val': 21.43}),
+               (0, 0, {'value': 4504.0, 'marginal_rate': 0.3490, 'to_be_deducted': '709.30', 'dependent_val': 21.43}),
+               (0, 0, {'value': 6826.0, 'marginal_rate': 0.3836, 'to_be_deducted': '865.14', 'dependent_val': 21.43}),
+               (0, 0, {'value': 7048.0, 'marginal_rate': 0.3969, 'to_be_deducted': '955.93', 'dependent_val': 21.43}),
+               (0, 0, {'value': 20468.0, 'marginal_rate': 0.4495, 'to_be_deducted': '1326.66', 'dependent_val': 21.43}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.4717, 'to_be_deducted': '1781.05', 'dependent_val': 21.43})]"/>
+    </record>
+
+    <record id="l10n_pt_hr_payroll.married_unique_handicap_2026" model="irs.tax.table">
+        <field name="name">Casado. único titular - Pessoa com deficiência (01/01/2026 - 31/12/2026)</field>
+        <field name="code">married_unique_handicap</field>
+        <field name="date_start">2026-01-01</field>
+        <field name="date_end">2026-12-31</field>
+        <field name="income_locale">C</field>
+        <field name="category">A</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 2325.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3494.0, 'marginal_rate': 0.2277, 'to_be_deducted': '529.41', 'dependent_val': 42.86}),
+               (0, 0, {'value': 3761.0, 'marginal_rate': 0.257, 'to_be_deducted': '631.79', 'dependent_val': 42.86}),
+               (0, 0, {'value': 6687.0, 'marginal_rate': 0.2881, 'to_be_deducted': '748.76', 'dependent_val': 42.86}),
+               (0, 0, {'value': 20468.0, 'marginal_rate': 0.4244, 'to_be_deducted': '1660.2', 'dependent_val': 42.86}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.4717, 'to_be_deducted': '2628.34', 'dependent_val': 42.86})]"/>
+    </record>
+
+    <record id="l10n_pt_hr_payroll.married_unique_with_dependents_2026_H_C" model="irs.tax.table">
+        <field name="name">Não casado ou casado dois titulares - Pensões - Continente (01/01/2026 - 31/12/2026)</field>
+        <field name="code">married_with_dependents</field>
+        <field name="date_start">2026-01-01</field>
+        <field name="date_end">2026-12-31</field>
+        <field name="income_locale">C</field>
+        <field name="category">H</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 920.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1042.0, 'marginal_rate': 0.125, 'to_be_deducted': '0.125 * 2.6 * (1320.92 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1100.0, 'marginal_rate': 0.157, 'to_be_deducted': '0.157 * 1.35 * (1627.01 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1133.0, 'marginal_rate': 0.157, 'to_be_deducted': '111.70', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1239.0, 'marginal_rate': 0.212, 'to_be_deducted': '174.02', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1869.0, 'marginal_rate': 0.241, 'to_be_deducted': '209.96', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2114.0, 'marginal_rate': 0.311, 'to_be_deducted': '340.79', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2361.0, 'marginal_rate': 0.349, 'to_be_deducted': '421.13', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3462.0, 'marginal_rate': 0.431, 'to_be_deducted': '614.74', 'dependent_val': 0.0}),
+               (0, 0, {'value': 5833.0, 'marginal_rate': 0.446, 'to_be_deducted': '666.67', 'dependent_val': 0.0}),
+               (0, 0, {'value': 18332.0, 'marginal_rate': 0.505, 'to_be_deducted': '1010.82', 'dependent_val': 0.0}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.53, 'to_be_deducted': '1469.12', 'dependent_val': 0.0})]"/>
+    </record>
+
+    <record id="l10n_pt_hr_payroll.married_with_dependents_2026_H_C" model="irs.tax.table">
+        <field name="name">Casado. único titular - Pensões - Continente (01/01/2026 - 31/12/2026)</field>
+        <field name="code">married_unique_with_dependents</field>
+        <field name="date_start">2026-01-01</field>
+        <field name="date_end">2026-12-31</field>
+        <field name="income_locale">C</field>
+        <field name="category">H</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 920.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1042.0, 'marginal_rate': 0.125, 'to_be_deducted': '0.125 * 2.6 * (1381.69 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1100.0, 'marginal_rate': 0.125, 'to_be_deducted': '0.125 * 1.728 * (1553.11 - %%VALUE%%)', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1170.0, 'marginal_rate': 0.125, 'to_be_deducted': '97.88', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1526.0, 'marginal_rate': 0.159, 'to_be_deducted': '137.66', 'dependent_val': 0.0}),
+               (0, 0, {'value': 1884.0, 'marginal_rate': 0.1928, 'to_be_deducted': '189.24', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2314.0, 'marginal_rate': 0.2177, 'to_be_deducted': '236.16', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3245.0, 'marginal_rate': 0.2792, 'to_be_deducted': '378.48', 'dependent_val': 0.0}),
+               (0, 0, {'value': 3480.0, 'marginal_rate': 0.3233, 'to_be_deducted': '521.59', 'dependent_val': 0.0}),
+               (0, 0, {'value': 6085.0, 'marginal_rate': 0.3237, 'to_be_deducted': '522.99', 'dependent_val': 0.0}),
+               (0, 0, {'value': 18350.0, 'marginal_rate': 0.4293, 'to_be_deducted': '1165.57', 'dependent_val': 0.0}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.53, 'to_be_deducted': '3013.42', 'dependent_val': 0.0})]"/>
+    </record>
+
+    <record id="l10n_pt_hr_payroll.not_married_handicap_with_dependents_A_C_2026" model="irs.tax.table">
+        <field name="name">Não casado com um ou mais dependentes - Pessoa com deficiência (01/01/2026 - 31/12/2026)</field>
+        <field name="code">not_married_handicap_with_dependents</field>
+        <field name="date_start">2026-01-01</field>
+        <field name="date_end">2026-12-31</field>
+        <field name="income_locale">C</field>
+        <field name="category">A</field>
+        <field name="table_line_ids"
+               eval="[(5, 0, 0),
+               (0, 0, {'value': 1928.0, 'marginal_rate': 0.0, 'to_be_deducted': '0', 'dependent_val': 0.0}),
+               (0, 0, {'value': 2063.0, 'marginal_rate': 0.2132, 'to_be_deducted': '413.19', 'dependent_val': 42.86}),
+               (0, 0, {'value': 2854.0, 'marginal_rate': 0.3110, 'to_be_deducted': '614.96', 'dependent_val': 42.86}),
+               (0, 0, {'value': 4504.0, 'marginal_rate': 0.349, 'to_be_deducted': '723.42', 'dependent_val': 42.86}),
+               (0, 0, {'value': 6826.0, 'marginal_rate': 0.3836, 'to_be_deducted': '879.26', 'dependent_val': 42.86}),
+               (0, 0, {'value': 7048.0, 'marginal_rate': 0.3969, 'to_be_deducted': '970.05', 'dependent_val': 42.86}),
+               (0, 0, {'value': 20468.0, 'marginal_rate': 0.4495, 'to_be_deducted': '1340.78', 'dependent_val': 42.86}),
+               (0, 0, {'value': 99999999.0, 'marginal_rate': 0.4717, 'to_be_deducted': '1795.17', 'dependent_val': 42.86})]"/>
+    </record>
+
+</odoo>

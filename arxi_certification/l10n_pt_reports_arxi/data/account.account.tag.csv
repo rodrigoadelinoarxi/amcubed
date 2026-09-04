@@ -1,0 +1,13 @@
+id,name,applicability,country_id:id
+account_tag_fixed_assets,FC: Ativos Fixos,accounts,base.pt
+account_tag_intangible_assets,FC: Ativos Intangíveis,accounts,base.pt
+account_tag_investing_assets,FC: Investimentos Financeiros,accounts,base.pt
+account_tag_other_assets,FC: Outros Ativos,accounts,base.pt
+account_tag_investing_subsidies,FC: Subsídios ao Investimento,accounts,base.pt
+account_tag_interest,FC: Juros,accounts,base.pt
+account_tag_dividends,FC: Dividendos,accounts,base.pt
+account_tag_financing,FC: Financiamento,accounts,base.pt
+account_tag_capital,FC: Capital,accounts,base.pt
+account_tag_loss_coverage,FC: Cobertura de Perdas,accounts,base.pt
+account_tag_donations,FC: Doações,accounts,base.pt
+account_tag_other_financing,FC: Outras Operações de Financiamento,accounts,base.pt

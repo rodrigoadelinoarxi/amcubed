@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="seq_mbway_payment_number" model="ir.sequence">
+        <field name="name">MBWay Payment Number</field>
+        <field name="code">mbway.payment.number</field>
+        <field name="prefix">MBWPAY</field>
+        <field name="padding">6</field>
+        <field name="company_id" eval="False"/>
+        <field name="implementation">no_gap</field>
+    </record>
+
+    <record id="payment_acquirer_eupago_mbway" model="payment.provider">
+        <field name="name">EuPago MBWay</field>
+        <field name="image_128" type="base64" file="payment_eupago_mbway/static/src/img/mbway_icon.jpg"/>
+        <field name="code">eupago_mbway</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="inline_form_view_id" ref="payment_eupago_mbway.inline_form"/>
+        <field name="module_id" ref="base.module_payment_eupago_mbway"/>
+        <field name="payment_method_ids"
+               eval="[Command.set([
+                         ref('payment_eupago_mbway.payment_method_eupago_mbway'),
+                     ])]"
+        />
+    </record>
+
+    <record id="account_payment_method_eupago_mbway" model="account.payment.method">
+        <field name="name">EuPago MBWAY</field>
+        <field name="code">eupago_mbway</field>
+        <field name="payment_type">inbound</field>
+    </record>
+
+</odoo>

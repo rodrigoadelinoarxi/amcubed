@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="ss_regime_view_form" model="ir.ui.view">
+        <field name="name">ss.regime.form</field>
+        <field name="model">ss.regime</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="employer_rate"/>
+                            <field name="employee_rate"/>
+                        </group>
+                        <group></group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="ss_regime_view_tree" model="ir.ui.view">
+        <field name="name">ss.regime.tree</field>
+        <field name="model">ss.regime</field>
+        <field name="arch" type="xml">
+            <list string="Regimes">
+                <field name="name"/>
+                <field name="employer_rate"/>
+                <field name="employee_rate"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="ss_regime_action" model="ir.actions.act_window">
+        <field name="name">SS Regimes</field>
+        <field name="res_model">ss.regime</field>
+        <field name="view_mode">list,form</field>
+        <field name="target">current</field>
+    </record>
+
+    <menuitem id="ss_regime_menu" parent="hr_payroll.menu_hr_salary_configuration"
+              action="ss_regime_action"
+              sequence="30" groups="base.group_user"/>
+
+    <menuitem id="irs_tax_table_menu" parent="hr_payroll.menu_hr_salary_configuration"
+              action="irs_tax_table_action_window"
+              sequence="31" groups="base.group_user"/>
+</odoo>

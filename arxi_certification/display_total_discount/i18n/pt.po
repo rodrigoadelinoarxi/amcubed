@@ -1,0 +1,62 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* display_total_discount
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-21 14:00+0000\n"
+"PO-Revision-Date: 2025-07-21 14:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: display_total_discount
+#: model_terms:ir.ui.view,arch_db:display_total_discount.report_saleorder_document
+msgid "<span class=\"fw-bold\">Discount Value:</span>"
+msgstr "<span class=\"fw-bold\">Valor do Desconto:</span>"
+
+#. module: display_total_discount
+#: model:ir.model.fields,field_description:display_total_discount.field_account_move_line__line_discount_amount
+#: model:ir.model.fields,field_description:display_total_discount.field_sale_order_line__line_discount_amount
+msgid "Discount"
+msgstr "Desconto"
+
+#. module: display_total_discount
+#: model:ir.model,name:display_total_discount.model_account_move
+msgid "Journal Entry"
+msgstr "Lançamento em Diário"
+
+#. module: display_total_discount
+#: model:ir.model,name:display_total_discount.model_account_move_line
+msgid "Journal Item"
+msgstr "Item de Diário"
+
+#. module: display_total_discount
+#: model:ir.model.fields,field_description:display_total_discount.field_sale_order_line__price_subtotal_global
+msgid "Price Subtotal Global"
+msgstr ""
+
+#. module: display_total_discount
+#: model:ir.model.fields,field_description:display_total_discount.field_sale_order_line__price_subtotal_line_value
+msgid "Price Subtotal Line Value"
+msgstr ""
+
+#. module: display_total_discount
+#: model:ir.model,name:display_total_discount.model_sale_order
+msgid "Sales Order"
+msgstr "Ordem de Venda"
+
+#. module: display_total_discount
+#: model:ir.model,name:display_total_discount.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Linhas da Ordem de Venda"
+
+#. module: display_total_discount
+#: model:ir.model.fields,field_description:display_total_discount.field_account_move__global_discount_value
+msgid "Total Discounts"
+msgstr "Total Descontos"

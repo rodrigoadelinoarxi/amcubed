@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_move_form_eu_pago" model="ir.ui.view">
+        <field name="name">account.move.form.eu_pago</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+             <xpath expr="//field[@name='payment_reference']" position="after">
+                <field name="eu_pago_mbref"  invisible="move_type not in ('out_invoice')" readonly="state not in ['draft']"/>
+            </xpath>
+            <xpath expr="//button[@name='action_register_payment']" position="after">
+                <button name="action_create_mb_ref" type="object" class="oe_stat_button order-10"  invisible="state != 'posted' or payment_state not in ('not_paid', 'partial') or move_type not in ('out_invoice', 'out_refund', 'in_invoice', 'in_refund', 'out_receipt', 'in_receipt') or eu_pago_mbref == True " string="Create MB Ref" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

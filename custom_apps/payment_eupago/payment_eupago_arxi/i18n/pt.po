@@ -1,0 +1,112 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* payment_eupago
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-03 14:41+0000\n"
+"PO-Revision-Date: 2024-04-03 15:56+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: payment_eupago
+#. odoo-python
+#: code:addons/payment_eupago/payment_eupago_mbref/models/account_move.py:0
+#: code:addons/payment_eupago/payment_eupago_mbref_sale/models/sale.py:0
+#: code:addons/payment_eupago_mbref/models/account_move.py:0
+#: code:addons/payment_eupago_mbref_sale/models/sale.py:0
+#, python-format
+msgid "<p>ATM Details  <br/> Entity: %s <br/> Reference: %s <br/> Amount: %s %s</p>"
+msgstr ""
+
+#. module: payment_eupago
+#. odoo-python
+#: code:addons/payment_eupago/payment_eupago_arxi/models/payment_acquirer.py:0
+#: code:addons/payment_eupago_arxi/models/payment_acquirer.py:0
+#, python-format
+msgid "Create Payment"
+msgstr "Criar Pagamento"
+
+#. module: payment_eupago
+#. odoo-python
+#: code:addons/payment_eupago/payment_eupago_mbref/models/payment_acquirer.py:0
+#: code:addons/payment_eupago/payment_eupago_mbway/models/payment_acquirer.py:0
+#: code:addons/payment_eupago_mbref/models/payment_acquirer.py:0
+#: code:addons/payment_eupago_mbway/models/payment_acquirer.py:0
+#, python-format
+msgid "Error Eupago: Service down"
+msgstr ""
+
+#. module: payment_eupago
+#. odoo-python
+#: code:addons/payment_eupago/payment_eupago_mbref/models/payment_acquirer.py:0
+#: code:addons/payment_eupago/payment_eupago_mbway/models/payment_acquirer.py:0
+#: code:addons/payment_eupago_mbref/models/payment_acquirer.py:0
+#: code:addons/payment_eupago_mbway/models/payment_acquirer.py:0
+#, python-format
+msgid "Invalid amount! %s is the minimum amount."
+msgstr ""
+
+#. module: payment_eupago
+#. odoo-python
+#: code:addons/payment_eupago/payment_eupago_mbway/models/payment_acquirer.py:0
+#: code:addons/payment_eupago_mbway/models/payment_acquirer.py:0
+#, python-format
+msgid "Invalid reference! Please provide a valid nine digit reference."
+msgstr ""
+
+#. module: payment_eupago
+#. odoo-python
+#: code:addons/payment_eupago/payment_eupago_arxi/models/payment_acquirer.py:0
+#: code:addons/payment_eupago_arxi/models/payment_acquirer.py:0
+#, python-format
+msgid "Only Confirm Quotation"
+msgstr "Apenas Confirmar Ordem"
+
+#. module: payment_eupago
+#. odoo-python
+#: code:addons/payment_eupago/payment_eupago_arxi/models/payment_transaction.py:0
+#: code:addons/payment_eupago_arxi/models/payment_transaction.py:0
+#, python-format
+msgid "Outdated transaction"
+msgstr ""
+
+#. module: payment_eupago
+#. odoo-python
+#: code:addons/payment_eupago/payment_eupago_cc/models/payment_acquirer.py:0
+#: code:addons/payment_eupago/payment_eupago_mbref/models/payment_acquirer.py:0
+#: code:addons/payment_eupago/payment_eupago_mbway/models/payment_acquirer.py:0
+#: code:addons/payment_eupago_cc/models/payment_acquirer.py:0
+#: code:addons/payment_eupago_mbref/models/payment_acquirer.py:0
+#: code:addons/payment_eupago_mbway/models/payment_acquirer.py:0
+#, python-format
+msgid "Service down"
+msgstr ""
+
+#. module: payment_eupago
+#. odoo-python
+#: code:addons/payment_eupago/payment_eupago_cc/models/payment_acquirer.py:0
+#: code:addons/payment_eupago/payment_eupago_mbref/models/payment_acquirer.py:0
+#: code:addons/payment_eupago/payment_eupago_mbway/models/payment_acquirer.py:0
+#: code:addons/payment_eupago_cc/models/payment_acquirer.py:0
+#: code:addons/payment_eupago_mbref/models/payment_acquirer.py:0
+#: code:addons/payment_eupago_mbway/models/payment_acquirer.py:0
+#, python-format
+msgid "Service down. Please try again later."
+msgstr ""
+
+#. module: payment_eupago
+#. odoo-python
+#: code:addons/payment_eupago/payment_eupago_mbref/models/payment_acquirer.py:0
+#: code:addons/payment_eupago_mbref/models/payment_acquirer.py:0
+#, python-format
+msgid "The number of validity days must be between 0 and 30"
+msgstr ""

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><!-- Server Action to download multiple invoices (without payment) as ZIP --><record id="action_account_invoices_without_payment_zip" model="ir.actions.server"><field name="name">Invoices(ZIP)</field><field name="model_id" ref="account.model_account_move"/><field name="binding_model_id" ref="account.model_account_move"/><field name="binding_view_types">list</field><field name="state">code</field><field name="code">
+action = records.action_download_invoices_without_payment_zip()
+        </field></record></odoo>

@@ -1,0 +1,24 @@
+"id","code","name"
+"unique_report_table_27_01","101",Denúncia do empregador durante o período experimental
+"unique_report_table_27_02","102",Denúncia do trabalhador durante o período experimental
+"unique_report_table_27_03","103",Revogação do contrato de trabalho
+"unique_report_table_27_04","104",Despedimento por facto imputável ao trabalhador
+"unique_report_table_27_05","105",Despedimento coletivo
+"unique_report_table_27_06","106",Despedimento por extinção do posto de trabalho
+"unique_report_table_27_07","107",Despedimento por inadaptação
+"unique_report_table_27_08","108",Reforma por velhice
+"unique_report_table_27_09","109",Reforma por invalidez
+"unique_report_table_27_10","110",Outra causa de caducidade
+"unique_report_table_27_70","111",Resolução com justa causa por parte do trabalhador
+"unique_report_table_27_80","112",Denúncia com aviso prévio por parte do trabalhador
+"unique_report_table_27_113","113",Denúncia sem aviso prévio por parte do trabalhador
+"unique_report_table_27_114","114",Abandono do trabalho por parte do trabalhador
+"unique_report_table_27_115","115",Verificação do termo certo ou da sua renovação (só aplicável para contratos com termo certo)
+"unique_report_table_27_116","116",Verificação do termo incerto (só aplicável para contratos com termo incerto)
+"unique_report_table_27_117","117",Resultante da cessação do exercício de cargo ou atividade em comissão de serviço sempre que a mesma determine a cessação do contrato (só aplicável para contratos com termo)
+"unique_report_table_27_201","201",Pré-reforma com suspensão da prestação de trabalho
+"unique_report_table_27_202","202","Cedência ocasional de trabalhador por, pelo menos, um ano (só aplicável para contratos sem termo)"
+"unique_report_table_27_203","203",Licença sem retribuição por pelo menos um ano
+"unique_report_table_27_204","204","Suspensão do contrato de trabalho por doença ou outro impedimento do trabalhador durante, pelo menos, um ano"
+"unique_report_table_27_700","700","Transferência ocorrida no âmbito de uma transmissão de empresa ou estabelecimento nomeadamente, por trespasse, fusão, cisão, etc. (Artigo 285.º da Lei nº7/2009, de 12 de fevereiro)"
+"unique_report_table_27_800","800",Outro motivo de saída

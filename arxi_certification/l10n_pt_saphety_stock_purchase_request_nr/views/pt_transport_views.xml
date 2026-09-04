@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><!--Form view--><record id="pt_transport_view_form_purchase_request" model="ir.ui.view"><field name="name">pt.transport.view.form.purchase_request</field><field name="model">pt.transport</field><field name="inherit_id" ref="l10n_pt_stock.pt_transport_view_form"/><field name="arch" type="xml"><xpath expr="//field[@name='partner_id']" position="after"><field name="purchase_request_nr"/></xpath></field></record></odoo>

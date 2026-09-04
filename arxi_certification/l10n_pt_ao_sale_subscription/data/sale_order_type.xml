@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1"><record id="t_subscription" model="sale.order.type"><field name="code">SUB</field><field name="name">Subscription</field><field name="is_subscription">True</field><field name="sequence">100</field></record></odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<templates id="template" xml:space="preserve">
+	<t t-name="l10n_pt_ao.PaymentScreenButtonsDocumentType" t-inherit="point_of_sale.PaymentScreenButtons" t-inherit-mode="extension" owl="1">
+		<xpath expr="//button[hasclass('js_invoice')]" position="after">
+            <t t-if="currentOrder.to_invoice and currentOrder.is_pt_ao_country() and !currentOrder.isRefundDoc()">
+                <h6 class="title-category pt-3 pb-2 px-3 m-0 bg-view border-bottom border-2 d-flex justify-content-center align-items-center">Document Type</h6>
+                <button class="button invoice btn btn-light py-3 text-start rounded-0 border-bottom" t-att-class="{ 'highlight text-bg-primary': currentOrder.isNormalInvoice() }" t-on-click="toggleNormalInvoice">
+                    <i class="fa fa-file-text-o me-2"/>Normal Invoice
+                </button>
+                <button class="button simplified_invoice btn btn-light py-3 text-start rounded-0 border-bottom" t-att-class="{ 'highlight text-bg-primary': currentOrder.isSimplifiedInvoice() }" t-on-click="toggleSimplifiedInvoice">
+                    <i class="fa fa-file-text-o me-2"/>Simplified Invoice
+                </button>
+                <button class="button invoice_receipt btn btn-light py-3 text-start rounded-0 border-bottom" t-att-class="{ 'highlight text-bg-primary': currentOrder.isInvoiceReceipt() }" t-on-click="toggleInvoiceReceipt">
+                    <i class="fa fa-file-text-o me-2"/>Invoice Receipt
+                </button>
+            </t>
+		</xpath>
+	</t>
+</templates>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_payslip_form__l10n_pt_view_form" model="ir.ui.view">
+        <field name="name">hr.payslip.inherit.form</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+        <field name="priority">30</field>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_open_retroactive"
+                        type="object"
+                        class="oe_stat_button"
+                        icon="fa-exchange"
+                        invisible="retroactive_count == 0">
+                    <field name="retroactive_count" widget="statinfo" string="Retroactive"/>
+                </button>
+            </xpath>
+            <xpath expr="//page[@name='account_info']//field[@name='name']" position="after">
+                <field name="income_title"/>
+                <field name="income_locale" readonly="state not in ['draft', 'verify']" force_save="1"/>
+            </xpath>
+            <xpath expr="//button[@name='action_payslip_done']" position="before">
+                <button string="Confirm"
+                        name="action_confirm_slip"
+                        type="object"
+                        invisible="state not in ['verify']"
+                        class="btn-primary"/>
+            </xpath>
+            <xpath expr="//button[@name='action_payslip_done']" position="attributes">
+                <attribute name="invisible">state not in ['done']</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_print_payslip']" position="before">
+                <button name="action_payslip_send" string="Send by Email" type="object"
+                        invisible="state not in ['done', 'paid']"/>
+            </xpath>
+            <xpath expr="//button[@name='compute_sheet']" position="attributes">
+                <attribute name="string">Calculate</attribute>
+            </xpath>
+            <xpath expr="//button[@name='compute_sheet'][2]" position="attributes">
+                <attribute name="string">Recalculate</attribute>
+            </xpath>
+            <xpath expr="//button[@name='refund_sheet']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//button[@name='refund_sheet'][2]" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='line_ids']//field[@name='quantity']" position="attributes">
+                <attribute name="readonly">0</attribute>
+            </xpath>
+            <xpath expr="//field[@name='worked_days_line_ids']" position="attributes">
+                <attribute name="invisible">payslip_type == 'extraordinary'</attribute>
+            </xpath>
+            <xpath expr="//field[@name='worked_days_line_ids']//field[@name='amount']" position="attributes">
+                <attribute name="column_invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='worked_days_line_ids']//list" position="inside">
+                <field name="is_correction" column_invisible="1"/>
+                <field name="ref_date"/>
+            </xpath>
+            <xpath expr="//field[@name='worked_days_line_ids']//form//group" position="inside">
+                <field name="is_correction" invisible="1"/>
+                <field name="ref_date" invisible="0"/>
+            </xpath>
+            <xpath expr="//field[@name='worked_days_line_ids']" position="after">
+                <label string="Meal Allowance Days:" for="meal_allw_days"></label>
+                <field name="meal_allw_days"/>
+                <label string="Vacation Allowance Quantity:" for="vac_allw_qty"></label>
+                <field name="vac_allw_qty"/>
+                <label string="Christmas Allowance Quantity:" for="chr_allw_qty"></label>
+                <field name="chr_allw_qty"/>
+                <label for="not_used_vac_days" invisible="payslip_type != 'cease'"/>
+                <field name="not_used_vac_days" invisible="payslip_type != 'cease'"/>
+            </xpath>
+
+            <xpath expr="//label[@for='date_from']" position="before">
+                <field name="payslip_type" widget="radio" readonly="state not in ['draft', 'verify']"/>
+            </xpath>
+
+            <xpath expr="//field[@name='version_id']/parent::group" position="after">
+                <group>
+                    <group/>
+                    <group>
+                        <field name="contract_wage"/>
+                        <field name="contract_schedule_exemption" force_save="1"
+                               invisible="contract_schedule_exemption == 0"/>
+                        <field name="discount_amount"/>
+                        <field name="days_worked" readonly="state not in ['draft', 'verify']" force_save="1"/>
+                    </group>
+                </group>
+            </xpath>
+
+            <xpath expr="//label[@for='date_from']" position="before">
+                <label for="entries_date_from" string="Entries Period (From)"/>
+                <div>
+                    <field name="entries_date_from" class="oe_inline" readonly="state not in ['draft', 'verify']"/>
+                    -
+                    <field name="entries_date_to" class="oe_inline" readonly="state not in ['draft', 'verify']"/>
+                </div>
+            </xpath>
+            <xpath expr="//label[@for='date_from']" position="attributes">
+                <attribute name="string">Processing Period</attribute>
+            </xpath>
+        </field>
+    </record>
+    <record id="hr_payslip_input_type_view_search_l10n_pt_hr_payroll" model="ir.ui.view">
+        <field name="name">hr.payslip.input.type.view.search.l10n_pt_hr_payroll</field>
+        <field name="model">hr.payslip.input.type</field>
+        <field name="inherit_id" ref="hr_payroll.hr_payslip_input_type_view_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <field name="name"/>
+                <field name="code"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="hr_payslip_input_type_view_form_l10n_pt_hr_payroll" model="ir.ui.view">
+        <field name="name">hr.payslip.input.type.view.form.l10n_pt_hr_payroll</field>
+        <field name="model">hr.payslip.input.type</field>
+        <field name="inherit_id" ref="hr_payroll.hr_payslip_input_type_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='code']" position="after">
+                <field name="is_retroactive"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

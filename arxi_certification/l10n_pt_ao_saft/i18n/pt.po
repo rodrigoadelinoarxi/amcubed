@@ -1,0 +1,1079 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_ao_saft
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-15 08:39+0000\n"
+"PO-Revision-Date: 2025-04-15 08:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__account_ids
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move_line__account
+msgid "Account"
+msgstr "Conta"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard.py:0
+msgid "Account Groups: %s Created\n"
+msgstr "Grupos de Contas: %s Criados\n"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard.py:0
+msgid "Account Groups: %s Updated\n"
+msgstr "Grupos de Contas: %s Atualizados\n"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__tax_accounting_basis__c
+msgid "Accounting"
+msgstr "Contabilidade"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__is_import_accounts
+msgid "Accounting Accounts"
+msgstr "Contas Contabilísticas"
+
+#. module: l10n_pt_ao_saft
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Accounts"
+msgstr "Contas"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard.py:0
+msgid "Accounts: %s Created\n"
+msgstr "Contas: %s Criadas\n"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard.py:0
+msgid "Accounts: %s Updated\n"
+msgstr "Contas: %s Atualizadas\n"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__amount
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment_line__amount
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_tax__amount
+msgid "Amount"
+msgstr "Valor"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment_line__amount_company
+msgid "Amount Company"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__amount_company_currency_signed
+msgid "Amount Company Currency Signed"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__amount_paid
+msgid "Amount Paid"
+msgstr "Valor Pago"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__amount_total
+msgid "Amount Total"
+msgstr "Valor Total"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_tax__amount_type
+msgid "Amount Type"
+msgstr "Tipo de Valor"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_account__balance_credit
+msgid "Balance Credit"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_account__balance_debit
+msgid "Balance Debit"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_product__categ_id
+msgid "Category"
+msgstr "Categoria"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,help:l10n_pt_ao_saft.field_saft_import_wizard__is_import_documents
+msgid ""
+"Checks if saft import will import invoices and payments. If True, customers,"
+" and products are imported as needed"
+msgstr ""
+"Verifica se a importação do saft importará faturas. Se verdadeiro, os "
+"clientes e produtos são importados conforme necessário"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__city
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__city
+msgid "City"
+msgstr "Cidade"
+
+#. module: l10n_pt_ao_saft
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Close"
+msgstr "Fechar"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_account__code
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_journal__code
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_tax__code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__company_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_tax__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__company_currency_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__company_currency_id
+msgid "Company Currency"
+msgstr "Moeda da Empresa"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard_product__type__consu
+msgid "Consumable"
+msgstr "Consumível"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__country_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__country_code
+msgid "Country Code"
+msgstr "Código do País"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_account__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice_line__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_journal__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move_line__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment_line__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_product__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_tax__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_account__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice_line__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_journal__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move_line__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment_line__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_product__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_tax__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move_line__credit
+msgid "Credit"
+msgstr "Crédito"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard_invoice__type__out_refund
+msgid "Credit Note"
+msgstr "Nota de Crédito"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__curr
+msgid "Curr"
+msgstr "Moeda"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__currency_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__currency_id
+msgid "Currency"
+msgstr "Moeda"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__customer_ids
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__partner_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__partner_id
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__customer_ref
+msgid "Customer Ref"
+msgstr "Referência do Cliente"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__is_import_customers
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Customers"
+msgstr "Clientes"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard.py:0
+msgid "Customers: %s Created\n"
+msgstr "Clientes: %s Criados\n"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move__date
+msgid "Date"
+msgstr "Data"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__date_invoice
+msgid "Date Invoice"
+msgstr "Data da Fatura"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move_line__debit
+msgid "Debit"
+msgstr "Débito"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__journal_default_account_id
+msgid "Default Account"
+msgstr "Conta Predefinida"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_account__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice_line__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_journal__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move_line__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment_line__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_product__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_tax__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__doc_type
+msgid "Doc Type"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__document_type_id
+msgid "Document"
+msgstr "Documento"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__document_batch_size
+msgid "Document Batch Size"
+msgstr "Dimensão do Lote de Documentos"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__is_import_documents
+msgid "Documents"
+msgstr "Documentos"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard_invoice__import_status__no
+msgid "Don't Import"
+msgstr "Não Importar"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__email
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__email
+msgid "Email"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__encoding
+msgid "Encoding"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard_product__type__excise_duty
+msgid "Excise Duty Code"
+msgstr "Código de Imposto Especial"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_tax__exemption_code
+msgid "Exemption Code"
+msgstr "Código de Isenção"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_tax__exemption_reason
+msgid "Exemption Reason"
+msgstr "Motivo de Isenção"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__external_invoice
+msgid "External Invoice"
+msgstr "Fatura Externa"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__data
+msgid "File"
+msgstr "Ficheiro"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard_product__type__parafiscal_expenses
+msgid "Fiscal and parafiscal expenses"
+msgstr "Despesas Fiscais e Parafiscais"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__force_encoding
+msgid "Force Encoding"
+msgstr "Forçar Encoding"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_account__group_categ
+msgid "Group Categ"
+msgstr "Categoria de Grupo"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_account__group_code
+msgid "Group Code"
+msgstr "Código de Grupo"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__hash
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__hash
+msgid "Hash"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__hash_control
+msgid "Hash Control"
+msgstr "Controlo de Hash"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_account__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice_line__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_journal__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move_line__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment_line__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_product__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_tax__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard_invoice__import_status__import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Import"
+msgstr "Importar"
+
+#. module: l10n_pt_ao_saft
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Import Journals"
+msgstr "Importar Diários"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_journal__import_moves
+msgid "Import Moves"
+msgstr "Importar Movimentos"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__import_status
+msgid "Import Status"
+msgstr "Estado de Importação"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard.py:0
+msgid "Imported Data\n"
+msgstr "Dados Importados\n"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard_lines.py:0
+msgid "Incorrect values"
+msgstr "Valores Incorretos"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__tax_accounting_basis__i
+msgid "Integrated Accounting With Invoicing"
+msgstr "Contabilidade Integrada com Faturação"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_product__default_code
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__ref
+msgid "Internal Reference"
+msgstr "Referência Interna"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard_invoice__import_status__invoicing_legacy
+msgid "Invocing Legacy"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__invoice_ids
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__invoice_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice_line__invoice_id
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard_invoice__type__out_invoice
+msgid "Invoice"
+msgstr "Fatura"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment_line__invoice_date
+msgid "Invoice Date"
+msgstr "Data da Fatura"
+
+#. module: l10n_pt_ao_saft
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Invoice Journal"
+msgstr "Diário de Faturas"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__invoice_len
+msgid "Invoice Len"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__invoice_line_ids
+msgid "Invoice Line"
+msgstr "Linha de Fatura"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard_lines.py:0
+msgid ""
+"Invoice no. %(move)s doesn't match amount total values from the saf-t "
+"file.Original value: %(original)s.Computed value: %(computed)s."
+msgstr ""
+"Fatura n.º %(move)s não corresponde aos valores totais do ficheiro "
+"saf-t.Valor original: %(original)s.Valor calculado: %(computed)s."
+
+#. module: l10n_pt_ao_saft
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Invoices"
+msgstr "Faturas"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard.py:0
+msgid "Invoices: %s Created\n"
+msgstr "Faturas: %s Criadas\n"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__tax_accounting_basis__f
+msgid "Invoicing"
+msgstr "Faturação"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__invoicing_legacy
+msgid "Invoicing Legacy"
+msgstr "Faturas Legacy"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_account__is_update_or_create
+msgid "Is Update Or Create"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__journal_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__journal_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_journal__journal_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__journal_id
+msgid "Journal"
+msgstr "Diário"
+
+#. module: l10n_pt_ao_saft
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Journals"
+msgstr "Diários"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard.py:0
+msgid "Journals: %s Created\n"
+msgstr "Diários: %s Criados\n"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_account__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice_line__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_journal__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move_line__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment_line__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_product__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_tax__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_account__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice_line__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_journal__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move_line__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment_line__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_product__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_tax__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move__line_ids
+msgid "Line"
+msgstr "Linha"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__move_ids
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move__move_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move_line__move_id
+msgid "Move"
+msgstr "Movimento"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__move_len
+msgid "Move Len"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__is_import_moves
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Moves"
+msgstr "Movimentos"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard.py:0
+msgid "Moves: %s Created\n"
+msgstr "Movimentos: %s Criados\n"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_account__name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice_line__name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_journal__name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move__name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move_line__name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_product__name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__name
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_tax__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__net_total
+msgid "Net Total"
+msgstr "Líquido Total"
+
+#. module: l10n_pt_ao_saft
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Next"
+msgstr "Próximo"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard.py:0
+msgid "No File Selected"
+msgstr "Ficheiro Não Selecionado"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,help:l10n_pt_ao_saft.field_saft_import_wizard__document_batch_size
+msgid "Number of documents to be imported"
+msgstr "Número de documentos a serem importados"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice_line__origin
+msgid "Origin"
+msgstr "Origem"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment_line__origin_name
+msgid "Origin Name"
+msgstr "Nome da Origem"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard_product__type__other
+msgid "Other"
+msgstr "Outro"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__partner_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__partner_id
+msgid "Partner"
+msgstr "Cliente/Fornecedor"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__payment_ids
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__payment_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment_line__payment_id
+msgid "Payment"
+msgstr "Pagamento"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__payment_date
+msgid "Payment Date"
+msgstr "Data de Pagamento"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__payment_journal_id
+msgid "Payment Journal"
+msgstr "Diário de Pagamento"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__payment_len
+msgid "Payment Len"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__payment_line_ids
+msgid "Payment Line"
+msgstr "Linha de Pagamento"
+
+#. module: l10n_pt_ao_saft
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Payments"
+msgstr "Pagamentos"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard.py:0
+msgid "Payments: %s Created\n"
+msgstr "Pagamentos: %s Criados\n"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__phone
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__phone
+msgid "Phone"
+msgstr "Telefone"
+
+#. module: l10n_pt_ao_saft
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Previous"
+msgstr "Anterior"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice_line__price_unit
+msgid "Price Unit"
+msgstr "Preço Unitário"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__product_ids
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice_line__product_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_product__product_id
+msgid "Product"
+msgstr "Produto"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__is_import_products
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Products"
+msgstr "Produtos"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard.py:0
+msgid "Products: %s Created\n"
+msgstr "Produtos: %s Criados\n"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice_line__quantity
+msgid "Quantity"
+msgstr "Quantidade"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__rate_value
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__rate_value
+msgid "Rate Value"
+msgstr "Valor de Câmbio"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__reason
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice_line__reason
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__reason
+msgid "Reason"
+msgstr "Razão"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_account__record_to_import
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__record_to_import
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move__record_to_import
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_product__record_to_import
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__record_to_import
+msgid "Record To Import"
+msgstr "Registo a Importar"
+
+#. module: l10n_pt_ao_saft
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Records to Import"
+msgstr "Registos a Importar"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__ref
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move__ref
+msgid "Ref"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice_line__refund_invoice_number
+msgid "Refund Invoice Number"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_tax__region
+msgid "Region"
+msgstr "Região"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__result
+msgid "Result"
+msgstr "Resultado"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.actions.act_window,name:l10n_pt_ao_saft.saft_import_wizard_action
+#: model:ir.ui.menu,name:l10n_pt_ao_saft.saft_import_wizard_menu
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "SAF-T Import"
+msgstr "Importação SAF-T"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.ui.menu,name:l10n_pt_ao_saft.menu_saft_configuration
+msgid "Saft"
+msgstr "SAF-T"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__saft_date
+msgid "Saft Date"
+msgstr "Data SAF-T"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_account__saft_import_wizard_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__saft_import_wizard_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__saft_import_wizard_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_journal__saft_import_wizard_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move__saft_import_wizard_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move_line__saft_import_wizard_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__saft_import_wizard_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_product__saft_import_wizard_id
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__saft_import_wizard_id
+msgid "Saft Import Wizard"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__search_by_ref
+msgid "Search Partners by Reference"
+msgstr "Pesquisar Parceiros por Referência"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard_product__type__service
+msgid "Service"
+msgstr "Serviço"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard.py:0
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__is_import_balance
+msgid "Starting Balance"
+msgstr "Saldo Inicial"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__state
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__state
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__state
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__status_date
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_payment__status_date
+msgid "Status Date"
+msgstr "Data de Estado"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__street
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__street
+msgid "Street"
+msgstr "Rua"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__supplier_ids
+msgid "Supplier"
+msgstr "Fornecedor"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__is_import_suppliers
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Suppliers"
+msgstr "Fornecedores"
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard.py:0
+msgid "Suppliers: %s Created\n"
+msgstr "Fornecedores: %s Criados\n"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice_line__tax_id
+msgid "Tax"
+msgstr "Imposto"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__tax_accounting_basis
+msgid "Tax Accounting Basis"
+msgstr "Sistema Contabilístico"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__tax_payable
+msgid "Tax Payable"
+msgstr "Imposto a Pagar"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__tax_point_date
+msgid "Tax Point Date"
+msgstr "Data de disp. de Bens"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_tax__tax_type
+msgid "Tax Type"
+msgstr "Tipo de Imposto"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,help:l10n_pt_ao_saft.field_saft_import_wizard__payment_journal_id
+msgid "The accounting journal to be used for payments or receipts."
+msgstr ""
+"O diário de contabilidade a ser utilizado para pagamentos ou recebimentos."
+
+#. module: l10n_pt_ao_saft
+#. odoo-python
+#: code:addons/l10n_pt_ao_saft/wizard/saft_import_wizard.py:0
+msgid ""
+"This operation caused an error.\n"
+"%s"
+msgstr ""
+"Esta operação causou um erro.\n"
+"%s"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_invoice__type
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_product__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__vat
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__vat
+msgid "Vat"
+msgstr "NIF"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__website
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__website
+msgid "Website"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_saft.saft_import_wizard_view_form
+msgid "Which data to import?"
+msgstr "Que dados importar?"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_move__wizard_journal_id
+msgid "Wizard Journal"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard__journal_ids
+msgid "Wizard Journals_ids"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model,name:l10n_pt_ao_saft.model_saft_import_wizard_account
+msgid "Wizard for SAFT Import Account"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model,name:l10n_pt_ao_saft.model_saft_import_wizard_customer
+msgid "Wizard for SAFT Import Customer"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model,name:l10n_pt_ao_saft.model_saft_import_wizard_invoice
+msgid "Wizard for SAFT Import Invoice"
+msgstr "Assistente de Importação de Fatura de SAFT"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model,name:l10n_pt_ao_saft.model_saft_import_wizard_invoice_line
+msgid "Wizard for SAFT Import Invoice Line"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model,name:l10n_pt_ao_saft.model_saft_import_wizard_journal
+msgid "Wizard for SAFT Import Journal"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model,name:l10n_pt_ao_saft.model_saft_import_wizard_move_line
+msgid "Wizard for SAFT Import Move Lines"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model,name:l10n_pt_ao_saft.model_saft_import_wizard_move
+msgid "Wizard for SAFT Import Moves"
+msgstr "Wizard para Importação de Movimentos de SAFT"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model,name:l10n_pt_ao_saft.model_saft_import_wizard_payment
+msgid "Wizard for SAFT Import Payment"
+msgstr "Wizard para Importação de Pagamento de SAFT"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model,name:l10n_pt_ao_saft.model_saft_import_wizard_payment_line
+msgid "Wizard for SAFT Import Payment Line"
+msgstr "Wizard para Importação de Linha de Pagamento de SAFT"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model,name:l10n_pt_ao_saft.model_saft_import_wizard_product
+msgid "Wizard for SAFT Import Product"
+msgstr "Assistente de Importação de Artigo de SAFT"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model,name:l10n_pt_ao_saft.model_saft_import_wizard_supplier
+msgid "Wizard for SAFT Import Supplier"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model,name:l10n_pt_ao_saft.model_saft_import_wizard_tax
+msgid "Wizard for SAFT Import Tax"
+msgstr "Assistente de Importação de Imposto de SAFT"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model,name:l10n_pt_ao_saft.model_saft_import_wizard
+msgid "Wizard for SAFT-PT Import"
+msgstr "Assistente de Importação de SAF-T"
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_customer__zip
+#: model:ir.model.fields,field_description:l10n_pt_ao_saft.field_saft_import_wizard_supplier__zip
+msgid "Zip"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__encoding___jis
+msgid "_jis"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__encoding__big5
+msgid "big5"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__state__choose
+msgid "choose"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__state__confirm
+msgid "confirm"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__state__confirm_batch
+msgid "confirm batch"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard_tax__amount_type__fixed
+msgid "fixed"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__encoding__gb18030
+msgid "gb18030"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__state__get
+msgid "get"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__encoding__koir8_r
+msgid "koir8_r"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__encoding__latin1
+msgid "latin1"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__encoding__latin2
+msgid "latin2"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard_tax__amount_type__percent
+msgid "percent"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__encoding__shift
+msgid "shift"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__encoding__utf-16
+msgid "utf-16"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__encoding__utf-8
+msgid "utf-8"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__encoding__windows-1251
+msgid "windows-1251"
+msgstr ""
+
+#. module: l10n_pt_ao_saft
+#: model:ir.model.fields.selection,name:l10n_pt_ao_saft.selection__saft_import_wizard__encoding__windows-1252
+msgid "windows-1252"
+msgstr ""

@@ -1,0 +1,43 @@
+<odoo>
+    <record id="view_unique_report_table_tree" model="ir.ui.view">
+        <field name="name">unique.report.table.tree</field>
+        <field name="model">unique.report.table.mixin</field>
+        <field name="arch" type="xml">
+            <list string="Unique Report Table">
+                <field name="code"/>
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_unique_report_table_form" model="ir.ui.view">
+        <field name="name">unique.report.table.form</field>
+        <field name="model">unique.report.table.mixin</field>
+        <field name="arch" type="xml">
+            <form string="Unique Report Table">
+                <group>
+                    <field name="code"/>
+                    <field name="name"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_unique_report_table" model="ir.actions.act_window">
+        <field name="name">Unique Report Table</field>
+        <field name="res_model">unique.report.table.mixin</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_unique_report_table_search"/>
+    </record>
+
+    <record id="view_unique_report_table_search" model="ir.ui.view">
+        <field name="name">unique.report.table.search</field>
+        <field name="model">unique.report.table.mixin</field>
+        <field name="arch" type="xml">
+            <search string="Unique Report Table">
+                <field name="code"/>
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0"><!-- E-Fatura User Group --><record id="group_l10n_pt_efatura_user" model="res.groups"><field name="name">E-Fatura User</field><field name="category_id" ref="base.module_category_hidden"/><field name="comment">Users with access to E-Fatura features</field></record></odoo>

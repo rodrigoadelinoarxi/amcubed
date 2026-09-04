@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1"><!-- Hash Control Parameter --><record id="hash_control" model="ir.config_parameter"><field name="key">hash.control</field><field name="value">1</field></record><record id="atcud_initial_date" model="ir.config_parameter"><field name="key">atcud.initial.date</field><field name="value">2023-01-01</field></record></odoo>

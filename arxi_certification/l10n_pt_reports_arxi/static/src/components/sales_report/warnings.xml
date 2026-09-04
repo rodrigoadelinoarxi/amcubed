@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates><t t-name="l10n_pt_reports_arxi.sales_report_warning_negative_balance">
+        Some partners have a negative balance in the EC Sales report:
+        <br/>
+        <strong t-esc="warningParams.message"/>
+    </t></templates>

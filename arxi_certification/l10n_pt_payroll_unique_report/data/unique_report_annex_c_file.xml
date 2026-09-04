@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="unique_report_annex_c">
+        <relatorio_unico XML_DATA="3.2.13"
+                         xmlns="http://www.gep.msess.gov.pt/sguri/ru"
+                         xmlns:t="http://www.gep.msess.gov.pt/sguri/tipos_comuns"
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         xsi:schemaLocation="
+                     http://www.gep.msess.gov.pt/sguri/ru relatorio-rfc-3.2.13.xsd
+                     http://www.gep.msess.gov.pt/sguri/tipos_comuns tipos-comuns-1.3.13.xsd
+                     http://www.gep.msess.gov.pt/sguri/ru/anexo_rfc anexo-rfc-1.2.13.xsd">
+
+            <header>
+                <aplicacao>
+                    <nome>Odoo Relatório Único</nome>
+                    <versao>18.0</versao>
+                    <empresa>Arxi</empresa>
+                </aplicacao>
+            </header>
+
+            <body>
+                <anexos>
+                    <anexo_rfc xmlns="http://www.gep.msess.gov.pt/sguri/ru/anexo_rfc"
+                               XML_DATA="1.2.13"
+                               t-att-ano="o.reference_year"
+                               t-att-entidade="o.company_vat">
+
+                        <nome_entidade><t t-esc="o.company_name.strip()"/></nome_entidade>
+                        <exist_trabalhadores><t
+                                t-esc="'S' if o.had_employees_in_service else 'N'"/></exist_trabalhadores>
+
+                        <dados_rfc t-if="o.had_employees_in_service">
+                            <cae_31Dez tbl="RU_CAE_5DIG"><t t-esc="o.main_activity_cae.code"/></cae_31Dez>
+                            <t t-set="unique_formacoes" t-value="[]"/>
+                            <t t-set="formacao_index" t-value="1"/>
+
+                            <formacoes>
+                                <t t-foreach="o.annex_c_employee_training" t-as="form">
+                                    <t t-set="formacao_key"
+                                       t-value="(form.employee_training_area.code,
+                     form.employee_training_type.code,
+                     form.employee_training_entity.code,
+                     form.employee_training_qualification_level.code,
+                     int(form.employee_training_duration))"/>
+
+                                    <t t-if="formacao_key not in [f[0] for f in unique_formacoes]">
+                                        <t t-set="unique_formacoes"
+                                           t-value="unique_formacoes + [(formacao_key, formacao_index)]"/>
+
+                                        <formacao>
+                                            <area_educacao tbl="RU_AREAFORM"><t
+                                                    t-esc="form.employee_training_area.code"/></area_educacao>
+                                            <modalidade tbl="RU_MODAL"><t
+                                                    t-esc="form.employee_training_type.code"/></modalidade>
+                                            <duracao_accao><t
+                                                    t-esc="int(form.employee_training_duration)"/></duracao_accao>
+                                            <entidade_formadora tbl="RU_ENTFORM"><t
+                                                    t-esc="form.employee_training_entity.code"/></entidade_formadora>
+                                            <qualificacao tbl="RU_QUALIF"><t
+                                                    t-esc="form.employee_training_qualification_level.code"/></qualificacao>
+                                        </formacao>
+                                        <t t-set="formacao_index" t-value="formacao_index + 1"/>
+                                    </t>
+                                </t>
+                            </formacoes>
+                            <trabalhadores>
+                                <t t-set="seen_employees" t-value="[]"/>
+                                <t t-foreach="o.annex_c_employee_training" t-as="line">
+                                    <t t-if="line.employee_id.id not in seen_employees">
+                                        <t t-set="seen_employees" t-value="seen_employees + [line.employee_id.id]"/>
+
+                                        <trabalhador>
+                                            <ident_reg_apli tbl="RU_REREAP"><t t-esc="line.employee_ss_regimen.code"/></ident_reg_apli>
+                                            <niss><t t-esc="line.employee_niss"/></niss>
+                                            <nome><t t-esc="line.employee_id.name"/></nome>
+                                            <situacao_freq tbl="RU_SITFREQ"><t t-esc="line.employee_training_frequency.code"/></situacao_freq>
+
+                                            <registos>
+                                                <t t-foreach="o.annex_c_employee_training.filtered(lambda l: l.employee_id == line.employee_id)"
+                                                   t-as="training">
+                                                    <t t-set="formacao_key"
+                                                       t-value="(training.employee_training_area.code,
+                                 training.employee_training_type.code,
+                                 training.employee_training_entity.code,
+                                 training.employee_training_qualification_level.code,
+                                 int(training.employee_training_duration))"/>
+
+                                                    <t t-set="formacao_id"
+                                                       t-value="dict(unique_formacoes)[formacao_key]"/>
+
+                                                    <registo>
+                                                        <id_formacao_registo><t
+                                                                t-esc="formacao_id"/></id_formacao_registo>
+                                                        <iniciativa tbl="RU_INICIAT"><t
+                                                                t-esc="training.employee_training_initiative.code"/></iniciativa>
+                                                        <horario_formacao tbl="RU_HORFORM"><t
+                                                                t-esc="training.employee_training_schedule.code"/></horario_formacao>
+                                                        <diploma tbl="RU_DIPLOM"><t
+                                                                t-esc="training.employee_training_certificate_type.code"/></diploma>
+                                                        <periodos_ref>
+                                                            <periodo_ref tbl="RU_PEDREF"><t
+                                                                    t-esc="training.employee_training_ref_period.code"/></periodo_ref>
+                                                        </periodos_ref>
+                                                    </registo>
+                                                </t>
+                                            </registos>
+                                        </trabalhador>
+                                    </t>
+                                </t>
+                            </trabalhadores>
+                        </dados_rfc>
+                    </anexo_rfc>
+                </anexos>
+            </body>
+        </relatorio_unico>
+    </template>
+</odoo>

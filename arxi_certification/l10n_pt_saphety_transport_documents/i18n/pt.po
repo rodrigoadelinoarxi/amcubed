@@ -1,0 +1,46 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_saphety_transport_documents
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-03 11:33+0000\n"
+"PO-Revision-Date: 2025-02-03 11:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_saphety_transport_documents
+#: model:ir.model,name:l10n_pt_saphety_transport_documents.model_account_move
+msgid "Journal Entry"
+msgstr "Entrada do Diário"
+
+#. module: l10n_pt_saphety_transport_documents
+#: model:ir.model.fields,field_description:l10n_pt_saphety_transport_documents.field_account_bank_statement_line__related_transport_ids
+msgid "Related Transport"
+msgstr ""
+
+#. module: l10n_pt_saphety_transport_documents
+#: model:ir.model.fields,field_description:l10n_pt_saphety_transport_documents.field_account_move__slip_doc_confirmed
+msgid "Slip Confirmed"
+msgstr "Documento Confirmado"
+
+#. module: l10n_pt_saphety_transport_documents
+#: model:ir.model.fields,field_description:l10n_pt_saphety_transport_documents.field_account_move__slip_doc
+msgid "Slip Document Name"
+msgstr "Documento de Transporte"
+
+#. module: l10n_pt_saphety_transport_documents
+#: model_terms:ir.ui.view,arch_db:l10n_pt_saphety_transport_documents.invoice_form_inherit_l10n_pt_saphety_transport
+msgid "This Document has unconfirmed Transport Documents."
+msgstr "Este documento tem documentos de transporte não confirmados."
+
+#. module: l10n_pt_saphety_transport_documents
+#: model:ir.model.fields,field_description:l10n_pt_saphety_transport_documents.field_account_bank_statement_line__slip_warning
+msgid "Warning"
+msgstr ""

@@ -1,0 +1,2867 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_certificate
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-09 09:26+0000\n"
+"PO-Revision-Date: 2026-03-09 09:26+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid ""
+"%(name)s is an invalid format for the invoice number. EX: FT SERIES/0001"
+msgstr ""
+"%(name)s é um formato inválido para o número da fatura. EX: FT SERIES/0001"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_taxonomy.py:0
+msgid "%s (copy)"
+msgstr "%s (cópia)"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_tax.py:0
+msgid "- %(name)s in %(company)s"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "- %(partner)s (VAT: %(vat)s): %(error)s"
+msgstr "- %(partner)s (NIF: %(vat)s): %(error)s"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.qr_code_container_invoice
+msgid "- Processed by certified software no. 2790/AT"
+msgstr ""
+"- Processado por\n"
+"                    software\n"
+"                    certificado nº 2790/AT"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_code__1_1
+msgid "1.1"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_code__1_2
+msgid "1.2"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_code__11_3
+msgid "11.3"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_code__11_4
+msgid "11.4"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_code__22_1_2
+msgid "22.1.2"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:mail.template,body_html:l10n_pt_certificate.mail_template_saft_self_billing
+msgid ""
+"<div>\n"
+"                    Dear <t t-out=\"object.name or ''\">Partner</t>,<br/><br/"
+">\n"
+"                    Please find attached your SAF-T self-billing file for "
+"the period from\n"
+"                    <t t-out=\"ctx.get('date_start')\">2026-01-01</t> to\n"
+"                    <t t-out=\"ctx.get('date_end')\">2026-01-31</t>.<br/><br/"
+">\n"
+"                    Best regards,<br/>\n"
+"                    <t t-out=\"user.company_id.name or ''\">Company</t>\n"
+"                </div>\n"
+"            "
+msgstr ""
+"<div>\n"
+"                    Caro <t t-out=\"object.name or ''\">Partner</t>,<br/><br/"
+">\n"
+"                    Segue em anexo o seu ficheiro SAF-T de Autofaturação "
+"referente ao período de\n"
+"                    <t t-out=\"ctx.get('date_start')\">2026-01-01</t> a\n"
+"                    <t t-out=\"ctx.get('date_end')\">2026-01-31</t>.<br/><br/"
+">\n"
+"                    Obrigado,<br/>\n"
+"                    <t t-out=\"user.company_id.name or ''\">Company</t>\n"
+"                </div>\n"
+"            "
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\"/>"
+msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Valores aqui definidos são "
+"específicos por Empresa\"/>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid ""
+"<span class=\"mr16\" style=\"font-weight: bold; display: inline-block; "
+"margin-top: 32px; margin-bottom: 8px;\">Carried:</span>"
+msgstr ""
+"<span class=\"mr16\" style=\"font-weight: bold; display: inline-block; "
+"margin-top: 32px; margin-bottom: 8px;\">Transportado:</span>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+msgid "<span class=\"o_form_label\">Domestic Region</span>"
+msgstr "<span class=\"o_form_label\">Região Doméstica</span>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.update_tax_grid_wizard_form
+msgid "<span class=\"oe_inline o_form_label mx-3\"> to    </span>"
+msgstr "<span class=\"oe_inline o_form_label mx-3\"> até    </span>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+msgid "<span class=\"text-muted\">(using the TA Webservice)</span>"
+msgstr "<span class=\"text-muted\">(através do Webservice AT)</span>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid ""
+"<span>\n"
+"                                    Taxes\n"
+"                                </span>"
+msgstr ""
+"<span>\n"
+"                                    Impostos\n"
+"                                </span>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid ""
+"<span>\n"
+"                                    Unit Price\n"
+"                                </span>"
+msgstr ""
+"<span>\n"
+"                                    Preço Unitário\n"
+"                                </span>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "<span>Amount</span>"
+msgstr "<span>Montante</span>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "<span>Description</span>"
+msgstr "<span>Descrição</span>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "<span>Disc.%</span>"
+msgstr "<span>Desc.%</span>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "<span>Quantity</span>"
+msgstr "<span>Quantidade</span>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "<strong class=\"mr16\">Carrying:</strong>"
+msgstr "<strong class=\"mr16\">A Transportar:</strong>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "<strong>Carried:</strong>"
+msgstr "<strong>Transportado:</strong>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "<strong>Credit Note Date:</strong>"
+msgstr "<strong>Data da Nota de Crédito:</strong>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "<strong>Document Type:</strong>"
+msgstr "<strong>Tipo de Documento:</strong>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "<strong>Invoice Date:</strong>"
+msgstr "<strong>Data da Fatura:</strong>"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.actions.act_window,help:l10n_pt_certificate.l10n_pt_account_series_action
+msgid ""
+"A series is used to create a portuguese certified document numbering "
+"sequence."
+msgstr ""
+"Uma série é utilizada para criar uma sequência de numeração de documentos "
+"certificados portugueses."
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.external_layout_bold
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.external_layout_boxed
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.external_layout_bubble
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.external_layout_folder
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.external_layout_standard
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.external_layout_striped
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.external_layout_wave
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.qr_code_container_invoice
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.qr_code_container_payment
+msgid "ATCUD:"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_account
+msgid "Account"
+msgstr "Conta"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_group
+msgid "Account Group"
+msgstr "Grupo Contabilístico"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_income_location
+msgid "Account Income Location"
+msgstr "Localização de Conta de Rendimento"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_income_type
+msgid "Account Income Type"
+msgstr "Tipo de Contas de Rendimento"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_move_reversal
+msgid "Account Move Reversal"
+msgstr "Reversão de Movimento Contabilístico"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy__account_prefix_ids
+msgid "Account Prefix"
+msgstr "Prefixo de Conta"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_l10n_pt_account_series_wizard
+msgid "Account Series Action Assistant"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_taxonomy
+msgid "Account Taxonomy"
+msgstr "Taxonomia"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_taxonomy_prefix
+msgid "Account Taxonomy Prefix"
+msgstr "Prefixo de Taxonomia"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__saft_wizard__tax_accounting_basis__c
+msgid "Accounting"
+msgstr "Contabilidade"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_wizard__action_type
+msgid "Action Type"
+msgstr "Tipo de Ação"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.l10n_pt_account_series_view_form
+msgid "Activate"
+msgstr "Ativar"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+msgid "Activate to integrate with the Portuguese Tax Authority Webservice."
+msgstr ""
+"Ativar para integrar com o Webservice da Autoridade Tributária Portuguesa."
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy__active
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__active
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series__state__active
+msgid "Active"
+msgstr "Ativo"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+msgid "Add a QR-code to your PT documents."
+msgstr "Adicione o Código QR aos seus documentos PT."
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.actions.act_window,help:l10n_pt_certificate.l10n_pt_account_income_location_action
+#: model_terms:ir.actions.act_window,help:l10n_pt_certificate.l10n_pt_account_income_type_action
+msgid "Add a income type"
+msgstr "Adicionar um tipo de rendimento"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.actions.act_window,help:l10n_pt_certificate.l10n_pt_account_series_action
+msgid "Add a series"
+msgstr "Adicione uma série"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+msgid "Adds a QR Code to all portuguese certified documents"
+msgstr "Adiciona o Código QR a todos os documentos certificados portugueses"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__exp
+msgid "Agricultural export rebate"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__cap
+msgid "Agricultural levy"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__tac
+msgid "Alcohol mark tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__add
+msgid "Anti-dumping duty"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_journal__l10n_pt_transaction_type__a
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_move__l10n_pt_transaction_type__a
+msgid "Apuramento de Resultados"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.account_taxonomy_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.l10n_pt_account_series_view_form
+msgid "Archived"
+msgstr "Arquivado"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m01
+msgid "Article 16 (6) of the CIVA"
+msgstr "Artigo 16.º n.º 6 do CIVA"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m02
+msgid "Article 6 of the Decree-Law 189/90 June 19th"
+msgstr "Artigo 6.º do Decreto-Lei n.º 198/90, de 19 de Junho"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__res_company__qr_code_position__bottom
+msgid "At the bottom of the Page"
+msgstr "No Fundo da Página"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_bank_statement_line__atcud
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_import_wizard_invoice__atcud
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_import_wizard_payment__atcud
+msgid "Atcud"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:document.status.type,name:l10n_pt_certificate.status_s
+msgid "AutoInvoice"
+msgstr "Autofaturação"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series__series_type__a
+msgid "AutoInvoicing"
+msgstr "Autofaturação"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__saft_wizard__tax_accounting_basis__s
+msgid "Autofaturação"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_sequence_mixin
+msgid "Automatic sequence"
+msgstr "Sequência automática"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_tax.py:0
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__res_company__l10n_pt_country_region__pt-ac
+msgid "Azores"
+msgstr "Açores"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__asset_cash
+msgid "Bank and Cash"
+msgstr "Banco e Caixa"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__lac
+msgid "Business license fee"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series_wizard__action_type__cancel
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series__state__cancelled
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "Cancelled"
+msgstr "Anulado"
+
+#. module: l10n_pt_certificate
+#: model:document.status.type,name:l10n_pt_certificate.status_a
+msgid "Cancelled Document"
+msgstr "Documento Anulado"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series__reason_code__er
+msgid "Cancelled by registry error."
+msgstr "Cancelado por um erro de registo."
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__car
+msgid "Car tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m03
+msgid "Cash basis scheme"
+msgstr "Exigibilidade de caixa"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__document_type_category
+msgid "Category"
+msgstr "Categoria"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,help:l10n_pt_certificate.field_res_config_settings__l10n_pt_at_test
+msgid "Check to use the test endpoints (no official TA validation)"
+msgstr "Ative para utilizar o ambiente de testes (sem validação oficial da AT)"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,help:l10n_pt_certificate.field_res_company__l10n_pt_at_test
+msgid "Check to use the tests endpoint (no official AT validation)"
+msgstr "Ative para utilizar o ambiente de testes (sem validação oficial da AT)"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.account_series_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.saft_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.update_tax_grid_wizard_form
+msgid "Close"
+msgstr "Fechar"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_location__code
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_type__code
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy__code
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__aaf
+msgid "Coffee tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_company__commercial_registry
+msgid "Commercial Registry"
+msgstr "Conservatória"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,help:l10n_pt_certificate.field_res_company__commercial_registry
+msgid "Commercial Registry Office"
+msgstr "Conservatória"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/res_company.py:0
+msgid ""
+"Commercial Registry Office is invalid. Examples: \"LISBOA\" or \"VIANA DO "
+"CASTELO\""
+msgstr ""
+"A Conservatória é inválida. Exemplo: \"LISBOA\" ou \"VIANA DO CASTELO\""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "Commercial Registry is a required field"
+msgstr "Conservatória é um campo obrigatório"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__cst
+msgid "Commodity specific tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy__company_id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__company_id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_line__company_id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_webservice_mixin__company_id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__company_id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_update_tax_grid_wizard__company_ids
+msgid "Company"
+msgstr "Empresa"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "Company Registry is a required field"
+msgstr "O registo da empresa é um campo obrigatório"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/res_company.py:0
+msgid ""
+"Company registry is invalid. In most cases, it matchs the NIF. Eg: "
+"\"999999990\""
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_res_config_settings
+msgid "Config Settings"
+msgstr "Definições de Configuração"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.account_series_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.update_tax_grid_wizard_form
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m25
+msgid "Consigned goods"
+msgstr "Mercadorias à consignação"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__expense_direct_cost
+msgid "Cost of Revenue"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__cvd
+msgid "Countervailing duty"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_account__country_code
+msgid "Country Code"
+msgstr "Código de País"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_location__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_type__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy_prefix__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_line__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_update_tax_grid_wizard__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_location__create_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_type__create_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy__create_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy_prefix__create_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__create_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_line__create_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_update_tax_grid_wizard__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__liability_credit_card
+msgid "Credit Card"
+msgstr "Cartão de Crédito"
+
+#. module: l10n_pt_certificate
+#: model:account.document.type,name:l10n_pt_certificate.nota_credito
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "Credit Note"
+msgstr "Nota de Crédito"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__currency_id
+msgid "Currency"
+msgstr "Moeda"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__asset_current
+msgid "Current Assets"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__liability_current
+msgid "Current Liabilities"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__current_number
+msgid "Current Number"
+msgstr "Número Atual"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__equity_unaffected
+msgid "Current Year Earnings"
+msgstr "Rendimentos do ano atual"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+msgid "Customize the position of the QR Code in your Documents"
+msgstr "Ajuste a Posição do QR Code nos seus Documentos"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__cud
+msgid "Customs duty"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_update_tax_grid_wizard__date_from
+msgid "Date From"
+msgstr "Data de Início"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_move_line__date_month
+msgid "Date Month"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_update_tax_grid_wizard__date_to
+msgid "Date To"
+msgstr "Data de Fim"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_move_line__date_year
+msgid "Date Year"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.update_tax_grid_wizard_form
+msgid "Date from"
+msgstr "Data de início"
+
+#. module: l10n_pt_certificate
+#: model:account.document.type,name:l10n_pt_certificate.nota_debito
+msgid "Debit Note"
+msgstr "Nota de Débito"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__expense_depreciation
+msgid "Depreciation"
+msgstr "Depreciação"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_type__description
+msgid "Description"
+msgstr "Descrição"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_location__display_name
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_type__display_name
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy__display_name
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy_prefix__display_name
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__display_name
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_line__display_name
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_update_tax_grid_wizard__display_name
+msgid "Display Name"
+msgstr "Nome"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_l10n_pt_ao_account_mixin
+msgid "Document Certification Mixin"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__document_type_id
+msgid "Document Type"
+msgstr "Tipo de Documento"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+msgid "Domestic region country of your accounting"
+msgstr "Região doméstica da sua contabilidade"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series__state__done
+msgid "Done"
+msgstr "Finalizado"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series__state__draft
+msgid "Draft"
+msgstr "Rascunho"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/res_company.py:0
+msgid "ERROR: invalid zip code"
+msgstr "ERRO: código postal inválido"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid ""
+"Email status:\n"
+"%s"
+msgstr ""
+"Estado do e-mail:\n"
+"%s"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__date_end
+msgid "End Date"
+msgstr "Data de Fim"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "End date must be bigger than the start date"
+msgstr "A data de fim deve ser posterior à data de início"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__aae
+msgid "Energy fee"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_company__entity_type
+msgid "Entity Type"
+msgstr "Tipo de Entidade"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__env
+msgid "Environmental tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__equity
+msgid "Equity"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.saft_wizard_view_form
+msgid "Error"
+msgstr "Erro"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_payment_inherit
+msgid "Exchange rate:"
+msgstr "Taxa de câmbio:"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__exc
+msgid "Excise duty"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m16
+msgid "Exemption Article 14 of the RITI"
+msgstr "Isento Artigo 14.º do RITI"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m06
+msgid "Exemption Article 15 of the CIVA"
+msgstr "Isento Artigo 15.º do CIVA"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m07
+msgid "Exemption Article 9 of the CIVA"
+msgstr "Isento Artigo 9.º do CIVA"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "Exemption Codes"
+msgstr "Códigos de Isenção"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m10
+msgid "Exemption scheme"
+msgstr "Regime de Isenção"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__expense
+msgid "Expenses"
+msgstr "Despesas"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.saft_wizard_view_form
+msgid "Export"
+msgstr "Exportar"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__fet
+msgid "Federal excise tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__data
+msgid "File"
+msgstr "Ficheiro"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__name
+msgid "File Name"
+msgstr "Nome do Ficheiro"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__asset_fixed
+msgid "Fixed Assets"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series__in_name_of__ce
+msgid "Foreigner Acquirer"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series__in_name_of__fe
+msgid "Foreigner Supplier"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__fre
+msgid "Free"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__gcn
+msgid "General construction tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__get_all_selfbilling_partners
+msgid "Get All Selfbilling Partners"
+msgstr "Exportar todos os contactos de autofaturação"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__gst
+msgid "Goods and services tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_account__has_required_taxonomy
+msgid "Has Required Taxonomy"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_mixin.py:0
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid "Hash control not found"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_location__id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_type__id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy__id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy_prefix__id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_line__id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_wizard__id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_update_tax_grid_wizard__id
+msgid "ID"
+msgstr "Id."
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_code__irc
+msgid "IRC"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_code__irs
+msgid "IRS"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_type__iva
+msgid "IVA"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,help:l10n_pt_certificate.field_saft_wizard__get_all_selfbilling_partners
+msgid ""
+"If checked, all self-billing partners will be included in the SAF-T PT "
+"report."
+msgstr ""
+"Se ativo, todos os contactos de autofaturação serão incluídos no relatório "
+"SAF-T PT."
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,help:l10n_pt_certificate.field_saft_wizard__send_selfbilling_email
+msgid ""
+"If unchecked, the SAF-T file will be generated but no email will be sent."
+msgstr ""
+"Se desativado, o ficheiro SAF-T será gerado mas nenhum e-mail será enviado."
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__ill
+msgid "Illuminants tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_code__is
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_type__is
+msgid "Imp do Selo"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+msgid "Import Series"
+msgstr "Importar Séries"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__imp
+msgid "Import tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__in_name_of
+msgid "In Name Of"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__income
+msgid "Income"
+msgstr "Rendimento"
+
+#. module: l10n_pt_certificate
+#: model:ir.actions.act_window,name:l10n_pt_certificate.l10n_pt_account_income_location_action
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_bank_statement_line__income_location_id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_payment_register__income_location_id
+#: model:ir.ui.menu,name:l10n_pt_certificate.l10n_pt_income_location_menu
+msgid "Income Location"
+msgstr "Localização do Rendimento"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.actions.act_window,help:l10n_pt_certificate.l10n_pt_account_income_location_action
+msgid ""
+"Income Location is to be configured in the partner to fill PT model 10 "
+"report."
+msgstr ""
+"A Localização do Rendimento deve ser configurada no contacto para o "
+"preenchimento do Modelo 10 (PT)"
+
+#. module: l10n_pt_certificate
+#: model:ir.actions.act_window,name:l10n_pt_certificate.l10n_pt_account_income_type_action
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_bank_statement_line__income_type_id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_payment_register__income_type_id
+#: model:ir.ui.menu,name:l10n_pt_certificate.l10n_pt_income_type_menu
+msgid "Income Type"
+msgstr "Tipo de Rendimento"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.actions.act_window,help:l10n_pt_certificate.l10n_pt_account_income_type_action
+msgid ""
+"Income type is to be configured in the partner to fill PT model 10 report."
+msgstr ""
+"O Tipo de rendimento deve ser configurado no contacto para o preenchimento "
+"do Modelo 10 (PT)"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__ind
+msgid "Individual tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__initial_date
+msgid "Initial Date"
+msgstr "Data Inicial"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__initial_number
+msgid "Initial Number"
+msgstr "Numeração Inicial"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__saft_wizard__tax_accounting_basis__i
+msgid "Integrated Accounting With Invoicing"
+msgstr "Contabilidade Integrada com Faturação"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_code__int
+msgid "Intermédia"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid "Invalid prefix is different from the journal document type code."
+msgstr ""
+"O prefixo inválido é diferente do código do documento selecionado no diário."
+
+#. module: l10n_pt_certificate
+#: model:account.document.type,name:l10n_pt_certificate.fatura
+msgid "Invoice"
+msgstr "Fatura"
+
+#. module: l10n_pt_certificate
+#: model:account.document.type,name:l10n_pt_certificate.fatura_recibo
+msgid "Invoice-Receipt"
+msgstr "Fatura-Recibo"
+
+#. module: l10n_pt_certificate
+#: model:document.status.type,name:l10n_pt_certificate.status_f
+msgid "Invoiced Document"
+msgstr "Documento Faturado"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__saft_wizard__tax_accounting_basis__f
+msgid "Invoicing"
+msgstr "Faturação"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__invoicing_journal_id
+msgid "Invoicing Journal"
+msgstr "Diário de Faturação"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series__processing_mode__pi
+msgid "Invoicing Software"
+msgstr "Aplicação de Faturação"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_code__ise
+msgid "Isenta"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_journal
+msgid "Journal"
+msgstr "Diário"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_move
+msgid "Journal Entry"
+msgstr "Lançamento em Diário"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_move_line
+msgid "Journal Item"
+msgstr "Item no Diário"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_company__l10n_pt_country_region
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_config_settings__l10n_pt_country_region
+msgid "L10N Pt Country Region"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_payment_register__company_l10n_pt_income_register
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_company__l10n_pt_income_register
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_config_settings__l10n_pt_income_register
+msgid "L10N Pt Income Register"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_import_wizard_move__l10n_pt_transaction_type
+msgid "L10N Pt Transaction Type"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_wizard__last_document_number
+msgid "Last Document Number"
+msgstr "Número do Último Documento"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__last_number
+msgid "Last Number"
+msgstr "Último Número"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_location__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_type__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy_prefix__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_line__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_update_tax_grid_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última Atualização por"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_location__write_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_type__write_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy__write_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy_prefix__write_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__write_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_line__write_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_update_tax_grid_wizard__write_date
+msgid "Last Updated on"
+msgstr "Última Atualização em"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__ldp
+msgid "Light dues payable"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__line_ids
+msgid "Line"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__lcn
+msgid "Local construction tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__loc
+msgid "Local sales tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__lock_date
+msgid "Lock Date"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,help:l10n_pt_certificate.field_saft_wizard__lock_date
+msgid "Locks Accounting moves until the selected End Date."
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__lst
+msgid "Lust tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_tax.py:0
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__res_company__l10n_pt_country_region__pt-ma
+msgid "Madeira"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__res_company__l10n_pt_country_region__pt
+msgid "Mainland Portugal"
+msgstr "Portugal Continental"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__res_company__entity_type__m
+msgid "Microenterprise"
+msgstr "Microempresa"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__mcd
+msgid "Miscellaneous cash deposit"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "Missing Company Info: %s"
+msgstr "Informação da Empresa em Falta: %s"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "Missing email address"
+msgstr "Endereço de e-mail em falta"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "Missing email template"
+msgstr "Template de e-mail em falta"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__mca
+msgid "Monetary compensatory amount"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_journal__l10n_pt_transaction_type__j
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_move__l10n_pt_transaction_type__j
+msgid "Movimentos de Ajustamento"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_location__name
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_income_type__name
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy__name
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series__in_name_of__fn
+msgid "National Supplier"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "No invoices found for this invoicing period."
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "No self-billing partners found"
+msgstr "Não foram encontrados contactos de autofaturação"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid ""
+"No taxes found for this invoicing period. Are your taxes configured "
+"correctly?"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid ""
+"No valid SAF-T files could be generated. Please check the logs for details."
+msgstr ""
+"Não foi possível gerar ficheiros SAF-T válidos. Por favor, verifique os logs "
+"para mais detalhes."
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__asset_non_current
+msgid "Non-current Assets"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__liability_non_current
+msgid "Non-current Liabilities"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:document.status.type,name:l10n_pt_certificate.status_n
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_journal__l10n_pt_transaction_type__n
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_move__l10n_pt_transaction_type__n
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_code__nor
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series__series_type__n
+msgid "Normal"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m09
+msgid "Not allowed to deduct"
+msgstr "Não confere direito a dedução"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m99
+msgid "Not susceptible; not taxable"
+msgstr "Não sujeito; não tributado"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_code__na
+msgid "Não Aplicável"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_code__ns
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_type__ns
+msgid "Não sujeição a IVA ou IS"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__off_balance
+msgid "Off-Balance Sheet"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__res_company__qr_code_position__top
+msgid "On Top of the Page"
+msgstr "No Topo da Página"
+
+#. module: l10n_pt_certificate
+#: model:document.status.type,name:l10n_pt_certificate.status_t
+msgid "On behalf of third parties"
+msgstr "De terceiros"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_series.py:0
+msgid "Only one active series is allowed per document type, journal and year!"
+msgstr ""
+"Apenas é permitida uma série ativa por tipo de documento, diário e ano!"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series__processing_mode__om
+msgid "Other Electronic Mediums"
+msgstr "Outros Meios Eletrónicos"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__income_other
+msgid "Other Income"
+msgstr "Outros Rendimentos"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_special_tax__i
+msgid "Other Taxes"
+msgstr "Outros impostos"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m19
+msgid "Other exemptions"
+msgstr "Outras isenções"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__oth
+msgid "Other taxes"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_code__out
+msgid "Outros"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.view_tax_form
+msgid "PT Localization"
+msgstr "Localização PT"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_bank_statement_line__l10n_pt_transaction_type
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_journal__l10n_pt_transaction_type
+msgid "PT Transaction Type"
+msgstr "PT Tipo de Transação"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__coc
+msgid "Paper consortium tax (Italy)"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__partner_id
+msgid "Partner"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+msgid "Password"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_payment_register
+msgid "Pay"
+msgstr "Registar Pagamento"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__liability_payable
+msgid "Payable"
+msgstr "A pagar"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_payment_method_line
+msgid "Payment Methods"
+msgstr "Métodos de Pagamento"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid "Payment sequence not found."
+msgstr "Sequência de Pagamento não encontrada."
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_payment
+msgid "Payments"
+msgstr "Pagamentos"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__aaa
+msgid "Petroleum tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.ui.menu,name:l10n_pt_certificate.account_reports_pt_statements_menu
+#: model:ir.ui.menu,name:l10n_pt_certificate.menu_portugal_configuration
+msgid "Portugal"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_l10n_pt_account_series
+msgid "Portuguese Account Series"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_l10n_pt_account_series_line
+msgid "Portuguese Account Series Line"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.view_company_form
+msgid "Portuguese TA Webservice"
+msgstr "Webservice AT"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_l10n_pt_webservice_mixin
+msgid "Portuguese TA Webservice Mixin"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_tax__l10n_pt_tax_code
+msgid "Portuguese Tax Code"
+msgstr "Código de Imposto Português"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_tax.py:0
+msgid ""
+"Portuguese Tax System requires an exemption name and code for null taxes"
+msgstr ""
+"O Sistema Fiscal Português exige que os impostos nulos tenham um tipo e "
+"código de isenção."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_tax.py:0
+msgid "Portuguese Tax System requires special taxes to have a code."
+msgstr ""
+"O Sistema Fiscal Português exige que os impostos especiais tenham um código."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_tax.py:0
+msgid ""
+"Portuguese Tax System requires special taxes to have an unique code.This "
+"code should be unique between taxes and products."
+msgstr ""
+"O Sistema Fiscal Português exige que os impostos especiais tenham um código "
+"único.Este código deve ser único entre impostos e artigos."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_tax.py:0
+msgid ""
+"Portuguese Tax System requires taxes to have a defined type, code and "
+"country region"
+msgstr ""
+"O Sistema Fiscal Português exige que os impostos tenham um código, tipo e "
+"região definidos."
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_tax__l10n_pt_tax_type
+msgid "Portuguese Tax Type"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.qr_code_container_payment
+msgid "Posted by certified software no. 2790/AT"
+msgstr "Publicado pelo software certificado nº 2790/AT"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__prf
+msgid "Preference duty"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy_prefix__name
+msgid "Prefix"
+msgstr "Prefixo"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__asset_prepayments
+msgid "Prepayments"
+msgstr "Pré-Pagamentos"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid "Private key not found to sign documents."
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.qr_code_container_payment
+msgid ""
+"Processed\n"
+"                        by\n"
+"                        certified\n"
+"                        software no. 2790/AT"
+msgstr ""
+"Processado\n"
+"                        por\n"
+"                        software\n"
+"                        certificado nº 2790/AT"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__processing_mode
+msgid "Processing Mode"
+msgstr "Modo de Processamento"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_product_template
+msgid "Product"
+msgstr "Artigo"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_uom_uom
+msgid "Product Unit of Measure"
+msgstr "Unidade de Medida de Artigo"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m14
+msgid "Profit margin scheme – Art objects"
+msgstr "Regime da margem de lucro - Objetos de arte"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m15
+msgid "Profit margin scheme – Collectibles and antiques"
+msgstr "Regime da margem de lucro - Objetos de coleção e antiguidades"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m13
+msgid "Profit margin scheme – Second-hand goods"
+msgstr "Regime da margem de lucro - Bens em segunda mão"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m12
+msgid "Profit margin scheme – Travel agencies"
+msgstr "Regime da margem de lucro - Agências de Viagens"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__aac
+msgid "Provisional countervailing duty bond"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__aab
+msgid "Provisional countervailing duty cash"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__pdb
+msgid "Provisional duty bond"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__pdc
+msgid "Provisional duty cash"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_config_settings__qr_code_pt
+msgid "QR Code (PT)"
+msgstr "Código QR PT"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_company__qr_code_pt
+msgid "QR Code PT"
+msgstr "Código QR PT"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+msgid "QR Code Position"
+msgstr "Posição QR Code"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_bank_statement_line__qr_code
+msgid "Qr Code"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_bank_statement_line__qr_code_position
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_company__qr_code_position
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_config_settings__qr_code_position
+msgid "Qr Code Position"
+msgstr "Posição QR Code"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__reason
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_wizard__reason
+msgid "Reason"
+msgstr "Motivo"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__reason_code
+msgid "Reason Code"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_taxonomy__account_type__asset_receivable
+msgid "Receivable"
+msgstr "A Receber"
+
+#. module: l10n_pt_certificate
+#: model:account.document.type,name:l10n_pt_certificate.recibo
+msgid "Recibo"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series__series_type__r
+msgid "Recovery"
+msgstr "Recuperação"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_line__reference
+msgid "Reference"
+msgstr "Referência"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_journal__l10n_pt_transaction_type__r
+msgid "Regularizações do Período de Tributação"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_payment_register__required_withholding_tax_fields
+msgid "Required Withholding Tax Fields"
+msgstr "Campos obrigatórios de Impostos de Retenção"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_line__res_id
+msgid "Resource ID"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_line__res_model
+msgid "Resource Model"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_line__res_name
+msgid "Resource Name"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__result
+msgid "Result"
+msgstr "Resultado"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m08
+msgid "Reverse Charge"
+msgstr "Autoliquidação"
+
+#. module: l10n_pt_certificate
+#: model:mail.template,name:l10n_pt_certificate.mail_template_saft_self_billing
+msgid "SAF-T Self-Billing"
+msgstr "SAF-T Autofaturação"
+
+#. module: l10n_pt_certificate
+#: model:mail.template,subject:l10n_pt_certificate.mail_template_saft_self_billing
+msgid ""
+"SAF-T Self-Billing File - {{ ctx.get('date_start') }} to {{ ctx."
+"get('date_end') }}"
+msgstr ""
+"Ficheiro SAF-T de Autofaturação - {{ ctx.get('date_start') }} a {{ ctx."
+"get('date_end') }}"
+
+#. module: l10n_pt_certificate
+#: model:ir.actions.act_window,name:l10n_pt_certificate.saft_wizard_action
+#: model:ir.ui.menu,name:l10n_pt_certificate.saft_wizard_menu
+msgid "SAFT-PT Export"
+msgstr "Exportar SAFT-PT"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "Self-Billing"
+msgstr "Autofaturação"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "Self-billing partner is required."
+msgstr "O contacto de autofaturação é obrigatório."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "Self-billing partner must be located in Portugal."
+msgstr "O contacto de autofaturação deve ter como país Portugal."
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__selfbilling_partner_id
+msgid "Selfbilling Partner"
+msgstr "Parceiro de Autofaturação"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__send_selfbilling_email
+msgid "Send email"
+msgstr "Enviar por e-mail"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_line__sequence_number
+msgid "Sequence Number"
+msgstr "Número de Sequência"
+
+#. module: l10n_pt_certificate
+#: model:ir.actions.act_window,name:l10n_pt_certificate.l10n_pt_account_series_action
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_line__series_id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series_wizard__series_id
+#: model:ir.ui.menu,name:l10n_pt_certificate.l10n_pt_account_series_menu
+msgid "Series"
+msgstr "Séries"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__series_type
+msgid "Series Type"
+msgstr "Tipo de Série"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_series.py:0
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series_wizard__action_type__set_done
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.l10n_pt_account_series_view_form
+msgid "Set as Done"
+msgstr "Finalizar"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__sss
+msgid "Shifted social securities"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__swt
+msgid "Shifted wage tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.document.type,name:l10n_pt_certificate.fatura_simplificada
+msgid "Simplified Invoice"
+msgstr "Fatura Simplificada"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__res_company__entity_type__s
+msgid "Small, Medium-sized or Large Enterprise"
+msgstr "Pequena, Média ou Grande Empresa"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_special_tax__e
+msgid "Special Consumer Taxes"
+msgstr "Impostos Especiais de Consumidor"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_tax__l10n_pt_special_tax
+msgid "Special Tax"
+msgstr "Imposto Especial"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_tax__l10n_pt_special_tax_code
+msgid "Special Tax Code"
+msgstr "Código de Imposto Especial"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__scn
+msgid "Special construction tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__bol
+msgid "Stamp duty"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__date_start
+msgid "Start Date"
+msgstr "Data de Início"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__state
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__stt
+msgid "State/provincial sales tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__state
+msgid "Status"
+msgstr "Estado"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_bank_statement_line__status_date_pt
+msgid "Status Date (PT)"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_series.py:0
+msgid "Success"
+msgstr "Sucesso"
+
+#. module: l10n_pt_certificate
+#: model:document.status.type,name:l10n_pt_certificate.status_r
+msgid "Summary document"
+msgstr "Sumário de documento"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__sur
+msgid "Surtax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__sup
+msgid "Suspended duty"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_bank_statement_line__validated_date_pt
+msgid "System Entry Date (PT)"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid "System Entry Date not found."
+msgstr "Data de Entrada no Sistema não encontrada."
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_company__l10n_pt_at_webservice
+msgid "TA Webservice Communication"
+msgstr "Comunicação Webservice AT"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_config_settings__l10n_pt_at_webservice
+msgid "TA Webservice Communication (PT)"
+msgstr "Comunicação Webservice AT"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_company__l10n_pt_at_api_password
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_config_settings__l10n_pt_at_api_password
+msgid "TA Webservice Password"
+msgstr "Password Webservice AT"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_company__l10n_pt_at_test
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_config_settings__l10n_pt_at_test
+msgid "TA Webservice Test Environment"
+msgstr "Ambiente de Testes Webservice AT"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_company__l10n_pt_at_api_username
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_res_config_settings__l10n_pt_at_api_username
+msgid "TA Webservice Username"
+msgstr "Utilizador Webservice AT"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_tax
+msgid "Tax"
+msgstr "Imposto"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_wizard__tax_accounting_basis
+msgid "Tax Accounting Basis"
+msgstr "Sistema Contabilístico"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series__processing_mode__pf
+msgid "Tax Authority Portal"
+msgstr "Portal das Finanças"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_tax__country_region
+msgid "Tax Country Region"
+msgstr "País ou Região do Imposto"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__partner_vat
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document_self_billing
+msgid "Tax ID"
+msgstr "NIF"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_tax_repartition_line
+msgid "Tax Repartition Line"
+msgstr "Linha de repartição de imposto"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_tax.py:0
+msgid "Tax names must be unique!"
+msgstr "O nome dos impostos deve ser único!"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__l10n_pt_tax_code__red
+msgid "Taxa Reduzida"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.actions.act_window,name:l10n_pt_certificate.account_taxonomy_action
+#: model:ir.ui.menu,name:l10n_pt_certificate.account_taxonomy_menu_action
+msgid "Taxonomies"
+msgstr "Taxonomias"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_account__taxonomy_id
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy_prefix__taxonomy_id
+msgid "Taxonomy"
+msgstr "Taxonomia"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_saft_import_wizard_account__taxonomy_code
+msgid "Taxonomy Code"
+msgstr "Código Taxonomia"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+msgid "Test Environment"
+msgstr "Ambiente de Testes"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,help:l10n_pt_certificate.field_l10n_pt_account_series__partner_vat
+msgid ""
+"The Tax Identification Number. Values here will be validated based on the "
+"country format. You can use '/' to indicate that the partner is not subject "
+"to tax."
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.constraint,message:l10n_pt_certificate.constraint_l10n_pt_account_series_code_uniq
+msgid "The code must be unique per document type, company and partner!"
+msgstr "O código deve ser único por tipo de documento, empresa e contacto!"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid "The code sequence on ATCUD is different from the Invoice sequence"
+msgstr "O código de sequência do ATCUD é diferente da sequência da Fatura"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_payment.py:0
+msgid "The code sequence on ATCUD is different from the Payment sequence"
+msgstr "O código de sequência do ATCUD é diferente da sequência do Pagamento"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+#: code:addons/l10n_pt_certificate/models/account_payment.py:0
+msgid ""
+"The date of the document must be equal or after the series initial date (%s)"
+msgstr ""
+"A data do Documento deve ser igual ou superior à data inicial da Série (%s)"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "The following partners had errors:\n"
+msgstr "Os contactos seguintes têm erros:\n"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_series.py:0
+msgid "The invoicing journal is required for this document type."
+msgstr "O Diário de Faturação é obrigatório para este Tipo de Documento."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid "There must be one VAT tax per line."
+msgstr "Deve existir um e apenas um imposto de IVA por linha."
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,help:l10n_pt_certificate.field_account_taxonomy__account_type
+msgid ""
+"These types are defined according to your country.The type contains more "
+"information about the account and its specificities."
+msgstr ""
+"Estes tipos são definidos de acordo com o seu país. O tipo contém mais "
+"informações sobre a conta e as suas especificidades."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "This operation caused an error"
+msgstr "Esta operação causou um erro"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_tax.py:0
+msgid ""
+"This tax is being used in some documents, therefore you cannot modify its "
+"values"
+msgstr ""
+"Este imposto está a ser utilizado em alguns documentos, portanto não pode "
+"modificar os seus valores"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m11
+msgid "Tobacco specific scheme"
+msgstr "Regime particular do tabaco"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__aad
+msgid "Tobacco tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__tta
+msgid "Tonnage taxes"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__tot
+msgid "Total"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__l10n_pt_account_series__series_type__f
+msgid "Training"
+msgstr "Formação"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__tox
+msgid "Turnover tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_taxonomy__account_type
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.view_tax_form
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.view_tax_form
+msgid "UN/ECE"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,help:l10n_pt_certificate.field_account_tax__unece_tax_type
+msgid "UN/ECE 5153 (Duty or tax or fee type name code)"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.uom_uom_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.uom_uom_tree
+msgid "UN/ECE Rec"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.view_tax_form
+msgid "UN/ECE Type"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,help:l10n_pt_certificate.field_uom_uom__unece_code
+msgid "UNECERec20 (UN/ECE Recommandation 20)"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_series.py:0
+msgid ""
+"Unable to create series. For \"National Supplier\", the partner must be "
+"located in Portugal."
+msgstr ""
+"Não foi possível criar a série. Para \"Fornecedor Nacional\", o contacto "
+"deveter como país Portugal."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_series.py:0
+msgid "Unable to create series. Please set a partner with a valid VAT number."
+msgstr ""
+"Não foi possível criar a série. Por favor defina um contacto com NIF válido"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_series.py:0
+msgid ""
+"Unable to create series. There is already an active series (%s) for this "
+"partner and document type."
+msgstr ""
+"Não foi possível criar a série. Já existe uma série ativa (%s) para este "
+"contacto e tipo de documento."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_series.py:0
+msgid "Unable to create series. Webservice AT is not active."
+msgstr "Não é possível criar a série. O Webservice AT não está ativado."
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_uom_uom__unece_code
+msgid "Unece Code"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_tax__unece_tax_type
+msgid "Unece Tax Type"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.actions.act_window,name:l10n_pt_certificate.account_series_wizard_action
+msgid "Update Series"
+msgstr "Atualizar Séries"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_update_tax_grid_wizard
+msgid "Update Tax Grid Wizard"
+msgstr "Atualizar Grelhas de Impostos"
+
+#. module: l10n_pt_certificate
+#: model:ir.actions.act_window,name:l10n_pt_certificate.update_tax_grid_wizard_action
+#: model:ir.ui.menu,name:l10n_pt_certificate.update_tax_grid_wizard_menu
+msgid "Update Tax Grids"
+msgstr "Atualizar Grelhas de Impostos"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+msgid "Username"
+msgstr "Utilizador"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m20
+msgid "VAT - Flat Rate scheme"
+msgstr "IVA - Regime forfetário"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m30
+#: model:account.tax.exemption,name:l10n_pt_certificate.m31
+#: model:account.tax.exemption,name:l10n_pt_certificate.m32
+#: model:account.tax.exemption,name:l10n_pt_certificate.m33
+#: model:account.tax.exemption,name:l10n_pt_certificate.m40
+#: model:account.tax.exemption,name:l10n_pt_certificate.m41
+#: model:account.tax.exemption,name:l10n_pt_certificate.m42
+#: model:account.tax.exemption,name:l10n_pt_certificate.m43
+msgid "VAT - Reverse Charge"
+msgstr "IVA - Autoliquidação"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m44
+msgid "VAT - Specific Rules  Article 6"
+msgstr "IVA - Regras Específicas - artigo 6º"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m45
+msgid "VAT - Cross-border Exemption Regime"
+msgstr "IVA – regime transfronteiriço de isenção"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m46
+msgid "VAT - e-TaxFree"
+msgstr "IVA – e-TaxFree"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m21
+msgid "VAT - not eligible for deduction (or similar expression)"
+msgstr "IVA – não confere direito à dedução (ou expressão similar)"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid "VAT taxes should appear after the fixed amount taxes."
+msgstr "Os impostos de IVA devem aparecer após os impostos de valor fixo."
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m04
+msgid "VAT – Exemption Article 13 of the CIVA"
+msgstr "IVA - Isento Artigo 13.º do CIVA"
+
+#. module: l10n_pt_certificate
+#: model:account.tax.exemption,name:l10n_pt_certificate.m05
+msgid "VAT – Exemption Article 14 of the CIVA"
+msgstr "IVA - Isento Artigo 14.º do CIVA"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_l10n_pt_account_series__validation_code
+msgid "Validation Code"
+msgstr "Código de Validação"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__vad
+msgid "Valuation deposit"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__account_tax__unece_tax_type__vat
+msgid "Value added tax"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+msgid "Values set here are company-specific."
+msgstr "Valores específicos por Empresa"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "Vendor Bill"
+msgstr "Fatura de Fornecedor"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.report_invoice_document
+msgid "Vendor Credit Note"
+msgstr "Nota de Crédito de Fornecedor"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_series.py:0
+msgid "Warning"
+msgstr "Aviso"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.res_config_settings_view_form
+msgid "We recommend \"Round Globally\" for PT Companies"
+msgstr "Recomendamos \"Arredondar Globalmente\" para empresas PT"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/at_webservice_mixin.py:0
+msgid "Webservice communication is not supported in test mode."
+msgstr "Comunicação com Webservice não é suportada no modo de Teste."
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_saft_wizard
+msgid "Wizard for SAFT"
+msgstr "Assistente de SAF-T"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_saft_import_wizard_account
+msgid "Wizard for SAFT Import Account"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_saft_import_wizard_invoice
+msgid "Wizard for SAFT Import Invoice"
+msgstr "Assistente de Importação de Fatura de SAFT"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_saft_import_wizard_move
+msgid "Wizard for SAFT Import Moves"
+msgstr "Wizard para Importação de Movimentos de SAFT"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_saft_import_wizard_payment
+msgid "Wizard for SAFT Import Payment"
+msgstr "Wizard para Importação de Pagamento de SAFT"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_saft_import_wizard_tax
+msgid "Wizard for SAFT Import Tax"
+msgstr "Assistente de Importação de Imposto de SAFT"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_saft_import_wizard
+msgid "Wizard for SAFT-PT Import"
+msgstr "Assistente de Importação de SAF-T"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid ""
+"You can not create accouting moves in a company with the following empty "
+"fields: %s"
+msgstr ""
+"Não pode criar movimentos de contabilidade numa empresa com os seguintes "
+"campos vazios: %s"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid ""
+"You can not create accouting moves in a portuguese company without Round "
+"Globally as the Rounding Method"
+msgstr ""
+"Não pode criar movimentos de contabilidade numa empresa portuguesa sem "
+"definir o método de arredondamento como Arrendondar Globalmente"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_series.py:0
+msgid "You can not delete posted series."
+msgstr "Não pode eliminar séries ativadas."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid "You can not have taxes with a zero amount without an exemption code."
+msgstr "Não pode ter impostos com valor zero sem um código de isenção."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid ""
+"You can not import Portuguese invoices from the import action. You should "
+"use the SAFT import action."
+msgstr ""
+"Não pode importar faturas Portuguesas pela ferramenta de importação. Deveria "
+"usar o importador de SAFT."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid "You can not import invoices directly to an Import Journal"
+msgstr "Não pode importar faturas diretamente para um Diário de Importação"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_series.py:0
+msgid "You can't change the journal of a series that already has documents."
+msgstr ""
+"Não é possível alterar o Diário de uma Série que já contém documentos "
+"emitidos."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid ""
+"You can't create a self-paid invoice without selecting a payment journal"
+msgstr "Não pode criar uma fatura-recibo sem selecionar um diário de pagamento"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/account_move.py:0
+msgid "You can't post simplified invoices with an amount bigger than %s €"
+msgstr "Não pode lançar faturas simplificadas com um valor superior a %s €"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/res_company.py:0
+msgid "You cannot edit base fields for a company with posted documents"
+msgstr "Não pode editar campos base de uma empresa com documentos lançados"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "You cannot generate a SAF-T PT document for a non-portuguese company"
+msgstr "Não pode gerar um documento SAF-T PT para uma empresa não portuguesa"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid ""
+"You cannot generate a SAF-T PT document in a Branch. Please generate it in "
+"the Parent Company."
+msgstr ""
+"Não é possível exportar o ficheiro SAF-T PT em Filiais. Por favor, exporte "
+"na Empresa-Mãe."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/res_partner.py:0
+msgid "You cannot modify the VAT of a partner with posted documents."
+msgstr "Você não pode modificar o NIF de um contacto com documentos emitidos."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/res_partner.py:0
+msgid "You cannot modify the VAT of the final consumer."
+msgstr "Não é possível alterar o NIF do Consumidor Final."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/res_partner.py:0
+msgid "You cannot modify the address of the Final Consumer."
+msgstr "Não é possível alterar a Morada do Consumidor Final."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/res_partner.py:0
+msgid "You cannot modify the country of a partner with posted documents."
+msgstr "Não pode modificar o país de um contacto com documentos emitidos."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/res_partner.py:0
+msgid ""
+"You cannot modify the name of a partner without a VAT number and with posted "
+"documents."
+msgstr ""
+"Você não pode modificar o nome de um contacto sem NIF e com documentos "
+"emitidos."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/res_partner.py:0
+msgid "You cannot modify the name of the Final Consumer."
+msgstr "Não é possível alterar o Nome do Consumidor Final."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/res_partner.py:0
+msgid "You cannot modify the reference of the Final Consumer."
+msgstr "Não é possível alterar a Referência do Consumidor Final."
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/models/res_config_settings.py:0
+msgid "You should import the Series in the Parent Company."
+msgstr "Deve Importar as Séries na Empresa-Mãe."
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__saft_wizard__state__choose
+msgid "choose"
+msgstr "escolher"
+
+#. module: l10n_pt_certificate
+#: model_terms:ir.ui.view,arch_db:l10n_pt_certificate.l10n_pt_account_series_view_form
+msgid "e.g. Customer Invoices"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__saft_wizard__state__error
+msgid "error"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields.selection,name:l10n_pt_certificate.selection__saft_wizard__state__get
+msgid "get"
+msgstr "obter"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "not sent"
+msgstr "não enviado"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_certificate/wizard/saft_wizard.py:0
+msgid "sent"
+msgstr "enviado"
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_base1
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_estado1
+msgid ""
+"1 - Transmissões de bens e prestações de serviço em que liquidou imposto"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_base2_c10
+msgid "2 - [10] Aquisições intracomunitátiras de bens e operações assimiladas"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_estado2_c11
+msgid "2 - [11] Aquisições intracomunitátiras de bens e operações assimiladas"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_base3_c16
+msgid ""
+"3 - [16] Prestações de serviços efetuadas por sujeitos passivos de outros "
+"Estados Membros, cujo imposto foi liquidado pelo declarante"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_estado3_c17
+msgid ""
+"3 - [17] Prestações de serviços efetuadas por sujeitos passivos de outros "
+"Estados Membros,\n"
+"                            cujo imposto foi liquidado pelo declarante\n"
+"                        "
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_base4_c18
+msgid ""
+"4 - [18] Importações de bens cujo imposto foi liquidado pelo declarante (n°8 "
+"do artigo 27.° do CIVA)"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_estado4_c19
+msgid ""
+"4 - [19] Importações de bens cujo imposto foi liquidado pelo declarante (n°8 "
+"do artigo 27.°\n"
+"                            do CIVA)\n"
+"                        "
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_sujeito5
+msgid "5 - Imposto dedutível"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_sujeito6_c40
+msgid "6 - [40] Regularizações mensais, trimestrais e anuais"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_estado6_c41
+msgid "6 - [41] Regularizações mensais, trimestrais e anuais"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_sujeito7_c61
+msgid ""
+"7 - [61] Excesso a reportar do período anterior (Campo 96 da declaração "
+"anterior - n.°4 do artigo 22.°)"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_sujeito8_c65
+msgid "8 - [65] Anexo - (ver Quadro 03)"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_estado8_c66
+msgid "8 - [66] Anexo - (ver Quadro 03)"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_sujeito9_c67
+msgid "9 - [67] Anexo - (ver Quadro 03)"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_estado9_c68
+msgid "9 - [68] Anexo - (ver Quadro 03)"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_quadro_06A_A
+msgid ""
+"A - Operações localizadas em Portugal em que, na qualidade de adquirente, "
+"liquidou o IVA devido"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_chart_template
+msgid "Account Chart Template"
+msgstr "Modelo de Plano de Contas"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_report_expression
+msgid "Accounting Report Expression"
+msgstr "Expressão do Relatório Financeiro"
+
+#. module: l10n_pt_certificate
+#: model:ir.model,name:l10n_pt_certificate.model_account_report_line
+msgid "Accounting Report Line"
+msgstr "Linha do Relatório Financeiro"
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_quadro_06A_B
+msgid ""
+"B - Operações em que liquidou o IVA devido por aplicação da regra de "
+"inversão do sujeito passivo"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.column,name:l10n_pt_certificate.tax_report_vat_balance
+msgid "Balance"
+msgstr "Saldo"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_arxi_coa/models/template_pt_arxi.py:0
+msgid "Bank"
+msgstr "Banco"
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_base
+msgid "Base tributável"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_quadro_06A_C_c103
+msgid ""
+"C - [103] Operações referidas nas alíneas f) et g) do N.°3 do artigo 3.°E "
+"alíneas a) e b) do N.°2 do artigo 4.° do CIVA"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_arxi_coa/models/template_pt_arxi.py:0
+msgid "Cash"
+msgstr "Caixa"
+
+#. module: l10n_pt_certificate
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_report_expression__code_sequence
+#: model:ir.model.fields,field_description:l10n_pt_certificate.field_account_report_line__code_sequence
+msgid "Code Sequence"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_arxi_coa/models/template_pt_arxi.py:0
+msgid "Customer Invoices"
+msgstr "Faturas de Cliente"
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_quadro_06A_D_c104
+msgid ""
+"D - [104] Operações referidas nas alíneas a), b) e c) do artigo 42.° do CIVA"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report,name:l10n_pt_certificate.tax_report_pt
+msgid "Declaração Periódica de IVA"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_arxi_coa/models/template_pt_arxi.py:0
+msgid "Exchange Difference"
+msgstr "Diferenças de Câmbio"
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_estado
+msgid "Imposto a favor do Estado"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_sujeito
+msgid "Imposto a favor do sujeito passivo"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_arxi_coa/models/template_pt_arxi.py:0
+msgid "Miscellaneous Operations"
+msgstr "Operações Diversas"
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_q06
+msgid "Quadro 06"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_quadro_06A
+msgid "Quadro 06A"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_totais
+msgid "Totais"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_arxi_coa/models/template_pt_arxi.py:0
+msgid "Vendor Bills"
+msgstr "Faturas de Fornecedor"
+
+#. module: l10n_pt_certificate
+#. odoo-python
+#: code:addons/l10n_pt_arxi_coa/models/template_pt_arxi.py:0
+msgid "Withholding Taxes"
+msgstr "Retenções na Fonte"
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_quadro_06A_B_c100
+msgid "[100] Aquisição de imóveis com renúncia à isenção (Decreto-Lei 21/2007)"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_quadro_06A_B_c101
+msgid "[101] Sucatas [Alínea i) do n.°1 do artigo 2.° do CIVA]"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_quadro_06A_B_c102
+msgid ""
+"[102] Serviços de construção civil [Alínea j) do n.°1 do artigo 2.° do CIVA]"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_quadro_06A_B_c105
+msgid ""
+"[105] Emissão de gases com efeito de estufa [Alínea l) do n.°1 do artigo 2.° "
+"do CIVA]"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_quadro_06A_total_c106
+msgid "[106] Soma do quadro 06-A"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_quadro_06A_B_c107
+msgid ""
+"[107] Aquisição de cortiça e outros produtos de origem silvícola [Alínea m) "
+"do n.°1 do artigo\n"
+"                                    2.° do CIVA]\n"
+"                                "
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_base2_c12
+msgid "[12] Cujo imposto foi liquidado pelo declarante"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_estado2_c13
+msgid "[13] Cujo imposto foi liquidado pelo declarante"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_base2_c14
+msgid "[14] Abrangidas pelos artigos 15.° do CIVA ou do RITI"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_base2_c15
+msgid "[15] Abrangidas pelos n.ºs 3, 4 e 5 do artigo 22.° do RITI"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_base1_c1
+msgid "[1] Taxa reduzida"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_sujeito5_c20
+msgid "[20] Ativos não correntes (imobilizado)"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_sujeito5_c21
+msgid "[21] Inventários à taxa reduzida"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_sujeito5_c22
+msgid "[22] Inventários à taxa normal"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_sujeito5_c23
+msgid "[23] Inventários à taxa intermédia"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_sujeito5_c24
+msgid "[24] Outros bens e serviços"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_estado1_c2
+msgid "[2] Taxa reduzida"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_base1_c3
+msgid "[3] Taxa normal"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_estado1_c4
+msgid "[4] Taxa normal"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_base1_c5
+msgid "[5] Taxa intermédia"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_estado1_c6
+msgid "[6] Taxa intermédia"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_base1_c7
+msgid ""
+"[7] Isentas ou não tributadas - Transmissões\n"
+"                                            intracomunitárias de bens e "
+"prestações de\n"
+"                                            serviços mencionadas nas "
+"declarações recapitulativas\n"
+"                                        "
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_base1_c8
+msgid ""
+"[8] Isentas ou não tributadas - Que conferem direito à\n"
+"                                            dedução\n"
+"                                        "
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_base_total_c90
+msgid "[90] TOTAL DA BASE TRIBUTÁVEL"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_sujeito_total_c91
+msgid "[91] TOTAL DO IMPOSTO A FAVOR DO SUJEITO PASSIVO"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_imposto_favor_estado_total_c92
+msgid "[92] TOTAL DO IMPOSTO A FAVOR DO ESTADO"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_totais_impost_a_entregar_ao_estado_c93
+msgid "[93] Imposto a entregar ao Estado"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_totais_impost_a_entregar_ao_estado_c94
+msgid "[94] Crédito a recuperar"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_totais_impost_a_entregar_ao_estado_c94_95
+msgid "[95] Solicito Reembolso"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_totais_impost_a_entregar_ao_estado_c94_96
+msgid "[96] Excesso a Reportar"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_quadro_06A_A_c97
+msgid ""
+"[97] Efetuadas por entidades residentes em países comunitários (não inclui "
+"as operações mencionadas no campo 16)"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_quadro_06A_A_c98
+msgid ""
+"[98] Efetuadas por entidades residentes em países ou territórios terceiros"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_quadro_06A_B_c99
+msgid "[99] Ouro (Decreto-Lei 362/99)"
+msgstr ""
+
+#. module: l10n_pt_certificate
+#: model:account.report.line,name:l10n_pt_certificate.trp_base1_c9
+msgid ""
+"[9] Isentas ou não tributadas - Que não conferem direito à\n"
+"                                            dedução\n"
+"                                        "
+msgstr ""

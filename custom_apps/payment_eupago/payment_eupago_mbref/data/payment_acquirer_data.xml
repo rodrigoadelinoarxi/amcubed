@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="seq_mbref_payment_number" model="ir.sequence">
+        <field name="name">MBRef Payment Number</field>
+        <field name="code">mbref.payment.number</field>
+        <field name="prefix">MBPAY</field>
+        <field name="padding">6</field>
+        <field name="company_id" eval="False"/>
+        <field name="implementation">no_gap</field>
+    </record>
+
+    <record id="payment_acquirer_eupago_mbref" model="payment.provider">
+        <field name="name">EuPago ATM reference</field>
+        <field name="image_128" type="base64" file="payment_eupago_mbref/static/src/img/multibanco_icon.png"/>
+        <field name="code">eupago_mbref</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="module_id" ref="base.module_payment_eupago_mbref"/>
+        <field name="redirect_form_view_id" ref="eupago_form_mb"/>
+        <field name="payment_method_ids"
+               eval="[Command.set([
+                         ref('payment_eupago_mbref.payment_method_eupago_mbref'),
+                     ])]"
+        />
+    </record>
+
+    <record id="account_payment_method_eupago_mbref" model="account.payment.method">
+        <field name="name">EuPago MBREF</field>
+        <field name="code">eupago_mbref</field>
+        <field name="payment_type">inbound</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- OpenAI Default Model Configuration -->
+        <record id="config_arxi_openai_default_model" model="ir.config_parameter">
+            <field name="key">arxi.openai.default_model</field>
+            <field name="value">gpt-4o-mini</field>
+        </record>
+    </data>
+</odoo>

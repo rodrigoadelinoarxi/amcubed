@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><template id="report_custom_invoice_document_l10n_pt_ao_pos" inherit_id="account.report_invoice_document"><xpath expr="//div[@name='source_invoice']" position="replace"/></template></odoo>

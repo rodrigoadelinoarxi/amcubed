@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="maternity_leave_days_entry_type" model="hr.work.entry.type">
+            <field name="name">Maternity Leave</field>
+            <field name="is_leave">True</field>
+            <field name="sequence">46</field>
+            <field name="code">MATERNITY_LEAVE</field>
+            <field name="round_days">HALF</field>
+            <field name="round_days_type">HALF-UP</field>
+            <field name="color">8</field>
+            <field name="discounts_salary">True</field>
+            <field name="leave_type_ids" eval="[(6,0,[ref('maternity_leave_days_status_paid')])]"/>
+        </record>
+
+        <record id="paternity_leave_days_entry_type" model="hr.work.entry.type">
+            <field name="name">Paternity Leave</field>
+            <field name="is_leave">True</field>
+            <field name="sequence">49</field>
+            <field name="code">PATERNITY_LEAVE</field>
+            <field name="round_days">HALF</field>
+            <field name="round_days_type">HALF-UP</field>
+            <field name="color">11</field>
+            <field name="discounts_salary">True</field>
+            <field name="leave_type_ids" eval="[(6,0,[ref('paternity_leave_days_status_paid')])]"/>
+        </record>
+
+        <record id="marriage_leave_entry_type" model="hr.work.entry.type">
+            <field name="name">Marriage Leave</field>
+            <field name="is_leave">True</field>
+            <field name="sequence">37</field>
+            <field name="code">MARRIAGE_LEAVE</field>
+            <field name="round_days">HALF</field>
+            <field name="round_days_type">HALF-UP</field>
+            <field name="color">1</field>
+            <field name="leave_type_ids" eval="[(6,0,[ref('marriage_leave_status_paid')])]"/>
+        </record>
+
+        <record id="parental_leave_days_entry_type" model="hr.work.entry.type">
+            <field name="name">Parental Leave</field>
+            <field name="is_leave">True</field>
+            <field name="sequence">47</field>
+            <field name="code">PARENTAL_LEAVE</field>
+            <field name="round_days">HALF</field>
+            <field name="round_days_type">HALF-UP</field>
+            <field name="color">9</field>
+            <field name="discounts_salary">True</field>
+            <field name="leave_type_ids" eval="[(6,0,[ref('parental_leave_days_status_paid')])]"/>
+        </record>
+
+        <record id="unjustified_absence_entry_type" model="hr.work.entry.type">
+            <field name="name">Unjustified Absence</field>
+            <field name="is_leave">True</field>
+            <field name="sequence">44</field>
+            <field name="code">UNJUSTIFIED_ABSENCE</field>
+            <field name="round_days">HALF</field>
+            <field name="round_days_type">HALF-UP</field>
+            <field name="color">7</field>
+            <field name="discounts_salary">True</field>
+            <field name="leave_type_ids" eval="[(6,0,[ref('unjustified_absence')])]"/>
+        </record>
+
+        <!--STRUCTURE-->
+        <record id="hr_payroll_structure_empregado" model="hr.payroll.structure">
+            <field name="name">Base Calculation for PT Salaries</field>
+            <field name="type_id" ref="hr.structure_type_employee"/>
+            <field name="use_worked_day_lines">True</field>
+            <field name="country_id" ref="base.pt"/>
+            <!--         <field name="report_id" ref="hr_payroll.action_report_payslip"/>-->
+            <field name="schedule_pay">monthly</field>
+            <field name="rule_ids" eval="[]"/>
+            <field name="unpaid_work_entry_type_ids" eval="[
+            (4, ref('hr_work_entry.work_entry_type_sick_leave')),
+            (4, ref('l10n_pt_hr_payroll.maternity_leave_days_entry_type')),
+            (4, ref('l10n_pt_hr_payroll.paternity_leave_days_entry_type')),
+            (4, ref('l10n_pt_hr_payroll.marriage_leave_entry_type')),
+            (4, ref('l10n_pt_hr_payroll.parental_leave_days_entry_type')),
+            (4, ref('l10n_pt_hr_payroll.unjustified_absence_entry_type')),
+        ]"/>
+        </record>
+
+        <!--    STRUCTURE TYPE-->
+        <record id="hr.structure_type_employee" model="hr.payroll.structure.type">
+            <field name="name">Employee</field>
+            <field name="country_id" ref="base.pt"/>
+            <field name="wage_type">monthly</field>
+            <field name="default_schedule_pay">monthly</field>
+            <field name="default_resource_calendar_id" ref="resource.resource_calendar_std"/>
+            <field name="default_struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="default_work_entry_type_id" ref="hr_work_entry.work_entry_type_attendance"/>
+        </record>
+
+        <record id="hr.structure_type_worker" model="hr.payroll.structure.type">
+            <field name="active">False</field>
+        </record>
+
+
+        <record id="hr_payroll.structure_002" model="hr.payroll.structure">
+            <field name="active">False</field>
+        </record>
+
+        <record id="hr_payroll.structure_worker_001" model="hr.payroll.structure">
+            <field name="active">False</field>
+        </record>
+        <!--End Structure-->
+
+        <record id="extra_hours_days_entry_type" model="hr.work.entry.type">
+            <field name="name">Extra Hours</field>
+            <field name="is_leave">False</field>
+            <field name="sequence">50</field>
+            <field name="code">EXTRA_HOURS</field>
+            <field name="color">7</field>
+        </record>
+
+        <record id="justified_absence_entry_type" model="hr.work.entry.type">
+            <field name="name">Justified Absence</field>
+            <field name="is_leave">True</field>
+            <field name="sequence">45</field>
+            <field name="code">JUSTIFIED_ABSENCE</field>
+            <field name="round_days">HALF</field>
+            <field name="round_days_type">HALF-UP</field>
+            <field name="color">8</field>
+            <field name="leave_type_ids" eval="[(6,0,[ref('justified_absence')])]"/>
+        </record>
+
+        <record id="hr_work_entry.work_entry_type_legal_leave" model="hr.work.entry.type">
+            <field name="leave_type_ids" eval="[(6,0,[ref('hr_holidays.leave_type_paid_time_off')])]"/>
+        </record>
+
+        <record id="holiday_entry_type" model="hr.work.entry.type">
+            <field name="name">Holiday</field>
+            <field name="is_leave">True</field>
+            <field name="sequence">35</field>
+            <field name="code">HOLIDAY</field>
+            <field name="round_days">HALF</field>
+            <field name="round_days_type">HALF-UP</field>
+            <field name="color">5</field>
+            <field name="leave_type_ids" eval="[(6,0,[ref('holiday_status_paid')])]"/>
+        </record>
+
+        <record id="vacation_entry_type" model="hr.work.entry.type">
+            <field name="name">Vacation</field>
+            <field name="is_leave">True</field>
+            <field name="sequence">35</field>
+            <field name="code">VACATION</field>
+            <field name="round_days">HALF</field>
+            <field name="round_days_type">HALF-UP</field>
+            <field name="color">6</field>
+        </record>
+
+        <record id="training_time_off_entry_type" model="hr.work.entry.type">
+            <field name="name">Training Time Off</field>
+            <field name="is_leave">False</field>
+            <field name="sequence">38</field>
+            <field name="code">TRAINING</field>
+            <field name="round_days">NO</field>
+            <field name="color">1</field>
+            <field name="unpaid_structure_ids" eval="[(6,0,[ref('hr_payroll_structure_empregado')])]" />
+        </record>
+
+        <record id="strike_time_off_entry_type" model="hr.work.entry.type">
+            <field name="name">Strike</field>
+            <field name="is_leave">False</field>
+            <field name="sequence">39</field>
+            <field name="code">STRIKE</field>
+            <field name="round_days">NO</field>
+            <field name="color">2</field>
+            <field name="discounts_salary">True</field>
+            <field name="unpaid_structure_ids" eval="[(6,0,[ref('hr_payroll_structure_empregado')])]" />
+        </record>
+
+        <record id="hr_work_entry.work_entry_type_leave" model="hr.work.entry.type">
+            <field name="discounts_salary">True</field>
+        </record>
+
+        <record id="hr_work_entry.work_entry_type_sick_leave" model="hr.work.entry.type">
+            <field name="discounts_salary">True</field>
+        </record>
+
+    </data>
+</odoo>

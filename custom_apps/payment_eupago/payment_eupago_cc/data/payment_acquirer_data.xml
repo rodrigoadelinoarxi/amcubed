@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="seq_cc_payment_number" model="ir.sequence">
+        <field name="name">CC Payment Number</field>
+        <field name="code">cc.payment.number</field>
+        <field name="prefix">CCPAY</field>
+        <field name="padding">6</field>
+        <field name="company_id" eval="False"/>
+        <field name="implementation">no_gap</field>
+    </record>
+
+    <record id="payment_acquirer_eupago_cc" model="payment.provider">
+        <field name="name">EuPago CC</field>
+        <field name="image_128" type="base64" file="payment_eupago_cc/static/src/img/visa_mastercard.jpg"/>
+        <field name="code">eupago_cc</field>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="inline_form_view_id" ref="payment_eupago_cc.inline_form"/>
+        <field name="module_id" ref="base.module_payment_eupago_cc"/>
+        <field name="payment_method_ids"
+               eval="[Command.set([
+                         ref('payment_eupago_cc.payment_method_eupago_cc'),
+                     ])]"
+        />
+    </record>
+
+<!--    <record id="account_payment_method_eupago_cc" model="account.payment.method">-->
+<!--        <field name="name">EuPago CC</field>-->
+<!--        <field name="code">eupago_cc</field>-->
+<!--        <field name="payment_type">inbound</field>-->
+<!--    </record>-->
+
+</odoo>

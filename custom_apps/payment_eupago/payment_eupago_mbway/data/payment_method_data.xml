@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="payment_method_eupago_mbway" model="payment.method">
+        <field name="name">MBWay</field>
+        <field name="code">eupago_mbway</field>
+        <field name="sequence">1</field>
+        <field name="image" type="base64" file="payment_eupago_mbway/static/src/img/mbway_icon.jpg"/>
+        <field name="support_express_checkout">False</field>
+        <field name="support_refund">full_only</field>
+    </record>
+
+</odoo>

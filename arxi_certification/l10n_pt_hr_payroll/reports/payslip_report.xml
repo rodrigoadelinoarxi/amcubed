@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Portuguese Payslip Report Template - Only for PT companies -->
+    <template id="report_payslip_document_pt">
+        <t t-call="web.external_layout">
+            <t t-set="o" t-value="o.with_context(lang=o.employee_id.lang)"/>
+            <div class="page" style="font-size:12pt;">
+                <h3 t-esc="o._slip_name()"/>
+
+                <!-- Warning for non-validated payslips -->
+                <div t-if="o.state not in ['done', 'paid']">
+                    <strong>This payslip has not been validated. This is not a legal document.</strong>
+                </div>
+
+                <div id="infos_table">
+                    <table name="employee-infos" id="employee_info_table_1" class="table table-sm">
+                        <tr id="employee_info_line_1">
+                            <td class="w-25" style="background-color:#e9ecef;">
+                                <strong>Employee</strong>
+                            </td>
+                            <td class="w-25" style="background-color:#e9ecef;">
+                                <strong>Fiscal Status</strong>
+                            </td>
+                            <td class="w-25" style="background-color:#e9ecef;">
+                                <strong>Job Position</strong>
+                            </td>
+                        </tr>
+                        <tr id="employee_info_line_2">
+                            <td>
+                                <span t-field="o.employee_id"/>
+                            </td>
+                            <td>
+                                <span t-field="o.employee_id.marital"/>
+                                <span>,</span>
+                                <span t-esc="o._get_fiscal_status()"/>
+                            </td>
+                            <td>
+                                <span t-field="o.employee_id.job_title"/>
+                            </td>
+                        </tr>
+                        <tr id="employee_info_line_3">
+                            <td class="w-25" style="background-color:#e9ecef;">
+                                <strong>Fiscal Number</strong>
+                            </td>
+                            <td class="w-25" style="background-color:#e9ecef;">
+                                <strong>Social Security Number</strong>
+                            </td>
+                            <td class="w-25" style="background-color:#e9ecef;">
+                                <strong>Identification</strong>
+                            </td>
+                        </tr>
+                        <tr id="employee_info_line_4">
+                            <td>
+                                <span t-field="o.employee_id.fiscal_number"/>
+                            </td>
+                            <td>
+                                <span t-field="o.employee_id.ssnid"/>
+                            </td>
+                            <td>
+                                <span t-field="o.employee_id.identification_id"/>
+                            </td>
+                        </tr>
+                        <tr id="employee_info_line_5">
+                            <td class="w-25" style="background-color:#e9ecef;">
+                                <strong>Seniority Date</strong>
+                            </td>
+                            <td class="w-25" style="background-color:#e9ecef;">
+                                <strong>Insurance Number</strong>
+                            </td>
+                            <td class="w-25" style="background-color:#e9ecef;">
+                                <strong>Working Schedule</strong>
+                            </td>
+                        </tr>
+                        <tr id="employee_info_line_6">
+                            <td>
+                                <span t-esc="o.get_first_contract_start_date()"/>
+                            </td>
+                            <td>
+                                <span t-field="o.employee_id.policy_number"/>
+                            </td>
+                            <td>
+                                <span t-field="o.employee_id.version_id.hours_per_week"/>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table table-sm table-borderless" t-if="not o.struct_id.hide_basic_on_pdf">
+                        <tr>
+                            <td class="w-25">
+                                <strong t-field="o.income_title"/>
+                            </td>
+                            <td style="color:#875A7B" class="w-25">
+                                <span t-esc="o.version_id._get_contract_wage()"
+                                      t-options="{'widget': 'monetary', 'display_currency': o.company_id.currency_id}"/>
+                            </td>
+                            <td class="w-25">
+                                <strong>Wage Per Hour</strong>
+                            </td>
+                            <td style="color:#875A7B" class="w-25">
+                                <span t-esc="o._compute_wage_per_hour()"
+                                      t-options="{'widget': 'monetary', 'display_currency': o.company_id.currency_id}"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="total" class="row" style="margin-bottom:80px;">
+                    <div class="col-6">
+                        <div style="background-color:#e9ecef; text-align:center">
+                            <span>
+                                <b>Income</b>
+                            </span>
+                        </div>
+
+                        <table class="table table-sm table-borderless">
+                            <thead class="o_black_border">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Quantity</th>
+                                    <th class="text-right">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <span t-foreach="o.allowances_section_payslip_report()" t-as="report_line">
+                                    <t t-set="line" t-value="report_line['line']"/>
+                                    <t t-set="line_style"/>
+                                    <t t-set="line_class"/>
+                                    <t t-if="report_line['total'] != 0 or line.code == 'BASIC'">
+                                        <t t-if="line.code == 'NET'">
+                                            <t t-set="line_class" t-value="'o_total o_border_bottom font-weight-bold'"/>
+                                        </t>
+                                        <tr t-att-class="line_class">
+                                            <td>
+                                                <span t-esc="report_line['name']"/>
+                                            </td>
+                                            <td style="text-align:right;">
+                                                <span t-esc="o.ref_date_payslip()"/>
+                                            </td>
+                                            <td style="text-align:center;">
+                                                <span t-esc="int(report_line['quantity']) if report_line['quantity'] else '-'"/>
+                                            </td>
+                                            <td style="text-align:right;" class="text-right">
+                                                <span t-if="line.code == 'BASIC' and report_line['quantity'] and int(report_line['quantity']) == 30"
+                                                      t-esc="o.version_id._get_contract_wage()"
+                                                      t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'
+                                                />
+                                                <span t-elif="line.code in ['BASIC', 'IH'] and o.discount_amount"
+                                                      t-esc="line._get_line_value()"
+                                                      t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'
+                                                />
+                                                <span t-else="" t-esc="report_line['total']"
+                                                      t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'
+                                                />
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </span>
+                                <t t-set="not_worked_days"
+                                   t-value="o.get_not_worked_days_line_notes(o.worked_days_line_ids)"/>
+                                <span t-foreach="not_worked_days"
+                                      t-as="not_worked_day">
+                                    <tr style="color:none">
+                                        <td>
+                                            <span t-esc="not_worked_day.work_entry_type_id.name"/>
+                                        </td>
+                                        <td style="text-align:right;">
+                                            <t t-if="not_worked_day.ref_date">
+                                                <span t-esc="not_worked_day.ref_date"/>
+                                            </t>
+                                            <t t-else="">
+                                                <span t-esc="o.ref_date_payslip()"/>
+                                            </t>
+                                        </td>
+                                        <td style="text-align:center;">
+                                            <span t-esc="not_worked_day.number_of_days"/>
+                                        </td>
+                                        <td style="text-align:right;" class="text-right">
+                                            <span t-esc="not_worked_day['amount']"
+                                                  t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'
+                                            />
+                                        </td>
+                                    </tr>
+                                </span>
+                                <t t-set="unpaid_days" t-value="o._get_unpaid_days()"/>
+                                <span t-foreach="unpaid_days" t-as="unpaid_day">
+                                    <tr style="color:none">
+                                        <td>
+                                            <span t-esc="unpaid_day['name']"/>
+                                        </td>
+                                        <td style="text-align:right;">
+                                            <span t-esc="unpaid_day['ref_date'] or o.ref_date_payslip()"/>
+                                        </td>
+                                        <td style="text-align:center;">
+                                            <span t-esc="unpaid_day['qty']"/>
+                                        </td>
+                                        <td style="text-align:right;" class="text-right">
+                                            <span t-esc="unpaid_day['total']"
+                                                  t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'
+                                            />
+                                        </td>
+                                    </tr>
+                                </span>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="width:10px;" class="col-1"/>
+                    <div class="col-6">
+                        <div style="background-color:#e9ecef; text-align:center">
+                            <span>
+                                <b>Discounts</b>
+                            </span>
+                        </div>
+                        <table class="table table-sm table-borderless">
+                            <thead class="o_black_border">
+                                <tr>
+                                    <th>Tax base</th>
+                                    <th>Rate</th>
+                                    <th>Discount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <span t-foreach="o.discount_section_payslip()" t-as="line">
+                                    <t t-if="line.total > 0">
+                                        <t t-set="line_style"/>
+                                        <t t-set="line_class"/>
+                                        <t t-if="line.code == 'NET'">
+                                            <t t-set="line_class" t-value="'o_total o_border_bottom font-weight-bold'"/>
+                                        </t>
+                                        <t t-if="(line.code == 'BASIC') or (line.code == 'GROSS')">
+                                            <t t-set="line_class" t-value="'o_subtotal o_border_bottom'"/>
+                                        </t>
+                                        <tr t-att-class="line_class">
+                                            <td>
+                                                <span t-field="line.name"/>
+                                            </td>
+                                            <td style="text-align:right;">
+                                                <span t-field="line.rate"/>
+                                            </td>
+                                            <td style="text-align:right;" class="text-right">
+                                                <span t-esc="line.total"
+                                                      t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'
+                                                />
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </span>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="totals_section" class="row">
+                    <div class="col-3">
+                        <b>
+                            <span>Total:</span>
+                        </b>
+                        <t t-esc="o.gross_wage_total_payslip()"
+                           t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/>
+                    </div>
+                    <div class="col-3">
+                        <b>
+                            <span>Other Discounts:</span>
+                        </b>
+                        <t t-esc="o.other_discounts_total()"
+                           t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/>
+                    </div>
+                    <div class="col-3">
+                        <b>
+                            <span>Total Discounted:</span>
+                        </b>
+                        <t t-esc="o.discounts_total_payslip()"
+                           t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/>
+                    </div>
+                    <div class="col-3">
+                        <b>
+                            <span>Net to Receive:</span>
+                        </b>
+                        <t t-esc="o.to_receive_net()"
+                           t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/>
+                    </div>
+                </div>
+                <br/>
+                <div id="payment_table" class="row" style="margin-bottom:10px;">
+                    <div class="col-12">
+                        <table class="table table-sm table-borderless">
+                            <thead>
+                                <tr>
+                                    <th style="text-align:left;">Entity Charges</th>
+                                    <th>Payment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <td>
+                                    <span t-esc="o._get_entity_charges()"
+                                          t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/>
+                                </td>
+                                <td class="text-end" style="text-align:right; font-size:10pt;">
+                                    <div>
+                                        <span t-field="o.employee_id.bank_account_id"/>
+                                        =
+                                        <span t-esc="o.payment_to_account()"
+                                              t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/>
+                                    </div>
+                                    <div>
+                                        <t t-if="o.meal_card_amount() > 0">
+                                            <span>Meal Card</span>
+                                            =
+                                            <span t-esc="o.meal_card_amount()"
+                                                  t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/>
+                                            <br/>
+                                        </t>
+                                    </div>
+                                    <div>
+                                        <t t-if="o.get_other_benefits() > 0">
+                                            <span style="margin-top:10px;">Other Benefits</span>
+                                            =
+                                            <span t-esc="o.get_other_benefits()"
+                                                  t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/>
+                                        </t>
+                                    </div>
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <t t-if="o.note">
+                    <span>Notes:</span>
+                    <span t-field="o.note"/>
+                </t>
+                <div style="max-height:100px; text-align:center;" id="image">
+                    <p t-field="o.company_id.additional_message"/>
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <!-- Override report to use PT template for Portuguese companies, base template otherwise -->
+    <template id="report_payslip_l10n_pt" inherit_id="hr_payroll.report_payslip">
+        <!-- Add PT template before the base template -->
+        <xpath expr="//t[@t-call='web.external_layout']" position="before">
+            <t t-if="o.company_id.country_id.code == 'PT'">
+                <t t-call="l10n_pt_hr_payroll.report_payslip_document_pt"/>
+            </t>
+        </xpath>
+        <!-- Only show base template for non-PT companies -->
+        <xpath expr="//t[@t-call='web.external_layout']" position="attributes">
+            <attribute name="t-if">o.company_id.country_id.code != 'PT'</attribute>
+        </xpath>
+    </template>
+</odoo>

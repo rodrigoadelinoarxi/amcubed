@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><!-- Flags this module's own certified report QWeb views as protected —
+         only the superuser can modify/delete them. The `protected` field
+         and its write()/unlink() enforcement live in `l10n_pt_ao`
+         (models/ir_actions_report.py, models/ir_ui_view.py); this module
+         only needs to mark its own views, mirroring the convention already
+         used by `l10n_pt_ao/data/protected_reports_data.xml`.
+         Not noupdate: re-asserted on every upgrade on purpose. --><!-- Invoice: the switch template (t-if on _get_name_invoice_report())
+         and the Arxi layout it calls into --><record id="report_invoice" model="ir.ui.view"><field name="protected" eval="True"/></record><record id="report_invoice_document" model="ir.ui.view"><field name="protected" eval="True"/></record><!-- Payment / receipt --><record id="report_payment_inherit" model="ir.ui.view"><field name="protected" eval="True"/></record><!-- Self-billing invoice layout --><record id="report_invoice_document_self_billing" model="ir.ui.view"><field name="protected" eval="True"/></record></odoo>

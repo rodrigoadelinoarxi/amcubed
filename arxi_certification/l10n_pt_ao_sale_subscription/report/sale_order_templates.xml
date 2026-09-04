@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><template id="report_saleorder_document_tweaks" inherit_id="sale.report_saleorder_document"><xpath expr="//div[hasclass('page')]" position="inside"><p t-if="doc.is_subscription and doc.company_id.account_fiscal_country_id.code in ('PT', 'AO')">
+                This documents is not a proof of movement of goods or the provision of services.
+            </p></xpath></template></odoo>

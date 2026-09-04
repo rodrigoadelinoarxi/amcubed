@@ -1,0 +1,52 @@
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_account_payment_form
+msgid "Reset To Draft"
+msgstr "Voltar para Rascunho"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_move_form
+msgid "Reset to Draft"
+msgstr "Voltar para Rascunho"
+
+#. module: account
+#. odoo-python
+#: code:addons/account/models/account_move_line.py:0
+#: model:ir.actions.server,name:account.action_move_force_register_payment
+#: model:ir.model,name:account.model_account_payment_register
+#: model_terms:ir.ui.view,arch_db:account.view_account_payment_form
+#: model_terms:ir.ui.view,arch_db:account.view_account_payment_register_form
+#: model_terms:ir.ui.view,arch_db:account.view_invoice_tree
+#: model_terms:ir.ui.view,arch_db:account.view_move_form
+#: model_terms:ir.ui.view,arch_db:account.view_move_line_payment_tree
+msgid "Pay"
+msgstr "Registar Pagamento"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+msgid "<strong>Shipping Address</strong>"
+msgstr "<strong>Endereço de Carga</strong>"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+msgid "<strong>Due Date</strong>"
+msgstr "<strong>Data de Vencimento</strong>"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+msgid "<strong>Customer Code</strong>"
+msgstr "<strong>Código Cliente</strong>"
+
+#. module: account
+#: model:ir.actions.report,name:account.action_report_payment_receipt
+msgid "Payment Receipt"
+msgstr "Imprimir Pagamento"
+
+#. module: account
+#: model:ir.actions.report,name:account.account_invoices_without_payment
+msgid "PDF without Payment"
+msgstr "Fatura Sem Pagamento"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.report_invoice_document
+msgid "<strong>Reference</strong>"
+msgstr "<strong>Referência</strong>"

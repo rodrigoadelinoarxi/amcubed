@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="annual_income_report_document">
+        <t t-call="web.external_layout">
+            <h4 id="report_title" class="text-center">IRS Declaration</h4>
+            <h4 class="text-center">Withholding Tax</h4>
+            <h4 class="text-center">(Subparagraph b) in paragraph 1 of Article 119 of the CIRS)</h4>
+            <h4 id="income_year" class="text-center">Income Year:
+                <t t-esc="o.income_year"/>
+            </h4>
+            <div style="background-color:#e9ecef; text-align:center">
+                <span>
+                    <b>Company Info</b>
+                </span>
+            </div>
+            <table class="table table-sm table-borderless" name="employer_table">
+                <tr id="company_info_line_1">
+                    <td class="w-25">
+                        <span t-field="o.company_id.name"/>
+                    </td>
+                    <td class="w-75">
+                        <span t-field="o.company_id.street"/>,
+                        <t t-if="o.company_id.street2">
+                            <span t-field="o.company_id.street2"/>,
+                        </t>
+                        <span t-field="o.company_id.city"/>,
+                        <span t-field="o.company_id.zip"/>,
+                        <span t-field="o.company_id.country_id.name"/>
+                    </td>
+                    <td class="w-25 text-right">
+                        <span>
+                            <b>VAT</b>
+                        </span>
+                    </td>
+                    <td class="w-25">
+                        <span t-field="o.company_id.vat"/>
+                    </td>
+                </tr>
+            </table>
+            <div style="background-color:#e9ecef; text-align:center">
+                <span>
+                    <b>Employee Info</b>
+                </span>
+            </div>
+            <table class="table table-sm" name="employee_table">
+                <tr id="employee_info_line_1">
+                    <td class="w-25">
+                        <strong>Name</strong>
+                    </td>
+                    <td class="w-25">
+                        <strong>Marital Status</strong>
+                    </td>
+                    <td class="w-25">
+                        <strong>Person in charge</strong>
+                    </td>
+                </tr>
+                <tr id="employee_info_line_2">
+                    <td>
+                        <span t-field="o.name"/>
+                    </td>
+                    <td>
+                        <span t-field="o.marital"/>
+                    </td>
+                    <td name="personne-in-charge">
+                        <t t-esc="o.children"/>
+                    </td>
+                </tr>
+                <tr id="employee_info_line_3">
+                    <td class="w-25">
+                        <strong>Fiscal Number</strong>
+                    </td>
+                    <td class="w-25">
+                        <strong>Social Security Number</strong>
+                    </td>
+                    <td class="w-25">
+                        <strong>Job Position</strong>
+                    </td>
+                </tr>
+                <tr id="employee_info_line_4">
+                    <td>
+                        <span t-field="o.fiscal_number"/>
+                    </td>
+                    <td>
+                        <span t-field="o.ssnid"/>
+                    </td>
+                    <td>
+                        <span t-field="o.job_title"/>
+                    </td>
+                </tr>
+            </table>
+            <div style="background-color:#e9ecef; text-align:center">
+                <span>
+                    <b>Annual amount of income paid and subject to IRS and Tax Withheld</b>
+                </span>
+            </div>
+            <table class="table table-sm" name="income_table_irs">
+                <tr id="income_info_line_1">
+                    <td class="w-25">
+                        <strong>Income Type</strong>
+                    </td>
+                    <td class="w-25">
+                        <strong>Total Income</strong>
+                    </td>
+                    <td class="w-25">
+                        <strong>Retained Value</strong>
+                    </td>
+                </tr>
+                <tr id="income_info_line_2">
+                    <td class="w-25">
+                        <span>Dependent Work</span>
+                    </td>
+                    <td class="w-25">
+                        <span t-esc="o.total_income"
+                              t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/>
+                    </td>
+                    <td class="w-25">
+                        <span t-esc="o.irs_deducted_value"
+                              t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/>
+                    </td>
+                </tr>
+            </table>
+            <div style="background-color:#e9ecef; text-align:center">
+                <span>
+                    <b>Deductions</b>
+                </span>
+            </div>
+            <table class="table table-sm" name="income_table_ss">
+                <tr id="income_info_line_3">
+                    <td>
+                        <strong>Social Security</strong>
+                    </td>
+                    <td>
+                        <span t-esc="o.ss_deducted_value"
+                              t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/>
+                    </td>
+                </tr>
+                <t t-if="o.union_worker">
+                    <tr id="income_info_line_4">
+                        <td>
+                            <strong>Union</strong>
+                        </td>
+                        <td>
+                            <span t-esc="o._get_total_union_contribution()"
+                                  t-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/>
+                        </td>
+                    </tr>
+                </t>
+            </table>
+            <div style="text-align:center">
+                <span>In accordance with paragraph b) in paragraph 1 of Article 119 of the CIRS, it is declared that
+                    they were received by the
+                    employee
+                    mentioned above, in the year <t t-esc="o.income_year"/>, income from dependent employment in the
+                    reported amounts.
+                </span>
+            </div>
+            <br/>
+            <span>Signature:</span>
+            <br/>
+            <br/>
+            <span>Report Creation Date:
+                <t t-esc="o.annual_income_report_date.strftime('%d/%m/%Y')"/>
+            </span>
+
+        </t>
+    </template>
+
+    <template id="annual_income_report">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-set="lang" t-value="o.lang"/>
+                <t t-call="l10n_pt_hr_payroll.annual_income_report_document" t-lang="lang"/>
+            </t>
+        </t>
+    </template>
+
+    <record id="action_report_annual_income" model="ir.actions.report">
+        <field name="name">Annual Income Report</field>
+        <field name="model">hr.employee</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">l10n_pt_hr_payroll.annual_income_report</field>
+        <field name="report_file">l10n_pt_hr_payroll.annual_income_report</field>
+        <field name="print_report_name">'Annual Income Report'</field>
+        <field name="binding_model_id" ref="model_hr_employee"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

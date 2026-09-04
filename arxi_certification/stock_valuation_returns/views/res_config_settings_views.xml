@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><record id="res_stock_config_settings_gt_option" model="ir.ui.view"><field name="name">res.stock.config.settings.gt.option</field><field name="model">res.config.settings</field><field name="inherit_id" ref="stock.res_config_settings_view_form"/><field name="arch" type="xml"><xpath expr="//block[@name='valuation_setting_container']" position="inside"><div id="stock_appreciation_return_stock_report" class="col-12 col-lg-6 o_setting_box"><div class="o_setting_left_pane"><field name="evaluate_returns_as_original_entry_move"/></div><div class="o_setting_right_pane"><label for="evaluate_returns_as_original_entry_move"/><span class="fa fa-lg fa-building-o" title="Values set here are company-specific."/><div class="text-muted">
+                            Evaluate returns with original entry move amount
+                        </div></div></div></xpath></field></record></odoo>

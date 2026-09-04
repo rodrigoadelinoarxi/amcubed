@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<odoo><record id="view_order_form_inherit_buyer_code" model="ir.ui.view"><field name="name">sale.order.line.form.inherit.buyer.code</field><field name="model">sale.order</field><field name="inherit_id" ref="sale.view_order_form"/><field name="arch" type="xml"><xpath expr="//field[@name='order_line']//list//field[@name='product_uom_qty']" position="after"><field name="buyer_code" readonly="parent.state != 'draft' and not line_is_editable"/></xpath></field></record></odoo>

@@ -1,0 +1,417 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-27 18:31+0000\n"
+"PO-Revision-Date: 2026-08-27 18:31+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_sale
+#. odoo-python
+#: code:addons/l10n_pt_sale/models/sale_order.py:0
+msgid ""
+"%(name)s is an invalid format for the sale order number. EX: OR SERIES/0001"
+msgstr "%(name)s é um formato inválido para o número da ordem de venda. EX: OR SERIES/0001"
+
+#. module: l10n_pt_sale
+#: model:ir.actions.report,print_report_name:l10n_pt_sale.action_report_saleorder_probe
+msgid "(object._get_report_base_filename())"
+msgstr ""
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.qr_code_container_sale_order
+msgid ""
+"- Processed by certified\n"
+"                    software ndoc. 2790/AT"
+msgstr "- Processado por software certificado nº 2790/AT"
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid ""
+"<br/>\n"
+"                <span>Document Not Certified</span>"
+msgstr "<br/><span>Document Not Certified</span>"
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid ""
+"<span name=\"not_invoice\" class=\"small\">This document is not an "
+"invoice.</span>"
+msgstr ""
+"<span name=\"not_invoice\" class=\"small\">Este documento não serve de "
+"fatura.</span>"
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid "<span>Amount</span>"
+msgstr "<span>Montante</span>"
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid "<span>Disc.%</span>"
+msgstr "<span>Desc.%</span>"
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid "<strong class=\"mr16\">Carried:</strong>"
+msgstr ""
+"<strong class=\"mr16\" style=\"display: inline-block; margin-top: 32px; "
+"margin-bottom: 8px;\">Transportado:</strong>"
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid "<strong class=\"mr16\">Carrying:</strong>"
+msgstr "<strong class=\"mr16\">A Transportar:</strong>"
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr ""
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid "<strong name=\"main_subtotal_string\" class=\"mr16\">Subtotal</strong>"
+msgstr ""
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid "<strong>Carried:</strong>"
+msgstr "<strong>Transportado:</strong>"
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid "<strong>Emission Date:</strong>"
+msgstr "<strong>Data de Emissão:</strong>"
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.qr_code_container_sale_order
+msgid "ATCUD:"
+msgstr ""
+
+#. module: l10n_pt_sale
+#. odoo-python
+#: code:addons/l10n_pt_sale/wizard/sale_advance_payment_inv.py:0
+msgid "Archived Taxes have been eliminated from lines."
+msgstr "Impostos Arquivados foram eliminados das Linhas."
+
+#. module: l10n_pt_sale
+#. odoo-python
+#: code:addons/l10n_pt_sale/models/sale_order_journal.py:0
+msgid "Can't change certification of a Journal with Entries."
+msgstr ""
+"Não é possível alterar o estado de Certificação num Diário com Lançamentos."
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid "Cancelled"
+msgstr "Anulado"
+
+#. module: l10n_pt_sale
+#: model:ir.model.fields,field_description:l10n_pt_sale.field_sale_order_journal__country_code
+msgid "Country Code"
+msgstr ""
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid "Description"
+msgstr "Descrição"
+
+#. module: l10n_pt_sale
+#: model:ir.model.fields,field_description:l10n_pt_sale.field_l10n_pt_account_series__display_name
+#: model:ir.model.fields,field_description:l10n_pt_sale.field_saft_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_pt_sale.field_sale_advance_payment_inv__display_name
+#: model:ir.model.fields,field_description:l10n_pt_sale.field_sale_order_journal__display_name
+#: model:ir.model.fields,field_description:l10n_pt_sale.field_sale_order_line__display_name
+msgid "Display Name"
+msgstr "Nome"
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid "Exchange Rate:"
+msgstr "Taxa de Câmbio:"
+
+#. module: l10n_pt_sale
+#: model:ir.model.fields,field_description:l10n_pt_sale.field_l10n_pt_account_series__id
+#: model:ir.model.fields,field_description:l10n_pt_sale.field_saft_wizard__id
+#: model:ir.model.fields,field_description:l10n_pt_sale.field_sale_advance_payment_inv__id
+#: model:ir.model.fields,field_description:l10n_pt_sale.field_sale_order_journal__id
+#: model:ir.model.fields,field_description:l10n_pt_sale.field_sale_order_line__id
+msgid "ID"
+msgstr "Id."
+
+#. module: l10n_pt_sale
+#: model:ir.model,name:l10n_pt_sale.model_l10n_pt_account_series
+msgid "Portuguese Account Series"
+msgstr "Séries de Contas Portugal"
+
+#. module: l10n_pt_sale
+#: model:ir.model.fields,field_description:l10n_pt_sale.field_sale_order_journal__l10n_pt_cert
+msgid "Portuguese Certification"
+msgstr "Certificação Portuguesa"
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid "Quantity"
+msgstr "Quantidade"
+
+#. module: l10n_pt_sale
+#: model:ir.actions.report,name:l10n_pt_sale.action_report_saleorder_probe
+msgid "Quotation / Order Pagination Probe"
+msgstr "Cotação / Prova de Paginação de Cotação"
+
+#. module: l10n_pt_sale
+#: model:ir.model,name:l10n_pt_sale.model_sale_order_journal
+#: model:ir.model.fields,field_description:l10n_pt_sale.field_l10n_pt_account_series__sale_journal_id
+msgid "Sale Journal"
+msgstr "Diário de Venda"
+
+#. module: l10n_pt_sale
+#: model:ir.model,name:l10n_pt_sale.model_sale_advance_payment_inv
+msgid "Sales Advance Payment Invoice"
+msgstr "Fatura de Pagamentos de Adiantamento das Vendas"
+
+#. module: l10n_pt_sale
+#: model:ir.model,name:l10n_pt_sale.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venda"
+
+#. module: l10n_pt_sale
+#: model:ir.model,name:l10n_pt_sale.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Linhas da Ordem de Vendas"
+
+#. module: l10n_pt_sale
+#: model:ir.model.fields,field_description:l10n_pt_sale.field_sale_order_journal__series_ids
+msgid "Series"
+msgstr "Séries"
+
+#. module: l10n_pt_sale
+#. odoo-python
+#: code:addons/l10n_pt_sale/models/sale_order_journal.py:0
+msgid "Subscription Journal must not have Portuguese Certification."
+msgstr "O Diário de Subscrições deve ter Certificação Portuguesa desativada."
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid "Taxes"
+msgstr "Impostos"
+
+#. module: l10n_pt_sale
+#: model:ir.model.fields,help:l10n_pt_sale.field_sale_order_journal__country_code
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+"O código ISO do país em dois caracteres. \n"
+"Pode usar este campo para uma pesquisa rápida."
+
+#. module: l10n_pt_sale
+#. odoo-python
+#: code:addons/l10n_pt_sale/models/sale_order.py:0
+msgid "The code sequence on ATCUD is different from the Sale sequence"
+msgstr "O código de sequence no ATCUD é diferente da sequência de Venda"
+
+#. module: l10n_pt_sale
+#. odoo-python
+#: code:addons/l10n_pt_sale/models/sale_order.py:0
+msgid ""
+"The date of the document must be equal or after the series initial date (%s)"
+msgstr ""
+"A data do Documento deve ser igual ou superior à data inicial da Série (%s)"
+
+#. module: l10n_pt_sale
+#. odoo-python
+#: code:addons/l10n_pt_sale/models/sale_order.py:0
+msgid "There must be one VAT tax per line."
+msgstr "Deve existir um e apenas um imposto de IVA por linha."
+
+#. module: l10n_pt_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_sale.report_saleorder_document
+msgid "Unit Price"
+msgstr "Preço Unitário"
+
+#. module: l10n_pt_sale
+#. odoo-python
+#: code:addons/l10n_pt_sale/models/sale_order.py:0
+msgid "VAT taxes should appear after the fixed amount taxes."
+msgstr "Os impostos do tipo IVA deve estar depois dos impostos fixos."
+
+#. module: l10n_pt_sale
+#: model:ir.model,name:l10n_pt_sale.model_saft_wizard
+msgid "Wizard for SAFT"
+msgstr "Assistente de SAF-T"
+
+#. module: l10n_pt_sale
+#. odoo-python
+#: code:addons/l10n_pt_sale/models/sale_order.py:0
+msgid "You can not cancel a draft quotation."
+msgstr "Não é possível cancelar um orçamento em rascunho."
+
+# The entries below override core "sale"/"sale_management" terms with the
+# European Portuguese wording (as opposed to Odoo's own upstream pt.po,
+# which mixes in Brazilian terms like "Cotação"). They previously lived in
+# an "i18n_extra/pt.po" file, which Odoo never loads — only a module's own
+# "i18n/" folder is scanned on install/update, so none of this ever took
+# effect (UAT vendas/stock, ponto 8 — Matias: printed document title not
+# translated to "Orçamento", 2026-08-27). Loading a dependent module
+# (l10n_pt_sale depends on sale, sale_management via sale_management) after
+# its dependency lets its own translations override the core ones for the
+# same msgid, same mechanism used by other l10n modules.
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.view_quotation_tree
+msgid "Quotation Number"
+msgstr "Número do Orçamento"
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.view_quotation_tree
+msgid "Quotation Date"
+msgstr "Data do Orçamento"
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+#: model_terms:ir.ui.view,arch_db:sale.portal_my_quotations
+msgid "Quotation #"
+msgstr "Orçamento #"
+
+#. module: sale
+#: code:addons/sale/models/sales_team.py:101
+#: model:ir.actions.act_window,name:sale.action_quotations
+#: model:ir.actions.act_window,name:sale.action_quotations_salesteams
+#: model:ir.actions.act_window,name:sale.action_quotations_with_onboarding
+#: model:ir.model.fields,field_description:sale.field_crm_team__use_quotations
+#: model:ir.ui.menu,name:sale.menu_sale_quotations
+#: model_terms:ir.ui.view,arch_db:sale.crm_team_salesteams_view_kanban
+#: model_terms:ir.ui.view,arch_db:sale.portal_my_home_menu_sale
+#: model_terms:ir.ui.view,arch_db:sale.portal_my_home_sale
+#: model_terms:ir.ui.view,arch_db:sale.portal_my_quotations
+#: model_terms:ir.ui.view,arch_db:sale.sale_order_view_search_inherit_quotation
+#: model_terms:ir.ui.view,arch_db:sale.view_order_product_search
+msgid "Quotations"
+msgstr "Orçamentos"
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.sale_order_view_search_inherit_quotation
+msgid "My Quotations"
+msgstr "Os Meus Orçamentos"
+
+#. module: sale
+#: code:addons/sale/models/sales_team.py:102
+#: model:ir.actions.act_window,name:sale.action_orders
+#: model:ir.actions.act_window,name:sale.action_orders_salesteams
+#: model:ir.actions.act_window,name:sale.action_orders_to_invoice_salesteams
+#: model:ir.model.fields,field_description:sale.field_payment_transaction__sale_order_ids
+#: model:ir.ui.menu,name:sale.menu_sales_config
+#: model_terms:ir.ui.view,arch_db:sale.crm_team_salesteams_view_kanban
+#: model_terms:ir.ui.view,arch_db:sale.portal_my_home_menu_sale
+#: model_terms:ir.ui.view,arch_db:sale.portal_my_home_sale
+#: model_terms:ir.ui.view,arch_db:sale.portal_my_orders
+#: model_terms:ir.ui.view,arch_db:sale.sale_order_view_search_inherit_quotation
+#: model_terms:ir.ui.view,arch_db:sale.view_order_product_search
+#: model_terms:ir.ui.view,arch_db:sale.view_order_tree
+#: model_terms:ir.ui.view,arch_db:sale.view_sale_order_calendar
+#: model_terms:ir.ui.view,arch_db:sale.view_sale_order_graph
+#: model_terms:ir.ui.view,arch_db:sale.view_sale_order_pivot
+msgid "Sales Orders"
+msgstr "Encomendas"
+
+#. module: sale
+#: model:ir.model.fields,field_description:sale.field_report_all_channels_sales__date_order
+msgid "Date Order"
+msgstr "Data da Encomenda"
+
+#. module: sale
+#: code:addons/sale/controllers/portal.py:51
+#: code:addons/sale/controllers/portal.py:103
+#: model:ir.model.fields,field_description:sale.field_sale_order__date_order
+#: model:ir.model.fields,field_description:sale.field_sale_report__date
+#: model_terms:ir.ui.view,arch_db:sale.portal_my_orders
+#: model_terms:ir.ui.view,arch_db:sale.portal_my_quotations
+#: model_terms:ir.ui.view,arch_db:sale.sale_order_view_search_inherit_quotation
+#: model_terms:ir.ui.view,arch_db:sale.sale_order_view_search_inherit_sale
+#: model_terms:ir.ui.view,arch_db:sale.view_order_product_search
+#: model_terms:ir.ui.view,arch_db:sale.view_sales_order_filter
+msgid "Order Date"
+msgstr "Data da Encomenda"
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.onboarding_quotation_layout_step
+msgid "Quotation Layout"
+msgstr "Aspeto do Orçamento"
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.sale_onboarding_sample_quotation_step
+msgid "Sample Quotation"
+msgstr "Amostra de Orçamento"
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.onboarding_quotation_layout_step
+msgid "Customize the look of your quotations."
+msgstr "Personalize o aspeto dos seus orçamentos."
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.sale_onboarding_sample_quotation_step
+msgid "Send a quotation to test the customer portal."
+msgstr "Envie um orçamento para testar o portal de cliente."
+
+#. module: sale
+#: model_terms:ir.actions.act_window,help:sale.act_res_partner_2_sale_order
+#: model_terms:ir.actions.act_window,help:sale.action_orders
+#: model_terms:ir.actions.act_window,help:sale.action_orders_salesteams
+#: model_terms:ir.actions.act_window,help:sale.action_quotations
+#: model_terms:ir.actions.act_window,help:sale.action_quotations_salesteams
+#: model_terms:ir.actions.act_window,help:sale.action_quotations_with_onboarding
+msgid "Create a new quotation, the first step of a new sale!"
+msgstr "Crie um novo orçamento, o primeiro passo para uma nova venda!"
+
+#. module: sale
+#: model_terms:ir.actions.act_window,help:sale.act_res_partner_2_sale_order
+#: model_terms:ir.actions.act_window,help:sale.action_orders_salesteams
+#: model_terms:ir.actions.act_window,help:sale.action_quotations
+#: model_terms:ir.actions.act_window,help:sale.action_quotations_salesteams
+#: model_terms:ir.actions.act_window,help:sale.action_quotations_with_onboarding
+msgid ""
+"Once the quotation is confirmed by the customer, it becomes a sales "
+"order.<br> You will be able to create an invoice and collect the payment."
+msgstr ""
+"Assim que o orçamento for confirmado pelo cliente, ele fica uma encomenda"
+".<br> É possível criar uma fatura e receber o pagamento."
+
+#. module: sale
+#: model_terms:ir.actions.act_window,help:sale.action_orders
+msgid ""
+"Once the quotation is confirmed, it becomes a sales order.<br> You will be "
+"able to create an invoice and collect the payment."
+msgstr ""
+"Assim que o orçamento for confirmado pelo cliente, ele fica uma encomenda.<br>"
+" É possível criar uma fatura e receber o pagamento."
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.view_order_form
+msgid ""
+"Terms and conditions... (note: you can setup default ones in the "
+"Configuration menu)"
+msgstr "Termos e condições... (nota: pode configurar pré-definições no menu Configuração)"
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.report_saleorder_document
+msgid "<strong>Payment Terms:</strong>"
+msgstr "<strong>Condições de Pagamento:</strong>"
+
+#. module: sale_management
+#: model:ir.model,name:sale_management.model_sale_order_template
+#: model:ir.model.fields,field_description:sale_management.field_sale_order__sale_order_template_id
+#: model:ir.model.fields,field_description:sale_management.field_sale_order_template__name
+#: model_terms:ir.ui.view,arch_db:sale_management.sale_order_template_view_form
+#: model_terms:ir.ui.view,arch_db:sale_management.sale_order_template_view_tree
+msgid "Quotation Template"
+msgstr "Modelo de Orçamento"

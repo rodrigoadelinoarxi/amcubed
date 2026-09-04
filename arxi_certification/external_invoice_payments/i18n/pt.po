@@ -1,0 +1,106 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* external_invoice_payments
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 10:21+0000\n"
+"PO-Revision-Date: 2025-08-26 10:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: external_invoice_payments
+#: model:ir.model,name:external_invoice_payments.model_account_payment_line
+msgid "Account Payment Line"
+msgstr "Linha de Pagamento"
+
+#. module: external_invoice_payments
+#: model:ir.model.fields,field_description:external_invoice_payments.field_account_payment_line__payment_difference
+msgid "Difference Amount"
+msgstr "Diferença"
+
+#. module: external_invoice_payments
+#: model:ir.model.fields.selection,name:external_invoice_payments.selection__account_payment__payment_difference_handling__open
+msgid "Keep open"
+msgstr "Manter em aberto"
+
+#. module: external_invoice_payments
+#: model_terms:ir.ui.view,arch_db:external_invoice_payments.l10n_pt_ao_view_account_payment_form
+msgid "Label"
+msgstr ""
+
+#. module: external_invoice_payments
+#: model:ir.model.fields,field_description:external_invoice_payments.field_account_payment_line__lock_fields
+msgid "Lock Fields"
+msgstr "Bloquear Campos"
+
+#. module: external_invoice_payments
+#: model:ir.model,name:external_invoice_payments.model_account_payment
+msgid "Payments"
+msgstr "Pagamentos"
+
+#. module: external_invoice_payments
+#: model_terms:ir.ui.view,arch_db:external_invoice_payments.l10n_pt_ao_view_account_payment_form
+msgid "Post Difference In"
+msgstr "Publicar Diferença em"
+
+#. module: external_invoice_payments
+#. odoo-python
+#: code:addons/external_invoice_payments/models/account_payment.py:0
+msgid "The external invoice date must be earlier than today."
+msgstr "A data da Fatura externa deve ser anterior à data atual."
+
+#. module: external_invoice_payments
+#. odoo-python
+#: code:addons/external_invoice_payments/models/account_payment.py:0
+msgid "The invoice %s already exists in this payment."
+msgstr "A Fatura %s já existe neste pagamento."
+
+#. module: external_invoice_payments
+#. odoo-python
+#: code:addons/external_invoice_payments/models/account_payment.py:0
+msgid "The invoice %s does not refer to the selected partner."
+msgstr "A Fatura %s não é referente ao Contacto selecionado."
+
+#. module: external_invoice_payments
+#. odoo-python
+#: code:addons/external_invoice_payments/models/account_payment.py:0
+msgid "The invoice %s exists in Odoo."
+msgstr "A Fatura %s já existe no Odoo."
+
+#. module: external_invoice_payments
+#. odoo-python
+#: code:addons/external_invoice_payments/models/account_payment.py:0
+msgid "The invoice %s has already been fully paid."
+msgstr "A Fatura %s já foi totalmente paga."
+
+#. module: external_invoice_payments
+#. odoo-python
+#: code:addons/external_invoice_payments/models/account_payment.py:0
+msgid "The payment amount must be positive for external invoices."
+msgstr "O valor do pagamento deve ser positivo para faturas externas."
+
+#. module: external_invoice_payments
+#. odoo-python
+#: code:addons/external_invoice_payments/models/account_payment.py:0
+msgid "This Partner has no open amount."
+msgstr "Este Contacto não tem montante em aberto."
+
+#. module: external_invoice_payments
+#. odoo-python
+#: code:addons/external_invoice_payments/models/account_payment.py:0
+msgid "You can not post a payment without a partner."
+msgstr "Não é possível publicar um Pagamento sem um Contacto."
+
+#. module: external_invoice_payments
+#. odoo-python
+#: code:addons/external_invoice_payments/models/account_payment.py:0
+msgid ""
+"You can not select an invoice and an external invoice in the same line."
+msgstr "Não pode selecionar uma Fatura e uma Fatura externa na mesma linha."

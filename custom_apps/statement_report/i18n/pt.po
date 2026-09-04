@@ -1,0 +1,165 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* statement_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-26 15:43+0000\n"
+"PO-Revision-Date: 2025-06-26 17:00+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.6\n"
+
+#. module: statement_report
+#: model:ir.actions.report,print_report_name:statement_report.res_partner_action
+msgid "'Statement Report- %s' %(object.name)"
+msgstr "'Relatório de Pagamento %s' %(object.name)"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.res_partner_statement_report_template
+msgid "Acumulado"
+msgstr ""
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.view_partner_form
+msgid "Amount Due"
+msgstr "Valor em Divida"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.res_partner_statement_report_template
+#: model_terms:ir.ui.view,arch_db:statement_report.view_partner_form
+msgid "Balance"
+msgstr "Balanço"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.view_partner_form
+msgid "Balance Due"
+msgstr "Balanço Total"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.view_partner_form
+msgid "Bill Date"
+msgstr "Data"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.view_partner_form
+msgid "Bill No."
+msgstr "Nº Fatura"
+
+#. module: statement_report
+#: model:ir.model,name:statement_report.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: statement_report
+#: model:ir.model.fields,field_description:statement_report.field_res_partner__currency_id
+#: model:ir.model.fields,field_description:statement_report.field_res_users__currency_id
+msgid "Currency"
+msgstr "Moeda"
+
+#. module: statement_report
+#: model:ir.model.fields,field_description:statement_report.field_res_partner__customer_report_ids
+#: model:ir.model.fields,field_description:statement_report.field_res_users__customer_report_ids
+msgid "Customer Report"
+msgstr "Conta Corrente de Cliente"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.view_partner_form
+msgid "Customer Statement"
+msgstr "Conta Corrente de Cliente"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.res_partner_statement_report_template
+msgid "Date"
+msgstr "Data"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.res_partner_statement_report_template
+msgid "Due Date"
+msgstr "Data de vencimento"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.view_partner_form
+msgid "Invoice Date"
+msgstr "Data"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.view_partner_form
+msgid "Invoice No."
+msgstr "Nº Fatura"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.res_partner_statement_report_template
+msgid "Invoice/Bill Number"
+msgstr "Número da Fatura"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.res_partner_statement_report_template
+msgid "Invoices/Debit"
+msgstr "Valor Total"
+
+#. module: statement_report
+#: model:ir.model.fields,help:statement_report.field_res_partner__vendor_statement_ids
+#: model:ir.model.fields,help:statement_report.field_res_users__vendor_statement_ids
+msgid "Partner Bills related to Vendor"
+msgstr "Contas de Parceiros relacionadas com o Fornecedor"
+
+#. module: statement_report
+#: model:ir.model.fields,help:statement_report.field_res_partner__customer_report_ids
+#: model:ir.model.fields,help:statement_report.field_res_users__customer_report_ids
+msgid "Partner Invoices related to Customer"
+msgstr "Faturas de Parceiros relacionadas com o Cliente"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.res_partner_statement_report_template
+msgid "Payment Statement Report"
+msgstr "Relatório de Extrato de Pagamento"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.view_partner_form
+msgid "Print PDF"
+msgstr "Imprimir PDF"
+
+#. module: statement_report
+#: model:ir.actions.report,name:statement_report.res_partner_action
+msgid "Statement Report"
+msgstr "Relatório Conta Corrente"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.view_partner_form
+msgid "Supplier Statement"
+msgstr "Conta Corrente do Fornecedor"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.view_partner_form
+msgid "Total Amount"
+msgstr "Montante Total"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.res_partner_statement_report_template
+msgid "Total Amount:"
+msgstr "Montante Total:"
+
+#. module: statement_report
+#: model_terms:ir.ui.view,arch_db:statement_report.res_partner_statement_report_template
+msgid "Total Balance:"
+msgstr "Balanço Total:"
+
+#. module: statement_report
+#: model:ir.model.fields,field_description:statement_report.field_res_partner__vendor_statement_ids
+#: model:ir.model.fields,field_description:statement_report.field_res_users__vendor_statement_ids
+msgid "Vendor Statement"
+msgstr "Conta Corrente do Vendedor"
+
+#. module: statement_report
+#: model:ir.model.fields,help:statement_report.field_res_partner__currency_id
+#: model:ir.model.fields,help:statement_report.field_res_users__currency_id
+msgid "currency related to Customer or Vendor"
+msgstr "moeda relacionada com o Cliente ou Fornecedor"

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<odoo><!-- Absorbed from print_conf_copies_pt.
+         v19: stock.report_picking was fully rewritten in core (web.report_layout
+         + internal docs loop). Instead of cloning the core layout (v18 approach),
+         we only duplicate each document according to its print_copies setting. --><template id="report_picking" inherit_id="stock.report_picking" priority="10"><xpath expr="//t[@t-foreach='docs']" position="attributes"><attribute name="t-foreach">docs.browse([d.id for d in docs for _ in range(int(d.print_copies) or 1)])</attribute></xpath></template></odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="contract_type_no_termless" model="hr.contract.type">
+            <field name="name">Termless</field>
+            <field name="sequence">1</field>
+        </record>
+        <record id="contract_type_term" model="hr.contract.type">
+            <field name="name">Term</field>
+            <field name="sequence">2</field>
+        </record>
+        <record id="contract_type_undetermined" model="hr.contract.type">
+            <field name="name">Undetermined</field>
+            <field name="sequence">3</field>
+        </record>
+        <record id="contract_type_intern" model="hr.contract.type">
+            <field name="name">Internship</field>
+            <field name="sequence">4</field>
+        </record>
+    </data>
+</odoo>

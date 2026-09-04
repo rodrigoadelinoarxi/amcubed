@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1"><record id="final_consumer" model="res.partner"><field name="name">Consumidor final</field><field name="ref">Consumidor final PT</field><field name="vat">999999990</field><field name="customer_rank">1</field><field name="country_id" ref="base.pt"/><field name="state">locked</field></record></odoo>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="unique_report_annex_b">
+        <relatorio_unico XML_DATA="3.2.13"
+                         xmlns="http://www.gep.msess.gov.pt/sguri/ru"
+                         xmlns:t="http://www.gep.msess.gov.pt/sguri/tipos_comuns"
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         xsi:schemaLocation="
+                            http://www.gep.msess.gov.pt/sguri/ru relatorio-fest-3.2.13.xsd
+                            http://www.gep.msess.gov.pt/sguri/tipos_comuns tipos-comuns-1.3.13.xsdsim
+                            http://www.gep.msess.gov.pt/sguri/ru/anexo_fest anexo-fest-1.3.13.xsd">
+
+            <header>
+                <aplicacao>
+                    <nome>Odoo Relatório Único</nome>
+                    <versao>18.0</versao>
+                    <empresa>Arxi</empresa>
+                </aplicacao>
+            </header>
+
+            <body>
+                <anexos>
+                    <anexo_fest xmlns="http://www.gep.msess.gov.pt/sguri/ru/anexo_fest"
+                                XML_DATA="1.3.13"
+                                t-att-ano="o.reference_year"
+                                t-att-entidade="o.company_vat">
+                        <nome_entidade><t t-esc="o.company_name.strip()"/></nome_entidade>
+                        <exist_entradas_saidas><t
+                                t-esc="'S' if o.entries_exits_ref_year else 'N'"/></exist_entradas_saidas>
+                        <dados_fest t-if="o.entries_exits_ref_year">
+                            <cae_31Dez tbl="RU_CAE_5DIG"><t t-esc="o.main_activity_cae.code"/></cae_31Dez>
+                            <trabalhadores>
+                                <t t-foreach="o.annex_b_employees" t-as="line">
+                                    <trabalhador>
+                                        <ident_reg_apli tbl="RU_REREAP"><t
+                                                t-esc="line.employee_social_security_regimen.code"/></ident_reg_apli>
+                                        <niss><t t-esc="line.employee_niss"/></niss>
+                                        <nome><t t-esc="line.employee_id.name"/></nome>
+                                        <tipo_contrato tbl="RU_TIPCON"><t
+                                                t-esc="line.employee_contract_type.code"/></tipo_contrato>
+                                        <entrada t-if="line.employee_admission_date">
+                                            <data><t
+                                                    t-esc="line.employee_admission_date.strftime('%Y-%m') if line.employee_admission_date else False"/></data>
+                                            <motivo tbl="RU_MEEE"><t
+                                                    t-esc="line.employee_entry_reason.code"/></motivo>
+                                        </entrada>
+                                        <saida t-if="line.employee_exit_date">
+                                            <data><t
+                                                    t-esc="line.employee_exit_date.strftime('%Y-%m') if line.employee_exit_date else False"/></data>
+                                            <motivo tbl="RU_MSEE" t-if="line.employee_exit_reason"><t
+                                                    t-esc="line.employee_exit_reason.code"/></motivo>
+                                        </saida>
+                                        <sexo tbl="RU_SX"><t t-esc="line.employee_gender"/></sexo>
+                                        <data_nasc><t
+                                                t-esc="line.employee_birthdate.strftime('%Y-%m') if line.employee_birthdate else False"/></data_nasc>
+                                        <nacionalidade tbl="RU_CODPAIS"><t
+                                                t-esc="line.employee_nationality"/></nacionalidade>
+                                        <habil_lit tbl="RU_HABLIT"><t
+                                                t-esc="line.employee_literacy_habilitations.code"/></habil_lit>
+                                        <sit_prof tbl="RU_SITPROF"><t
+                                                t-esc="line.employee_job_situation.code"/></sit_prof>
+                                        <prof tbl="RU_CPP"><t t-esc="line.employee_job_ur.code"/></prof>
+                                        <h_1art227><t
+                                                    t-esc="int(line.employee_supplementary_work_civil_year_hours)"/></h_1art227>
+                                        <h_2art227><t
+                                                    t-esc="int(line.employee_supplementary_work_civil_year_hours_n_2)"/></h_2art227>
+                                    </trabalhador>
+                                </t>
+                            </trabalhadores>
+                        </dados_fest>
+                    </anexo_fest>
+                </anexos>
+            </body>
+        </relatorio_unico>
+    </template>
+</odoo>

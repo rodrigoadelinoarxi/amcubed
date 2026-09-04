@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<odoo><record id="product_category_form_view" model="ir.ui.view"><field name="name">product.category.form.inherit.l10n_pt_saphety</field><field name="model">product.category</field><field name="inherit_id" ref="product.product_category_form_view"/><field name="arch" type="xml"><group name="first" position="after"><group name="medical_product"><group string="Medical Product"><field name="is_medical_product"/></group></group></group></field></record></odoo>

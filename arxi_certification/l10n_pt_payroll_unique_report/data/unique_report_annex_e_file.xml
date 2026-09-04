@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="unique_report_annex_e">
+        <relatorio_unico XML_DATA="3.2.13"
+                         xmlns="http://www.gep.msess.gov.pt/sguri/ru"
+                         xmlns:t="http://www.gep.msess.gov.pt/sguri/tipos_comuns"
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         xsi:schemaLocation="
+                             http://www.gep.msess.gov.pt/sguri/ru relatorio-grv-3.2.13.xsd
+                             http://www.gep.msess.gov.pt/sguri/tipos_comuns tipos-comuns-1.3.13.xsd
+                             http://www.gep.msess.gov.pt/sguri/ru/anexo_grv anexo-grv-3.2.13.xsd">
+
+            <header>
+                <aplicacao>
+                    <nome>Odoo Relatório Único</nome>
+                    <versao>18.0</versao>
+                    <empresa>Arxi</empresa>
+                </aplicacao>
+            </header>
+
+            <body>
+                <anexos>
+                    <anexo_grv xmlns="http://www.gep.msess.gov.pt/sguri/ru/anexo_grv"
+                               XML_DATA="3.2.13"
+                               t-att-ano="o.reference_year"
+                               t-att-entidade="o.company_vat">
+
+                        <nome_entidade><t t-esc="o.company_name.strip()"/></nome_entidade>
+                        <exist_greves><t t-esc="'S' if o.had_strikes else 'N'"/></exist_greves>
+                        <cae_31Dez tbl="RU_CAE_5DIG"><t t-esc="o.main_activity_cae.code"/></cae_31Dez>
+                        <pessoas_serv_31Dez><t t-esc="o.employees_in_service_december"/></pessoas_serv_31Dez>
+                        <nr_medio_anual_tco><t t-esc="o.employee_in_service_december_avg"/></nr_medio_anual_tco>
+                        <estabs>
+                            <estab t-att-id="o.local_unit_number" t-att-exist_greves="'S' if o.had_strikes else 'N'" sede="S">
+                                <cae_31Dez tbl="RU_CAE_5DIG"><t t-esc="o.main_activity_cae.code"/></cae_31Dez>
+                                <pessoas_serv_31Dez><t t-esc="o.employees_in_service_december"/></pessoas_serv_31Dez>
+                                <nr_medio_anual_tco><t t-esc="o.employee_in_service_december_avg"/></nr_medio_anual_tco>
+                                <greves t-if="o.had_strikes">
+                                    <t t-foreach="o.annex_e_strike_line_ids" t-as="line">
+                                        <greve>
+                                            <ident_greve tbl="RU_GREVE"><t t-esc="line.strike_code"/></ident_greve>
+                                            <reivindicacoes_princ>
+                                                <reivindicacao_princ>
+                                                    <reivindicacao tbl="RU_GRE_REIV"><t
+                                                            t-esc="line.strike_claim.code"/></reivindicacao>
+                                                    <res tbl="RU_GRE_RESULT"><t t-esc="line.strike_result.code"/></res>
+                                                </reivindicacao_princ>
+                                            </reivindicacoes_princ>
+                                            <datas_greve>
+                                                <data_greve>
+                                                    <data><t t-esc="line.strike_date.strftime('%m-%d') if line.strike_date else False"/></data>
+                                                    <pnt>
+                                                        <t t-set="horas_semanais" t-value="line.strike_working_hours or 40.0"/>
+                                                        <t t-esc="'%02d:%02d' % (int(horas_semanais), int((horas_semanais % 1) * 60))"/>
+                                                    </pnt>
+
+                                                    <n_trab_grv><t t-esc="line.strike_employee_count"/></n_trab_grv>
+                                                    <duracao>
+                                                        <t t-esc="str(line.strike_duration_hours).zfill(2) + ':' + str(line.strike_duration_minutes).zfill(2)"/>
+                                                    </duracao>
+                                                </data_greve>
+                                            </datas_greve>
+                                        </greve>
+                                    </t>
+                                </greves>
+                            </estab>
+                        </estabs>
+                    </anexo_grv>
+                </anexos>
+            </body>
+        </relatorio_unico>
+    </template>
+</odoo>

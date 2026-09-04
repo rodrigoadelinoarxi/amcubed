@@ -1,0 +1,115 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* payment_eupago_cc
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-25 11:06+0000\n"
+"PO-Revision-Date: 2022-10-25 11:06+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: payment_eupago_cc
+#: model_terms:ir.ui.view,arch_db:payment_eupago_cc.inline_form
+msgid ""
+"<small>You will get redirected to provide the card information after "
+"submiting your email</small>"
+msgstr ""
+"<small>Você será redirecionado para fornecer as informações do cartão "
+"após submeter o seu email</small>"
+
+#. module: payment_eupago_cc
+#: model:ir.model.fields,field_description:payment_eupago_cc.field_payment_acquirer__eupago_credit_card_minimum_amount
+msgid "Credit Card Minimum Amount"
+msgstr "Montante Mínimo Cartão de Crédito"
+
+#. module: payment_eupago_cc
+#: model_terms:ir.ui.view,arch_db:payment_eupago_cc.inline_form
+msgid "Email"
+msgstr ""
+
+#. module: payment_eupago_cc
+#: model:account.payment.method,name:payment_eupago_cc.payment_method_eupago_cc
+#: model:payment.acquirer,name:payment_eupago_cc.payment_acquirer_eupago_cc
+msgid "EuPago CC"
+msgstr ""
+
+#. module: payment_eupago_cc
+#: model:ir.model.fields,field_description:payment_eupago_cc.field_payment_transaction__eupago_entity
+msgid "EuPago Entity"
+msgstr "Entidade EuPago"
+
+#. module: payment_eupago_cc
+#: model:ir.model.fields,field_description:payment_eupago_cc.field_payment_transaction__eupago_reference
+msgid "EuPago Reference"
+msgstr "Referência EuPago"
+
+#. module: payment_eupago_cc
+#: model:ir.model.fields,field_description:payment_eupago_cc.field_payment_transaction__eupago_id
+msgid "Eupago"
+msgstr ""
+
+#. module: payment_eupago_cc
+#: model_terms:payment.acquirer,auth_msg:payment_eupago_cc.payment_acquirer_eupago_cc
+msgid "O seu pagamento foi autorizado."
+msgstr ""
+
+#. module: payment_eupago_cc
+#: model:ir.model,name:payment_eupago_cc.model_payment_acquirer
+msgid "Payment Acquirer"
+msgstr "Instituição de Pagamento"
+
+#. module: payment_eupago_cc
+#: model:ir.model,name:payment_eupago_cc.model_account_payment_method
+msgid "Payment Methods"
+msgstr "Métodos de Pagamento"
+
+#. module: payment_eupago_cc
+#: model:ir.model,name:payment_eupago_cc.model_payment_transaction
+msgid "Payment Transaction"
+msgstr "Transação de Pagamento"
+
+#. module: payment_eupago_cc
+#: model:ir.model.fields,field_description:payment_eupago_cc.field_payment_acquirer__provider
+msgid "Provider"
+msgstr "Provedor"
+
+#. module: payment_eupago_cc
+#: model:ir.model.fields,field_description:payment_eupago_cc.field_payment_acquirer__eupago_credit_card_reserve_days
+msgid "Reservation days"
+msgstr "Dias de Reserva"
+
+#. module: payment_eupago_cc
+#: model:ir.model.fields,help:payment_eupago_cc.field_payment_acquirer__provider
+msgid "The Payment Service Provider to use with this acquirer"
+msgstr ""
+"O Fornecedor de Serviço de Pagamento a utilizar com esta instituição de "
+"pagamento"
+
+#. module: payment_eupago_cc
+#: model_terms:payment.acquirer,cancel_msg:payment_eupago_cc.payment_acquirer_eupago_cc
+msgid "Your payment has been cancelled."
+msgstr "O seu pagamento foi cancelado."
+
+#. module: payment_eupago_cc
+#: model_terms:payment.acquirer,pending_msg:payment_eupago_cc.payment_acquirer_eupago_cc
+msgid ""
+"Your payment has been successfully processed but is waiting for approval."
+msgstr ""
+"O seu pagamento foi processado com sucesso, mas está à espera de aprovação."
+
+#. module: payment_eupago_cc
+#: model_terms:payment.acquirer,done_msg:payment_eupago_cc.payment_acquirer_eupago_cc
+msgid "Your payment has been successfully processed. Thank you!"
+msgstr "O seu pagamento foi processado com sucesso. Obrigado!"
+
+#. module: payment_eupago_cc
+#: model:ir.model.fields.selection,name:payment_eupago_cc.selection__payment_acquirer__provider__eupago_cc
+msgid "euPago CC"
+msgstr ""

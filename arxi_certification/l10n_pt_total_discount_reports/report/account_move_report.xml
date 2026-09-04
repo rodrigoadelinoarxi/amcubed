@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<odoo><template id="report_account_move_document_discount" inherit_id="l10n_pt_certificate.report_invoice_document"><xpath expr="//div[@id='total']/parent::div" position="before"><div class="row mb-4"><div class="col-7"/><div class="col-3"><span><strong>Discount Value:</strong></span><span t-out="o.global_discount_value" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/></div></div></xpath></template></odoo>

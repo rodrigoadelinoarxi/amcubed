@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="unique_report_annex_a">
+        <relatorio_unico XML_DATA="3.2.13"
+                         xmlns="http://www.gep.msess.gov.pt/sguri/ru"
+                         xmlns:t="http://www.gep.msess.gov.pt/sguri/tipos_comuns"
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         xsi:schemaLocation="
+                     http://www.gep.msess.gov.pt/sguri/ru relatorio-qp-3.2.13.xsd
+                     http://www.gep.msess.gov.pt/sguri/tipos_comuns tipos-comuns-1.3.13.xsd
+                     http://www.gep.msess.gov.pt/sguri/ru/anexo_qp anexo-qp-1.3.13.xsd">
+
+            <header>
+                <aplicacao>
+                    <nome>Odoo Relatório Único</nome>
+                    <versao>18.0</versao>
+                    <empresa>Arxi</empresa>
+                </aplicacao>
+            </header>
+
+            <body>
+                <anexos>
+                    <anexo_qp xmlns="http://www.gep.msess.gov.pt/sguri/ru/anexo_qp"
+                              XML_DATA="1.3.13"
+                              t-att-ano="o.reference_year"
+                              t-att-entidade="o.company_vat">
+                        <nome_entidade><t t-esc="o.company_name.strip()"/></nome_entidade>
+                        <total_pess_servico_31Out><t t-esc="o.employees_in_service_october"/></total_pess_servico_31Out>
+                        <cae_31Out tbl="RU_CAE_5DIG"><t t-esc="o.main_activity_cae.code"/></cae_31Out>
+                        <natJur_31Out tbl="RU_NATJUR"><t t-esc="o.legal_nature.code"/></natJur_31Out>
+                        <estabs>
+                            <estab t-att-id="o.local_unit_number" sede="S">
+                                <pess_servico_31Out><t t-esc="o.employees_in_service_october"/></pess_servico_31Out>
+                                <cae_31Out tbl="RU_CAE_5DIG"><t t-esc="o.main_activity_cae.code"/></cae_31Out>
+                                <trabalhadores>
+                                    <t t-foreach="o.annex_a_employees" t-as="line">
+                                        <trabalhador>
+                                            <nome><t
+                                                    t-esc="line.employee_id.name"/></nome>
+                                            <ident_reg_apli tbl="RU_REREAP"><t
+                                                    t-esc="line.employee_social_security_regimen.code"/></ident_reg_apli>
+                                            <niss><t t-esc="line.employee_niss"/></niss>
+                                            <sexo tbl="RU_SX"><t t-esc="line.employee_gender"/></sexo>
+                                            <data_nasc><t t-esc="line.employee_birthdate.strftime('%Y-%m') if line.employee_birthdate else False"/></data_nasc>
+                                            <data_entr_emp><t t-esc="line.employee_admission_date.strftime('%Y-%m') if line.employee_admission_date else False"/></data_entr_emp>
+                                            <data_ult_prom t-if="line.employee_last_promotion_date"><t
+                                                    t-esc="line.employee_last_promotion_date.strftime('%Y-%m') if line.employee_last_promotion_date else False"/></data_ult_prom>
+                                            <tipo_contr tbl="RU_TIPCON"><t
+                                                    t-esc="line.employee_contract_type.code"/></tipo_contr>
+                                            <nacionalidade tbl="RU_CODPAIS"><t
+                                                    t-esc="line.employee_nationality"/></nacionalidade>
+                                            <habil_lit tbl="RU_HABLIT"><t
+                                                    t-esc="line.employee_literacy_habilitations.code"/></habil_lit>
+                                            <sit_prof tbl="RU_SITPROF"><t
+                                                    t-esc="line.employee_job_situation.code"/></sit_prof>
+                                            <profissao tbl="RU_CPP"><t t-esc="line.employee_job_ur.code"/></profissao>
+                                            <irct tbl="RU_IRCT"><t t-esc="line.employee_irct_regulation"/></irct>
+                                            <aplic_irct tbl="RU_APLICIRCT"><t
+                                                    t-esc="line.employee_irct_applicability.code"/></aplic_irct>
+                                            <cat_prof tbl="RU_CATPROF"><t
+                                                    t-esc="line.employee_job_category"/></cat_prof>
+                                            <nivel_qual tbl="RU_NVLQLF"><t
+                                                    t-esc="line.employee_qualification_level.code"/></nivel_qual>
+                                            <rdt tbl="RU_RG_DU_TRB"><t
+                                                    t-esc="line.employee_work_duration_regimen.code"/></rdt>
+                                            <pnt><t t-esc="int(line._format_employee_weekly_hours())"/></pnt>
+                                            <dur_temp_trab tbl="RU_DU_TMP_TRB"><t
+                                                    t-esc="line.employee_working_time_duration.code"/></dur_temp_trab>
+                                            <org_temp_trab tbl="RU_ORG_TMP_TRB"><t
+                                                    t-esc="line.employee_working_time_organization.code"/></org_temp_trab>
+                                            <rem_devida_Out><t
+                                                    t-esc="line.employee_base_salary_october"/></rem_devida_Out>
+                                            <rem_paga_Out><t
+                                                    t-esc="line.employee_base_salary_paid_october"/></rem_paga_Out>
+                                            <mot_rem_inf_Out t-if="line.employee_not_paid_reason">
+                                                <motivo tbl="RU_MOT_H_NREM"><t
+                                                        t-esc="line.employee_not_paid_reason.code"/></motivo>
+                                            </mot_rem_inf_Out>
+                                            <horas_remun_Out><t
+                                                    t-esc="int(line.employee_paid_hours_october)"/></horas_remun_Out>
+                                            <sub_ref_Out><t
+                                                    t-esc="line.employee_meal_allw_october"/></sub_ref_Out>
+                                            <sub_turn_Out><t
+                                                    t-esc="line.employee_shift_allw_october"/></sub_turn_Out>
+                                            <out_sub_Out><t
+                                                    t-esc="line.employee_other_regular_allw_october"/></out_sub_Out>
+                                            <prest_ir_Out><t
+                                                    t-esc="line.employee_other_irregular_allw_october"/></prest_ir_Out>
+                                            <r_supl_Out><t
+                                                    t-esc="line.employee_other_regular_allw_october"/></r_supl_Out>
+                                            <horas_supl_Out><t
+                                                    t-esc="int(line.employee_supplementary_work_hours_october)"/></horas_supl_Out>
+                                            <t_horas_1art227><t
+                                                    t-esc="int(line.employee_supplementary_work_civil_year_hours)"/></t_horas_1art227>
+                                            <t_horas_2art227><t
+                                                    t-esc="int(line.employee_supplementary_work_civil_year_hours_n_2)"/></t_horas_2art227>
+                                        </trabalhador>
+                                    </t>
+                                </trabalhadores>
+                            </estab>
+                        </estabs>
+                    </anexo_qp>
+                </anexos>
+            </body>
+        </relatorio_unico>
+    </template>
+</odoo>

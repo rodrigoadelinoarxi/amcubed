@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><!-- Reason on the core's mass cancel wizard (list view): certified orders
+         cannot be cancelled in bulk without stating why. --><record id="mass_cancel_orders_view_form" model="ir.ui.view"><field name="name">sale.mass.cancel.orders.form.reason</field><field name="model">sale.mass.cancel.orders</field><field name="inherit_id" ref="sale.mass_cancel_orders_view_form"/><field name="arch" type="xml"><xpath expr="//footer" position="before"><field name="has_certified_order" invisible="True"/><group invisible="not has_certified_order"><field name="reason" required="has_certified_order"/></group></xpath></field></record></odoo>

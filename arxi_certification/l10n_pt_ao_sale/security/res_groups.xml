@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><record id="other_sale_configuration" model="res.groups"><field name="name">Other Sale Documents</field></record></odoo>

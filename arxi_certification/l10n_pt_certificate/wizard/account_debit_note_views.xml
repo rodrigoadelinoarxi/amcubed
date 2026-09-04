@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><record id="view_account_debit_note_l10n_pt" model="ir.ui.view"><field name="name">account.debit.note.form.inherit.l10n_pt_certificate</field><field name="model">account.debit.note</field><field name="inherit_id" ref="account_debit_note.view_account_debit_note"/><field name="arch" type="xml"><!-- Same fix as the credit note wizard
+                 (l10n_pt_ao/views/account_move_reversal_view.xml,
+                 "Absorbed from credit_note_reason"): the structured
+                 ``reason_id`` replaces the native free-text ``reason`` field
+                 for the certified flow — adding it "before" without hiding
+                 the native one left both visible, the same "two Reason
+                 fields" confusion the credit note fix addressed. --><xpath expr="//field[@name='reason']" position="attributes"><attribute name="invisible">1</attribute><attribute name="required">0</attribute></xpath><xpath expr="//field[@name='reason']" position="before"><field name="country_code" invisible="1"/><field name="reason_id" string="Reason" options="{'no_create': True}" required="country_code == 'PT'"/></xpath></field></record></odoo>

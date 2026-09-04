@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><!-- Hide the ATCUD initial date from the System Parameters list: changing it
+         would alter which documents are considered certified (Etapa 5.2) --><record id="base.ir_config_list_action" model="ir.actions.act_window"><field name="domain">[('key','!=','atcud.initial.date')]</field></record></odoo>

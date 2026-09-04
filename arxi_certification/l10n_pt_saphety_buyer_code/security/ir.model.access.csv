@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+l10n_pt_saphety_buyer_code.access_product_buyerinfo,access_product_buyerinfo,l10n_pt_saphety_buyer_code.model_product_buyerinfo,base.group_user,1,1,1,1

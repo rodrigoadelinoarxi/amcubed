@@ -1,0 +1,304 @@
+<odoo>
+    <!--    KM VIATURA-->
+
+    <record id="hr_rule_input_km" model="hr.payslip.input.type">
+        <field name="code">KM</field>
+        <field name="name">Kms Viatura Própria</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <!--    PREMIOS-->
+    <record id="hr_rule_input_award" model="hr.payslip.input.type">
+        <field name="code">AWARD</field>
+        <field name="name">Prémio</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_advance" model="hr.payslip.input.type">
+        <field name="code">ADVANCE</field>
+        <field name="name">Adiantamento</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <!--    DEDUÇÕES-->
+
+    <record id="hr_rule_input_salary_deduction" model="hr.payslip.input.type">
+        <field name="code">SALARY_DEDUCTION</field>
+        <field name="name">Dedução Salarial</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <!--    AJUDAS DE CUSTO-->
+    <record id="hr_rule_input_ac" model="hr.payslip.input.type">
+        <field name="code">AC</field>
+        <field name="name">Ajudas de Custo</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <!--    Retirement Savings Plan-->
+    <record id="hr_rule_input_ret_plan" model="hr.payslip.input.type">
+        <field name="code">RET_PLAN</field>
+        <field name="name">Plano Poupança Reforma</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <!--    Childhood Valley-->
+    <record id="hr_rule_input_child_val" model="hr.payslip.input.type">
+        <field name="code">CHILD_VAL</field>
+        <field name="name">Vale de Infância</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <!--    Balance Sheet Bonus-->
+    <record id="hr_rule_input_balance_bonus" model="hr.payslip.input.type">
+        <field name="code">BAL_BONUS</field>
+        <field name="name">Gratificação do Balanço</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_ex_sch_ded" model="hr.payslip.input.type">
+        <field name="code">EX_SCH_DED</field>
+        <field name="name">Exemption Schedule Deduction</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_night_work" model="hr.payslip.input.type">
+        <field name="code">TN</field>
+        <field name="name">Night Work</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_sunday_hours" model="hr.payslip.input.type">
+        <field name="code">HD</field>
+        <field name="name">Sunday Hours</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_term_comp" model="hr.payslip.input.type">
+        <field name="code">TERM_COMP</field>
+        <field name="name">Compensation for Termination of Contract</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_term_comp_exempt" model="hr.payslip.input.type">
+        <field name="code">TERM_COMP_EX</field>
+        <field name="name">Compensation for Termination of Contract - Exempt</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_perf_bonus" model="hr.payslip.input.type">
+        <field name="code">PERF_BONUS</field>
+        <field name="name">Performance Bonus</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_att_bonus" model="hr.payslip.input.type">
+        <field name="code">ATT_BONUS</field>
+        <field name="name">Performance Bonus</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <!--    AJUDAS DE CUSTO ESTRANGEIRO-->
+    <record id="hr_rule_input_ac_foreign" model="hr.payslip.input.type">
+        <field name="code">AC_FOREIGN</field>
+        <field name="name">Ajudas de Custo Estrangeiro</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_km_comp" model="hr.payslip.input.type">
+        <field name="code">KM_COMP</field>
+        <field name="name">Kms Viatura Empresa</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <!--    Commissions-->
+    <record id="hr_rule_input_commissions" model="hr.payslip.input.type">
+        <field name="code">COMISSION</field>
+        <field name="name">Comissões</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <!--    Sub Comp Enc Education-->
+    <record id="hr_rule_input_sub_comp_enc_education" model="hr.payslip.input.type">
+        <field name="code">COMP_SUB_EDU</field>
+        <field name="name">Sub Comp Enc Educação</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_exp_education" model="hr.payslip.input.type">
+        <field name="code">EXP_EDU</field>
+        <field name="name">Despesas de Educação</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_edu_voucher" model="hr.payslip.input.type">
+        <field name="code">EDU_VAL</field>
+        <field name="name">Vale de Educação</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_housing_rent" model="hr.payslip.input.type">
+        <field name="code">HOUSE_RENT</field>
+        <field name="name">Rendas de habitação em Espécie</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_housing_rent_exempt" model="hr.payslip.input.type">
+        <field name="code">HOUSE_RENT_EX</field>
+        <field name="name">Rendas de habitação em Espécie - Isento</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <!--Fail Allowance-->
+    <record id="hr_rule_input_fail_allow" model="hr.payslip.input.type">
+        <field name="code">FAIL_ALLOW</field>
+        <field name="name">Abono Falhas</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_vac_allw" model="hr.payslip.input.type">
+        <field name="code">VAC_ALLW</field>
+        <field name="name">Subsídio de Férias</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_chr_allw" model="hr.payslip.input.type">
+        <field name="code">CHR_ALLW</field>
+        <field name="name">Subsídio de Natal</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_extra_hours" model="hr.payslip.input.type">
+        <field name="code">HE</field>
+        <field name="name">Horas Extra + 0%</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_extra_hours25" model="hr.payslip.input.type">
+        <field name="code">HE25</field>
+        <field name="name">Horas Extra + 25%</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_extra_hours375" model="hr.payslip.input.type">
+        <field name="code">HE375</field>
+        <field name="name">Horas Extra + 37.5%</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_extra_hours50" model="hr.payslip.input.type">
+        <field name="code">HE50</field>
+        <field name="name">Horas Extra + 50%</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_extra_hours75" model="hr.payslip.input.type">
+        <field name="code">HE75</field>
+        <field name="name">Horas Extra + 75%</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_extra_hours90" model="hr.payslip.input.type">
+        <field name="code">HE90</field>
+        <field name="name">Horas Extra + 90%</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_extra_hours100" model="hr.payslip.input.type">
+        <field name="code">HE100</field>
+        <field name="name">Horas Extra + 100%</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_extra_hours125" model="hr.payslip.input.type">
+        <field name="code">HE125</field>
+        <field name="name">Horas Extra + 125%</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_extra_hours150" model="hr.payslip.input.type">
+        <field name="code">HE150</field>
+        <field name="name">Horas Extra + 150%</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_extra_sup_work" model="hr.payslip.input.type">
+        <field name="code">SW</field>
+        <field name="name">Trabalho Suplementar</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <!-- CORRECTION INPUTS - Manual alternative when auto_corrections module not installed -->
+
+    <record id="hr_rule_input_basic_corr_days" model="hr.payslip.input.type">
+        <field name="code">BASIC_CORR_DAYS</field>
+        <field name="name">Acerto Salário Base (dias)</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_meal_corr_days" model="hr.payslip.input.type">
+        <field name="code">MEAL_CORR_DAYS</field>
+        <field name="name">Acerto Subsídio Alimentação (dias)</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_vac_corr_days" model="hr.payslip.input.type">
+        <field name="code">VAC_CORR_DAYS</field>
+        <field name="name">Acerto Subsídio Férias (dias)</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_chr_corr_days" model="hr.payslip.input.type">
+        <field name="code">CHR_CORR_DAYS</field>
+        <field name="name">Acerto Subsídio Natal (dias)</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_training" model="hr.payslip.input.type">
+        <field name="code">TRN</field>
+        <field name="name">Formação</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+</odoo>

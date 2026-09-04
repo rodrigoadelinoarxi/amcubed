@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="l10n_pt_ao_pos.ReceiptScreen" t-inherit="point_of_sale.ReceiptScreen" t-inherit-mode="extension">
+        <xpath expr="//button[hasclass('print')]" position="after">
+            <!-- UAT POS/contabilidade, ponto 6 (2026-08-28): tried gating
+                 these on company.default_print_copies (the accounting
+                 print-copies setting) — reverted per Dylan: the POS
+                 receipt's duplicate/triplicate buttons are intentionally
+                 always available regardless of that (accounting-document)
+                 configuration, they are not the same concept. -->
+            <button class="button print btn btn-lg btn-secondary w-100 py-3 mt-1" t-on-click="printDuplicateReceipt">
+                <i class="fa fa-print ms-2" t-ref="order-print-receipt-button_duplicate"/> Print Duplicate Receipt
+            </button>
+            <button class="button print btn btn-lg btn-secondary w-100 py-3 mt-1" t-on-click="printTriplicateReceipt">
+                <i class="fa fa-print ms-2" t-ref="order-print-receipt-button_triplicate"/> Print Triplicate Receipt
+            </button>
+        </xpath>
+    </t>
+</templates>

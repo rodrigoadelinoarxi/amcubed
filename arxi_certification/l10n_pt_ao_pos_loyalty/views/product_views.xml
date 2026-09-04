@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<odoo><record id="product_template_form_view_inherit_10n_pt_ao_pos" model="ir.ui.view"><field name="name">product.template.form.inherit.l10n</field><field name="model">product.template</field><field name="inherit_id" ref="product.product_template_form_view"/><field name="arch" type="xml"><xpath expr="//div[@name='options']" position="inside"><span class="d-inline-block"><field name="pos_loyalty_program"/><label for="pos_loyalty_program" string="Loyalty Program"/></span></xpath></field></record></odoo>

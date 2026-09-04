@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><template id="report_saleorder_document" inherit_id="sale.report_saleorder_document"><!-- v19: the QWeb `current_subtotal` accumulator was removed from the core
+             report; the section subtotal is now computed in Python via
+             `_get_section_totals`. The former xpath override was moved to a method
+             override of `_get_section_totals` in models/sale_order.py. --><xpath expr="//div[@name='so_total_summary']/div[@id='total']" position="before"><div t-if="doc.global_discount_value" t-attf-class="#{'col-6 ms-auto text-end mb-3' if report_type != 'html' else 'col-sm-7 col-md-6 ms-auto text-end mb-3'}"><span class="fw-bold">Discount Value:</span><span t-out="doc.global_discount_value" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.currency_id}"/></div></xpath></template></odoo>

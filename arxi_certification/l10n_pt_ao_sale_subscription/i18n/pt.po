@@ -1,0 +1,145 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_ao_sale_subscription
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-27 19:50+0000\n"
+"PO-Revision-Date: 2026-08-27 19:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_ao_sale_subscription
+#. odoo-python
+#: code:addons/l10n_pt_ao_sale_subscription/models/sale_order_type.py:0
+msgid "Can't disable Is Subscription in this Sale Type."
+msgstr "Não é possível desativar esta opção para este Tipo de Documento"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model:ir.model.fields,help:l10n_pt_ao_sale_subscription.field_ir_actions_report__protected
+msgid ""
+"Certified report: only the superuser can modify or delete it (software "
+"certification requires a stable document layout)."
+msgstr "Tornar esta regra editável apenas para o super utilizador"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model:ir.model,name:l10n_pt_ao_sale_subscription.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale_subscription.sale_subscription_view_form_inherit_l10n_pt_ao
+msgid "Create Subscription"
+msgstr "Criar Subscrição"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale_subscription.field_ir_actions_report__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale_subscription.field_res_company__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale_subscription.field_sale_order_journal__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale_subscription.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale_subscription.field_sale_order_type__display_name
+msgid "Display Name"
+msgstr "Nome"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale_subscription.field_ir_actions_report__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale_subscription.field_res_company__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale_subscription.field_sale_order_journal__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale_subscription.field_sale_order_line__id
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale_subscription.field_sale_order_type__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_pt_ao_sale_subscription
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale_subscription.field_sale_order_journal__journal_is_subscription
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale_subscription.field_sale_order_type__is_subscription
+msgid "Is Subscription"
+msgstr "É uma subscrição"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model:ir.model,name:l10n_pt_ao_sale_subscription.model_account_move
+msgid "Journal Entry"
+msgstr "Lançamento de Diário"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale_subscription.field_ir_actions_report__protected
+msgid "Protected"
+msgstr "Protegido"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale_subscription.sale_subscription_view_form_inherit_l10n_pt_ao
+msgid "Quotation"
+msgstr "Orçamento"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale_subscription.field_sale_order_line__is_subscription_or
+msgid "Recurring"
+msgstr "Recorrente"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model:ir.model,name:l10n_pt_ao_sale_subscription.model_ir_actions_report
+msgid "Report Action"
+msgstr "Ação de relatório"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model:ir.model,name:l10n_pt_ao_sale_subscription.model_sale_order_type
+msgid "Sale Document Type"
+msgstr "Tipo de Documentos de Venda"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model:ir.model,name:l10n_pt_ao_sale_subscription.model_sale_order_journal
+msgid "Sale Journal"
+msgstr "Diário de Venda"
+
+#. module: l10n_pt_ao_sale_subscription
+#. odoo-python
+#: code:addons/l10n_pt_ao_sale_subscription/models/sale_order.py:0
+msgid "Sale Orders"
+msgstr "Ordens de Venda"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model:ir.model,name:l10n_pt_ao_sale_subscription.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venda"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model:ir.model,name:l10n_pt_ao_sale_subscription.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Linhas da Ordem de Vendas"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model:sale.order.type,name:l10n_pt_ao_sale_subscription.t_subscription
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale_subscription.sale_subscription_view_form_inherit_l10n_pt_ao
+msgid "Subscription"
+msgstr "Subscrição"
+
+#. module: l10n_pt_ao_sale_subscription
+#. odoo-python
+#: code:addons/l10n_pt_ao_sale_subscription/models/sale_order.py:0
+msgid "Subscription %s"
+msgstr "Subscrição %s"
+
+#. module: l10n_pt_ao_sale_subscription
+#. odoo-python
+#: code:addons/l10n_pt_ao_sale_subscription/models/sale_order.py:0
+msgid "Subscriptions"
+msgstr "Subscrições"
+
+#. module: l10n_pt_ao_sale_subscription
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale_subscription.report_saleorder_document_tweaks
+msgid ""
+"This documents is not a proof of movement of goods or the provision of "
+"services."
+msgstr "Este documento não é prova de um movimento bens ou serviços."
+
+#. module: l10n_pt_ao_sale_subscription
+#. odoo-python
+#: code:addons/l10n_pt_ao_sale_subscription/models/sale_order.py:0
+msgid "You can not create subscriptions without recurrent products."
+msgstr "Não é possível criar Subscrições sem Produtos Recorrentes"

@@ -1,0 +1,21 @@
+
+.fake_h2 {
+  font-size: $h2-font-size;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.fake_h3 {
+  font-size: $h3-font-size;
+  color: $o-main-text-color;
+}
+
+.o_report_layout_bold {
+  .fake_h2 {
+    color: $o-default-report-primary-color;
+    font-weight: bolder;
+  }
+}

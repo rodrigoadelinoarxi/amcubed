@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1"><record id="product_default_code_type" model="ir.config_parameter"><field name="key">automatic_refs.product_default_code_type</field><field name="value">1</field></record><record id="partner_ref_type" model="ir.config_parameter"><field name="key">automatic_refs.partner_ref_type</field><field name="value">1</field></record></odoo>

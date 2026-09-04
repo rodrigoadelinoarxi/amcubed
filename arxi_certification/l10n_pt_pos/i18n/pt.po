@@ -1,0 +1,84 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_pos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-14 15:23+0000\n"
+"PO-Revision-Date: 2025-04-14 15:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_pos/static/src/xml/OrderReceipt.xml:0
+msgid ""
+"- Processed by certified\n"
+"                    software no. 2790/AT"
+msgstr ""
+"- Processado pelo software certificado\n"
+"                    nº 2790/AT"
+
+#. module: l10n_pt_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_pos/static/src/xml/OrderReceipt.xml:0
+msgid "ATCUD:"
+msgstr ""
+
+#. module: l10n_pt_pos
+#: model:ir.model.fields,field_description:l10n_pt_pos.field_pos_order__atcud
+msgid "Atcud"
+msgstr ""
+
+#. module: l10n_pt_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_pos/static/src/js/pos.js:0
+msgid "Missing Country"
+msgstr "País em Falta"
+
+#. module: l10n_pt_pos
+#: model:ir.model,name:l10n_pt_pos.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuração do Ponto de Venda"
+
+#. module: l10n_pt_pos
+#: model:ir.model,name:l10n_pt_pos.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Ordens do Ponto de Venda"
+
+#. module: l10n_pt_pos
+#: model:ir.model.fields,field_description:l10n_pt_pos.field_pos_order__qr_code
+msgid "Qr Code"
+msgstr "Código QR"
+
+#. module: l10n_pt_pos
+#: model:ir.model.fields,field_description:l10n_pt_pos.field_pos_config__qr_default_size
+msgid "Qr Default Size"
+msgstr ""
+
+#. module: l10n_pt_pos
+#: model:ir.model.fields,field_description:l10n_pt_pos.field_pos_config__qr_min_size
+msgid "Qr Min Size"
+msgstr ""
+
+#. module: l10n_pt_pos
+#: model:ir.model.fields,field_description:l10n_pt_pos.field_pos_config__qr_style
+msgid "Qr Style"
+msgstr ""
+
+#. module: l10n_pt_pos
+#: model:ir.model.fields,field_description:l10n_pt_pos.field_pos_config__qr_uom_size
+msgid "Qr Uom Size"
+msgstr ""
+
+#. module: l10n_pt_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_pos/static/src/js/pos.js:0
+msgid "The company %s doesn't have a country set."
+msgstr "A empresa %s não tem um país definido."

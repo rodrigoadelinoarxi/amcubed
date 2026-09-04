@@ -1,0 +1,1415 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_stock
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-27 18:40+0000\n"
+"PO-Revision-Date: 2026-08-27 18:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport_journal.py:0
+msgid "%s (copy)"
+msgstr ""
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport_journal.py:0
+msgid "%s Sequence"
+msgstr "%s Sequência"
+
+#. module: l10n_pt_stock
+#: model:ir.actions.report,print_report_name:l10n_pt_stock.action_print_transport_document
+msgid "(object._get_report_base_filename())"
+msgstr ""
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.qr_code_container_transport_document
+msgid ""
+"- Processed by\n"
+"                    certified\n"
+"                    software no. 2790/AT"
+msgstr ""
+"- Processado por\n"
+"                    software certificado nº 2790/AT"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_my_home_menu_transport
+msgid "<em>Draft Transport</em>"
+msgstr "<em>Guia em Rascunho</em>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_transport_page
+msgid "<i class=\"fa fa-download\"/>&amp;nbsp;Download"
+msgstr "<i class=\"fa fa-download\"/>&amp;nbsp;Descarregar"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_transport_page
+msgid ""
+"<i class=\"fa fa-fw fa-comments\"/>\n"
+"                                            <b>Send message</b>"
+msgstr "<i class=\"fa fa-fw fa-comments\"/><b>Enviar mensagem</b>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid ""
+"<i class=\"fa fa-long-arrow-right mx-2\" aria-label=\"Arrow icon\" "
+"title=\"Arrow\"/>"
+msgstr ""
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_transport_page
+msgid "<i class=\"fa fa-print\"/>&amp;nbspPrint"
+msgstr "<i class=\"fa fa-print\"/>&amp;nbspImprimir"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_my_transports
+msgid ""
+"<span class=\"badge badge-pill text-bg-success\">\n"
+"                                        <i class=\"fa fa-fw fa-check\" aria-label=\"Posted\" title=\"Posted\" role=\"img\"/>\n"
+"                                        <span class=\"d-none d-md-inline\"> Posted</span>\n"
+"                                    </span>"
+msgstr ""
+"<span class=\"badge badge-pill text-bg-success\"><i class=\"fa fa-fw fa-"
+"check\" aria-label=\"Posted\" title=\"Posted\" role=\"img\"/><span "
+"class=\"d-none d-md-inline\"> Posted</span></span>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_my_transports
+msgid ""
+"<span class=\"badge badge-pill text-bg-warning\">\n"
+"                                        <i class=\"fa fa-fw fa-remove\" aria-label=\"Cancelled\" title=\"Cancelled\" role=\"img\"/>\n"
+"                                        <span class=\"d-none d-md-inline\"> Cancelled</span>\n"
+"                                    </span>"
+msgstr ""
+"<span class=\"badge badge-pill text-bg-warning\"><i class=\"fa fa-fw fa-"
+"remove\" aria-label=\"Cancelled\" title=\"Cancelled\" role=\"img\"/><span "
+"class=\"d-none d-md-inline\"> Cancelled</span></span>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.res_stock_config_settings_gt_option
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\"/>"
+msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Os valores aqui definidos são"
+" específicos da empresa.\"/>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "<span invisible=\"name != '/'\">Draft</span>"
+msgstr "<span invisible=\"name != '/'\">Rascunho</span>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_delivery_document
+msgid ""
+"<span name=\"not_invoice\" class=\"small mb-0\">This document is not an "
+"invoice.</span>"
+msgstr ""
+"<span name=\"not_invoice\" class=\"small mb-0\">Este documento não serve de "
+"fatura.</span>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "<span>Product</span>"
+msgstr "<span>Artigo</span>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "<span>Quantity</span>"
+msgstr "<span>Quantidade</span>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_portal_content
+msgid "<span>Transport</span>"
+msgstr "<span>Guia de Transporte</span>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_transport_page
+msgid "<strong class=\"text-muted\">Your Contact</strong>"
+msgstr "<strong class=\"text-muted\">O Seu Contacto</strong>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_portal_content
+msgid "<strong>AT Document Code ID:</strong>"
+msgstr "<strong>Código AT:</strong>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_delivery_document
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_portal_content
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Data:</strong>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "<strong>Estimated End Date</strong>"
+msgstr "<strong>Data Estimada de Fim</strong>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "<strong>Estimated Start Date</strong>"
+msgstr "<strong>Data Estimada de Início</strong>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "<strong>Posting Date</strong>"
+msgstr "<strong>Data de Emissão</strong>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "<strong>Vehicle License Plate</strong>"
+msgstr "<strong>Matrícula do Veículo</strong>"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_list
+msgid "AT Code"
+msgstr "Código AT"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "AT Code:"
+msgstr "Código AT:"
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_at_transport_mixin
+msgid "AT Transport Mixin"
+msgstr ""
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.qr_code_container_transport_document
+msgid "ATCUD:"
+msgstr ""
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_company__at_gt_active
+msgid "Activate AT Validation of GTs"
+msgstr "Ativar Validação AT de GT"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_pt_transport_journal__active
+msgid "Active"
+msgstr "Ativo"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Additional Info"
+msgstr "Informação Adicional"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__allowed_uom_ids
+msgid "Allowed Uom"
+msgstr "Uom permitida"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_journal_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_journal_view_search
+msgid "Archived"
+msgstr "Arquivado"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__product_category__product_type__b
+msgid "Biological Assets"
+msgstr "Ativos Biológicos"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__pt_transport__state__cancel
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_search
+msgid "Cancelled"
+msgstr "Anulado"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,help:l10n_pt_stock.field_res_company__at_foreign_partners
+#: model:ir.model.fields,help:l10n_pt_stock.field_res_config_settings__at_foreign_partners
+msgid "Check to use foreign partners with no official AT validation"
+msgstr ""
+"Ative para permitir clientes estrangeiros sem validação oficial pela AT"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_company__at_test
+msgid "Check to use the tests endpoint (no official AT validation)"
+msgstr "Ativar para usar o endpoint de testes (sem validação oficial pela AT)"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "City"
+msgstr "Cidade"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "City is a required field for the company"
+msgstr "A Cidade é um campo obrigatório para a Empresa."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "City is a required field for the warehouse partner"
+msgstr "A Cidade é um campo obrigatório para o parceiro."
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__pt_transport__state__comm
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_search
+msgid "Communication"
+msgstr "Comunicação"
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_pt_transport_journal__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "Company does not have AT Webservice credentials"
+msgstr "A Empresa não tem credenciais do Webservice da AT"
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_res_config_settings
+msgid "Config Settings"
+msgstr "Configurações"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "Copy of the document"
+msgstr "Cópia do documento"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "Copy of the document - Duplicate"
+msgstr "Cópia do documento - Duplicada"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "Copy of the document - Quadruplicate"
+msgstr "Cópia do documento - Quadriplicada"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "Copy of the document - Triplicate"
+msgstr "Cópia do documento - Triplicada"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Country"
+msgstr "País"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.view_picking_form
+msgid "Create AT Transport Document"
+msgstr "Criar um Documento de Transporte AT"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_pt_transport_journal__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__create_date
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_pt_transport_journal__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Customer Preview"
+msgstr "Visualização do Cliente"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "Delivery Address"
+msgstr "Endereço de Descarga"
+
+#. module: l10n_pt_stock
+#: model:account.document.type,name:l10n_pt_stock.guia_remessa
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__pt_transport_journal__movement_type__delivery_document
+msgid "Delivery Document"
+msgstr "Guia de Remessa"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__stock_picking__type__out_picking
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_delivery_document
+msgid "Delivery Slip"
+msgstr "Guia de Entrega"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/stock_picking.py:0
+msgid "Delivery Slip %s"
+msgstr "Guia de Entrega %s"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "Delivery address fields are incomplete!"
+msgstr "Os Campos do Endereço de Entrega estão incompletos!"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Destination"
+msgstr "Destino"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_portal_content
+msgid "Details"
+msgstr "Detalhes"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_category__display_name
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_product__display_name
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__display_name
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_pt_transport_journal__display_name
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_company__display_name
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_company_print_line__display_name
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_users__display_name
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_saft_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_stock_move_line__display_name
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_stock_picking_type__display_name
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_stock_quantity_history__display_name
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_stock_return_picking__display_name
+msgid "Display Name"
+msgstr "Nome"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_pt_transport_journal__sequence
+msgid "Display order"
+msgstr "Ordem"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "Document Transports can only be created in Portuguese Companies."
+msgstr "Os Documentos de Transporte apenas podem ser criados em Empresas PT."
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_company_print_line__doc_type
+msgid "Document Type"
+msgstr "Tipo de Documento"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "Document not validated! (Error Code %(code)s: %(msg)s)"
+msgstr "Documento não validado! (Código do Erro %(code)s: %(msg)s)"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "Document validated successfully. Response AT Document Code ID: %s"
+msgstr "Documento validado com sucesso. ID do Código do Documento (resposta AT): %s"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_transport_page
+msgid "Download"
+msgstr "Descarregar"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__pt_transport__state__draft
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_search
+msgid "Draft"
+msgstr "Rascunho"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/stock_picking.py:0
+msgid "Draft Delivery Slip"
+msgstr "Guia de Entrega em Rascunho"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/stock_picking.py:0
+msgid "Draft Return Delivery Slip"
+msgstr "Guia de Retorno em Rascunho"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_my_transports
+msgid "Draft Transport"
+msgstr "Transporte em Rascunho"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "Duplicate"
+msgstr "Duplicado"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "ERROR: invalid commercial partner zip code"
+msgstr "ERRO: código postal do contacto comercial inválido"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "ERROR: invalid partner zip code"
+msgstr "ERRO: código postal do contacto inválido"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_list
+msgid "End Date"
+msgstr "Data de Fim"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,help:l10n_pt_stock.field_product_transport_line__has_tracking
+msgid "Ensure the traceability of a storable product in your warehouse."
+msgstr "Garanta a rastreabilidade de um produto armazenável no seu armazém."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid ""
+"Error validating document! Portuguese AT API returned an error (Error Code "
+"%(code)s: %(msg)s)"
+msgstr ""
+"Erro a Validar Documento! API de AT devolveu um erro (Error Code %(code)s: "
+"%(msg)s)"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.view_stock_quantity_history
+msgid "Export Communication AT"
+msgstr "Exportar Comunicação AT"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.res_stock_config_settings_gt_option
+msgid "Export Portuguese TA compatible stock reports with valuation."
+msgstr "Exportar inventário valorizado compatível com a AT."
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_stock_quantity_history__data
+msgid "File"
+msgstr "Ficheiro"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_stock_quantity_history__name
+msgid "File Name"
+msgstr "Nome do Ficheiro"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__product_category__product_type__a
+msgid "Finished and Intermedium Products"
+msgstr "Produtos Acabados e Intermediários"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Generate Returns Document"
+msgstr "Gerar Guia de Devolução"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Get AT Code"
+msgstr "Obter Código AT"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__product_category__product_type__m
+msgid "Goods"
+msgstr "Mercadorias"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_transport_page
+msgid "History"
+msgstr "Histórico"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_category__id
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_product__id
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__id
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_pt_transport_journal__id
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_company__id
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_company_print_line__id
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_config_settings__id
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_users__id
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_saft_wizard__id
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_stock_move_line__id
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_stock_picking_type__id
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_stock_quantity_history__id
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_stock_return_picking__id
+msgid "ID"
+msgstr "Id."
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid ""
+"If the document has an AT code, cancelling it will also cancel it on the "
+"AT's end. Proceed?"
+msgstr ""
+"Se o documento tem um código AT, ao cancelar vai fazer uma comunicação à AT "
+"a informar desse procedimento. Deseja continuar?"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_stock_move_line__is_return
+msgid "Is a Return Picking"
+msgstr "É uma Guia de Devolução"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_list
+msgid "Journal"
+msgstr "Diário"
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_account_move
+msgid "Journal Entry"
+msgstr "Lançamento de Diário"
+
+#. module: l10n_pt_stock
+#: model:ir.ui.menu,name:l10n_pt_stock.transport_journal_menu
+msgid "Journals"
+msgstr "Diários"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_company__l10n_pt_transport
+msgid "L10N Pt Transport"
+msgstr "L10N Pt Transporte"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_pt_transport_journal__write_uid
+msgid "Last Updated by"
+msgstr "Última Modificação por"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__write_date
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_pt_transport_journal__write_date
+msgid "Last Updated on"
+msgstr "Última atualização em"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid ""
+"Line %s must have same the quantity serial numbers as product quantity."
+msgstr ""
+"A linha %s deve ter uma quantidade de números de série igual à quantidade do produto."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "Line Quantities must be equal or greater than to 0.0001"
+msgstr "As Quantidades de Linha devem ser iguais ou superiores a 0.0001"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "Loading Address"
+msgstr "Endereço de Carga"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "Loading address fields are incomplete!"
+msgstr "O Endereço de Carga está incompleto!"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "Lot/Serial Number"
+msgstr "Lote/Número de Série"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Movement Date"
+msgstr "Data do Movimento"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_search
+msgid "Movement Start Date"
+msgstr "Data de Início do Movimento"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "Movement Start Date is a required field"
+msgstr "Data de Início de Movimento é um campo obrigatório."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "Movement Start Date must be earlier than the Movement End Date."
+msgstr ""
+"Data de Início de Movimento deve ser anterior à Data de Fim de Movimento."
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_list
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_search
+msgid "Movement Type"
+msgstr "Tipo de Movimento"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_search
+msgid "My Transport Documents"
+msgstr "Os Meus Documentos de Transporte"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__name
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_pt_transport_journal__name
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_list
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_search
+msgid "Name"
+msgstr "Nome"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "New"
+msgstr "Novo"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__movement_type
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_pt_transport_journal__movement_type
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_journal_view_search
+msgid "Operation Type"
+msgstr "Tipo de Operação"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Origin"
+msgstr "Origem"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "Original"
+msgstr ""
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Other Information"
+msgstr "Outra Informação"
+
+#. module: l10n_pt_stock
+#: model:account.document.type,name:l10n_pt_stock.guia_ativos
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__pt_transport_journal__movement_type__own_assets_document
+msgid "Own Assets Document"
+msgstr "Guia de Movimentação de Ativos Próprios"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.view_picking_form
+msgid "PT Transports"
+msgstr "Docs. de Transporte PT"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_list
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_search
+msgid "Partner"
+msgstr "Contacto"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_company__at_api_password
+msgid "Password"
+msgstr "Senha"
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_stock_picking_type
+msgid "Picking Type"
+msgstr "Tipo de Recolha"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "Please activate Portuguese TA Transport Documents."
+msgstr "Por Favor ative os Documentos de Transporte Portugueses."
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_company__l10n_pt_stock_valuation_report
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_config_settings__l10n_pt_stock_valuation_report
+msgid "Portuguese Stock Valuation"
+msgstr "Valorização de Stock Portuguesa"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_config_settings__l10n_pt_transport
+msgid "Portuguese TA Transport Documents"
+msgstr "Documentos de Transporte"
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_pt_transport
+msgid "Portuguese Transport Document"
+msgstr "Documento de Transporte Português"
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_pt_transport_journal
+msgid "Portuguese Transport Document Journal"
+msgstr "Diário de Documento de Transporte Português"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_search
+msgid "Posted"
+msgstr "Emitido"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_search
+msgid "Posting Date"
+msgstr "Data de Emissão"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "Posting date is behind last document posting date."
+msgstr ""
+"A Data de Publicação não pode ser anterior à data de Publicação do último "
+"Documento."
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_pt_transport_journal__prefix
+msgid "Prefix"
+msgstr "Prefixo"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_transport_page
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.view_picking_form
+msgid "Print Configurations"
+msgstr "Config. de Impressão"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__product_id
+msgid "Product"
+msgstr "Artigo"
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_product_category
+msgid "Product Category"
+msgstr "Categoria do Artigo"
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "Movimentos do artigo (movimentos de stock)"
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_product_transport_line
+msgid "Product Transport Lines"
+msgstr "Linhas de Transporte de Artigo"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_category__product_type
+msgid "Product Type"
+msgstr "Tipo de Produto"
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_product_product
+msgid "Product Variant"
+msgstr "Variante do produto"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__has_tracking
+msgid "Product with Tracking"
+msgstr "Artigo com Rastreabilidade"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_portal_content
+msgid "Products"
+msgstr "Artigos"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__product_category__product_type__t
+msgid "Products and Works in Progress"
+msgstr "Produtos e Trabalhos em Curso"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__res_company_print_line__doc_type__pt_transport
+msgid "Pt Transport"
+msgstr ""
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "Quadruplicate"
+msgstr "Quadriplicado"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__product_uom_qty
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_portal_content
+msgid "Quantity"
+msgstr "Quantidade"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__product_category__product_type__p
+msgid "Raw Material, Subsidiaries and Consumption"
+msgstr "Matérias Primas, Subsidiários e de Consumo"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/controllers/portal.py:0
+msgid "Reference"
+msgstr "Referência"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_transport_page
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_search
+msgid "Responsible"
+msgstr "Responsável"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_delivery_document
+msgid "Return Delivery Slip"
+msgstr "Guia de Retorno"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/stock_picking.py:0
+msgid "Return Delivery Slip %s"
+msgstr "Guia de Retorno %s"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Return Documents"
+msgstr "Guias de Devolução"
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_stock_return_picking
+msgid "Return Picking"
+msgstr "Operação de Devolução de Stock"
+
+#. module: l10n_pt_stock
+#: model:account.document.type,name:l10n_pt_stock.guia_devolucao
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__pt_transport_journal__movement_type__returns_document
+msgid "Returns Document"
+msgstr "Guia de Devolução"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_search
+msgid "Search"
+msgstr "Procurar"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_pt_transport_journal__sequence_id
+msgid "Sequence"
+msgstr "Sequência"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_pt_transport_journal__sequence_first_number
+msgid "Sequence First Number"
+msgstr "Primeiro Número da Sequência"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__lot_ids
+msgid "Serial Numbers"
+msgstr "Números de Série"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_list
+msgid "Start Date"
+msgstr "Data Inicio"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_stock_quantity_history__state
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_search
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/controllers/portal.py:0
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__state
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_my_transports
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Status"
+msgstr "Estado"
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_stock_quantity_history
+msgid "Stock Quantity History"
+msgstr "Histórico de Quantidade de Inventário"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "Street is a required field for the company"
+msgstr "A Rua é um campo obrigatório para a Empresa."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "Street is a required field for the warehouse partner"
+msgstr "A Rua é um campo obrigatório para o Parceiro."
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Street..."
+msgstr "Rua..."
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__product_category__product_type__s
+msgid "Sub Products, Wastes and Rejects"
+msgstr "Subprodutos, desperdícios e refugos"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "Success"
+msgstr "Sucesso"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "System DateTime is behind last document creation date."
+msgstr "A data e hora do sistema estão atrasadas em relação à data de criação do último documento."
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_portal_content
+msgid "Terms &amp; Conditions"
+msgstr "Termos &amp; Condições"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Terms and conditions..."
+msgstr "Termos e condições..."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "The Movement Date cannot be earlier than the Document Date."
+msgstr "A Data do Movimento deve ser posterior ou igual à Data do Documento."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport_journal.py:0
+msgid ""
+"The Sequence %s already exists in the Parent Company or another Branch!"
+msgstr "A Sequência %s já existe na Empresa-Mãe ou noutra Filial!"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid ""
+"The code sequence on ATCUD is different from the Transport Document sequence"
+msgstr ""
+"O código de sequência do ATCUD é diferente da sequência do Documento de "
+"Transporte."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid ""
+"The date of the document must be equal or after the series initial date (%s)"
+msgstr ""
+"A data do Documento deve ser igual ou superior à data inicial da Série (%s)"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "The date of the transport is earlier than the current date."
+msgstr "A Data de Emissão não pode ser anterior à Data Atual."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/stock_picking.py:0
+msgid "The loading address: %s does not have a city."
+msgstr "O endereço de carga: %s não tem uma cidade."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/stock_picking.py:0
+msgid "The loading address: %s does not have a country."
+msgstr "O endereço de carga: %s não tem um país."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/stock_picking.py:0
+msgid "The loading address: %s does not have a zip code."
+msgstr "O endereço de carga: %s não tem um código postal."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "The start date of the transport is earlier than the current date."
+msgstr "A Data de Início do Movimento é anterior à data atual."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "The zip code is not in Portuguese format!"
+msgstr "O Código Postal não está no formato Português!"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "There are Lines with Quantity inferior to 0.0001."
+msgstr "Há Linhas com Quantidade inferior a 0.0001."
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_my_transports
+msgid "There are currently no transports for your account."
+msgstr "Não existem documentos de transporte na sua conta."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/stock_picking.py:0
+msgid "There are no Transport Journals in this company."
+msgstr "Não há Diários de Transporte nesta Empresa."
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_transport_error
+msgid "There was an error processing this page."
+msgstr "Ocorreu um erro ao processar esta página."
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.view_picking_form
+msgid "This Document is not a Transport Document"
+msgstr "Este Documento não serve como Documento de Transporte"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/stock_picking.py:0
+msgid "This Transport Document has been created from %s"
+msgstr "Este Documento de Transporte foi criado a partir de %s"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_delivery_document
+msgid "This document is not a Transport Document."
+msgstr "Este Documento não serve como Guia de Transporte."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "This document was successfully communicated to the Tax Authority."
+msgstr "Este documentos foi comunicado com sucesso à AT."
+
+#. module: l10n_pt_stock
+#: model:ir.model.constraint,message:l10n_pt_stock.constraint_pt_transport_journal_name_uniq
+msgid "This name is already being used in another journal!"
+msgstr "Este nome já está a ser utilizado noutro Diário!"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/stock_picking.py:0
+msgid ""
+"This operation has documents without portuguese certification. Please create"
+" a new operation type for certified documents"
+msgstr ""
+"Esta operação tem documentos não certificados. Por favor crie um novo tipo "
+"de Operação para documentos certificados."
+
+#. module: l10n_pt_stock
+#: model:ir.model.constraint,message:l10n_pt_stock.constraint_pt_transport_journal_seq_uniq
+msgid "This sequence is already being used in another journal!"
+msgstr "Esta sequência já está a ser utilizada noutro Diário!"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/res_config_settings.py:0
+msgid "This setting is only available in Portuguese Companies."
+msgstr "Esta opção apenas está disponível para Empresas Portuguesas."
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_stock_picking
+msgid "Transfer"
+msgstr "Transferência"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_my_transports
+msgid "Transport #"
+msgstr "Transporte #"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/controllers/portal.py:0
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_my_transports
+msgid "Transport Date"
+msgstr "Data de Transporte"
+
+#. module: l10n_pt_stock
+#: model:ir.actions.report,name:l10n_pt_stock.action_print_transport_document
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__transport_document
+msgid "Transport Document"
+msgstr "Documento de Transporte"
+
+#. module: l10n_pt_stock
+#: model:ir.actions.act_window,name:l10n_pt_stock.pt_transport_action
+#: model:ir.ui.menu,name:l10n_pt_stock.menu_action_transport_documents_list
+#: model:ir.ui.menu,name:l10n_pt_stock.transport_documents_menu
+msgid "Transport Documents"
+msgstr "Documentos de Transporte"
+
+#. module: l10n_pt_stock
+#: model:ir.actions.act_window,name:l10n_pt_stock.pt_transport_journal_action
+msgid "Transport Journals"
+msgstr "Diarios de Transporte"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Transport Lines"
+msgstr "Linhas de Transporte"
+
+#. module: l10n_pt_stock
+#: model:account.document.type,name:l10n_pt_stock.guia_transporte
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__pt_transport_journal__movement_type__transport_document
+msgid "Transport Slip"
+msgstr "Guia de Transporte"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_my_home_menu_transport
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_my_home_transport
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_my_transports
+msgid "Transports"
+msgstr "Transportes"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_transport_document
+msgid "Triplicate"
+msgstr "Triplicado"
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_res_company_print_line
+msgid "Type of print copies by document"
+msgstr "Tipo de Impressão por Documento"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Unloading Address"
+msgstr "Endereço de Descarga"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_product_transport_line__product_uom
+msgid "UoM"
+msgstr ""
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_company__at_foreign_partners
+msgid "Use Foreign Partners"
+msgstr "Usar Contactos Estrangeiros"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_config_settings__at_foreign_partners
+msgid "Use Foreign Partners (PT)"
+msgstr "Usar Contactos Estrangeiros"
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_res_users
+msgid "User"
+msgstr "Utilizador"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_res_company__at_api_username
+msgid "Username"
+msgstr "Utilizador"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "VAT number is a required field for the company"
+msgstr "NIF é um campo obrigatório para Empresa."
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "Validate"
+msgstr "Emitir"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.res_stock_config_settings_gt_option
+msgid "Validate and obtain TA Codes on Transport Documents."
+msgstr "Validar e obter Código AT nos Documentos de Transporte."
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.res_stock_config_settings_gt_option
+msgid "Values set here are company-specific."
+msgstr "Os valores aqui definidos são específicos da empresa."
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.transport_documents_view_list
+msgid "Vehicle License Plate"
+msgstr "Matrícula do Veículo"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__stock_picking__type__in_picking
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_delivery_document
+msgid "Vendor Delivery Slip"
+msgstr "Guia de Entrega de Fornecedor"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__stock_picking__type__in_refund
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.report_delivery_document
+msgid "Vendor Return Delivery Slip"
+msgstr "Guia de Retorno de Fornecedor"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "Warning"
+msgstr "Aviso"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "Warning!"
+msgstr "Aviso!"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid ""
+"When posting in a future date, you will only be able to create documents in "
+"a date after that."
+msgstr ""
+"Ao publicar numa data futura, só vai conseguir validar documentos com datas "
+"posteriores a esta."
+
+#. module: l10n_pt_stock
+#: model:ir.model,name:l10n_pt_stock.model_saft_wizard
+msgid "Wizard for SAFT"
+msgstr "Assistente de SAF-T"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/stock_picking.py:0
+msgid "You can not delete a posted picking"
+msgstr "Não é possível eliminar um picking concluído."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "You can not delete posted series."
+msgstr "Não é possível eliminar séries confirmadas."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "You can not get AT codes from non-portuguese companies"
+msgstr "Não é possível obter código AT para Empresas não Portuguesas."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "You can not get AT codes por non-portuguese warehouse partners"
+msgstr "Não é possível obter código AT para parceiros não Portugueses."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/stock_picking.py:0
+msgid "You can not modify this document after being posted."
+msgstr "Não é possível modificar este Documento após Publicação."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid ""
+"You can not post a transport document that is already in a posted state."
+msgstr ""
+"Não é possível publicar um Documento de Transporte que já está no estado "
+"Publicado."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "You can not post a transport document without any lines"
+msgstr "Não é possível publicar um Documento de Transporte sem linhas."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/stock_picking.py:0
+msgid "You can not unlock a done picking."
+msgstr "Não é possível desbloquear um picking concluído."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/stock_picking.py:0
+msgid "You can not unreserve a posted picking"
+msgstr "Não é possível desreservar um picking confirmado."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/stock_picking_type.py:0
+msgid ""
+"You can not use the certified document sequence as the base operation "
+"sequence"
+msgstr ""
+"Não é possível utilizar a Sequência de documentos certificados como "
+"sequência base"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport_journal.py:0
+msgid ""
+"You cannot change the company of a journal that already contains documents."
+msgstr ""
+"Não é possível alterar a Empresa de um Diário que já tenha documentos."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport_journal.py:0
+msgid ""
+"You cannot change the prefix of a journal that already contains documents."
+msgstr ""
+"Não é possível alterar o prefixo de um Diário que já tenha documentos."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid ""
+"You must create a return type journal in this company to enable the return "
+"document creation"
+msgstr ""
+"Deve criar um diário do tipo Devolução nesta Empresa para poder ativar a "
+"criação de Guias de Devolução."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "You should have one line per product lot"
+msgstr "Deve existir uma linha por lote de produto."
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.pt_transport_view_form
+msgid "ZIP"
+msgstr "Código Postal"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "Zip code is a required field for the company"
+msgstr "Código Postal é um campo obrigatório para Empresa."
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/at_transport_mixin.py:0
+msgid "Zip code is a required field for the warehouse partner"
+msgstr "O código postal é um campo obrigatório para o contacto do armazém."
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__stock_quantity_history__state__choose
+msgid "choose"
+msgstr "selecionar"
+
+#. module: l10n_pt_stock
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_transport_error
+#: model_terms:ir.ui.view,arch_db:l10n_pt_stock.portal_transport_success
+msgid "close"
+msgstr "fechar"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields.selection,name:l10n_pt_stock.selection__stock_quantity_history__state__get
+msgid "get"
+msgstr "obter"
+
+#. module: l10n_pt_stock
+#. odoo-python
+#: code:addons/l10n_pt_stock/models/pt_transport.py:0
+msgid "id"
+msgstr ""

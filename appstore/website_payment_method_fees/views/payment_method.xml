@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="payment_method_form_inherit_extra_fees" model="ir.ui.view">
+        <field name="name">payment.method.view.form.inherit</field>
+        <field name="model">payment.method</field>
+        <field name="inherit_id" ref="payment.payment_method_form"/>
+        <field name="arch" type="xml">
+            <page name="brands" position="after">
+                <page name="fees" string="Fees">
+                    <group>
+                        <group>
+                            <field name="fees_active" />
+                            <field name="fees_percent" invisible="not fees_active" />
+                            <field name="fees_service_id" invisible="not fees_active" required="fees_active == True" options="{'no_open':True,'no_create':True,'no_quick_create': True, 'no_create_edit': True}"/>
+                        </group>
+                    </group>
+                </page>
+            </page>
+        </field>
+    </record>
+
+</odoo>

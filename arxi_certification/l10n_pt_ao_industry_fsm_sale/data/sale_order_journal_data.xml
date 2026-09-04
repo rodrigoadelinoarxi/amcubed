@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><function model="sale.order.journal" name="_create_fsm_sale_journals"/></odoo>

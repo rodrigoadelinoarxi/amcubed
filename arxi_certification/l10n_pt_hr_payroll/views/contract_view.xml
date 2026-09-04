@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- v19: hr.contract foi fundido em hr.version, que nao tem form view
+             propria. Os campos de contrato passaram a ser editados na ficha do
+             colaborador (hr.view_employee_form, page "payroll_information"),
+             via _inherits = {'hr.version': 'version_id'} em hr.employee. -->
+        <record id="hr_contract_view_form_l10n_pt_payroll" model="ir.ui.view">
+            <field name="name">hr.version.view.form.l10n.pt.payroll</field>
+            <field name="model">hr.employee</field>
+            <field name="priority">20</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//form" position="inside">
+                        <field name="is_pt_company" invisible="1"/>
+                    </xpath>
+                    <xpath expr="//page[@name='payroll_information']//div[@name='wage']" position="before">
+                        <div class="alert alert-warning" role="alert" colspan="2"
+                             invisible="wage != 0 or not is_pt_company">
+                            <strong>Aviso:</strong> O vencimento está definido como zero. Isto pode causar problemas nos cálculos de recibos.
+                        </div>
+                    </xpath>
+                    <xpath expr="//page[@name='payroll_information']//field[@name='wage']" position="attributes">
+                        <attribute name="required">is_pt_company</attribute>
+                    </xpath>
+                    <xpath expr="//page[@name='payroll_information']//field[@name='resource_calendar_id']" position="after">
+                        <field name="hourlyCost" invisible="wage_type != 'hourly'"/>
+                        <field name="exemption_schedule" string="Exemption Schedule"/>
+                        <field name="exemption_schedule_percentage" string="Exemption Schedule Percentage"
+                               widget="percentage" invisible="not exemption_schedule"/>
+                        <field name="youth_irs"/>
+                        <field name="income_years_declared" invisible="not youth_irs" required="youth_irs"/>
+                    </xpath>
+                    <xpath expr="//page[@name='payroll_information']" position="after">
+                        <page string="Allowances" name="l10n_pt_allowances" groups="hr.group_hr_manager">
+                            <group>
+                                <group>
+                                    <field name="christmas"/>
+                                    <field name="month_selection_chr"
+                                           invisible="christmas == 'com_dist_total'"/>
+                                    <field name="vacation"/>
+                                    <field name="month_selection_vac"
+                                           invisible="vacation == 'com_dist_total'"/>
+                                    <field name="food"/>
+                                    <field name="foodValue"/>
+                                    <field name="km_value"/>
+                                </group>
+                                <group>
+                                    <field name="seniority_payments"/>
+                                    <field name="has_fail_allow"/>
+                                    <field name="fail_allow_amount"
+                                           invisible="not has_fail_allow"/>
+                                    <field name="cost_allw_amount"/>
+                                    <field name="cost_allw_amount_foreign"/>
+                                    <field name="night_work_percentage" widget="percentage"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Social Security Regime" name="l10n_pt_ss_regime" groups="hr.group_hr_manager">
+                            <group>
+                                <field name="ss_regime" required="is_pt_company"/>
+                            </group>
+                        </page>
+                        <page string="Payment" name="l10n_pt_payment" groups="hr.group_hr_manager">
+                            <group>
+                                <field name="payment" required="is_pt_company"/>
+                            </group>
+                        </page>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>

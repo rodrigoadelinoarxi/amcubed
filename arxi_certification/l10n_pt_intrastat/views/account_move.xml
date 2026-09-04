@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><record id="view_move_form" model="ir.ui.view"><field name="name">account.move.form.inherit.l10n_pt_intrastat</field><field name="model">account.move</field><field name="inherit_id" ref="account.view_move_form"/><field name="arch" type="xml"><xpath expr="//field[@name='intrastat_transport_mode_id']" position="after"><field name="show_intrastat_origin_country_id"/></xpath></field></record></odoo>

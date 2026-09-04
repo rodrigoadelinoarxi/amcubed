@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="l10n_pt_ao_pos_credit_note_reason.CreditReasonPopup">
+        <Dialog title.translate="Credit Note Reason">
+        <div class="popup popup-textarea">
+            <div class="modal-body">
+                <select class="configurator_select form-select form-select-md" t-model="state.credit_reasons" t-on-change="onReasonChange">
+                    <option t-foreach="values" t-as="value" t-key="value.id" t-att-value="value.id">
+                        <t t-esc="value.name"/>
+                    </option>
+                </select>
+                <label><t t-esc="refundTypeLabel"/></label>
+                <select class="refund_type_select form-select form-select-md" t-model="state.refund_type" t-on-change="onRefundTypeChange" required="true">
+                <option t-foreach="refundTypes" t-as="refund" t-key="refund.id" t-att-value="refund.id">
+                    <t t-esc="refund.name"/>
+                </option>
+            </select>
+                <input class="custom_value form-control form-control-lg mt-2" t-if="state.is_custom" type="text" t-model="state.custom_value"/>
+                <label t-if="state.is_custom">Save for future documents</label>
+                <input class="m-2 mt-2" t-if="state.is_custom" type="checkbox" t-model="state.create_for_future_use"/>
+            </div>
+            <t t-set-slot="footer">
+                <button class="btn btn-primary o-default-button" t-on-click="confirm">Ok</button>
+            </t>
+        </div>
+        </Dialog>
+    </t>
+
+</templates>

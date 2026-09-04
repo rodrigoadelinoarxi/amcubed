@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:t="http://www.gep.msess.gov.pt/sguri/tipos_comuns"
+           xmlns="http://www.gep.msess.gov.pt/sguri/ru/anexo_zero"
+           targetNamespace="http://www.gep.msess.gov.pt/sguri/ru/anexo_zero"
+           elementFormDefault="qualified"
+           version="1.3.13">
+    <xs:import namespace="http://www.gep.msess.gov.pt/sguri/tipos_comuns" schemaLocation="tipos-comuns-1.3.13.xsd"/>
+    <xs:element name="anexo_zero" type="anexo_zeroType">
+        <xs:annotation>
+            <xs:documentation>ANEXO ZERO</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="anexo_zeroType">
+        <xs:sequence>
+            <xs:element name="nome_entidade" type="t:max70Type">
+                <xs:annotation>
+                    <xs:documentation>I - 1. Nome ou Designação social</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="cae_31Dez" type="t:caeType">
+                <xs:annotation>
+                    <xs:documentation>I - 2. Actividade económica principal (CAE) da Entidade empregadora em 31 de
+                        Dezembro
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <!-- III - PESSOAS AO SERVIÇO -->
+            <xs:element name="pessoas_servico_31Dez" type="t:num5Type">
+                <xs:annotation>
+                    <xs:documentation>III - 1. Pessoas ao serviço da entidade empregadora. Em 31 de Dezembro.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="pessoas_servico_medio" type="t:num5Type">
+                <xs:annotation>
+                    <xs:documentation>III - 1. Pessoas ao serviço da entidade empregadora. Número médio durante o ano.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="trab_conta_outrem_31Dez" type="t:num5Type">
+                <xs:annotation>
+                    <xs:documentation>III - 1.1 Trabalhadores por conta de outrem. Em 31 de Dezembro.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="trab_conta_outrem_medio" type="t:num5Type">
+                <xs:annotation>
+                    <xs:documentation>III - 1.1 Trabalhadores por conta de outrem. Número médio durante o ano.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <!-- III - 2. Destacamentos de trabalhadores para o estrangeiro, ao longo do ano. -->
+            <xs:element name="trab_destacados" type="t:num5Type">
+                <xs:annotation>
+                    <xs:documentation>III - 2.1 Número de trabalhadores destacados.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="n_destacamentos" type="t:num5Type">
+                <xs:annotation>
+                    <xs:documentation>III - 2.2 Número de destacamentos.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <!-- IV - FILIAÇÂO SINDICAL E FILIAÇÃO EM ÇÕES DE EMPREGADORES -->
+            <xs:element name="n_trab_sindic_31Out" type="t:num5Type">
+                <xs:annotation>
+                    <xs:documentation>IV - 1. Número de trabalhadores sindicallizados, em 31 de Outubro.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="associacoes">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="associacao" type="associacaoType" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                                <xs:documentation>IV - 2.1. Associação</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="inscrita" use="required" type="t:choiceType">
+                        <xs:annotation>
+                            <xs:documentation>IV - 2. Inscrita em Associações de empregadores?</xs:documentation>
+                        </xs:annotation>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="trab_suplementar">
+                <xs:annotation>
+                    <xs:documentation>V - TRABALHO SUPLEMENTAR.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="relacao_nominal_visada" type="t:choiceType" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>V - 2. A relação nominal dos trabalhadores que prestaram trabalho
+                                    suplementar durante o período de referência, com descriminação do número de horas ao
+                                    abrigo dos nºs 1 e 2 do art. nº227 da lei 7/2009, foi visada pela comissão de
+                                    trabalhadores ou, na sua falta, em caso de trabalhador filiado, pelo respectivo
+                                    sindicato?
+                                </xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="horas_realizadas" use="required" type="t:choiceType">
+                        <xs:annotation>
+                            <xs:documentation>V - 1. Foram realizadas horas suplementares ao longo do ano?
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+            <!-- VI - TRABALHADORES TEMPORÀRIOS NA EMPRESA UTILIZADORA -->
+            <!-- VI - Número de trabalhadores temporários. -->
+            <xs:element name="n_trab_temp_31Out" type="t:num5Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VI - 1.1 Número de trabalhadores temporários em 31 de Outubro.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="n_trab_temp_31Dez" type="t:num5Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VI - 1.2 Número de trabalhadores temporários em 31 de Dezembro.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="n_trab_temp_medio" type="t:num5Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VI - 1.3 Número de trabalhadores temporários durante o ano.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="fluxo_entradas_saidas" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VI - 2. Fluxo de entradas ou saidas de pessoas em prestação de trabalho
+                        temporário, ao longo do ano.
+                    </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="entradas" type="fluxo_sexoType" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>VI - 2.1 Entradas durante o ano.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="saidas" type="fluxo_sexoType" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>VI 2.2 Saidas durante o ano.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <!-- VII - TRABALHADORES COM PERDA OU ANOMALIA DE ESTRUTURAS OU FUNÇÕES DO CORPO COM IMPLICAÇÕES NA PRESTAÇÃO DE TRABALHO -->
+            <xs:element name="dist_grupos_etarios_total" type="dist_grupos_etariosTotalType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VII - 1. Distribuição por grupos etários - TOTAL</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="dist_grupos_etarios_incap_inf60" type="dist_grupos_etariosType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VII - 1.1 Distribuição por grupos etários - Com grau de incapacidade inferior a
+                        60%.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="dist_grupos_etarios_incap_60_a80" type="dist_grupos_etariosType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VII - 1.2 Distribuição por grupos etários - Com grau de incapacidade de 60% e
+                        inferior a 80%.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="dist_grupos_etarios_sup80" type="dist_grupos_etariosType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VII - 1.3 Distribuição por grupos etários - Com grau de incapacidade igual ou
+                        superior a 80%
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="dist_habil_lit_total" type="dist_habil_litTotalType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VII - 2. Distribuição por habilitação literária - TOTAL.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="dist_habil_incap_inf60" type="dist_habil_litType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VII - 2.1 Distribuição por habilitação literária - Com grau de incapacidade
+                        inferior a 60%.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="dist_habil_incap_60_a80" type="dist_habil_litType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VII - 2.2 Distribuição por habilitação literária - Com grau de incapacidade de 60%
+                        e inferior a 80%.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="dist_habil_sup80" type="dist_habil_litType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VII - 2.3 Distribuição por habilitação literária - Com grau de incapacidade igual
+                        ou superior a 80%.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <!-- VIII.. DADOS ECONÓMICOS DA ENTIDADE EMPREGADORA -->
+            <xs:element name="vol_negocios">
+                <xs:annotation>
+                    <xs:documentation>VIII - 1. Volume de Negócios (VN).</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="t:num12Type">
+                            <xs:attribute name="ano" type="t:yearType" use="required">
+                                <xs:annotation>
+                                    <xs:documentation>Ano a que se refere o VN</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="capital_social" type="t:num11Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 2. Capital social.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="cap_social_priv_nac" type="t:percentPosType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 2.1 Repartição percentual: Privado Nacional.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="cap_social_estrang" type="t:percentPosType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 2.2 Repartição percentual: Estrangeiro.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="cap_social_pub_nac" type="t:percentPosType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 2.3 Repartição percentual: Público Nacional.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <!-- VII - 3. Encargos de formação profissional -->
+            <xs:element name="finan_ent" type="t:num9Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 3.1 Montante financiado pela entidade empregadora.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="mont_remun_horas_form" type="t:num8Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 3.1.1 Montante correspondente à remuneração das horas despendidas em
+                        formação.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="rest_finan_ent" type="t:num8Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 3.1.2 Restante financiamento da entidade empregadora.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="finan_ext_ent" type="t:num9Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 3.2 Financiamento externo à entidade empregadora.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="finan_fse" type="t:num8Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 3.2.1 Do Fundo Social Europeu (FSE).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="finan_outras_fontes" type="t:num8Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 3.2.2 De outras fontes de financiamento.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="encarg_globais_form_prof" type="t:num9Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 3.3 Encargos globais com formação profissional (3.1 + 3.2)
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <!-- VII 4. Encargos no âmbito da segurança e saúde no trabalho. -->
+            <xs:element name="encarg_org_sst" type="t:num9Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 4.1 Na organização dos serviços de segurança e saúde no trabalho.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="encarg_org_esp_trab" type="t:num9Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 4.2 Na organização/modificação dos espaços de trabalho.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="encarg_aqui_bens" type="t:num9Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 4.3 Na aquisição de bens ou equipamentos.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="encarg_form" type="t:num9Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 4.4 Na formação, informação e consulta.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="encarg_outros" type="t:num9Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 4.5 Outros.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="encarg_total" type="t:num10Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>VIII - 4.6 TOTAL.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="outros_dados_comp_31Out" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>IX - OUTROS DADOS COMPLEMENTARES DA ENTIDADE EMPREGADORA (A preencher somente por
+                        entidades com 10 ou mais trabalhadores a 31 de Outubro).
+                    </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="vab" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>IX - 1. Valor Acrescentado Bruto (VAB).</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="t:num10fullType">
+                                        <xs:attribute name="ano" type="t:yearType" use="required">
+                                            <xs:annotation>
+                                                <xs:documentation>Ano a que se refere o VAB</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:attribute>
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="custos_pessoal" type="t:num10fullType" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>IX - 1.1 Custos com pessoal.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="amort_exerc" type="t:num10fullType" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>IX - 1.2 Amortizações do exercício.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="provi_exerc" type="t:num10fullType" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>IX - 1.3 Provisões do exercício.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="custos_perdas" type="t:num10fullType" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>IX - 1.4 Custos e perdas financeiras.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="impost_rend" type="t:num10fullType" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>IX - 1.5 Imposto sobre o rendimento.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="res_liquido" type="t:num10fullType" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>IX - 1.6 Resultado líquido do exercício.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <!-- IX - 2. Encargos com regimes complementares de protecção social -->
+                        <xs:element name="encarg_admin" type="encargosSuportadosType" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>IX - 2.1 Encargos suportados e administrados, pela entidade
+                                    empregadora.
+                                </xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="encarg_n_admin" type="encargosSuportadosType" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>IX - 2.2 Encargos suportados, mas não administrados, pela entidade
+                                    empregadora.
+                                </xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="encarg_accao" type="t:num12Type" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>IX - 2.3 Encargos de acção e apoio social.</xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="poten_max_anual" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>IX - 3. Potencial máximo anual (horas trabalháveis, durante o ano).
+                                </xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                                <xs:restriction base="t:num12Type">
+                                    <xs:minInclusive value="1"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="horas_n_trab_ano" minOccurs="0">
+                            <xs:annotation>
+                                <xs:documentation>IX - 4. Nº de horas não trabalhadas durante o ano, dos trabalhadores
+                                    por conta de outrem, correspondentes aos dias normais de trabalho.
+                                </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="horas_n_trab" type="horas_n_trabType" minOccurs="0"
+                                                maxOccurs="unbounded"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="entidade" use="required" type="xs:long"/>
+        <xs:attribute name="ano" use="required" type="t:yearType">
+            <xs:annotation>
+                <xs:documentation>Ano de referência.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="XML_DATA" use="required" fixed="1.3.13" type="xs:string"/>
+    </xs:complexType>
+    <xs:complexType name="associacaoType">
+        <xs:annotation>
+            <xs:documentation>Código da associação.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="t:codigoType">
+                <xs:attribute name="tbl" use="required" fixed="RU_ASSPROF" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>TABELA Nº 08 - Associações de Empregadores.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="dist_grupos_etariosType">
+        <xs:annotation>
+            <xs:documentation>Distribuição por grupos etários.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="men_18" type="dist_sexoType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Menores de 18 anos.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="de_18_a_34" type="dist_sexoType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>De 18 a 34 anos.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="de_35_a_44" type="dist_sexoType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>De 35 a 44 anos.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="de_45_a_64" type="dist_sexoType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>De 45 a 64 anos.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="de_65_a_mais" type="dist_sexoType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>De 45 a 64 anos.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="dist_grupos_etariosTotalType">
+        <xs:annotation>
+            <xs:documentation>Distribuição por grupos etários.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="men_18" type="dist_sexoTotalType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Menores de 18 anos.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="de_18_a_34" type="dist_sexoTotalType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>De 18 a 34 anos.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="de_35_a_44" type="dist_sexoTotalType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>De 35 a 44 anos.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="de_45_a_64" type="dist_sexoTotalType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>De 45 a 64 anos.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="de_65_a_mais" type="dist_sexoTotalType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>De 45 a 64 anos.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="dist_habil_litType">
+        <xs:sequence>
+            <xs:element name="inf_3ciclo" type="dist_sexoType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Inferior ao 3º ciclo ensino básico.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="_3ciclo" type="dist_sexoType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>3º ciclo ensino básico.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ens_secundario" type="dist_sexoType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Ensino Secundário.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ens_pos_secundario" type="dist_sexoType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Ensino pós-secundário não superior.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ens_superior" type="dist_sexoType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Ensino Superior.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="dist_habil_litTotalType">
+        <xs:sequence>
+            <xs:element name="inf_3ciclo" type="dist_sexoTotalType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Inferior ao 3º ciclo ensino básico.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="_3ciclo" type="dist_sexoTotalType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>3º ciclo ensino básico.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ens_secundario" type="dist_sexoTotalType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Ensino Secundário.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ens_pos_secundario" type="dist_sexoTotalType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Ensino pós-secundário não superior.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ens_superior" type="dist_sexoTotalType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Ensino Superior.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="encargoType">
+        <xs:sequence>
+            <xs:element name="valor" type="t:num12Type"/>
+            <xs:element name="origem_encargo" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Código referente à origem do encargo.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:restriction base="t:codigoType">
+                            <xs:attribute name="tbl" use="required" fixed="RU_ORIENC" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>TABELA Nº 09 - Origem do encargo.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:restriction>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="encargosSuportadosType">
+        <xs:annotation>
+            <xs:documentation>Encargos suportados.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="subs_doenca" type="encargoType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Subsídio por doença e doença profissional.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="pensoes" type="encargoType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Pensões de velhice, de invalidez e de sobrevivência.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="outras" type="encargoType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Outras prestações de segurança social.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="horas_n_trabType">
+        <xs:annotation>
+            <xs:documentation>Horas não trabalhadas.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="motivo">
+                <xs:annotation>
+                    <xs:documentation>Motivo.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:restriction base="t:codigoType">
+                            <xs:attribute name="tbl" use="required" fixed="RU_MHNT" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>TABELA Nº 10 - Motivo das horas não trabalhadas.
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:restriction>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="horas_aus_remun" type="n_horas_ausType" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Nº de horas de ausência remuneradas.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="horas_aus_n_remun_h" type="n_horas_ausType" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>
+                        Nº de horas de ausência não remuneradas.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="n_horas_ausType">
+        <xs:annotation>
+            <xs:documentation>Nº de horas de ausência.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="h" type="t:num7Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Homens.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="m" type="t:num7Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Mulheres.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="dist_sexoType">
+        <xs:annotation>
+            <xs:documentation>Distribuição por sexo.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="h" type="t:num3Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Homens.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="m" type="t:num3Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Mulheres.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="dist_sexoTotalType">
+        <xs:annotation>
+            <xs:documentation>Distribuição por sexo.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="h" type="t:num4Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Homens.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="m" type="t:num4Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Mulheres.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="fluxo_sexoType">
+        <xs:annotation>
+            <xs:documentation>Fluxo entradas.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="h" type="t:num5Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Homens.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="m" type="t:num5Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Mulheres.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

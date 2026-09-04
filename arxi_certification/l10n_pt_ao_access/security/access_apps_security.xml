@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><record id="module_category_access_cert_settings" model="ir.module.category"><field name="name">Cert Settings Access</field><field name="sequence">20</field></record><record id="group_allow_cert_settings" model="res.groups"><field name="name">Allow Access Cert Settings</field><field name="user_ids" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/></record></odoo>

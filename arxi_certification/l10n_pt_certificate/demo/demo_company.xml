@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="partner_demo_company_pt" model="res.partner">
+        <field name="name">PT Company</field>
+        <field name="vat">PT599999993</field>
+        <field name="street">Rua Capitão Henrique Galvão 46</field>
+        <field name="city">Amadora</field>
+        <field name="country_id" ref="base.pt"/>
+        <field name="state_id" eval="False"/>
+        <field name="zip">2700-058</field>
+        <field name="phone">+351 211 111 111</field>
+        <field name="email">info@company.ptexample.com</field>
+        <field name="website">www.ptexample.com</field>
+    </record>
+
+    <record id="demo_company_pt" model="res.company">
+        <field name="name">PT Company</field>
+        <field name="partner_id" ref="partner_demo_company_pt"/>
+        <field name="tax_calculation_rounding_method">round_globally</field>
+        <field name="company_registry">599999993</field>
+        <field name="commercial_registry">Amadora</field>
+        <field name="entity_type">S</field>
+    </record>
+
+    <function model="res.company" name="_onchange_country_id">
+        <value eval="[ref('demo_company_pt')]"/>
+    </function>
+
+    <function model="res.users" name="write">
+        <value eval="[ref('base.user_root'), ref('base.user_admin'), ref('base.user_demo')]"/>
+        <value eval="{'company_ids': [(4, ref('l10n_pt_certificate.demo_company_pt'))]}"/>
+    </function>
+
+    <function model="account.chart.template" name="try_loading">
+        <value eval="[ref('l10n_pt_certificate.pt_chart_template')]"/>
+        <value model="res.company" eval="obj().env.ref('l10n_pt_certificate.demo_company_pt')"/>
+    </function>
+</odoo>

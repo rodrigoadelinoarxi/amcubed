@@ -1,0 +1,41 @@
+<odoo>
+    <template id="report_custom_invoice_document_mbref" inherit_id="account.report_invoice_document">
+        <xpath expr="//div[hasclass('page')]" position="inside">
+            <t t-set="transactions_eupago"
+               t-value="o.transaction_ids.filtered(lambda x: x.state not in ('cancel', 'error') and x.provider_id.code == 'eupago_mbref')"/>
+            <div id="mbref" t-if="o.move_type == 'out_invoice' and transactions_eupago and o.eu_pago_mbref" style="margin-left: 5px;">
+                <div style="padding: 4px; border-collapse:separate; border-radius:6px; border:1px grey solid; display: inline-block; font-size: 13px;">
+                    <img style="width: 80px; height: 80px; margin-left: auto; margin-right: auto; display: block;"
+                         src="/payment_eupago_mbref/static/src/img/multibanco_icon.png"/>
+                    <table style="border: 0 !important;">
+                        <tr style="border: 0 !important;">
+                            <td style="border: 0 !important;">
+                                <span>Reference:</span>
+                            </td>
+                            <td class="text-right" style="border: 0 !important;">
+                                <span t-esc="transactions_eupago[0].eupago_reference"/>
+                            </td>
+                        </tr>
+                        <tr style="border: 0 !important;">
+                            <td style="border: 0 !important;">
+                                <span>Entity:</span>
+                            </td>
+                            <td class="text-right" style="border: 0 !important;">
+                                <span t-esc="transactions_eupago[0].eupago_entity"/>
+                            </td>
+                        </tr>
+                        <tr style="border: 0 !important;">
+                            <td style="border: 0 !important;">
+                                <span>Amount:</span>
+                            </td>
+                            <td class="text-right" style="border: 0 !important;">
+                                <span t-esc="transactions_eupago[0].amount"
+                                      t-options='{"widget": "monetary", "display_currency": transactions_eupago[0].currency_id}'/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

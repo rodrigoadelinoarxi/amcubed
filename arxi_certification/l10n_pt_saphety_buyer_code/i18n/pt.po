@@ -1,0 +1,90 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_saphety_buyer_code
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-03 13:24+0000\n"
+"PO-Revision-Date: 2025-02-03 13:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_saphety_buyer_code
+#: model:ir.model.fields,field_description:l10n_pt_saphety_buyer_code.field_product_buyerinfo__partner_id
+#: model:ir.model.fields,field_description:l10n_pt_saphety_buyer_code.field_product_product__buyer_ids
+#: model:ir.model.fields,field_description:l10n_pt_saphety_buyer_code.field_product_template__buyer_ids
+msgid "Buyer"
+msgstr "Comprador"
+
+#. module: l10n_pt_saphety_buyer_code
+#: model:ir.model.fields,field_description:l10n_pt_saphety_buyer_code.field_account_move_line__buyer_code
+#: model:ir.model.fields,field_description:l10n_pt_saphety_buyer_code.field_product_buyerinfo__buyer_code
+#: model:ir.model.fields,field_description:l10n_pt_saphety_buyer_code.field_sale_order_line__buyer_code
+msgid "Buyer Code"
+msgstr "Código de Comprador"
+
+#. module: l10n_pt_saphety_buyer_code
+#: model:ir.model.fields,field_description:l10n_pt_saphety_buyer_code.field_product_buyerinfo__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_pt_saphety_buyer_code
+#: model:ir.model.fields,field_description:l10n_pt_saphety_buyer_code.field_product_buyerinfo__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_pt_saphety_buyer_code
+#: model:ir.model.fields,field_description:l10n_pt_saphety_buyer_code.field_product_buyerinfo__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_pt_saphety_buyer_code
+#: model:ir.model.fields,field_description:l10n_pt_saphety_buyer_code.field_product_buyerinfo__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_pt_saphety_buyer_code
+#: model:ir.model,name:l10n_pt_saphety_buyer_code.model_account_move_line
+msgid "Journal Item"
+msgstr "Item do Diário"
+
+#. module: l10n_pt_saphety_buyer_code
+#: model:ir.model.fields,field_description:l10n_pt_saphety_buyer_code.field_product_buyerinfo__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_pt_saphety_buyer_code
+#: model:ir.model.fields,field_description:l10n_pt_saphety_buyer_code.field_product_buyerinfo__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_pt_saphety_buyer_code
+#: model:ir.model,name:l10n_pt_saphety_buyer_code.model_product_template
+msgid "Product"
+msgstr "Produto"
+
+#. module: l10n_pt_saphety_buyer_code
+#: model:ir.model,name:l10n_pt_saphety_buyer_code.model_product_buyerinfo
+msgid "Product Buyer Info"
+msgstr "Informação de Comprador de Produto"
+
+#. module: l10n_pt_saphety_buyer_code
+#: model:ir.model.fields,field_description:l10n_pt_saphety_buyer_code.field_product_buyerinfo__product_tmpl_id
+msgid "Product Template"
+msgstr ""
+
+#. module: l10n_pt_saphety_buyer_code
+#: model:ir.model.fields,field_description:l10n_pt_saphety_buyer_code.field_product_buyerinfo__product_id
+msgid "Product Variant"
+msgstr ""
+
+#. module: l10n_pt_saphety_buyer_code
+#: model:ir.model,name:l10n_pt_saphety_buyer_code.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Linhas da Ordem de Venda"

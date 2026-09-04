@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><!-- Flags this module's own certified report QWeb views/action as
+         protected — only the superuser can modify/delete them. The
+         `protected` field and its write()/unlink() enforcement live in
+         `l10n_pt_ao` (models/ir_actions_report.py, models/ir_ui_view.py);
+         this module only needs to mark its own certified layout, mirroring
+         `l10n_pt_certificate/data/protected_reports_data.xml`.
+         Not noupdate: re-asserted on every upgrade on purpose. --><record id="report_saleorder_document" model="ir.ui.view"><field name="protected" eval="True"/></record><record id="report_saleorder_pro_forma" model="ir.ui.view"><field name="protected" eval="True"/></record></odoo>

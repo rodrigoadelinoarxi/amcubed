@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><record id="sale_subscription.sale_subscription_action" model="ir.actions.act_window"><field name="context">{
+            'search_default_my_subscription':1,
+            'search_default_is_subscriptions':1,
+            'search_default_stage':1,
+            'search_default_pending':1,
+            'default_sale_type': 'SUB',
+        }</field></record><record id="sale_subscription.sale_subscription_action_filtered" model="ir.actions.act_window"><field name="context">{
+            'search_default_sale_order_template_id': [active_id],
+            'default_sale_order_template_id': active_id,
+            'default_sale_type': 'SUB',
+        }</field></record><record id="sale_subscription.sale_subscription_action_pending" model="ir.actions.act_window"><field name="context">{
+            'search_default_my_subscription':1,
+            'search_default_is_subscriptions':1,
+            'search_default_stage':1,
+            'search_default_pending':1,
+            'default_sale_type': 'SUB',
+        }</field></record><record id="sale_subscription_order_view_form_inherit_l10n_pt_ao" model="ir.ui.view"><field name="name">sale.subscription.order.form.view.l10n_pt_ao</field><field name="model">sale.order</field><field name="inherit_id" ref="sale_subscription.sale_subscription_order_view_form"/><field name="arch" type="xml"><!-- Make the recurring plan read-only once the document is no longer
+                 editable (PT/AO certified + hashed, e.g. a quotation converted
+                 from a subscription): changing the plan re-prices the already
+                 hashed lines. is_editable already means "not certified, or not
+                 hashed" so it stays editable on drafts and on ordinary
+                 subscriptions. Applied to both plan_id fields (manager and
+                 non-manager variants). The write guard on the model is the
+                 hard block; this only keeps the UI honest. --><xpath expr="//div[@name='plan_block']/field[@name='plan_id'][1]" position="attributes"><attribute name="readonly">not is_editable or subscription_state in ['3_progress', '4_paused', '5_renewed', '6_churn', '7_upsell']</attribute></xpath><xpath expr="//div[@name='plan_block']/field[@name='plan_id'][2]" position="attributes"><attribute name="required">has_recurring_line</attribute><attribute name="readonly">not is_editable or subscription_state == '7_upsell'</attribute></xpath><!-- is_editable must be present in the view for the readonly attrs to
+                 evaluate it. --><xpath expr="//field[@name='plan_id'][1]" position="before"><field name="is_editable" invisible="1"/></xpath></field></record></odoo>

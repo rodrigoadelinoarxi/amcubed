@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_transport_document,access_transport_document,model_pt_transport,stock.group_stock_user,1,1,1,1
+access_product_transport_line,access_product_transport_line,model_product_transport_line,stock.group_stock_user,1,1,1,1
+access_transport_document_journal,access_transport_document_journal,model_pt_transport_journal,stock.group_stock_user,1,0,0,0
+access_transport_document_journal_manager,access_transport_document_journal,model_pt_transport_journal,stock.group_stock_manager,1,1,1,1

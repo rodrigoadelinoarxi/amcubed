@@ -1,0 +1,71 @@
+<odoo>
+    <record id="l10n_pt_payroll_res_company_form" model="ir.ui.view">
+        <field name="name">l10n.pt.payroll.res.company.form</field>
+        <field name="model">res.company</field>
+        <field name="priority">20</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//page[@name='general_info']" position="after">
+                    <page name="l10n_pt_hr_payroll" string="Payroll PT">
+                        <group>
+                            <group string="Company Information" name="company_info">
+                                <field name="niss"/>
+                                <field name="finance_service_code"/>
+                                <field name="accountant_nif"/>
+                                <field name="legal_rep_nif"/>
+                                <field name="company_type"/>
+                                <field name="insurance_company"/>
+                                <field name="insurance_policy_number"/>
+                            </group>
+                            <group string="Allowance Values and Limits" name="allw_limits">
+                                <group string="Youth IRS">
+                                    <field name="annual_youth_irs_limit" />
+                                </group>
+                                <group string="Food Allowance">
+                                    <field name="default_hr_payroll_food_val" string="Meal Allowance Value"
+                                           />
+                                    <field name="default_hr_payroll_food_val_exempt_limit"
+                                           string="Meal Allowance Exempt Limit" />
+                                    <field name="default_hr_payroll_food_val_card_exempt_limit"
+                                           string="Meal Allowance Card Exempt Limit" />
+
+                                    <field name="food_allw_max_days"/>
+                                    <field name="food_allw_payment_type"/>
+                                    <field name="food_allw_discount_month"
+                                           invisible="food_allw_payment_type == 'normal'"
+                                           required="food_allw_payment_type != 'normal'"/>
+                                </group>
+                                <group string="KM Allowance">
+                                    <field name="default_hr_payroll_km_val" string="KM Value" />
+                                    <field name="default_hr_payroll_km_exempt_limit" string="KM Exempt Limit"
+                                           />
+                                </group>
+                                <group string="Cost Allowance">
+                                    <field name="default_hr_payroll_cost_allowance_daily_val"
+                                           string="Cost Allowance Daily Value" />
+                                    <field name="default_hr_payroll_cost_allowance_exempt_limit"
+                                           string="Cost Allowance Daily Exempt Limit" />
+                                    <field name="default_hr_payroll_cost_allowance_moe_exempt_limit"
+                                           string="Cost Allowance Daily Exempt Limit MOE" />
+                                    <field name="default_hr_payroll_foreign_cost_allowance_exempt_limit"
+                                           string="Cost Allowance Foreign Daily Exempt Limit" />
+                                    <field name="default_hr_payroll_foreign_cost_allowance_moe_exempt_limit"
+                                           string="Cost Allowance Foreign Daily Exempt Limit MOE" />
+                                </group>
+                            </group>
+                            <group string="Defaults" name="defaults">
+                                <field name="exemption_schedule_percentage" widget="percentage"/>
+                                <field name="night_work_percentage" widget="percentage"/>
+                                <field name="work_accident_coefficient"/>
+                                <field name="default_vacation_days"/>
+                                <field name="additional_message" widget="html"/>
+                            </group>
+
+                        </group>
+                    </page>
+                </xpath>
+            </data>
+        </field>
+    </record>
+</odoo>

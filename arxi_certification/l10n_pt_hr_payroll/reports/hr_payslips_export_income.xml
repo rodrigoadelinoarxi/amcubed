@@ -1,0 +1,73 @@
+<odoo>
+    <template id="report_results_income_document">
+        <t t-call="web.external_layout">
+            <t t-if="report_title">
+                <h2 class="text-center" style="margin-bottom: 30px;">
+                    <t t-esc="report_title"/>
+                </h2>
+            </t>
+            <t t-if="grouped_lines">
+                <t t-foreach="grouped_lines.items()" t-as="rule_group">
+                    <div class="container mb-4" style="page-break-inside: avoid; page-break-before: auto;">
+                        <h5 style="font-weight: bold; border-top: 2px solid black; padding-top: 10px;">
+                            <t t-esc="rule_group[0]"/>
+                        </h5>
+                        <table class="table table-sm table-bordered" style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th style="width: 50%;">Employee</th>
+                                    <th style="width: 25%; text-align: right;">Quantity</th>
+                                    <th style="width: 25%; text-align: right;">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="total_value" t-value="0"/>
+                                <t t-foreach="rule_group[1].items()" t-as="employee_group">
+                                    <t t-foreach="employee_group[1]" t-as="line">
+                                        <tr>
+                                            <td>
+                                                <t t-esc="line['employee']"/>
+                                            </td>
+                                            <td style="text-align: right;">
+                                                <t t-esc="line['quantity']"/>
+                                            </td>
+                                            <td style="text-align: right;">
+                                                <t t-esc="line['value']"/>
+                                            </td>
+                                        </tr>
+                                        <t t-set="total_value" t-value="round(total_value + line['value'], 2)"/>
+                                    </t>
+                                </t>
+                            </tbody>
+                            <tfoot>
+                                <tr style="font-weight: bold;">
+                                    <td style="text-align: right;">Total:</td>
+                                    <td style="text-align: right;"/>
+                                    <td style="text-align: right;">
+                                        <t t-esc="total_value"/>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <template id="report_results_income">
+        <t t-call="web.html_container">
+            <t t-call="l10n_pt_hr_payroll.report_results_income_document"/>
+        </t>
+    </template>
+
+    <record id="action_export_income_report" model="ir.actions.report">
+        <field name="name">Income Report</field>
+        <field name="model">hr.payslip.line</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">l10n_pt_hr_payroll.report_results_income</field>
+        <field name="report_file">l10n_pt_hr_payroll.report_results_income</field>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
+

@@ -1,0 +1,83 @@
+<odoo>
+    <record id="view_hr_payroll_retroactive_list" model="ir.ui.view">
+        <field name="name">hr.payroll.retroactive.list</field>
+        <field name="model">hr.payroll.retroactive</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="employee_id"/>
+                <field name="version_id"/>
+                <field name="retroactive_type"/>
+                <field name="processing_mode"/>
+                <field name="communication_state"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_hr_payroll_retroactive_form" model="ir.ui.view">
+        <field name="name">hr.payroll.retroactive.form</field>
+        <field name="model">hr.payroll.retroactive</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_confirm" type="object" string="Confirm" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_cancel" type="object" string="Cancel" invisible="state == 'cancelled'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirmed,processed,cancelled"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="employee_id"/>
+                            <field name="version_id"/>
+                            <field name="retroactive_type"/>
+                        </group>
+                        <group>
+                            <field name="processing_mode"/>
+                            <field name="communication_state"/>
+                            <field name="state" readonly="1"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="notes"/>
+                    </group>
+                    <notebook>
+                        <page string="Retroactive Lines">
+                            <field name="line_ids" nolabel="1" readonly="state in ['processed', 'cancelled']">
+                                <list editable="bottom">
+                                    <field name="name"/>
+                                    <field name="origin_month"/>
+                                    <field name="payment_month"/>
+                                    <field name="salary_rule_id"/>
+                                    <field name="input_type_id" required="1"/>
+                                    <field name="amount"/>
+                                    <field name="natrem_code"/>
+                                    <field name="communication_state"/>
+                                    <field name="payslip_input_id" readonly="1"/>
+                                </list>
+                                <form>
+                                    <group>
+                                        <field name="name"/>
+                                        <field name="origin_month"/>
+                                        <field name="payment_month"/>
+                                        <field name="salary_rule_id"/>
+                                        <field name="input_type_id" required="1"/>
+                                        <field name="amount"/>
+                                        <field name="communication_state"/>
+                                        <field name="notes"/>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_hr_payroll_retroactive" model="ir.actions.act_window">
+        <field name="name">Retroactive Adjustments</field>
+        <field name="res_model">hr.payroll.retroactive</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <menuitem id="menu_hr_payroll_retroactive" name="Retroactive Adjustments" parent="hr_payroll.menu_hr_payroll_payslips" action="action_hr_payroll_retroactive" sequence="90" groups="base.group_user"/>
+</odoo>

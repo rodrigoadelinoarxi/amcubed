@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><template id="report_delivery_document_purchase_request" inherit_id="stock.report_delivery_document"><!--Document Name--><xpath expr="//div[@name='div_sched_date']" position="after"><div t-if="o.purchase_request_nr" class="col-auto col-3 mw-100 mb-2" name="purchase_request_nr"><strong>Purchase Request Nr:</strong><p t-field="o.purchase_request_nr" class="m-0"/></div></xpath></template></odoo>

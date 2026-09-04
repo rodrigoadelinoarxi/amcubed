@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Fix: company_id missing from quick create context causes EvalError on partner_id domain -->
+    <record id="quick_create_ticket_form_amcubed" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.form.quick_create.amcubed</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="inherit_id" ref="helpdesk.quick_create_ticket_form"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="before">
+                <field name="company_id" invisible="1"/>
+            </field>
+        </field>
+    </record>
+
+    <!-- Planear Intervenção: permitir vincular a tarefa a qualquer projeto,
+         não só aos projetos de Serviço de Campo (is_fsm). Mostra os projetos
+         da própria empresa ou os sem empresa (partilhados). -->
+    <record id="create_fsm_task_view_form_amcubed" model="ir.ui.view">
+        <field name="name">helpdesk.create.fsm.task.form.amcubed</field>
+        <field name="model">helpdesk.create.fsm.task</field>
+        <field name="inherit_id" ref="helpdesk_fsm.create_fsm_task_view_form"/>
+        <field name="arch" type="xml">
+            <field name="project_id" position="attributes">
+                <attribute name="domain">['|', ('company_id', '=', company_id), ('company_id', '=', False)]</attribute>
+            </field>
+        </field>
+    </record>
+</odoo>

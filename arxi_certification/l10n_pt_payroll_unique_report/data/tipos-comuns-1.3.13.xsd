@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.gep.msess.gov.pt/sguri/tipos_comuns"
+           targetNamespace="http://www.gep.msess.gov.pt/sguri/tipos_comuns"
+           elementFormDefault="qualified"
+           version="1.3.13">
+    <xs:complexType name="codigoType">
+        <xs:annotation>
+            <xs:documentation>Tipo genérico de código.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="codeTextType">
+                <xs:attribute name="tbl" use="required" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:simpleType name="codeTextType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="phoneType">
+        <xs:annotation>
+            <xs:documentation>Número de telefone: 5 + 9 algarismos (exemplo: 000351210000000) ou 9.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:token">
+            <xs:pattern value="\d{14}|\d{9}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="phoneEmptyType">
+        <xs:restriction base="xs:token">
+            <xs:pattern value="(\d{14}|\d{9})?"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="zipCodeType">
+        <xs:annotation>
+            <xs:documentation>Código Postal 4 + 3 algarismos (exemplo: 1600000)</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:token">
+            <xs:pattern value="\d{7}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="num1Type">
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="9"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="num2Type">
+        <xs:annotation>
+            <xs:documentation>Inteiro não negativo, dígitos: 2.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="99"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="num3Type">
+        <xs:annotation>
+            <xs:documentation>Inteiro não negativo, dígitos: 3.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="num4Type">
+        <xs:annotation>
+            <xs:documentation>Inteiro não negativo, dígitos: 4.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="9999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="num5Type">
+        <xs:annotation>
+            <xs:documentation>Inteiro não negativo, dígitos: 5.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="99999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="num6Type">
+        <xs:annotation>
+            <xs:documentation>Inteiro não negativo, dígitos: 6.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="999999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="posNum5Type">
+        <xs:annotation>
+            <xs:documentation>Inteiro maior que zero, dígitos: 5.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:positiveInteger">
+            <xs:maxInclusive value="99999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="num7Type">
+        <xs:annotation>
+            <xs:documentation>Inteiro não negativo, dígitos: 7.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="9999999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="num8Type">
+        <xs:annotation>
+            <xs:documentation>Inteiro não negativo, dígitos: 8.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="99999999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="num9Type">
+        <xs:annotation>
+            <xs:documentation>Inteiro não negativo, dígitos: 9.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="999999999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="num10Type">
+        <xs:annotation>
+            <xs:documentation>Inteiro não negativo, dígitos: 10.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="9999999999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="num10fullType">
+        <xs:annotation>
+            <xs:documentation>Inteiro positivo/negativo, dígitos: 10.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:maxInclusive value="9999999999"/>
+            <xs:minInclusive value="-9999999999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="num11Type">
+        <xs:annotation>
+            <xs:documentation>Inteiro não negativo, dígitos: 11.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="99999999999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="num12Type">
+        <xs:annotation>
+            <xs:documentation>Inteiro não negativo, dígitos: 12.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:maxInclusive value="999999999999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="posNum12Type">
+        <xs:annotation>
+            <xs:documentation>Inteiro positivo, dígitos: 12.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:positiveInteger">
+            <xs:maxInclusive value="999999999999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="percentPosType">
+        <xs:annotation>
+            <xs:documentation>Percentagem, 3 algarismos + 1 casa decimal.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="100"/>
+            <xs:totalDigits value="4"/>
+            <xs:fractionDigits value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="decimalType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+            <xs:fractionDigits value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="decimal6Type">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="9999.99"/>
+            <xs:totalDigits value="6"/>
+            <xs:fractionDigits value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="decimal8Type">
+        <xs:annotation>
+            <xs:documentation>Número decimal, 8 algarismos + 2 casa decimal.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="999999.99"/>
+            <xs:totalDigits value="8"/>
+            <xs:fractionDigits value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="max10Type">
+        <xs:annotation>
+            <xs:documentation>Número máximo de caracteres: 10.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="max150Type">
+        <xs:annotation>
+            <xs:documentation>Número máximo de caracteres: 150.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="150"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="max120Type">
+        <xs:annotation>
+            <xs:documentation>Número máximo de caracteres: 120.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="120"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="max100Type">
+        <xs:annotation>
+            <xs:documentation>Número máximo de caracteres: 100.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="max70Type">
+        <xs:annotation>
+            <xs:documentation>Número máximo de caracteres: 70.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="70"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="max60Type">
+        <xs:annotation>
+            <xs:documentation>Número máximo de caracteres: 70.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="max40Type">
+        <xs:annotation>
+            <xs:documentation>Número máximo de caracteres: 40.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="40"/>
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="max45Type">
+        <xs:annotation>
+            <xs:documentation>Número máximo de caracteres: 45.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="45"/>
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="max30Type">
+        <xs:annotation>
+            <xs:documentation>Número máximo de caracteres: 30.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="30"/>
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="max20Type">
+        <xs:annotation>
+            <xs:documentation>Número máximo de caracteres: 20.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="20"/>
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="minType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="nifType">
+        <xs:annotation>
+            <xs:documentation>Formato Número de Identificação Fiscal (NIF).</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:token">
+            <xs:pattern value="\d{9}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="nissType">
+        <xs:annotation>
+            <xs:documentation>Formato Número de Identificação da Segurança Social (NISS).</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:token">
+            <xs:pattern value="\d{11}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="nissWorkerType">
+        <xs:annotation>
+            <xs:documentation>Formato Número de Identificação da Segurança Social ou equiparado (NISS).
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="20"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="nissEmptyType">
+        <xs:restriction base="xs:token">
+            <xs:pattern value="(\d{11})?"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="sexType">
+        <xs:simpleContent>
+            <xs:restriction base="codigoType">
+                <xs:attribute name="tbl" use="required" fixed="RU_SX" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>Tabela Nº 12 - Sexo.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="dcfType">
+        <xs:annotation>
+            <xs:documentation>Distrito ou Ilha/Município/Freguesia</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="codigoType">
+                <xs:attribute name="tbl" use="required" fixed="RU_DCF" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>TABELA Nº 03 - Distrito ou Ilha / Municipio / Freguesia.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="caeType">
+        <xs:simpleContent>
+            <xs:restriction base="codigoType">
+                <xs:attribute name="tbl" use="required" fixed="RU_CAE_5DIG" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>TABELA Nº 04 - Classificação Portuguesa das Actividades Económicas (CAE
+                            Rev.3)
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="lnType">
+        <xs:annotation>
+            <xs:documentation>Código de Natureza Jurídica.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="codigoType">
+                <xs:attribute name="tbl" use="required" fixed="RU_NATJUR" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>TABELA Nº 07 - Natureza Jurídica.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="countryType">
+        <xs:annotation>
+            <xs:documentation>Código de País.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:restriction base="codigoType">
+                <xs:attribute name="tbl" use="required" fixed="RU_CODPAIS" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>TABELA Nº 02 - Países.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="capType">
+        <xs:annotation>
+            <xs:documentation>Formato Nº Certificado de Aptidão Profissional (CAP).</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="capFormatType">
+                <xs:attribute name="format" use="optional">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="2Jan2009">
+                                <xs:annotation>
+                                    <xs:documentation>Formato para candidaturas apresentadas a partir de 2 de Janeiro de
+                                        2009, inclusivé (NNNN/AAMM/FF/C).
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:enumeration>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:simpleType name="capFormatType">
+        <!--
+            Formato CAP da Madeira desconhecido, restrições levantadas para o ano 2009
+            <xs:restriction base="xs:token">
+                <xs:pattern value="\d{2}(0\d{1}|1[012])/\d{5}/0[1234]|\d{4}/\d{2}((0\d{1})|(1[012]))/(EC|EA|RC|RA)/[35]">
+                    <xs:annotation>
+                        <xs:documentation>AAMM / NNNNN / 0D ou NNNN / AAMM / FF / C (A - ano ; M - mês ; N - Número ; D - Dígito entre 1 e 4 inclusivé ; F - Código EC, EA, RC ou RA ; C - Dígito 3 ou 5)</xs:documentation>
+                    </xs:annotation>
+                </xs:pattern>
+            </xs:restriction>
+        -->
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3"/>
+            <xs:maxLength value="40"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="emailType">
+        <xs:annotation>
+            <xs:documentation>Formato de endereço de correio electrónico.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:token">
+            <xs:pattern value="(([\.a-zA-Z0-9_\-])+@([a-zA-Z0-9_\-])+(([a-zA-Z0-9_\-])*\.([a-zA-Z0-9_\-])+)+)"/>
+            <xs:maxLength value="60"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:annotation>
+        <xs:documentation>Formato de ano.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType name="yearType">
+        <xs:restriction base="xs:token">
+            <xs:pattern value="\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="hoursminType">
+        <xs:annotation>
+            <xs:documentation>Formato de horas e minutos.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:token">
+            <xs:pattern value="24:00|(((2[0-3])|([0-1]\d{1})):\d{2})">
+                <xs:annotation>
+                    <xs:documentation>HH:MM (H - horas; M - minutos), sendo que não pode ser superior a 24:00
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="dateType">
+        <xs:annotation>
+            <xs:documentation>Formato de data.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:token">
+            <xs:pattern value="\d{4}-(0[1-9]|1[012])-(([012]\d{1})|(3[01]))"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="fulldateType">
+        <xs:annotation>
+            <xs:documentation>Formato de data.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:token">
+            <xs:pattern
+                    value="\d{4}-(0[1-9]|1[012])-(([012]\d{1})|(3[01])) ((2[0-3])|([01]\d{1})):[0-5]\d{1}:[0-5]\d{1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="monthdayType">
+        <xs:annotation>
+            <xs:documentation>Formato de mês dia.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:token">
+            <xs:pattern value="((0[1-9])|(1[012]))-((3[01])|([012]\d{1}))"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="yearmonthType">
+        <xs:annotation>
+            <xs:documentation>Formato de ano mês.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:token">
+            <xs:pattern value="\d{4}-(0[1-9]|1[012])"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="einecType">
+        <xs:annotation>
+            <xs:documentation>Formato de código EINEC.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:token">
+            <xs:pattern value="\d{3}-\d{3}-\d{1}|-"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="choiceType">
+        <xs:annotation>
+            <xs:documentation>Resposta.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="S">
+                <xs:annotation>
+                    <xs:documentation>Sim (S)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="N">
+                <xs:annotation>
+                    <xs:documentation>Não (N)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

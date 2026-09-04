@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="hr_salary_rule_form" model="ir.ui.view">
+        <field name="name">l10n.pt.payroll.hr.salary.rule.form</field>
+        <field name="model">hr.salary.rule</field>
+        <field name="priority">20</field>
+        <field name="inherit_id" ref="hr_payroll.hr_salary_rule_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='main_details']" position="after">
+                <group>
+                    <group>
+                        <field name="show_qty_in_pdf"/>
+                        <field name="income_type"/>
+                        <field name="exempt_income_type"/>
+                        <field name="ss_code"/>
+                    </group>
+                    <group>
+                        <field name="other_benefits"/>
+                        <field name="skip_compute"/>
+                        <field name="in_insurance_map"/>
+                        <field name="insurance_code" invisible="not in_insurance_map"/>
+                        <field name="is_retroactive"/>
+                        <field name="retroactive_type" invisible="not is_retroactive"/>
+                        <field name="original_rule_id" invisible="not is_retroactive"/>
+                        <field name="retroactive_input_type_id" invisible="not is_retroactive"/>
+                        <field name="natrem_code"/>
+                        <field name="allow_negative"/>
+                        <field name="in_dmr"/>
+                        <field name="in_dri"/>
+                        <field name="in_accounting"/>
+                    </group>
+                </group>
+            </xpath>
+            <xpath expr="//page[@name='accounting']//field[@name='account_debit']" position="before">
+                <field name="used_in_entries"/>
+            </xpath>
+            <xpath expr="//sheet" position="after">
+                <chatter/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

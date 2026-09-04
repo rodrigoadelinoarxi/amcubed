@@ -1,0 +1,10 @@
+document_type_code,document_type_name,series_pattern,series_type,processing_mode,in_name_of,category,priority
+RG,Recibo,A{year},N,PI,FN,payments,1
+OR,Orçamento,{year}A,N,PI,FN,sales,2
+OR,Orçamento,{year},N,PI,FN,sales,3
+FT,Fatura,{year}A,N,PI,FN,invoicing,1
+FT,Fatura,{year}OD,N,PI,FN,invoicing,2
+NC,Nota de Crédito,A{year}T,N,PI,FN,invoicing,1
+FS,Fatura Simplificada,{year}A,N,PI,FN,invoicing,1
+PF,Fatura Próforma,{year},N,PI,FN,sales,1
+GT,Guia de Transporte,{year}A,N,PI,FN,stock,1

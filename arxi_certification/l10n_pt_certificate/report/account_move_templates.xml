@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><template id="report_invoice_document" inherit_id="account.report_invoice_document" primary="True" priority="200"><!--Get a l10n_pt formatted vat with an invalidated field if empty--><xpath expr="//div[@id='partner_vat_address_same_as_shipping']" position="replace"><div id="partner_vat_address_same_as_shipping"><t t-if="o.company_id.account_fiscal_country_id.vat_label" t-esc="o.company_id.account_fiscal_country_id.vat_label" id="inv_tax_id_label"/><t t-else="">Tax ID</t>:
+                <t t-if="o.pt_arxi_is_self_billing"><span t-out="o.company_id.partner_id.vat"/></t><t t-else=""><span t-out="o.document_address_id.get_l10n_pt_ao_vat_repr()"/></t></div></xpath><xpath expr="//div[@id='partner_vat_address_not_same_as_shipping']" position="replace"><div id="partner_vat_address_not_same_as_shipping"><t t-if="o.company_id.account_fiscal_country_id.vat_label" t-esc="o.company_id.account_fiscal_country_id.vat_label" id="inv_tax_id_label"/><t t-else="">Tax ID</t>:
+                <t t-if="o.pt_arxi_is_self_billing"><span t-out="o.company_id.partner_id.vat"/></t><t t-else=""><span t-out="o.document_address_id.get_l10n_pt_ao_vat_repr()"/></t></div></xpath><xpath expr="//div[@id='partner_vat_no_shipping']" position="replace"><div id="partner_vat_no_shipping"><t t-if="o.company_id.account_fiscal_country_id.vat_label" t-esc="o.company_id.account_fiscal_country_id.vat_label" id="inv_tax_id_label"/><t t-else="">Tax ID</t>:
+                <t t-if="o.pt_arxi_is_self_billing"><span t-out="o.company_id.partner_id.vat"/></t><t t-else=""><span t-out="o.document_address_id.get_l10n_pt_ao_vat_repr()"/></t></div></xpath><!--Use the address at the post date of the document--><xpath expr="//div[@name='address_not_same_as_shipping']//address" position="attributes"><attribute name="t-field"/><attribute name="t-out">o.document_address_id or o.partner_id</attribute></xpath><xpath expr="//div[@name='address_same_as_shipping']//address" position="attributes"><attribute name="t-field"/><attribute name="t-out">o.document_address_id or o.partner_id</attribute></xpath><xpath expr="//div[@name='no_shipping']//address" position="attributes"><attribute name="t-field"/><attribute name="t-out">o.document_address_id or o.partner_id</attribute></xpath><!--h2 tag for the first print and a p for the remaining prints (to avoid multiple printing assert errors)--><xpath expr="//t[@t-set='layout_document_title']" position="replace"><h2 t-if="print_type == 1" t-att-style="'color: %s;' % o.company_id.primary_color"><span t-if="o.move_type == 'out_invoice' or o.pt_arxi_is_self_billing" t-field="o.document_type_id.name" t-att-style="'color: %s ;' % o.company_id.primary_color"/> 
+                <span t-elif="o.move_type == 'out_refund'" t-att-style="'color: %s ;' % o.company_id.primary_color">
+                    Credit Note
+                </span> 
+                <span t-elif="o.move_type == 'in_refund'" t-att-style="'color: %s ;' % o.company_id.primary_color">
+                    Vendor Credit Note
+                </span> 
+                <span t-elif="o.move_type == 'in_invoice'" t-att-style="'color: %s ;' % o.company_id.primary_color">
+                    Vendor Bill
+                </span> 
+                <span t-if="o.name != '/'" t-field="o.name" t-att-style="'color: %s ;' % o.company_id.primary_color"/> 
+            </h2><p class="fake_h2" t-else="" t-att-style="'color: %s;' % o.company_id.primary_color"><span t-if="o.move_type == 'out_invoice' or o.pt_arxi_is_self_billing" t-field="o.document_type_id.name"/> 
+                <span t-elif="o.move_type == 'out_refund'">Credit Note</span> 
+                <span t-elif="o.move_type == 'in_refund'">Vendor Credit Note</span> 
+                <span t-elif="o.move_type == 'in_invoice'">Vendor Bill</span> 
+                <span t-if="o.name != '/'" t-field="o.name"/> 
+            </p></xpath><!--Depending on the invoice type (credit note or invoice) change label date--><xpath expr="//div[@name='invoice_date']" position="replace"><div class="col-auto col-3 mw-100 mb-2" t-if="o.invoice_date" name="invoice_date"><t t-if="o.move_type in ['out_refund', 'in_refund']"><strong>Credit Note Date:</strong></t><t t-else=""><strong>Invoice Date:</strong></t><p class="m-0" t-field="o.invoice_date"/></div></xpath><!--Self-Invoicing--><xpath expr="//div[@id='informations']" position="inside"><div class="col-auto col-3 mw-100 mb-2" t-if="o.pt_arxi_is_self_billing" name="self_billing"><strong>Document Type:</strong><p class="m-0">Self-Billing</p></div></xpath><xpath expr="//div[@name='reference']" position="attributes"><attribute name="t-if">o.ref and not o.pt_arxi_is_self_billing</attribute></xpath><xpath expr="//div[@name='reference']//div" position="attributes"><attribute name="t-out">o.ref</attribute></xpath><!--For self paid invoices, the due date is not needed--><xpath expr="//div[@name='due_date']" position="attributes"><attribute name="t-if">o.invoice_date_due and not o.is_self_paid</attribute></xpath><xpath expr="//table[@name='invoice_line_table']" position="replace"/><!--Move table inside a page element--><xpath expr="//t[@t-set='display_discount']" position="after"><t t-set="current_transport" t-value="0"/><t t-set="current_subtotal" t-value="0"/><t t-set="current_section" t-value="0"/><t t-set="line_doc_index" t-value="0"/><t t-set="pagebreak_before_subtotal" t-value="False"/><t t-set="original_lines" t-value="o.invoice_line_ids.sorted(key=lambda l: (-l.sequence, l.date, l.move_name, -l.id), reverse=True)"/><t t-foreach="o.lines_layouted()" t-as="page"><!--Cancelled invoices require a specific mention in the document and can't be in the document name--><t t-if="o.state == 'cancel'"><p class="diagonal-text cancelled">Cancelled</p></t><!--Only show this div in the case of the last page not having lines/product table as the carried amout is in the table header--><div name="transported" t-if="not page" class="mb-0 mt-0 pb-0 pt-0"><strong>Carried:</strong><span t-out="current_transport" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/></div><!--``border-collapse: separate`` — see the "Carried" <td>
+                comment below for the full story: this is the actual fix
+                for the ghost vertical column-lines bug, not the per-cell
+                border-style overrides (those are defence in depth only).--><table class="o_has_total_table table o_main_table table-borderless mb-0 pt_arxi_lines_table" name="invoice_line_table" style="border-collapse: separate; border-spacing: 0;"><!--table-layout stays the default `auto` (no `fixed`,
+                    no <colgroup>): `fixed` combined with Boxed layout's
+                    `position: relative` (its decorative border overlay)
+                    collapses column widths under this WebKit. Leaving it
+                    `auto` also lets every report layout decorate this
+                    table like any other native one — width control for
+                    wrapping comes from `max-width` on the inner
+                    .pt_arxi_line_clip <div> instead (see below), which a
+                    browser honours regardless of table-layout.--><thead t-if="page"><!--Carried MUST live inside <thead>, not a <div>
+                        before the table: <thead>/<tfoot> are the only
+                        parts of an HTML table print engines repeat
+                        automatically if a table's rows overflow onto more
+                        physical pages than our pagination predicted — so
+                        the carried total can never go missing regardless
+                        of how the page budget is tuned. MUST NOT show on
+                        the first logical page — which means the first
+                        logical page must genuinely never overflow onto a
+                        2nd physical sheet (this thead has no "is this a
+                        repeat" signal to hide itself there). Keep
+                        pt_arxi_lines_first_page conservative: guessing the
+                        budget too high here is worse (a page silently
+                        missing Carried) than guessing low (an
+                        under-filled first page).--><tr t-if="not page_first" class="pt_arxi_carried_row text-start"><!--``border-*-style: hidden`` + ``border-collapse:
+                            separate`` on the table below (Dylan, 2026-08-28,
+                            found live on the equivalent sale-order table,
+                            same unguarded structure here): Boxed/Bubble draw
+                            per-column vertical borders on tbody/thead cells,
+                            and under wkhtmltopdf's border-collapse painting
+                            those bleed straight through a colspan="99" row.
+                            The plain ``border: none`` already here does NOT
+                            fix it (``none`` loses the border-collapse
+                            conflict to a real border defined on a
+                            neighbouring row) — confirmed live that neither
+                            ``border-style: hidden`` (spec's highest-priority
+                            value) nor an opaque background fixes it either;
+                            wkhtmltopdf paints collapsed borders above
+                            everything else regardless. The real fix is
+                            ``border-collapse: separate`` on the table
+                            itself (see below), which removes the
+                            shared-grid mechanism the bug depends on
+                            entirely — the border-style here is kept
+                            alongside as defence in depth.--><td colspan="99" style="border-style: hidden; background-color: transparent; padding-top: 0.5rem; padding-bottom: 0.5rem;"><span class="mr16" style="font-weight: bold;">Carried:</span><span t-out="current_transport" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/></td></tr><tr><th name="th_description" class="text-start text-nowrap"><span>Description</span></th><th name="th_quantity" class="text-end text-nowrap"><span>Quantity</span></th><th name="th_priceunit" t-attf-class="text-end text-nowrap {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"><span>
+                                    Unit Price
+                                </span></th><th name="th_price_unit" t-if="display_discount" t-attf-class="text-end text-nowrap {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"><span>Disc.%</span></th><th name="th_taxes" t-attf-class="text-end text-nowrap {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"><span>
+                                    Taxes
+                                </span></th><th name="th_subtotal" class="text-end text-nowrap"><span>Amount</span></th></tr></thead><tbody class="invoice_tbody"><t t-foreach="page" t-as="line"><t t-if="not line.id"><t t-if="pagebreak_before_subtotal"><tr class="is-subtotal text-end text-nowrap"><td colspan="99"><strong class="mr16">Subtotal</strong><span t-out="current_subtotal" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/><t t-set="current_subtotal" t-value="0"/></td></tr></t><t t-set="pagebreak_before_subtotal" t-value="False"/></t><t t-else=""><t t-set="current_subtotal" t-value="current_subtotal + line.price_subtotal"/><t t-set="current_transport" t-value="current_transport + line.price_subtotal"/><tr t-attf-class="pt_arxi_fixed_line {{ 'bg-200 font-weight-bold o_line_section' if line.display_type == 'line_section' else 'font-italic o_line_note' if line.display_type == 'line_note' else '' }}"><t t-if="line.display_type == 'product'" name="account_invoice_line_accountable"><td name="account_invoice_line_name"><div class="pt_arxi_line_clip" style="display: block; max-width: 230px; min-height: 1.35rem; line-height: 1.35rem; overflow-wrap: break-word; word-break: break-word;"><!--Plain t-esc, NOT t-field/widget=text: that widget calls
+                                                nl2br(), turning a real newline into a literal <br/> instead of
+                                                letting it collapse into a space like normal whitespace, so the
+                                                browser's own wrapping decides line breaks based on width.
+                                                NEVER add overflow:hidden/white-space:nowrap/text-overflow:
+                                                ellipsis here — content must never be lost; the worst
+                                                acceptable outcome is a page break landing a line or so off
+                                                from account.move.line._get_extra_line_weight()'s estimate.
+                                                max-width only bounds where normal wrapping happens, never
+                                                hides content — match this value with
+                                                _PT_ARXI_COLUMN_WIDTH_PX_DESCRIPTION in
+                                                account_move_line.py.--><span t-esc="line.name"/></div></td><td class="text-end text-nowrap"><span class="text-nowrap" t-field="line.quantity"/> 
+                                            <span class="text-nowrap" t-field="line.product_uom_id" groups="uom.group_uom"/>
+                                        </td><td t-attf-class="text-end text-nowrap {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"><span class="text-nowrap" t-field="line.price_unit"/></td><td t-if="display_discount" t-attf-class="text-end text-nowrap {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"><span class="text-nowrap" t-field="line.discount"/></td><td t-attf-class="text-end text-nowrap {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"><div class="pt_arxi_line_clip" style="display: block; max-width: 120px; min-height: 1.35rem; line-height: 1.35rem; overflow-wrap: break-word; word-break: break-word;"><span t-out="', '.join(map(lambda x: (x.invoice_label or x.description or x.name), line.tax_ids))" id="line_tax_ids"/></div></td><td class="text-end text-nowrap o_price_total"><span class="text-nowrap" t-field="line.price_subtotal"/></td></t><t t-if="line.display_type == 'line_section'"><td colspan="99"><div class="pt_arxi_line_clip" style="display: block; max-width: 650px; min-height: 1.35rem; line-height: 1.35rem; overflow-wrap: break-word; word-break: break-word;"><span t-esc="line.name"/></div></td><t t-set="current_section" t-value="line"/><!--                                        <t t-set="current_subtotal" t-value="0"/>--></t><t t-if="line.display_type == 'line_note'"><td colspan="99"><div class="pt_arxi_line_clip fst-italic" style="display: block; max-width: 650px; min-height: 1.35rem; line-height: 1.35rem; overflow-wrap: break-word; word-break: break-word;"><span t-esc="line.name"/></div></td></t></tr><t t-if="current_section and (line == original_lines[-1] or original_lines[line_doc_index+1].display_type == 'line_section')"><t t-set="pagebreak_before_subtotal" t-value="line_last and not page_last"/><tr class="is-subtotal text-end text-nowrap" t-if="not pagebreak_before_subtotal">
+                                    </tr></t><t t-set="line_doc_index" t-value="line_doc_index + 1"/></t></t></tbody><tfoot t-if="not page_last" class="mb-0 mt-0 pb-0 pt-0"><tr class="is-subtotal text-end text-nowrap"><!--See the matching "Carried" <td> above
+                            (thead) for why this needs the same
+                            border-style override. ``padding-top``: same
+                            reasoning as the equivalent sale-order fix —
+                            with ``tfoot`` at zero top spacing (``pt-0``),
+                            the last product row's own legitimate column
+                            dividers end only a few pt above "Carrying",
+                            close enough to visually read as touching it
+                            even though no border actually bleeds in.--><td name="td_section_carrying" colspan="99" style="border-style: hidden; padding-top: 0.6rem;"><strong class="mr16">Carrying:</strong><span t-out="current_transport" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/></td></tr></tfoot></table><p t-if="not page_last" style="page-break-before:always;"/></t></xpath><!--Total section with float right to be able to add a column to its left--><xpath expr="//div[@id='total']" position="attributes"><attribute name="class" remove="clearfix" separator=" "/></xpath><xpath expr="//div[@id='total']/div" position="attributes"><attribute name="class" add="float-right" separator=" "/><attribute name="class" remove="ms-auto" separator=" "/></xpath><xpath expr="//div[@id='right-elements']" position="before">
+
+        </xpath><xpath expr="//div[hasclass('clearfix')]" position="attributes"><attribute name="class">clearfix mb-0</attribute></xpath><xpath expr="//div[@id='total']/parent::div" position="after"><div name="subtotal_left" t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-5 col-md-6'}" style="margin-top: 32px;"><table class="table table-sm table-borderless" style="page-break-inside: avoid;" t-if="o.company_currency_id != o.currency_id"><t t-call="account.document_tax_totals"><t t-set="tax_totals" t-value="o.tax_totals_company"/><t t-set="currency" t-value="o.company_currency_id"/></t></table><br/><strong t-if="o.line_ids.mapped('tax_ids').filtered('exemption_id')">Exemption Codes</strong><p t-foreach="o.line_ids.mapped('tax_ids.exemption_id')" t-as="exemption" class="mb-0"><strong><span t-field="exemption.code"/>:
+                    </strong><span class="m-0" t-field="exemption.name"/></p></div><span class="small" t-if="o.company_currency_id != o.currency_id">Exchange rate:
+                <t t-esc="o.rate_string"/>
+            </span></xpath><!--Remove margins--><xpath expr="//p[@name='payment_communication']" position="attributes"><attribute name="class"/><attribute name="t-if">not o.is_self_paid</attribute></xpath><xpath expr="//div[@id='informations']" position="attributes"><attribute name="class">row</attribute></xpath><xpath expr="//div[hasclass('oe_structure')]/parent::div" position="attributes"><attribute name="class">mt-0</attribute></xpath><xpath expr="//div[@name='shipping_address_block']" position="after"><t t-if="o.qr_code_position == 'top'"><div class="mt10"><t t-call="l10n_pt_certificate.qr_code_container_invoice"/></div></t></xpath><xpath expr="//div[@name='address_same_as_shipping']/../.." position="before"><t t-if="o.qr_code_position == 'top' and (o.partner_shipping_id and (o.partner_shipping_id == o.partner_id) or not o.partner_shipping_id)"><div class="row"><div class="col-6"><t t-call="l10n_pt_certificate.qr_code_container_invoice"/></div></div></t></xpath><xpath expr="//div[@name='no_shipping']" position="before"><t t-if="o.qr_code_position == 'top'"><div class="col-6"><t t-call="l10n_pt_certificate.qr_code_container_invoice"/></div></t></xpath><xpath expr="//div[@id='qrcode']" position="replace"><t t-if="o.qr_code_position == 'bottom'"><t t-call="l10n_pt_certificate.qr_code_container_invoice"/></t></xpath><xpath expr="//t[@t-call='account.document_tax_totals_company_currency_template']" position="replace"/></template><template id="qr_code_container_invoice"><t t-if="o.country_code == 'PT'"><t t-set="visible_row_div" t-value="(o.pt_arxi_inalterable_hash and (o.is_sale_document() or o.pt_arxi_is_self_billing) and o.company_id.qr_code_pt) or o.has_mb_reference()"/><div name="atcud_qr_code" class="d-inline-block" style="margin-top: 20px; max-width: 100%; page-break-inside: avoid;"><span t-if="o.pt_arxi_inalterable_hash and (o.is_sale_document() or o.pt_arxi_is_self_billing)" class="small d-block">ATCUD:
+                    <t t-out="o.pt_arxi_atcud or '0'"/>
+                </span><div t-if="visible_row_div" class="d-inline-block" style="height: 150px; width: 150px;"><div id="qrcode_pt" name="qrcode_pt_img" t-if="o.pt_arxi_inalterable_hash and (o.is_sale_document() or o.pt_arxi_is_self_billing) and o.company_id.qr_code_pt" class="border border-dark rounded" style="height: 100%; width: 100%;"><img t-att-src="image_data_uri(o.build_qr_code())" style="height: 100%; width: 100%; object-fit: contain;"/></div></div><div t-if="o.pt_arxi_inalterable_hash" class="small mt-1 text-nowrap"><span t-translation="off" t-out="''.join([o.pt_arxi_inalterable_hash[i] for i in range(0,40,10)])"/> - Processed by certified software no. 2790/AT
+                </div></div></t></template><!--The empirical mock-render pagination pipeline (a separate,
+    simplified template used only to detect where the print engine broke
+    pages, matched back to real lines by text search) that used to live
+    here was removed: PT companies never reach it —
+    account.move._arxi_uses_measured_pagination()/
+    _arxi_uses_deterministic_pagination() both return True unconditionally
+    for country_code == "PT", so lines_layouted() (l10n_pt_ao.account.mixin)
+    never falls through to the base mock-render branch. It's still the
+    live default for any other consumer of that mixin that doesn't
+    override those hooks (e.g. Angola) — that code lives in l10n_pt_ao,
+    not here, and wasn't touched.
+
+    PAGINATION PROBE: inherits the REAL, final invoice template (not a
+    separate simplified mock) so every font/column/wrap decision matches
+    what actually prints. The only changes: (1) all lines render as a
+    single unbroken table — see the t-foreach override below — letting
+    the print engine's own natural pagination decide where physical pages
+    break; (2) page_first/page_last are forced False so the
+    "Carried"/"Carrying" rows always render — since they live inside
+    <thead>/<tfoot>, the print engine still repeats them naturally on
+    every physical page this table spans, so the probe's measured break
+    already includes the exact chrome a real continuation page pays;
+    (3) each line gets an invisible marker span so
+    account.move._arxi_pagination_line_marker() can find, via real PDF
+    coordinates (PyMuPDF), which physical page it actually landed on —
+    see l10n_pt_ao.account.mixin._arxi_lines_layouted_measured().--><template id="report_invoice_document_probe" inherit_id="l10n_pt_certificate.report_invoice_document" primary="True" priority="999"><xpath expr="//t[@t-foreach='o.lines_layouted()']" position="attributes"><attribute name="t-foreach">[o._arxi_pagination_lines()]</attribute></xpath><xpath expr="//div[@name='transported']" position="before"><t t-set="page_first" t-value="False"/><t t-set="page_last" t-value="False"/></xpath><!--``position: absolute`` on every marker span (Dylan,
+        2026-08-28 — found live in the equivalent sale-order probe, same
+        unguarded pattern here): a plain inline marker placed right
+        after a block-level wrapper (the description's own wrapping
+        ``pt_arxi_line_clip`` <div>) gets pushed onto its own new line,
+        silently adding one whole extra line of height to EVERY measured
+        row and roughly halving how many lines the algorithm believes
+        fit per page — reproduced live on sale orders: ~26pt real row
+        height measured as ~49pt. ``position: absolute`` removes it from
+        flow entirely (zero height contribution, at any font size/DPI —
+        no magic number involved) while it stays a real, PyMuPDF-findable
+        text run in the rendered PDF. This was already documented above
+        as "invisible" — it wasn't; this makes that true.--><xpath expr="//td[@name='account_invoice_line_name']" position="inside"><span t-out="o._arxi_pagination_line_marker(line)" style="position: absolute;"/></xpath><xpath expr="//t[@name='account_invoice_line_accountable']/following-sibling::t[1]/td" position="inside"><span t-out="o._arxi_pagination_line_marker(line)" style="position: absolute;"/></xpath><xpath expr="//t[@name='account_invoice_line_accountable']/following-sibling::t[2]/td" position="inside"><span t-out="o._arxi_pagination_line_marker(line)" style="position: absolute;"/></xpath></template><template id="report_invoice_probe"><t t-call="web.html_container"><t t-foreach="docs" t-as="o"><t t-set="lang" t-value="o.invoice_user_id.sudo().lang if o.is_purchase_document() else o.partner_id.lang"/><t t-call="l10n_pt_certificate.report_invoice_document_probe" t-lang="lang"/></t></t></template><record id="account_invoices_probe" model="ir.actions.report"><field name="name">Invoices Pagination Probe</field><field name="model">account.move</field><field name="report_type">qweb-pdf</field><field name="report_name">l10n_pt_certificate.report_invoice_probe</field><field name="report_file">l10n_pt_certificate.report_invoice_probe</field><field name="print_report_name">(object._get_report_base_filename())</field><field name="attachment"/></record><!-- UAT 14 (Matias): the native Print menu offers two near-identical
+    options on every invoice — "Invoice PDF" (account.account_invoices,
+    report_invoice_with_payments) and "PDF without Payment"
+    (account.account_invoices_without_payment, plain report_invoice).
+    Both already render this module's certified layout (ATCUD/hash/QR —
+    this template inherits account.report_invoice_document, the QWeb
+    template shared by both actions), so there's no compliance
+    difference; the only difference is a "Paid on .../Amount Due" table
+    that only appears once a payment exists. Two similarly-named PDF
+    choices for one document reads as confusing to a customer regardless
+    — hide the "with payments" one on certified documents, leaving a
+    single, unambiguous print option (the payment/paid status already
+    has its own dedicated Payment Receipt report). Non-certified
+    documents keep both native options untouched. --><record id="account.account_invoices" model="ir.actions.report"><field name="domain">[('journal_id.l10n_cert', '!=', True)]</field></record></odoo>

@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<odoo><record id="l10n_pt_certificate.tax_report_pt" model="account.report"><field name="custom_handler_model_id" ref="model_l10n_pt_tax_report_handler"/></record><!--<record id="account_reports.general_ledger_report" model="account.report">--><!--    <field name="filter_simplified" eval="False"/>--><!--    <field name="filter_closing" eval="False"/>--><!--</record>--></odoo>

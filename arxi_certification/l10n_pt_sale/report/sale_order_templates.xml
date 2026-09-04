@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><template id="qr_code_container_sale_order"><div name="qr_code_container"><t t-set="visible_row_div" t-value="(doc.pt_arxi_inalterable_hash and doc.company_id.qr_code_pt) or doc.has_mb_reference()"/><div class="col-6 mt-3" style="page-break-inside: avoid; margin-top: 20px;"><p t-if="doc.pt_arxi_inalterable_hash and doc.company_id.qr_code_pt" class="mb-0 mt-0 small">ATCUD:
+                    <t t-out="doc.pt_arxi_atcud or '0'"/>
+                </p><div id="row_div" t-if="visible_row_div" class="d-flex flex-row"><div id="qrcode_pt" name="qrcode_pt_sale_top" t-if="doc.pt_arxi_inalterable_hash and doc.company_id.qr_code_pt" style="height: 150px; width: 150px" class="border border-dark rounded"><img t-att-src="image_data_uri(doc.build_qr_code())" style="height: 100%; width: 100%;"/></div></div><!-- hash characters: 1st, 11th, 21st, 31st, 41st--><span t-if="doc.pt_arxi_inalterable_hash" class="small"><span t-translation="off" class="small text-nowrap" t-out="''.join([doc.pt_arxi_inalterable_hash[i] for i in range(0,40,10)])"/>- Processed by certified
+                    software ndoc. 2790/AT
+                </span></div></div></template><template id="report_saleorder_document" inherit_id="sale.report_saleorder_document" priority="200" primary="True"><!--Replace partner addresses for static document addresses--><xpath expr="//t[@t-set='address']/div" position="attributes"><attribute name="t-field"/><attribute name="t-out">doc.sale_journal.l10n_pt_cert and (doc.document_address_id or doc.partner_id) or
+                doc.partner_id
+            </attribute></xpath><xpath expr="//div[@t-field='doc.partner_invoice_id']" position="attributes"><attribute name="t-field"/><attribute name="t-out">doc.sale_journal.l10n_pt_cert and (doc.document_invoice_address_id or
+                doc.partner_invoice_id) or doc.partner_invoice_id
+            </attribute></xpath><xpath expr="//div[@t-field='doc.partner_shipping_id']" position="attributes"><attribute name="t-field"/><attribute name="t-out">doc.sale_journal.l10n_pt_cert and (doc.document_shipping_address_id or
+                doc.partner_shipping_id) or doc.partner_shipping_id
+            </attribute></xpath><!--Invalidate VAT Label field if it wasn't provided--><xpath expr="//p[@t-if='doc.partner_id.vat']" position="replace"><p name="vat_for_address"><t t-esc="doc.company_id.account_fiscal_country_id.vat_label or 'Tax ID'"/>:
+                <span t-out="doc.sale_journal.l10n_pt_cert and doc.document_address_id.get_l10n_pt_ao_vat_repr() or doc.partner_id.vat"/></p></xpath><xpath expr="//div[@id='informations']//div[@name='informations_date']" position="replace"><div t-if="doc.date_order" class="col-auto col-3 mw-100 mb-2" name="informations_date"><strong>Emission Date:</strong><p class="m-0" t-field="doc.date_order" t-options="{&quot;widget&quot;: &quot;date&quot;}"/></div></xpath><xpath expr="//table[hasclass('o_main_table')]" position="replace"><t t-set="current_transport" t-value="0"/><t t-set="current_subtotal" t-value="0"/><t t-set="current_section" t-value="0"/><t t-set="line_doc_index" t-value="0"/><t t-set="pagebreak_before_subtotal" t-value="False"/><t t-set="original_lines" t-value="doc.order_line.filtered(lambda l: not l.is_downpayment).sorted(key=lambda l: (-l.sequence, l.order_id.date_order, l.order_id.name, -l.id), reverse=True)"/><t t-foreach="doc.lines_layouted()" t-as="page"><!-- Cancelled Tag--><t t-if="doc.state == 'cancel'"><p class="diagonal-text cancelled">Cancelled</p></t><!--Only show this div in the case of the last page not having lines/product table as the carried amout is in the table header--><div name="transported" t-if="not page"><div class="mb-0 mt-0 pb-0 pt-0"><strong>Carried:</strong><span t-out="current_transport" style="font-weight: normal;" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.currency_id}"/></div></div><!--Dylan, 2026-08-28, asked whether "Carried" could sit
+                fully outside the Boxed/Bubble decorative box (no border
+                at all), matching Wave/Striped/Standard. Tried twice more
+                on top of the two earlier attempts (see git history for
+                the full trail): a plain <div> with its own
+                page-break-before, then a tiny sibling <table> with the
+                same. BOTH reproduced a worse regression live — on some
+                continuation pages "Carried" silently vanished (an
+                entirely blank page showing only a stale, unchanged
+                "Carrying" total, no product lines, one page late)."
+                Root-caused to the measured-pagination engine itself
+                (`l10n_pt_ao.account.mixin._arxi_lines_layouted_measured`)
+                being non-deterministic between calls in this specific
+                area — confirmed live that ``doc.lines_layouted()`` (the
+                exact call this table's ``t-foreach`` depends on)
+                returned a different page count and grouping across back
+                to-back calls with no code change in between. Restructuring
+                where "Carried" lives changes what the probe measures,
+                and that measurement is not reliable enough right now to
+                build further structural changes on top of — a genuinely
+                missing "Carried" total is a much worse outcome than a
+                border around it. Reverted to "Carried" inside the
+                <thead>, as the first row of the box — stable, matches
+                l10n_pt_certificate's invoices, no dependency on the
+                pagination engine's exact grouping.--><table class="o_has_total_table table o_main_table table-borderless mb-0" t-attf-style="border-collapse: separate; border-spacing: 0;#{' page-break-before: always;' if page_index else ''}"><thead t-if="page"><tr t-if="not page_first" class="is-subtotal text-start"><td colspan="99" style="border-left-style: hidden; border-right-style: hidden; background-color: white; padding-bottom: 0.6rem;"><strong class="mr16">Carried:</strong><span t-out="current_transport" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.currency_id}"/></td></tr><tr><th name="th_description" class="text-start">Description</th><th name="th_quantity" class="text-end">Quantity</th><th name="th_priceunit" class="text-end">Unit Price</th><th name="th_discount" t-if="display_discount" class="text-end" groups="sale.group_discount_per_so_line"><span>Disc.%</span></th><th name="th_taxes" class="text-end">Taxes</th><th name="th_subtotal" class="text-end"><span>Amount</span></th></tr></thead><tbody class="sale_tbody"><t t-foreach="page" t-as="line"><t t-if="not line.id"><t t-if="pagebreak_before_subtotal"><tr class="is-subtotal text-end"><td colspan="99"><strong class="mr16">Subtotal</strong><span t-out="current_subtotal" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.currency_id}"/><t t-set="current_subtotal" t-value="0"/></td></tr></t><t t-set="pagebreak_before_subtotal" t-value="False"/></t><t t-else=""><t t-set="current_subtotal" t-value="current_subtotal + line.price_subtotal"/><t t-set="current_transport" t-value="current_transport + line.price_subtotal"/><tr t-att-line-id="line.id" t-att-class="'bg-200 font-weight-bold o_line_section' if line.display_type == 'line_section' else 'font-italic o_line_note' if line.display_type == 'line_note' else ''"><t t-if="not line.display_type"><td name="td_name"><!--Same contract as l10n_pt_certificate's invoices (see
+                                            account_move_templates.xml for the full rationale): a max-width
+                                            div bounds where normal wrapping happens without ever clipping
+                                            content, and overflow-wrap/word-break force a break in an
+                                            unbreakable run of characters instead of letting it push every
+                                            column after it off the page. Plain t-esc, NOT t-field/widget=
+                                            text: that widget calls nl2br(), turning a real newline into a
+                                            literal <br/> that ignores this div's width.--><div class="pt_arxi_line_clip" style="display: block; max-width: 230px; min-height: 1.35rem; line-height: 1.35rem; overflow-wrap: break-word; word-break: break-word;"><span t-esc="line.name"/></div></td><td name="td_quantity" class="text-end"><span t-field="line.product_uom_qty"/> <span t-field="line.product_uom_id" groups="uom.group_uom"/></td><td name="td_priceunit" class="text-end"><span t-field="line.price_unit"/></td><td t-if="display_discount" class="text-end" groups="sale.group_discount_per_so_line"><span t-field="line.discount"/></td><td name="td_taxes" class="text-end"><div class="pt_arxi_line_clip" style="display: block; max-width: 120px; min-height: 1.35rem; line-height: 1.35rem; overflow-wrap: break-word; word-break: break-word;"><span t-out="', '.join(map(lambda x: (x.invoice_label or x.name), line.tax_ids))"/></div></td><td class="text-end o_price_total"><span class="text-nowrap" t-field="line.price_subtotal"/></td></t><t t-if="line.display_type == 'line_section'"><td name="td_section_line" colspan="99"><div class="pt_arxi_line_clip" style="display: block; max-width: 650px; min-height: 1.35rem; line-height: 1.35rem; overflow-wrap: break-word; word-break: break-word;"><span t-esc="line.name"/></div></td><t t-set="current_section" t-value="line"/><t t-set="current_subtotal" t-value="0"/></t><t t-if="line.display_type == 'line_note'"><td name="td_note_line" colspan="99"><div class="pt_arxi_line_clip fst-italic" style="display: block; max-width: 650px; min-height: 1.35rem; line-height: 1.35rem; overflow-wrap: break-word; word-break: break-word;"><span t-esc="line.name"/></div></td></t></tr><t t-if="current_section and (line == original_lines[-1] or original_lines[line_doc_index+1].display_type == 'line_section')"><t t-set="pagebreak_before_subtotal" t-value="line_last and not page_last"/><tr class="is-subtotal text-end" t-if="not pagebreak_before_subtotal"><td name="td_section_subtotal" colspan="99"><strong name="main_subtotal_string" class="mr16">Subtotal</strong><span t-out="current_subtotal" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.currency_id}"/></td></tr></t><t t-set="line_doc_index" t-value="line_doc_index + 1"/></t></t></tbody><tfoot t-if="not page_last" class="mb-0 mt-0 pb-0 pt-0"><tr class="is-subtotal text-end"><!--``padding-top`` (Dylan, 2026-08-28,
+                            "tá igual" on file (14) — the border-collapse
+                            fix in "Carried" above genuinely stopped any
+                            border from bleeding INTO this cell (checked
+                            the rendered PDF's actual vector paths with
+                            PyMuPDF to confirm: none touch this row's own
+                            y-range), but that was never the real
+                            problem. The last product row's own — fully
+                            legitimate — column dividers end only ~6pt
+                            above where "Carrying" starts, because
+                            ``tfoot`` here has zero top padding/margin
+                            (``pt-0``). At that distance the two visually
+                            read as touching/continuing in a printed
+                            page even though structurally they don't.
+                            Matches the padding l10n_pt_certificate's
+                            invoices already use on the equivalent
+                            "Carried" cell, for the same reason.--><td name="td_section_carrying" colspan="99" style="border-left-style: hidden; border-right-style: hidden; background-color: white; padding-top: 0.6rem;"><strong class="mr16">Carrying:</strong><span t-out="current_transport" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: doc.currency_id}"/></td></tr></tfoot></table></t></xpath><!--Add certification hash check and software number--><xpath expr="//p[@name='vat_for_address']" position="after"><t t-if="doc.partner_shipping_id == doc.partner_invoice_id and doc.partner_invoice_id != doc.partner_id or doc.partner_shipping_id != doc.partner_invoice_id"><t t-if="doc.qr_code_position == 'top'"><div class="mt-2"><t t-call="l10n_pt_sale.qr_code_container_sale_order"/></div></t></t></xpath><xpath expr="//div[hasclass('page')]" position="before"><t t-if="not(doc.partner_shipping_id == doc.partner_invoice_id and doc.partner_invoice_id != doc.partner_id or doc.partner_shipping_id != doc.partner_invoice_id)"><t t-if="doc.qr_code_position == 'top'"><t t-call="l10n_pt_sale.qr_code_container_sale_order"/></t></t></xpath><xpath expr="//div[hasclass('page')]" position="inside"><span name="not_invoice" class="small">This document is not an invoice.</span><t t-if="doc.qr_code_position == 'bottom'"><t t-call="l10n_pt_sale.qr_code_container_sale_order"/></t><span t-if="not doc.pt_arxi_inalterable_hash" class="font-weight-bold" style="font-weight:bold; font-size:16pt;"><br/><span>Document Not Certified</span></span></xpath><xpath expr="//div[@id='informations']" position="attributes"><attribute name="class">row mt-0 mb-0</attribute></xpath><!--UAT vendas/stock, ponto 17 (2026-08-27, Dylan): rendering the
+        company-currency totals next to the document-currency ones.
+
+        Attempt 1: a full ``position="replace"`` of ``#total`` with a
+        custom 2-column bootstrap row — misaligned the two tables and
+        overlapped the "This document is not an invoice." note below
+        (Matias, Fail; reproduced live).
+
+        Attempt 2: copied the invoice report's ``float-right``/``clearfix``
+        technique verbatim. That technique is built for the INVOICE
+        report's native ``#total`` (``class="clearfix row"``, already
+        wrapped in its own ``#right-elements`` float container) — NOT what
+        sale's native ``#total`` looks like (``class="row mt-n3"``, no
+        clearfix, no float wrapper). Floating its child right, combined
+        with the pre-existing ``mt-n3`` negative margin, rendered the
+        floated box up and OVER the last line of the products table above
+        it — reproduced live from the real PDF.
+
+        Attempt 3: added the company-currency column as a bootstrap
+        ``col-*`` sibling INSIDE the existing ``row`` — assumed the print
+        stylesheet's ``.row``/``.col-*`` behave as a reliable flex grid,
+        but wkhtmltopdf's flexbox support is inconsistent for this report
+        pipeline: the two columns ended up at different vertical
+        positions instead of side by side, and the left one again
+        overlapped the products table above — reproduced live from the
+        real PDF.
+
+        Fix: stop relying on bootstrap grid/float for this specific
+        layout — use a plain HTML ``<table>`` with two ``<td>`` cells
+        instead. Table layout is the one construct wkhtmltopdf renders
+        reliably, has no float/flex ambiguity, and (being in normal
+        document flow, no negative margins involved) can't overlap
+        whatever comes before or after it. The single-currency case
+        (the vast majority of documents) is untouched — same native
+        ``row mt-n3``/``col-*ms-auto`` markup as before, zero risk of
+        regressing it.--><xpath expr="//div[@id='total']" position="replace"><div id="total" name="total"><t t-if="doc.has_certified_journal and doc.company_currency_id != doc.currency_id"><!--Plain layout table, borderless: ``table-borderless``
+                    alone wasn't enough (Dylan, 2026-08-27, "melhor mas
+                    estranho ainda" — still boxed in). The company's report
+                    layout style (``report_tables.scss``'s
+                    ``.o_table_boxed``, applied by some layouts on the
+                    article) draws a decorative border via ``::before`` on
+                    every plain ``table:not(.o_ignore_layout_styling)``
+                    inside it — this wrapper table is purely structural
+                    (it only exists to place the two totals tables side by
+                    side), not content, so it needs to opt out with
+                    ``o_ignore_layout_styling`` the same way real content
+                    tables do when they don't want the decorative box.--><table class="table-borderless o_ignore_layout_styling" style="width: 100%; border: none;"><tr><td style="width: 50%; vertical-align: top; padding-right: 16px; border: none;"><table class="o_total_table table table-borderless" style="page-break-inside: avoid;"><t t-call="sale.document_tax_totals"><t t-set="tax_totals" t-value="doc.tax_totals_company"/><t t-set="currency" t-value="doc.company_currency_id"/></t></table><span class="small" t-if="doc.rate_string">
+                                    Exchange Rate:
+                                    <t t-esc="doc.rate_string"/>
+                                </span></td><td style="width: 50%; vertical-align: top; border: none;"><table class="o_total_table table table-borderless" style="page-break-inside: avoid;"><t t-call="sale.document_tax_totals"><t t-set="tax_totals" t-value="doc.tax_totals"/><t t-set="currency" t-value="doc.currency_id"/></t></table></td></tr></table></t><t t-else=""><!--No ``mt-n3`` here (native sale report's own class
+                    on this row): a negative top margin is harmless when
+                    there's slack below the products table to eat into,
+                    but reproduced live (Dylan, 2026-08-28) visually
+                    overlapping the totals table over the products
+                    table's last row whenever the two end up close
+                    together — e.g. this totals block landing right
+                    after a small last page/section, a case this
+                    report's own custom section/pagination markup makes
+                    more likely than in the plain native report.
+
+                    No positive margin either, in the end (Dylan,
+                    2026-08-28: tried ``mt-3``, then ``mt-1`` — "mas pode
+                    ficar colado, estava bem": touching is fine here,
+                    just not overlapping). Zero margin already achieves
+                    that — it was the negative ``mt-n3`` specifically
+                    that caused the actual overlap, not the absence of a
+                    gap.--><div class="row"><div t-attf-class="#{'col-6' if report_type != 'html' else 'col-sm-7 col-md-6'} ms-auto"><table class="o_total_table table table-borderless"><t t-call="sale.document_tax_totals"><t t-set="tax_totals" t-value="doc.tax_totals"/><t t-set="currency" t-value="doc.currency_id"/></t></table></div></div></t></div></xpath></template><!--PAGINATION PROBE — same measured-pagination mechanism as
+    l10n_pt_certificate's invoices (see that module's
+    account_move_templates.xml for the full rationale): inherits the REAL
+    final template, forces every line onto one unbroken flow, and adds a
+    per-line marker so sale.order._arxi_pagination_line_marker() can read
+    off the real PDF (PyMuPDF coordinates) which physical page each line
+    landed on. Also forces page_first/page_last False so "Carried"/
+    "Carrying" (inside <thead>/<tfoot>, see report_saleorder_document
+    above) always render and get repeated by the print engine on every
+    physical page this table spans, same as invoices.--><template id="report_saleorder_document_probe" inherit_id="l10n_pt_sale.report_saleorder_document" primary="True" priority="999"><xpath expr="//t[@t-foreach='doc.lines_layouted()']" position="attributes"><attribute name="t-foreach">[doc._arxi_pagination_lines()]</attribute></xpath><xpath expr="//div[@name='transported']" position="before"><t t-set="page_first" t-value="False"/><t t-set="page_last" t-value="False"/></xpath><!--``position: absolute`` on every marker span (Dylan,
+        2026-08-28: "não achas que está a dar demasiado espaço, cabem
+        mais linhas em cada página" — reproduced live: real per-line
+        row height ~26pt, but the probe measured ~49pt per line,
+        roughly HALVING the number of lines the algorithm believed fit
+        on each page). Root cause: each marker sat as a plain inline
+        <span> right after a block-level <div> (the description's
+        ``pt_arxi_line_clip`` wrapper) — an inline element following a
+        block one is pushed onto its own new line, so every single
+        measured row was silently paying for one whole EXTRA line of
+        height that the real, marker-less document never has.
+        ``position: absolute`` takes it out of normal flow entirely —
+        it stops contributing height at all — while staying a real
+        text run in the rendered PDF, still findable by PyMuPDF.--><xpath expr="//td[@name='td_name']" position="inside"><span t-out="doc._arxi_pagination_line_marker(line)" style="position: absolute;"/></xpath><xpath expr="//td[@name='td_section_line']" position="inside"><span t-out="doc._arxi_pagination_line_marker(line)" style="position: absolute;"/></xpath><xpath expr="//td[@name='td_note_line']" position="inside"><span t-out="doc._arxi_pagination_line_marker(line)" style="position: absolute;"/></xpath></template><template id="report_saleorder_probe"><t t-call="web.html_container"><t t-foreach="docs" t-as="doc"><t t-set="lang" t-value="doc.partner_id.lang"/><t t-call="l10n_pt_sale.report_saleorder_document_probe" t-lang="lang"/></t></t></template><record id="action_report_saleorder_probe" model="ir.actions.report"><field name="name">Quotation / Order Pagination Probe</field><field name="model">sale.order</field><field name="report_type">qweb-pdf</field><field name="report_name">l10n_pt_sale.report_saleorder_probe</field><field name="report_file">l10n_pt_sale.report_saleorder_probe</field><field name="print_report_name">(object._get_report_base_filename())</field></record><template id="report_saleorder_pro_forma" inherit_id="sale.report_saleorder_pro_forma" priority="20"><xpath expr="//t[@t-call='sale.report_saleorder_document']" position="replace"><!-- Same rule as _get_name_sale_report(): Arxi layout only for
+                 actually certified sale orders (certified sale journal),
+                 not just any PT company. --><t t-if="doc.company_id.country_id.code == 'PT' and doc.sale_journal.l10n_pt_cert"><t t-call="l10n_pt_sale.report_saleorder_document" t-lang="doc.partner_id.lang"/></t><t t-else=""><t t-call="sale.report_saleorder_document" t-lang="doc.partner_id.lang"/></t></xpath></template></odoo>

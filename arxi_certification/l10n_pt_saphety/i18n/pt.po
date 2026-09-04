@@ -1,0 +1,410 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_saphety
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 10:37+0000\n"
+"PO-Revision-Date: 2025-03-10 10:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_saphety
+#: model_terms:ir.ui.view,arch_db:l10n_pt_saphety.res_config_settings_view_form
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\"/>"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#. odoo-python
+#: code:addons/l10n_pt_saphety/models/account_move.py:0
+#, python-format
+msgid ""
+"A Medical Product is not configured correctly! (%s). It should have "
+"Invoicing Policy set as Delivered Quantity and Tracking by Lot or Serial "
+"Number"
+msgstr ""
+"Um Produto Médico não está configurado corretamente! (%s). Deve ter como "
+"Política de Faturação Quantidades Entregues e Rastreamento por lotes ou "
+"número de série."
+
+#. module: l10n_pt_saphety
+#: model:ir.model,name:l10n_pt_saphety.model_account_move_send
+msgid "Account Move Send"
+msgstr "Envio de Movimento de Conta"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__buyer_code
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_move_line__buyer_code
+msgid "Buyer Code"
+msgstr "Código Comprador"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__can_send_edi
+msgid "Can Send Edi"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#: model:ir.actions.server,name:l10n_pt_saphety.check_electronic_invoices_integration_status_ir_actions_server
+msgid "Check Electronic Invoices Integration Status on Saphety"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,help:l10n_pt_saphety.field_account_move_line__required_ean_code
+msgid ""
+"Check this if your Company is a Retail supplier and this Customer is a "
+"Receptor Entity from Galp"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#: model:ir.model,name:l10n_pt_saphety.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__compromisse
+msgid "Compromisse"
+msgstr "Nº Compromisso"
+
+#. module: l10n_pt_saphety
+#: model:ir.model,name:l10n_pt_saphety.model_res_config_settings
+msgid "Config Settings"
+msgstr "Configurações"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__contract_number
+msgid "Contract Number"
+msgstr "Nº Contrato"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_edi_format__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_saphety_integration_status__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_saphety_mixin__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_edi_format__create_date
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_saphety_integration_status__create_date
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_saphety_mixin__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_saphety_integration_status__date
+msgid "Date"
+msgstr "Data"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_edi_format__display_name
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_saphety_integration_status__display_name
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_saphety_mixin__display_name
+msgid "Display Name"
+msgstr "Nome"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,help:l10n_pt_saphety.field_account_bank_statement_line__outbound_doc_id
+msgid "Document ID used in Saphety"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_move_line__ean_code
+msgid "EAN Code"
+msgstr "Código EAN"
+
+#. module: l10n_pt_saphety
+#. odoo-python
+#: code:addons/l10n_pt_saphety/models/account_move.py:0
+#, python-format
+msgid "EAN Code should be filled for this Customer for each Invoice Line"
+msgstr ""
+"O Código EAN deve ser preenchido em cada Linha da Fatura para este Cliente."
+
+#. module: l10n_pt_saphety
+#: model:ir.model,name:l10n_pt_saphety.model_account_edi_format
+msgid "EDI format"
+msgstr "FormatoEDI"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__edi_warning
+msgid "Edi Warning"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#. odoo-python
+#: code:addons/l10n_pt_saphety/models/saphety_mixin.py:0
+#, python-format
+msgid "Error getting authentication token: %s"
+msgstr "Erro ao obter token de autenticação: %s"
+
+#. module: l10n_pt_saphety
+#. odoo-python
+#: code:addons/l10n_pt_saphety/models/saphety_mixin.py:0
+#: code:addons/l10n_pt_saphety/models/saphety_mixin.py:0
+#, python-format
+msgid "Error getting invoice formats: %s"
+msgstr "Erro ao obter os formatos da Fatura: %s"
+
+#. module: l10n_pt_saphety
+#. odoo-python
+#: code:addons/l10n_pt_saphety/models/saphety_mixin.py:0
+#, python-format
+msgid ""
+"Error sending the electronic invoice: %s\n"
+" Error Code: %s"
+msgstr ""
+"Erro ao enviar a fatura eletrónica: %s\n"
+" Código de Erro: %s"
+
+#. module: l10n_pt_saphety
+#. odoo-python
+#: code:addons/l10n_pt_saphety/models/saphety_mixin.py:0
+#, python-format
+msgid "Error signing the pdf invoice: %s"
+msgstr "Erro a assinar o pdf da Fatura: %s"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__partner_indra_network
+msgid "From Indra Network"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__gln_code
+msgid "GLN Code"
+msgstr "Código GLN"
+
+#. module: l10n_pt_saphety
+#: model_terms:ir.ui.view,arch_db:l10n_pt_saphety.invoice_form_inherit_l10n_pt_saphety
+msgid "Get EDI Document"
+msgstr "Obter Documento EDI"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_edi_format__id
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_saphety_integration_status__id
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_saphety_mixin__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#. odoo-python
+#: code:addons/l10n_pt_saphety/models/saphety_mixin.py:0
+#: code:addons/l10n_pt_saphety/models/saphety_mixin.py:0
+#, python-format
+msgid "Invalid Outbound Document ID: %s"
+msgstr "Outbound Document ID Inválido: %s"
+
+#. module: l10n_pt_saphety
+#: model:ir.model,name:l10n_pt_saphety.model_account_move
+msgid "Journal Entry"
+msgstr "Entrada do Diário"
+
+#. module: l10n_pt_saphety
+#: model:ir.model,name:l10n_pt_saphety.model_account_move_line
+msgid "Journal Item"
+msgstr "Item do Diário"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_edi_format__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_saphety_integration_status__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_saphety_mixin__write_uid
+msgid "Last Updated by"
+msgstr "Última Atualização por"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_edi_format__write_date
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_saphety_integration_status__write_date
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_saphety_mixin__write_date
+msgid "Last Updated on"
+msgstr "Última Atualização em"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_product_category__is_medical_product
+#: model_terms:ir.ui.view,arch_db:l10n_pt_saphety.product_category_form_view
+msgid "Medical Product"
+msgstr "Produto Médico"
+
+#. module: l10n_pt_saphety
+#: model:ir.model,name:l10n_pt_saphety.model_saphety_mixin
+msgid "Mixin with API Requests to Saphety"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_saphety_integration_status__move_id
+msgid "Move ID"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__originator_reference
+msgid "Originator Reference"
+msgstr "Nº Acordo Quadro"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__outbound_doc_id
+msgid "Outbound Document ID"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#: model_terms:ir.ui.view,arch_db:l10n_pt_saphety.res_config_settings_view_form
+msgid "Password"
+msgstr "Palavra-passe"
+
+#. module: l10n_pt_saphety
+#: model:ir.model,name:l10n_pt_saphety.model_product_category
+msgid "Product Category"
+msgstr "Categoria do Artigo"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__purchase_request_nr
+msgid "Purchase Request Number"
+msgstr "Nr. Pedido de Compra"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__qr_code_base_64
+msgid "Qr Code Base 64"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#: model:ir.model,name:l10n_pt_saphety.model_ir_actions_report
+msgid "Report Action"
+msgstr "Relatar Ação"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__request_id
+msgid "Request ID"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__required_gln_code
+msgid "Required Gln Code"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_move_line__required_ean_code
+msgid "Requires EAN Code"
+msgstr "Requer Código EAN"
+
+#. module: l10n_pt_saphety
+#: model_terms:ir.ui.view,arch_db:l10n_pt_saphety.res_config_settings_view_form
+msgid "Saphety API"
+msgstr "Assinatura Digital Saphety"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_res_company__saphety_integration
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_res_config_settings__saphety_integration
+#: model_terms:ir.ui.view,arch_db:l10n_pt_saphety.invoice_form_inherit_l10n_pt_saphety
+msgid "Saphety Integration"
+msgstr "Integração Saphety"
+
+#. module: l10n_pt_saphety
+#: model:ir.model,name:l10n_pt_saphety.model_saphety_integration_status
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__saphety_integration_status_ids
+msgid "Saphety Integration Status"
+msgstr "Estado de Integração Saphety"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_res_company__saphety_password
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_res_config_settings__saphety_password
+msgid "Saphety Password"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_res_company__saphety_test_env
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_res_config_settings__saphety_test_env
+msgid "Saphety Test Env"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_res_company__saphety_user
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_res_config_settings__saphety_user
+msgid "Saphety User"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#: model_terms:ir.ui.view,arch_db:l10n_pt_saphety.res_config_settings_view_form
+msgid "Sign your documents with certified digital signature."
+msgstr "Assine as suas faturas com assinatura certificada digital."
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__slip_doc
+msgid "Slip Document Name"
+msgstr "Documento de Transporte"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_res_company__social_capital
+msgid "Social Capital"
+msgstr "Capital Social"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_saphety_integration_status__status
+msgid "Status"
+msgstr "Estado"
+
+#. module: l10n_pt_saphety
+#: model:ir.model.fields,field_description:l10n_pt_saphety.field_account_bank_statement_line__to_check_status
+msgid "Status Checked"
+msgstr ""
+
+#. module: l10n_pt_saphety
+#: model_terms:ir.ui.view,arch_db:l10n_pt_saphety.res_config_settings_view_form
+msgid "Test Environment"
+msgstr "Ambiente de Testes"
+
+#. module: l10n_pt_saphety
+#: model_terms:ir.ui.view,arch_db:l10n_pt_saphety.invoice_form_inherit_l10n_pt_saphety
+msgid "This Document has no EDI document yet."
+msgstr "Este Documento ainda não tem documento EDI."
+
+#. module: l10n_pt_saphety
+#. odoo-python
+#: code:addons/l10n_pt_saphety/models/ir_action_report.py:0
+#, python-format
+msgid "This action has one or more draft records."
+msgstr ""
+
+#. module: l10n_pt_saphety
+#. odoo-python
+#: code:addons/l10n_pt_saphety/models/ir_action_report.py:0
+#, python-format
+msgid "This record is in a draft state."
+msgstr ""
+
+#. module: l10n_pt_saphety
+#. odoo-python
+#: code:addons/l10n_pt_saphety/models/account_edi_format.py:0
+#: code:addons/l10n_pt_saphety/models/account_edi_format.py:0
+#, python-format
+msgid ""
+"To use Saphety you need to configure Saphety Integration in the settings."
+msgstr ""
+"Para utilizar o Saphety precisa de configurar a Integração nas Definições."
+
+#. module: l10n_pt_saphety
+#: model_terms:ir.ui.view,arch_db:l10n_pt_saphety.res_config_settings_view_form
+msgid "Username"
+msgstr "Utilizador"
+
+#. module: l10n_pt_saphety
+#. odoo-python
+#: code:addons/l10n_pt_saphety/models/ir_action_report.py:0
+#, python-format
+msgid ""
+"You should generate the EDI Document before printing the copy. You can "
+"Preview if you wish to check the original print."
+msgstr "O Documento EDI deve ser gerado antes da impressão da 2ª via. Utilize a Pré-visualização para conferir a original."
+
+
+#. module: l10n_pt_saphety
+#. odoo-python
+#: code:addons/l10n_pt_saphety/models/ir_action_report.py:0
+#, python-format
+msgid ""
+"You should send the document to the Client before printing the copy. The "
+"copy will not be signed."
+msgstr "O Documento deve ser enviado ao Cliente antes de imprimir a 2ª via. Esta será gerada sem assinatura."

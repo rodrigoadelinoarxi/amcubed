@@ -1,0 +1,237 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_asset_law
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-07 13:52+0000\n"
+"PO-Revision-Date: 2023-02-07 13:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_asset_law
+#: model:ir.actions.act_window,name:account_asset_law.action_account_asset_law_view
+#: model:ir.model,name:account_asset_law.model_account_asset_law_category
+#: model:ir.model,name:account_asset_law.model_company_activity_index
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset__account_asset_law_id
+#: model:ir.model.fields,field_description:account_asset_law.field_res_company__account_asset_law_ids
+#: model:ir.ui.menu,name:account_asset_law.account_asset_law_view_menu
+msgid "Account Asset Law"
+msgstr "Lei de Ativo"
+
+#. module: account_asset_law
+#: model:ir.actions.act_window,name:account_asset_law.action_account_asset_law_category_view
+msgid "Account Asset Law Category"
+msgstr "Categoria de Lei de Ativo"
+
+#. module: account_asset_law
+#: model:ir.model,name:account_asset_law.model_account_asset_law
+msgid "Account Asset Law Line"
+msgstr "Lei de Ativo"
+
+#. module: account_asset_law
+#: model_terms:ir.ui.view,arch_db:account_asset_law.account_asset_law_view_form
+msgid "Accounting"
+msgstr "Contabilidade"
+
+#. module: account_asset_law
+#: model:ir.model,name:account_asset_law.model_account_asset
+msgid "Asset/Revenue Recognition"
+msgstr "Reconhecimento de Ativo/Receita"
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset__account_asset_law_categ
+#: model_terms:ir.ui.view,arch_db:account_asset_law.account_asset_law_view_search
+msgid "Category"
+msgstr "Categoria"
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset__account_asset_law_code
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law__code
+#: model:ir.model.fields,field_description:account_asset_law.field_company_activity_index__code
+#: model_terms:ir.ui.view,arch_db:account_asset_law.account_asset_law_view_form
+msgid "Code"
+msgstr "Código"
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_company_activity_index__color
+msgid "Color"
+msgstr "Cor"
+
+#. module: account_asset_law
+#: model:ir.model,name:account_asset_law.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law__company_activity_id
+msgid "Company Activity"
+msgstr "Atividade da Empresa"
+
+#. module: account_asset_law
+#: model:ir.actions.act_window,name:account_asset_law.action_company_activity_index
+#: model:ir.model.fields,field_description:account_asset_law.field_res_company__company_activity_index_ids
+#: model:ir.ui.menu,name:account_asset_law.company_activity_index_menu
+msgid "Company Activity Index"
+msgstr "Index de Atividades de Empresa"
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law_category__country_id
+#: model:ir.model.fields,field_description:account_asset_law.field_company_activity_index__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: account_asset_law
+#: model_terms:ir.actions.act_window,help:account_asset_law.action_account_asset_law_category_view
+msgid "Create a new account asset law category."
+msgstr "Crie uma nova categoria para as leis de ativo."
+
+#. module: account_asset_law
+#: model_terms:ir.actions.act_window,help:account_asset_law.action_account_asset_law_view
+msgid "Create a new account asset law."
+msgstr "Crie uma nova lei de ativo."
+
+#. module: account_asset_law
+#: model_terms:ir.actions.act_window,help:account_asset_law.action_company_activity_index
+msgid "Create a new company activity"
+msgstr "Crie uma nova atividade da empresa"
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law__create_uid
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law_category__create_uid
+#: model:ir.model.fields,field_description:account_asset_law.field_company_activity_index__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law__create_date
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law_category__create_date
+#: model:ir.model.fields,field_description:account_asset_law.field_company_activity_index__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: account_asset_law
+#: model_terms:ir.ui.view,arch_db:account_asset_law.account_asset_law_view_form
+msgid "Depreciation Method"
+msgstr "Método de Amortização"
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_company_activity_index__name
+msgid "Description"
+msgstr "Descrição"
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law__display_name
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law_category__display_name
+#: model:ir.model.fields,field_description:account_asset_law.field_company_activity_index__display_name
+msgid "Display Name"
+msgstr "Nome a Mostrar"
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law__method_number
+#: model_terms:ir.ui.view,arch_db:account_asset_law.account_asset_law_view_form
+msgid "Duration"
+msgstr "Duração"
+
+#. module: account_asset_law
+#: model_terms:ir.ui.view,arch_db:account_asset_law.account_asset_law_view_search
+msgid "Group By..."
+msgstr "Agrupar Por..."
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law__id
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law_category__id
+#: model:ir.model.fields,field_description:account_asset_law.field_company_activity_index__id
+msgid "ID"
+msgstr ""
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law____last_update
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law_category____last_update
+#: model:ir.model.fields,field_description:account_asset_law.field_company_activity_index____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law__write_uid
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law_category__write_uid
+#: model:ir.model.fields,field_description:account_asset_law.field_company_activity_index__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law__write_date
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law_category__write_date
+#: model:ir.model.fields,field_description:account_asset_law.field_company_activity_index__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law__categ_id
+msgid "Law"
+msgstr "Categoria"
+
+#. module: account_asset_law
+#: model:ir.model.fields.selection,name:account_asset_law.selection__account_asset_law__method_period__1
+msgid "Months"
+msgstr "Meses"
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset__account_asset_law_name
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law__name
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law_category__name
+#: model_terms:ir.ui.view,arch_db:account_asset_law.account_asset_law_view_form
+msgid "Name"
+msgstr "Nome"
+
+#. module: account_asset_law
+#: model:ir.model.fields,field_description:account_asset_law.field_account_asset_law__method_period
+msgid "Period"
+msgstr "Período"
+
+#. module: account_asset_law
+#: model:ir.model.fields,help:account_asset_law.field_account_asset_law__method_period
+msgid "The amount of time between two depreciations"
+msgstr "O tempo entre duas depreciações"
+
+#. module: account_asset_law
+#: model:ir.model.constraint,message:account_asset_law.constraint_account_asset_law_uniq_code
+msgid "The code must me unique per category."
+msgstr "O código deve ser único."
+
+#. module: account_asset_law
+#: model:ir.model.constraint,message:account_asset_law.constraint_company_activity_index_uniq_code
+msgid "The code must me unique."
+msgstr "O código deve ser único."
+
+#. module: account_asset_law
+#: model:ir.model.fields,help:account_asset_law.field_account_asset_law__method_number
+msgid "The number of depreciations needed to depreciate your asset"
+msgstr "O número de amortizações necessárias para amortizar o seu ativo"
+
+#. module: account_asset_law
+#: model:ir.model.fields.selection,name:account_asset_law.selection__account_asset_law__method_period__12
+msgid "Years"
+msgstr "Anos"
+
+#. module: account_asset_law
+#: model_terms:ir.ui.view,arch_db:account_asset_law.account_asset_law_view_form
+msgid "e.g. A.1.1"
+msgstr "ex. A.1.1"
+
+#. module: account_asset_law
+#: model_terms:ir.ui.view,arch_db:account_asset_law.account_asset_law_view_form
+msgid "e.g. Dams, dikes, pipelines and irrigation networks and lifting tanks"
+msgstr ""
+"ex. Barragens, diques, condutas e redes de rega e depósitos de elevação"
+
+#. module: account_asset_law
+#: model_terms:ir.ui.view,arch_db:account_asset_law.account_asset_law_category_view_form
+msgid "e.g. Decree 01/2020"
+msgstr "ex. D207/15"

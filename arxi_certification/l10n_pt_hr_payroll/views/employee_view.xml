@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_employee_form__l10n_pt_view_for" model="ir.ui.view">
+            <field name="name">hr.employee.inherit.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="priority">30</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//form" position="inside">
+                        <field name="is_pt_company" invisible="1"/>
+                    </xpath>
+                    <xpath expr="//field[@name='passport_id']" position="after">
+                        <field name="fiscal_number" invisible="not is_pt_company"/>
+                        <field name="insurance_company" invisible="not is_pt_company"/>
+                        <field name="policy_number" invisible="not is_pt_company"/>
+                        <field name="work_accident_coefficient" invisible="not is_pt_company"/>
+<!--                        <field name="ssnid"/>-->
+                        <field name="contrib_entity" invisible="not is_pt_company"/>
+                        <field name="irs_monthly_tax" widget="percentage" invisible="not is_pt_company"/>
+                        <field name="irs_monthly_tax_chr" widget="percentage" invisible="not is_pt_company"/>
+                        <field name="irs_monthly_tax_vac" widget="percentage" invisible="not is_pt_company"/>
+                    </xpath>
+                    <xpath expr="//field[@name='marital']" position="after">
+                        <field name="depending" invisible="not is_pt_company"/>
+                        <field name="pensioner" invisible="not is_pt_company"/>
+                        <field name="spouse_handycap" invisible="not is_pt_company"/>
+                        <field name="dependent_handycap" invisible="not is_pt_company"/>
+                    </xpath>
+                    <xpath expr="//page[@name='hr_settings']//field[@name='user_id']/parent::div" position="after">
+                        <field name="union_worker" widget="boolean" invisible="not is_pt_company"/>
+                    </xpath>
+                    <xpath expr="//page[@name='personal_information']//field[@name='identification_id']" position="after">
+                        <field name="cc_expiration_date" invisible="not is_pt_company"/>
+                    </xpath>
+                    <xpath expr="//form//field[@name='department_id']" position="before">
+                        <field name="moe" widget="boolean" invisible="not is_pt_company"/>
+                        <field name="income_year" invisible="not is_pt_company"/>
+                        <field name="annual_income_report_date" widget="date" invisible="not is_pt_company"/>
+                        <field name="total_income" invisible="not is_pt_company"/>
+                        <field name="irs_deducted_value" invisible="not is_pt_company"/>
+                        <field name="ss_deducted_value" invisible="not is_pt_company"/>
+                        <field name="union_deducted_value" invisible="not is_pt_company"/>
+                    </xpath>
+                    <!-- Make fields required for PT companies -->
+                    <xpath expr="//field[@name='fiscal_number']" position="attributes">
+                        <attribute name="required">is_pt_company</attribute>
+                    </xpath>
+                    <xpath expr="//page[@name='personal_information']//field[@name='private_state_id']" position="attributes">
+                        <attribute name="required">is_pt_company</attribute>
+                    </xpath>
+                    <xpath expr="//page[@name='personal_information']//field[@name='country_id']" position="attributes">
+                        <attribute name="required">is_pt_company</attribute>
+                    </xpath>
+                    <xpath expr="//page[@name='personal_information']//field[@name='private_country_id']" position="attributes">
+                        <attribute name="required">is_pt_company</attribute>
+                    </xpath>
+                    <xpath expr="//page[@name='personal_information']//field[@name='ssnid']" position="attributes">
+                        <attribute name="required">is_pt_company</attribute>
+                    </xpath>
+                    <xpath expr="//page[@name='personal_information']//field[@name='birthday']" position="attributes">
+                        <attribute name="required">is_pt_company</attribute>
+                    </xpath>
+                    <xpath expr="//page[@name='personal_information']//field[@name='identification_id']" position="attributes">
+                        <attribute name="required">is_pt_company</attribute>
+                    </xpath>
+                    <xpath expr="//field[@name='job_id']" position="attributes">
+                        <attribute name="required">is_pt_company</attribute>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>

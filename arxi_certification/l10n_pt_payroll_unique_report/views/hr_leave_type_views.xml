@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_leave_type_form" model="ir.ui.view">
+        <field name="name">hr.leave.type.form.inherit.l10n_pt_payroll_unique_report</field>
+        <field name="model">hr.leave.type</field>
+        <field name="inherit_id" ref="hr_holidays.edit_holiday_status_form"/>
+        <field name="arch" type="xml">
+            <field name="company_id" position="after">
+                <field name="is_training"/>
+                <field name="is_strike"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

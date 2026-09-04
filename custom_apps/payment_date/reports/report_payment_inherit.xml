@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="report_payment_inherit" inherit_id="l10n_pt_ao.report_payment_inherit">
+        <xpath expr="//div[@t-if='o.date']" position="attributes">
+            <attribute name="t-if">o.date and (o.date != o.posting_date)</attribute>
+        </xpath>
+
+        <xpath expr="//span[@t-field='o.posting_date']" position="after">
+            <br/>
+            Payment Date:
+            <span t-field="o.date"/>
+        </xpath>
+
+        <xpath expr="//div[@t-if='o.date and (o.date != o.posting_date)']" position="after">
+            <div class="col-6" t-else="">
+                Posting Date:
+                <span t-field="o.posting_date"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>

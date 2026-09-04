@@ -1,0 +1,1100 @@
+<odoo noupdate="0">
+    <!--    SALARIO BASE-->
+    <record id="hr_payroll_rules_base" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_basic"/>
+        <field name="name">Basic Salary</field>
+        <field name="code">BASIC</field>
+        <field name="sequence">1</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="appears_on_payslip">True</field>
+        <field name="income_type">A</field>
+        <field name="ss_code">P</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">P</field>
+        <field name="skip_compute">True</field>
+        <field name="condition_select">none</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+# Available variables:
+#----------------------
+# payslip: object containing the payslips
+# employee: hr.employee object
+# contract: hr.version object
+# rules: object containing the rules code (previously computed)
+# categories: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+# worked_days: object containing the computed worked days.
+# inputs: object containing the computed inputs.
+
+# Note: returned value have to be set in the variable 'result'
+#usamos a palavra work para identificar o trabalho que é pago
+entries_work = entries_considered_work(payslip)
+wage_per_day = contract.wage / 30
+result_qty = payslip.days_worked
+result = wage_per_day
+if payslip.payslip_type == 'extraordinary':
+    normal_slip_amount = get_previous_amount(payslip, 'BASIC')
+    total = result - normal_slip_amount
+    result = total if total >= 0 else 0
+        </field>
+    </record>
+
+    <!--ISENÇÃO DE HORÁRIO-->
+    <record id="hr_payroll_rules_ih" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_basic"/>
+        <field name="name">Exemption schedule</field>
+        <field name="code">IH</field>
+        <field name="sequence">2</field>
+        <field name="appears_on_payslip">False</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = contract.exemption_schedule</field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+
+## Nos termos do artigo 272.º do Código do Trabalho, o valor da retribuição horária é calculado segundo a seguinte fórmula:
+## (RMx12):(52xn) em que Rm é o valor da retribuição mensal e n o período normal de trabalho semanal.
+## Assim, num exemplo de um trabalhador que receba uma retribuição mensal de € 1.000,00 com um período normal de trabalho de 40 horas de trabalho semanal, o cálculo seria:
+## (1000×12):(52×40) = retribuição horária de € 5,76.
+## Depois, teremos de atender ao previsto no artigo 268.º, n.º 1, alínea a) do Código do Trabalho, nos termos do qual o trabalho suplementar é pago pelo valor da retribuição horária com um acréscimo de 25% na primeira hora ou fracção desta."""
+
+result = BASIC
+
+result_rate = contract.exemption_schedule_percentage * 100
+if payslip.payslip_type == 'extraordinary':
+    normal_slip_amount = get_previous_amount(payslip, 'IH')
+    total = result - normal_slip_amount
+    result = total if total >= 0 else 0
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">M</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">M</field>
+    </record>
+
+    <!--    HORAS EXTRAS-->
+    <record id="hr_payroll_rules_he" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+        <field name="name">Extra hours + 0%</field>
+        <field name="code">HE</field>
+        <field name="sequence">3</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'HE' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+rate = 0
+hours = inputs['HE'].amount
+result = calc_hours(contract, hours, rate)
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">S</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">S</field>
+    </record>
+
+    <record id="hr_payroll_rules_he25" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+        <field name="name">Extra hours + 25%</field>
+        <field name="code">HE25</field>
+        <field name="sequence">3</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'HE25' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+rate = 0.25
+hours = inputs['HE25'].amount
+result = calc_hours(contract, hours, rate)
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">S</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">S</field>
+    </record>
+
+    <record id="hr_payroll_rules_he375" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+        <field name="name">Extra hours + 37.5%</field>
+        <field name="code">HE375</field>
+        <field name="sequence">3</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'HE375' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+rate = 0.375
+hours = inputs['HE375'].amount
+result = calc_hours(contract, hours, rate)
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">S</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">S</field>
+    </record>
+
+    <record id="hr_payroll_rules_he50" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+        <field name="name">Extra hours + 50%</field>
+        <field name="code">HE50</field>
+        <field name="sequence">3</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'HE50' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+rate = 0.50
+hours = inputs['HE50'].amount
+result = calc_hours(contract, hours, rate)
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">S</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">S</field>
+    </record>
+
+    <record id="hr_payroll_rules_he75" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+        <field name="name">Extra hours + 75%</field>
+        <field name="code">HE75</field>
+        <field name="sequence">3</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'HE75' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+rate = 0.75
+hours = inputs['HE75'].amount
+result = calc_hours(contract, hours, rate)
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">S</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">S</field>
+    </record>
+
+    <record id="hr_payroll_rules_he90" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+        <field name="name">Extra hours + 90%</field>
+        <field name="code">HE90</field>
+        <field name="sequence">3</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'HE90' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+rate = 0.9
+hours = inputs['HE90'].amount
+result = calc_hours(contract, hours, rate)
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">S</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">S</field>
+    </record>
+
+    <record id="hr_payroll_rules_he100" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+        <field name="name">Extra hours + 100%</field>
+        <field name="code">HE100</field>
+        <field name="sequence">3</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'HE100' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+rate = 1
+hours = inputs['HE100'].amount
+result = calc_hours(contract, hours, rate)
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">S</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">S</field>
+    </record>
+
+    <record id="hr_payroll_rules_he125" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+        <field name="name">Extra hours + 125%</field>
+        <field name="code">HE125</field>
+        <field name="sequence">3</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'HE125' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+rate = 1.25
+hours = inputs['HE125'].amount
+result = calc_hours(contract, hours, rate)
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">S</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">S</field>
+    </record>
+
+    <record id="hr_payroll_rules_he150" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+        <field name="name">Extra hours + 150%</field>
+        <field name="code">HE150</field>
+        <field name="sequence">3</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'HE150' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+rate = 1.50
+hours = inputs['HE150'].amount
+result = calc_hours(contract, hours, rate)
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">S</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">S</field>
+    </record>
+
+    <!--    PREMIOS-->
+    <record id="hr_payroll_rules_pr" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_bonus_subject_to_irs"/>
+        <field name="name">Position Award</field>
+        <field name="code">AWARD</field>
+        <field name="sequence">4</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result ='AWARD' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+## se tiver inputs, adiciona os inputs ao resultado final
+## utiliza Salary attachments para associar prémios que podem ser dados durante um certo periodo de tempo
+result = 0
+result += inputs['AWARD'].amount
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">O</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">O</field>
+    </record>
+    <record id="hr_payroll_rules_advance" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_bonus_subject_to_irs"/>
+        <field name="name">Advance</field>
+        <field name="code">ADVANCE</field>
+        <field name="sequence">5</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'ADVANCE' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result = 0
+result += inputs['ADVANCE'].amount
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="ss_code">P</field>
+    </record>
+
+    <record id="hr_payroll_rules_sup_work" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+            <field name="name">Supplementary Work</field>
+            <field name="code">SW</field>
+            <field name="sequence">6</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'SW' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+result = inputs['SW'].amount
+            </field>
+        <field name="income_type">A</field>
+        <field name="ss_code">S</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">S</field>
+        </record>
+
+     <!--    childhood valley-->
+        <record id="hr_payroll_rules_child_val" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_child_val"/>
+            <field name="name">Childhood Voucher</field>
+            <field name="code">CHILD_VAL</field>
+            <field name="sequence">6</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'CHILD_VAL' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+result = inputs['CHILD_VAL'].amount
+            </field>
+        <field name="income_type">A23</field>
+        </record>
+
+        <!--  Retirement Savings Plan  -->
+        <record id="hr_payroll_rules_retirement" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_bonus_subject_to_irs"/>
+            <field name="name">Retirement Savings Plan</field>
+            <field name="code">RET_PLAN</field>
+            <field name="sequence">7</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'RET_PLAN' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+result += inputs['RET_PLAN'].amount
+            </field>
+            <field name="income_type">A</field>
+            <field name="other_benefits">True</field>
+        </record>
+
+        <!--    Balance Sheet Bonus-->
+        <record id="hr_payroll_rules_balance_bonus" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_bal_bonus"/>
+            <field name="name">Balance Sheet Bonus</field>
+            <field name="code">BAL_BONUS</field>
+            <field name="sequence">8</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'BAL_BONUS' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+result = inputs['BAL_BONUS'].amount
+            </field>
+        <field name="income_type">A</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">A</field>
+        </record>
+
+    <!--    Compensation for Termination of Contract-->
+        <record id="hr_payroll_rules_term_comp" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_term_comp"/>
+            <field name="name">Compensation for Termination of Contract</field>
+            <field name="code">TERM_COMP</field>
+            <field name="sequence">8</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'TERM_COMP' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+result += inputs['TERM_COMP'].amount
+            </field>
+            <field name="income_type">A</field>
+            <field name="in_insurance_map">True</field>
+            <field name="insurance_code">A</field>
+        </record>
+
+    <record id="hr_payroll_rules_term_comp_exempt" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_bonus"/>
+            <field name="name">Compensation for Termination of Contract - Exempt</field>
+            <field name="code">TERM_COMP_EX</field>
+            <field name="sequence">8</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'TERM_COMP_EX' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+result += inputs['TERM_COMP_EX'].amount
+            </field>
+        <field name="income_type">A20</field>
+        </record>
+
+        <record id="hr_payroll_rules_perf_bonus" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_perf_bonus"/>
+            <field name="name">Performance Bonus</field>
+            <field name="code">PERF_BONUS</field>
+            <field name="sequence">8</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'PERF_BONUS' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+result = inputs['PERF_BONUS'].amount
+            </field>
+            <field name="income_type">A</field>
+            <field name="ss_code">B</field>
+            <field name="in_insurance_map">True</field>
+            <field name="insurance_code">B</field>
+        </record>
+
+    <record id="hr_payroll_rules_attendance_bonus" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_perf_bonus"/>
+            <field name="name">Attendance Bonus</field>
+            <field name="code">ATT_BONUS</field>
+            <field name="sequence">8</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'ATT_BONUS' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+result = inputs['ATT_BONUS'].amount
+            </field>
+            <field name="income_type">A</field>
+            <field name="ss_code">B</field>
+            <field name="in_insurance_map">True</field>
+            <field name="insurance_code">B</field>
+        </record>
+
+        <!--Commissions-->
+        <record id="hr_payroll_rules_commissions" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+            <field name="name">Commissions</field>
+            <field name="code">COMISSION</field>
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'COMISSION' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+result += inputs['COMISSION'].amount</field>
+            <field name="income_type">A</field>
+            <field name="ss_code">C</field>
+            <field name="in_insurance_map">True</field>
+            <field name="insurance_code">A</field>
+        </record>
+
+    <!--Sub Comp Enc Education-->
+        <record id="hr_payroll_rules_sub_comp_edu" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_bonus_subject_to_irs"/>
+            <field name="name">Sub Comp Enc Education</field>
+            <field name="code">COMP_SUB_EDU</field>
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'COMP_SUB_EDU' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+result += inputs['COMP_SUB_EDU'].amount
+            </field>
+            <field name="income_type">A</field>
+        </record>
+
+        <!--Education Expenses-->
+        <record id="hr_payroll_rules_exp_edu" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_bonus_subject_to_irs"/>
+            <field name="name">Education Expenses</field>
+            <field name="code">EXP_EDU</field>
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'EXP_EDU' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+result += inputs['EXP_EDU'].amount
+            </field>
+            <field name="income_type">A</field>
+        </record>
+
+    <record id="hr_payroll_rules_edu_voucher" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_extra"/>
+            <field name="name">Education Voucher</field>
+            <field name="code">EDU_VAL</field>
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'EDU_VAL' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+result += inputs['EDU_VAL'].amount
+            </field>
+            <field name="income_type">A24</field>
+        </record>
+
+<!--   House Renting in Kind -->
+    <record id="hr_payroll_rules_housing_rent" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+            <field name="name">Housing Rent in Kind</field>
+            <field name="code">HOUSE_RENT</field>
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'HOUSE_RENT' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+result += inputs['HOUSE_RENT'].amount
+            </field>
+            <field name="income_type">A63</field>
+            <field name="ss_code">B</field>
+            <field name="in_insurance_map">True</field>
+            <field name="insurance_code">B</field>
+        </record>
+
+    <record id="hr_payroll_rules_housing_rent_exempt" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_bonus"/>
+            <field name="name">Housing Rent in Kind - Exempt</field>
+            <field name="code">HOUSE_RENT_EX</field>
+            <field name="sequence">9</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'HOUSE_RENT_EX' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = 0
+result += inputs['HOUSE_RENT_EX'].amount
+            </field>
+            <field name="exempt_income_type">A40</field>
+        </record>
+
+    <!--Fail Allowance-->
+        <record id="hr_payroll_rules_fail_allow" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_fail_allow"/>
+            <field name="name">Fail Allowance</field>
+            <field name="code">FAIL_ALLOW</field>
+            <field name="sequence">10</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = contract.has_fail_allow</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result = contract.fail_allow_amount
+entries_discount = entries_to_discount_wage(payslip)
+if worked_days and payslip.worked_days_line_ids:
+    for x in payslip.worked_days_line_ids:
+        if x.code not in ['WORK100', 'HOLIDAY'] and not x.is_correction:   ## identificar aqui os work types a serem excluidos, função que devolve entries que descontam
+            allocation = employee.company_id.default_vacation_days
+            result -= (contract.fail_allow_amount / allocation) * round(x.number_of_days)
+if payslip.payslip_type == 'extraordinary':
+    normal_slip_amount = get_previous_amount(payslip, 'FAIL_ALLOW')
+    total = result - normal_slip_amount
+    result = total if total >= 0 else 0
+result = result if result >= 0 else 0
+            </field>
+            <field name="income_type">A</field>
+            <field name="exempt_income_type">A23</field>
+            <field name="ss_code">M</field>
+            <field name="in_insurance_map">True</field>
+            <field name="insurance_code">M</field>
+        </record>
+
+    <!--Exemption Schedule Deduction-->
+        <record id="hr_payroll_rules_ex_sch_ded" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_bonus"/>
+            <field name="name">Exemption Schedule Deduction</field>
+            <field name="code">EX_SCH_DED</field>
+            <field name="sequence">10</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'EX_SCH_DED' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result += inputs['EX_SCH_DED'].amount
+            </field>
+        </record>
+
+    <!--Night Work-->
+        <record id="hr_payroll_rules_night_work" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+            <field name="name">Night Work</field>
+            <field name="code">TN</field>
+            <field name="sequence">10</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'TN' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result_rate = contract.night_work_percentage * 100
+result_qty = inputs['TN'].amount
+wage_per_hour = float_round((contract.wage * 12) / (52 * contract.resource_calendar_id.hours_per_week), 2)
+result = wage_per_hour
+            </field>
+            <field name="income_type">A</field>
+            <field name="ss_code">T</field>
+            <field name="in_insurance_map">True</field>
+            <field name="insurance_code">T</field>
+            <field name="show_qty_in_pdf">True</field>
+        </record>
+
+    <!--Sunday Hours-->
+        <record id="hr_payroll_rules_sunday_hours" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+            <field name="name">Sunday Hours</field>
+            <field name="code">HD</field>
+            <field name="sequence">10</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'HD' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result_qty = inputs['HD'].amount
+wage_per_hour = float_round((contract.wage * 12) / (52 * contract.resource_calendar_id.hours_per_week), 2)
+result = wage_per_hour
+            </field>
+            <field name="income_type">A</field>
+            <field name="ss_code">S</field>
+            <field name="in_insurance_map">True</field>
+            <field name="insurance_code">S</field>
+            <field name="show_qty_in_pdf">True</field>
+        </record>
+
+    <!--Training-->
+        <record id="hr_payroll_rules_training" model="hr.salary.rule">
+            <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+            <field name="name">Training</field>
+            <field name="code">TRN</field>
+            <field name="sequence">10</field>
+            <field name="active">True</field>
+            <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = 'TRN' in inputs</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">
+result_qty = (inputs.get("TRN") or 0).amount
+wage_per_hour = float_round((contract.wage * 12) / (52 * contract.resource_calendar_id.hours_per_week), 2)
+result = wage_per_hour
+            </field>
+            <field name="income_type">A</field>
+            <field name="ss_code">O</field>
+            <field name="in_insurance_map">False</field>
+            <field name="show_qty_in_pdf">True</field>
+        </record>
+
+ <!--    AJUDAS DE CUSTO-->
+    <record id="hr_payroll_rules_ac" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_cost_allw"/>
+        <field name="name">Cost Allowances</field>
+        <field name="code">AC</field>
+        <field name="sequence">11</field>
+        <field name="active">True</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'AC' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result_qty = inputs['AC'].amount
+result = contract.cost_allw_amount
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="exempt_income_type">A22</field>
+        <field name="ss_code">A</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">A</field>
+    </record>
+
+     <!--    AJUDAS DE CUSTO ESTRANGEIRO-->
+    <record id="hr_payroll_rules_ac_foreign" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_cost_allw_foreign"/>
+        <field name="name">Cost Allowances Foreign</field>
+        <field name="code">AC_FOREIGN</field>
+        <field name="sequence">11</field>
+        <field name="active">True</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'AC_FOREIGN' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result_qty = inputs['AC_FOREIGN'].amount
+result = contract.cost_allw_amount_foreign
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="exempt_income_type">A22</field>
+        <field name="ss_code">A</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">A</field>
+    </record>
+        <!--    KM VIATURA-->
+    <record id="hr_payroll_rules_km" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_kms"/>
+        <field name="name">Kms Own Vehicle</field>
+        <field name="code">KM</field>
+        <field name="sequence">12</field>
+        <field name="active">True</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'KM' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result_qty = inputs['KM'].amount
+result = contract.km_value
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A22</field>
+        <field name="ss_code"></field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">A</field>
+    </record>
+
+         <!--    KM VIATURA EMPRESA-->
+    <record id="hr_payroll_rules_km_company_vehicle" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_other_irs"/>
+        <field name="name">Kms Company Vehicle</field>
+        <field name="code">KM_COMP</field>
+        <field name="sequence">12</field>
+        <field name="active">True</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'KM_COMP' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result_qty = inputs['KM_COMP'].amount
+result = contract.km_value
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A22</field>
+        <field name="ss_code">A</field>
+    </record>
+
+    <!--    SUBSÍDIOS-->
+     <!--    SUBSÍDIOS FÉRIAS e NATAL-->
+    <record id="hr_payroll_rules_sf" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_subs_vac"/>
+        <field name="name">Vacation Allowance</field>
+        <field name="code">SF</field>
+        <field name="sequence">13</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (payslip.payslip_type != 'extraordinary' and (contract.vacation == 'com_dist_total' or contract.vacation == 'com_dist_metade' or contract.vacation == 'sem_dist' and contract.month_selection_vac == payslip.date_to.strftime('%m'))) or (payslip.payslip_type == 'extraordinary' and payslip.payslip_run_id.extraordinary_rubric == 'vacation_allowance' and contract.vacation != 'com_dist_total' and contract.month_selection_vac == 'paid_separately')</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result_qty = payslip.vac_allw_qty
+if payslip.payslip_type == 'extraordinary':
+    result_name = 'Sub.Férias - Pago à Parte'
+    base = contract.wage
+    if contract.exemption_schedule:
+        base += contract.wage * contract.exemption_schedule_percentage
+    result = base / 2 if contract.vacation == 'com_dist_metade' else base
+elif contract.vacation == 'com_dist_total':
+    result_name = 'Sub.Férias - Duodécimos'
+    if categories['BASIC'] == 0 and not any(l.code in ['UNJUSTIFIED_ABSENCE', 'PATERNITY_LEAVE', 'PARENTAL_LEAVE', 'MATERNITY_LEAVE'] for l in payslip.worked_days_line_ids):
+        result = (contract.wage + (contract.wage * contract.exemption_schedule_percentage)) / 12
+    else:
+        result = categories['BASIC'] / 12
+elif contract.vacation == 'com_dist_metade':
+    if contract.month_selection_vac != payslip.date_to.strftime('%m'):
+        result_name = 'Sub.Férias - 1/2 Duodécimos'
+        if categories['BASIC'] == 0 and not any(l.code in ['UNJUSTIFIED_ABSENCE', 'PATERNITY_LEAVE', 'PARENTAL_LEAVE', 'MATERNITY_LEAVE'] for l in payslip.worked_days_line_ids):
+            result = (contract.wage + (contract.wage * contract.exemption_schedule_percentage)) / 12 / 2
+        else:
+            result = categories['BASIC'] / 12 / 2
+    else:
+        if categories['BASIC'] == 0 and not any(l.code in ['UNJUSTIFIED_ABSENCE', 'PATERNITY_LEAVE', 'PARENTAL_LEAVE', 'MATERNITY_LEAVE'] for l in payslip.worked_days_line_ids):
+            result = (contract.wage + (contract.wage * contract.exemption_schedule_percentage)) / 2
+        else:
+            result = categories['BASIC'] / 2
+elif contract.vacation == 'sem_dist' and contract.month_selection_vac == payslip.date_to.strftime('%m'):
+    if categories['BASIC'] == 0 and not any(l.code in ['UNJUSTIFIED_ABSENCE', 'PATERNITY_LEAVE', 'PARENTAL_LEAVE', 'MATERNITY_LEAVE'] for l in payslip.worked_days_line_ids):
+        result = contract.wage + (contract.wage * contract.exemption_schedule_percentage)
+    else:
+        result = categories['BASIC']
+else:
+    result = 0
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A3</field>
+        <field name="ss_code">F</field>
+    </record>
+
+<!--    INPUT VACATION-->
+    <record id="hr_payroll_rules_input_vac_allw" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_subs_vac"/>
+        <field name="name">Vacation Allowance</field>
+        <field name="code">VAC_ALLW</field>
+        <field name="sequence">12</field>
+        <field name="active">True</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'VAC_ALLW' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result = inputs['VAC_ALLW'].amount
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A3</field>
+        <field name="ss_code">F</field>
+    </record>
+
+    <record id="hr_payroll_rules_prop_sf" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_subs_vac"/>
+        <field name="name">Vacation Proportionals</field>
+        <field name="code">PROP_SF</field>
+        <field name="sequence">13</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = payslip.payslip_type == 'cease'</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+base = 0
+if 'IH' in rules:
+    base += contract.wage * contract.exemption_schedule_percentage
+result = compute_proportionals(contract, payslip, 'PROP_SF', base)
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A3</field>
+        <field name="ss_code">F</field>
+    </record>
+
+    <record id="hr_payroll_rules_prop_sf_days_not_used" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_bonus_subject_to_irs_and_ss"/>
+        <field name="name">Vacation Days Not Used Proportionals</field>
+        <field name="code">PROP_SF_DAYS</field>
+        <field name="sequence">13</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = payslip.payslip_type == 'cease'</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result_qty = payslip.not_used_vac_days
+base = 0
+if 'IH' in rules:
+    base += contract.wage * contract.exemption_schedule_percentage
+result = _compute_proportionals_not_used_days(contract, base)
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">2</field>
+        <field name="show_qty_in_pdf">True</field>
+    </record>
+
+    <record id="hr_payroll_rules_sn" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_subs_chr"/>
+        <field name="name">Christmas Allowance</field>
+        <field name="code">SN</field>
+        <field name="sequence">14</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (payslip.payslip_type != 'extraordinary' and (contract.christmas == 'com_dist_total' or contract.christmas == 'com_dist_metade' or contract.christmas == 'sem_dist' and contract.month_selection_chr == payslip.date_to.strftime('%m'))) or (payslip.payslip_type == 'extraordinary' and payslip.payslip_run_id.extraordinary_rubric == 'christmas_allowance' and contract.christmas != 'com_dist_total' and contract.month_selection_chr == 'paid_separately')</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result_qty = payslip.chr_allw_qty
+if payslip.payslip_type == 'extraordinary':
+    result_name = 'Sub.Natal - Pago à Parte'
+    base = contract.wage
+    if contract.exemption_schedule:
+        base += contract.wage * contract.exemption_schedule_percentage
+    result = base / 2 if contract.christmas == 'com_dist_metade' else base
+elif contract.christmas == 'com_dist_total':
+    result_name = 'Sub.Natal - Duodécimos'
+    if categories['BASIC'] == 0 and not any(l.code in ['UNJUSTIFIED_ABSENCE', 'PATERNITY_LEAVE', 'PARENTAL_LEAVE', 'MATERNITY_LEAVE'] for l in payslip.worked_days_line_ids):
+        result = (contract.wage + (contract.wage * contract.exemption_schedule_percentage)) / 12
+    else:
+        result = categories['BASIC'] / 12
+elif contract.christmas == 'com_dist_metade':
+    if contract.month_selection_chr != payslip.date_to.strftime('%m'):
+        result_name = 'Sub.Natal - 1/2 Duodécimos'
+        if categories['BASIC'] == 0 and not any(l.code in ['UNJUSTIFIED_ABSENCE', 'PATERNITY_LEAVE', 'PARENTAL_LEAVE', 'MATERNITY_LEAVE'] for l in payslip.worked_days_line_ids):
+            result = (contract.wage + (contract.wage * contract.exemption_schedule_percentage)) / 12 / 2
+        else:
+            result = categories['BASIC'] / 12 / 2
+    else:
+        if categories['BASIC'] == 0 and not any(l.code in ['UNJUSTIFIED_ABSENCE', 'PATERNITY_LEAVE', 'PARENTAL_LEAVE', 'MATERNITY_LEAVE'] for l in payslip.worked_days_line_ids):
+            result = (contract.wage + (contract.wage * contract.exemption_schedule_percentage)) / 2
+        else:
+            result = categories['BASIC'] / 2
+elif contract.christmas == 'sem_dist' and contract.month_selection_chr == payslip.date_to.strftime('%m'):
+    if categories['BASIC'] == 0 and not any(l.code in ['UNJUSTIFIED_ABSENCE', 'PATERNITY_LEAVE', 'PARENTAL_LEAVE', 'MATERNITY_LEAVE'] for l in payslip.worked_days_line_ids):
+        result = contract.wage + (contract.wage * contract.exemption_schedule_percentage)
+    else:
+        result = categories['BASIC']
+else:
+    result = 0
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A4</field>
+        <field name="ss_code">N</field>
+    </record>
+
+    <!--    INPUT CHRISTMAS-->
+    <record id="hr_payroll_rules_input_chr_allw" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_subs_chr"/>
+        <field name="name">Christmas Allowance</field>
+        <field name="code">CHR_ALLW</field>
+        <field name="sequence">12</field>
+        <field name="active">True</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'CHR_ALLW' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result = inputs['CHR_ALLW'].amount
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A4</field>
+        <field name="ss_code">N</field>
+    </record>
+
+    <record id="hr_payroll_rules_prop_sn" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_subs_chr"/>
+        <field name="name">Christmas Proportionals</field>
+        <field name="code">PROP_SN</field>
+        <field name="sequence">14</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = payslip.payslip_type == 'cease'</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+base = 0
+if 'IH' in rules:
+    base += contract.wage * contract.exemption_schedule_percentage
+result = compute_proportionals(contract, payslip, 'PROP_SN', base)
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A4</field>
+        <field name="ss_code">N</field>
+    </record>
+
+    <!--    SUBSIDIO DE REFEIÇÃO-->
+    <record id="hr_payroll_rules_refeicao" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_sub_food"/>
+        <field name="name">Meal Allowance</field>
+        <field name="code">REF</field>
+        <field name="sequence">15</field>
+        <field name="active">True</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = contract.food == 'normal'</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result_qty = payslip.meal_allw_days
+result = contract.foodValue
+if payslip.payslip_type == 'extraordinary':
+    normal_slip_amount = get_previous_amount(payslip, 'REF')
+    total = result - normal_slip_amount
+    result = total if total >= 0 else 0
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A21</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">R</field>
+        <field name="ss_code">R</field>
+        <field name="show_qty_in_pdf">True</field>
+    </record>
+    <record id="hr_payroll_rules_valerefeicao" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_sub_food"/>
+        <field name="name">Meal Card</field>
+        <field name="code">CARDREF</field>
+        <field name="sequence">16</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = contract.food == 'cartao'</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result_qty = payslip.meal_allw_days
+result = contract.foodValue
+if payslip.payslip_type == 'extraordinary':
+    normal_slip_amount = get_previous_amount(payslip, 'CARDREF')
+    total = result - normal_slip_amount
+    result = total if total >= 0 else 0
+		</field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A21</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">R</field>
+        <field name="ss_code">R</field>
+        <field name="show_qty_in_pdf">True</field>
+    </record>
+
+<!--    Diuturnidades-->
+    <record id="hr_payroll_rules_seniority_payments" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_bonus"/>
+        <field name="name">Seniority Payments</field>
+        <field name="code">SENIOR</field>
+        <field name="sequence">17</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = contract.seniority_payments</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result = contract.seniority_payments
+		</field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">B</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">B</field>
+    </record>
+
+    <!--    GROSS-->
+    <record id="hr_payroll_rules_gross" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_gross"/>
+        <field name="name">Gross Wage</field>
+        <field name="code">SG</field>
+        <field name="amount_select">code</field>
+        <field name="sequence">22</field>
+        <field name="condition_select">none</field>
+        <field name="amount_python_compute">
+result = round(categories['BASIC'], 2) + round(categories['EXTRA'], 2) + round(categories['FREE'], 2) + round(categories['OTHER'], 2)  + round(categories['OTHER_IRS'], 2) + round(categories['DED'], 2)
+        </field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+    </record>
+    <!--    NET-->
+    <record id="hr_payroll_rules_net" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll.NET"/>
+        <field name="name">Net Salary</field>
+        <field name="code">NET</field>
+        <field name="sequence">23</field>
+        <field name="condition_select">none</field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result = round(SG, 2) - int(IRSMEALSUB) - int(IRSCHRSUB) - int(IRSVACSUB) - int(IRSVM) - round(SS, 2) - round(SSVAC, 2) - round(SSCHR, 2)
+result = float_round(result,2)
+        </field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+    </record>
+
+    <record id="hr_payroll_rules_ee" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll_ee"/>
+        <field name="name">Entity Charges</field>
+        <field name="code">EE</field>
+        <field name="sequence">30</field>
+        <field name="condition_select">none</field>
+        <field name="appears_on_payslip" eval="False"/>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result_rate = contract.ss_regime.employer_rate
+total = categories['BASIC'] + categories['CHRSUB'] + categories['VACSUB']  + categories['BONUS_SS'] + categories['BONUS_IRS_SS'] + categories['RETRO_IRS_SS'] + taxed_value_meal_allowance(contract, payslip) + taxed_value_fail_allow(contract, categories, payslip) - categories['BASIC_CORR'] - categories['VAC_CORR'] - categories['CHR_CORR']
+result = total
+        </field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+    </record>
+
+</odoo>

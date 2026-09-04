@@ -1,0 +1,220 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* defir_integration
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-20 11:56+0000\n"
+"PO-Revision-Date: 2024-10-20 11:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: defir_integration
+#: model_terms:ir.ui.view,arch_db:defir_integration.res_config_settings_view_form_defir
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\"/>"
+msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Estes valores são "
+"específicospor empresa.\"/>"
+
+#. module: defir_integration
+#: model_terms:ir.ui.view,arch_db:defir_integration.res_config_settings_view_form_defir
+msgid "Activate to integrate with Defir."
+msgstr "Ative para integrar com Defir."
+
+#. module: defir_integration
+#: model:ir.model.fields.selection,name:defir_integration.selection__defir_integration_wizard__period_type__3
+msgid "Audit"
+msgstr "Auditoria"
+
+#. module: defir_integration
+#: model_terms:ir.ui.view,arch_db:defir_integration.defir_integration_wizard_view_form
+msgid "Close"
+msgstr "Fechar"
+
+#. module: defir_integration
+#: model:ir.model,name:defir_integration.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: defir_integration
+#: model_terms:ir.ui.view,arch_db:defir_integration.res_config_settings_view_form_defir
+msgid "Company"
+msgstr "Empresa"
+
+#. module: defir_integration
+#: model:ir.model,name:defir_integration.model_res_config_settings
+msgid "Config Settings"
+msgstr "Configurações"
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_defir_integration_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_defir_integration_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: defir_integration
+#: model:ir.model.fields.selection,name:defir_integration.selection__defir_integration_wizard__period_type__2
+msgid "Currency"
+msgstr "Divisa"
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_res_config_settings__defir_database_id
+#: model_terms:ir.ui.view,arch_db:defir_integration.res_config_settings_view_form_defir
+msgid "Database ID"
+msgstr "ID Base de Dados"
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_defir_integration_wizard__defir_url
+msgid "Defir"
+msgstr ""
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_res_company__defir_company
+#: model:ir.model.fields,field_description:defir_integration.field_res_config_settings__defir_company
+msgid "Defir Company"
+msgstr ""
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_res_company__defir_database_id
+msgid "Defir Database"
+msgstr ""
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_res_company__defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_res_config_settings__defir_integration
+#: model_terms:ir.ui.view,arch_db:defir_integration.res_config_settings_view_form_defir
+msgid "Defir Integration"
+msgstr "Integração Defir"
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_res_company__defir_password
+msgid "Defir Password"
+msgstr ""
+
+#. module: defir_integration
+#: model:ir.actions.act_window,name:defir_integration.defir_integration_action
+#: model:ir.ui.menu,name:defir_integration.defir_integration_menu
+msgid "Defir Reports"
+msgstr "Relatórios Defir"
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_res_company__defir_test
+#: model:ir.model.fields,field_description:defir_integration.field_res_config_settings__defir_test
+msgid "Defir Test"
+msgstr "Teste Defir"
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_res_company__defir_user
+msgid "Defir User"
+msgstr ""
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_defir_integration_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: defir_integration
+#. odoo-python
+#: code:addons/defir_integration/wizard/defir_integration_wizard.py:0
+#, python-format
+msgid "Error code %s: %s: %s"
+msgstr "Código de Erro %s: %s: %s"
+
+#. module: defir_integration
+#. odoo-python
+#: code:addons/defir_integration/wizard/defir_integration_wizard.py:0
+#: code:addons/defir_integration/wizard/defir_integration_wizard.py:0
+#, python-format
+msgid "Error code %s: %s: %s "
+msgstr "Código de Erro %s: %s: %s "
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_defir_integration_wizard__data
+msgid "File"
+msgstr "Ficheiro"
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_defir_integration_wizard__file_name
+msgid "File Name"
+msgstr ""
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_defir_integration_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: defir_integration
+#: model_terms:ir.ui.view,arch_db:defir_integration.defir_integration_wizard_view_form
+msgid "Import"
+msgstr "Importar"
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_defir_integration_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_defir_integration_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_res_config_settings__defir_password
+#: model_terms:ir.ui.view,arch_db:defir_integration.res_config_settings_view_form_defir
+msgid "Password"
+msgstr ""
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_defir_integration_wizard__period_type
+msgid "Period Type"
+msgstr "Tipo de Período"
+
+#. module: defir_integration
+#. odoo-python
+#: code:addons/defir_integration/wizard/defir_integration_wizard.py:0
+#, python-format
+msgid "Please activate Defir Integration."
+msgstr "Por favor ative a Integração com o Defir."
+
+#. module: defir_integration
+#: model:ir.model.fields.selection,name:defir_integration.selection__defir_integration_wizard__period_type__1
+msgid "Quotation"
+msgstr "Orçamento"
+
+#. module: defir_integration
+#: model:ir.model.fields.selection,name:defir_integration.selection__defir_integration_wizard__period_type__0
+msgid "Real"
+msgstr ""
+
+#. module: defir_integration
+#: model_terms:ir.ui.view,arch_db:defir_integration.res_config_settings_view_form_defir
+msgid "Test Environment"
+msgstr "Ambiente de Testes"
+
+#. module: defir_integration
+#: model:ir.model.fields,field_description:defir_integration.field_res_config_settings__defir_user
+#: model_terms:ir.ui.view,arch_db:defir_integration.res_config_settings_view_form_defir
+msgid "Username"
+msgstr "Utilizador"
+
+#. module: defir_integration
+#: model:ir.model,name:defir_integration.model_defir_integration_wizard
+msgid "Wizard For Integration with Defir"
+msgstr "Wizard para Integração com Defir"
+
+#. module: defir_integration
+#: model_terms:ir.ui.view,arch_db:defir_integration.defir_integration_wizard_view_form
+msgid "balance_sheet_period"
+msgstr ""

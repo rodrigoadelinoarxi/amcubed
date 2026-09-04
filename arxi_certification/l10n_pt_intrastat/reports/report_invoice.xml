@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><template id="report_invoice_document" inherit_id="l10n_pt_certificate.report_invoice_document"><xpath expr="//th[3]" position="before"><th class="text-right" t-if="o.show_intrastat_origin_country_id">Origin Country</th></xpath><xpath expr="//td[3]" position="before"><td class="text-right" t-if="o.show_intrastat_origin_country_id"><span t-field="line.intrastat_product_origin_country_id"/></td></xpath></template></odoo>

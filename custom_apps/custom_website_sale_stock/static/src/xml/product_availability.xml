@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="website_sale_stock.product_availability"
+       t-inherit="website_sale_stock.product_availability"
+       t-inherit-mode="extension">
+
+        <xpath expr="//div[@id='threshold_message']" position="replace">
+            <div id="threshold_message"
+                 t-elif="show_availability and free_qty lte available_threshold"
+                 t-attf-class="availability_message_#{product_template} text-warning fw-bold">
+                <t t-if="current_lang and current_lang.startsWith('pt')">
+                    Apenas <t t-esc="formatQuantity(free_qty)"/> <t t-esc="uom_name"/> em stock.
+                </t>
+                <t t-else="">
+                    Only <t t-esc="formatQuantity(free_qty)"/> <t t-esc="uom_name"/> left in stock.
+                </t>
+            </div>
+        </xpath>
+
+    </t>
+</templates>

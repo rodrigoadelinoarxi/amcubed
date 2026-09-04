@@ -1,0 +1,200 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_payment_term_discount
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-19 14:18+0000\n"
+"PO-Revision-Date: 2022-08-19 14:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model,name:l10n_pt_payment_term_discount.model_account_move_reversal
+msgid "Account Move Reversal"
+msgstr "Reversão de Movimento Contabilístico"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_bank_statement_line__check_payment_discount
+msgid "Check Payment Discount"
+msgstr ""
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,help:l10n_pt_payment_term_discount.field_account_payment_term__is_discount
+#: model:ir.model.fields,help:l10n_pt_payment_term_discount.field_account_payment_term_line__is_discount
+msgid ""
+"Check this box if this payment term has a discount. If discount is used the "
+"remaining amount of the invoice will not be paid"
+msgstr ""
+"Ative esta caixa se o termo de pagamento tem um desconto. Se o desconto é "
+"usado a quantidade restante da fatura não vai ser paga"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,help:l10n_pt_payment_term_discount.field_product_product__is_exclude_shipping_amount
+#: model:ir.model.fields,help:l10n_pt_payment_term_discount.field_product_template__is_exclude_shipping_amount
+msgid "Check this box if want to exclude shipping charges from discount"
+msgstr "Ative esta caixa se quiser excluir as despesas de entrega do desconto"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,help:l10n_pt_payment_term_discount.field_account_payment_term__is_exclude_taxes_discount
+msgid "Check this box if want to exclude taxes from discount"
+msgstr "Ative esta caixa se quiser excluir as taxas do desconto"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,help:l10n_pt_payment_term_discount.field_account_payment_term__is_exclude_shipping_lines
+msgid "Check this box if you want to exclude shipping charges from discount"
+msgstr "Ative esta caixa se quiser excluir as despesas de entrega do desconto"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_bank_statement_line__credit_note_discount
+msgid "Credit Note Discount"
+msgstr ""
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_bank_statement_line__credit_note_payment_term_id
+msgid "Credit Note Payment Term"
+msgstr ""
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_payment_term_line__discount
+msgid "Discount (%)"
+msgstr "Desconto (%)"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_payment_register__discount_amt
+msgid "Discount Amt"
+msgstr ""
+
+#. module: l10n_pt_payment_term_discount
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payment_term_discount.view_payment_term_line_disc_form
+msgid "Discount Computation"
+msgstr ""
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_bank_statement_line__discount_date
+msgid "Discount Date"
+msgstr ""
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_payment_term_line__discount_days
+msgid "Discount Days"
+msgstr "Dias de Desconto"
+
+#. module: l10n_pt_payment_term_discount
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payment_term_discount.invoice_form_discounts
+msgid "Discount Details"
+msgstr ""
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_bank_statement_line__discount_amt
+msgid "Discount Possible"
+msgstr ""
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_payment_term_line__discount_income_account_id
+msgid "Discount on Purchases Account"
+msgstr "Desconto na conta de Compras"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_payment_term_line__discount_expense_account_id
+msgid "Discount on Sales Account"
+msgstr "Desconto na conta de Vendas"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_bank_statement_line__discount_taken
+msgid "Discount taken"
+msgstr "Desconto de termo"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_payment_term__is_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_payment_term_line__is_discount
+msgid "Early Payment Discount"
+msgstr "Desconto em Avanço"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_product_product__is_exclude_shipping_amount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_product_template__is_exclude_shipping_amount
+msgid "Exclude Shipping Amount"
+msgstr "Excluir Despesa de Entrega"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_payment_term__is_exclude_shipping_lines
+msgid "Exclude Shipping from Discount"
+msgstr "Excluir Despesa do Desconto"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_payment_term__is_exclude_taxes_discount
+msgid "Exclude Taxes from Discount"
+msgstr "Excluir Taxas do Desconto"
+
+#. module: l10n_pt_payment_term_discount
+#: code:addons/l10n_pt_payment_term_discount/models/account_move.py:0
+#, python-format
+msgid "Financial Discount: %s%s"
+msgstr "Desconto Financeiro: %s%s"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_payment_register__invoice_id
+msgid "Invoice"
+msgstr "Fatura"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model,name:l10n_pt_payment_term_discount.model_account_move
+msgid "Journal Entry"
+msgstr "Lançamento de Diário"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model,name:l10n_pt_payment_term_discount.model_account_payment_term
+msgid "Payment Terms"
+msgstr "Termos de Pagamento"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model,name:l10n_pt_payment_term_discount.model_account_payment_term_line
+msgid "Payment Terms Line"
+msgstr "Linha de Condições de Pagamento"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model,name:l10n_pt_payment_term_discount.model_product_template
+msgid "Product Template"
+msgstr "Modelo de Artigo"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model,name:l10n_pt_payment_term_discount.model_account_payment_register
+msgid "Register Payment"
+msgstr "Registar Pagamento"
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,field_description:l10n_pt_payment_term_discount.field_account_bank_statement_line__shipping_lines_total
+msgid "Shipping Lines Total"
+msgstr ""
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,help:l10n_pt_payment_term_discount.field_account_payment_term_line__discount_income_account_id
+msgid "This account will be used to post the discount on purchases."
+msgstr "Esta conta vai ser usada para ter o desconto das compras."
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model.fields,help:l10n_pt_payment_term_discount.field_account_payment_term_line__discount_expense_account_id
+msgid "This account will be used to post the discount on sales."
+msgstr "Esta conta vai ser usada para ter o desconto das vendas."
+
+#. module: l10n_pt_payment_term_discount
+#: model:ir.model,name:l10n_pt_payment_term_discount.model_saft_wizard
+msgid "Wizard for SAFT"
+msgstr "Assistente de SAF-T"
+
+#. module: l10n_pt_payment_term_discount
+#: code:addons/l10n_pt_payment_term_discount/wizard/account_payment_register.py:0
+#, python-format
+msgid ""
+"You can not register payments for multiple invoices with financial "
+"discounts."
+msgstr ""
+"Não pode registar pagamentos de múltiplas faturas com desconto  "
+"financeiro."

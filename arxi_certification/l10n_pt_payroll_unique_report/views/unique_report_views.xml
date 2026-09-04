@@ -1,0 +1,494 @@
+<odoo>
+    <record id="view_unique_report_form" model="ir.ui.view">
+        <field name="name">unique.report.form</field>
+        <field name="model">unique.report</field>
+        <field name="arch" type="xml">
+            <form string="Unique Report">
+                <header>
+                    <button name="action_export_annex_0"
+                            type="object"
+                            string="Export Annex 0"
+                            class="btn-primary"
+                            icon="fa-download"/>
+                    <button name="action_export_annex_a"
+                            string="Export Annex A"
+                            type="object"
+                            class="btn-primary"
+                            icon="fa-download"/>
+                    <button name="action_export_annex_b"
+                            string="Export Annex B"
+                            type="object"
+                            class="btn-primary"
+                            icon="fa-download"/>
+                    <button name="action_export_annex_c"
+                            string="Export Annex C"
+                            type="object"
+                            class="btn-primary"
+                            icon="fa-download"/>
+                    <button name="action_export_annex_e"
+                            string="Export Annex E"
+                            type="object"
+                            class="btn-primary"
+                            icon="fa-download"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="company_id"/>
+                    </group>
+                    <notebook>
+                        <page string="Annex 0">
+                            <group string="Reference Year">
+                                <field name="reference_year"/>
+                            </group>
+                            <notebook id="annex_0_pages">
+                                <page string="I. Company Identification">
+                                    <group>
+                                        <group>
+                                            <field name="company_vat"/>
+                                            <field name="company_niss"/>
+                                            <field name="company_id"/>
+                                            <field name="company_address"/>
+                                            <field name="company_city"/>
+                                            <field name="company_postal_code"/>
+                                            <field name="company_municipality"/>
+                                            <field name="company_country"/>
+                                            <field name="company_phone"/>
+                                            <field name="company_email"/>
+                                        </group>
+                                        <group>
+                                            <field name="main_activity_cae" required="1"/>
+                                            <field name="company_status"/>
+                                            <field name="company_status_reason_visible" invisible="1"/>
+                                            <field name="company_status_reason"
+                                                   invisible="not company_status_reason_visible"/>
+                                            <field name="company_status_start_date"/>
+                                            <field name="company_status_end_date"/>
+                                            <field name="legal_nature"/>
+                                            <field name="incorporation_date"/>
+                                            <field name="employees_in_service"/>
+                                        </group>
+                                    </group>
+                                </page>
+                                <page string="II. Employees in Service">
+                                    <group>
+                                        <group>
+                                            <field name="employees_in_service_december"/>
+                                            <field name="employee_in_service_december_avg"/>
+                                        </group>
+                                        <group>
+                                            <field name="deslocated_employees"/>
+                                            <field name="deslocation_nr"/>
+                                        </group>
+                                    </group>
+                                </page>
+                                <page string="III. Union Filiation">
+                                    <group>
+                                        <field name="unionized_employees_in_october"/>
+                                        <field name="in_worker_association" widget="boolean_toggle"
+                                               invisible="unionized_employees_in_october == 0"/>
+                                        <field name="employer_association" invisible="not in_worker_association"/>
+                                    </group>
+                                </page>
+                                <page string="IV. Supplementary Work">
+                                    <group>
+                                        <field name="has_supplementary_work" widget="boolean_toggle"/>
+                                        <field name="supp_hours_descrimination" widget="boolean_toggle"
+                                               invisible="not has_supplementary_work"/>
+                                    </group>
+                                </page>
+                                <page string="V. Temporary Workers">
+                                    <group>
+                                        <group>
+                                            <field name="temporary_workers_in_october"/>
+                                            <field name="temporary_workers_in_december"/>
+                                            <field name="temporary_workers_avg"/>
+                                        </group>
+                                        <group>
+                                            <field name="temporary_worker_entries_male"/>
+                                            <field name="temporary_worker_entries_female"/>
+                                            <field name="temporary_worker_exits_male"/>
+                                            <field name="temporary_worker_exits_female"/>
+                                        </group>
+                                    </group>
+                                </page>
+                                <page string="VI. Employees with Loss or Anomalies of Structures or Body Functions with Implications for Work">
+                                    <div class="oe_clear">
+                                        <field name="annex_0_employees" nolabel="1">
+                                            <list editable="bottom">
+                                                <field name="employee_id"/>
+                                                <field name="inability_percentage" widget="percentage" force_save="1"/>
+                                                <field name="employee_age"/>
+                                                <field name="employee_gender"/>
+                                                <field name="employee_literacy_habilitations"/>
+                                            </list>
+                                            <form>
+                                                <group>
+                                                    <field name="employee_id"/>
+                                                    <field name="inability_percentage" widget="percentage"/>
+                                                    <field name="employee_age"/>
+                                                    <field name="employee_gender"/>
+                                                    <field name="employee_literacy_habilitations"/>
+                                                </group>
+                                            </form>
+                                        </field>
+                                    </div>
+                                </page>
+                                <page string="VII. Company Economic Data">
+                                    <separator string="1. Business Volume"/>
+                                    <group>
+                                        <field name="business_volume" widget="monetary"/>
+                                    </group>
+                                    <group>
+                                        <field name="business_volume_year"/>
+                                    </group>
+                                    <group string="2. Social Capital">
+                                        <field name="social_capital" widget="monetary"/>
+                                        <field name="social_capital_rep_private_national" widget="percentage"/>
+                                        <field name="social_capital_rep_foreign" widget="percentage"/>
+                                        <field name="social_capital_rep_public_national" widget="percentage"/>
+                                    </group>
+                                    <group string="3. Vocational Training Charges">
+                                        <group string="Amount financed by the company">
+                                            <group>
+                                                <field name="company_funded_amount" widget="monetary"/>
+                                            </group>
+                                            <group>
+                                                <field name="company_funded_amount_hours" widget="monetary"/>
+                                                <field name="company_funded_amount_remaining" widget="monetary"/>
+                                            </group>
+                                        </group>
+                                        <group string="External financing to the corporate entity">
+                                            <group>
+                                                <field name="external_funded_amount" widget="monetary"/>
+                                            </group>
+                                            <group>
+                                                <field name="external_funded_amount_esf" widget="monetary"/>
+                                                <field name="external_funded_amount_other" widget="monetary"/>
+                                            </group>
+                                        </group>
+                                        <group>
+                                            <field name="total_training_charges" widget="monetary"/>
+                                        </group>
+                                    </group>
+                                    <group string="4. Health and Safety Charges">
+                                        <group>
+                                            <field name="safety_health_management_charges" widget="monetary"/>
+                                            <field name="workspace_management_charges" widget="monetary"/>
+                                            <field name="goods_services_aquisition_charges" widget="monetary"/>
+                                        </group>
+                                        <group>
+                                            <field name="consulting_info_training_charges" widget="monetary"/>
+                                            <field name="other_charges" widget="monetary"/>
+                                            <field name="total_charges" widget="monetary"/>
+                                        </group>
+                                    </group>
+                                </page>
+                                <page string="VIII. Other Complementary Data">
+                                    <group>
+                                        <field name="had_ten_employees_in_october" widget="boolean_toggle"
+                                               force_save="1"/>
+                                    </group>
+                                    <group invisible="not had_ten_employees_in_october">
+                                        <group>
+                                            <field name="gross_added_value" widget="monetary"/>
+                                            <field name="personnel_cost" widget="monetary"/>
+                                            <field name="year_amortization" widget="monetary"/>
+                                            <field name="year_provision" widget="monetary"/>
+                                        </group>
+                                        <group>
+                                            <field name="gross_added_value_year"/>
+                                            <field name="financial_costs_and_losses" widget="monetary"/>
+                                            <field name="income_tax" widget="monetary"/>
+                                            <field name="net_income" widget="monetary"/>
+                                        </group>
+                                    </group>
+                                    <group string="Charges for supplementary social protection schemes"
+                                           invisible="not had_ten_employees_in_october">
+                                        <group string="Expenses borne and managed by the employer">
+                                            <group>
+                                                <field name="sick_allowance" widget="monetary"/>
+                                                <field name="age_allowance" widget="monetary"/>
+                                                <field name="other_ss_charges" widget="monetary"/>
+                                            </group>
+                                            <group>
+                                                <field name="sick_allowance_code"/>
+                                                <field name="age_allowance_code"/>
+                                                <field name="other_ss_charges_code"/>
+                                            </group>
+                                        </group>
+                                    </group>
+                                    <group string="Expenses borne, but not administered, by the employer"
+                                           invisible="not had_ten_employees_in_october">
+                                        <group>
+                                            <field name="not_supported_sick_allowance" widget="monetary"/>
+                                            <field name="not_supported_age_allowance" widget="monetary"/>
+                                            <field name="not_supported_other_ss_charges" widget="monetary"/>
+                                        </group>
+                                        <group>
+                                            <field name="not_supported_sick_allowance_code"/>
+                                            <field name="not_supported_age_allowance_code"/>
+                                            <field name="not_supported_other_ss_charges_code"/>
+                                        </group>
+                                    </group>
+                                    <group string="Action and social support charges"
+                                           invisible="not had_ten_employees_in_october">
+                                        <field name="social_support_charges" widget="monetary"/>
+                                    </group>
+                                    <group>
+                                        <field name="max_annual_potential"
+                                               invisible="not had_ten_employees_in_october"/>
+                                    </group>
+                                    <separator string="Not Worked Hours" invisible="not had_ten_employees_in_october"/>
+                                    <field name="not_worked_hours_table" nolabel="1"
+                                           invisible="not had_ten_employees_in_october">
+                                        <list editable="bottom">
+                                            <field name="not_worked_hours_reason"/>
+                                            <field name="paid_leave_hours_male"/>
+                                            <field name="paid_leave_hours_female"/>
+                                            <field name="unpaid_leave_hours_male"/>
+                                            <field name="unpaid_leave_hours_female"/>
+                                        </list>
+                                    </field>
+                                </page>
+                            </notebook>
+                        </page>
+                        <page string="Annex A">
+                            <group string="Annex A - Staffing Table">
+                                <field name="company_vat"/>
+                                <field name="company_niss"/>
+                                <field name="local_unit_number"/>
+                            </group>
+                            <group string="I. Local Unit (Establishment)">
+                                <group>
+                                    <field name="employees_in_service_october"/>
+                                    <field name="main_activity_cae"/>
+                                </group>
+                                <group>
+                                    <field name="employees_in_service"/>
+                                    <field name="main_activity_cae"/>
+                                    <field name="legal_nature"/>
+                                </group>
+                            </group>
+                            <separator string="II. Employees"/>
+                            <group>
+                                <button name="action_populate_annex_a_employees"
+                                        string="Update Employee Lines"
+                                        icon="fa-refresh"
+                                        type="object"
+                                        class="btn-link"/>
+                            </group>
+                            <field name="annex_a_employees" nolabel="1">
+                                <list editable="bottom">
+                                    <field name="company_local_unit_number"/>
+                                    <field name="employee_id"/>
+                                    <field name="employee_social_security_regimen"/>
+                                    <field name="employee_niss"/>
+                                    <field name="employee_gender"/>
+                                    <field name="employee_birthdate"/>
+                                    <field name="employee_admission_date"/>
+                                    <field name="employee_last_promotion_date"/>
+                                    <field name="employee_contract_type"/>
+                                    <field name="employee_nationality"/>
+                                    <field name="employee_literacy_habilitations"/>
+                                    <field name="employee_job_situation"/>
+                                    <field name="employee_job_ur"/>
+                                    <field name="employee_irct_regulation"/>
+                                    <field name="employee_irct_applicability"/>
+                                    <field name="employee_job_category"/>
+                                    <field name="employee_qualification_level"/>
+                                    <field name="employee_work_duration_regimen" required="True"/>
+                                    <field name="employee_weekly_hours" force_save="1"/>
+                                    <field name="employee_working_time_duration"/>
+                                    <field name="employee_working_time_organization" required="True"/>
+                                    <field name="employee_base_salary_october"/>
+                                    <field name="employee_base_salary_paid_october"/>
+                                    <field name="employee_not_paid_reason"/>
+                                    <field name="employee_paid_hours_october"/>
+                                    <field name="employee_meal_allw_october"/>
+                                    <field name="employee_shift_allw_october"/>
+                                    <field name="employee_other_regular_allw_october"/>
+                                    <field name="employee_other_irregular_allw_october"/>
+                                    <field name="employee_supplementary_work_amount_october"/>
+                                    <field name="employee_supplementary_work_hours_october"/>
+                                    <field name="employee_supplementary_work_civil_year"/>
+                                    <field name="employee_supplementary_work_civil_year_hours"/>
+                                    <field name="employee_supplementary_work_civil_year_hours_n_2"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Annex B">
+                            <group string="Annex B - Entry and Exit of Employees">
+                                <field name="company_vat"/>
+                                <field name="company_niss"/>
+                            </group>
+                            <group string="Company Identification">
+                                <group>
+                                    <field name="company_vat"/>
+                                    <field name="company_niss"/>
+                                    <field name="company_id"/>
+                                    <field name="company_address"/>
+                                    <field name="company_city"/>
+                                </group>
+                                <group>
+                                    <field name="company_postal_code"/>
+                                    <field name="company_municipality"/>
+                                    <field name="company_country"/>
+                                    <field name="company_phone"/>
+                                    <field name="company_email"/>
+                                </group>
+                            </group>
+                            <group string="I. Employer">
+                                <field name="entries_exits_ref_year" widget="boolean_toggle"/>
+                                <field name="main_activity_cae"/>
+                            </group>
+                            <div name="annex_b_employees" invisible="not entries_exits_ref_year">
+                                <separator string="II. Employees"/>
+                                <group>
+                                    <button name="action_populate_annex_b_employees"
+                                            string="Update Employee Lines"
+                                            icon="fa-refresh"
+                                            type="object"
+                                            class="btn-link"/>
+                                </group>
+                                <field name="annex_b_employees" nolabel="1">
+                                    <list editable="bottom">
+                                        <field name="employee_social_security_regimen"/>
+                                        <field name="employee_niss"/>
+                                        <field name="employee_id"/>
+                                        <field name="employee_contract_type"/>
+                                        <field name="employee_admission_date"/>
+                                        <field name="employee_entry_reason"/>
+                                        <field name="employee_exit_date"/>
+                                        <field name="employee_exit_reason"/>
+                                        <field name="employee_gender"/>
+                                        <field name="employee_birthdate"/>
+                                        <field name="employee_nationality"/>
+                                        <field name="employee_literacy_habilitations"/>
+                                        <field name="employee_job_situation"/>
+                                        <field name="employee_job_ur"/>
+                                        <field name="employee_supplementary_work_civil_year_hours"/>
+                                        <field name="employee_supplementary_work_civil_year_hours_n_2"/>
+                                    </list>
+                                </field>
+                            </div>
+                        </page>
+                        <page string="Annex C">
+                            <group>
+                                <field name="had_employees_in_service" widget="boolean_toggle"/>
+                            </group>
+                            <group string="I. Company Identification" invisible="not had_employees_in_service">
+                                <group>
+                                    <field name="main_activity_cae"/>
+                                    <field name="company_vat"/>
+                                    <field name="company_niss"/>
+                                    <field name="company_id"/>
+                                    <field name="company_address"/>
+                                    <field name="company_city"/>
+                                </group>
+                                <group>
+                                    <field name="company_postal_code"/>
+                                    <field name="company_municipality"/>
+                                    <field name="company_country"/>
+                                    <field name="company_phone"/>
+                                    <field name="company_email"/>
+                                </group>
+                            </group>
+                            <separator
+                                    string="II. Caracterization of people in service during the year in terms of their attendance in vocational training"
+                                    invisible="not had_employees_in_service"/>
+                            <group>
+                                <button name="action_populate_annex_c_employee_training"
+                                        string="Update Employee Training Lines"
+                                        icon="fa-refresh"
+                                        type="object"
+                                        class="btn-link"/>
+                            </group>
+                            <field name="annex_c_employee_training" nolabel="1"
+                                   invisible="not had_employees_in_service">
+                                <list editable="bottom">
+                                    <field name="employee_ss_regimen" optional="show"/>
+                                    <field name="employee_niss" optional="show"/>
+                                    <field name="employee_id" optional="show"/>
+                                    <field name="employee_training_frequency" optional="show"/>
+                                    <field name="employee_training_ref_period" optional="show"/>
+                                    <field name="employee_training_area" optional="show"/>
+                                    <field name="employee_training_type" optional="show"/>
+                                    <field name="employee_training_initiative" optional="show"/>
+                                    <field name="employee_training_schedule" optional="show"/>
+                                    <field name="employee_training_entity" optional="show"/>
+                                    <field name="employee_training_certificate_type" optional="show"/>
+                                    <field name="employee_training_qualification_level" optional="show"/>
+                                    <field name="employee_training_duration" optional="show"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Annex E">
+                            <group>
+                                <field name="company_vat"/>
+                                <field name="company_niss"/>
+                                <field name="reference_year" readonly="1"/>
+                            </group>
+                            <group string="I. Company">
+                                <field name="had_strikes" widget="boolean_toggle"/>
+                                <field name="main_activity_cae"/>
+                                <field name="employees_in_service_december"/>
+                                <field name="employee_in_service_december_avg"/>
+                            </group>
+                            <separator string="II. Strike" invisible="not had_strikes"/>
+                            <group invisible="not had_strikes">
+                                <button name="action_populate_annex_e_strike_lines"
+                                        string="Update Strike Lines"
+                                        icon="fa-refresh"
+                                        type="object"
+                                        class="btn-link"/>
+                            </group>
+                            <field name="annex_e_strike_line_ids" nolabel="1" invisible="not had_strikes">
+                                <list editable="bottom">
+                                    <field name="strike_code"/>
+                                    <field name="strike_claim"/>
+                                    <field name="strike_result"/>
+                                    <field name="strike_date"/>
+                                    <field name="strike_working_hours"/>
+                                    <field name="strike_employee_count"/>
+                                    <field name="strike_duration_hours"/>
+                                    <field name="strike_duration_minutes"/>
+                                </list>
+                            </field>
+                        </page>
+                        <!-- Add other annex pages as needed -->
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_unique_report_tree" model="ir.ui.view">
+        <field name="name">unique.report.tree</field>
+        <field name="model">unique.report</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="company_id"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_unique_report" model="ir.actions.act_window">
+        <field name="name">Unique Report</field>
+        <field name="res_model">unique.report</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('company_id', 'in', allowed_company_ids)]</field>
+    </record>
+
+    <menuitem
+            id="menu_hr_unique_report"
+            name="Unique Report"
+            parent="hr_payroll.menu_hr_payroll_report"
+            sequence="34"
+            groups="base.group_user"
+    />
+
+    <menuitem id="menu_unique_report" name="Unique Report" action="action_unique_report"
+              parent="menu_hr_unique_report" sequence="40" groups="base.group_user"/>
+</odoo>

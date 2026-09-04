@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><data><record id="view_account_move_form_inherit_sale_global_discount_base" model="ir.ui.view"><field name="name">account.move.form.sale.global.discount.base</field><field name="model">account.move</field><field name="inherit_id" ref="account.view_move_form"/><field name="arch" type="xml"><xpath expr="//field[@name='tax_totals']" position="before"><field name="global_discount_value"/></xpath></field></record></data></odoo>

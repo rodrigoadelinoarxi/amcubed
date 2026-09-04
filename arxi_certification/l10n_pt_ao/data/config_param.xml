@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1"><record id="max_comment_section" model="ir.config_parameter"><field name="key">l10n_pt_ao.max_comment_section</field><field name="value">10</field></record></odoo>

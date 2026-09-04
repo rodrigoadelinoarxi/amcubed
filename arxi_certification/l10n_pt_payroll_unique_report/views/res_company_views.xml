@@ -1,0 +1,18 @@
+<odoo>
+    <record id="l10n_pt_payroll_unique_report_res_company_form" model="ir.ui.view">
+        <field name="name">l10n.pt.payroll.unique.report.res.company.form</field>
+        <field name="model">res.company</field>
+        <field name="priority">20</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='defaults']" position="after">
+                <group string="Unique Report" name="unique_report">
+                    <field name="local_unit_number"/>
+                    <field name="main_activity_cae"/>
+                    <field name="legal_nature"/>
+                    <field name="municipality"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

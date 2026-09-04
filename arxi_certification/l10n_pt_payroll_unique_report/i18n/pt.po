@@ -1,0 +1,1917 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_payroll_unique_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-28 09:52+0000\n"
+"PO-Revision-Date: 2026-04-28 09:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "1. Business Volume"
+msgstr "1. Volume de Negócios"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "2. Social Capital"
+msgstr "2. Capital social"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "3. Vocational Training Charges"
+msgstr "3. Encargos de formação profissional"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "4. Health and Safety Charges"
+msgstr "4. Encargos no âmbito da segurança e saúde no trabalho"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Action and social support charges"
+msgstr "Encargos de acção e apoio social"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_admission_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_admission_date
+msgid "Admission Date"
+msgstr "Data de entrada"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__age_allowance
+msgid "Age Allowance"
+msgstr "Pensões de velhice, de invalidez e de sobrevivência"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__age_allowance_code
+msgid "Age Allowance Code"
+msgstr "Código referente à origem do encargo"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Amount financed by the company"
+msgstr "Montante financiado pela entidade emp."
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Annex 0"
+msgstr "Anexo 0"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__annex_0_employees
+msgid "Annex 0 Employees"
+msgstr "Funcionários do Anexo 0"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Annex A"
+msgstr "Anexo A"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Annex A - Staffing Table"
+msgstr "Anexo A - Quadro de Pessoal"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__annex_a_employees
+msgid "Annex A Employees"
+msgstr "Funcionários do Anexo A"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Annex B"
+msgstr "Anexo B"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Annex B - Entry and Exit of Employees"
+msgstr "Anexo B - Entrada e Saída de Funcionários"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__annex_b_employees
+msgid "Annex B Employees"
+msgstr "Funcionários do Anexo B"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Annex C"
+msgstr "Anexo C"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__annex_c_employee_training
+msgid "Annex C Employee Training"
+msgstr "Anexo C - Formação de Funcionários"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Annex E"
+msgstr "Anexo E"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.unique_report_annex_0
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.unique_report_annex_a
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.unique_report_annex_b
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.unique_report_annex_c
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.unique_report_annex_e
+msgid "Arxi"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_base_salary_paid_october
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_base_salary_paid_october
+msgid "Base Salary Paid on 31st October"
+msgstr "Remuneração Paga em outubro"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_base_salary_october
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_base_salary_october
+msgid "Base Salary on 31st October"
+msgstr "Remuneração Base de outubro"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_hr_employee_base
+msgid "Basic Employee"
+msgstr "Funcionário básico"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_birthdate
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_birthdate
+msgid "Birthdate"
+msgstr "Nascimento"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__business_volume
+msgid "Business Volume"
+msgstr "Volume de Negócios (VN)"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__business_volume_year
+msgid "Business Volume Year"
+msgstr "Ano a que se refere o VN"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Charges for supplementary social protection schemes"
+msgstr "Encargos com regimes complementares de protecção social"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_city
+msgid "City"
+msgstr "Cidade"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_export_wizard
+msgid "Close"
+msgstr "Fechar"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_10__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_11__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_13__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_14__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_15__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_16__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_19__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_21__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_22__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_23__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_24__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_25__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_26__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_27__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_28__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_29__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_30__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_31__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_32__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_33__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_34__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_35__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_36__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_3__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_4__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_52__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_53__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_5__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_6__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_7__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_8__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_9__code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_mixin__code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_address
+msgid "Company Address"
+msgstr "Morada"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_country
+msgid "Company Country"
+msgstr "País"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_email
+msgid "Company Email"
+msgstr "Email"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Company Identification"
+msgstr "Identificação da Entidade Empregadora"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_municipality
+msgid "Company Locale"
+msgstr "Distrito ou Ilha/Município/Freguesia"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_niss
+msgid "Company NISS"
+msgstr "NISS"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_name
+msgid "Company Name"
+msgstr "Nome"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_phone
+msgid "Company Phone"
+msgstr "Telefone"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_postal_code
+msgid "Company Postal Code"
+msgstr "Codigo Postal"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_status
+msgid "Company Status"
+msgstr "Situação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_status_end_date
+msgid "Company Status End Date"
+msgstr "Fim"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_status_reason
+msgid "Company Status Reason"
+msgstr "Motivo"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_status_reason_visible
+msgid "Company Status Reason Visible"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_status_start_date
+msgid "Company Status Start Date"
+msgstr "Início"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_vat
+msgid "Company VAT"
+msgstr "NIF"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__consulting_info_training_charges
+msgid "Consulting Info Training Charges"
+msgstr "Na formação, informação e consulta"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_contract_type
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_contract_type
+msgid "Contract Type"
+msgstr "Tipo de Contrato"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_contract__contract_type
+msgid "Contract Type (Unique Report)"
+msgstr "Tipo de Contrato (Relatório Único)"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_country_code
+msgid "Country Code"
+msgstr "Código do País"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_training_history__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_0_employee__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_export_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_not_worked_hours__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_strike__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_10__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_11__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_13__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_14__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_15__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_16__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_19__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_21__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_22__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_23__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_24__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_25__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_26__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_27__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_28__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_29__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_30__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_31__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_32__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_33__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_34__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_35__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_36__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_3__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_4__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_52__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_53__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_5__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_6__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_7__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_8__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_9__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_training_history__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_0_employee__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_export_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_not_worked_hours__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_strike__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_10__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_11__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_13__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_14__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_15__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_16__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_19__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_21__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_22__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_23__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_24__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_25__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_26__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_27__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_28__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_29__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_30__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_31__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_32__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_33__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_34__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_35__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_36__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_3__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_4__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_52__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_53__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_5__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_6__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_7__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_8__create_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_9__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__deslocated_employees
+msgid "Deslocated Employees"
+msgstr "Funcionários Destacados"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__deslocation_nr
+msgid "Deslocation Number"
+msgstr "Nº de Destacamentos"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_training_history__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_0_employee__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_export_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_not_worked_hours__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_strike__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_10__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_11__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_13__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_14__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_15__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_16__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_19__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_21__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_22__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_23__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_24__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_25__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_26__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_27__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_28__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_29__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_30__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_31__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_32__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_33__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_34__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_35__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_36__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_3__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_4__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_52__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_53__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_5__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_6__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_7__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_8__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_9__display_name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_mixin__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_hr_employee
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_training_history__employee_id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_0_employee__employee_id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__employee_id
+msgid "Employee"
+msgstr "Funcionário"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_0_employee__employee_age
+msgid "Employee Age"
+msgstr "Idade"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato do Funcionário"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_0_employee__employee_gender
+msgid "Employee Gender"
+msgstr "Género"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee__job_ur
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_base__job_ur
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_public__job_ur
+msgid "Employee Job"
+msgstr "Profissão"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee__job_situation
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_base__job_situation
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_public__job_situation
+msgid "Employee Job Situation"
+msgstr "Situação da Profissão"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__employee_niss
+msgid "Employee NISS"
+msgstr "NISS"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__employee_training_area
+msgid "Employee Training Area"
+msgstr "Área de Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__employee_training_certificate_type
+msgid "Employee Training Certificate Type"
+msgstr "Tipo de Certificado"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__employee_training_entity
+msgid "Employee Training Entity"
+msgstr "Entidade Formadora"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__employee_training_frequency
+msgid "Employee Training Frequency"
+msgstr "Situação face à frequência de formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__employee_training_initiative
+msgid "Employee Training Initiative"
+msgstr "Iniciativa de Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__employee_training_qualification_level
+msgid "Employee Training Qualification Level"
+msgstr "Nível de Qualificação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__employee_training_ref_period
+msgid "Employee Training Ref Period"
+msgstr "Período de Referência"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__employee_training_schedule
+msgid "Employee Training Schedule"
+msgstr "Horário de Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__employee_training_type
+msgid "Employee Training Type"
+msgstr "Modalidade de Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__employee_in_service_december_avg
+msgid "Employee in Service on 31st December Average"
+msgstr "Número médio durante o ano"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__employees_in_service
+msgid "Employees in Service"
+msgstr "Funcionários em Serviço"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__employees_in_service_december
+msgid "Employees in Service on 31st December"
+msgstr "Em 31 de dezembro"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__employees_in_service_october
+msgid "Employees in Service on 31st October"
+msgstr "Funcionários em Serviço em 31 de outubro"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__employer_association
+msgid "Employer Association"
+msgstr "Associação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__entries_exits_ref_year
+msgid "Entries and Exits in the Reference Year"
+msgstr "Entradas e Saidas no Ano de Referência"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_contract__entry_reason
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee__entry_reason
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_entry_reason
+msgid "Entry Reason"
+msgstr "Motivo de Entrada"
+
+#. module: l10n_pt_payroll_unique_report
+#. odoo-python
+#: code:addons/l10n_pt_payroll_unique_report/wizard/unique_report_export.py:0
+msgid "Error generating XML: %s"
+msgstr "Erro ao gerar o XML: %s"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_exit_date
+msgid "Exit Date"
+msgstr "Data de Saida"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_contract__exit_reason
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_exit_reason
+msgid "Exit Reason"
+msgstr "Motivo de Saida"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Expenses borne and managed by the employer"
+msgstr "Encargos suportados e administrados, pela entidade empregadora"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Expenses borne, but not administered, by the employer"
+msgstr "Encargos suportados, mas não administrados, pela entidade empregadora"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Export Annex 0"
+msgstr "Exportar Anexo 0"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Export Annex A"
+msgstr "Exportar Anexo A"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Export Annex B"
+msgstr "Exportar Anexo B"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Export Annex C"
+msgstr "Exportar Anexo C"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Export Annex E"
+msgstr "Exportar Anexo E"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "External financing to the corporate entity"
+msgstr "Financiamento externo à entidade emp."
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_export_wizard__xml_file
+msgid "File"
+msgstr "Ficheiro"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_export_wizard__xml_filename
+msgid "Filename"
+msgstr "Nome do Ficheiro"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__financial_costs_and_losses
+msgid "Financial Costs and Losses"
+msgstr "Custos e perdas financeiras"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_funded_amount
+msgid "Funded Company Amount"
+msgstr "Montante financiado pela entidade emp."
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_funded_amount_hours
+msgid "Funded Company Hours"
+msgstr ""
+"Montante correspondente à remuneração das horas despendidas em formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__company_funded_amount_remaining
+msgid "Funded Company Remaining"
+msgstr "Restante financiamento da entidade emp."
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__external_funded_amount
+msgid "Funded External Amount"
+msgstr "Financiamento externo à entidade emp."
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__external_funded_amount_esf
+msgid "Funded External ESF"
+msgstr "Do Fundo Social Europeu (FSE)"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__external_funded_amount_other
+msgid "Funded External Other"
+msgstr "De outras fontes de financiamento"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_gender
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_gender
+msgid "Gender"
+msgstr "Sexo"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__goods_services_aquisition_charges
+msgid "Goods Services Acquisition Charges"
+msgstr "Na Aquisição de Bens ou equipamentos"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__gross_added_value
+msgid "Gross Added Value"
+msgstr "Valor Acrescentado Bruto (VAB)"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__gross_added_value_year
+msgid "Gross Added Value Year"
+msgstr "Ano a que se refere o VAB"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__had_ten_employees_in_october
+msgid "Had 10 Employees in October"
+msgstr "10 ou mais Funcionários em Outubro"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__had_employees_in_service
+msgid "Had Employees in Service"
+msgstr "Funcionários em Serviço"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__had_strikes
+msgid "Had Strikes"
+msgstr "Existiram Greves?"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__has_supplementary_work
+msgid "Has Supplementary Work"
+msgstr "Horas Suplementares"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_hr_employee_training_history
+msgid "Histórico de Formação do Funcionário"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "I. Company"
+msgstr "I. Entidade Empregadora"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "I. Company Identification"
+msgstr "I. Identificação da Entidade Empregadora"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "I. Employer"
+msgstr "I. Entidade Empregadora"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "I. Local Unit (Establishment)"
+msgstr "I. Unidade Local (Estabelecimento)"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_training_history__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_0_employee__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_export_wizard__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_not_worked_hours__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_strike__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_10__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_11__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_13__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_14__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_15__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_16__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_19__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_21__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_22__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_23__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_24__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_25__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_26__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_27__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_28__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_29__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_30__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_31__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_32__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_33__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_34__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_35__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_36__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_3__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_4__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_52__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_53__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_5__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_6__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_7__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_8__id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_9__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid ""
+"II. Caracterization of people in service during the year in terms of their "
+"attendance in vocational training"
+msgstr ""
+"II. Caracterização das pessoas ao serviço durante no ano face à frequência "
+"de formação profissional"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "II. Employees"
+msgstr "II. Funcionários"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "II. Employees in Service"
+msgstr "II. Pessoas ao Serviço"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "II. Strike"
+msgstr "II. Greve"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "III. Union Filiation"
+msgstr "III. Filiação Sindical e Filiação em Associações de Empregadores"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee__irct_applicability
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_base__irct_applicability
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_public__irct_applicability
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_irct_applicability
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_irct_applicability
+msgid "IRCT Applicability"
+msgstr "Aplicabilidade IRCT"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee__irct_regulation
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_base__irct_regulation
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_public__irct_regulation
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_irct_regulation
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_irct_regulation
+msgid "IRCT Regulation"
+msgstr "IRCT"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "IV. Supplementary Work"
+msgstr "IV. Trabalho Suplementar"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__in_worker_association
+msgid "In Worker Association"
+msgstr "Inscrita em Associações de Trabalhadores"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_0_employee__inability_percentage
+msgid "Inability Percentage"
+msgstr "Grau de Incapacidade"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__income_tax
+msgid "Income Tax"
+msgstr "Imposto sobre o rendimento"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__incorporation_date
+msgid "Incorporation Date"
+msgstr "Data de constituição"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave__is_strike
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave_type__is_strike
+msgid "Is Strike"
+msgstr "Greve"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave__is_training
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave_type__is_training
+msgid "Is Training"
+msgstr "Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_job_ur
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_job_ur
+msgid "Job"
+msgstr "Profissão"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_job_situation
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_job_situation
+msgid "Job Situation"
+msgstr "Situação na Profissão"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_last_promotion_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_last_promotion_date
+msgid "Last Promotion"
+msgstr "Última Promoção"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee__last_promotion_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_base__last_promotion_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_public__last_promotion_date
+msgid "Last Promotion Date"
+msgstr "Última Promoção"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_training_history__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_0_employee__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_export_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_not_worked_hours__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_strike__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_10__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_11__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_13__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_14__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_15__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_16__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_19__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_21__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_22__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_23__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_24__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_25__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_26__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_27__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_28__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_29__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_30__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_31__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_32__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_33__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_34__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_35__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_36__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_3__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_4__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_52__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_53__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_5__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_6__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_7__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_8__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_9__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_training_history__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_0_employee__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_export_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_not_worked_hours__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_strike__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_10__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_11__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_13__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_14__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_15__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_16__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_19__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_21__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_22__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_23__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_24__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_25__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_26__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_27__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_28__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_29__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_30__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_31__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_32__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_33__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_34__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_35__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_36__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_3__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_4__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_52__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_53__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_5__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_6__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_7__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_8__write_date
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_9__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_res_company__legal_nature
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__legal_nature
+msgid "Legal Nature"
+msgstr "Natureza Jurídica"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee__literacy_habilitations
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_base__literacy_habilitations
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_public__literacy_habilitations
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_0_employee__employee_literacy_habilitations
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_literacy_habilitations
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_literacy_habilitations
+msgid "Literacy Habilitations"
+msgstr "Habilitações Literárias"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_res_company__local_unit_number
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__local_unit_number
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__company_local_unit_number
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__company_local_unit_number
+msgid "Local Unit Number"
+msgstr "Nº de Unidade Local"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_res_company__main_activity_cae
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__main_activity_cae
+msgid "Main Activity CAE"
+msgstr "Actividade Económica Principal (CAE)"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__max_annual_potential
+msgid "Max Annual Potential"
+msgstr "Potencial máximo anual"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_meal_allw_october
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_meal_allw_october
+msgid "Meal Allowance on 31st October"
+msgstr "Subsidio de Refeição"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_res_company__municipality
+msgid "Municipality"
+msgstr "Município"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_niss
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_niss
+msgid "NISS"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_10__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_11__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_13__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_14__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_15__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_16__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_19__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_21__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_22__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_23__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_24__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_25__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_26__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_27__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_28__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_29__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_30__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_31__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_32__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_33__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_34__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_35__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_36__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_3__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_4__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_52__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_53__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_5__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_6__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_7__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_8__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_9__name
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_table_mixin__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_nationality
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_nationality
+msgid "Nationality"
+msgstr "Nacionalidade"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__net_income
+msgid "Net Income"
+msgstr "Resultado líquido do exercício"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_not_paid_reason
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_not_paid_reason
+msgid "Not Paid Reason"
+msgstr "Motivo Remuneração paga inferior a devida"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__not_supported_age_allowance
+msgid "Not Supported Age Allowance"
+msgstr "Pensões de velhice, de invalidez e de sobrevivência"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__not_supported_age_allowance_code
+msgid "Not Supported Age Allowance Code"
+msgstr "Código referente à origem do encargo"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__not_supported_other_ss_charges
+msgid "Not Supported Other Social Security Charges"
+msgstr "Outras prestações de segurança social"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__not_supported_other_ss_charges_code
+msgid "Not Supported Other Social Security Charges Code"
+msgstr "Código referente à origem do encargo"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__not_supported_sick_allowance
+msgid "Not Supported Sick Allowance"
+msgstr "Subsídio por doença e doença profissional"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__not_supported_sick_allowance_code
+msgid "Not Supported Sick Allowance Code"
+msgstr "Código referente à origem do encargo"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__not_worked_hours_table
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Not Worked Hours"
+msgstr "Horas Não Trabalhadas"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_not_worked_hours__not_worked_hours_reason
+msgid "Not Worked Hours Reason"
+msgstr "Motivo"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,help:l10n_pt_payroll_unique_report.field_unique_report__company_niss
+msgid "Nº de beneficiário da Segurança Social."
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.unique_report_annex_0
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.unique_report_annex_a
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.unique_report_annex_b
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.unique_report_annex_c
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.unique_report_annex_e
+msgid "Odoo Relatório Único"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__other_charges
+msgid "Other Charges"
+msgstr "Outros"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_other_irregular_allw_october
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_other_irregular_allw_october
+msgid "Other Irregular Allowance"
+msgstr "Prestações irregulares pagas em outubro"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_other_regular_allw_october
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_other_regular_allw_october
+msgid "Other Regular Allowance"
+msgstr "Outros prémios e subsídios regulares"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__other_ss_charges
+msgid "Other Social Security Charges"
+msgstr "Outras prestações de segurança social"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__other_ss_charges_code
+msgid "Other Social Security Charges Code"
+msgstr "Código referente à origem do encargo"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_paid_hours_october
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_paid_hours_october
+msgid "Paid Hours on 31st October"
+msgstr "Horas Pagas em outubro"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_not_worked_hours__paid_leave_hours_female
+msgid "Paid Leave Hours (F)"
+msgstr "Nº Horas Ausência Remunerada (F)"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_not_worked_hours__paid_leave_hours_male
+msgid "Paid Leave Hours (M)"
+msgstr "Nº Horas Ausência Remunerada (M)"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__personnel_cost
+msgid "Personnel Cost"
+msgstr "Custos com pessoal"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee__job_category
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_base__job_category
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_public__job_category
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_job_category
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_job_category
+msgid "Professional Category"
+msgstr "Categoria Profissional"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee__qualification_level
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_base__qualification_level
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_public__qualification_level
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_qualification_level
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_qualification_level
+msgid "Qualification Level"
+msgstr "Nível de Qualificação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__reference_year
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Reference Year"
+msgstr "Ano de Referência"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.hr_employee_form_unique_report_form
+msgid "Refresh Training Hours"
+msgstr "Atualizar horas de formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_export_wizard__result
+msgid "Result"
+msgstr "Resultado"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__safety_health_management_charges
+msgid "Safety Health Organization Charges"
+msgstr "Na organização dos serviços de segurança e saúde no Trabalho"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_shift_allw_october
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_shift_allw_october
+msgid "Shift Allowance on 31st October"
+msgstr "Subsídio de Turno de outubro"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__sick_allowance
+msgid "Sick Allowance"
+msgstr "Subsídio por doença e doença profissional"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__sick_allowance_code
+msgid "Sick Allowance Code"
+msgstr "Código referente à origem do encargo"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__social_capital
+msgid "Social Capital"
+msgstr "Capital Social"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__social_capital_rep_foreign
+msgid "Social Capital Rep Foreign"
+msgstr "Estrangeiro"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__social_capital_rep_private_national
+msgid "Social Capital Rep Private National"
+msgstr "Privado Nacional"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__social_capital_rep_public_national
+msgid "Social Capital Rep Public National"
+msgstr "Público Nacional"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,help:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_niss
+#: model:ir.model.fields,help:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_niss
+#: model:ir.model.fields,help:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__employee_niss
+msgid "Social Security Number"
+msgstr "Número de beneficiário da Segurança Social."
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee__social_security_regimen
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_base__social_security_regimen
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_public__social_security_regimen
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_social_security_regimen
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_social_security_regimen
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__employee_ss_regimen
+msgid "Social Security Regimen"
+msgstr "Regime de Segurança Social"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,help:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_niss
+#: model:ir.model.fields,help:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_niss
+#: model:ir.model.fields,help:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__employee_niss
+msgid "Social Security beneficiary number."
+msgstr "Número de beneficiário da Segurança Social."
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__social_support_charges
+msgid "Social Support Charges"
+msgstr "Encargos de acção e apoio social"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_export_wizard__state
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.hr_leave_view_form_inherit
+msgid "Strike"
+msgstr "Greve"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave__strike_claim
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_strike__strike_claim
+msgid "Strike Claim"
+msgstr "Reivindicação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave__strike_code
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_strike__strike_code
+msgid "Strike Code"
+msgstr "Identificação da Greve"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_strike__strike_date
+msgid "Strike Date"
+msgstr "Data da greve"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_strike__strike_duration_hours
+msgid "Strike Duration (Hours)"
+msgstr "Duração da paralisação (Horas)"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_strike__strike_duration_minutes
+msgid "Strike Duration (Minutes)"
+msgstr "Duração da paralisação (Minutos)"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_strike__strike_employee_count
+msgid "Strike Employee Count"
+msgstr "Nº de trabalhadores em greve"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave__strike_result
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_strike__strike_result
+msgid "Strike Result"
+msgstr "Resultado"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_strike__strike_working_hours
+msgid "Strike Working Hours"
+msgstr "PNT"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__annex_e_strike_line_ids
+msgid "Strikes"
+msgstr "Greves"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__supp_hours_descrimination
+msgid "Supplementary Work Hours Discrimination"
+msgstr ""
+"Em caso afirmativo, a relação nominal dos trabalhadores que prestaram "
+"trabalho suplementar durante o período de referência, com descriminação do "
+"número de horas ao abrigo dos nos 1 e 2 do art. n.o 227 da Lei 7/2009, foi "
+"visada pela comissão de trabalhadores ou, na sua falta, em caso de "
+"trabalhador filiado, pelo respectivo sindicato?"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__total_training_charges
+msgid "TOTAL"
+msgstr "Encargos globais com formação profissional"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__temporary_worker_entries_female
+msgid "Temporary Worker Entries (Female)"
+msgstr "Entradas de Trabalhadores Temporários (F)"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__temporary_worker_entries_male
+msgid "Temporary Worker Entries (Male)"
+msgstr "Entradas de Trabalhadores Temporários (M)"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__temporary_worker_exits_female
+msgid "Temporary Worker Exits (Female)"
+msgstr "Saídas de Trabalhadores Temporários (F)"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__temporary_worker_exits_male
+msgid "Temporary Worker Exits (Male)"
+msgstr "Saídas de Trabalhadores Temporários (M)"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__temporary_workers_avg
+msgid "Temporary Workers Average"
+msgstr "Número Médio durante o ano"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__temporary_workers_in_december
+msgid "Temporary Workers in December"
+msgstr "Em 31 de dezembro"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__temporary_workers_in_october
+msgid "Temporary Workers in October"
+msgstr "Em 31 de outubro"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,help:l10n_pt_payroll_unique_report.field_unique_report__company_country_code
+#: model:ir.model.fields,help:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_nationality
+#: model:ir.model.fields,help:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_nationality
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,help:l10n_pt_payroll_unique_report.field_unique_report__company_vat
+msgid ""
+"The Tax Identification Number. Values here will be validated based on the "
+"country format. You can use '/' to indicate that the partner is not subject "
+"to tax."
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_hr_leave
+msgid "Time Off"
+msgstr "Ausência"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_hr_leave_type
+msgid "Time Off Type"
+msgstr "Tipo de Ausência"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__total_charges
+msgid "Total Charges"
+msgstr "TOTAL"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.hr_employee_form_unique_report_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.hr_leave_view_form_inherit
+msgid "Training"
+msgstr "Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave__training_area
+msgid "Training Area"
+msgstr "Modalidade de Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave__training_certificate_type
+msgid "Training Certificate Type"
+msgstr "Tipo de Certificado de Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__employee_training_duration
+msgid "Training Duration"
+msgstr "Duração da Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave__training_entity
+msgid "Training Entity"
+msgstr "Entidade Formadora"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave__training_frequency
+msgid "Training Frequency"
+msgstr "Situação face à frequência de formação profissional"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee__training_history_ids
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_base__training_history_ids
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_public__training_history_ids
+msgid "Training History"
+msgstr "Histórico de Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_training_history__training_hours
+msgid "Training Hours"
+msgstr "Duração da Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave__training_initiative
+msgid "Training Initiative"
+msgstr "Iniciativa de Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave__training_qualification_level
+msgid "Training Qualification Level"
+msgstr "Nível de Qualificação da Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave__training_ref_period
+msgid "Training Reference Period"
+msgstr "Período de Referência da Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave__training_schedule
+msgid "Training Schedule"
+msgstr "Horário de Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_leave__training_type
+msgid "Training Type"
+msgstr "Tipo de Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_export_wizard
+msgid "UR XML Export"
+msgstr "Exportação XML do Relatório Único"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__unionized_employees_in_october
+msgid "Unionized Employees in October"
+msgstr "Trabalhadores sindializados em outubro"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.actions.act_window,name:l10n_pt_payroll_unique_report.action_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_0_employee__unique_report_id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__unique_report_id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__unique_report_id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_c_employee_training__unique_report_id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_export_wizard__unique_report_id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_not_worked_hours__unique_report_id
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_strike__unique_report_id
+#: model:ir.ui.menu,name:l10n_pt_payroll_unique_report.menu_hr_unique_report
+#: model:ir.ui.menu,name:l10n_pt_payroll_unique_report.menu_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.hr_employee_form_unique_report_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.l10n_pt_payroll_unique_report_res_company_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Unique Report"
+msgstr "Relatório Único"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_annex_0_employee
+msgid "Unique Report Annex 0 Employee"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_annex_a_employee
+msgid "Unique Report Annex A Employee"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_annex_b_employee
+msgid "Unique Report Annex B Employee"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_annex_c_employee_training
+msgid "Unique Report Annex C Employee Training Lines"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_export_wizard
+msgid "Unique Report Export Wizard"
+msgstr "Wizard de Exportação do Relatório Único"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_not_worked_hours
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_strike
+msgid "Unique Report Not Worked Hours"
+msgstr "Relatório Único - Horas não Trabalhadas"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_10
+msgid "Unique Report Table 10 - Not Worked Hours Reason"
+msgstr "Relatório Único Tabela 10 - Motivo de Horas não Trabalhadas"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_11
+msgid "Unique Report Table 11 - Applied Retirement Regimen"
+msgstr "Relatório Único Tabela 11 - Regime de Reforma Aplicado"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_13
+msgid "Unique Report Table 13 - Contract Type"
+msgstr "Relatório Único Tabela 13 - Tipo de Contrato"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_14
+msgid "Unique Report Table 14 - Literary Qualification Type"
+msgstr "Relatório Único Tabela 14 - Tipo de Habilitação Literária"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_15
+msgid "Unique Report Table 15 - Job Situation"
+msgstr "Relatório Único Tabela 15 - Situação na profissão"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_16
+msgid "Unique Report Table 16 - Jobs"
+msgstr "Relatório Único Tabela 16 - Profissões"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_19
+msgid "Unique Report Table 19 - IRCT Applicability"
+msgstr "Relatório Único Tabela 19 - Aplicabilidade do IRCT"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_21
+msgid "Unique Report Table 21 - Qualification Level"
+msgstr "Relatório Único Tabela 21 - Nível de Qualificação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_22
+msgid "Unique Report Table 22 - Work Duration Regimen"
+msgstr "Relatório Único Tabela 22 - Reg de Duração de Trabalho"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_23
+msgid "Unique Report Table 23 - Working Time Duration"
+msgstr "Relatório Único Tabela 23 - Duração do Tempo de Trabalho"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_24
+msgid "Unique Report Table 24 - Working Time Organization"
+msgstr "Relatório Único Tabela 24 - Organização do Tempo de Trabalho"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_25
+msgid "Unique Report Table 25 - Non Paid Hours Reason"
+msgstr "Relatório Único Tabela 25 - Motivos Horas Normais não Remuneradas"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_26
+msgid "Unique Report Table 26 - Company Entry Reason"
+msgstr ""
+"Relatório Único Tabela 26 - Motivos de Entrada na Entidade Empregadora"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_27
+msgid "Unique Report Table 27 - Company Exit Reason"
+msgstr "Relatório Único Tabela 27 - Motivos de Saída da Entidade Empregadora"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_28
+msgid "Unique Report Table 28 - Training Frequency"
+msgstr ""
+"Relatório Único Tabela 28 - Situação face à frequência de formação "
+"profissional ou equivalente"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_29
+msgid "Unique Report Table 29 - Training Reference Period"
+msgstr "Relatório Único Tabela 29 - Período de Referência da Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_3
+msgid "Unique Report Table 3 - Municipalities-Parishes"
+msgstr "Relatório Único Tabela 3 - Municípios-Freguesias"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_30
+msgid "Unique Report Table 30 - Training Area"
+msgstr "Relatório Único Tabela 30 - Área de Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_31
+msgid "Unique Report Table 31 - Training Type"
+msgstr "Relatório Único Tabela 31 - Modalidade de Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_32
+msgid "Unique Report Table 32 - Training Initiative"
+msgstr "Relatório Único Tabela 32 - Iniciativa de Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_33
+msgid "Unique Report Table 33 - Training Schedule"
+msgstr "Relatório Único Tabela 33 - Horário de Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_34
+msgid "Unique Report Table 34 - Training Entity"
+msgstr "Relatório Único Tabela 34 - Entidade Formadora"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_35
+msgid "Unique Report Table 35 - Certificate Type"
+msgstr "Relatório Único Tabela 35 - Tipo de Certificado"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_36
+msgid "Unique Report Table 36 - Training Qualification Level"
+msgstr "Relatório Único Tabela 36 - Nível de Qualificação da Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_4
+msgid "Unique Report Table 4 - CAE"
+msgstr "Relatório Único Tabela 4 - CAE"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_5
+msgid "Unique Report Table 5 - Company Status"
+msgstr "Tabela 5 - Situação perante a Atividade"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_52
+msgid "Unique Report Table 52 - Claim"
+msgstr "Tabela 52 - Reivindicação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_53
+msgid "Unique Report Table 53 - Claim Result"
+msgstr "Tabela 53 - Resultado da Greve"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_6
+msgid "Unique Report Table 6 - Company Status Reason"
+msgstr "Tabela 6 - Motivos da Situação de Atividade"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_7
+msgid "Unique Report Table 7 - Legal Nature"
+msgstr "Relatório Único Tabela 7 - Natureza Jurídica"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_8
+msgid "Unique Report Table 8 - Employer Association"
+msgstr "Relatório Único Tabela 8 - Associação de Empregadores"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_9
+msgid "Unique Report Table 9 - Charge Origin"
+msgstr "Relatório Único Table 9 - Origem do Encargo"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model,name:l10n_pt_payroll_unique_report.model_unique_report_table_mixin
+msgid "Unique Report Table Mixin"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_not_worked_hours__unpaid_leave_hours_female
+msgid "Unpaid Leave Hours (F)"
+msgstr "Número de horas de ausência não remuneradas (F)"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_not_worked_hours__unpaid_leave_hours_male
+msgid "Unpaid Leave Hours (M)"
+msgstr "Número de horas de ausência não remuneradas (M)"
+
+#. module: l10n_pt_payroll_unique_report
+#. odoo-python
+#: code:addons/l10n_pt_payroll_unique_report/wizard/unique_report_export.py:0
+msgid "Unsupported annex: %s"
+msgstr "Anexo não suportado: %s"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Update Employee Lines"
+msgstr "Atualizar linhas de Funcionários"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Update Employee Training Lines"
+msgstr "Atualizar linhas de Formação"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "Update Strike Lines"
+msgstr "Atualizar linhas de Greve"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "V. Temporary Workers"
+msgstr "V. Trabalhadores Temporários"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid ""
+"VI. Employees with Loss or Anomalies of Structures or Body Functions with "
+"Implications for Work"
+msgstr ""
+"VI. Trabalhadores com perda ou anomalias de estruturas ou funções do corpo "
+"com implicações na prestação de trabalho"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "VII. Company Economic Data"
+msgstr "VII. Dados Económicos da Entidade Empregadora"
+
+#. module: l10n_pt_payroll_unique_report
+#: model_terms:ir.ui.view,arch_db:l10n_pt_payroll_unique_report.view_unique_report_form
+msgid "VIII. Other Complementary Data"
+msgstr "VIII. Outros Dados Complementares Da Entidade Empregadora"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_weekly_hours
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_weekly_hours
+msgid "Weekly Hours"
+msgstr "Horas Semanais"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_working_time_duration
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_working_time_duration
+msgid "Work Duration"
+msgstr "Duração do Tempo de Trabalho"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee__work_duration_regimen
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_base__work_duration_regimen
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_public__work_duration_regimen
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_work_duration_regimen
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_work_duration_regimen
+msgid "Work Duration Regimen"
+msgstr "Reg de Duração de Trabalho"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_working_time_organization
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_working_time_organization
+msgid "Work Organization"
+msgstr "Organização do Tempo de Trabalho"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee__working_time_duration
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_base__working_time_duration
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_public__working_time_duration
+msgid "Working Time Duration"
+msgstr "Duração do Tempo de Trabalho"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee__working_time_organization
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_base__working_time_organization
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_public__working_time_organization
+msgid "Working Time Organization"
+msgstr "Organização do Tempo de Trabalho"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__workspace_management_charges
+msgid "Workspace Management Charges"
+msgstr "Na organização/modificação dos espaços de trabalho"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__xml_file
+msgid "XML File"
+msgstr "Ficheiro XML"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__xml_filename
+msgid "XML Filename"
+msgstr "Nome do Ficheiro XML"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_hr_employee_training_history__year
+msgid "Year"
+msgstr "Ano"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__year_amortization
+msgid "Year Amortization"
+msgstr "Amortizações do Exercício"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report__year_provision
+msgid "Year Provision"
+msgstr "Provisões do Exercício"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields.selection,name:l10n_pt_payroll_unique_report.selection__unique_report_export_wizard__state__error
+msgid "error"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields.selection,name:l10n_pt_payroll_unique_report.selection__unique_report_export_wizard__state__get
+msgid "get"
+msgstr ""
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_supplementary_work_amount_october
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_supplementary_work_amount_october
+msgid "supplementary Work Amount"
+msgstr "Trabalho Suplementar Quantidade"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_supplementary_work_civil_year
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_supplementary_work_civil_year
+msgid "supplementary Work Civil Year"
+msgstr "Trabalho Suplementar Ano Civil"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_supplementary_work_civil_year_hours
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_supplementary_work_civil_year_hours
+msgid "supplementary Work Civil Year Hours"
+msgstr "Horas de Trabalho Suplementar Ano Civil"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_supplementary_work_civil_year_hours_n_2
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_supplementary_work_civil_year_hours_n_2
+msgid "supplementary Work Civil Year Hours N.2"
+msgstr "Horas de Trabalho Suplementar Ano Civil Nº2"
+
+#. module: l10n_pt_payroll_unique_report
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_a_employee__employee_supplementary_work_hours_october
+#: model:ir.model.fields,field_description:l10n_pt_payroll_unique_report.field_unique_report_annex_b_employee__employee_supplementary_work_hours_october
+msgid "supplementary Work Hours"
+msgstr "Horas de Trabalho Suplementar"

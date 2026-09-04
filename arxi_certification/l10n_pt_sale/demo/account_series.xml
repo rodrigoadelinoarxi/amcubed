@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="quotation_series" model="l10n_pt.account.series">
+        <field name="name" eval="'Quotations ' + str(datetime.now().year)"/>
+        <field name="code" eval="datetime.now().year"/>
+        <field name="document_type_id" ref="l10n_pt_ao_sale.orcamentos"/>
+        <field name="state">active</field>
+        <field name="company_id" ref="l10n_pt_certificate.demo_company_pt"/>
+        <field name="series_type">F</field>
+        <field name="validation_code">OOOOOOOO</field>
+        <field name="initial_date" eval="datetime.today()"/>
+    </record>
+</odoo>

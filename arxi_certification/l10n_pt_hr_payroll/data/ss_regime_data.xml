@@ -1,0 +1,19 @@
+<odoo>
+    <record id="ss_general" model="ss.regime">
+        <field name="name">Contribution Rate - General Regime</field>
+        <field name="employer_rate">23.75</field>
+        <field name="employee_rate">11</field>
+    </record>
+
+    <record id="ss_first_job" model="ss.regime">
+        <field name="name">Contribution Rate - General Regime - First Job</field>
+        <field name="employer_rate">11.90</field>
+        <field name="employee_rate">11</field>
+    </record>
+
+    <record id="ss_retirement" model="ss.regime">
+        <field name="name">Contribution Rate - General Regime - Retirement</field>
+        <field name="employer_rate">16.4</field>
+        <field name="employee_rate">7.5</field>
+    </record>
+</odoo>

@@ -1,0 +1,146 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_ao_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-15 08:39+0000\n"
+"PO-Revision-Date: 2025-04-15 08:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_ao_reports
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_reports.res_config_settings_view_form
+msgid "Account"
+msgstr "Conta"
+
+#. module: l10n_pt_ao_reports
+#: model:ir.model.fields,field_description:l10n_pt_ao_reports.field_res_config_settings__account_tax_closing_transient_account_id
+msgid "Account (PT)"
+msgstr "Conta"
+
+#. module: l10n_pt_ao_reports
+#: model:ir.model,name:l10n_pt_ao_reports.model_account_chart_template
+msgid "Account Chart Template"
+msgstr "Modelo de Plano de Contas"
+
+#. module: l10n_pt_ao_reports
+#: model:ir.model.fields,field_description:l10n_pt_ao_reports.field_res_config_settings__payable_account_id
+msgid "Account Payable (PT)"
+msgstr "Conta de Pagamento (PT)"
+
+#. module: l10n_pt_ao_reports
+#: model:ir.model.fields,field_description:l10n_pt_ao_reports.field_res_config_settings__recovery_account_id
+msgid "Account Recovery (PT)"
+msgstr "Conta de Recuperação (PT)"
+
+#. module: l10n_pt_ao_reports
+#: model:ir.model.fields,field_description:l10n_pt_ao_reports.field_res_config_settings__reimbursement_account_id
+msgid "Account Reimbursement (PT)"
+msgstr "Conta de Reembolso (PT)"
+
+#. module: l10n_pt_ao_reports
+#. odoo-python
+#: code:addons/l10n_pt_ao_reports/models/tax_report.py:0
+msgid "Balance tax advance payment account"
+msgstr ""
+
+#. module: l10n_pt_ao_reports
+#. odoo-python
+#: code:addons/l10n_pt_ao_reports/models/tax_report.py:0
+msgid "Balance tax current account (payable)"
+msgstr ""
+
+#. module: l10n_pt_ao_reports
+#. odoo-python
+#: code:addons/l10n_pt_ao_reports/models/tax_report.py:0
+msgid "Balance tax current account (receivable)"
+msgstr ""
+
+#. module: l10n_pt_ao_reports
+#: model:ir.model.fields,field_description:l10n_pt_ao_reports.field_account_bank_statement_line__closing_date_start
+msgid "Closing Date Start"
+msgstr ""
+
+#. module: l10n_pt_ao_reports
+#: model:ir.model,name:l10n_pt_ao_reports.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: l10n_pt_ao_reports
+#. odoo-python
+#: code:addons/l10n_pt_ao_reports/models/tax_report.py:0
+msgid "Computed tax amount"
+msgstr "Valor do imposto apurado"
+
+#. module: l10n_pt_ao_reports
+#: model:ir.model,name:l10n_pt_ao_reports.model_res_config_settings
+msgid "Config Settings"
+msgstr "Definições de Configuração"
+
+#. module: l10n_pt_ao_reports
+#: model:ir.model,name:l10n_pt_ao_reports.model_account_generic_tax_report_handler
+msgid "Generic Tax Report Custom Handler"
+msgstr ""
+
+#. module: l10n_pt_ao_reports
+#: model:ir.model,name:l10n_pt_ao_reports.model_account_move
+msgid "Journal Entry"
+msgstr "Lançamento em Diário"
+
+#. module: l10n_pt_ao_reports
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_reports.res_config_settings_view_form
+msgid "Payable Account"
+msgstr "Conta de Pagamento"
+
+#. module: l10n_pt_ao_reports
+#. odoo-python
+#: code:addons/l10n_pt_ao_reports/models/tax_report.py:0
+msgid "Payable tax amount"
+msgstr "Valor a Pagar de imposto"
+
+#. module: l10n_pt_ao_reports
+#. odoo-python
+#: code:addons/l10n_pt_ao_reports/models/tax_report.py:0
+msgid "Receivable tax amount"
+msgstr "Valor a Receber de imposto"
+
+#. module: l10n_pt_ao_reports
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_reports.res_config_settings_view_form
+msgid "Recovery Account"
+msgstr "Conta de Recuperação"
+
+#. module: l10n_pt_ao_reports
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_reports.res_config_settings_view_form
+msgid "Reimbursement Account"
+msgstr "Conta de Reembolso"
+
+#. module: l10n_pt_ao_reports
+#: model:ir.model.fields,field_description:l10n_pt_ao_reports.field_res_company__account_tax_closing_transient_account_id
+#: model:ir.model.fields,help:l10n_pt_ao_reports.field_res_config_settings__account_tax_closing_transient_account_id
+msgid "Tax Closing Transient Account"
+msgstr "Conta Transitória de Apuramento de Impostos"
+
+#. module: l10n_pt_ao_reports
+#: model:ir.model.fields,field_description:l10n_pt_ao_reports.field_res_company__payable_account_id
+#: model:ir.model.fields,help:l10n_pt_ao_reports.field_res_config_settings__payable_account_id
+msgid "Tax Payable Account"
+msgstr "Conta de Pagamento"
+
+#. module: l10n_pt_ao_reports
+#: model:ir.model.fields,field_description:l10n_pt_ao_reports.field_res_company__recovery_account_id
+#: model:ir.model.fields,help:l10n_pt_ao_reports.field_res_config_settings__recovery_account_id
+msgid "Tax Recovery Account"
+msgstr "Conta de Recuperação"
+
+#. module: l10n_pt_ao_reports
+#: model:ir.model.fields,field_description:l10n_pt_ao_reports.field_res_company__reimbursement_account_id
+#: model:ir.model.fields,help:l10n_pt_ao_reports.field_res_config_settings__reimbursement_account_id
+msgid "Tax Reimbursement Account"
+msgstr "Conta de Reembolso"

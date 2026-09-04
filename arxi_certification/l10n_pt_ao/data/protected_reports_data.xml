@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><!-- Bloco D: flag the certified report actions and their QWeb views as
+         protected — only the superuser can modify or delete them (replaces
+         studio_protected_reports without external dependencies).
+         Not noupdate: re-asserted on every upgrade on purpose. --><!-- Certified report actions (account; sale/stock/worksheets equivalents
+         are flagged by their own modules) --><record id="account.account_invoices" model="ir.actions.report"><field name="protected" eval="True"/></record><record id="account.action_report_payment_receipt" model="ir.actions.report"><field name="protected" eval="True"/></record><!-- UAT POS/contabilidade, ponto 5 (2026-08-28): AccountMoveSend's own
+         override (models/account_move_send.py) falls back to this report
+         for certified journals, but the native record never flags it
+         ``is_invoice_report`` — account.move.send._check_invoice_report()
+         requires that flag on whatever _get_default_pdf_report_id()
+         returns, so the fallback alone still raised ("The sending of
+         invoices is not set up properly..."). It genuinely is an invoice
+         report (report_name = account.report_invoice) — native's sibling
+         _is_invoice_report() helper already treats any report with that
+         report_name as one, this just aligns the boolean field with that. --><record id="account.account_invoices_without_payment" model="ir.actions.report"><field name="is_invoice_report" eval="True"/></record><!-- QWeb views of the certified templates owned by this module --><record id="report_custom_invoice_document" model="ir.ui.view"><field name="protected" eval="True"/></record><record id="report_invoice" model="ir.ui.view"><field name="protected" eval="True"/></record><record id="report_terms_and_conditions" model="ir.ui.view"><field name="protected" eval="True"/></record><record id="report_payment_inherit" model="ir.ui.view"><field name="protected" eval="True"/></record><record id="report_payment_receipt" model="ir.ui.view"><field name="protected" eval="True"/></record><record id="print_copies_display" model="ir.ui.view"><field name="protected" eval="True"/></record></odoo>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="0">
+        <record id="group_payroll_manager" model="res.groups">
+            <field name="name">HR Manager</field>
+            <field name="privilege_id" ref="hr_payroll.res_groups_privilege_payroll"/>
+            <field name="user_ids" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+
+        <!-- REMOVIDO 2026-08-27: a regra hr_payroll.hr_work_entry_validated
+             deixou de existir na v19, por isso desactiva-la e redundante. -->
+
+    </data>
+</odoo>
+
+

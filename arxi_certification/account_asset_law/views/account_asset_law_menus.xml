@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<odoo><menuitem action="action_account_asset_law_view" id="account_asset_law_view_menu" parent="account.account_account_menu" sequence="1" groups="account.group_account_manager"/><menuitem action="action_company_activity_index" id="company_activity_index_menu" parent="account.account_account_menu" sequence="1" groups="account.group_account_manager"/></odoo>

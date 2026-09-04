@@ -1,0 +1,323 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_ao_pos
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-11 19:41+0000\n"
+"PO-Revision-Date: 2025-09-11 19:41+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model.fields,help:l10n_pt_ao_pos.field_pos_config__journal_id
+msgid ""
+"Accounting journal used to post POS session journal entries and POS invoice "
+"payments."
+msgstr ""
+"Diário utilizado para registar as lançamentos da sessão do Ponto de Venda e "
+"os pagamentos das faturas do Ponto de Venda."
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model.fields,field_description:l10n_pt_ao_pos.field_pos_order__cashier_name
+msgid "Cashier Name"
+msgstr ""
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/OrderReceipt.xml:0
+msgid "Copy of the document"
+msgstr "2ª Via do Documento"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/OrderReceipt.xml:0
+msgid "Copy of the document - Duplicate"
+msgstr "2ª Via do Documento - Duplicado"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/OrderReceipt.xml:0
+msgid "Copy of the document - Triplicate"
+msgstr "2ª Via do Documento - Triplicado"
+
+#. module: point_of_sale
+#. odoo-javascript
+#: code:addons/point_of_sale/static/src/app/screens/receipt_screen/receipt_screen.xml:0
+msgid "Print Full Receipt"
+msgstr "Imprimir Talão"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/OrderReceipt.xml:0
+msgid "Credit Note n."
+msgstr "Nota de Crédito n."
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model.fields,field_description:l10n_pt_ao_pos.field_pos_order__customer_name
+msgid "Customer Name"
+msgstr "Nome do Cliente"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/js/ticketscreen.js:0
+#: model:ir.model.fields,field_description:l10n_pt_ao_pos.field_pos_order__customer_vat
+msgid "Customer VAT"
+msgstr "NIF"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/OrderReceipt.xml:0
+msgid "Customer:"
+msgstr "Cliente"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/js/models.js:0
+msgid "Deleting of orders is not allowed."
+msgstr "Eliminação de Ordens não é permitida."
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model.fields,field_description:l10n_pt_ao_pos.field_pos_order__doc_printed
+msgid "Doc Printed"
+msgstr ""
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/js/ticketscreen.js:0
+#: code:addons/l10n_pt_ao_pos/static/src/xml/ticket_screen.xml:0
+msgid "Document Number"
+msgstr "Nº do Documento"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/OrderReceipt.xml:0
+msgid "Duplicate Receipt"
+msgstr "Duplicado"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/OrderReceipt.xml:0
+#: model:ir.model.fields,field_description:l10n_pt_ao_pos.field_pos_order__exemption_codes
+msgid "Exemption Codes"
+msgstr "Códigos de Isenção"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/OrderReceipt.xml:0
+#: model:ir.model.fields,field_description:l10n_pt_ao_pos.field_pos_order__exemption_codes
+msgid "Exemption Codes"
+msgstr "Códigos de Isenção"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/js/models.js:0
+msgid "Fiscal Data Module error"
+msgstr ""
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model,name:l10n_pt_ao_pos.model_account_fiscal_position
+msgid "Fiscal Position"
+msgstr "Posição Fiscal"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/OrderReceipt.xml:0
+msgid "Goods sent or made available to the purchaser at"
+msgstr "Bens foram colocados à disposição do adquirente a "
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model.fields,field_description:l10n_pt_ao_pos.field_pos_order__inalterable_hash
+msgid "Inalterability Hash"
+msgstr ""
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model.fields,field_description:l10n_pt_ao_pos.field_pos_order__account_move_state
+msgid "Invoice State"
+msgstr "Estado da Fatura"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/OrderReceipt.xml:0
+msgid "Invoice n."
+msgstr "Fatura nº"
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model.fields,help:l10n_pt_ao_pos.field_pos_order__exemption_codes
+msgid "JSON field storing exemption codes for receipt printing"
+msgstr ""
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model,name:l10n_pt_ao_pos.model_account_move
+msgid "Journal Entry"
+msgstr "Lançamento em Diário"
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model,name:l10n_pt_ao_pos.model_account_move_line
+msgid "Journal Item"
+msgstr "Item no Diário"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/js/pos.js:0
+msgid "Missing Country"
+msgstr "País em Falta"
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model.fields,field_description:l10n_pt_ao_pos.field_pos_order__document_name
+msgid "Name"
+msgstr "Nome"
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model.fields,field_description:l10n_pt_ao_pos.field_pos_order__account_move_name
+msgid "Number"
+msgstr "Nº"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/js/PaymentScreen.js:0
+msgid "Order Validation Error"
+msgstr "Erro na Validação da Ordem"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/OrderReceipt.xml:0
+msgid "Original"
+msgstr "Original"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/js/PaymentScreen.js:0
+msgid ""
+"Please fix the following issues:\n"
+"\n"
+msgstr ""
+"Por favor corrija os seguintes problemas:\n"
+"\n"
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model,name:l10n_pt_ao_pos.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuração do Ponto de Venda"
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model.fields,field_description:l10n_pt_ao_pos.field_pos_config__journal_id
+msgid "Point of Sale Journal"
+msgstr "Diário de Ponto de Venda"
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model,name:l10n_pt_ao_pos.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Ordens do Ponto de Venda"
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model,name:l10n_pt_ao_pos.model_pos_payment
+msgid "Point of Sale Payments"
+msgstr "Pagamentos do Ponto de Vendas"
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model,name:l10n_pt_ao_pos.model_pos_session
+msgid "Point of Sale Session"
+msgstr "Sessão do Ponto de Venda"
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model.fields,field_description:l10n_pt_ao_pos.field_account_move_line__pos_order_line_id
+msgid "Pos Order Line"
+msgstr ""
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/receipt_screen.xml:0
+msgid "Print Duplicate Receipt"
+msgstr "Imprimir Talão Duplicado"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/receipt_screen.xml:0
+msgid "Print Triplicate Receipt"
+msgstr "Imprimir Talão Triplicado"
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model.fields,field_description:l10n_pt_ao_pos.field_pos_order__credit_reason
+msgid "Reason"
+msgstr "Razão"
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model.fields,help:l10n_pt_ao_pos.field_pos_order__credit_reason
+msgid "Reason for the status update"
+msgstr "Razão para atualização de Estado"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/OrderReceipt.xml:0
+msgid "Reason:"
+msgstr "Razão:"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/OrderReceipt.xml:0
+msgid "Relating to document"
+msgstr "Referente ao documento"
+
+#. module: l10n_pt_ao_pos
+#: model:ir.model.fields,field_description:l10n_pt_ao_pos.field_pos_order__reversed_entry_name
+msgid "Reversed Entry"
+msgstr "Entrada Revertida"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/receipt_header.xml:0
+msgid "Served by"
+msgstr "Atendido por"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/js/pos.js:0
+msgid "The company %s doesn't have a country set."
+msgstr "A Empresa %s não tem País definido."
+
+#. module: l10n_pt_ao_pos
+#. odoo-python
+#: code:addons/l10n_pt_ao_pos/models/pos_session.py:0
+msgid "This session is already closed."
+msgstr "Essa sessão já foi fechada."
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/OrderReceipt.xml:0
+msgid "Triplicate Receipt"
+msgstr "Triplicado"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/xml/OrderReceipt.xml:0
+msgid "VAT:"
+msgstr "NIF:"
+
+#. module: l10n_pt_ao_pos
+#. odoo-python
+#: code:addons/l10n_pt_ao_pos/models/account_fiscal_position.py:0
+msgid ""
+"You cannot modify a fiscal position used in a POS order. You should archive "
+"it and create a new one."
+msgstr ""
+"Não é possível alterar uma Posição Fiscal utilizada numa ordem do POS. Deve "
+"arquivar e criar uma nova."
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/js/PaymentScreen.js:0
+msgid "• Combo products are not compatible with PT/AO POS Orders"
+msgstr "• Produtos do tipo Combo não são compatíveis com Ordens de POS PT/AO"
+
+#. module: l10n_pt_ao_pos
+#. odoo-javascript
+#: code:addons/l10n_pt_ao_pos/static/src/js/PaymentScreen.js:0
+msgid "• Some products do not have taxes configured"
+msgstr "• Há produtos sem impostos configurados"

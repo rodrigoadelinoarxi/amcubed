@@ -1,0 +1,21 @@
+#. module: stock
+#: model:ir.actions.report,name:stock.action_report_delivery
+msgid "Delivery Slip"
+msgstr "Guia de Entrega"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_pt_stock
+msgid "Portugal - Certified Stock"
+msgstr "Portugal - Inventário Certificado"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_l10n_pt_stock
+msgid "\n"
+"        Module for stock certification and exporting SAF-T"
+msgstr "\n"
+"        Módulo de certificação de documentos de transporte e SAF-T"
+
+#. module: l10n_pt_stock
+#: model:ir.model.fields,field_description:l10n_pt_stock.field_at_transport_mixin__vehicle_id
+msgid "Vehicle License Plate"
+msgstr "Matrícula do Veículo"

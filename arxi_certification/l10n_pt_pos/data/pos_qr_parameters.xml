@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1"><record id="uom_pos_qr_size" model="ir.config_parameter"><field name="key">l10n_pt_ao_pos.uom_pos_qr_size</field><field name="value">px</field></record><record id="min_pos_qr_size" model="ir.config_parameter"><field name="key">l10n_pt_ao_pos.min_pos_qr_size</field><field name="value">114</field></record><record id="default_pos_qr_size" model="ir.config_parameter"><field name="key">l10n_pt_ao_pos.default_pos_qr_size</field><field name="value">150</field></record></odoo>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="l10n_pt_ao_pos_invoicing_journals.PaymentScreenButtons" t-inherit="point_of_sale.PaymentScreenButtons" t-inherit-mode="extension" owl="1">
+        <xpath expr="//button[hasclass('js_invoice')]/parent::div" position="after">
+            <div class="d-flex flex-column gap-2 w-100">
+            <t t-if="currentOrder.to_invoice and currentOrder.is_pt_ao_country()">
+                <h5 class="title-category pt-3 pb-2 px-3 m-0 bg-view border-bottom border-2 d-flex justify-content-center align-items-center">Document Journal</h5>
+                <t t-foreach="invoicing_journal_map" t-as="journal" t-key="journal.id" class="attribute mb-3">
+                    <button class="button invoice btn btn-light py-3 text-start rounded-0 border-bottom" t-att-class="{ 'highlight text-bg-primary': currentOrder.isSelectedJournal(journal) }" t-on-click="() =&gt; this.toggleJournalInvoice(journal)">
+                        <i class="fa fa-file-text-o me-2"/><t t-esc="journal.name"/>
+                    </button>
+                </t>
+            </t>
+            </div>
+        </xpath>
+    </t>
+</templates>

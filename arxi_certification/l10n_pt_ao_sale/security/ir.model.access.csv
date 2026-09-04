@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+l10n_pt_ao_sale.access_sale_order_alert_wizard,access_sale_order_alert_wizard,l10n_pt_ao_sale.model_sale_order_alert_wizard,base.group_user,1,1,1,1
+l10n_pt_ao_sale.access_sale_order_cancel,access_sale_order_cancel,l10n_pt_ao_sale.model_arxi_sale_order_cancel_wizard,base.group_user,1,1,1,1
+l10n_pt_ao_sale.access_sale_order_journal,access_sale_order_journal,l10n_pt_ao_sale.model_sale_order_journal,base.group_user,1,0,0,0
+l10n_pt_ao_sale.access_sale_order_journal_manager,access_sale_order_journal,l10n_pt_ao_sale.model_sale_order_journal,sales_team.group_sale_manager,1,1,1,1
+l10n_pt_ao_sale.access_sale_order_type,access_sale_order_type,l10n_pt_ao_sale.model_sale_order_type,base.group_user,1,0,0,0
+l10n_pt_ao_sale.access_sale_order_type_manager,access_sale_order_type,l10n_pt_ao_sale.model_sale_order_type,sales_team.group_sale_manager,1,1,1,0

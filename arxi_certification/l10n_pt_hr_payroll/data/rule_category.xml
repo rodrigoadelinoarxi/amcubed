@@ -1,0 +1,177 @@
+<odoo noupdate="1">
+    <!--    BASE-->
+    <record id="hr_payroll_basic" model="hr.salary.rule.category">
+        <field name="name">Basic Wage</field>
+        <field name="code">BASIC</field>
+    </record>
+    <!--    GROSS-->
+    <record id="hr_payroll_gross" model="hr.salary.rule.category">
+        <field name="name">Gross Wage</field>
+        <field name="code">GROSS</field>
+    </record>
+
+    <record id="hr_payroll_basic_correction" model="hr.salary.rule.category">
+        <field name="name">Basic Salary Correction</field>
+        <field name="code">BASIC_CORR</field>
+    </record>
+
+    <record id="hr_payroll_meal_correction" model="hr.salary.rule.category">
+        <field name="name">Meal Allowance Correction</field>
+        <field name="code">MEAL_CORR</field>
+    </record>
+
+    <record id="hr_payroll_vac_correction" model="hr.salary.rule.category">
+        <field name="name">Vacation Allowance Correction</field>
+        <field name="code">VAC_CORR</field>
+    </record>
+
+    <record id="hr_payroll_chr_correction" model="hr.salary.rule.category">
+        <field name="name">Christmas Allowance Correction</field>
+        <field name="code">CHR_CORR</field>
+    </record>
+
+    <!--    EXTRA-->
+    <record id="hr_payroll_extra" model="hr.salary.rule.category">
+        <field name="name">Extraordinary Retribution</field>
+        <field name="code">EXTRA</field>
+    </record>
+    <record id="hr_payroll_bonus" model="hr.salary.rule.category">
+        <field name="name">Extraordinary Retribution - Bonus</field>
+        <field name="code">BONUS</field>
+        <field name="parent_id" ref="hr_payroll_extra"/>
+    </record>
+    <record id="hr_payroll_bonus_subject_to_irs" model="hr.salary.rule.category">
+        <field name="name">Extraordinary Retribution - Bonus Subject to IRS</field>
+        <field name="code">BONUS_IRS</field>
+        <field name="parent_id" ref="hr_payroll_extra"/>
+    </record>
+    <record id="hr_payroll_bonus_subject_to_ss" model="hr.salary.rule.category">
+        <field name="name">Extraordinary Retribution - Bonus Subject to SS</field>
+        <field name="code">BONUS_SS</field>
+        <field name="parent_id" ref="hr_payroll_extra"/>
+    </record>
+    <record id="hr_payroll_bonus_subject_to_irs_and_ss" model="hr.salary.rule.category">
+        <field name="name">Extraordinary Retribution - Bonus Subject to IRS and SS</field>
+        <field name="code">BONUS_IRS_SS</field>
+        <field name="parent_id" ref="hr_payroll_extra"/>
+    </record>
+    <record id="hr_payroll_child_val" model="hr.salary.rule.category">
+        <field name="name">Child Valley</field>
+        <field name="code">CHILD_VAL</field>
+        <field name="parent_id" ref="hr_payroll_extra"/>
+    </record>
+    <record id="hr_payroll_ret_plan" model="hr.salary.rule.category">
+        <field name="name">Retirement Savings Plan</field>
+        <field name="code">RET_PLAN</field>
+        <field name="parent_id" ref="hr_payroll_extra"/>
+    </record>
+    <record id="hr_payroll_fail_allow" model="hr.salary.rule.category">
+        <field name="name">Fail Allowance</field>
+        <field name="code">FAIL_ALLOW</field>
+        <field name="parent_id" ref="hr_payroll_extra"/>
+    </record>
+    <record id="hr_payroll_subs" model="hr.salary.rule.category">
+        <field name="name">Extraordinary Retribution - Allowances</field>
+        <field name="code">SUB</field>
+    </record>
+    <record id="hr_payroll_subs_vac" model="hr.salary.rule.category">
+        <field name="name">Extraordinary Retribution - Vacation Allowance</field>
+        <field name="code">VACSUB</field>
+        <field name="parent_id" ref="hr_payroll_extra"/>
+    </record>
+    <record id="hr_payroll_subs_chr" model="hr.salary.rule.category">
+        <field name="name">Extraordinary Retribution - Christmas Allowance</field>
+        <field name="code">CHRSUB</field>
+        <field name="parent_id" ref="hr_payroll_extra"/>
+    </record>
+    <!--OTHER-->
+    <record id="hr_payroll_other" model="hr.salary.rule.category">
+        <field name="name">Other income</field>
+        <field name="code">OTHER</field>
+    </record>
+    <record id="hr_payroll_irs_ded" model="hr.salary.rule.category">
+        <field name="name">Deduction (IRS)</field>
+        <field name="code">IRS</field>
+    </record>
+    <record id="hr_payroll_ss_ded" model="hr.salary.rule.category">
+        <field name="name">Deduction (SS)</field>
+        <field name="code">DED_SS</field>
+    </record>
+
+    <record id="hr_payroll_sub_food" model="hr.salary.rule.category">
+        <field name="name">Meal Allowance</field>
+        <field name="code">SA</field>
+        <field name="parent_id" ref="hr_payroll_other"/>
+    </record>
+    <!--OTHER_IRS-->
+    <record id="hr_payroll_other_irs" model="hr.salary.rule.category">
+        <field name="name">Other income subject to IRS</field>
+        <field name="code">OTHER_IRS</field>
+    </record>
+    <!--FREE-->
+    <record id="hr_payroll_free" model="hr.salary.rule.category">
+        <field name="name">Other exempt income</field>
+        <field name="code">FREE</field>
+    </record>
+
+    <record id="hr_payroll_cost_allw" model="hr.salary.rule.category">
+        <field name="name">Cost Allowance</field>
+        <field name="code">COST_ALLW</field>
+        <field name="parent_id" ref="hr_payroll_extra"/>
+    </record>
+
+    <record id="hr_payroll_cost_allw_foreign" model="hr.salary.rule.category">
+        <field name="name">Cost Allowance Foreign</field>
+        <field name="code">AC_FOREIGN</field>
+        <field name="parent_id" ref="hr_payroll_extra"/>
+    </record>
+
+    <record id="hr_payroll_kms" model="hr.salary.rule.category">
+        <field name="name">Kms</field>
+        <field name="code">KMS</field>
+        <field name="parent_id" ref="hr_payroll_extra"/>
+    </record>
+
+    <record id="hr_payroll_bal_bonus" model="hr.salary.rule.category">
+        <field name="name">Balance Sheet Bonus</field>
+        <field name="code">BAL_BONUS</field>
+        <field name="parent_id" ref="hr_payroll_bonus_subject_to_irs"/>
+    </record>
+
+    <record id="hr_payroll_term_comp" model="hr.salary.rule.category">
+        <field name="name">Compensation for Termination of Contract</field>
+        <field name="code">TERM_COMP</field>
+        <field name="parent_id" ref="hr_payroll_extra"/>
+    </record>
+
+    <record id="hr_payroll_ee" model="hr.salary.rule.category">
+        <field name="name">Entity Charges</field>
+        <field name="code">EE</field>
+    </record>
+
+    <record id="hr_payroll_perf_bonus" model="hr.salary.rule.category">
+        <field name="name">Performance Bonus</field>
+        <field name="code">PERF_BONUS</field>
+        <field name="parent_id" ref="hr_payroll_extra"/>
+    </record>
+    <record id="hr_payroll_retroactive" model="hr.salary.rule.category">
+        <field name="name">Retroactive Adjustments</field>
+        <field name="code">RETRO</field>
+        <field name="parent_id" ref="hr_payroll_extra"/>
+    </record>
+    <record id="hr_payroll_retroactive_irs" model="hr.salary.rule.category">
+        <field name="name">Retroactive Adjustments - IRS</field>
+        <field name="code">RETRO_IRS</field>
+        <field name="parent_id" ref="l10n_pt_hr_payroll.hr_payroll_retroactive"/>
+    </record>
+    <record id="hr_payroll_retroactive_ss" model="hr.salary.rule.category">
+        <field name="name">Retroactive Adjustments - SS</field>
+        <field name="code">RETRO_SS</field>
+        <field name="parent_id" ref="l10n_pt_hr_payroll.hr_payroll_retroactive"/>
+    </record>
+    <record id="hr_payroll_retroactive_irs_ss" model="hr.salary.rule.category">
+        <field name="name">Retroactive Adjustments - IRS and SS</field>
+        <field name="code">RETRO_IRS_SS</field>
+        <field name="parent_id" ref="l10n_pt_hr_payroll.hr_payroll_retroactive"/>
+    </record>
+</odoo>

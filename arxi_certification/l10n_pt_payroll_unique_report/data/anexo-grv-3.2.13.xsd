@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:t="http://www.gep.msess.gov.pt/sguri/tipos_comuns"
+           xmlns="http://www.gep.msess.gov.pt/sguri/ru/anexo_grv"
+           targetNamespace="http://www.gep.msess.gov.pt/sguri/ru/anexo_grv"
+           elementFormDefault="qualified"
+           version="3.2.13">
+    <xs:import namespace="http://www.gep.msess.gov.pt/sguri/tipos_comuns" schemaLocation="tipos-comuns-1.3.13.xsd"/>
+    <xs:element name="anexo_grv" type="anexo_grvType">
+        <xs:annotation>
+            <xs:documentation>ANEXO E - GREVES</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="anexo_grvType">
+        <xs:sequence>
+            <!-- I - ENTIDADE EMPREGADORA -->
+            <xs:element name="nome_entidade" type="t:max70Type" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>I - 1. Nome ou Designação social</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="exist_greves" type="t:choiceType" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>I - Existiram greves durante o ano de referência do relatório?</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="cae_31Dez" type="t:caeType" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>I - 2. Actividade económica principal (CAE) da Entidade empregadora em 31 de
+                        Dezembro.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="pessoas_serv_31Dez" type="t:num5Type" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>I - 3. Número de pessoas ao serviço na entidade em 31 de Dezembro
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="nr_medio_anual_tco" type="t:num5Type" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>I - 4. Número médio anual de trabalhadores por conta de outrem (TCO) na entidade
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="estabs">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="estab" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="cae_31Dez" type="t:caeType" minOccurs="0" maxOccurs="1">
+                                        <xs:annotation>
+                                            <xs:documentation>II - 2. Actividade económica principal (CAE) da Entidade
+                                                empregadora em 31 de Dezembro.
+                                            </xs:documentation>
+                                        </xs:annotation>
+                                    </xs:element>
+                                    <xs:element name="pessoas_serv_31Dez" type="t:num5Type" minOccurs="0" maxOccurs="1">
+                                        <xs:annotation>
+                                            <xs:documentation>II - 3. Número de pessoas ao serviço na entidade em 31 de
+                                                Dezembro
+                                            </xs:documentation>
+                                        </xs:annotation>
+                                    </xs:element>
+                                    <xs:element name="nr_medio_anual_tco" type="t:num5Type" minOccurs="0" maxOccurs="1">
+                                        <xs:annotation>
+                                            <xs:documentation>II - 4. Número médio anual de trabalhadores por conta de
+                                                outrem (TCO) na entidade
+                                            </xs:documentation>
+                                        </xs:annotation>
+                                    </xs:element>
+                                    <xs:element name="greves" minOccurs="0" maxOccurs="1">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="greve" minOccurs="0" maxOccurs="unbounded">
+                                                    <xs:annotation>
+                                                        <xs:documentation>II - GREVE.</xs:documentation>
+                                                    </xs:annotation>
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="ident_greve">
+                                                                <xs:annotation>
+                                                                    <xs:documentation>II - 1. Identificação da Greve.
+                                                                    </xs:documentation>
+                                                                </xs:annotation>
+                                                                <xs:complexType>
+                                                                    <xs:simpleContent>
+                                                                        <xs:restriction base="t:codigoType">
+                                                                            <xs:attribute name="tbl" use="required"
+                                                                                          fixed="RU_GREVE"
+                                                                                          type="xs:string">
+                                                                                <xs:annotation>
+                                                                                    <xs:documentation>Tabela Nº 51 -
+                                                                                        Identificação da greve.
+                                                                                    </xs:documentation>
+                                                                                </xs:annotation>
+                                                                            </xs:attribute>
+                                                                        </xs:restriction>
+                                                                    </xs:simpleContent>
+                                                                </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="reivindicacoes_princ">
+                                                                <xs:annotation>
+                                                                    <xs:documentation>II - 1.1 Principais reivindicações
+                                                                        expressas e resultados obtidos.
+                                                                    </xs:documentation>
+                                                                </xs:annotation>
+                                                                <xs:complexType>
+                                                                    <xs:sequence>
+                                                                        <xs:element name="reivindicacao_princ"
+                                                                                    maxOccurs="unbounded">
+                                                                            <xs:complexType>
+                                                                                <xs:sequence>
+                                                                                    <xs:element name="reivindicacao">
+                                                                                        <xs:annotation>
+                                                                                            <xs:documentation>II - 1.1.1
+                                                                                                Código da reivindicação.
+                                                                                            </xs:documentation>
+                                                                                        </xs:annotation>
+                                                                                        <xs:complexType>
+                                                                                            <xs:simpleContent>
+                                                                                                <xs:restriction
+                                                                                                        base="t:codigoType">
+                                                                                                    <xs:attribute
+                                                                                                            name="tbl"
+                                                                                                            use="required"
+                                                                                                            fixed="RU_GRE_REIV"
+                                                                                                            type="xs:string">
+                                                                                                        <xs:annotation>
+                                                                                                            <xs:documentation>
+                                                                                                                TABELA
+                                                                                                                Nº 52 -
+                                                                                                                Reinvindicação.
+                                                                                                            </xs:documentation>
+                                                                                                        </xs:annotation>
+                                                                                                    </xs:attribute>
+                                                                                                </xs:restriction>
+                                                                                            </xs:simpleContent>
+                                                                                        </xs:complexType>
+                                                                                    </xs:element>
+                                                                                    <xs:element name="res">
+                                                                                        <xs:annotation>
+                                                                                            <xs:documentation>II - 1.2.3
+                                                                                                Código do resultado.
+                                                                                            </xs:documentation>
+                                                                                        </xs:annotation>
+                                                                                        <xs:complexType>
+                                                                                            <xs:simpleContent>
+                                                                                                <xs:restriction
+                                                                                                        base="t:codigoType">
+                                                                                                    <xs:attribute
+                                                                                                            name="tbl"
+                                                                                                            use="required"
+                                                                                                            fixed="RU_GRE_RESULT"
+                                                                                                            type="xs:string">
+                                                                                                        <xs:annotation>
+                                                                                                            <xs:documentation>
+                                                                                                                Tabela
+                                                                                                                Nº 53 -
+                                                                                                                Resultado.
+                                                                                                            </xs:documentation>
+                                                                                                        </xs:annotation>
+                                                                                                    </xs:attribute>
+                                                                                                </xs:restriction>
+                                                                                            </xs:simpleContent>
+                                                                                        </xs:complexType>
+                                                                                    </xs:element>
+                                                                                </xs:sequence>
+                                                                            </xs:complexType>
+                                                                        </xs:element>
+                                                                    </xs:sequence>
+                                                                </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="datas_greve">
+                                                                <xs:complexType>
+                                                                    <xs:sequence>
+                                                                        <xs:element name="data_greve" minOccurs="1"
+                                                                                    maxOccurs="unbounded">
+                                                                            <xs:annotation>
+                                                                                <xs:documentation>II - 2.2 Datas da
+                                                                                    greve e trabalhadores em greve, por
+                                                                                    escalão de PNT e tempos de
+                                                                                    paralisação.
+                                                                                </xs:documentation>
+                                                                            </xs:annotation>
+                                                                            <xs:complexType>
+                                                                                <xs:sequence>
+                                                                                    <xs:element name="data"
+                                                                                                type="t:monthdayType">
+                                                                                        <xs:annotation>
+                                                                                            <xs:documentation>II - 2.2.1
+                                                                                                Data da greve.
+                                                                                            </xs:documentation>
+                                                                                        </xs:annotation>
+                                                                                    </xs:element>
+                                                                                    <xs:element name="pnt">
+                                                                                        <xs:annotation>
+                                                                                            <xs:documentation>II - 2.2.2
+                                                                                                Período normal de
+                                                                                                trabalho semanal (PNT).
+                                                                                            </xs:documentation>
+                                                                                        </xs:annotation>
+                                                                                        <xs:simpleType>
+                                                                                            <xs:restriction
+                                                                                                    base="xs:token">
+                                                                                                <xs:pattern
+                                                                                                        value="(40|[0-3]\d{1}):(60|([0-5]\d{1})|01)"/>
+                                                                                            </xs:restriction>
+                                                                                        </xs:simpleType>
+                                                                                    </xs:element>
+                                                                                    <xs:element name="n_trab_grv">
+                                                                                        <xs:annotation>
+                                                                                            <xs:documentation>II - 2.2.3
+                                                                                                Nº de trabalhadores em
+                                                                                                greve.
+                                                                                            </xs:documentation>
+                                                                                        </xs:annotation>
+                                                                                        <xs:simpleType>
+                                                                                            <xs:restriction
+                                                                                                    base="t:num4Type">
+                                                                                                <xs:minInclusive
+                                                                                                        value="1"/>
+                                                                                            </xs:restriction>
+                                                                                        </xs:simpleType>
+                                                                                    </xs:element>
+                                                                                    <xs:element name="duracao"
+                                                                                                type="t:hoursminType">
+                                                                                        <xs:annotation>
+                                                                                            <xs:documentation>II - 2.2.4
+                                                                                                Duração da paralização
+                                                                                            </xs:documentation>
+                                                                                        </xs:annotation>
+                                                                                    </xs:element>
+                                                                                </xs:sequence>
+                                                                            </xs:complexType>
+                                                                        </xs:element>
+                                                                    </xs:sequence>
+                                                                </xs:complexType>
+                                                            </xs:element>
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                                <xs:attribute name="id" use="required" type="xs:long">
+                                    <xs:annotation>
+                                        <xs:documentation>ID Unidade Local</xs:documentation>
+                                    </xs:annotation>
+                                </xs:attribute>
+                                <xs:attribute name="exist_greves" use="required" type="t:choiceType">
+                                    <xs:annotation>
+                                        <xs:documentation>Existiram greves durante o ano de referência do relatório
+                                        </xs:documentation>
+                                    </xs:annotation>
+                                </xs:attribute>
+                                <xs:attribute name="sede" use="required" type="t:choiceType">
+                                    <xs:annotation>
+                                        <xs:documentation>Unidade Local é sede para a data de referência do anexo.
+                                        </xs:documentation>
+                                    </xs:annotation>
+                                </xs:attribute>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="entidade" use="required" type="xs:long"/>
+        <xs:attribute name="ano" use="required" type="t:yearType">
+            <xs:annotation>
+                <xs:documentation>Ano de referência</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="XML_DATA" use="required" fixed="3.2.13" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Versão da estrutura XML.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+</xs:schema>

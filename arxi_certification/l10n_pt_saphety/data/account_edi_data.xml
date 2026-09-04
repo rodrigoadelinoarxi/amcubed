@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<odoo noupdate="1"><record id="edi_digital_signed_invoice_saphety_pt" model="account.edi.format"><field name="name">Electronic Invoicing Saphety</field><field name="code">saphety_pt</field></record></odoo>

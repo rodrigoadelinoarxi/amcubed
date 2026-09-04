@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<odoo><!-- Absorbed from print_conf_copies_pt: print the delivery slip once per
+         configured copy (per document, via print_copies). --><template id="report_deliveryslip" inherit_id="stock.report_deliveryslip" priority="30"><xpath expr="//t[@t-call='stock.report_delivery_document']" position="replace"><t t-set="copies" t-value="int(o.print_copies)"/><t t-foreach="range(1, copies + 1)" t-as="print_type"><t t-call="stock.report_delivery_document" t-lang="o._get_report_lang()"/></t></xpath></template></odoo>

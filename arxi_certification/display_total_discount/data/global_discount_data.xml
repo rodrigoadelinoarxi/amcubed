@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<odoo><record id="decimal_global_discount" model="decimal.precision"><field name="name">Global Discount Percentage</field><field name="digits" eval="12"/></record></odoo>

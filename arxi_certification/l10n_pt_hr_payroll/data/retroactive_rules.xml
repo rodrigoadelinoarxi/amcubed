@@ -1,0 +1,202 @@
+<odoo noupdate="0">
+    <!-- Retroactive input types -->
+    <record id="hr_rule_input_retro_wage" model="hr.payslip.input.type">
+        <field name="code">RETRO_WAGE</field>
+        <field name="name">Retroactive Wage</field>
+        <field name="is_retroactive" eval="True"/>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_retro_allow" model="hr.payslip.input.type">
+        <field name="code">RETRO_ALLOW</field>
+        <field name="name">Retroactive Allowances</field>
+        <field name="is_retroactive" eval="True"/>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_retro_abs" model="hr.payslip.input.type">
+        <field name="code">RETRO_ABS</field>
+        <field name="name">Retroactive Absences</field>
+        <field name="is_retroactive" eval="True"/>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_retro_he" model="hr.payslip.input.type">
+        <field name="code">RETRO_HE</field>
+        <field name="name">Retroactive Overtime</field>
+        <field name="is_retroactive" eval="True"/>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <record id="hr_rule_input_retro_manual" model="hr.payslip.input.type">
+        <field name="code">RETRO_MAN</field>
+        <field name="name">Retroactive Manual Adjustment</field>
+        <field name="is_retroactive" eval="True"/>
+        <field name="country_id" ref="base.pt"/>
+        <field name="struct_ids" eval="[(4, ref('l10n_pt_hr_payroll.hr_payroll_structure_empregado'))]"/>
+    </record>
+
+    <!-- Retroactive salary rules -->
+    <record id="hr_payroll_rules_retro_wage" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_retroactive_irs_ss"/>
+        <field name="name">Retroactive Wage</field>
+        <field name="code">RETRO_WAGE</field>
+        <field name="sequence">15</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'RETRO_WAGE' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result = inputs['RETRO_WAGE'].amount if 'RETRO_WAGE' in inputs else 0
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">P</field>
+        <field name="in_insurance_map" eval="True"/>
+        <field name="insurance_code">P</field>
+        <field name="is_retroactive" eval="True"/>
+        <field name="retroactive_type">wage</field>
+        <field name="retroactive_input_type_id" ref="l10n_pt_hr_payroll.hr_rule_input_retro_wage"/>
+        <field name="natrem_code">6</field>
+        <field name="in_dmr" eval="True"/>
+        <field name="in_dri" eval="True"/>
+        <field name="in_accounting" eval="True"/>
+    </record>
+
+    <record id="hr_payroll_rules_retro_allow" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_retroactive_irs_ss"/>
+        <field name="name">Retroactive Allowances</field>
+        <field name="code">RETRO_ALLOW</field>
+        <field name="sequence">15</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'RETRO_ALLOW' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result = inputs['RETRO_ALLOW'].amount if 'RETRO_ALLOW' in inputs else 0
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">S</field>
+        <field name="in_insurance_map" eval="True"/>
+        <field name="insurance_code">S</field>
+        <field name="is_retroactive" eval="True"/>
+        <field name="retroactive_type">allowance</field>
+        <field name="retroactive_input_type_id" ref="l10n_pt_hr_payroll.hr_rule_input_retro_allow"/>
+        <field name="natrem_code">R</field>
+        <field name="in_dmr" eval="True"/>
+        <field name="in_dri" eval="True"/>
+        <field name="in_accounting" eval="True"/>
+    </record>
+
+    <record id="hr_payroll_rules_retro_abs" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_retroactive_irs_ss"/>
+        <field name="name">Retroactive Absences</field>
+        <field name="code">RETRO_ABS</field>
+        <field name="sequence">15</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'RETRO_ABS' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result = inputs['RETRO_ABS'].amount if 'RETRO_ABS' in inputs else 0
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">P</field>
+        <field name="in_insurance_map" eval="True"/>
+        <field name="insurance_code">P</field>
+        <field name="is_retroactive" eval="True"/>
+        <field name="retroactive_type">absence</field>
+        <field name="retroactive_input_type_id" ref="l10n_pt_hr_payroll.hr_rule_input_retro_abs"/>
+        <field name="allow_negative" eval="True"/>
+        <field name="in_dmr" eval="True"/>
+        <field name="in_dri" eval="True"/>
+        <field name="in_accounting" eval="True"/>
+    </record>
+
+    <record id="hr_payroll_rules_retro_he" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_retroactive_irs_ss"/>
+        <field name="name">Retroactive Overtime</field>
+        <field name="code">RETRO_HE</field>
+        <field name="sequence">15</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'RETRO_HE' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result = inputs['RETRO_HE'].amount if 'RETRO_HE' in inputs else 0
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">S</field>
+        <field name="in_insurance_map" eval="True"/>
+        <field name="insurance_code">S</field>
+        <field name="is_retroactive" eval="True"/>
+        <field name="retroactive_type">extra_hours</field>
+        <field name="retroactive_input_type_id" ref="l10n_pt_hr_payroll.hr_rule_input_retro_he"/>
+        <field name="natrem_code">S</field>
+        <field name="in_dmr" eval="True"/>
+        <field name="in_dri" eval="True"/>
+        <field name="in_accounting" eval="True"/>
+    </record>
+
+    <record id="hr_payroll_rules_retro_manual" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_retroactive_irs_ss"/>
+        <field name="name">Retroactive Manual Adjustment</field>
+        <field name="code">RETRO_MAN</field>
+        <field name="sequence">15</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'RETRO_MAN' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result = inputs['RETRO_MAN'].amount if 'RETRO_MAN' in inputs else 0
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">P</field>
+        <field name="in_insurance_map" eval="True"/>
+        <field name="insurance_code">P</field>
+        <field name="is_retroactive" eval="True"/>
+        <field name="retroactive_type">manual</field>
+        <field name="retroactive_input_type_id" ref="l10n_pt_hr_payroll.hr_rule_input_retro_manual"/>
+        <field name="allow_negative" eval="True"/>
+        <field name="in_dmr" eval="True"/>
+        <field name="in_dri" eval="True"/>
+        <field name="in_accounting" eval="True"/>
+    </record>
+
+    <record id="hr_payroll_rules_irs_retro" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_irs_ded"/>
+        <field name="name">IRS on Retroactives</field>
+        <field name="code">IRS_RETRO</field>
+        <field name="sequence">22</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = categories['RETRO'] > 0</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+baseIH = categories['RETRO']
+if baseIH > 0:
+    result, result_rate = compute_irs_allowances(contract, categories, employee, payslip, False, False, False, baseIH)
+else:
+    result_rate = 0
+    result = 0
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="in_dmr" eval="True"/>
+        <field name="in_accounting" eval="True"/>
+    </record>
+</odoo>

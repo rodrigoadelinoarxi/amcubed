@@ -1,0 +1,442 @@
+<odoo noupdate="0">
+    <record id="hr_payroll_rules_deduction" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll.DED"/>
+        <field name="name">Salary Deduction</field>
+        <field name="code">DEDSAL</field>
+        <field name="sequence">18</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'SALARY_DEDUCTION' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+## se tiver inputs, adiciona os inputs ao resultado final
+## utiliza Salary attachments para associar prémios que podem ser dados durante um certo periodo de tempo
+result = 0
+if inputs['SALARY_DEDUCTION']:
+    result -= inputs['SALARY_DEDUCTION'].amount
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+</record>
+
+    <record id="hr_payroll_health_insurance" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll.DED"/>
+        <field name="name">Health Insurance Deduction</field>
+        <field name="code">INS_HEALTH</field>
+        <field name="sequence">18</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="active">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'INS_HEALTH' in inputs</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+## se tiver inputs, adiciona os inputs ao resultado final
+## utiliza Salary attachments para associar prémios que podem ser dados durante um certo periodo de tempo
+result = 0
+if inputs['INS_HEALTH']:
+    result -= inputs['INS_HEALTH'].amount
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+</record>
+    <!--    SEGURANÇA SOCIAL / TSU-->
+    <record id="hr_payroll_rules_ss" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_ss_ded"/>
+        <field name="name">Social Security</field>
+        <field name="code">SS</field>
+        <field name="sequence">20</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">none</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+#11% para segurança social do base + subsídios
+result_rate = get_ss_rate(contract)
+total = categories['BASIC'] + categories['BONUS_SS'] + categories['BONUS_IRS_SS'] + categories['RETRO'] + taxed_value_meal_allowance(contract, payslip) + taxed_value_fail_allow(contract, categories, payslip) - categories['BASIC_CORR']
+result = total
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+    </record>
+    <record id="hr_payroll_rules_ss_vac" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_ss_ded"/>
+        <field name="name">Social Security - Vacation Allowance</field>
+        <field name="code">SSVAC</field>
+        <field name="sequence">20</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">none</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result_rate = get_ss_rate(contract)
+total = categories['VACSUB'] - categories['VAC_CORR']
+result = total
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+    </record>
+    <record id="hr_payroll_rules_ss_chr" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_ss_ded"/>
+        <field name="name">Social Security - Christmas Allowance</field>
+        <field name="code">SSCHR</field>
+        <field name="sequence">20</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">none</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+result_rate = get_ss_rate(contract)
+total = categories['CHRSUB'] - categories['CHR_CORR']
+result = total
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+    </record>
+    <!--    IRS-->
+     <record id="hr_payroll_rules_irsvm" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_irs_ded"/>
+        <field name="name">IRS - Monthly Wage</field>
+        <field name="code">IRSVM</field>
+        <field name="sequence">21</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">none</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+if categories['BASIC'] > 0 or categories['BONUS_IRS'] > 0 or categories['BONUS_IRS_SS'] > 0 or categories['RETRO_IRS'] > 0 or categories['RETRO_IRS_SS'] > 0:
+    result, result_rate = compute_irs_wage(payslip, contract, categories, employee)
+else:
+    result_rate = 0
+    result = 0
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+    </record>
+    <record id="hr_payroll_rules_irssub" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_irs_ded"/>
+        <field name="name">IRS - Vacation Allowance</field>
+        <field name="code">IRSVACSUB</field>
+        <field name="sequence">21</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">none</field>
+        <field name="condition_python">result = contract.vacation == 'com_dist_total' or contract.vacation == 'com_dist_metade' or contract.vacation == 'sem_dist' and contract.month_selection_vac == payslip.date_to.strftime('%m') or inputs['VAC_ALLW']</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+#### baseIH determina o que é usado para calcular a taxa de IRS (categories['BASIC'] vai englobar tudo o que tenha categoria Vencimento Base (por defeito Vencimento Base e Isenção de Horário | BASIC é apenas a regra com código BASIC - Vencimento Base)
+if payslip.payslip_type == 'extraordinary':
+    baseIH = get_previous_amount(payslip, 'BASIC')
+elif payslip.payslip_type == 'normal':
+    baseIH = contract.wage
+else:
+    baseIH = _get_irs_tax_cease_vac(employee, payslip, contract)
+if contract.exemption_schedule:
+    baseIH += (contract.wage * contract.exemption_schedule_percentage)
+is_chr = False
+is_vac = True
+is_meal = False
+if baseIH > 0:
+    result, result_rate = compute_irs_allowances(contract, categories, employee, payslip, is_chr, is_vac, is_meal, baseIH)
+else:
+    result_rate = 0
+    result = 0
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+           <field name="income_type">A3</field>
+    </record>
+
+    <record id="hr_payroll_rules_irs_chr_sub" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_irs_ded"/>
+        <field name="name">IRS - Christmas Allowance</field>
+        <field name="code">IRSCHRSUB</field>
+        <field name="sequence">21</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">none</field>
+        <field name="condition_python">result = contract.christmas == 'com_dist_total' or contract.christmas == 'com_dist_metade' or contract.christmas == 'sem_dist' and contract.month_selection_chr == payslip.date_to.strftime('%m') or inputs['CHR_ALLW']</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+#### baseIH determina o que é usado para calcular a taxa de IRS (categories['BASIC'] vai englobar tudo o que tenha categoria Vencimento Base (por defeito Vencimento Base e Isenção de Horário | BASIC é apenas a regra com código BASIC - Vencimento Base)
+if payslip.payslip_type == 'extraordinary':
+    baseIH = get_previous_amount(payslip, 'BASIC')
+elif payslip.payslip_type == 'normal':
+    baseIH = contract.wage
+else:
+    baseIH = _get_irs_tax_cease_vac(employee, payslip, contract)
+if contract.exemption_schedule:
+    baseIH += (contract.wage * contract.exemption_schedule_percentage)
+is_chr = True
+is_vac = False
+is_meal = False
+if baseIH > 0:
+    result, result_rate = compute_irs_allowances(contract, categories, employee, payslip, is_chr, is_vac, is_meal, baseIH)
+else:
+    result_rate = 0
+    result = 0
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A4</field>
+    </record>
+
+    <record id="hr_payroll_rules_irs_meal_sub" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_irs_ded"/>
+        <field name="name">IRS - Meal Allowance</field>
+        <field name="code">IRSMEALSUB</field>
+        <field name="sequence">21</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">none</field>
+<!--        <field name="condition_python">result = contract.food == 'cartao' and contract.foodValue > 9.6 or contract.food == 'normal' and contract.foodValue > 6</field>-->
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+#### baseIH determina o que é usado para calcular a taxa de IRS (categories.BASIC vai englobar tudo o que tenha categoria Vencimento Base (por defeito Vencimento Base e Isenção de Horário | BASIC é apenas a regra com código BASIC - Vencimento Base)
+baseIH = categories['BASIC'] if payslip.payslip_type == 'normal' else get_previous_amount(payslip, 'BASIC')
+is_chr = False
+is_vac = False
+is_meal = True
+if baseIH > 0:
+    result, result_rate = compute_irs_allowances(contract, categories, employee, payslip, is_chr, is_vac, is_meal, baseIH)
+else:
+    result_rate = 0
+    result = 0
+        </field>
+        <field name="income_type">A</field>
+        <field name="appears_on_payslip" eval="True"/>
+    </record>
+
+    <record id="hr_payroll_rules_union" model="hr.salary.rule">
+        <field name="category_id" ref="hr_payroll.DED"/>
+        <field name="name">Union</field>
+        <field name="code">UNION</field>
+        <field name="sequence">21</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = employee.union_worker</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = 0.01 * categories['BASIC']
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+    </record>
+
+    <record id="hr_payroll_rules_base_correction" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_basic_correction"/>
+        <field name="name">Base Salary Correction</field>
+        <field name="code">BASIC_CORR</field>
+        <field name="sequence">19</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'BASIC_CORR_DAYS' in inputs or payslip.worked_days_line_ids.filtered(lambda w: w.is_correction)</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+base = 0
+previous_slips = payslip.env['hr.payslip'].search([('employee_id', '=', employee.id), ('state', 'in', ['done', 'paid'])], order= 'create_date desc', limit=1)
+for slip in previous_slips:
+    for line in slip.line_ids.filtered(lambda l: l.category_id.code == 'BASIC'):
+        base += line.total
+
+# Check if using automatic corrections (worked_days) or manual input
+correction_lines = payslip.worked_days_line_ids.filtered(lambda w: w.is_correction)
+
+if correction_lines:
+    # Automatic corrections from l10n_pt_hr_payroll_auto_corrections module
+    entries_discount = entries_to_discount_wage(payslip)
+    if contract.time_credit:
+        worked_hours = 0
+        for line in correction_lines:
+            hours = line.number_of_hours
+            # Apply negative sign for entries that discount
+            if line.work_entry_type_id.code in entries_discount:
+                worked_hours -= hours
+            else:
+                worked_hours += hours
+        worked_days = int(worked_hours / 6)
+        surplus = worked_hours % 6
+        if surplus > 3:
+            worked_days += 1
+        elif surplus &lt;= 3:
+            worked_days += 0.5
+    else:
+        worked_days = 0
+        for line in correction_lines:
+            days = line.number_of_days
+            # Apply negative sign for entries that discount
+            if line.work_entry_type_id.code in entries_discount:
+                worked_days -= days
+            else:
+                worked_days += days
+elif 'BASIC_CORR_DAYS' in inputs:
+    # Manual input when auto_corrections module not installed
+    worked_days = inputs['BASIC_CORR_DAYS'].amount
+else:
+    worked_days = 0
+
+result = (base / 30) * worked_days
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A</field>
+        <field name="ss_code">6</field>
+    </record>
+
+    <record id="hr_payroll_rules_meal_allw_correction" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_meal_correction"/>
+        <field name="name">Meal Allowance Correction</field>
+        <field name="code">MEAL_ALLW_CORR</field>
+        <field name="sequence">19</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'MEAL_CORR_DAYS' in inputs or payslip.worked_days_line_ids.filtered(lambda w: w.is_correction)</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+base = 0
+previous_slips = payslip.env['hr.payslip'].search([('employee_id', '=', employee.id), ('state', 'in', ['done', 'paid'])], order= 'create_date desc', limit=1)
+for slip in previous_slips:
+    for line in slip.line_ids.filtered(lambda l: l.category_id.code == 'SA'):
+        base += line.total
+
+# Check if using automatic corrections (worked_days) or manual input
+correction_lines = payslip.worked_days_line_ids.filtered(lambda w: w.is_correction)
+
+if correction_lines:
+    # Automatic corrections from l10n_pt_hr_payroll_auto_corrections module
+    entries_discount = entries_to_discount_wage(payslip)
+    if contract.time_credit:
+        worked_hours = 0
+        for line in correction_lines:
+            hours = line.number_of_hours
+            # Apply negative sign for entries that discount
+            if line.work_entry_type_id.code in entries_discount:
+                worked_hours -= hours
+            else:
+                worked_hours += hours
+        worked_days = int(worked_hours / 6)
+        surplus = worked_hours % 6
+        if surplus > 3:
+            worked_days += 1
+        elif surplus &lt;= 3:
+            worked_days += 0.5
+    else:
+        # For meal allowance, use weekday calculation
+        worked_days = get_week_days(payslip)
+elif 'MEAL_CORR_DAYS' in inputs:
+    # Manual input when auto_corrections module not installed
+    worked_days = inputs['MEAL_CORR_DAYS'].amount
+else:
+    worked_days = 0
+
+result = contract.foodValue * worked_days
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+    </record>
+
+    <record id="hr_payroll_rules_vac_allw_correction" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_vac_correction"/>
+        <field name="name">Vacation Allowance Correction</field>
+        <field name="code">VAC_ALLW_CORR</field>
+        <field name="sequence">19</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'VAC_CORR_DAYS' in inputs or payslip.worked_days_line_ids.filtered(lambda w: w.is_correction)</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+base = 0
+previous_slips = payslip.env['hr.payslip'].search([('employee_id', '=', employee.id), ('state', 'in', ['done', 'paid'])], order= 'create_date desc', limit=1)
+for slip in previous_slips:
+    for line in slip.line_ids.filtered(lambda l: l.category_id.code == 'VACSUB'):
+        base += line.total
+
+# Check if using automatic corrections (worked_days) or manual input
+correction_lines = payslip.worked_days_line_ids.filtered(lambda w: w.is_correction)
+
+if correction_lines:
+    # Automatic corrections from l10n_pt_hr_payroll_auto_corrections module
+    entries_discount = entries_to_discount_wage(payslip)
+    if contract.time_credit:
+        worked_hours = 0
+        for line in correction_lines:
+            hours = line.number_of_hours
+            # Apply negative sign for entries that discount
+            if line.work_entry_type_id.code in entries_discount:
+                worked_hours -= hours
+            else:
+                worked_hours += hours
+        worked_days = int(worked_hours / 6)
+        surplus = worked_hours % 6
+        if surplus > 3:
+            worked_days += 1
+        elif surplus &lt;= 3:
+            worked_days += 0.5
+    else:
+        worked_days = 0
+        for line in correction_lines:
+            days = line.number_of_days
+            # Apply negative sign for entries that discount
+            if line.work_entry_type_id.code in entries_discount:
+                worked_days -= days
+            else:
+                worked_days += days
+elif 'VAC_CORR_DAYS' in inputs:
+    # Manual input when auto_corrections module not installed
+    worked_days = inputs['VAC_CORR_DAYS'].amount
+else:
+    worked_days = 0
+
+result = (base / 30) * worked_days
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A3</field>
+        <field name="ss_code">F</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">F</field>
+    </record>
+
+    <record id="hr_payroll_rules_chr_allw_correction" model="hr.salary.rule">
+        <field name="category_id" ref="l10n_pt_hr_payroll.hr_payroll_chr_correction"/>
+        <field name="name">Christmas Allowance Correction</field>
+        <field name="code">CHR_ALLW_CORR</field>
+        <field name="sequence">19</field>
+        <field name="struct_id" ref="l10n_pt_hr_payroll.hr_payroll_structure_empregado"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = 'CHR_CORR_DAYS' in inputs or payslip.worked_days_line_ids.filtered(lambda w: w.is_correction)</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">
+base = 0
+previous_slips = payslip.env['hr.payslip'].search([('employee_id', '=', employee.id), ('state', 'in', ['done', 'paid'])], order= 'create_date desc', limit=1)
+for slip in previous_slips:
+    for line in slip.line_ids.filtered(lambda l: l.category_id.code == 'CHRSUB'):
+        base += line.total
+
+# Check if using automatic corrections (worked_days) or manual input
+correction_lines = payslip.worked_days_line_ids.filtered(lambda w: w.is_correction)
+
+if correction_lines:
+    # Automatic corrections from l10n_pt_hr_payroll_auto_corrections module
+    entries_discount = entries_to_discount_wage(payslip)
+    if contract.time_credit:
+        worked_hours = 0
+        for line in correction_lines:
+            hours = line.number_of_hours
+            # Apply negative sign for entries that discount
+            if line.work_entry_type_id.code in entries_discount:
+                worked_hours -= hours
+            else:
+                worked_hours += hours
+        worked_days = int(worked_hours / 6)
+        surplus = worked_hours % 6
+        if surplus > 3:
+            worked_days += 1
+        elif surplus &lt;= 3:
+            worked_days += 0.5
+    else:
+        worked_days = 0
+        for line in correction_lines:
+            days = line.number_of_days
+            # Apply negative sign for entries that discount
+            if line.work_entry_type_id.code in entries_discount:
+                worked_days -= days
+            else:
+                worked_days += days
+elif 'CHR_CORR_DAYS' in inputs:
+    # Manual input when auto_corrections module not installed
+    worked_days = inputs['CHR_CORR_DAYS'].amount
+else:
+    worked_days = 0
+
+result = (base / 30) * worked_days
+        </field>
+        <field name="appears_on_payslip" eval="True"/>
+        <field name="income_type">A4</field>
+        <field name="ss_code">N</field>
+        <field name="in_insurance_map">True</field>
+        <field name="insurance_code">N</field>
+    </record>
+</odoo>

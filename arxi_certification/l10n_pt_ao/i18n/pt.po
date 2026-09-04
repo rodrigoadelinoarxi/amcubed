@@ -1,0 +1,2581 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_ao
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-21 09:42+0000\n"
+"PO-Revision-Date: 2025-10-21 09:42+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_ao
+#: model:ir.actions.server,name:l10n_pt_ao.action_account_invoices_without_payment_zip
+msgid "Invoices(ZIP)"
+msgstr "Faturas(ZIP)"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.res_config_settings_view_form
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\"/>"
+msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Os valores definidos aqui são "
+"específicos da empresa.\"/>"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.res_config_settings_view_form
+msgid "<span class=\"o_form_label\">Rappel Credit Notes</span>"
+msgstr "<span class=\"o_form_label\">Notas de Crédito de Rappel</span>"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.external_layout_bubble
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.external_layout_folder
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.external_layout_standard
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.external_layout_wave
+msgid ""
+"<span class=\"text-center\">Page: <span class=\"page\"/> / <span "
+"class=\"topage\"/></span>"
+msgstr ""
+"<span class=\"text-center\">Página: <span class=\"page\"/> / <span "
+"class=\"topage\"/></span>"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "<span>Subtotal (without tax)</span>"
+msgstr "<span>Subtotal (sem impostos)</span>"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "<strong>Advance</strong>"
+msgstr "<strong>Adiantamento</strong>"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_custom_invoice_document
+msgid "<strong>Company address:</strong>"
+msgstr "<strong>Endereço da Empresa:</strong>"
+
+#. module: l10n_pt_ao
+#. odoo-javascript
+#: code:addons/l10n_pt_ao/static/src/js/account_move_form_controller.js:0
+msgid "Posting document... Please wait."
+msgstr "A publicar documento... Por favor aguarde."
+
+#. module: l10n_pt_ao
+#. odoo-javascript
+#: code:addons/l10n_pt_ao/static/src/js/account_move_form_controller.js:0
+msgid "Do not close this window."
+msgstr "Não feche esta janela."
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "<strong>Discount</strong>"
+msgstr "<strong>Desconto</strong>"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_custom_invoice_document
+msgid "<strong>Loading Address:</strong>"
+msgstr "<strong>Endereço de Carga:</strong>"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_custom_invoice_document
+msgid "<strong>Shipping address:</strong>"
+msgstr "<strong>Endereço de Descarga:</strong>"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "<strong>Subtotal</strong>"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "A Line Description was shortened to 200 characters."
+msgstr "A descrição de uma ou mais linhas foi reduzida a 200 caracteres."
+
+#. module: l10n_pt_ao
+#: model:payment.mechanism,name:l10n_pt_ao.atm
+msgid "ATM"
+msgstr "Multibanco"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_account
+msgid "Account"
+msgstr "Conta"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_document_type
+msgid "Account Document Type"
+msgstr "Tipo de Documento"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_group
+msgid "Account Group"
+msgstr "Grupo Contabilístico"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_account.py:0
+msgid "Account Group code must be different of Account code."
+msgstr "O Código do Grupo deve ser diferente do Código da Conta."
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_move_reversal
+msgid "Account Move Reversal"
+msgstr "Reversão de Movimento Contabilístico"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_move_send
+msgid "Account Move Send"
+msgstr "Envio de Movimento de Conta"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_move_send_wizard
+msgid "Account Move Send Wizard"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_payment_line
+msgid "Account Payment Line"
+msgstr "Linha de Pagamento"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_move_reversal__rappel_account_id
+msgid "Account used for rappel"
+msgstr "Conta utilizada para rappel"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/res_partner.py:0
+msgid "Action Forbidden. This contact is locked and can't be unlocked!"
+msgstr ""
+"Ação Proibida. Este Contacto está bloqueado e não pode ser desbloqueado!"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/product_product.py:0
+msgid "Action Forbidden. This product is locked and can't be unlocked!"
+msgstr "Ação Proibida. Este Artigo está bloqueado e não pode ser desbloqueado!"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_document_type__active
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_payment_mechanism__active
+msgid "Active"
+msgstr "Ativo"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.view_account_payment_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.view_account_payment_register_form
+msgid "Add a note..."
+msgstr "Adicione uma nota..."
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "Addresses"
+msgstr "Endereços"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_company__allowed_negative_products
+msgid "Allowed Negative Products"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_partner__allows_self_billing
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_users__allows_self_billing
+msgid "Allows Self Billing"
+msgstr "Permitir Autofaturação"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move_reversal__amount
+msgid "Amount"
+msgstr "Valor"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__amount
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "Amount Paid"
+msgstr "Valor Pago"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__amount_company
+msgid "Amount in Company Currency"
+msgstr "Valor na Moeda da Empresa"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/wizard/account_move_reversal.py:0
+msgid "Amount must a positive value."
+msgstr "O valor deve ser positivo."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/wizard/account_move_reversal.py:0
+msgid ""
+"Amount must be lower than the total untaxed amount of the refunded invoices."
+msgstr ""
+"O valor deve ser inferior ao valor sem impostos das faturas a creditar."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid ""
+"An error occurred when computing the inalterability. A gap has been detected "
+"in the sequence."
+msgstr ""
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid ""
+"An error occurred when computing the inalterability. All entries have to be "
+"reconciled."
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.document_type_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.payment_mechanism_form_view
+msgid "Archived"
+msgstr "Arquivado"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/wizard/account_move_reversal.py:0
+msgid "Archived Taxes have been eliminated from lines."
+msgstr "Impostos Arquivados foram eliminados das Linhas."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__available_document_type_ids
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__available_document_type_ids
+msgid "Available Document Type"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__available_payment_method_line_ids
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__available_payment_method_line_ids
+msgid "Available Payment Method Line"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__balance
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "Balance"
+msgstr "Saldo"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_base
+msgid "Base"
+msgstr ""
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid ""
+"Before creating self billing invoices, please configure self billing "
+"journals."
+msgstr ""
+"Antes de criar faturas de autofaturação, deve configurar diários de "
+"autofaturação."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_product__cn_code
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_template__cn_code
+msgid "CNCode"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.warning_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_warning_wizard__cancel_method
+msgid "Cancel Method"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_warning_wizard__cancel_visibility
+msgid "Cancel Visibility"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "Cancelled"
+msgstr "Anulado"
+
+#. module: l10n_pt_ao
+#: model:payment.mechanism,name:l10n_pt_ao.cash
+msgid "Cash"
+msgstr "Numerário"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_document_type__category
+msgid "Category"
+msgstr "Categoria"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_journal.py:0
+msgid "Certified Bank/Cash Journals require Lock Posted Entries with Hash."
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__l10n_cert
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__l10n_cert
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_journal__l10n_cert
+msgid "Certified Journal"
+msgstr "Diário Certificado"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_journal.py:0
+msgid "Certified Sales Journals require Lock Posted Entries with Hash."
+msgstr ""
+"Diários de Venda Certificados requerem o Bloquear Registos Lançados com Hash."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_journal.py:0
+msgid "Certified Sales Journals require refund sequence."
+msgstr "Os Diários de Vendas Certificados exigem sequência de reembolso."
+
+#. module: l10n_pt_ao
+#: model:payment.mechanism,name:l10n_pt_ao.check
+msgid "Check"
+msgstr "Cheque"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_group__child_ids
+msgid "Child Groups"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__city
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_company__city
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_partner__city
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_users__city
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "City"
+msgstr "Cidade"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.warning_wizard_form
+msgid "Close"
+msgstr "Fechar"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_warning_wizard__close_visibility
+msgid "Close Visibility"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_document_type__code
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_status_type__code
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_payment_mechanism__code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_group__code_size
+msgid "Code Size"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_product_product__cn_code
+#: model:ir.model.fields,help:l10n_pt_ao.field_product_template__cn_code
+msgid ""
+"Combined Nomenclature of the European Community and is an 8-digit product "
+"classification system used in export declarations in the EU"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__company_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_status_mixin__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__company_currency_id
+msgid "Company Currency"
+msgstr "Moeda"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_company__company_registry
+msgid "Company ID"
+msgstr "Registo Comercial"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_company__name
+msgid "Company Name"
+msgstr "Nome da Empresa"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/res_company.py:0
+msgid ""
+"Company Registry is invalid. Must be 9 digits (usually matches NIF). E.g., "
+"\"531541223\""
+msgstr ""
+"Registo comercial inválido. Deve ter 9 dígitos (geralmente corresponde ao "
+"NIF). Exemplo: \"531541223\""
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_res_config_settings
+msgid "Config Settings"
+msgstr "Definições de Configuração"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.warning_wizard_form
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_warning_wizard__confirm_visibility
+msgid "Confirm Visibility"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_document_type__country_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__country_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_status_type__country_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_company__country_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_partner__country_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_users__country_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_tax_report_refund_type__country_id
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "Country"
+msgstr "País"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_journal__country_code
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_tax_report_refund_type__country_code
+msgid "Country Code"
+msgstr "Código do País"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.actions.act_window,help:l10n_pt_ao.account_move_action_self_billing
+msgid "Create a self-billing bill"
+msgstr "Crie uma fatura de autofaturação"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.actions.act_window,help:l10n_pt_ao.account_move_action_self_billing
+msgid ""
+"Create invoices, register payments and keep track of the discussions with "
+"your vendors."
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_document_type__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_status_type__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_payment_mechanism__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_tax_report_refund_type__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_warning_wizard__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_document_type__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_status_type__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_payment_mechanism__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_tax_report_refund_type__create_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_warning_wizard__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: l10n_pt_ao
+#: model:payment.mechanism,name:l10n_pt_ao.credit_card
+msgid "Credit Card"
+msgstr "Cartão de Crédito"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "Credit Notes"
+msgstr "Notas de Crédito"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_res_currency
+msgid "Currency"
+msgstr "Moeda"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_product__property_account_credit_note_customer_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_template__property_account_credit_note_customer_id
+msgid "Customer Credit Notes Account"
+msgstr "Conta Notas de Crédito de Cliente"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move_reversal__rappel_taxes_id
+msgid "Customer Taxes"
+msgstr "Impostos de Venda"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_product__is_customs_detailed
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_template__is_customs_detailed
+msgid "Customs Details"
+msgstr "Informação Aduaneira"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__invoice_date
+msgid "Date"
+msgstr "Data"
+
+#. module: l10n_pt_ao
+#: model:payment.mechanism,name:l10n_pt_ao.debit_card
+msgid "Debit Card"
+msgstr "Cartão de Débito"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_res_config_settings__rappel_default_product_id
+msgid "Default product used for rappel credit notes"
+msgstr "Produto predefinido utilizado para notas de crédito de rappel"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.warning_wizard_form
+msgid "Delete"
+msgstr "Eliminar"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_payment_mechanism__sequence
+msgid "Determine the display order"
+msgstr "Determine a ordem de apresentação"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__display_company_amount
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__display_company_amount
+msgid "Display Company Amount"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_document_type__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_status_type__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_payment_mechanism__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_tax_report_refund_type__display_name
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_warning_wizard__display_name
+msgid "Display Name"
+msgstr "Nome"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.res_config_settings_view_form
+msgid "Display tax breakdown from invoices on payment receipts"
+msgstr "Mostrar discriminação de impostos das faturas nos recibos de pagamento"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "Do you wish to keep, delete or cancel the payment?"
+msgstr "Pretende manter, eliminar ou cancelar o pagamento?"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__doc_printed
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__doc_printed
+msgid "Doc Printed"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_document_address
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__document_address_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__document_address_id
+msgid "Document Address"
+msgstr "Morada de Documento"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_l10n_pt_ao_account_mixin
+msgid "Document Certification Mixin"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__document_commercial_address_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__document_commercial_address_id
+msgid "Document Commercial Partner Address"
+msgstr "Morada da Entidade Comercial"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__pt_arxi_status_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__pt_arxi_status_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_status_mixin__pt_arxi_status_id
+msgid "Document Status"
+msgstr "Status do Documento"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_document_status_mixin
+msgid "Document Status Mixin"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__pt_arxi_validated_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__pt_arxi_validated_date
+msgid "Document System Entry Date"
+msgstr "Data de Entrada no Sistema"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__document_type_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__document_type_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_journal__document_type_id
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "Document Type"
+msgstr "Tipo de Documento"
+
+#. module: l10n_pt_ao
+#: model:ir.model.constraint,message:l10n_pt_ao.constraint_account_document_type_code_uniq
+msgid "Document Type Code must be Unique!"
+msgstr "O Código de Documento deve ser Único!"
+
+#. module: l10n_pt_ao
+#: model:ir.actions.act_window,name:l10n_pt_ao.account_document_type_action
+#: model:ir.ui.menu,name:l10n_pt_ao.account_document_type_menu
+msgid "Document Types"
+msgstr "Tipos de Documento"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_journal__source_billing__p
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__document_status_mixin__source_billing__p
+msgid "Document issued in the system"
+msgstr "Documento emitido no sistema"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_journal__source_billing__m
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_move__source_billing__m
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_payment__source_billing__m
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__at_transport_mixin__source_billing__m
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__document_status_mixin__source_billing__m
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__pt_transport__source_billing__m
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__stock_picking__source_billing__m
+msgid "Document issued manually or originating from recuperation"
+msgstr "Documento emitido manualmente ou de origem em recuperação"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "Document name must be unique per company."
+msgstr "O nome do Documento deve ser único por empresa."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__email
+msgid "Email"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_mail_compose_message
+msgid "Email composition wizard"
+msgstr "Assistente de composição de e-mail"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.res_config_settings_view_form
+msgid "Enable to allow Selfbilling Invoices."
+msgstr "Ativar para Permitir Faturas de Autofaturação."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "Error parsing report."
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__product_template__type__excise_duty
+msgid "Excise Duty Code"
+msgstr "Imposto Especial de Consumo"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__external_invoice_name
+msgid "External Invoice Name"
+msgstr "Fatura"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__fax
+msgid "Fax"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__at_sent
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__at_sent
+msgid "File Sent to TA"
+msgstr "Ficheiro enviado à AT"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_journal__country_id
+msgid "Fiscal Country"
+msgstr "País Fiscal"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__product_template__type__parafiscal_expenses
+msgid "Fiscal and parafiscal expenses"
+msgstr "Despesas fiscais e parafiscais"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move_reversal__fixed_amount
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_move_reversal__rappel_method__fixed
+msgid "Fixed Amount"
+msgstr "Valor Fixo"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_product_product__type
+#: model:ir.model.fields,help:l10n_pt_ao.field_product_template__type
+msgid ""
+"Goods are tangible materials and merchandise you provide.\n"
+"A service is a non-material product you provide."
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__has_required_document_type
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__has_required_document_type
+msgid "Has Required Document Type"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__hash_control
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__hash_control
+msgid "Hash Control"
+msgstr "Chave de Controlo"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__hide_payment_method_line
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__hide_payment_method_line
+msgid "Hide Payment Method Line"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_print_conf_mixer__id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_company_print_line__id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_partner__id
+msgid "ID"
+msgstr "Id."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_bank_statement_line__l10n_cert
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_journal__l10n_cert
+msgid ""
+"If active: will be used for legal invoicing (invoices, debit/credit notes). "
+"If not, it will be used to register accounting entries not related to "
+"invoicing legal documents. For Example: Receipts, Tax Payments, Register "
+"journal entries"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_journal__restrict_mode_hash_table
+msgid ""
+"If ticked, when an entry is posted, we retroactively hash all moves in the "
+"sequence from the entry back to the last hashed entry. The hash can also be "
+"performed on demand by the Secure Entries wizard."
+msgstr ""
+"Se marcado, o lançamento contábil ou fatura recebe um hash assim que é "
+"lançado e não pode mais ser modificado."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_product__imported_default_code
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_template__imported_default_code
+msgid "Imported Default Code"
+msgstr "Referência Importada"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__imported_hash
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__imported_hash
+msgid "Imported Hash"
+msgstr "Hash Importada"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__pt_arxi_inalterable_hash
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__pt_arxi_inalterable_hash
+msgid "Inalterability Hash"
+msgstr "Hash de inalterabilidade"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move_reversal__rappel_account_id
+msgid "Income Account"
+msgstr "Conta de Receitas"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_journal__source_billing__i
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_move__source_billing__i
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_payment__source_billing__i
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__at_transport_mixin__source_billing__i
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__document_status_mixin__source_billing__i
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__pt_transport__source_billing__i
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__stock_picking__source_billing__i
+msgid "Integrated document issued on another system"
+msgstr "Documento integrado emitido noutro sistema"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_product__default_code
+msgid "Internal Reference"
+msgstr "Referência Interna"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__invoice_id
+msgid "Invoice"
+msgstr "Fatura"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__external_invoice_date
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "Invoice Date"
+msgstr "Data da Fatura"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "Invoice Number"
+msgstr "Número da Fatura"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__tax_totals_company
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__tax_totals_company
+msgid "Invoice Totals Company Currency"
+msgstr ""
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "Invoice date is behind last invoice date."
+msgstr "Data da Fatura não pode ser anterior à Data da última Fatura."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "Invoice due Date cannot be behind Invoice Date."
+msgstr "Data de Vencimento não pode ser anterior à Data da Fatura."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_document_type__category__invoicing
+msgid "Invoicing"
+msgstr "Faturação"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_method_line__is_payment_mechanism_required
+msgid "Is Payment Mechanism Required"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__is_rappel
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__is_rappel
+msgid "Is Rappel"
+msgstr "Rappel"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__pt_arxi_is_self_billing
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__pt_arxi_is_self_billing
+msgid "Is Self Billing"
+msgstr "É de Autofaturação"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_document_type__is_refund
+msgid "Is a Refund Type"
+msgstr "É uma Retificação"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__is_self_paid
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__is_self_paid
+msgid "Is a Self Paid Document"
+msgstr "É uma Fatura-Recibo"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_journal
+msgid "Journal"
+msgstr "Diário"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_move
+msgid "Journal Entry"
+msgstr "Lançamento em Diário"
+
+#. module: l10n_pt_ao
+#. odoo-javascript
+#: code:addons/l10n_pt_ao/static/src/js/account_payment_field.js:0
+msgid "Journal Entry Info"
+msgstr "Informação do Lançamento em Diário"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_move_line
+msgid "Journal Item"
+msgstr "Item no Diário"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__journal_source_billing
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__journal_source_billing
+msgid "Journal Source Billing"
+msgstr "Origem de Faturação do Diário"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.view_account_journal_form
+msgid "Journal Type"
+msgstr "Tipo de Diário"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.warning_wizard_form
+msgid "Keep"
+msgstr "Manter"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_warning_wizard__keep_visibility
+msgid "Keep Visibility"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_product_product__property_account_credit_note_customer_id
+#: model:ir.model.fields,help:l10n_pt_ao.field_product_product__property_account_credit_note_supplier_id
+#: model:ir.model.fields,help:l10n_pt_ao.field_product_template__property_account_credit_note_customer_id
+#: model:ir.model.fields,help:l10n_pt_ao.field_product_template__property_account_credit_note_supplier_id
+msgid ""
+"Keep this field empty to use the default value from the product category."
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_document_type__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_status_type__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_payment_mechanism__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_tax_report_refund_type__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_warning_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Última Atualização por"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_document_type__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_status_type__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_payment_mechanism__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_tax_report_refund_type__write_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_warning_wizard__write_date
+msgid "Last Updated on"
+msgstr "Última Atualização em"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_bank_statement_line__tax_point_date
+msgid "Leave empty to use the invoice date"
+msgstr "Deixe vazio para usar a data da fatura"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__line_warning
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__line_warning
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move_line__line_warning
+msgid "Line Warning"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.res_config_settings_view_form
+msgid "Line subtotals tax display"
+msgstr "Apresentação de Subtotal de Impostos"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "Loading Address"
+msgstr "Endereço de Carga"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__loading_address_city
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__loading_address_city
+msgid "Loading Address City"
+msgstr "Cidade do Endereço de Carga"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__loading_address_country_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__loading_address_country_id
+msgid "Loading Address Country"
+msgstr "País do Endereço de Carga"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__loading_address_street
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__loading_address_street
+msgid "Loading Address Street"
+msgstr "Rua do Endereço de Carga"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__loading_address_street2
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__loading_address_street2
+msgid "Loading Address Street2"
+msgstr "Rua2 do Endereço de Carga"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__loading_address_zip
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__loading_address_zip
+msgid "Loading Address Zip"
+msgstr "Código Postal do Endereço de Carga"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__product_product__state__locked
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__product_template__state__locked
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_partner__state__locked
+msgid "Locked"
+msgstr "Bloqueada"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_ir_actions_report__protected
+msgid "Make rule editable only for superuser"
+msgstr "Tornar esta regra editável apenas para o super utilizador"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_bank_statement_line__payment_method_line_id
+msgid ""
+"Manual: Pay or Get paid by any method outside of Odoo.\n"
+"Payment Acquirers: Each payment acquirer has its own Payment Method. Request "
+"a transaction on/to a card thanks to a payment token saved by the partner "
+"when buying or subscribing online.\n"
+"Check: Pay bills by check and print it from Odoo.\n"
+"Batch Deposit: Collect several customer checks at once generating and "
+"submitting a batch deposit to your bank. Module account_batch_payment is "
+"necessary.\n"
+"SEPA Credit Transfer: Pay in the SEPA zone by submitting a SEPA Credit "
+"Transfer file to your bank. Module account_sepa is necessary.\n"
+"SEPA Direct Debit: Get paid in the SEPA zone thanks to a mandate your "
+"partner will have granted to you. Module account_sepa is necessary.\n"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__mobile
+msgid "Mobile"
+msgstr "Telemóvel"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_warning_wizard__model_method
+msgid "Model Method"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_warning_wizard__model_name
+msgid "Model Name"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_warning_wizard__msg
+msgid "Msg"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_document_type__name
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__name
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_status_type__name
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_payment_mechanism__name
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_product__name
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_template__name
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_tax_report_refund_type__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__needs_separate_comment_report
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__needs_separate_comment_report
+msgid "Needs Separate Comment Report"
+msgstr "Necessário Report de Observações"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid ""
+"No journal could be found in company %(company_name)s for any of those "
+"types: %(journal_types)s"
+msgstr ""
+"Nenhum diário encontrado para a empresa %(company_name)s para qualquer dos "
+"seguintes tipos: %(journal_types)s"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__non_cert_warning
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__non_cert_warning
+msgid "Non Cert Warning"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_register__note
+msgid "Note"
+msgstr "Nota"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__product_product__state__open
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__product_template__state__open
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_partner__state__open
+msgid "Open"
+msgstr "Desbloqueado"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__original_amount
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "Original Amount"
+msgstr "Valor Original"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__product_template__type__other
+#: model:payment.mechanism,name:l10n_pt_ao.other
+msgid "Other"
+msgstr "Outro"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.external_layout_striped
+msgid ""
+"Page:\n"
+"                    <span class=\"page\"/>\n"
+"                    of\n"
+"                    <span class=\"topage\"/>"
+msgstr ""
+"Página:\n"
+"                    <span class=\"page\"/>\n"
+"                    de\n"
+"                    <span class=\"topage\"/>"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.external_layout_bold
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.external_layout_boxed
+msgid "Page: <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr "Página: <span class=\"page\"/> / <span class=\"topage\"/>"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__parent_name
+msgid "Parent Name"
+msgstr "Nome do Contacto Principal"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_partner__state
+msgid "Partner State"
+msgstr "Estado do Contacto"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_payment_register
+msgid "Pay"
+msgstr "Registar Pagamento"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_payment.py:0
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__payment_id
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "Payment"
+msgstr "Pagamento"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__payment_currency_id
+msgid "Payment Currency"
+msgstr "Moeda do Pagamento"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__payment_journal_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__payment_journal_id
+msgid "Payment Journal"
+msgstr "Diário de Pagamento"
+
+#. module: l10n_pt_ao
+#: model:ir.actions.act_window,name:l10n_pt_ao.payment_mechanism_action
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_method_line__payment_mechanism_id
+#: model:ir.ui.menu,name:l10n_pt_ao.menu_payment_mechanism_action
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.payment_mechanism_form_view
+msgid "Payment Mechanism"
+msgstr "Meio de Pagamento"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__payment_method_line_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__payment_method_line_id
+msgid "Payment Method"
+msgstr "Método de Pagamento"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_payment_method_line
+msgid "Payment Methods"
+msgstr "Métodos de Pagamento"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_payment_mechanism
+msgid "Payment Mode"
+msgstr "Meio de Pagamento"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.res_config_settings_view_form
+msgid "Payment Receipt Settings"
+msgstr "Definições de Recibo de Pagamento"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_payment
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_document_type__category__payments
+msgid "Payments"
+msgstr "Pagamentos"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__pdf_rendered
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__pdf_rendered
+msgid "Pdf Rendered"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_move_reversal__rappel_method__percentage
+msgid "Percentage"
+msgstr "Percentagem"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__phone
+msgid "Phone"
+msgstr "Telefone"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "Please change archived taxes first."
+msgstr "Por favor altere os impostos arquivados."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_register__posting_date
+msgid "Posting Date"
+msgstr "Data de Emissão"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "Posting Date:"
+msgstr "Data de Emissão:"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_payment.py:0
+msgid "Posting date is behind last document posting date: %s"
+msgstr ""
+"A Data de Emissão deve ser posterior à Data de Emissão do último documento: "
+"%s"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_line__previous_payment
+msgid "Previous Payment"
+msgstr "Pagamento Anterior"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "Previous Receipt"
+msgstr "Recebimento Anterior"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_product_template
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move_reversal__product_id
+msgid "Product"
+msgstr "Artigo"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_product__type
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_template__type
+msgid "Product Type"
+msgstr "Tipo"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_product_product
+msgid "Product Variant"
+msgstr "Variante do Artigo"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.res_config_settings_view_form
+msgid "Product used for rappel credit notes"
+msgstr "Artigo utilizado para notas de crédito de rappel"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__is_proof_delivery
+msgid "Proof of Transport"
+msgstr "Fatura como Documento de Transporte"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_ir_actions_report__protected
+msgid "Protected"
+msgstr "Protegido"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move_reversal__is_rappel
+msgid "Rappel"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move_reversal__rappel_method
+msgid "Rappel Method"
+msgstr "Método de Rappel"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_config_settings__rappel_default_product_id
+msgid "Rappel Product"
+msgstr "Artigo de Rappel"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__rappel_reversed_move_ids
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__rappel_reversed_move_ids
+msgid "Rappel Reversed Move"
+msgstr ""
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/wizard/account_move_reversal.py:0
+msgid "Rappel from %(start_date)s to %(end_date)s"
+msgstr "Rappel de %(start_date)s a %(end_date)s"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__rate_string
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__rate_string
+msgid "Rate String"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__reason
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__reason
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_status_mixin__reason
+msgid "Reason"
+msgstr "Motivo"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_bank_statement_line__reason
+msgid "Reason for the status update"
+msgstr "Razão que levou à alteração do estado"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_payment.py:0
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "Receipt"
+msgstr "Recibo"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.view_account_payment_tree
+msgid "Receipt Number"
+msgstr "Número do Recibo"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_partner__ref
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_users__ref
+msgid "Reference"
+msgstr "Referência"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move_line__refund_line_ids
+msgid "Refund Lines"
+msgstr "Linhas de Retificação"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__tax_report_refund_type_customer
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__tax_report_refund_type_customer
+msgid "Refund Type Customer"
+msgstr "Tipo de Retificação Cliente"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__tax_report_refund_type_supplier
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__tax_report_refund_type_supplier
+msgid "Refund Type Supplier"
+msgstr "Tipo de Retificação Fornecedor"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move_line__refunded_line_id
+msgid "Refunded Line"
+msgstr "Linhas Retificadas"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_resequence_wizard
+msgid "Remake the sequence of Journal Entries."
+msgstr "Refaça a sequência de lançamentos de diário."
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_ir_actions_report
+msgid "Report Action"
+msgstr "Relatar Ação"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_payment_register__required_payment_mechanism
+msgid "Required Payment Mechanism"
+msgstr "Meio de Pagamento Obrigatório"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "Reset to Draft"
+msgstr "Mudar para Rascunho"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/wizard/account_move_reversal.py:0
+msgid "Reversal of: %(name)s, %(reason)s"
+msgstr "Reversão de: %(name)s, %(reason)s"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/wizard/account_move_reversal.py:0
+msgid "Reversal of: %s"
+msgstr "Reversão de: %s"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/wizard/account_move_reversal.py:0
+msgid "Reverse Moves"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_document_type__category__sales
+msgid "Sales"
+msgstr "Vendas"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_journal__restrict_mode_hash_table
+msgid "Secure Posted Entries with Hash"
+msgstr "Bloquear Registos Lançados com Hash"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.view_account_journal_search_inherit
+msgid "Self-Billing"
+msgstr "Autofaturação"
+
+#. module: l10n_pt_ao
+#: model:ir.actions.act_window,name:l10n_pt_ao.account_move_action_self_billing
+#: model:ir.ui.menu,name:l10n_pt_ao.self_billing_menu
+msgid "Self-Billing Invoices"
+msgstr "Faturas de Autofaturação"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_journal__self_billing_partner
+msgid "Self-Billing Partner"
+msgstr "Contacto de Autofaturação"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_config_settings__group_show_selfbilling
+msgid "Selfbilling"
+msgstr "Autofaturação"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_document_type__sequence
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_payment_mechanism__sequence
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_tax_report_refund_type__sequence
+msgid "Sequence"
+msgstr "Sequência"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "Shipping Departure Date cannot be behind Invoice Date."
+msgstr "Data e Hora de Carga não pode ser anterior à Data da Fatura."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "Shipping info is incomplete"
+msgstr "A informação de expedição está incompleta"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_config_settings__line_subtotals_tax_selection
+msgid "Show Line Subtotals Tax Display"
+msgstr "Mostrar Subtotal de Linhas"
+
+#. module: l10n_pt_ao
+#: model:res.groups,name:l10n_pt_ao.group_show_selfbilling_invoices
+msgid "Show Selfbilling Invoices"
+msgstr "Mostrar Faturas de Autofaturação"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_company__show_payment_tax_details
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_config_settings__show_payment_tax_details
+msgid "Show Tax Details on Payment Receipts"
+msgstr "Mostrar Detalhes de Impostos nos Recibos de Pagamento"
+
+#. module: l10n_pt_ao
+#: model:res.groups,name:l10n_pt_ao.group_show_transaction_date
+msgid "Show transaction date in payment reports"
+msgstr "Mostrar a data de transação nos relatórios de pagamento"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_tax_report_refund_type__is_customer
+msgid "Shows in Customer Refunds"
+msgstr "Mostrar em Retificações de Clientes"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_tax_report_refund_type__is_vendor
+msgid "Shows in Vendor Refunds"
+msgstr "Mostrar em Retificações de Fornecedor"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__source_billing
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__source_billing
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_journal__source_billing
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_status_mixin__source_billing
+msgid "Source Billing"
+msgstr "Origem da Faturação"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_journal.py:0
+msgid ""
+"Source Billing \"Integrated document issued on another system\" is not "
+"compatible with Certified Journal or Lock Posted Entries with Hash."
+msgstr ""
+"A Origem da Faturação \"Documento integrado emitido em outro sistema\" não "
+"permite Diário Certificado ou Bloquear Registos Lançados com Hash."
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_staging_warning
+msgid "Staging"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__loading_address_state_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__loading_address_state_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__state_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_product__state
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_template__state
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "Status"
+msgstr "Estado"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__pt_arxi_status_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__pt_arxi_status_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_status_mixin__pt_arxi_status_date
+msgid "Status Date"
+msgstr "Data da Alteração de Status"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_document_status_type
+msgid "Status Type"
+msgstr "Tipo de Status"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_document_type__category__stock
+msgid "Stock"
+msgstr "Inventário"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/res_company.py:0
+msgid "Storno Accounting can not be activated in PT or AO companies."
+msgstr "Estorno da Contabilidade não pode ser ativa em empresas PT ou AO."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__street
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_company__street
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_partner__street
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_users__street
+msgid "Street"
+msgstr "Rua"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "Street 2..."
+msgstr "Complemento"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "Street..."
+msgstr "Rua..."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__street2
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_company__street2
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_partner__street2
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_users__street2
+msgid "Street2"
+msgstr "Rua 2"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_product__property_account_credit_note_supplier_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_template__property_account_credit_note_supplier_id
+msgid "Supplier Credit Notes Account"
+msgstr "Conta Notas de Crédito de Fornecedor"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "System DateTime is behind last invoice create date."
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_config_settings__line_subtotals_tax_selection__tax_excluded
+msgid "Tax Excluded"
+msgstr "Subtotal"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_tax_group
+msgid "Tax Group"
+msgstr "Grupo de Imposto"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_config_settings__line_subtotals_tax_selection__tax_included
+msgid "Tax Included"
+msgstr "Total"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__tax_point_date
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__tax_point_date
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "Tax Point Date"
+msgstr "Data de Disponib. dos Bens"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "Tax Point Date cannot be behind Invoice Date."
+msgstr ""
+"Data de Disponibilização dos Bens não pode ser anterior à Data da Fatura."
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_tax_report_refund_type
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move_reversal__tax_report_refund_type
+msgid "Tax Report Refund Type"
+msgstr "Tipo de Retificação"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move_reversal__tax_report_refund_type_domain_ids
+msgid "Tax Report Refund Type Domain"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.actions.act_window,name:l10n_pt_ao.tax_report_refund_type_action
+#: model:ir.ui.menu,name:l10n_pt_ao.menu_tax_report_refund_type_action
+msgid "Tax Report Refund Types"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_move_reversal__rappel_taxes_id
+msgid "Taxes used for rappel"
+msgstr "Impostos utilizados em rappel"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_bank_statement_line__hide_payment_method_line
+msgid ""
+"Technical field used to hide the payment method if the selected journal has "
+"only one available which is 'manual'"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_terms_and_conditions
+msgid "Terms &amp; Conditions"
+msgstr "Termos e Condições"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_journal__country_code
+#: model:ir.model.fields,help:l10n_pt_ao.field_tax_report_refund_type__country_code
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+"O código ISO do país em dois caracteres.\n"
+"Pode utilizar este campo para procura rápida."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "The Vendor must match the partner selected in the journal."
+msgstr "O Vendedor deve ser o mesmo que o selecionado neste diário."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_journal__country_id
+msgid "The country to use the tax reports from for this company"
+msgstr ""
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/res_currency.py:0
+msgid ""
+"The currency code \"%s\" is not valid. Please use a valid ISO 4217 currency "
+"code."
+msgstr ""
+"O código de moeda \"%s\" não é válido. Por favor, utilize um código ISO 4217 "
+"válido."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "The discount field must be a value between 0 and 100."
+msgstr "O desconto deve estar definido entre 0 e 100."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_move_reversal__fixed_amount
+msgid "The fixed amount to be refunded, taxes excluded."
+msgstr "O valor fixo a ser retificado, excluindo impostos."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_payment.py:0
+msgid "The payment date cannot be greater than the posting date."
+msgstr "A data de pagamento não pode ser maior que a data de lançamento."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_payment_line__payment_currency_id
+msgid "The payment's currency."
+msgstr "A Moeda do Pagamento."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_move_reversal__amount
+msgid "The percentage of amount to be refunded, taxes excluded."
+msgstr "A percentagem do valor a ser retificado, excluindo impostos."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_res_company__company_registry
+msgid ""
+"The registry number of the company. Use it if it is different from the Tax "
+"ID. It must be unique across all partners of a same country"
+msgstr ""
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid ""
+"The selected partner doesn't have a commercial entity with a reference code."
+msgstr "O contacto selecionado não tem uma Referência Interna"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "The selected product does not have an Internal Reference."
+msgstr "O artigo selecionado não tem uma Referência Interna."
+
+#. module: l10n_pt_ao
+#: model:ir.model.constraint,message:l10n_pt_ao.constraint_document_status_type_code_uniq
+msgid "The status code must be unique per country!"
+msgstr "O Código de Estado deve ser único por País!"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "The total refunded value is bigger than the refunded line value: %s."
+msgstr "O valor retificado é superior ao valor já retificado na linha: %s."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "The unit price is bigger than the original unit price. Line: %s."
+msgstr "O preço unitário é superior ao preço unitário original. Linha: %s"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "There are not any available lines to refund."
+msgstr "Não existem linhas disponíveis para creditar."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/ir_actions_report.py:0
+msgid "This action has one or more draft records."
+msgstr "Esta ação tem um ou mais registos em rascunho."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "This action isn't available for this document."
+msgstr "Esta ação não está disponível para este documento."
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "This document is not an invoice."
+msgstr "Este documento não serve de fatura."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_payment_register__posting_date
+msgid "This is the date when the document was posted."
+msgstr "Esta é a data da emissão do documento."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid ""
+"This journal has invoices without certification. Please create a new journal "
+"for certified invoices"
+msgstr ""
+"Este diário tem faturas não certificadas. Por favor crie um novo Diário para "
+"faturas certificadas."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid ""
+"This move could not be locked either because some move with the same "
+"sequence prefix has a higher number. You may need to resequence it."
+msgstr ""
+"Este lançamento não pode ser bloqueado porque existe outro lançamento com o "
+"mesmo prefixo de sequência com um número superior. Pode ser necessário "
+"refazer a sequência."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/ir_actions_report.py:0
+msgid ""
+"This report is not available for this type of Payments. You should print the "
+"Invoice instead."
+msgstr ""
+"Este relatório não está disponível para Pagamentos de Faturas-Recibo ou "
+"Simplificadas. Deve imprimir apenas a Fatura."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/ir_actions_report.py:0
+msgid "This report is only available in PT and AO companies."
+msgstr ""
+"Este relatório está apenas disponível para Empresas Portuguesas ou Angolanas."
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "Total ("
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_payment_line__amount_company
+msgid "Total amount in the currency of the company, negative for credit notes."
+msgstr "O valor total na moeda da empresa, negativo para notas de crédito."
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_payment_inherit
+msgid "Transfer"
+msgstr "Transferência"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_product_product__un_number
+#: model:ir.model.fields,help:l10n_pt_ao.field_product_template__un_number
+msgid ""
+"UN numbers (United Nations numbers) are four-digit numbers that identify "
+"hazardous materials"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_product__un_number
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_product_template__un_number
+msgid "UNNumber"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_warning_wizard__unlink_model_name
+msgid "Unlink Model Name"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_warning_wizard__unlink_visibility
+msgid "Unlink Visibility"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_res_users
+msgid "User"
+msgstr "Utilizador"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__user_source_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__user_source_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_status_mixin__user_source_id
+msgid "User Source"
+msgstr "Utilizador Responsável"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__vat
+msgid "Vat"
+msgstr "NIF"
+
+#. module: l10n_pt_ao
+#: model:ir.actions.act_window,name:l10n_pt_ao.warning_wizard_action
+#: model:ir.model,name:l10n_pt_ao.model_warning_wizard
+msgid "Warning Wizard"
+msgstr ""
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+#: code:addons/l10n_pt_ao/models/account_payment.py:0
+#: code:addons/l10n_pt_ao/wizard/account_register_payment.py:0
+msgid "Warning!"
+msgstr "Aviso!"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "We do not accept the usage of document types on receipts yet."
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__website
+msgid "Website"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_res_company__show_payment_tax_details
+msgid ""
+"When enabled, payment receipts will display a breakdown of taxes from the "
+"related invoices, showing subtotal without tax and individual tax amounts."
+msgstr ""
+"Quando ativo, os recibos de pagamento irão mostrar a discriminação dos "
+"impostos, mostrando o subtotal sem impostos e os valores individuais dos "
+"impostos."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_res_config_settings__show_payment_tax_details
+msgid ""
+"When enabled, payment receipts will display a breakdown of taxes from the "
+"related invoices."
+msgstr ""
+"Quando ativo, os recibos de pagamento irão mostrar a discriminação dos "
+"impostos."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid ""
+"When invoicing in a future date, you will only be able to invoice in a date "
+"after that."
+msgstr "Ao faturar numa data futura, apenas poderá faturar depois dessa data."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_payment.py:0
+#: code:addons/l10n_pt_ao/wizard/account_register_payment.py:0
+msgid ""
+"When posting a document in a future date, you will only be able to register "
+"documents after that date."
+msgstr ""
+"Ao emitir um documento numa data futura, só poderá emitir novos documentos "
+"numa data posterior."
+
+#. module: l10n_pt_ao
+#: model:payment.mechanism,name:l10n_pt_ao.wire_transfer
+msgid "Wire Transfer"
+msgstr "Transferência Bancária"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.view_account_payment_form
+msgid "You are using an Odoo Base Journal."
+msgstr "Está a utilizar um Diário Base."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "You can not confirm an invoice without any product lines."
+msgstr "Não é possível emitir faturas sem linhas de artigos."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "You can not create a rappel credit note with other products."
+msgstr "Não é possível criar uma nota de crédito de rappel com outros artigos."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/wizard/account_move_reversal.py:0
+msgid ""
+"You can not create credit notes for different move types in the same journal."
+msgstr ""
+"Não é possível criar notas de crédito para diferentes tipos de movimento no "
+"mesmo diário."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/wizard/account_move_reversal.py:0
+msgid ""
+"You can not create credit notes in a sale journal from non-invoice moves."
+msgstr ""
+"Não é possível criar notas de crédito num diário de venda para movimentos "
+"que não sejam faturas de venda."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "You can not create portuguese credit notes without origin invoices."
+msgstr "Não é possível criar notas de crédito sem documentos de origem"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/res_partner.py:0
+msgid "You can not delete a locked partner"
+msgstr "Não é possível apagar um contacto bloqueado"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/product_product.py:0
+msgid "You can not delete a locked product."
+msgstr "Não é possível apagar um artigo bloqueado."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/res_users.py:0
+msgid "You can not delete a user that created documents. Instead, archive it."
+msgstr "Não é possível eliminar um utilizador que criou documentos."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_payment.py:0
+msgid "You can not duplicate a certified customer payment."
+msgstr "Não é possível duplicar um pagamento de cliente certificado."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "You can not have a document with a total higher than 9999999999999.99"
+msgstr ""
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/product_product.py:0
+msgid "You can not have a product created without an internal reference"
+msgstr "Não é possível criar um artigo sem uma referência interna"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_journal.py:0
+msgid "You can not modify a journal with posted documents."
+msgstr "Não é possível alterar um diário com documentos emitidos."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "You can not post a move while there is an unposted move with a number."
+msgstr ""
+"Não é possível confirmar um Movimento enquanto existir um Movimento com "
+"número por confirmar."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_payment.py:0
+msgid ""
+"You can not post a payment with a date earlier than the date of the "
+"reconciled invoices."
+msgstr ""
+"Não pode lançar um pagamento com uma data anterior à data das faturas "
+"reconciliadas."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_payment.py:0
+msgid ""
+"You can not post a payment without an origin invoice or without payment "
+"lines."
+msgstr ""
+"Não é possível emitir um pagamento sem uma fatura de origem ou sem linhas de "
+"pagamento."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "You can not post invoice documents with negative lines."
+msgstr "Não é possível emitir documentos de faturação com linhas a negativo."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_payment.py:0
+msgid "You can not set a customer payment as draft"
+msgstr "Não é possível passar um pagamento a Cliente para Rascunho"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/wizard/account_resequence.py:0
+msgid "You can not use this action for certified invoices."
+msgstr "Não pode usar esta ação para faturas certificadas."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/ir_actions_report.py:0
+msgid "You can not use this report for certified invoices."
+msgstr "Não pode usar este relatório para faturas certificadas."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid ""
+"You can not validate invoices for a commercial entity without a reference "
+"code."
+msgstr ""
+"Não pode validar faturas de uma entidade comercial sem um código de "
+"referência."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "You can not validate invoices with lines without products."
+msgstr "Não é possível emitir faturas com linhas sem artigos."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "You can not validate invoices with products without Internal Reference."
+msgstr "Não é possível emitir faturas com artigos sem Referência Interna."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/wizard/account_move_reversal.py:0
+msgid ""
+"You can only create rappel credit notes from invoices of the same company."
+msgstr ""
+"Só é possível criar notas de crédito de rappel para faturas da mesma empresa."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/wizard/account_move_reversal.py:0
+msgid ""
+"You can only create rappel credit notes from invoices with the same partner."
+msgstr ""
+"Só é possível criar notas de crédito de rappel para faturas com o mesmo "
+"cliente."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/wizard/account_move_reversal.py:0
+msgid "You can only create rappel credit notes from invoices."
+msgstr "Só é possível criar notas de crédito de rappel de faturas."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_payment.py:0
+msgid "You can only delete a payment line if the payment is in draft state."
+msgstr "Não é possível apagar uma linha de pagamento em rascunho."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/res_currency.py:0
+msgid ""
+"You cannot create new currencies in the Portuguese or Angolan localization. "
+"Please use the existing currencies."
+msgstr ""
+"Não é possível criar novas moedas na localização Portuguesa ou Angolana."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "You cannot delete an item linked to an entry with an inalterable hash."
+msgstr "Não é possível eliminar um item ligado a um lançamento com hash."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_move.py:0
+msgid "You cannot delete journal items belonging to a locked journal entry."
+msgstr "Não é possível eliminar itens pertencentes a lançamentos bloqueados."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/product_product.py:0
+msgid ""
+"You cannot modify the internal reference of a product in posted documents."
+msgstr "Não é possível alterar campos de uma empresa com documentos emitidos"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/product_product.py:0
+msgid ""
+"You cannot modify the name of a product in posted documents in Portuguese "
+"Companies."
+msgstr ""
+"Não é possível alterar o nome de um artigo com documentos emitidos em "
+"empresas Portuguesas."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/res_partner.py:0
+msgid "You cannot modify the reference of a partner with posted documents."
+msgstr ""
+"Não é possível alterar a Referência de um contacto com Documentos emitidos."
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/res_partner.py:0
+msgid "You need to have the following fields to allow selfbilling: %s"
+msgstr "Deve preencher os seguintes campos para permitir autofaturação: %s"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/l10n_pt_ao/models/account_payment.py:0
+msgid ""
+"You should add an Outstanding Account to the payment method to be able to "
+"register this payment."
+msgstr ""
+"Deve adicionar Conta de Pendentes ao método de pagamento para registar este "
+"pagamento."
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "ZIP"
+msgstr "Código Postal"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_document_address__zip
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_partner__zip
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_users__zip
+msgid "Zip"
+msgstr "Código Postal"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_config_settings__partner_ref__1
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_config_settings__product_default_code__1
+msgid "Auto Increment"
+msgstr "Incremento Automático"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.res_config_settings_view_form
+msgid "Choose the internal reference method"
+msgstr "Escolha um método para a referência interna"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.res_config_settings_view_form
+msgid "Choose which sequence to use for automatic partner references"
+msgstr "Escolha que sequência utilizar para referências de contactos"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_config_settings__partner_ref__0
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_config_settings__product_default_code__0
+msgid "Manual"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_config_settings__partner_ref
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.res_config_settings_view_form
+msgid "Partner Reference"
+msgstr "Referência do Contacto"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_config_settings__partner_ref_sequence_id
+msgid "Partner Reference Sequence"
+msgstr "Sequência de Referência do Contacto"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.res_config_settings_view_form
+msgid "Products"
+msgstr "Artigos"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/automatic_refs/models/product_product.py:0
+msgid "The default code of the product must be unique!"
+msgstr "A Referencia Interna de um artigo tem de ser unica!"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/automatic_refs/models/res_partner.py:0
+msgid "The partner reference must be unique per company!"
+msgstr "A Referencia de um Contacto tem de ser unica!"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_invoice_document
+msgid "(art. 36th, n. 5, paragraph f of CIVA)."
+msgstr "(art. 36º, nº 5, alínea f do CIVA)."
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_invoice_document
+msgid ""
+"<br/>\n"
+"                    <strong>Shipping Departure Date:</strong>"
+msgstr ""
+"<br/>\n"
+"                    <strong>Data e hora da Carga:</strong>"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_invoice_document
+msgid "<strong>Gross Weight:&amp;nbsp;</strong>"
+msgstr "<strong>Peso Bruto:&amp;nbsp;</strong>"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_invoice_document
+msgid "<strong>Net Weight:&amp;nbsp;</strong>"
+msgstr "<strong>Peso Líquido:&amp;nbsp;</strong>"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_invoice_document
+msgid "<strong>Number of Parcels:&amp;nbsp;</strong>"
+msgstr "<strong>Número de Volumes:&amp;nbsp;</strong>"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.report_invoice_document
+msgid "Goods and/or services sent or made available to the purchaser at"
+msgstr ""
+"Os bens e/ou serviços faturados foram colocados à disposição do adquirente a"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__gross_weight
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "Gross Weight"
+msgstr "Peso Bruto"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__net_weight
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "Net Weight"
+msgstr "Peso Líquido"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__number_of_parcels
+msgid "Number Of Parcels"
+msgstr "Número De Volumes"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "Number of Parcels"
+msgstr "Número de Volumes"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "Shipping"
+msgstr "Expedição"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__shipping_departure_date
+msgid "Shipping Departure Date"
+msgstr "Data e hora da Carga"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form
+msgid "Shipping Info"
+msgstr "Informação de Expedição"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__show_shipping_info
+msgid "Show Shipping Info"
+msgstr "Informação de Expedição"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_bank_statement_line__weight_uom
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__weight_uom
+msgid "Weight Uom"
+msgstr "UdM do Peso"
+
+#. module: l10n_pt_ao
+#. odoo-python
+#: code:addons/invoice_shipping_info/models/account_move.py:0
+msgid "You can't Post Uncertified Invoices in a PT/AO Company."
+msgstr ""
+"Não é possível publicar Faturas de Cliente não Certificadas em Empresas PT/"
+"AO."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_company_print_line__company_id
+msgid "Branch"
+msgstr "Filial"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_company__print_conf_type__contacts
+msgid "Contacts"
+msgstr "Contactos"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.print_copies_display
+msgid "Copy of the document"
+msgstr "2ª via do documento - Original"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.print_copies_display
+msgid "Copy of the document - Duplicate"
+msgstr "2ª via do documento - Duplicado"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.print_copies_display
+msgid "Copy of the document - Quadruplicate"
+msgstr "2ª via do documento - Quadriplicado"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.print_copies_display
+msgid "Copy of the document - Triplicate"
+msgstr "2ª via do documento - Triplicado"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_company__default_print_copies
+msgid "Default Print Copies"
+msgstr "Cópias de Impressão"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_company__print_conf_type__docs
+msgid "Documents"
+msgstr "Documentos"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_company__print_conf_ids
+msgid "Documents Print Configurations"
+msgstr "Documentos de Configuração de Impressões"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_move__print_copies__2
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_payment__print_copies__2
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__print_conf_mixer__print_copies__2
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__pt_transport__print_copies__2
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_company__default_print_copies__2
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_company_print_line__print_copies_conf__2
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_partner__print_copies__2
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__sale_order__print_copies__2
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__stock_picking__print_copies__2
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.print_copies_display
+msgid "Duplicate"
+msgstr "Duplicado"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_company_print_line__doc_type__account_move
+msgid "Invoices"
+msgstr "Faturas"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.view_partner_form_print_conf_copies
+msgid "Number of copies"
+msgstr "Numero de Copias"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_res_company__default_print_copies
+msgid "Number of copies in each document print by default"
+msgstr "Numero de copias por documento a imprimir por defeito"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_res_company_print_line__print_copies_conf
+msgid "Number of copies in each sale document print"
+msgstr "Numero de copias por documento de venda a imprimir"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_account_bank_statement_line__print_copies
+#: model:ir.model.fields,help:l10n_pt_ao.field_print_conf_mixer__print_copies
+#: model:ir.model.fields,help:l10n_pt_ao.field_res_partner__print_copies
+#: model:ir.model.fields,help:l10n_pt_ao.field_res_users__print_copies
+msgid "Number of copies to print"
+msgstr "Numero de copias a imprimir"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_move__print_copies__1
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_payment__print_copies__1
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__print_conf_mixer__print_copies__1
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__pt_transport__print_copies__1
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_company__default_print_copies__1
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_company_print_line__print_copies_conf__1
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_partner__print_copies__1
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__sale_order__print_copies__1
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__stock_picking__print_copies__1
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.print_copies_display
+msgid "Original"
+msgstr "Original"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.view_company_form_print_conf_copies
+msgid "Print Configuration"
+msgstr "Configuração Impressões"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_print_conf_mixer
+msgid "Print Configuration Mixer"
+msgstr ""
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_company__print_conf_type
+msgid "Print Configuration Type"
+msgstr "Tipo de Configuração de Impressão"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.view_partner_form_print_conf_copies
+msgid "Print Configurations"
+msgstr "Configurações de Impressão"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_move__print_copies
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_print_conf_mixer__print_copies
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_partner__print_copies
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_users__print_copies
+msgid "Print Copies"
+msgstr "Cópias de Impressão"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_company_print_line__print_copies_conf
+msgid "Print Copies Conf"
+msgstr "Conf. Cópias"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.invoice_form_print_conf_copies
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.view_account_payment_form_print_conf_copies
+msgid "Print Settings"
+msgstr "Definições de Impressão"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__print_conf_mixer__print_copies__4
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_company__default_print_copies__4
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_company_print_line__print_copies_conf__4
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_partner__print_copies__4
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.print_copies_display
+msgid "Quadruplicate"
+msgstr "Quadriplicado"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_company_print_line__doc_type__sale_order
+msgid "Quotations"
+msgstr "Orçamentos"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_company_print_line__doc_type__stock_picking
+msgid "Stock Picking"
+msgstr "Transferência"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,help:l10n_pt_ao.field_res_company__print_conf_type
+msgid "Tipo of configuration set to prints copy of documents"
+msgstr "Tipo de Configuração para impressão de Documentos"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_move__print_copies__3
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__account_payment__print_copies__3
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__print_conf_mixer__print_copies__3
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__pt_transport__print_copies__3
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_company__default_print_copies__3
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_company_print_line__print_copies_conf__3
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__res_partner__print_copies__3
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__sale_order__print_copies__3
+#: model:ir.model.fields.selection,name:l10n_pt_ao.selection__stock_picking__print_copies__3
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.print_copies_display
+msgid "Triplicate"
+msgstr "Triplicado"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_res_company_print_line
+msgid "Type of print copies by document"
+msgstr "Tipo de Impressão por Documento"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_res_partner____last_update
+msgid "Last Modified on"
+msgstr "Última Modificação em"
+
+#. module: l10n_pt_ao
+#: code:addons/l10n_pt/restrict_update_company_info/models/res_partner.py:0
+#: code:addons/restrict_update_company_info/models/res_partner.py:0
+#, python-format
+msgid "You cannot edit base fields for a partner record of a company"
+msgstr ""
+"Não é possível editar os campos base de um contacto associado a uma empresa"
+
+#. module: l10n_pt_ao
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao.account_tax_exemption_view_form
+msgid "Add a description..."
+msgstr "Adicione uma descrição..."
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_tax_exemption__description
+msgid "Description"
+msgstr "Descrição"
+
+#. module: l10n_pt_ao
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_tax__exemption_id
+#: model:ir.model.fields,field_description:l10n_pt_ao.field_account_tax_template__exemption_id
+msgid "Exemption"
+msgstr "Isenção"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_tax
+msgid "Tax"
+msgstr "Imposto"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_tax_exemption
+msgid "Tax Exemption"
+msgstr "Isenção de Imposto"
+
+#. module: l10n_pt_ao
+#: model:ir.actions.act_window,name:l10n_pt_ao.account_tax_exemption_action
+#: model:ir.ui.menu,name:l10n_pt_ao.account_tax_exemption_menu_action
+msgid "Tax Exemptions"
+msgstr "Isenções de Imposto"
+
+#. module: l10n_pt_ao
+#: model:ir.model,name:l10n_pt_ao.model_account_tax_template
+msgid "Templates for Taxes"
+msgstr "Modelos para Impostos"

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- List View -->
+    <record id="hr_insurance_company_list_view" model="ir.ui.view">
+        <field name="name">hr.insurance.company.list</field>
+        <field name="model">hr.insurance.company</field>
+        <field name="arch" type="xml">
+            <list string="Insurance Companies">
+                <field name="code"/>
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="hr_insurance_company_form_view" model="ir.ui.view">
+        <field name="name">hr.insurance.company.form</field>
+        <field name="model">hr.insurance.company</field>
+        <field name="arch" type="xml">
+            <form string="Insurance Company">
+                <sheet>
+                    <group>
+                        <field name="code"/>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="hr_insurance_company_search_view" model="ir.ui.view">
+        <field name="name">hr.insurance.company.search</field>
+        <field name="model">hr.insurance.company</field>
+        <field name="arch" type="xml">
+            <search string="Insurance Companies">
+                <field name="code"/>
+                <field name="name"/>
+                <filter string="Code" name="group_by_code" context="{'group_by':'code'}"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="hr_insurance_company_action" model="ir.actions.act_window">
+        <field name="name">Insurance Companies</field>
+        <field name="res_model">hr.insurance.company</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new insurance company
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu Item -->
+    <menuitem id="menu_hr_insurance_company"
+              name="Insurance Companies"
+              parent="hr_payroll.menu_hr_salary_configuration"
+              action="hr_insurance_company_action"
+              sequence="100"/>
+</odoo>

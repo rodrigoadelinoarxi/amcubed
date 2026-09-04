@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="l10n_pt_ao_patch.AccountPaymentPopOver" t-inherit="account.AccountPaymentPopOver" t-inherit-mode="extension">
+
+        <xpath expr="//button[contains(@class, 'js_unreconcile_payment')]" position="attributes">
+            <attribute name="t-if">!props.is_exchange and (!props.is_self_paid or props.move_type == 'in_invoice' or props.move_type == 'in_refund')</attribute>
+        </xpath>
+
+    </t>
+
+</templates>

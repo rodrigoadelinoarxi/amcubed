@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="payment_method_eupago_cc" model="payment.method">
+        <field name="name">CC</field>
+        <field name="code">eupago_cc</field>
+        <field name="sequence">1</field>
+        <field name="image" type="base64" file="payment_eupago_cc/static/src/img/visa_mastercard.jpg"/>
+        <field name="support_express_checkout">False</field>
+        <field name="support_refund">full_only</field>
+    </record>
+
+</odoo>

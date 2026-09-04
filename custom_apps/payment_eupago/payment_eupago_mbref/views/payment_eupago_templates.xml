@@ -1,0 +1,82 @@
+<odoo>
+
+    <template id="eupago_form_mb">
+        <form t-att-action="api_url" method="post">
+            <input type="hidden" name="referencia" t-att-value="referencia"/>
+            <input type="hidden" name="entidade" t-att-value="entidade"/>
+            <input type="hidden" name="valor" t-att-value="valor"/>
+            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+            <t t-if="return_url">
+                <input type="hidden" name="return_url" t-att-value="return_url"/>
+            </t>
+        </form>
+    </template>
+
+    <template id="eupago_multibanco_form">
+        <t t-call="website.layout">
+            <br/>
+            <br/>
+            <div align="center">
+                <p>Please check your details below to pay by ATM.</p>
+                <span style="font-size: 12px;">You should select the <b>PAYMENTS</b> option, and then the option
+                    <b>PAYMENT OF PURCHASES</b>
+                    and enter the data below.
+                </span>
+            </div>
+            <div align="center">
+                <img style="width: 100px; height: 100px;" src="/payment_eupago_mbref/static/src/img/multibanco_icon.png"/>
+                <h1>Multibanco</h1>
+            </div>
+            <table align="center" cellpadding="4"
+                   style="background-color: white; padding: 4px; border-collapse:separate; border-radius:6px; border:1px grey solid;">
+                <tr>
+                    <td class="text-left">
+                        <span style="font-size: 14px;">Reference:</span>
+                    </td>
+                    <td class="text-right">
+                        <t t-esc="referencia"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-left">
+                        <span style="font-size: 14px;">Entity:</span>
+                    </td>
+                    <td class="text-right">
+                        <t t-esc="entidade"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-left">
+                        <span style="font-size: 14px;">Amount:</span>
+                    </td>
+                    <td class="text-right">
+                        <t t-esc="valor"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-left">
+                        <span style="font-size: 14px;">Deadline:</span>
+                    </td>
+                    <td class="text-right">
+                        <t t-esc="enddate"/>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <div align="center">
+                <span style="font-size: 10px;">The payment slip issued proves payment. Keep it.
+                </span>
+                <br/>
+                <span style="font-size: 10px;">This document has been sent to your email.
+                </span>
+            </div>
+            <br/>
+            <div align="center" colspan="2">
+                <a role="button" class="btn btn-secondary mb32 "
+                   href="/shop">Back
+                </a>
+            </div>
+        </t>
+    </template>
+
+</odoo>

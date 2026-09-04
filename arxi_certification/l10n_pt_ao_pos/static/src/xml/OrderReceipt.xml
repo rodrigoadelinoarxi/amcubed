@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<templates id="template" xml:space="preserve">
+    <!-- v19: the base OrderReceipt takes the order itself as `props.order` (the
+         v18 `props.data` export dict is gone). All certified fields are read
+         straight off the order model, where they are set in models.js setup(). -->
+    <t t-name="l10n_pt_ao_pos.OrderReceipt" t-inherit="point_of_sale.OrderReceipt" t-inherit-mode="extension">
+        <xpath expr="//ReceiptHeader" position="after">
+            <span t-if="!props.order.is_duplicated_print and !props.order.is_triplicate_print">
+                <t t-if="!props.order.doc_printed">Original</t>
+                <t t-else="">Copy of the document</t>
+                <br/>
+            </span>
+            <span t-if="props.order.is_duplicated_print">
+                <t t-if="!props.order.doc_printed">Duplicate Receipt</t>
+                <t t-else="">Copy of the document - Duplicate</t>
+                <br/>
+            </span>
+            <span t-if="props.order.is_triplicate_print">
+                <t t-if="!props.order.doc_printed">Triplicate Receipt</t>
+                <t t-else="">Copy of the document - Triplicate</t>
+                <br/>
+            </span>
+            <span t-if="props.order.reversed_entry_name">
+                Credit Note n. <t t-esc="props.order.account_move_name"/>
+            </span>
+            <span t-else="">
+                <t t-esc="props.order.getDocumentTypeLabel()"/> n. <t t-esc="props.order.account_move_name"/>
+            </span>
+            <span t-if="props.order.reversed_entry_name">
+                <br/>
+                Relating to document
+                <t t-esc="props.order.reversed_entry_name"/>
+            </span>
+            <span t-if="props.order.reversed_entry_name and props.order.credit_reason">
+                <br/>
+                Reason:
+                <t t-esc="props.order.credit_reason"/>
+            </span>
+            <div>
+                <span>Customer: </span>
+                <t t-esc="props.order.customer_name"/>
+            </div>
+            <div>
+                <span>VAT: </span>
+                <t t-esc="props.order.get_customer_vat()"/>
+            </div>
+        </xpath>
+
+        <!-- Exemption codes, parsed in models.js (exemptionCodesForReceipt) -->
+        <xpath expr="//div[hasclass('paymentlines')]" position="after">
+            <t t-set="exemptionCodes" t-value="props.order.exemptionCodesForReceipt"/>
+            <t t-if="exemptionCodes and Object.keys(exemptionCodes).length &gt; 0">
+                <br/>
+                <div class="pos-receipt-exemption-codes" style="font-size: 0.9em;">
+                    <strong>Exemption Codes</strong>
+                    <br/>
+                    <t t-foreach="Object.values(exemptionCodes)" t-as="exemption" t-key="exemption_index">
+                        <div class="exemption-line">
+                            <strong><t t-esc="exemption.code"/>:</strong> <t t-esc="exemption.name"/>
+                        </div>
+                    </t>
+                </div>
+            </t>
+        </xpath>
+
+        <xpath expr="//div[hasclass('pos-receipt')]" position="inside">
+            <t t-if="props.order.account_move_state == 'cancel'">
+                <span class="diagonal-text cancelled"/>
+            </t>
+        </xpath>
+
+        <!-- v19 moved the company block to the footer; the certified receipt
+             keeps it in the header (v18 layout), so drop the footer copy. -->
+        <xpath expr="//div[hasclass('pos-config-name')]/../.." position="replace"/>
+
+        <!-- v18 printed the date the goods were made available to the purchaser
+             at the end of the receipt; the v19 footer dropped it. The order
+             reference is not repeated here: unlike v18, the v19 header already
+             prints it. -->
+        <xpath expr="//div[hasclass('after-footer')]" position="after">
+            <div class="pos-receipt-order-data text-center pt-3">
+                <div>Goods sent or made available to the purchaser at</div>
+                <div t-esc="props.order.formatDateOrTime('date_order')"/>
+            </div>
+        </xpath>
+
+        <!-- v18 removed the "Powered by Odoo" line from the certified receipt. -->
+        <xpath expr="//div[hasclass('footer-powered-by')]" position="replace"/>
+    </t>
+
+    <t t-name="l10n_pt_ao_pos.ReceiptHeader" t-inherit="point_of_sale.ReceiptHeader" t-inherit-mode="extension">
+        <!-- v19 dropped the company block the v18 header printed right under the
+             logo, and gained a customer block. Restore the company identification
+             in its v18 position and drop the native customer block: it prints the
+             raw partner vat and address, while the certified receipt needs the
+             labelled Customer/VAT pair built from get_customer_vat(). -->
+        <xpath expr="//img[@alt='Logo']" position="after">
+            <div class="pos-receipt-company text-center" style="font-size: 75%;">
+                <div t-if="order.company.name" t-esc="order.company.name"/>
+                <!-- UAT POS/contabilidade, ponto 4 (Paulo, 2026-08-28): "Não
+                     consigo identificar o nome da empresa" / the address he
+                     did see he couldn't place — company name was restored
+                     above, but the address (street/city/zip) never was;
+                     order.company already carries all three natively (see
+                     ResCompany._load_pos_data_fields). Required on a PT/AO
+                     fiscal receipt. -->
+                <div t-if="order.company.street" t-esc="order.company.street"/>
+                <div t-if="order.company.city or order.company.zip">
+                    <t t-esc="order.company.zip"/> <t t-esc="order.company.city"/>
+                </div>
+                <div t-if="order.company.phone">Tel.:<span dir="ltr"><t t-esc="order.company.phone"/></span></div>
+                <div t-if="order.company.vat">
+                    <t t-esc="order.company.country_id and order.company.country_id.vat_label or 'Tax ID'"/>: <t t-esc="order.company.vat"/>
+                </div>
+                <div t-if="order.company.email" t-esc="order.company.email"/>
+                <div t-if="order.company.website" t-esc="order.company.website"/>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('pos-receipt-customer')]" position="replace"/>
+    </t>
+</templates>

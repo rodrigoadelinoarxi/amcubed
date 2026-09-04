@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<odoo noupdate="1"><record id="income_type_a" model="account.income.type"><field name="name">Rendimentos de trabalho dependente sujeitos a tributa&#xE7;&#xE3;o &#xE0; taxa de 0%</field><field name="code">A</field><field name="description">
+            Rendimentos de trabalho dependente sujeitos a tributa&#xE7;&#xE3;o(exceto os referidos com os c&#xF3;digos A2 a A5) &#xE0; taxa
+            de 0%, prevista nas tabelas de reten&#xE7;&#xE3;o (artigos 99.&#xBA; e 100.&#xBA; do C&#xF3;digo do IRS)
+        </field></record><record id="income_type_a2" model="account.income.type"><field name="name">Gratifica&#xE7;&#xF5;es n&#xE3;o atribu&#xED;das pela entidade patronal</field><field name="code">A2</field><field name="description">
+            Gratifica&#xE7;&#xF5;es n&#xE3;o atribu&#xED;das pela entidade patronal(gorjetas)
+        </field></record><record id="income_type_a3" model="account.income.type"><field name="name">Subs&#xED;dio de f&#xE9;rias sujeitos a tributa&#xE7;&#xE3;o &#xE0; taxa de 0%</field><field name="code">A3</field><field name="description">
+            Rendimentos do trabalho dependente &#x2013; Subs&#xED;dio de f&#xE9;rias, sujeitos a tributa&#xE7;&#xE3;o &#xE0; taxa de
+            0%, prevista nas tabelas de reten&#xE7;&#xE3;o (artigos 99.&#xBA; e 100.&#xBA; do C&#xF3;digo do IRS)
+        </field></record><record id="income_type_a4" model="account.income.type"><field name="name">Subs&#xED;dio de Natal sujeitos a tributa&#xE7;&#xE3;o &#xE0; taxa de 0%</field><field name="code">A4</field><field name="description">
+            Rendimentos do trabalho dependente &#x2013; Subs&#xED;dio de Natal, sujeitos a tributa&#xE7;&#xE3;o &#xE0; taxa de 0%, prevista nas
+            tabelas de reten&#xE7;&#xE3;o (artigos 99.&#xBA; e 100.&#xBA; do C&#xF3;digo do IRS)
+        </field></record><record id="income_type_a5" model="account.income.type"><field name="name">Rendimentos do trabalho dependente n&#xE3;o sujeitosa reten&#xE7;&#xE3;o</field><field name="code">A5</field><field name="description">
+            Rendimentos do trabalho dependente n&#xE3;o sujeitosa reten&#xE7;&#xE3;o(excetos os referidos com o c&#xF3;digo A2)
+        </field></record><record id="income_type_a11" model="account.income.type"><field name="name">Miss&#xF5;es diplom&#xE1;ticas e consulares</field><field name="code">A11</field><field name="description">
+            Miss&#xF5;es diplom&#xE1;ticas e consulares(anos 2012 e anteriores)
+        </field></record><record id="income_type_a12" model="account.income.type"><field name="name">Servi&#xE7;o a organiza&#xE7;&#xF5;es estrangeiras ou internacionais</field><field name="code">A12</field><field name="description">
+            Servi&#xE7;o a organiza&#xE7;&#xF5;es estrangeiras ou internacionais(anos 2012 e anteriores)
+        </field></record><record id="income_type_a13" model="account.income.type"><field name="name">Recebimentos em capital de import&#xE2;ncias para regimes de seguran&#xE7;a social</field><field name="code">A13</field><field name="description">
+            Recebimentos em capital de import&#xE2;ncias despendidas pelas entidades patronais para regimes de seguran&#xE7;a
+            social (anos 2012 e anteriores)
+        </field></record><record id="income_type_a14" model="account.income.type"><field name="name">Tripulante de navios registados no Registo Internacional de Navios</field><field name="code">A14</field><field name="description">
+            Tripulante de navios registados no Registo Internacional de Navios (Zona Franca da Madeira) - anos 2012 e
+            anteriores
+        </field></record><record id="income_type_a15" model="account.income.type"><field name="name">Acordos de coopera&#xE7;&#xE3;o - isen&#xE7;&#xE3;o n&#xE3;o dependente de reconhecimento pr&#xE9;vio</field><field name="code">A15</field><field name="description">
+            Acordos de coopera&#xE7;&#xE3;o - isen&#xE7;&#xE3;o n&#xE3;o dependente de reconhecimento pr&#xE9;vio(anos 2012 e anteriores)
+        </field></record><record id="income_type_a16" model="account.income.type"><field name="name">Acordos de coopera&#xE7;&#xE3;o - isen&#xE7;&#xE3;o dependente de reconhecimento pr&#xE9;vio</field><field name="code">A16</field><field name="description">
+            Acordos de coopera&#xE7;&#xE3;o - isen&#xE7;&#xE3;o dependente de reconhecimento pr&#xE9;vio(anos 2012 e anteriores)
+        </field></record><record id="income_type_a17" model="account.income.type"><field name="name">Desempenho de fun&#xE7;&#xF5;es integradas em miss&#xF5;es de car&#xE1;cter militar</field><field name="code">A17</field><field name="description">
+            Desempenho de fun&#xE7;&#xF5;es integradas em miss&#xF5;es de car&#xE1;cter militar, efetuadas no estrangeiro, com objetivos
+            humanit&#xE1;rios (anos 2012 e anteriores)
+        </field></record><record id="income_type_a20" model="account.income.type"><field name="name">Import&#xE2;ncias auferidas pela cessa&#xE7;&#xE3;o do contrato de trabalho</field><field name="code">A20</field><field name="description">
+            Import&#xE2;ncias auferidas pela cessa&#xE7;&#xE3;o do contrato de trabalho ou exerc&#xED;cio de fun&#xE7;&#xF5;es na parte que n&#xE3;o
+            excedam o limite previsto na al&#xED;nea b) do n.&#xBA; 4 do artigo 2.&#xBA; do C&#xF3;digo do IRS
+        </field></record><record id="income_type_a21" model="account.income.type"><field name="name">Subs&#xED;dio de refei&#xE7;&#xE3;o</field><field name="code">A21</field><field name="description">
+            Subs&#xED;dio de refei&#xE7;&#xE3;o (parte n&#xE3;o sujeita)
+        </field></record><record id="income_type_a22" model="account.income.type"><field name="name">Ajudas de custo e desloca&#xE7;&#xF5;es em viatura do pr&#xF3;prio</field><field name="code">A22</field><field name="description">
+            Ajudas de custo e desloca&#xE7;&#xF5;es em viatura do pr&#xF3;prio (parte n&#xE3;o sujeita)
+        </field></record><record id="income_type_a23" model="account.income.type"><field name="name">Outros rendimentos n&#xE3;o sujeitos</field><field name="code">A23</field><field name="description">
+            Outros rendimentos n&#xE3;o sujeitos, referidos nos artigos 2.&#xBA;, 2.&#xBA;-A e 12.&#xBA;do C&#xF3;digo do IRS
+        </field></record><record id="income_type_a31" model="account.income.type"><field name="name">Pr&#xE9;mios atribu&#xED;dos aos praticantes de alto rendimento desportivo e aos respetivos
+            treinadores
+        </field><field name="code">A31</field><field name="description">
+            Pr&#xE9;mios atribu&#xED;dos aos praticantes de alto rendimento desportivo e aos respetivos treinadores, por
+            classifica&#xE7;&#xF5;es relevantes obtidas em provas desportivasde elevado prest&#xED;gio e n&#xED;vel competitivo (al&#xED;nea c)
+            do n.&#xBA; 5 do artigo 12.&#xBA; do C&#xF3;digo do IRS) - anos 2012 e anteriores
+        </field></record><record id="income_type_b" model="account.income.type"><field name="name">Rendimentos empresariais e profissionais</field><field name="code">B</field><field name="description">
+            Rendimentos empresariais e profissionais (incluindo os dispensados de reten&#xE7;&#xE3;o)
+        </field></record><record id="income_type_b11" model="account.income.type"><field name="name">Acordos de coopera&#xE7;&#xE3;o - isen&#xE7;&#xE3;o dependente de reconhecimento pr&#xE9;vio</field><field name="code">B11</field><field name="description">
+            Acordos de coopera&#xE7;&#xE3;o - isen&#xE7;&#xE3;o dependente de reconhecimento pr&#xE9;vio
+        </field></record><record id="income_type_b12" model="account.income.type"><field name="name">Acordos de coopera&#xE7;&#xE3;o -isen&#xE7;&#xE3;o n&#xE3;o dependente de reconhecimento pr&#xE9;vio</field><field name="code">B12</field><field name="description">
+            Acordos de coopera&#xE7;&#xE3;o -isen&#xE7;&#xE3;o n&#xE3;o dependente de reconhecimento pr&#xE9;vio
+        </field></record><record id="income_type_b13" model="account.income.type"><field name="name">Rendimentos da Propriedade Intelectual</field><field name="code">B13</field><field name="description">
+            Rendimentos da Propriedade Intelectual &#x2013; artigo58.&#xBA; do Estatuto dos Benef&#xED;cios Fiscais
+        </field></record><record id="income_type_b14" model="account.income.type"><field name="name">Rendimentos empresariais e profissionais</field><field name="code">B14</field><field name="description">
+            Rendimentos empresariais e profissionais &#x2013; regime fiscal aplic&#xE1;vel a ex-residentes &#x2013;anos de 2019 e seguintes
+        </field></record><record id="income_type_b20" model="account.income.type"><field name="name">Bolsas atribu&#xED;das aos praticantes de alto rendimento desportivo</field><field name="code">B20</field><field name="description">
+            Bolsas atribu&#xED;das aos praticantes de alto rendimento desportivo pelo Comit&#xE9; Ol&#xED;mpico de Portugal ou pelo
+            Comit&#xE9; Paral&#xED;mpico de Portugal, bem como os pr&#xE9;mios em reconhecimento do valor e m&#xE9;rito de &#xEA;xitos
+            desportivos (al&#xED;neas a) e c) do n.&#xBA; 5 do artigo 12.&#xBA; do CIRS)
+        </field></record><record id="income_type_b21" model="account.income.type"><field name="name">Bolsas de forma&#xE7;&#xE3;o desportiva atribu&#xED;das aos agentes desportivos n&#xE3;o profissionais</field><field name="code">B21</field><field name="description">
+            Bolsas de forma&#xE7;&#xE3;o desportiva atribu&#xED;das aos agentes desportivos n&#xE3;o profissionais (al&#xED;nea b) do n.&#xBA; 5 do
+            artigo 12.&#xBA; do CIRS)
+        </field></record><record id="income_type_b22" model="account.income.type"><field name="name">Pr&#xE9;mios liter&#xE1;rios, art&#xED;sticos ou cient&#xED;ficos</field><field name="code">B22</field><field name="description">
+            Pr&#xE9;mios liter&#xE1;rios, art&#xED;sticos ou cient&#xED;ficos, quando n&#xE3;o envolvam ced&#xEA;ncia, tempor&#xE1;ria ou definitiva, dos
+            respetivos direitos de autor (n.&#xBA; 2 do artigo 12.&#xBA; do CIRS)
+        </field></record><record id="income_type_b23" model="account.income.type"><field name="name">Subs&#xED;dios para a manuten&#xE7;&#xE3;o e cobertura de despesas extraordin&#xE1;rias relativas &#xE0; sa&#xFA;de e
+            educa&#xE7;&#xE3;o
+        </field><field name="code">B23</field><field name="description">
+            Subs&#xED;dios para a manuten&#xE7;&#xE3;o e cobertura de despesas extraordin&#xE1;rias relativas &#xE0; sa&#xFA;de e educa&#xE7;&#xE3;o, no &#xE2;mbito
+            da presta&#xE7;&#xE3;o social de acolhimento familiar e de apoio a idosos, pessoas com defici&#xEA;ncias, crian&#xE7;as e jovens
+            (n.&#xBA; 4 do artigo 12.&#xBA; do C&#xF3;digo do IRS)
+        </field></record><record id="income_type_e" model="account.income.type"><field name="name">Rendimentos sujeitos a reten&#xE7;&#xE3;o n&#xE3;o liberat&#xF3;ria</field><field name="code">E</field><field name="description">
+            Rendimentos sujeitos a reten&#xE7;&#xE3;o n&#xE3;o liberat&#xF3;ria (incluindo os dispensados de reten&#xE7;&#xE3;o) &#x2013; anos 2014 e
+            anteriores
+        </field></record><record id="income_type_f" model="account.income.type"><field name="name">Rendas</field><field name="code">F</field><field name="description">
+            Rendas (incluindo os dispensados de reten&#xE7;&#xE3;o)
+        </field></record><record id="income_type_f1" model="account.income.type"><field name="name">Subloca&#xE7;&#xE3;o</field><field name="code">F1</field><field name="description">
+            Subloca&#xE7;&#xE3;o(incluindo os dispensados de reten&#xE7;&#xE3;o)
+        </field></record><record id="income_type_f2" model="account.income.type"><field name="name">Indemniza&#xE7;&#xF5;es que visem compensar perdas de rendimentos da categoria F</field><field name="code">F2</field><field name="description">
+            Indemniza&#xE7;&#xF5;es que visem compensar perdas de rendimentos da categoria F
+        </field></record><record id="income_type_g" model="account.income.type"><field name="name">Indemniza&#xE7;&#xF5;es e import&#xE2;ncias relativas &#xE0; assun&#xE7;&#xE3;o de obriga&#xE7;&#xF5;es de n&#xE3;o concorr&#xEA;ncia</field><field name="code">G</field><field name="description">
+            Indemniza&#xE7;&#xF5;es e import&#xE2;ncias relativas &#xE0; assun&#xE7;&#xE3;o de obriga&#xE7;&#xF5;es de n&#xE3;o concorr&#xEA;ncia
+        </field></record><record id="income_type_h" model="account.income.type"><field name="name">Pens&#xF5;es(com exce&#xE7;&#xE3;o das pens&#xF5;es de sobreviv&#xEA;ncia e de alimentos)</field><field name="code">H</field><field name="description">
+            Pens&#xF5;es (com exce&#xE7;&#xE3;o das pens&#xF5;es de sobreviv&#xEA;ncia e de alimentos)
+        </field></record><record id="income_type_h1" model="account.income.type"><field name="name">Rendas tempor&#xE1;rias e vital&#xED;cias</field><field name="code">H1</field><field name="description">
+            Rendas tempor&#xE1;rias e vital&#xED;cias
+        </field></record><record id="income_type_h2" model="account.income.type"><field name="name">Pr&#xE9;-reformas contratadas at&#xE9; 31/12/2000</field><field name="code">H2</field><field name="description">
+            Pr&#xE9;-reformas contratadas at&#xE9; 31/12/2000 cujos pagamentos se iniciaram at&#xE9; essa data
+        </field></record><record id="income_type_h3" model="account.income.type"><field name="name">Pens&#xF5;es de sobreviv&#xEA;ncia</field><field name="code">H3</field><field name="description">
+            Pens&#xF5;es de sobreviv&#xEA;ncia
+        </field></record><record id="income_type_r" model="account.income.type"><field name="name">Rendimentos sujeitos e n&#xE3;o dispensados de reten&#xE7;&#xE3;o nos termos do artigo 94</field><field name="code">R</field><field name="description">
+            Rendimentos sujeitos e n&#xE3;o dispensados de reten&#xE7;&#xE3;o nos termos do artigo 94.&#xBA; do C&#xF3;digo do IRC, com exce&#xE7;&#xE3;o
+            dos declarados com a letra R1 (anos de 2019 e anteriores)
+        </field></record><record id="income_type_r1" model="account.income.type"><field name="name">Rendimentos sujeitos a reten&#xE7;&#xE3;o nos termos do artigo 22</field><field name="code">R1</field><field name="description">
+            Rendimentos sujeitos a reten&#xE7;&#xE3;o nos termos do artigo 22.&#xBA;do Estatuto dos Benef&#xED;cios Fiscais &#x2013; regime
+            aplic&#xE1;vel at&#xE9; 30/06/2015 (anos de 2019 e anteriores).
+        </field></record><record id="income_type_r2" model="account.income.type"><field name="name">Rendimentos de unidades de participa&#xE7;&#xE3;o pagos por Organismos de Investimento Coletivo</field><field name="code">R2</field><field name="description">
+            Rendimentos de unidades de participa&#xE7;&#xE3;o pagos por Organismos de Investimento Coletivo aos seus participantes
+            (n.&#xBA; 1 do artigo 22.&#xBA;-A do EBF) (anos de 2020 e seguintes)
+        </field></record><record id="income_type_r3" model="account.income.type"><field name="name">Rendimentos Prediais</field><field name="code">R3</field><field name="description">
+            Rendimentos Prediais [al&#xED;nea c) do n.&#xBA;1 do artigo 94.&#xBA;, do C&#xF3;digo do IRC] (anos de 2020 e seguintes)
+        </field></record><record id="income_type_r4" model="account.income.type"><field name="name">Rendimentos de Capitais &#x2013; Valores mobili&#xE1;rios &#x2013; Entidades emitentes</field><field name="code">R4</field><field name="description">
+            Rendimentos de Capitais &#x2013; Valores mobili&#xE1;rios &#x2013; Entidades emitentes (anos de 2020 e 12 seguintes)
+        </field></record><record id="income_type_r5" model="account.income.type"><field name="name">Rendimentos de Capitais &#x2013; Valores mobili&#xE1;rios &#x2013; Entidades registadoras ou deposit&#xE1;rias
+        </field><field name="code">R5</field><field name="description">
+            Rendimentos de Capitais &#x2013; Valores mobili&#xE1;rios &#x2013; Entidades registadoras ou deposit&#xE1;rias (anos de 2020 e
+            seguintes)
+        </field></record><record id="income_type_r6" model="account.income.type"><field name="name">Rendimentos de Capitais &#x2013; Juros de dep&#xF3;sitos &#xE0;ordem ou a prazo</field><field name="code">R6</field><field name="description">
+            Rendimentos de Capitais &#x2013; Juros de dep&#xF3;sitos &#xE0;ordem ou a prazo (anos de 2020 e seguintes)
+        </field></record><record id="income_type_r7" model="account.income.type"><field name="name">Rendimentos de Capitais &#x2013; Dividendos</field><field name="code">R7</field><field name="description">
+            Rendimentos de Capitais &#x2013; Dividendos (anos de 2020 e seguintes)
+        </field></record><record id="income_type_r8" model="account.income.type"><field name="name">Rendimentos provenientes da propriedade intelectual ou industrial</field><field name="code">R8</field><field name="description">
+            Rendimentos provenientes da propriedade intelectual ou industrial [al&#xED;nea a) do n.&#xBA; 1 do artigo 94.&#xBA;, do
+            C&#xF3;digo do IRC] (anos de 2020 e seguintes)
+        </field></record><record id="income_type_r9" model="account.income.type"><field name="name">
+            Rendimentos provenientes da presta&#xE7;&#xE3;o de informa&#xE7;&#xF5;es respeitantes a uma experi&#xEA;ncia adquirida no setor
+            industrial, comercial ou cient&#xED;fico
+        </field><field name="code">R9</field><field name="description">
+            Rendimentos provenientes da presta&#xE7;&#xE3;o de informa&#xE7;&#xF5;es respeitantes a uma experi&#xEA;ncia adquirida no setor
+            industrial, comercial ou cient&#xED;fico [al&#xED;nea a) do n.&#xBA; 1 do artigo 94.&#xBA;, do C&#xF3;digo do IRC] (anos de 2020 e
+            seguintes)
+        </field></record><record id="income_type_r10" model="account.income.type"><field name="name">Rendimentos de Capitais &#x2013; Outros rendimentos n&#xE3;o especificados nos c&#xF3;digos R4 a R9</field><field name="code">R10</field><field name="description">
+            Rendimentos de Capitais &#x2013; Outros rendimentos n&#xE3;o especificados nos c&#xF3;digos R4 a R9 [al&#xED;nea c) do n.&#xBA; 1 do
+            artigo 94.&#xBA;, do C&#xF3;digo do IRC] (anos de 2020 e seguintes)
+        </field></record><record id="income_type_r11" model="account.income.type"><field name="name">Remunera&#xE7;&#xF5;es de membros de &#xF3;rg&#xE3;os estatut&#xE1;rios de pessoas coletivas</field><field name="code">R11</field><field name="description">
+            Remunera&#xE7;&#xF5;es de membros de &#xF3;rg&#xE3;os estatut&#xE1;rios de pessoas coletivas [al&#xED;nea d) do n.&#xBA; 1 do artigo 94.&#xBA;, do
+            C&#xF3;digo do IRC] (anos de 2020 e seguintes)
+        </field></record><record id="income_type_r12" model="account.income.type"><field name="name">Outros rendimentos sujeitos e n&#xE3;o dispensados de reten&#xE7;&#xE3;o</field><field name="code">R12</field><field name="description">
+            Outros rendimentos sujeitos e n&#xE3;o dispensados de reten&#xE7;&#xE3;o nos termos do artigo 94.&#xBA; do C&#xF3;digo do IRC n&#xE3;o
+            especificados nos c&#xF3;digos anteriores (anos de 2020 e seguintes)
+        </field></record><record id="income_location_c" model="account.income.location"><field name="code">C</field><field name="name">Continente</field></record><record id="income_location_ra" model="account.income.location"><field name="code">RA</field><field name="name">Regi&#xE3;o Aut&#xF3;noma dos A&#xE7;ores</field></record><record id="income_location_rm" model="account.income.location"><field name="code">RM</field><field name="name">Regi&#xE3;o Aut&#xF3;noma da Madeira</field></record><record id="income_location_e" model="account.income.location"><field name="code">E</field><field name="name">Estrangeiro</field></record></odoo>

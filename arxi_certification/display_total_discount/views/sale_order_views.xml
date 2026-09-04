@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<odoo><record id="view_order_form_inherit_sale_global_discount_base" model="ir.ui.view"><field name="name">sale.order.form.sale.global.discount.base</field><field name="model">sale.order</field><field name="inherit_id" ref="sale.view_order_form"/><field name="arch" type="xml"><xpath expr="//group[@name='note_group']" position="inside"><group name="sale_total_discount"><field name="global_discount_value"/></group></xpath></field></record></odoo>

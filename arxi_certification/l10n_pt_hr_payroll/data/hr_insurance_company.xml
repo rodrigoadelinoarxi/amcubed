@@ -1,0 +1,2525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="insurance_company_1011" model="hr.insurance.company">
+            <field name="code">1011</field>
+            <field name="name">Fidelidade - Companhia de Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1020" model="hr.insurance.company">
+            <field name="code">1020</field>
+            <field name="name">Mútua dos Pescadores, Mútua de Seguros, C.R.L.</field>
+        </record>
+        <record id="insurance_company_1024" model="hr.insurance.company">
+            <field name="code">1024</field>
+            <field name="name">Ocidental - Companhia Portuguesa de Seguros de Vida, S.A.</field>
+        </record>
+        <record id="insurance_company_1025" model="hr.insurance.company">
+            <field name="code">1025</field>
+            <field name="name">Lusitania Vida, Companhia de Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1026" model="hr.insurance.company">
+            <field name="code">1026</field>
+            <field name="name">Lusitania, Companhia de Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1028" model="hr.insurance.company">
+            <field name="code">1028</field>
+            <field name="name">Companhia de Seguros Allianz Portugal, S.A.</field>
+        </record>
+        <record id="insurance_company_1029" model="hr.insurance.company">
+            <field name="code">1029</field>
+            <field name="name">Real Vida Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1039" model="hr.insurance.company">
+            <field name="code">1039</field>
+            <field name="name">Ageas Portugal - Companhia de Seguros de Vida, S.A.</field>
+        </record>
+        <record id="insurance_company_1053" model="hr.insurance.company">
+            <field name="code">1053</field>
+            <field name="name">España, S.A. - Compañia Nacional de Seguros</field>
+        </record>
+        <record id="insurance_company_1056" model="hr.insurance.company">
+            <field name="code">1056</field>
+            <field name="name">Inter Partner Assistance, S.A.</field>
+        </record>
+        <record id="insurance_company_1086" model="hr.insurance.company">
+            <field name="code">1086</field>
+            <field name="name">Cosec - Companhia de Seguro de Créditos, S.A.</field>
+        </record>
+        <record id="insurance_company_1091" model="hr.insurance.company">
+            <field name="code">1091</field>
+            <field name="name">Fidelidade Re - Companhia de Resseguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1093" model="hr.insurance.company">
+            <field name="code">1093</field>
+            <field name="name">BPI Vida e Pensões - Companhia de Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1096" model="hr.insurance.company">
+            <field name="code">1096</field>
+            <field name="name">Victoria - Seguros de Vida, S.A.</field>
+        </record>
+        <record id="insurance_company_1097" model="hr.insurance.company">
+            <field name="code">1097</field>
+            <field name="name">Una Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1098" model="hr.insurance.company">
+            <field name="code">1098</field>
+            <field name="name">Una Seguros de Vida, S.A.</field>
+        </record>
+        <record id="insurance_company_1102" model="hr.insurance.company">
+            <field name="code">1102</field>
+            <field name="name">Mapfre Asistencia, Compañia Internacional de Seguros Y Reaseguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1109" model="hr.insurance.company">
+            <field name="code">1109</field>
+            <field name="name">GamaLife - Companhia de Seguros de Vida, S.A.</field>
+        </record>
+        <record id="insurance_company_1122" model="hr.insurance.company">
+            <field name="code">1122</field>
+            <field name="name">Crédito Agrícola Seguros - Companhia de Seguros de Ramos Reais, S.A.</field>
+        </record>
+        <record id="insurance_company_1126" model="hr.insurance.company">
+            <field name="code">1126</field>
+            <field name="name">Prévoir - Vie Groupe Prévoir S.A.</field>
+        </record>
+        <record id="insurance_company_1127" model="hr.insurance.company">
+            <field name="code">1127</field>
+            <field name="name">Fidelidade Assistência - Companhia de Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1129" model="hr.insurance.company">
+            <field name="code">1129</field>
+            <field name="name">Ageas Portugal - Companhia de Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1131" model="hr.insurance.company">
+            <field name="code">1131</field>
+            <field name="name">Médis - Companhia Portuguesa de Seguros de Saúde, S.A.</field>
+        </record>
+        <record id="insurance_company_1132" model="hr.insurance.company">
+            <field name="code">1132</field>
+            <field name="name">Zurich - Companhia de Seguros Vida, S.A.</field>
+        </record>
+        <record id="insurance_company_1133" model="hr.insurance.company">
+            <field name="code">1133</field>
+            <field name="name">Caravela - Companhia de Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1134" model="hr.insurance.company">
+            <field name="code">1134</field>
+            <field name="name">MUDUM - Companhia de Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1138" model="hr.insurance.company">
+            <field name="code">1138</field>
+            <field name="name">Cardif Assurances Vie</field>
+        </record>
+        <record id="insurance_company_1139" model="hr.insurance.company">
+            <field name="code">1139</field>
+            <field name="name">Cardif Assurances Risques Divers</field>
+        </record>
+        <record id="insurance_company_1142" model="hr.insurance.company">
+            <field name="code">1142</field>
+            <field name="name">Via Directa - Companhia de Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1145" model="hr.insurance.company">
+            <field name="code">1145</field>
+            <field name="name">Mapfre Seguros Gerais, S.A.</field>
+        </record>
+        <record id="insurance_company_1146" model="hr.insurance.company">
+            <field name="code">1146</field>
+            <field name="name">Atradius Crédito y Caución, S.A. de Seguros y Reaseguros - Sucursal em Portugal</field>
+        </record>
+        <record id="insurance_company_1148" model="hr.insurance.company">
+            <field name="code">1148</field>
+            <field name="name">Crédito Agrícola Vida - Companhia de Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1152" model="hr.insurance.company">
+            <field name="code">1152</field>
+            <field name="name">Compagnie Française d&apos;Assurance pour le Commerce Exterieur (Coface), Sucursal em Portugal</field>
+        </record>
+        <record id="insurance_company_1156" model="hr.insurance.company">
+            <field name="code">1156</field>
+            <field name="name">Santander Totta Seguros - Companhia de Seguros de Vida, S.A.</field>
+        </record>
+        <record id="insurance_company_1157" model="hr.insurance.company">
+            <field name="code">1157</field>
+            <field name="name">ARAG SE - Sucursal em Portugal</field>
+        </record>
+        <record id="insurance_company_1159" model="hr.insurance.company">
+            <field name="code">1159</field>
+            <field name="name">Compañia Española de Seguros de Credito a la Exportación, S.A. Compañia de Seguros Y Reaseguros (CESCE)</field>
+        </record>
+        <record id="insurance_company_1160" model="hr.insurance.company">
+            <field name="code">1160</field>
+            <field name="name">Victoria - Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1161" model="hr.insurance.company">
+            <field name="code">1161</field>
+            <field name="name">BBVASeguros, S.A. de Seguros Y Reaseguros</field>
+        </record>
+        <record id="insurance_company_1167" model="hr.insurance.company">
+            <field name="code">1167</field>
+            <field name="name">Mapfre Santander Portugal  Companhia de Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1170" model="hr.insurance.company">
+            <field name="code">1170</field>
+            <field name="name">ACP Mobilidade - Sociedade de Seguros de Assistência, S.A.</field>
+        </record>
+        <record id="insurance_company_1172" model="hr.insurance.company">
+            <field name="code">1172</field>
+            <field name="name">Multicare - Seguros de Saúde, S.A.</field>
+        </record>
+        <record id="insurance_company_1173" model="hr.insurance.company">
+            <field name="code">1173</field>
+            <field name="name">Chubb European Group SE  Sucursal em Portugal</field>
+        </record>
+        <record id="insurance_company_1174" model="hr.insurance.company">
+            <field name="code">1174</field>
+            <field name="name">AWP P&amp;C - Sucursal em Portugal</field>
+        </record>
+        <record id="insurance_company_1184" model="hr.insurance.company">
+            <field name="code">1184</field>
+            <field name="name">Zurich Insurance Europe AG (ZIE), Sucursal em Portugal</field>
+        </record>
+        <record id="insurance_company_1186" model="hr.insurance.company">
+            <field name="code">1186</field>
+            <field name="name">Mapfre Seguros de Vida, S.A.</field>
+        </record>
+        <record id="insurance_company_1187" model="hr.insurance.company">
+            <field name="code">1187</field>
+            <field name="name">Chubb Life Europe SE - Sucursal em Portugal</field>
+        </record>
+        <record id="insurance_company_1188" model="hr.insurance.company">
+            <field name="code">1188</field>
+            <field name="name">MetLife Europe d.a.c.</field>
+        </record>
+        <record id="insurance_company_1189" model="hr.insurance.company">
+            <field name="code">1189</field>
+            <field name="name">MetLife Europe Insurance d.a.c.</field>
+        </record>
+        <record id="insurance_company_1191" model="hr.insurance.company">
+            <field name="code">1191</field>
+            <field name="name">Aegon Santander Portugal Vida - Companhia de Seguros de Vida, S.A.</field>
+        </record>
+        <record id="insurance_company_1192" model="hr.insurance.company">
+            <field name="code">1192</field>
+            <field name="name">Aegon Santander Portugal Não Vida - Companhia de Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1193" model="hr.insurance.company">
+            <field name="code">1193</field>
+            <field name="name">RNA Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1195" model="hr.insurance.company">
+            <field name="code">1195</field>
+            <field name="name">Bankinter Seguros de Vida, S.A. de Seguros Y Reaseguros - Sucursal em Portugal</field>
+        </record>
+        <record id="insurance_company_1196" model="hr.insurance.company">
+            <field name="code">1196</field>
+            <field name="name">Azuaga - Companhia de Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1197" model="hr.insurance.company">
+            <field name="code">1197</field>
+            <field name="name">Generali Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1198" model="hr.insurance.company">
+            <field name="code">1198</field>
+            <field name="name">Asisa, Asistencia Sanitaria Interprovincial de Seguros, S.A.U.</field>
+        </record>
+        <record id="insurance_company_1199" model="hr.insurance.company">
+            <field name="code">1199</field>
+            <field name="name">Asisa, Vida Seguros, S.A.U.</field>
+        </record>
+        <record id="insurance_company_1200" model="hr.insurance.company">
+            <field name="code">1200</field>
+            <field name="name">AIG Europe S.A. - Sucursal em Portugal</field>
+        </record>
+        <record id="insurance_company_1202" model="hr.insurance.company">
+            <field name="code">1202</field>
+            <field name="name">Hiscox, S.A.</field>
+        </record>
+        <record id="insurance_company_1203" model="hr.insurance.company">
+            <field name="code">1203</field>
+            <field name="name">Axa France Vie</field>
+        </record>
+        <record id="insurance_company_1204" model="hr.insurance.company">
+            <field name="code">1204</field>
+            <field name="name">Axa France IARD</field>
+        </record>
+        <record id="insurance_company_1206" model="hr.insurance.company">
+            <field name="code">1206</field>
+            <field name="name">Planicare - Companhia de Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1207" model="hr.insurance.company">
+            <field name="code">1207</field>
+            <field name="name">Europ Assistance, S.A. - sucursal em Portugal</field>
+        </record>
+        <record id="insurance_company_1208" model="hr.insurance.company">
+            <field name="code">1208</field>
+            <field name="name">HDI Global SE</field>
+        </record>
+        <record id="insurance_company_1209" model="hr.insurance.company">
+            <field name="code">1209</field>
+            <field name="name">MGEN Portugal - Companhia de Seguros, S.A.</field>
+        </record>
+        <record id="insurance_company_1210" model="hr.insurance.company">
+            <field name="code">1210</field>
+            <field name="name">MPS  Mútua Portuguesa de Saúde  Mútua de Seguros, Cooperativa de Responsabilidade Limitada</field>
+        </record>
+        <record id="insurance_company_1211" model="hr.insurance.company">
+            <field name="code">1211</field>
+            <field name="name">Sanitas S.A. de Seguros - Sucursal em Portugal</field>
+        </record>
+        <record id="insurance_company_1212" model="hr.insurance.company">
+            <field name="code">1212</field>
+            <field name="name">Société Suisse D&apos;Assurance contre la Grêle - Sucursal em Portugal</field>
+        </record>
+        <record id="insurance_company_1213" model="hr.insurance.company">
+            <field name="code">1213</field>
+            <field name="name">Euler Hermes SA - sucursal em Portugal</field>
+        </record>
+        <record id="insurance_company_4018" model="hr.insurance.company">
+            <field name="code">4018</field>
+            <field name="name">Royale Belge</field>
+        </record>
+        <record id="insurance_company_4024" model="hr.insurance.company">
+            <field name="code">4024</field>
+            <field name="name">Euler Hermes (Allianz Trade) SA (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_4039" model="hr.insurance.company">
+            <field name="code">4039</field>
+            <field name="name">HDI Global SE</field>
+        </record>
+        <record id="insurance_company_4046" model="hr.insurance.company">
+            <field name="code">4046</field>
+            <field name="name">Europæiske Rejseforsikring A/S</field>
+        </record>
+        <record id="insurance_company_4053" model="hr.insurance.company">
+            <field name="code">4053</field>
+            <field name="name">Advo Card Rechsschutzversicherung AG</field>
+        </record>
+        <record id="insurance_company_4054" model="hr.insurance.company">
+            <field name="code">4054</field>
+            <field name="name">Algemene Levensherverzekering Maatschappij N.V.</field>
+        </record>
+        <record id="insurance_company_4063" model="hr.insurance.company">
+            <field name="code">4063</field>
+            <field name="name">Allianz Versicherungs A.G.</field>
+        </record>
+        <record id="insurance_company_4081" model="hr.insurance.company">
+            <field name="code">4081</field>
+            <field name="name">Assicurazioni Generali S.p.A. (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_4086" model="hr.insurance.company">
+            <field name="code">4086</field>
+            <field name="name">Gan Assurances</field>
+        </record>
+        <record id="insurance_company_4087" model="hr.insurance.company">
+            <field name="code">4087</field>
+            <field name="name">Generali Levenverzekering Maatschappij N.V.</field>
+        </record>
+        <record id="insurance_company_4090" model="hr.insurance.company">
+            <field name="code">4090</field>
+            <field name="name">Generali Vie</field>
+        </record>
+        <record id="insurance_company_4094" model="hr.insurance.company">
+            <field name="code">4094</field>
+            <field name="name">Dialog Lebensversicherungs AG</field>
+        </record>
+        <record id="insurance_company_4096" model="hr.insurance.company">
+            <field name="code">4096</field>
+            <field name="name">Proxalto Lebensversicherung AG</field>
+        </record>
+        <record id="insurance_company_4106" model="hr.insurance.company">
+            <field name="code">4106</field>
+            <field name="name">HDI Global SE (sucursal na Áustria)</field>
+        </record>
+        <record id="insurance_company_4107" model="hr.insurance.company">
+            <field name="code">4107</field>
+            <field name="name">HDI Global SE (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_4108" model="hr.insurance.company">
+            <field name="code">4108</field>
+            <field name="name">HDI Global SE (sucursal na Dinamarca)</field>
+        </record>
+        <record id="insurance_company_4109" model="hr.insurance.company">
+            <field name="code">4109</field>
+            <field name="name">HDI Global SE (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4110" model="hr.insurance.company">
+            <field name="code">4110</field>
+            <field name="name">HDI Global SE (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_4111" model="hr.insurance.company">
+            <field name="code">4111</field>
+            <field name="name">HDI Global SE, Hellas (sucursal na Grécia)</field>
+        </record>
+        <record id="insurance_company_4112" model="hr.insurance.company">
+            <field name="code">4112</field>
+            <field name="name">HDI Global SE (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4113" model="hr.insurance.company">
+            <field name="code">4113</field>
+            <field name="name">HDI Global SE (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_4114" model="hr.insurance.company">
+            <field name="code">4114</field>
+            <field name="name">HDI Global SE (sucursal na Noruega)</field>
+        </record>
+        <record id="insurance_company_4116" model="hr.insurance.company">
+            <field name="code">4116</field>
+            <field name="name">Allianz Compañia de Seguros Y Reaseguros</field>
+        </record>
+        <record id="insurance_company_4127" model="hr.insurance.company">
+            <field name="code">4127</field>
+            <field name="name">Compañia Española de Seguros Crédito a la Exportation, C. Seguros Y Reaseguros (CESCE)</field>
+        </record>
+        <record id="insurance_company_4129" model="hr.insurance.company">
+            <field name="code">4129</field>
+            <field name="name">Generali Versicherung AG</field>
+        </record>
+        <record id="insurance_company_4134" model="hr.insurance.company">
+            <field name="code">4134</field>
+            <field name="name">Nationale-Nederlanden Schadeverzekering Maatschappij N.V.</field>
+        </record>
+        <record id="insurance_company_4137" model="hr.insurance.company">
+            <field name="code">4137</field>
+            <field name="name">Unipol Assicurazioni S.p.A.</field>
+        </record>
+        <record id="insurance_company_4138" model="hr.insurance.company">
+            <field name="code">4138</field>
+            <field name="name">Euler Hermes (Allianz Trade) SA (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_4141" model="hr.insurance.company">
+            <field name="code">4141</field>
+            <field name="name">Zurich Eurolife S.A.</field>
+        </record>
+        <record id="insurance_company_4145" model="hr.insurance.company">
+            <field name="code">4145</field>
+            <field name="name">Colombe Assurances, S.A.</field>
+        </record>
+        <record id="insurance_company_4147" model="hr.insurance.company">
+            <field name="code">4147</field>
+            <field name="name">Borealis Insurance A/S</field>
+        </record>
+        <record id="insurance_company_4148" model="hr.insurance.company">
+            <field name="code">4148</field>
+            <field name="name">Industria Forsakringsaktiebolag</field>
+        </record>
+        <record id="insurance_company_4151" model="hr.insurance.company">
+            <field name="code">4151</field>
+            <field name="name">Generali Deutschland Versicherung A.G.</field>
+        </record>
+        <record id="insurance_company_4152" model="hr.insurance.company">
+            <field name="code">4152</field>
+            <field name="name">Allianz IARD</field>
+        </record>
+        <record id="insurance_company_4156" model="hr.insurance.company">
+            <field name="code">4156</field>
+            <field name="name">Axa Assistance France Assurances</field>
+        </record>
+        <record id="insurance_company_4165" model="hr.insurance.company">
+            <field name="code">4165</field>
+            <field name="name">PI Indemnity Company dac</field>
+        </record>
+        <record id="insurance_company_4166" model="hr.insurance.company">
+            <field name="code">4166</field>
+            <field name="name">Helvetia Previsión Sociedad Anonima de Seguros</field>
+        </record>
+        <record id="insurance_company_4170" model="hr.insurance.company">
+            <field name="code">4170</field>
+            <field name="name">Axa Belgium, S.A.</field>
+        </record>
+        <record id="insurance_company_4171" model="hr.insurance.company">
+            <field name="code">4171</field>
+            <field name="name">Axa Versicherungs AG</field>
+        </record>
+        <record id="insurance_company_4175" model="hr.insurance.company">
+            <field name="code">4175</field>
+            <field name="name">Industriforsikring AS</field>
+        </record>
+        <record id="insurance_company_4179" model="hr.insurance.company">
+            <field name="code">4179</field>
+            <field name="name">Philip Morris International Insurance (Ireland) dac</field>
+        </record>
+        <record id="insurance_company_4190" model="hr.insurance.company">
+            <field name="code">4190</field>
+            <field name="name">Axa Aurora Ibérica S.A. de Seguros Y Reaseguros</field>
+        </record>
+        <record id="insurance_company_4194" model="hr.insurance.company">
+            <field name="code">4194</field>
+            <field name="name">Società Reale Mutua di Assicurazioni</field>
+        </record>
+        <record id="insurance_company_4197" model="hr.insurance.company">
+            <field name="code">4197</field>
+            <field name="name">Lifeguard Insurance (Dublin) dac</field>
+        </record>
+        <record id="insurance_company_4199" model="hr.insurance.company">
+            <field name="code">4199</field>
+            <field name="name">Generali IARD</field>
+        </record>
+        <record id="insurance_company_4201" model="hr.insurance.company">
+            <field name="code">4201</field>
+            <field name="name">Ergo Versicherung Aktiengesellschaft (Germany)</field>
+        </record>
+        <record id="insurance_company_4202" model="hr.insurance.company">
+            <field name="code">4202</field>
+            <field name="name">Axa Versicherungs AG (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_4203" model="hr.insurance.company">
+            <field name="code">4203</field>
+            <field name="name">Axa Versicherungs AG (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_4204" model="hr.insurance.company">
+            <field name="code">4204</field>
+            <field name="name">Axa Versicherungs AG (sucursal no Luxemburgo)</field>
+        </record>
+        <record id="insurance_company_4205" model="hr.insurance.company">
+            <field name="code">4205</field>
+            <field name="name">Akzo Nobel Assurantie N.V.</field>
+        </record>
+        <record id="insurance_company_4211" model="hr.insurance.company">
+            <field name="code">4211</field>
+            <field name="name">Deutscher Lloyd Versicherungs AG</field>
+        </record>
+        <record id="insurance_company_4233" model="hr.insurance.company">
+            <field name="code">4233</field>
+            <field name="name">Vereinte Versicherung AG</field>
+        </record>
+        <record id="insurance_company_4237" model="hr.insurance.company">
+            <field name="code">4237</field>
+            <field name="name">Seguros El Corte Inglés, Vida, Pensiones Y Reaseguros, S.A.</field>
+        </record>
+        <record id="insurance_company_4239" model="hr.insurance.company">
+            <field name="code">4239</field>
+            <field name="name">Allianz Global Corporate &amp; Specialty SE</field>
+        </record>
+        <record id="insurance_company_4250" model="hr.insurance.company">
+            <field name="code">4250</field>
+            <field name="name">Arca Vita International Limited</field>
+        </record>
+        <record id="insurance_company_4255" model="hr.insurance.company">
+            <field name="code">4255</field>
+            <field name="name">Caja de Seguros Reunidos, Compañia de Seguros Y Reaseguros, S.A. &quot;CASER&quot;</field>
+        </record>
+        <record id="insurance_company_4258" model="hr.insurance.company">
+            <field name="code">4258</field>
+            <field name="name">Securitas Bremer Allgemeine Versicherungs AG</field>
+        </record>
+        <record id="insurance_company_4259" model="hr.insurance.company">
+            <field name="code">4259</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE)</field>
+        </record>
+        <record id="insurance_company_4260" model="hr.insurance.company">
+            <field name="code">4260</field>
+            <field name="name">Tryg Forsikring A/S</field>
+        </record>
+        <record id="insurance_company_4264" model="hr.insurance.company">
+            <field name="code">4264</field>
+            <field name="name">Volvo Group Insurance (Ireland) Limited</field>
+        </record>
+        <record id="insurance_company_4265" model="hr.insurance.company">
+            <field name="code">4265</field>
+            <field name="name">UNIQA Österreich Versicherungen AG</field>
+        </record>
+        <record id="insurance_company_4267" model="hr.insurance.company">
+            <field name="code">4267</field>
+            <field name="name">Unilever Insurances N.V.</field>
+        </record>
+        <record id="insurance_company_4269" model="hr.insurance.company">
+            <field name="code">4269</field>
+            <field name="name">Swiss Re International SE</field>
+        </record>
+        <record id="insurance_company_4270" model="hr.insurance.company">
+            <field name="code">4270</field>
+            <field name="name">Allianz Benelux SA/NV</field>
+        </record>
+        <record id="insurance_company_4275" model="hr.insurance.company">
+            <field name="code">4275</field>
+            <field name="name">Carraig Insurance dac</field>
+        </record>
+        <record id="insurance_company_4280" model="hr.insurance.company">
+            <field name="code">4280</field>
+            <field name="name">Euro Insurances dac</field>
+        </record>
+        <record id="insurance_company_4286" model="hr.insurance.company">
+            <field name="code">4286</field>
+            <field name="name">XL Insurance Company SE</field>
+        </record>
+        <record id="insurance_company_4289" model="hr.insurance.company">
+            <field name="code">4289</field>
+            <field name="name">UPS International Insurance dac</field>
+        </record>
+        <record id="insurance_company_4323" model="hr.insurance.company">
+            <field name="code">4323</field>
+            <field name="name">Electrolux Försäkringsaktiebolag</field>
+        </record>
+        <record id="insurance_company_4325" model="hr.insurance.company">
+            <field name="code">4325</field>
+            <field name="name">Société D&apos;Assurances Générales Appliquées (Saga ) dac</field>
+        </record>
+        <record id="insurance_company_4326" model="hr.insurance.company">
+            <field name="code">4326</field>
+            <field name="name">If Skadeförsakring AB (publ)</field>
+        </record>
+        <record id="insurance_company_4331" model="hr.insurance.company">
+            <field name="code">4331</field>
+            <field name="name">Caisse Chirurgicale et Médicale de L&apos;Oise (CCMO)</field>
+        </record>
+        <record id="insurance_company_4332" model="hr.insurance.company">
+            <field name="code">4332</field>
+            <field name="name">Axis Specialty Europe SE</field>
+        </record>
+        <record id="insurance_company_4342" model="hr.insurance.company">
+            <field name="code">4342</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros</field>
+        </record>
+        <record id="insurance_company_4347" model="hr.insurance.company">
+            <field name="code">4347</field>
+            <field name="name">Canterbury Insurance dac</field>
+        </record>
+        <record id="insurance_company_4348" model="hr.insurance.company">
+            <field name="code">4348</field>
+            <field name="name">Pine Indemnity dac</field>
+        </record>
+        <record id="insurance_company_4349" model="hr.insurance.company">
+            <field name="code">4349</field>
+            <field name="name">FIATC, Mutua de Seguros Y Reaseguros a Prima Fija</field>
+        </record>
+        <record id="insurance_company_4350" model="hr.insurance.company">
+            <field name="code">4350</field>
+            <field name="name">Württembergische Versicherung AG</field>
+        </record>
+        <record id="insurance_company_4352" model="hr.insurance.company">
+            <field name="code">4352</field>
+            <field name="name">SiriusPoint International Försäkringsaktiebolag (publ)</field>
+        </record>
+        <record id="insurance_company_4356" model="hr.insurance.company">
+            <field name="code">4356</field>
+            <field name="name">HDI Global Specialty SE</field>
+        </record>
+        <record id="insurance_company_4357" model="hr.insurance.company">
+            <field name="code">4357</field>
+            <field name="name">HDI Global Specialty SE (sucursal na Suécia)</field>
+        </record>
+        <record id="insurance_company_4361" model="hr.insurance.company">
+            <field name="code">4361</field>
+            <field name="name">Ergo Direkt Versicherung Aktiengesellschaft</field>
+        </record>
+        <record id="insurance_company_4362" model="hr.insurance.company">
+            <field name="code">4362</field>
+            <field name="name">Acredia Versicherung AG</field>
+        </record>
+        <record id="insurance_company_4387" model="hr.insurance.company">
+            <field name="code">4387</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE) (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4388" model="hr.insurance.company">
+            <field name="code">4388</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE) (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_4389" model="hr.insurance.company">
+            <field name="code">4389</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE) (sucursal em Portugal)</field>
+        </record>
+        <record id="insurance_company_4396" model="hr.insurance.company">
+            <field name="code">4396</field>
+            <field name="name">Solid Försäkringsaktiebolag</field>
+        </record>
+        <record id="insurance_company_4399" model="hr.insurance.company">
+            <field name="code">4399</field>
+            <field name="name">Essity Försäkringsaktiebolag</field>
+        </record>
+        <record id="insurance_company_4402" model="hr.insurance.company">
+            <field name="code">4402</field>
+            <field name="name">Zurich Insurance Europe AG (ZIE) (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_4413" model="hr.insurance.company">
+            <field name="code">4413</field>
+            <field name="name">White Rock Insurance (Europe) PCC Limited</field>
+        </record>
+        <record id="insurance_company_4414" model="hr.insurance.company">
+            <field name="code">4414</field>
+            <field name="name">If Skadeförsakring AB (publ) (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_4415" model="hr.insurance.company">
+            <field name="code">4415</field>
+            <field name="name">If Skadeförsakring AB (publ)  (sucursal na Dinamarca)</field>
+        </record>
+        <record id="insurance_company_4416" model="hr.insurance.company">
+            <field name="code">4416</field>
+            <field name="name">If Skadeförsakring AB (publ)  (sucursal na Finlândia)</field>
+        </record>
+        <record id="insurance_company_4417" model="hr.insurance.company">
+            <field name="code">4417</field>
+            <field name="name">If Skadeförsakring AB (publ) (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_4418" model="hr.insurance.company">
+            <field name="code">4418</field>
+            <field name="name">If Skadeförsakring AB (publ)  (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4419" model="hr.insurance.company">
+            <field name="code">4419</field>
+            <field name="name">If Skadeförsakring AB (publ)  (sucursal na Noruega)</field>
+        </record>
+        <record id="insurance_company_4425" model="hr.insurance.company">
+            <field name="code">4425</field>
+            <field name="name">Zurich Insurance Europe AG (ZIE) (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_4426" model="hr.insurance.company">
+            <field name="code">4426</field>
+            <field name="name">Zurich Insurance Europe AG (ZIE) (sucursal na Finlândia)</field>
+        </record>
+        <record id="insurance_company_4427" model="hr.insurance.company">
+            <field name="code">4427</field>
+            <field name="name">Zurich Insurance Europe AG (ZIE) (sucursal na Suécia)</field>
+        </record>
+        <record id="insurance_company_4429" model="hr.insurance.company">
+            <field name="code">4429</field>
+            <field name="name">Nokatus Insurance Company dac</field>
+        </record>
+        <record id="insurance_company_4430" model="hr.insurance.company">
+            <field name="code">4430</field>
+            <field name="name">Wiener Städtische Versicherung AG Vienna Insurance Group</field>
+        </record>
+        <record id="insurance_company_4436" model="hr.insurance.company">
+            <field name="code">4436</field>
+            <field name="name">Le Sphinx Assurances Luxembourg, S.A.</field>
+        </record>
+        <record id="insurance_company_4441" model="hr.insurance.company">
+            <field name="code">4441</field>
+            <field name="name">Inter Partner Assistance (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_4442" model="hr.insurance.company">
+            <field name="code">4442</field>
+            <field name="name">HDI Global SE (sucursal na República Checa)</field>
+        </record>
+        <record id="insurance_company_4443" model="hr.insurance.company">
+            <field name="code">4443</field>
+            <field name="name">HDI Global SE (sucursal na Hungria)</field>
+        </record>
+        <record id="insurance_company_4444" model="hr.insurance.company">
+            <field name="code">4444</field>
+            <field name="name">Sace Bt S.p.A.</field>
+        </record>
+        <record id="insurance_company_4448" model="hr.insurance.company">
+            <field name="code">4448</field>
+            <field name="name">Allianz Società per Azioni (Allianz S.p.A.)</field>
+        </record>
+        <record id="insurance_company_4449" model="hr.insurance.company">
+            <field name="code">4449</field>
+            <field name="name">CACI Non-Life dac</field>
+        </record>
+        <record id="insurance_company_4450" model="hr.insurance.company">
+            <field name="code">4450</field>
+            <field name="name">CACI Life dac</field>
+        </record>
+        <record id="insurance_company_4451" model="hr.insurance.company">
+            <field name="code">4451</field>
+            <field name="name">Cardif Assurance Vie</field>
+        </record>
+        <record id="insurance_company_4452" model="hr.insurance.company">
+            <field name="code">4452</field>
+            <field name="name">Vodafone Insurance Ltd</field>
+        </record>
+        <record id="insurance_company_4453" model="hr.insurance.company">
+            <field name="code">4453</field>
+            <field name="name">Baloise Sachversicherung Aktiengesellschaft Deutschland</field>
+        </record>
+        <record id="insurance_company_4459" model="hr.insurance.company">
+            <field name="code">4459</field>
+            <field name="name">AIOI Nissay Dowa Insurance Company of Europe SE</field>
+        </record>
+        <record id="insurance_company_4460" model="hr.insurance.company">
+            <field name="code">4460</field>
+            <field name="name">Delvag Versicherungs AG</field>
+        </record>
+        <record id="insurance_company_4462" model="hr.insurance.company">
+            <field name="code">4462</field>
+            <field name="name">Chubb European Group SE (sucursal na Áustria)</field>
+        </record>
+        <record id="insurance_company_4463" model="hr.insurance.company">
+            <field name="code">4463</field>
+            <field name="name">Chubb European Group SE (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_4464" model="hr.insurance.company">
+            <field name="code">4464</field>
+            <field name="name">Chubb European Group SE (sucursal na Dinamarca)</field>
+        </record>
+        <record id="insurance_company_4465" model="hr.insurance.company">
+            <field name="code">4465</field>
+            <field name="name">Chubb European Group SE (sucursal na Finlândia)</field>
+        </record>
+        <record id="insurance_company_4466" model="hr.insurance.company">
+            <field name="code">4466</field>
+            <field name="name">Chubb European Group SE</field>
+        </record>
+        <record id="insurance_company_4467" model="hr.insurance.company">
+            <field name="code">4467</field>
+            <field name="name">Chubb European Group SE (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_4468" model="hr.insurance.company">
+            <field name="code">4468</field>
+            <field name="name">Chubb European Group SE (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_4469" model="hr.insurance.company">
+            <field name="code">4469</field>
+            <field name="name">Chubb European Group SE (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_4470" model="hr.insurance.company">
+            <field name="code">4470</field>
+            <field name="name">Chubb European Group SE (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4471" model="hr.insurance.company">
+            <field name="code">4471</field>
+            <field name="name">Chubb European Group SE (sucursal na Noruega)</field>
+        </record>
+        <record id="insurance_company_4472" model="hr.insurance.company">
+            <field name="code">4472</field>
+            <field name="name">Chubb European Group SE (sucursal na Polónia)</field>
+        </record>
+        <record id="insurance_company_4473" model="hr.insurance.company">
+            <field name="code">4473</field>
+            <field name="name">Chubb European Group SE (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4474" model="hr.insurance.company">
+            <field name="code">4474</field>
+            <field name="name">Chubb European Group SE (sucursal na Suécia)</field>
+        </record>
+        <record id="insurance_company_4480" model="hr.insurance.company">
+            <field name="code">4480</field>
+            <field name="name">Helvetia Global Solutions Ltd</field>
+        </record>
+        <record id="insurance_company_4484" model="hr.insurance.company">
+            <field name="code">4484</field>
+            <field name="name">Liberty Mutual Insurance Europe SE</field>
+        </record>
+        <record id="insurance_company_4485" model="hr.insurance.company">
+            <field name="code">4485</field>
+            <field name="name">Generali Italia s.p.a</field>
+        </record>
+        <record id="insurance_company_4487" model="hr.insurance.company">
+            <field name="code">4487</field>
+            <field name="name">CNP Santander Insurance Life DAC</field>
+        </record>
+        <record id="insurance_company_4488" model="hr.insurance.company">
+            <field name="code">4488</field>
+            <field name="name">Noble Insurance Company dac</field>
+        </record>
+        <record id="insurance_company_4490" model="hr.insurance.company">
+            <field name="code">4490</field>
+            <field name="name">Filo Diretto Assicurazioni s.p.a.</field>
+        </record>
+        <record id="insurance_company_4492" model="hr.insurance.company">
+            <field name="code">4492</field>
+            <field name="name">Eni Insurance dac</field>
+        </record>
+        <record id="insurance_company_4493" model="hr.insurance.company">
+            <field name="code">4493</field>
+            <field name="name">Allied World Assurance Company (Europe) dac</field>
+        </record>
+        <record id="insurance_company_4499" model="hr.insurance.company">
+            <field name="code">4499</field>
+            <field name="name">Wealins SA</field>
+        </record>
+        <record id="insurance_company_4503" model="hr.insurance.company">
+            <field name="code">4503</field>
+            <field name="name">N.V. Hagelunie</field>
+        </record>
+        <record id="insurance_company_4515" model="hr.insurance.company">
+            <field name="code">4515</field>
+            <field name="name">Allianz Elementar Versicherungs AG</field>
+        </record>
+        <record id="insurance_company_4518" model="hr.insurance.company">
+            <field name="code">4518</field>
+            <field name="name">Asemas Mutua de Seguros Y Reaseguros a Prima Fija</field>
+        </record>
+        <record id="insurance_company_4520" model="hr.insurance.company">
+            <field name="code">4520</field>
+            <field name="name">ACHMEA SCHADEVERZEKERINGEN N.V.</field>
+        </record>
+        <record id="insurance_company_4523" model="hr.insurance.company">
+            <field name="code">4523</field>
+            <field name="name">Bâloise Vie Luxembourg, S.A.</field>
+        </record>
+        <record id="insurance_company_4524" model="hr.insurance.company">
+            <field name="code">4524</field>
+            <field name="name">GD Insurance Company dac</field>
+        </record>
+        <record id="insurance_company_4525" model="hr.insurance.company">
+            <field name="code">4525</field>
+            <field name="name">Vishay Insurance dac</field>
+        </record>
+        <record id="insurance_company_4529" model="hr.insurance.company">
+            <field name="code">4529</field>
+            <field name="name">Orkla Insurance Company dac</field>
+        </record>
+        <record id="insurance_company_4531" model="hr.insurance.company">
+            <field name="code">4531</field>
+            <field name="name">Zürich Versicherungs-AG</field>
+        </record>
+        <record id="insurance_company_4532" model="hr.insurance.company">
+            <field name="code">4532</field>
+            <field name="name">Zurich Life Assurance Plc</field>
+        </record>
+        <record id="insurance_company_4536" model="hr.insurance.company">
+            <field name="code">4536</field>
+            <field name="name">Helvetia Compañia Suiza S.A. de Seguros Y Reaseguros</field>
+        </record>
+        <record id="insurance_company_4538" model="hr.insurance.company">
+            <field name="code">4538</field>
+            <field name="name">Mannheimer Versicherung AG</field>
+        </record>
+        <record id="insurance_company_4539" model="hr.insurance.company">
+            <field name="code">4539</field>
+            <field name="name">Sociedad de Seguros Mutuos Maritimos de Vigo, Mutualidad de Seguros Y Reaseguros a Prima Fija</field>
+        </record>
+        <record id="insurance_company_4540" model="hr.insurance.company">
+            <field name="code">4540</field>
+            <field name="name">Cigna Europe Insurance Company SA NV</field>
+        </record>
+        <record id="insurance_company_4541" model="hr.insurance.company">
+            <field name="code">4541</field>
+            <field name="name">Cigna Life Insurance Company of Europe SA-NV</field>
+        </record>
+        <record id="insurance_company_4543" model="hr.insurance.company">
+            <field name="code">4543</field>
+            <field name="name">Groupama Assurance-Credit et Caution</field>
+        </record>
+        <record id="insurance_company_4545" model="hr.insurance.company">
+            <field name="code">4545</field>
+            <field name="name">Pohjola Insurance Ltd</field>
+        </record>
+        <record id="insurance_company_4548" model="hr.insurance.company">
+            <field name="code">4548</field>
+            <field name="name">Acadia International Insurance Company dac</field>
+        </record>
+        <record id="insurance_company_4551" model="hr.insurance.company">
+            <field name="code">4551</field>
+            <field name="name">Musaat Mutua de Seguros a Prima Fija</field>
+        </record>
+        <record id="insurance_company_4552" model="hr.insurance.company">
+            <field name="code">4552</field>
+            <field name="name">Zurich Insurance Europe AG (ZIE) (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_4553" model="hr.insurance.company">
+            <field name="code">4553</field>
+            <field name="name">Zurich Insurance Europe AG (ZIE) (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_4554" model="hr.insurance.company">
+            <field name="code">4554</field>
+            <field name="name">Zurich Insurance Europe AG (ZIE) (sucursal na Dinamarca)</field>
+        </record>
+        <record id="insurance_company_4555" model="hr.insurance.company">
+            <field name="code">4555</field>
+            <field name="name">Zurich Insurance Europe AG (ZIE) (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4556" model="hr.insurance.company">
+            <field name="code">4556</field>
+            <field name="name">Zurich Insurance Europe AG (ZIE) (sucursal na Noruega)</field>
+        </record>
+        <record id="insurance_company_4557" model="hr.insurance.company">
+            <field name="code">4557</field>
+            <field name="name">Inter Partner Assistance SA (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_4559" model="hr.insurance.company">
+            <field name="code">4559</field>
+            <field name="name">Credendo  Guarantees &amp; Speciality Risks</field>
+        </record>
+        <record id="insurance_company_4560" model="hr.insurance.company">
+            <field name="code">4560</field>
+            <field name="name">Credendo  Trade Creditinsurance (CREDENDO TCI)</field>
+        </record>
+        <record id="insurance_company_4561" model="hr.insurance.company">
+            <field name="code">4561</field>
+            <field name="name">Credendo  Guarantees &amp; Speciality Risks (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4562" model="hr.insurance.company">
+            <field name="code">4562</field>
+            <field name="name">Credendo  Guarantees &amp; Speciality Risks (sucursal no Luxemburgo)</field>
+        </record>
+        <record id="insurance_company_4570" model="hr.insurance.company">
+            <field name="code">4570</field>
+            <field name="name">Allianz Global Corporate &amp; Specialty SE (sucursal na Áustria)</field>
+        </record>
+        <record id="insurance_company_4571" model="hr.insurance.company">
+            <field name="code">4571</field>
+            <field name="name">Allianz Global Corporate &amp; Specialty SE (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_4572" model="hr.insurance.company">
+            <field name="code">4572</field>
+            <field name="name">Allianz Global Corporate &amp; Specialty SE (sucursal na Dinamarca)</field>
+        </record>
+        <record id="insurance_company_4576" model="hr.insurance.company">
+            <field name="code">4576</field>
+            <field name="name">Gothaer Allgemeine Versicherung AG</field>
+        </record>
+        <record id="insurance_company_4579" model="hr.insurance.company">
+            <field name="code">4579</field>
+            <field name="name">Allianz Hungária Biztosító Zrt</field>
+        </record>
+        <record id="insurance_company_4582" model="hr.insurance.company">
+            <field name="code">4582</field>
+            <field name="name">Allianz Global Corporate &amp; Specialty SE (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_4589" model="hr.insurance.company">
+            <field name="code">4589</field>
+            <field name="name">Allianz Nederland N.V. (Rotterdam)</field>
+        </record>
+        <record id="insurance_company_4590" model="hr.insurance.company">
+            <field name="code">4590</field>
+            <field name="name">CRH Group Insurance Services Europe Limited</field>
+        </record>
+        <record id="insurance_company_4592" model="hr.insurance.company">
+            <field name="code">4592</field>
+            <field name="name">Hansard Europe dac</field>
+        </record>
+        <record id="insurance_company_4594" model="hr.insurance.company">
+            <field name="code">4594</field>
+            <field name="name">The OneLife Company S.A.</field>
+        </record>
+        <record id="insurance_company_4598" model="hr.insurance.company">
+            <field name="code">4598</field>
+            <field name="name">Nissan International Insurance Limited</field>
+        </record>
+        <record id="insurance_company_4599" model="hr.insurance.company">
+            <field name="code">4599</field>
+            <field name="name">ERGO Versicherung Aktiengesellschaft</field>
+        </record>
+        <record id="insurance_company_4601" model="hr.insurance.company">
+            <field name="code">4601</field>
+            <field name="name">NEUE Rechtsschutz  Versicherungsgesellschaft Aktiengesellschaft</field>
+        </record>
+        <record id="insurance_company_4603" model="hr.insurance.company">
+            <field name="code">4603</field>
+            <field name="name">Cali Europe S.A.</field>
+        </record>
+        <record id="insurance_company_4608" model="hr.insurance.company">
+            <field name="code">4608</field>
+            <field name="name">Mutuelle Générale de l&apos;Education Nationale (MGEN)</field>
+        </record>
+        <record id="insurance_company_4614" model="hr.insurance.company">
+            <field name="code">4614</field>
+            <field name="name">SV Sparkassenversicherung Gebäudeversicherung AG</field>
+        </record>
+        <record id="insurance_company_4616" model="hr.insurance.company">
+            <field name="code">4616</field>
+            <field name="name">E-Cie Vie</field>
+        </record>
+        <record id="insurance_company_4617" model="hr.insurance.company">
+            <field name="code">4617</field>
+            <field name="name">Zurich Insurance Europe AG (ZIE) (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4618" model="hr.insurance.company">
+            <field name="code">4618</field>
+            <field name="name">IDA Insurance Limited</field>
+        </record>
+        <record id="insurance_company_4622" model="hr.insurance.company">
+            <field name="code">4622</field>
+            <field name="name">RACE SEGUROS Y REASEGUROS, S.A.</field>
+        </record>
+        <record id="insurance_company_4625" model="hr.insurance.company">
+            <field name="code">4625</field>
+            <field name="name">Allianz Global Corporate &amp; Specialty SE (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4626" model="hr.insurance.company">
+            <field name="code">4626</field>
+            <field name="name">CG Car-Garantie Versicherungs-AG</field>
+        </record>
+        <record id="insurance_company_4627" model="hr.insurance.company">
+            <field name="code">4627</field>
+            <field name="name">Alte Leipziger Versicherung AG</field>
+        </record>
+        <record id="insurance_company_4628" model="hr.insurance.company">
+            <field name="code">4628</field>
+            <field name="name">Axa France Vie</field>
+        </record>
+        <record id="insurance_company_4630" model="hr.insurance.company">
+            <field name="code">4630</field>
+            <field name="name">PartnerRe Ireland Insurance dac</field>
+        </record>
+        <record id="insurance_company_4631" model="hr.insurance.company">
+            <field name="code">4631</field>
+            <field name="name">Axa France Iard</field>
+        </record>
+        <record id="insurance_company_4632" model="hr.insurance.company">
+            <field name="code">4632</field>
+            <field name="name">DONAU Versicherung AG Vienna Insurance Group</field>
+        </record>
+        <record id="insurance_company_4634" model="hr.insurance.company">
+            <field name="code">4634</field>
+            <field name="name">DSV Insurance A/S</field>
+        </record>
+        <record id="insurance_company_4636" model="hr.insurance.company">
+            <field name="code">4636</field>
+            <field name="name">Stellantis Insurance Limited</field>
+        </record>
+        <record id="insurance_company_4637" model="hr.insurance.company">
+            <field name="code">4637</field>
+            <field name="name">Stellantis Life Insurance Limited</field>
+        </record>
+        <record id="insurance_company_4643" model="hr.insurance.company">
+            <field name="code">4643</field>
+            <field name="name">Allianz Global &amp; Corporate Specialty SE (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_4644" model="hr.insurance.company">
+            <field name="code">4644</field>
+            <field name="name">Allianz Global Corporate &amp; Specialty SE (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4645" model="hr.insurance.company">
+            <field name="code">4645</field>
+            <field name="name">Zurich Insurance Europe AG (ZIE)</field>
+        </record>
+        <record id="insurance_company_4646" model="hr.insurance.company">
+            <field name="code">4646</field>
+            <field name="name">Bayerischer Versicherungsverband Versicherungsaktiengesellschaft</field>
+        </record>
+        <record id="insurance_company_4647" model="hr.insurance.company">
+            <field name="code">4647</field>
+            <field name="name">Bayerische Landesbrandversicherung AG</field>
+        </record>
+        <record id="insurance_company_4651" model="hr.insurance.company">
+            <field name="code">4651</field>
+            <field name="name">Swiss Life (Luxembourg) S.A.</field>
+        </record>
+        <record id="insurance_company_4652" model="hr.insurance.company">
+            <field name="code">4652</field>
+            <field name="name">SAARLAND Feuerversicherung AG</field>
+        </record>
+        <record id="insurance_company_4653" model="hr.insurance.company">
+            <field name="code">4653</field>
+            <field name="name">Helvetia Versicherungs-Aktiengesellschaft</field>
+        </record>
+        <record id="insurance_company_4654" model="hr.insurance.company">
+            <field name="code">4654</field>
+            <field name="name">Forsikringsselskabet Privatsikring A/S</field>
+        </record>
+        <record id="insurance_company_4657" model="hr.insurance.company">
+            <field name="code">4657</field>
+            <field name="name">Vienna Insurance Group AG Wienner Versicherung Gruppe</field>
+        </record>
+        <record id="insurance_company_4658" model="hr.insurance.company">
+            <field name="code">4658</field>
+            <field name="name">AWP P&amp;C S.A. (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4659" model="hr.insurance.company">
+            <field name="code">4659</field>
+            <field name="name">AWP P&amp;C S.A. (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_4660" model="hr.insurance.company">
+            <field name="code">4660</field>
+            <field name="name">Assurances du Credit Mutuel IARD SA (ACM IARD)</field>
+        </record>
+        <record id="insurance_company_4661" model="hr.insurance.company">
+            <field name="code">4661</field>
+            <field name="name">Assurances du Credit Mutuel Vie SA (ACM VIE SA)</field>
+        </record>
+        <record id="insurance_company_4662" model="hr.insurance.company">
+            <field name="code">4662</field>
+            <field name="name">Euler Hermes (Allianz Trade) SA (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_4664" model="hr.insurance.company">
+            <field name="code">4664</field>
+            <field name="name">Norwegian Hull Club</field>
+        </record>
+        <record id="insurance_company_4666" model="hr.insurance.company">
+            <field name="code">4666</field>
+            <field name="name">Swisslife Prevoyance et Santé</field>
+        </record>
+        <record id="insurance_company_4668" model="hr.insurance.company">
+            <field name="code">4668</field>
+            <field name="name">VHV Allgemeine Versicherung AG</field>
+        </record>
+        <record id="insurance_company_4669" model="hr.insurance.company">
+            <field name="code">4669</field>
+            <field name="name">Inter Partner Assistance SA</field>
+        </record>
+        <record id="insurance_company_4671" model="hr.insurance.company">
+            <field name="code">4671</field>
+            <field name="name">SIAT - Società Italiana di Assicurazioni e Riassicurazioni S.P.A. (Italy)</field>
+        </record>
+        <record id="insurance_company_4672" model="hr.insurance.company">
+            <field name="code">4672</field>
+            <field name="name">Hamilton Insurance dac</field>
+        </record>
+        <record id="insurance_company_4674" model="hr.insurance.company">
+            <field name="code">4674</field>
+            <field name="name">Tryg Forsikring A/S (sucursal na Suécia)</field>
+        </record>
+        <record id="insurance_company_4675" model="hr.insurance.company">
+            <field name="code">4675</field>
+            <field name="name">Tryg Forsikring A/S (sucursal na Noruega)</field>
+        </record>
+        <record id="insurance_company_4677" model="hr.insurance.company">
+            <field name="code">4677</field>
+            <field name="name">Mapfre Global Risks</field>
+        </record>
+        <record id="insurance_company_4680" model="hr.insurance.company">
+            <field name="code">4680</field>
+            <field name="name">Amtrust International Underwriters dac</field>
+        </record>
+        <record id="insurance_company_4685" model="hr.insurance.company">
+            <field name="code">4685</field>
+            <field name="name">ArgoGlobal Assicurazioni S.p.A.</field>
+        </record>
+        <record id="insurance_company_4686" model="hr.insurance.company">
+            <field name="code">4686</field>
+            <field name="name">Ericsson Insurance (Försäkring) AB</field>
+        </record>
+        <record id="insurance_company_4690" model="hr.insurance.company">
+            <field name="code">4690</field>
+            <field name="name">Oney Insurance (PCC) Limited</field>
+        </record>
+        <record id="insurance_company_4691" model="hr.insurance.company">
+            <field name="code">4691</field>
+            <field name="name">ONEY LIFE (PCC) LIMITED</field>
+        </record>
+        <record id="insurance_company_4692" model="hr.insurance.company">
+            <field name="code">4692</field>
+            <field name="name">Vadis Försäkringsaktiebolag</field>
+        </record>
+        <record id="insurance_company_4693" model="hr.insurance.company">
+            <field name="code">4693</field>
+            <field name="name">Utmost PanEurope dac</field>
+        </record>
+        <record id="insurance_company_4696" model="hr.insurance.company">
+            <field name="code">4696</field>
+            <field name="name">Assuranceforeningen Skuld (Gjensidig)</field>
+        </record>
+        <record id="insurance_company_4698" model="hr.insurance.company">
+            <field name="code">4698</field>
+            <field name="name">Pharma International Insurance dac</field>
+        </record>
+        <record id="insurance_company_4700" model="hr.insurance.company">
+            <field name="code">4700</field>
+            <field name="name">StarStone Insurance SE</field>
+        </record>
+        <record id="insurance_company_4701" model="hr.insurance.company">
+            <field name="code">4701</field>
+            <field name="name">Den Norske Krigsforsikring for Skib Gjensidig Forening</field>
+        </record>
+        <record id="insurance_company_4702" model="hr.insurance.company">
+            <field name="code">4702</field>
+            <field name="name">Cardif Lux Vie</field>
+        </record>
+        <record id="insurance_company_4711" model="hr.insurance.company">
+            <field name="code">4711</field>
+            <field name="name">DKV Belgium NV</field>
+        </record>
+        <record id="insurance_company_4713" model="hr.insurance.company">
+            <field name="code">4713</field>
+            <field name="name">Pan Insurance dac</field>
+        </record>
+        <record id="insurance_company_4715" model="hr.insurance.company">
+            <field name="code">4715</field>
+            <field name="name">KD ivljenje, zavarovalnica d.d.</field>
+        </record>
+        <record id="insurance_company_4719" model="hr.insurance.company">
+            <field name="code">4719</field>
+            <field name="name">TVM Verzekeringen N.V.</field>
+        </record>
+        <record id="insurance_company_4720" model="hr.insurance.company">
+            <field name="code">4720</field>
+            <field name="name">Länsförsäkringar AB (publ)</field>
+        </record>
+        <record id="insurance_company_4722" model="hr.insurance.company">
+            <field name="code">4722</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE) (sucursal na Austria)</field>
+        </record>
+        <record id="insurance_company_4723" model="hr.insurance.company">
+            <field name="code">4723</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE) (sucursal na Bulgária)</field>
+        </record>
+        <record id="insurance_company_4724" model="hr.insurance.company">
+            <field name="code">4724</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE) (sucursal na Hungria)</field>
+        </record>
+        <record id="insurance_company_4725" model="hr.insurance.company">
+            <field name="code">4725</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE) (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_4727" model="hr.insurance.company">
+            <field name="code">4727</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE) (sucursal na Polónia)</field>
+        </record>
+        <record id="insurance_company_4728" model="hr.insurance.company">
+            <field name="code">4728</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE) (sucursal na Suécia)</field>
+        </record>
+        <record id="insurance_company_4729" model="hr.insurance.company">
+            <field name="code">4729</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE) (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4730" model="hr.insurance.company">
+            <field name="code">4730</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE) (sucursal na Rep. Eslovaca)</field>
+        </record>
+        <record id="insurance_company_4731" model="hr.insurance.company">
+            <field name="code">4731</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE) (sucursal na Lituânia)</field>
+        </record>
+        <record id="insurance_company_4732" model="hr.insurance.company">
+            <field name="code">4732</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE) (sucursal na Rep. Checa)</field>
+        </record>
+        <record id="insurance_company_4733" model="hr.insurance.company">
+            <field name="code">4733</field>
+            <field name="name">HDI Versicherung AG</field>
+        </record>
+        <record id="insurance_company_4736" model="hr.insurance.company">
+            <field name="code">4736</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE) (sucursal na Dinamarca)</field>
+        </record>
+        <record id="insurance_company_4737" model="hr.insurance.company">
+            <field name="code">4737</field>
+            <field name="name">COMPAGNIE FRANCAISE D&apos;ASSURANCE POUR LE COMMERCE EXTERIEUR (COFACE) (sucursal na Roménia)</field>
+        </record>
+        <record id="insurance_company_4747" model="hr.insurance.company">
+            <field name="code">4747</field>
+            <field name="name">Baloise Belgium NV/SA</field>
+        </record>
+        <record id="insurance_company_4752" model="hr.insurance.company">
+            <field name="code">4752</field>
+            <field name="name">Axa Seguros Generales, S.A. de Seguros Y Reaseguros</field>
+        </record>
+        <record id="insurance_company_4753" model="hr.insurance.company">
+            <field name="code">4753</field>
+            <field name="name">Volkswagen Insurance Company dac</field>
+        </record>
+        <record id="insurance_company_4754" model="hr.insurance.company">
+            <field name="code">4754</field>
+            <field name="name">HDI Versicherung AG</field>
+        </record>
+        <record id="insurance_company_4761" model="hr.insurance.company">
+            <field name="code">4761</field>
+            <field name="name">Helvetia Assurances S.A.</field>
+        </record>
+        <record id="insurance_company_4762" model="hr.insurance.company">
+            <field name="code">4762</field>
+            <field name="name">The Shipowners&apos; Mutual Protection and Indemnity Association (Luxembourg)</field>
+        </record>
+        <record id="insurance_company_4765" model="hr.insurance.company">
+            <field name="code">4765</field>
+            <field name="name">Foyer Global Health S.A.</field>
+        </record>
+        <record id="insurance_company_4769" model="hr.insurance.company">
+            <field name="code">4769</field>
+            <field name="name">Allianz Global Corporate &amp; Specialty SE (sucursal na Suécia)</field>
+        </record>
+        <record id="insurance_company_4771" model="hr.insurance.company">
+            <field name="code">4771</field>
+            <field name="name">Greenval Insurance dac</field>
+        </record>
+        <record id="insurance_company_4774" model="hr.insurance.company">
+            <field name="code">4774</field>
+            <field name="name">Solunion Seguros de Crédito, Compañia Internacional de Seguros Y Reaseguros, S.A.</field>
+        </record>
+        <record id="insurance_company_4775" model="hr.insurance.company">
+            <field name="code">4775</field>
+            <field name="name">MELES Insurance A/S</field>
+        </record>
+        <record id="insurance_company_4778" model="hr.insurance.company">
+            <field name="code">4778</field>
+            <field name="name">Ergo Reiseversicherung AG</field>
+        </record>
+        <record id="insurance_company_4781" model="hr.insurance.company">
+            <field name="code">4781</field>
+            <field name="name">Euler Hermes (Allianz Trade) SA (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4782" model="hr.insurance.company">
+            <field name="code">4782</field>
+            <field name="name">Euler Hermes (Allianz Trade) SA (sucursal na Dinamarca)</field>
+        </record>
+        <record id="insurance_company_4783" model="hr.insurance.company">
+            <field name="code">4783</field>
+            <field name="name">Euler Hermes (Allianz Trade) SA (sucursal na Finlândia)</field>
+        </record>
+        <record id="insurance_company_4784" model="hr.insurance.company">
+            <field name="code">4784</field>
+            <field name="name">Euler Hermes (Allianz Trade) SA (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_4785" model="hr.insurance.company">
+            <field name="code">4785</field>
+            <field name="name">Euler Hermes (Allianz Trade) SA (sucursal na Suécia)</field>
+        </record>
+        <record id="insurance_company_4788" model="hr.insurance.company">
+            <field name="code">4788</field>
+            <field name="name">Euler Hermes (Allianz Trade) SA</field>
+        </record>
+        <record id="insurance_company_4792" model="hr.insurance.company">
+            <field name="code">4792</field>
+            <field name="name">Imperio Assurances et Capitalisation</field>
+        </record>
+        <record id="insurance_company_4795" model="hr.insurance.company">
+            <field name="code">4795</field>
+            <field name="name">ArgoGlobal SE</field>
+        </record>
+        <record id="insurance_company_4796" model="hr.insurance.company">
+            <field name="code">4796</field>
+            <field name="name">LocalTapiola General Mutual Insurance Company</field>
+        </record>
+        <record id="insurance_company_4797" model="hr.insurance.company">
+            <field name="code">4797</field>
+            <field name="name">HDI Global SE (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_4798" model="hr.insurance.company">
+            <field name="code">4798</field>
+            <field name="name">UTMOST Luxembourg S.A.</field>
+        </record>
+        <record id="insurance_company_4800" model="hr.insurance.company">
+            <field name="code">4800</field>
+            <field name="name">XL Insurance Company SE (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4809" model="hr.insurance.company">
+            <field name="code">4809</field>
+            <field name="name">Onix Asigurari S.A.</field>
+        </record>
+        <record id="insurance_company_4811" model="hr.insurance.company">
+            <field name="code">4811</field>
+            <field name="name">DKV Deutsche Krankenversicherung AG</field>
+        </record>
+        <record id="insurance_company_4812" model="hr.insurance.company">
+            <field name="code">4812</field>
+            <field name="name">AWP Health &amp; Life SA</field>
+        </record>
+        <record id="insurance_company_4813" model="hr.insurance.company">
+            <field name="code">4813</field>
+            <field name="name">AWP Health &amp; Life (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_4816" model="hr.insurance.company">
+            <field name="code">4816</field>
+            <field name="name">Highdome PCC Limited</field>
+        </record>
+        <record id="insurance_company_4825" model="hr.insurance.company">
+            <field name="code">4825</field>
+            <field name="name">Allianz Elementar Lebensversicherungs AG</field>
+        </record>
+        <record id="insurance_company_4826" model="hr.insurance.company">
+            <field name="code">4826</field>
+            <field name="name">Powszechny Zaklad Ubezpieczen S.A.</field>
+        </record>
+        <record id="insurance_company_4827" model="hr.insurance.company">
+            <field name="code">4827</field>
+            <field name="name">Allianz plc</field>
+        </record>
+        <record id="insurance_company_4834" model="hr.insurance.company">
+            <field name="code">4834</field>
+            <field name="name">The West of England Ship Owners Mutual Insurance Association (Luxembourg)</field>
+        </record>
+        <record id="insurance_company_4837" model="hr.insurance.company">
+            <field name="code">4837</field>
+            <field name="name">Gard Marine &amp; Energy Insurance (Europe) AS</field>
+        </record>
+        <record id="insurance_company_4839" model="hr.insurance.company">
+            <field name="code">4839</field>
+            <field name="name">Euro-Aviation Versicherungs-AG</field>
+        </record>
+        <record id="insurance_company_4842" model="hr.insurance.company">
+            <field name="code">4842</field>
+            <field name="name">QIC Europe Limited</field>
+        </record>
+        <record id="insurance_company_4843" model="hr.insurance.company">
+            <field name="code">4843</field>
+            <field name="name">Kingfisher Insurance dac</field>
+        </record>
+        <record id="insurance_company_4845" model="hr.insurance.company">
+            <field name="code">4845</field>
+            <field name="name">ERV Försäkringsaktibolag (publ.)</field>
+        </record>
+        <record id="insurance_company_4847" model="hr.insurance.company">
+            <field name="code">4847</field>
+            <field name="name">Great American International Insurance (EU) dac</field>
+        </record>
+        <record id="insurance_company_4848" model="hr.insurance.company">
+            <field name="code">4848</field>
+            <field name="name">Nautilus Indemnity (Europe) dac</field>
+        </record>
+        <record id="insurance_company_4849" model="hr.insurance.company">
+            <field name="code">4849</field>
+            <field name="name">Stellantis Insurance Europe Limited</field>
+        </record>
+        <record id="insurance_company_4850" model="hr.insurance.company">
+            <field name="code">4850</field>
+            <field name="name">Stellantis Life Insurance Europe Limited</field>
+        </record>
+        <record id="insurance_company_4852" model="hr.insurance.company">
+            <field name="code">4852</field>
+            <field name="name">Vital Blue Insurance dac</field>
+        </record>
+        <record id="insurance_company_4854" model="hr.insurance.company">
+            <field name="code">4854</field>
+            <field name="name">OCCIDENT GCO, Sociedad Anónima de SegurosY Reaseguros</field>
+        </record>
+        <record id="insurance_company_4856" model="hr.insurance.company">
+            <field name="code">4856</field>
+            <field name="name">MMA IARD SA</field>
+        </record>
+        <record id="insurance_company_4858" model="hr.insurance.company">
+            <field name="code">4858</field>
+            <field name="name">Roland Rechtsschutz-Versicherungs AG</field>
+        </record>
+        <record id="insurance_company_4859" model="hr.insurance.company">
+            <field name="code">4859</field>
+            <field name="name">Generali Luxembourg S.A.</field>
+        </record>
+        <record id="insurance_company_4860" model="hr.insurance.company">
+            <field name="code">4860</field>
+            <field name="name">Allianz Life Luxembourg S.A.</field>
+        </record>
+        <record id="insurance_company_4862" model="hr.insurance.company">
+            <field name="code">4862</field>
+            <field name="name">SEB Life International Assurance Company DAC</field>
+        </record>
+        <record id="insurance_company_4864" model="hr.insurance.company">
+            <field name="code">4864</field>
+            <field name="name">MSIG Europe SE</field>
+        </record>
+        <record id="insurance_company_4865" model="hr.insurance.company">
+            <field name="code">4865</field>
+            <field name="name">MSIG Europe SE (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4866" model="hr.insurance.company">
+            <field name="code">4866</field>
+            <field name="name">MSIG Europe SE (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_4867" model="hr.insurance.company">
+            <field name="code">4867</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_4868" model="hr.insurance.company">
+            <field name="code">4868</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na Áustria)</field>
+        </record>
+        <record id="insurance_company_4869" model="hr.insurance.company">
+            <field name="code">4869</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_4870" model="hr.insurance.company">
+            <field name="code">4870</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na Dinamarca)</field>
+        </record>
+        <record id="insurance_company_4871" model="hr.insurance.company">
+            <field name="code">4871</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na Eslováquia)</field>
+        </record>
+        <record id="insurance_company_4872" model="hr.insurance.company">
+            <field name="code">4872</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na Finlândia)</field>
+        </record>
+        <record id="insurance_company_4873" model="hr.insurance.company">
+            <field name="code">4873</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_4874" model="hr.insurance.company">
+            <field name="code">4874</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na Grécia)</field>
+        </record>
+        <record id="insurance_company_4875" model="hr.insurance.company">
+            <field name="code">4875</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4876" model="hr.insurance.company">
+            <field name="code">4876</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na Hungria)</field>
+        </record>
+        <record id="insurance_company_4877" model="hr.insurance.company">
+            <field name="code">4877</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_4878" model="hr.insurance.company">
+            <field name="code">4878</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_4879" model="hr.insurance.company">
+            <field name="code">4879</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal no Luxemburgo)</field>
+        </record>
+        <record id="insurance_company_4880" model="hr.insurance.company">
+            <field name="code">4880</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na Noruega)</field>
+        </record>
+        <record id="insurance_company_4881" model="hr.insurance.company">
+            <field name="code">4881</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na Polónia)</field>
+        </record>
+        <record id="insurance_company_4883" model="hr.insurance.company">
+            <field name="code">4883</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na República Checa)</field>
+        </record>
+        <record id="insurance_company_4884" model="hr.insurance.company">
+            <field name="code">4884</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na Suécia)</field>
+        </record>
+        <record id="insurance_company_4886" model="hr.insurance.company">
+            <field name="code">4886</field>
+            <field name="name">Swiss Re International SE (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_4887" model="hr.insurance.company">
+            <field name="code">4887</field>
+            <field name="name">Swiss Re International SE (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_4888" model="hr.insurance.company">
+            <field name="code">4888</field>
+            <field name="name">Swiss Re International SE (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_4890" model="hr.insurance.company">
+            <field name="code">4890</field>
+            <field name="name">W.R. Berkley Europe AG</field>
+        </record>
+        <record id="insurance_company_4891" model="hr.insurance.company">
+            <field name="code">4891</field>
+            <field name="name">Istituto Trentino Alto Adige per Assicurazioni</field>
+        </record>
+        <record id="insurance_company_4892" model="hr.insurance.company">
+            <field name="code">4892</field>
+            <field name="name">Atlas Insurance PCC Limited</field>
+        </record>
+        <record id="insurance_company_4893" model="hr.insurance.company">
+            <field name="code">4893</field>
+            <field name="name">Great Lakes Insurance SE</field>
+        </record>
+        <record id="insurance_company_4895" model="hr.insurance.company">
+            <field name="code">4895</field>
+            <field name="name">Steadfast Insurance Partners Limited</field>
+        </record>
+        <record id="insurance_company_4896" model="hr.insurance.company">
+            <field name="code">4896</field>
+            <field name="name">Allianz Risk Transfer AG</field>
+        </record>
+        <record id="insurance_company_4897" model="hr.insurance.company">
+            <field name="code">4897</field>
+            <field name="name">La Mondiale Europartner, S.A.</field>
+        </record>
+        <record id="insurance_company_4900" model="hr.insurance.company">
+            <field name="code">4900</field>
+            <field name="name">Axa Assicurazioni S.p.A.</field>
+        </record>
+        <record id="insurance_company_4901" model="hr.insurance.company">
+            <field name="code">4901</field>
+            <field name="name">Swiss Re International SE (sucursal na Dinamarca)</field>
+        </record>
+        <record id="insurance_company_4902" model="hr.insurance.company">
+            <field name="code">4902</field>
+            <field name="name">Swiss Re International SE (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4903" model="hr.insurance.company">
+            <field name="code">4903</field>
+            <field name="name">Swiss Re International SE (sucursal na Eslováquia)</field>
+        </record>
+        <record id="insurance_company_4905" model="hr.insurance.company">
+            <field name="code">4905</field>
+            <field name="name">Swiss Re International SE (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4907" model="hr.insurance.company">
+            <field name="code">4907</field>
+            <field name="name">Advent Insurance PCC Limited</field>
+        </record>
+        <record id="insurance_company_4908" model="hr.insurance.company">
+            <field name="code">4908</field>
+            <field name="name">Bulstrad Life Vienna Insurance Group JSC</field>
+        </record>
+        <record id="insurance_company_4909" model="hr.insurance.company">
+            <field name="code">4909</field>
+            <field name="name">W.R. Berkley Europe AG (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4910" model="hr.insurance.company">
+            <field name="code">4910</field>
+            <field name="name">Linea Directa Aseguradora Sociedad Anónima Compañia de Seguros Y Reaseguros</field>
+        </record>
+        <record id="insurance_company_4911" model="hr.insurance.company">
+            <field name="code">4911</field>
+            <field name="name">Beazley Insurance dac</field>
+        </record>
+        <record id="insurance_company_4912" model="hr.insurance.company">
+            <field name="code">4912</field>
+            <field name="name">Real Garant Versicherung Aktiengesellschaft</field>
+        </record>
+        <record id="insurance_company_4913" model="hr.insurance.company">
+            <field name="code">4913</field>
+            <field name="name">FM Insurance Europe S.A.</field>
+        </record>
+        <record id="insurance_company_4914" model="hr.insurance.company">
+            <field name="code">4914</field>
+            <field name="name">FM Insurance Europe, S.A. (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_4915" model="hr.insurance.company">
+            <field name="code">4915</field>
+            <field name="name">FM Insurance Europe, S.A. (sucursal Alemanha)</field>
+        </record>
+        <record id="insurance_company_4916" model="hr.insurance.company">
+            <field name="code">4916</field>
+            <field name="name">FM Insurance Europe, S.A. (sucursal na Suécia)</field>
+        </record>
+        <record id="insurance_company_4917" model="hr.insurance.company">
+            <field name="code">4917</field>
+            <field name="name">FM Insurance Europe, S.A. (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4918" model="hr.insurance.company">
+            <field name="code">4918</field>
+            <field name="name">FM Insurance Europe, S.A. (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_4919" model="hr.insurance.company">
+            <field name="code">4919</field>
+            <field name="name">FM Insurance Europe, S.A. (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4920" model="hr.insurance.company">
+            <field name="code">4920</field>
+            <field name="name">FM Insurance Europe, S.A. (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_4921" model="hr.insurance.company">
+            <field name="code">4921</field>
+            <field name="name">Towarzystwo Ubezpieczen i Reasekuracji Allianz Polska Spólka Akcyjna</field>
+        </record>
+        <record id="insurance_company_4922" model="hr.insurance.company">
+            <field name="code">4922</field>
+            <field name="name">Mapfre España, Compañia de Seguros Y Reaseguros, S.A.</field>
+        </record>
+        <record id="insurance_company_4923" model="hr.insurance.company">
+            <field name="code">4923</field>
+            <field name="name">UNIQA Towarzystwo Ubezpieczen Spólka Akcyjna</field>
+        </record>
+        <record id="insurance_company_4924" model="hr.insurance.company">
+            <field name="code">4924</field>
+            <field name="name">Axa Wealth Europe</field>
+        </record>
+        <record id="insurance_company_4925" model="hr.insurance.company">
+            <field name="code">4925</field>
+            <field name="name">Quatrem</field>
+        </record>
+        <record id="insurance_company_4928" model="hr.insurance.company">
+            <field name="code">4928</field>
+            <field name="name">White Horse Insurance Ireland dac</field>
+        </record>
+        <record id="insurance_company_4929" model="hr.insurance.company">
+            <field name="code">4929</field>
+            <field name="name">Mutua de Riesgo Maritimo, Sociedad de Seguros a Prima Fija (Murimar)</field>
+        </record>
+        <record id="insurance_company_4930" model="hr.insurance.company">
+            <field name="code">4930</field>
+            <field name="name">UnitedHealthcare Insurance Designated Activity Company</field>
+        </record>
+        <record id="insurance_company_4931" model="hr.insurance.company">
+            <field name="code">4931</field>
+            <field name="name">Lloyd&apos;s Insurance Company SA/NV</field>
+        </record>
+        <record id="insurance_company_4932" model="hr.insurance.company">
+            <field name="code">4932</field>
+            <field name="name">Tokio Marine Europe SA</field>
+        </record>
+        <record id="insurance_company_4933" model="hr.insurance.company">
+            <field name="code">4933</field>
+            <field name="name">Tokio Marine Europe SA (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_4934" model="hr.insurance.company">
+            <field name="code">4934</field>
+            <field name="name">Tokio Marine Europe SA (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4935" model="hr.insurance.company">
+            <field name="code">4935</field>
+            <field name="name">Tokio Marine Europe SA (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_4937" model="hr.insurance.company">
+            <field name="code">4937</field>
+            <field name="name">Tokio Marine Europe SA (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4938" model="hr.insurance.company">
+            <field name="code">4938</field>
+            <field name="name">Tokio Marine Europe SA (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_4939" model="hr.insurance.company">
+            <field name="code">4939</field>
+            <field name="name">Tokio Marine Europe SA (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_4940" model="hr.insurance.company">
+            <field name="code">4940</field>
+            <field name="name">Tokio Marine Europe SA (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_4943" model="hr.insurance.company">
+            <field name="code">4943</field>
+            <field name="name">Provinzial Nordwest Lebensversicherung Aktiengesellschaft</field>
+        </record>
+        <record id="insurance_company_4944" model="hr.insurance.company">
+            <field name="code">4944</field>
+            <field name="name">Everest Insurance (Ireland) dac</field>
+        </record>
+        <record id="insurance_company_4945" model="hr.insurance.company">
+            <field name="code">4945</field>
+            <field name="name">AIG Europe S.A.</field>
+        </record>
+        <record id="insurance_company_4946" model="hr.insurance.company">
+            <field name="code">4946</field>
+            <field name="name">AIG Europe S.A. (sucursal na Áustria)</field>
+        </record>
+        <record id="insurance_company_4947" model="hr.insurance.company">
+            <field name="code">4947</field>
+            <field name="name">AIG Europe S.A. (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_4948" model="hr.insurance.company">
+            <field name="code">4948</field>
+            <field name="name">AIG Europe S.A. (sucursal em Chipre)</field>
+        </record>
+        <record id="insurance_company_4949" model="hr.insurance.company">
+            <field name="code">4949</field>
+            <field name="name">AIG Europe S.A. (sucursal na Dinamarca)</field>
+        </record>
+        <record id="insurance_company_4950" model="hr.insurance.company">
+            <field name="code">4950</field>
+            <field name="name">AIG Europe S.A. (sucursal na Finlândia)</field>
+        </record>
+        <record id="insurance_company_4951" model="hr.insurance.company">
+            <field name="code">4951</field>
+            <field name="name">AIG Europe S.A. (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_4952" model="hr.insurance.company">
+            <field name="code">4952</field>
+            <field name="name">AIG Europe S.A. (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_4953" model="hr.insurance.company">
+            <field name="code">4953</field>
+            <field name="name">AIG Europe S.A. (sucursal na Grécia)</field>
+        </record>
+        <record id="insurance_company_4954" model="hr.insurance.company">
+            <field name="code">4954</field>
+            <field name="name">AIG Europe S.A. (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_4955" model="hr.insurance.company">
+            <field name="code">4955</field>
+            <field name="name">AIG Europe S.A. (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_4956" model="hr.insurance.company">
+            <field name="code">4956</field>
+            <field name="name">AIG Europe S.A. (sucursal em Malta)</field>
+        </record>
+        <record id="insurance_company_4957" model="hr.insurance.company">
+            <field name="code">4957</field>
+            <field name="name">AIG Europe S.A. (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4958" model="hr.insurance.company">
+            <field name="code">4958</field>
+            <field name="name">AIG Europe S.A. (sucursal na Noruega)</field>
+        </record>
+        <record id="insurance_company_4959" model="hr.insurance.company">
+            <field name="code">4959</field>
+            <field name="name">AIG Europe S.A. (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4960" model="hr.insurance.company">
+            <field name="code">4960</field>
+            <field name="name">AIG Europe S.A. (sucursal na Suécia)</field>
+        </record>
+        <record id="insurance_company_4961" model="hr.insurance.company">
+            <field name="code">4961</field>
+            <field name="name">QBE Europe SA/NV</field>
+        </record>
+        <record id="insurance_company_4962" model="hr.insurance.company">
+            <field name="code">4962</field>
+            <field name="name">Intact Insurance (Europe) SA (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4963" model="hr.insurance.company">
+            <field name="code">4963</field>
+            <field name="name">Intact Insurance (Europe) SA (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_4964" model="hr.insurance.company">
+            <field name="code">4964</field>
+            <field name="name">Intact Insurance (Europe) SA (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_4965" model="hr.insurance.company">
+            <field name="code">4965</field>
+            <field name="name">Intact Insurance (Europe) SA (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4966" model="hr.insurance.company">
+            <field name="code">4966</field>
+            <field name="name">Intact Insurance (Europe) SA (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_4967" model="hr.insurance.company">
+            <field name="code">4967</field>
+            <field name="name">Hiscox S.A.</field>
+        </record>
+        <record id="insurance_company_4968" model="hr.insurance.company">
+            <field name="code">4968</field>
+            <field name="name">Hiscox S.A. (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_4969" model="hr.insurance.company">
+            <field name="code">4969</field>
+            <field name="name">Hiscox S.A. (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_4970" model="hr.insurance.company">
+            <field name="code">4970</field>
+            <field name="name">Hiscox S.A. (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_4971" model="hr.insurance.company">
+            <field name="code">4971</field>
+            <field name="name">Hiscox S.A. (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_4972" model="hr.insurance.company">
+            <field name="code">4972</field>
+            <field name="name">Hiscox S.A. (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4973" model="hr.insurance.company">
+            <field name="code">4973</field>
+            <field name="name">Hiscox S.A. (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4975" model="hr.insurance.company">
+            <field name="code">4975</field>
+            <field name="name">Scor Europe SE</field>
+        </record>
+        <record id="insurance_company_4976" model="hr.insurance.company">
+            <field name="code">4976</field>
+            <field name="name">MMA IARD Assurances Mutuelles</field>
+        </record>
+        <record id="insurance_company_4977" model="hr.insurance.company">
+            <field name="code">4977</field>
+            <field name="name">Hiscox S.A. (sucursal em Portugal)</field>
+        </record>
+        <record id="insurance_company_4978" model="hr.insurance.company">
+            <field name="code">4978</field>
+            <field name="name">CNA Insurance Company (Europe) S.A. (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_4979" model="hr.insurance.company">
+            <field name="code">4979</field>
+            <field name="name">CNA Insurance Company (Europe) S.A. (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_4980" model="hr.insurance.company">
+            <field name="code">4980</field>
+            <field name="name">CNA Insurance Company (Europe) S.A. (sucursal na Dinamarca)</field>
+        </record>
+        <record id="insurance_company_4981" model="hr.insurance.company">
+            <field name="code">4981</field>
+            <field name="name">CNA Insurance Company (Europe) S.A. (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_4982" model="hr.insurance.company">
+            <field name="code">4982</field>
+            <field name="name">CNA Insurance Company (Europe) S.A. (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_4983" model="hr.insurance.company">
+            <field name="code">4983</field>
+            <field name="name">CNA Insurance Company (Europe) S.A. (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_4986" model="hr.insurance.company">
+            <field name="code">4986</field>
+            <field name="name">Bavaria Reinsurance Malta Ltd</field>
+        </record>
+        <record id="insurance_company_4987" model="hr.insurance.company">
+            <field name="code">4987</field>
+            <field name="name">Markel Insurance SE (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4988" model="hr.insurance.company">
+            <field name="code">4988</field>
+            <field name="name">USAA SA</field>
+        </record>
+        <record id="insurance_company_4989" model="hr.insurance.company">
+            <field name="code">4989</field>
+            <field name="name">DEVK Allgemeine Lebensversicherungs-AG</field>
+        </record>
+        <record id="insurance_company_4990" model="hr.insurance.company">
+            <field name="code">4990</field>
+            <field name="name">DEVK - Deutsche Eisenbahn Verscicherung Lebensversicherungsverein a.G.</field>
+        </record>
+        <record id="insurance_company_4991" model="hr.insurance.company">
+            <field name="code">4991</field>
+            <field name="name">Europa Lebensversicherung AG</field>
+        </record>
+        <record id="insurance_company_4992" model="hr.insurance.company">
+            <field name="code">4992</field>
+            <field name="name">Gartenbau-Versicherung VVaG</field>
+        </record>
+        <record id="insurance_company_4994" model="hr.insurance.company">
+            <field name="code">4994</field>
+            <field name="name">Ergo Reiseversicherung AG (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_4995" model="hr.insurance.company">
+            <field name="code">4995</field>
+            <field name="name">Continentale Krankenversicherung a.G</field>
+        </record>
+        <record id="insurance_company_4996" model="hr.insurance.company">
+            <field name="code">4996</field>
+            <field name="name">Continentale Lebensversicherung AG</field>
+        </record>
+        <record id="insurance_company_4997" model="hr.insurance.company">
+            <field name="code">4997</field>
+            <field name="name">R+V Allgemeine Versicherung AG</field>
+        </record>
+        <record id="insurance_company_4999" model="hr.insurance.company">
+            <field name="code">4999</field>
+            <field name="name">Starr Europe Insurance Limited</field>
+        </record>
+        <record id="insurance_company_5001" model="hr.insurance.company">
+            <field name="code">5001</field>
+            <field name="name">Arch Insurance (EU) dac</field>
+        </record>
+        <record id="insurance_company_5002" model="hr.insurance.company">
+            <field name="code">5002</field>
+            <field name="name">Domestic &amp; General Insurance Europe AG (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_5003" model="hr.insurance.company">
+            <field name="code">5003</field>
+            <field name="name">Newline Europe Versicherung AG</field>
+        </record>
+        <record id="insurance_company_5004" model="hr.insurance.company">
+            <field name="code">5004</field>
+            <field name="name">Berkshire Hathaway European Insurance Dac</field>
+        </record>
+        <record id="insurance_company_5006" model="hr.insurance.company">
+            <field name="code">5006</field>
+            <field name="name">Markel Insurance SE (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_5009" model="hr.insurance.company">
+            <field name="code">5009</field>
+            <field name="name">Axa Insurance dac</field>
+        </record>
+        <record id="insurance_company_5010" model="hr.insurance.company">
+            <field name="code">5010</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na Bulgária)</field>
+        </record>
+        <record id="insurance_company_5011" model="hr.insurance.company">
+            <field name="code">5011</field>
+            <field name="name">Atradius Crédito Y Caución S.A. de Seguros Y Reaseguros (sucursal na Roménia)</field>
+        </record>
+        <record id="insurance_company_5012" model="hr.insurance.company">
+            <field name="code">5012</field>
+            <field name="name">SwissPartners Versicherung AG</field>
+        </record>
+        <record id="insurance_company_5014" model="hr.insurance.company">
+            <field name="code">5014</field>
+            <field name="name">NorthStandard EU DAC</field>
+        </record>
+        <record id="insurance_company_5015" model="hr.insurance.company">
+            <field name="code">5015</field>
+            <field name="name">Allianz Lebenversicherungs AG</field>
+        </record>
+        <record id="insurance_company_5016" model="hr.insurance.company">
+            <field name="code">5016</field>
+            <field name="name">First European Title Insurance Company Limited</field>
+        </record>
+        <record id="insurance_company_5017" model="hr.insurance.company">
+            <field name="code">5017</field>
+            <field name="name">SI Insurance (Europe) SA</field>
+        </record>
+        <record id="insurance_company_5020" model="hr.insurance.company">
+            <field name="code">5020</field>
+            <field name="name">SI Insurance (Europe) SA (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_5021" model="hr.insurance.company">
+            <field name="code">5021</field>
+            <field name="name">SI Insurance (Europe) SA (sucursal na Itália)</field>
+        </record>
+        <record id="insurance_company_5022" model="hr.insurance.company">
+            <field name="code">5022</field>
+            <field name="name">SI Insurance (Europe) SA (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_5024" model="hr.insurance.company">
+            <field name="code">5024</field>
+            <field name="name">Chaucer Insurance Company DAC</field>
+        </record>
+        <record id="insurance_company_5025" model="hr.insurance.company">
+            <field name="code">5025</field>
+            <field name="name">UK P&amp;I Club N.V.</field>
+        </record>
+        <record id="insurance_company_5026" model="hr.insurance.company">
+            <field name="code">5026</field>
+            <field name="name">Wakam</field>
+        </record>
+        <record id="insurance_company_5027" model="hr.insurance.company">
+            <field name="code">5027</field>
+            <field name="name">Aviva Insurance Ireland dac</field>
+        </record>
+        <record id="insurance_company_5029" model="hr.insurance.company">
+            <field name="code">5029</field>
+            <field name="name">HDI Global Specialty SE (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_5030" model="hr.insurance.company">
+            <field name="code">5030</field>
+            <field name="name">DEVK Krankenversicherungs-AG</field>
+        </record>
+        <record id="insurance_company_5031" model="hr.insurance.company">
+            <field name="code">5031</field>
+            <field name="name">Fidelis Insurance Ireland Designated Activity Company</field>
+        </record>
+        <record id="insurance_company_5032" model="hr.insurance.company">
+            <field name="code">5032</field>
+            <field name="name">AXA Life Europe dac</field>
+        </record>
+        <record id="insurance_company_5033" model="hr.insurance.company">
+            <field name="code">5033</field>
+            <field name="name">CA Life Insurance Experts, Compañia de Seguros Y Reaseguros, S.A.U.</field>
+        </record>
+        <record id="insurance_company_5034" model="hr.insurance.company">
+            <field name="code">5034</field>
+            <field name="name">Europ Assistance SA (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_5035" model="hr.insurance.company">
+            <field name="code">5035</field>
+            <field name="name">HDI Global Specialty SE (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_5036" model="hr.insurance.company">
+            <field name="code">5036</field>
+            <field name="name">HDI Global Specialty SE (sucursal na Dinamarca)</field>
+        </record>
+        <record id="insurance_company_5038" model="hr.insurance.company">
+            <field name="code">5038</field>
+            <field name="name">Assurant Europe Insurance N.V.</field>
+        </record>
+        <record id="insurance_company_5039" model="hr.insurance.company">
+            <field name="code">5039</field>
+            <field name="name">HDI Global Specialty SE (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_5040" model="hr.insurance.company">
+            <field name="code">5040</field>
+            <field name="name">CNA Insurance Company (Europe) S.A.</field>
+        </record>
+        <record id="insurance_company_5041" model="hr.insurance.company">
+            <field name="code">5041</field>
+            <field name="name">Vitis Life S.A</field>
+        </record>
+        <record id="insurance_company_5042" model="hr.insurance.company">
+            <field name="code">5042</field>
+            <field name="name">Bupa Global Designated Activity Company</field>
+        </record>
+        <record id="insurance_company_5045" model="hr.insurance.company">
+            <field name="code">5045</field>
+            <field name="name">Colonnade Insurance S.A. (sucursal da Hungria)</field>
+        </record>
+        <record id="insurance_company_5046" model="hr.insurance.company">
+            <field name="code">5046</field>
+            <field name="name">Colonnade Insurance S.A. (sucursal na Eslováquia)</field>
+        </record>
+        <record id="insurance_company_5047" model="hr.insurance.company">
+            <field name="code">5047</field>
+            <field name="name">Colonnade Insurance S.A. (sucursal na República Checa)</field>
+        </record>
+        <record id="insurance_company_5048" model="hr.insurance.company">
+            <field name="code">5048</field>
+            <field name="name">Colonnade Insurance S.A. (sucursal na Bulgária)</field>
+        </record>
+        <record id="insurance_company_5049" model="hr.insurance.company">
+            <field name="code">5049</field>
+            <field name="name">Colonnade Insurance S.A. (sucursal na Roménia)</field>
+        </record>
+        <record id="insurance_company_5050" model="hr.insurance.company">
+            <field name="code">5050</field>
+            <field name="name">Deutsche Lebensversicherungs AG</field>
+        </record>
+        <record id="insurance_company_5051" model="hr.insurance.company">
+            <field name="code">5051</field>
+            <field name="name">BBVA Allianz, Compañía de Seguros Y Reaseguros, S.A.</field>
+        </record>
+        <record id="insurance_company_5052" model="hr.insurance.company">
+            <field name="code">5052</field>
+            <field name="name">Foyer Assurances S.A.</field>
+        </record>
+        <record id="insurance_company_5053" model="hr.insurance.company">
+            <field name="code">5053</field>
+            <field name="name">Collinson Insurance Europe Limited</field>
+        </record>
+        <record id="insurance_company_5054" model="hr.insurance.company">
+            <field name="code">5054</field>
+            <field name="name">Intesa Sanpaolo Assicura S.p.A.</field>
+        </record>
+        <record id="insurance_company_5055" model="hr.insurance.company">
+            <field name="code">5055</field>
+            <field name="name">Generali zavarovalnica d.d.</field>
+        </record>
+        <record id="insurance_company_5056" model="hr.insurance.company">
+            <field name="code">5056</field>
+            <field name="name">Ima Ibérica de Seguros Y Reaseguros, S.A.</field>
+        </record>
+        <record id="insurance_company_5057" model="hr.insurance.company">
+            <field name="code">5057</field>
+            <field name="name">Axeria IARD</field>
+        </record>
+        <record id="insurance_company_5058" model="hr.insurance.company">
+            <field name="code">5058</field>
+            <field name="name">Mutua de Propietarios, Seguros Y Reaseguros a Prima Fija</field>
+        </record>
+        <record id="insurance_company_5059" model="hr.insurance.company">
+            <field name="code">5059</field>
+            <field name="name">KRAVAG-LOGISTIC Versicherungs-AG</field>
+        </record>
+        <record id="insurance_company_5061" model="hr.insurance.company">
+            <field name="code">5061</field>
+            <field name="name">R+V Krankenversicherung AG</field>
+        </record>
+        <record id="insurance_company_5062" model="hr.insurance.company">
+            <field name="code">5062</field>
+            <field name="name">Assicurazioni Generali S.p.A.</field>
+        </record>
+        <record id="insurance_company_5063" model="hr.insurance.company">
+            <field name="code">5063</field>
+            <field name="name">Liberty Mutual Insurance Europe SE (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_5064" model="hr.insurance.company">
+            <field name="code">5064</field>
+            <field name="name">Liberty Mutual Insurance Europe SE (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_5065" model="hr.insurance.company">
+            <field name="code">5065</field>
+            <field name="name">Liberty Mutual Insurance Europe SE (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_5066" model="hr.insurance.company">
+            <field name="code">5066</field>
+            <field name="name">Liberty Mutual Insurance Europe SE (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_5067" model="hr.insurance.company">
+            <field name="code">5067</field>
+            <field name="name">Liberty Mutual Insurance Europe SE (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_5068" model="hr.insurance.company">
+            <field name="code">5068</field>
+            <field name="name">Liberty Mutual Insurance Europe SE (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_5069" model="hr.insurance.company">
+            <field name="code">5069</field>
+            <field name="name">MIC Insurance Company S.A.</field>
+        </record>
+        <record id="insurance_company_5070" model="hr.insurance.company">
+            <field name="code">5070</field>
+            <field name="name">Starr Europe Insurance Limited (sucursal na República Checa)</field>
+        </record>
+        <record id="insurance_company_5071" model="hr.insurance.company">
+            <field name="code">5071</field>
+            <field name="name">Starr Europe Insurance Limited (sucursal na Hungria)</field>
+        </record>
+        <record id="insurance_company_5072" model="hr.insurance.company">
+            <field name="code">5072</field>
+            <field name="name">Starr Europe Insurance Limited (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_5073" model="hr.insurance.company">
+            <field name="code">5073</field>
+            <field name="name">Starr Europe Insurance Limited (sucursal na República Eslovaca)</field>
+        </record>
+        <record id="insurance_company_5074" model="hr.insurance.company">
+            <field name="code">5074</field>
+            <field name="name">Starr Europe Insurance Limited (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_5075" model="hr.insurance.company">
+            <field name="code">5075</field>
+            <field name="name">Starr Europe Insurance Limited (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_5076" model="hr.insurance.company">
+            <field name="code">5076</field>
+            <field name="name">Accredited Insurance (Europe) Company Limited</field>
+        </record>
+        <record id="insurance_company_5077" model="hr.insurance.company">
+            <field name="code">5077</field>
+            <field name="name">CNP Santander Insurance Europe DAC</field>
+        </record>
+        <record id="insurance_company_5078" model="hr.insurance.company">
+            <field name="code">5078</field>
+            <field name="name">SwissPartners Versicherung AG (sucursal na Áustria)</field>
+        </record>
+        <record id="insurance_company_5079" model="hr.insurance.company">
+            <field name="code">5079</field>
+            <field name="name">Mutuasport, Mutua de Seguros Deportivos a Prima Fija</field>
+        </record>
+        <record id="insurance_company_5080" model="hr.insurance.company">
+            <field name="code">5080</field>
+            <field name="name">Allianz pojitovna a.s.</field>
+        </record>
+        <record id="insurance_company_5081" model="hr.insurance.company">
+            <field name="code">5081</field>
+            <field name="name">Convex Europe SA</field>
+        </record>
+        <record id="insurance_company_5083" model="hr.insurance.company">
+            <field name="code">5083</field>
+            <field name="name">VAV Versicherungs-AG</field>
+        </record>
+        <record id="insurance_company_5084" model="hr.insurance.company">
+            <field name="code">5084</field>
+            <field name="name">Pacifica</field>
+        </record>
+        <record id="insurance_company_5085" model="hr.insurance.company">
+            <field name="code">5085</field>
+            <field name="name">Divina Pastora, Seguros Generales, S.A.U.</field>
+        </record>
+        <record id="insurance_company_5086" model="hr.insurance.company">
+            <field name="code">5086</field>
+            <field name="name">Previsión Sanitaria Nacional, PSN, Mutua de Seguros Y Reaseguros a Prima Fija</field>
+        </record>
+        <record id="insurance_company_5087" model="hr.insurance.company">
+            <field name="code">5087</field>
+            <field name="name">RCI Insurance Limited</field>
+        </record>
+        <record id="insurance_company_5088" model="hr.insurance.company">
+            <field name="code">5088</field>
+            <field name="name">RCI Life Ltd</field>
+        </record>
+        <record id="insurance_company_5089" model="hr.insurance.company">
+            <field name="code">5089</field>
+            <field name="name">The Britannia Steam Ship Insurance Association Europe M.A.</field>
+        </record>
+        <record id="insurance_company_5090" model="hr.insurance.company">
+            <field name="code">5090</field>
+            <field name="name">AWP P&amp;C S.A. (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_5091" model="hr.insurance.company">
+            <field name="code">5091</field>
+            <field name="name">D.A.S., Protection juridique SA/NV</field>
+        </record>
+        <record id="insurance_company_5092" model="hr.insurance.company">
+            <field name="code">5092</field>
+            <field name="name">Vakuutusosakeyhtiö Bothnia International</field>
+        </record>
+        <record id="insurance_company_5093" model="hr.insurance.company">
+            <field name="code">5093</field>
+            <field name="name">Pallas Versicherung AG</field>
+        </record>
+        <record id="insurance_company_5094" model="hr.insurance.company">
+            <field name="code">5094</field>
+            <field name="name">Coverys International Insurance Company DAC</field>
+        </record>
+        <record id="insurance_company_5095" model="hr.insurance.company">
+            <field name="code">5095</field>
+            <field name="name">W.R. Berkley Europe AG (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_5096" model="hr.insurance.company">
+            <field name="code">5096</field>
+            <field name="name">W.R. Berkley Europe AG (sucursal na Noruega)</field>
+        </record>
+        <record id="insurance_company_5097" model="hr.insurance.company">
+            <field name="code">5097</field>
+            <field name="name">W.R. Berkley Europe AG (sucursal na Suécia)</field>
+        </record>
+        <record id="insurance_company_5098" model="hr.insurance.company">
+            <field name="code">5098</field>
+            <field name="name">ERGO Krankenversicherung Aktiengesellschaft</field>
+        </record>
+        <record id="insurance_company_5099" model="hr.insurance.company">
+            <field name="code">5099</field>
+            <field name="name">Barmenia Krankenversichrung AG</field>
+        </record>
+        <record id="insurance_company_5100" model="hr.insurance.company">
+            <field name="code">5100</field>
+            <field name="name">Towarzystwo Ubezpieczen i Reasekuracji WARTA Spólka Akcyjna</field>
+        </record>
+        <record id="insurance_company_5101" model="hr.insurance.company">
+            <field name="code">5101</field>
+            <field name="name">SiriusPoint International Försäkringsaktiebolag (publ) (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_5102" model="hr.insurance.company">
+            <field name="code">5102</field>
+            <field name="name">AFI ESCA Luxembourg S.A.</field>
+        </record>
+        <record id="insurance_company_5104" model="hr.insurance.company">
+            <field name="code">5104</field>
+            <field name="name">Gothaer Krankenversicherung Aktiengesellschaft</field>
+        </record>
+        <record id="insurance_company_5105" model="hr.insurance.company">
+            <field name="code">5105</field>
+            <field name="name">iptiQ Life S.A. (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_5106" model="hr.insurance.company">
+            <field name="code">5106</field>
+            <field name="name">Provinzial Versicherung AG</field>
+        </record>
+        <record id="insurance_company_5107" model="hr.insurance.company">
+            <field name="code">5107</field>
+            <field name="name">Mangrove Insurance Europe PCC Ltd</field>
+        </record>
+        <record id="insurance_company_5108" model="hr.insurance.company">
+            <field name="code">5108</field>
+            <field name="name">CNP Assurances (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_5109" model="hr.insurance.company">
+            <field name="code">5109</field>
+            <field name="name">CNP Caution (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_5110" model="hr.insurance.company">
+            <field name="code">5110</field>
+            <field name="name">GES Seguros Y Reaseguros, S.A.</field>
+        </record>
+        <record id="insurance_company_5111" model="hr.insurance.company">
+            <field name="code">5111</field>
+            <field name="name">Zavarovalnica Triglav d.d.</field>
+        </record>
+        <record id="insurance_company_5112" model="hr.insurance.company">
+            <field name="code">5112</field>
+            <field name="name">Relyens Mutual Insurance (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_5113" model="hr.insurance.company">
+            <field name="code">5113</field>
+            <field name="name">Beazley Insurance dac (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_5114" model="hr.insurance.company">
+            <field name="code">5114</field>
+            <field name="name">Beazley Insurance dac (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_5115" model="hr.insurance.company">
+            <field name="code">5115</field>
+            <field name="name">Beazley Insurance dac (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_5116" model="hr.insurance.company">
+            <field name="code">5116</field>
+            <field name="name">SVRNE, Mutua de Seguros Y Reaseguros a Prima Fija</field>
+        </record>
+        <record id="insurance_company_5117" model="hr.insurance.company">
+            <field name="code">5117</field>
+            <field name="name">QBE Europe SA/NV (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_5118" model="hr.insurance.company">
+            <field name="code">5118</field>
+            <field name="name">Accelerant Insurance Europe SA/NV</field>
+        </record>
+        <record id="insurance_company_5119" model="hr.insurance.company">
+            <field name="code">5119</field>
+            <field name="name">NEIL Overseas dac</field>
+        </record>
+        <record id="insurance_company_5120" model="hr.insurance.company">
+            <field name="code">5120</field>
+            <field name="name">Great Lakes Insurance SE (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_5121" model="hr.insurance.company">
+            <field name="code">5121</field>
+            <field name="name">Great Lakes Insurance SE (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_5122" model="hr.insurance.company">
+            <field name="code">5122</field>
+            <field name="name">Liberty Mutual Insurance Europe SE (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_5125" model="hr.insurance.company">
+            <field name="code">5125</field>
+            <field name="name">Everest Insurance (Ireland) dac (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_5126" model="hr.insurance.company">
+            <field name="code">5126</field>
+            <field name="name">ICARE Assurance</field>
+        </record>
+        <record id="insurance_company_5127" model="hr.insurance.company">
+            <field name="code">5127</field>
+            <field name="name">Sogelife S.A.</field>
+        </record>
+        <record id="insurance_company_5128" model="hr.insurance.company">
+            <field name="code">5128</field>
+            <field name="name">International General Insurance Company (Europe) LTD</field>
+        </record>
+        <record id="insurance_company_5129" model="hr.insurance.company">
+            <field name="code">5129</field>
+            <field name="name">Octium Life DAC</field>
+        </record>
+        <record id="insurance_company_5130" model="hr.insurance.company">
+            <field name="code">5130</field>
+            <field name="name">Alm. Brand Forsikring A/S</field>
+        </record>
+        <record id="insurance_company_5131" model="hr.insurance.company">
+            <field name="code">5131</field>
+            <field name="name">iptiQ Life S.A. (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_5132" model="hr.insurance.company">
+            <field name="code">5132</field>
+            <field name="name">iptiQ Life S.A. (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_5133" model="hr.insurance.company">
+            <field name="code">5133</field>
+            <field name="name">iptiQ Life S.A. (sucursal na Irlanda)</field>
+        </record>
+        <record id="insurance_company_5134" model="hr.insurance.company">
+            <field name="code">5134</field>
+            <field name="name">Arch Insurance (EU) DAC (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_5135" model="hr.insurance.company">
+            <field name="code">5135</field>
+            <field name="name">International Transport Intermediaries Insurance Company (Europe) Limited</field>
+        </record>
+        <record id="insurance_company_5136" model="hr.insurance.company">
+            <field name="code">5136</field>
+            <field name="name">Groupama Rhône-Alpes Auvergne</field>
+        </record>
+        <record id="insurance_company_5137" model="hr.insurance.company">
+            <field name="code">5137</field>
+            <field name="name">TT Club Mutual Insurance N.V.</field>
+        </record>
+        <record id="insurance_company_5138" model="hr.insurance.company">
+            <field name="code">5138</field>
+            <field name="name">Arch Insurance (EU) dac (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_5139" model="hr.insurance.company">
+            <field name="code">5139</field>
+            <field name="name">Hübener Versicherungs AG</field>
+        </record>
+        <record id="insurance_company_5140" model="hr.insurance.company">
+            <field name="code">5140</field>
+            <field name="name">Wertgarantie Societas Europea</field>
+        </record>
+        <record id="insurance_company_5141" model="hr.insurance.company">
+            <field name="code">5141</field>
+            <field name="name">Eir Försäkring AB</field>
+        </record>
+        <record id="insurance_company_5142" model="hr.insurance.company">
+            <field name="code">5142</field>
+            <field name="name">REVO Insurance S.p.A.</field>
+        </record>
+        <record id="insurance_company_5143" model="hr.insurance.company">
+            <field name="code">5143</field>
+            <field name="name">Chubb European Group SE (sucursal na República Checa)</field>
+        </record>
+        <record id="insurance_company_5144" model="hr.insurance.company">
+            <field name="code">5144</field>
+            <field name="name">Chubb European Group SE (sucursal na Hungria)</field>
+        </record>
+        <record id="insurance_company_5145" model="hr.insurance.company">
+            <field name="code">5145</field>
+            <field name="name">Mutuelle Nationale des Constructeurs et Accedants a la Propriete</field>
+        </record>
+        <record id="insurance_company_5146" model="hr.insurance.company">
+            <field name="code">5146</field>
+            <field name="name">SMA SA</field>
+        </record>
+        <record id="insurance_company_5147" model="hr.insurance.company">
+            <field name="code">5147</field>
+            <field name="name">IMA Assurances (sucursal em Espanha)</field>
+        </record>
+        <record id="insurance_company_5148" model="hr.insurance.company">
+            <field name="code">5148</field>
+            <field name="name">Triglav Osiguranje d.d.</field>
+        </record>
+        <record id="insurance_company_5149" model="hr.insurance.company">
+            <field name="code">5149</field>
+            <field name="name">XL Insurance Company SE (sucursal em França)</field>
+        </record>
+        <record id="insurance_company_5150" model="hr.insurance.company">
+            <field name="code">5150</field>
+            <field name="name">XL Insurance Company SE (sucursal em Itália)</field>
+        </record>
+        <record id="insurance_company_5151" model="hr.insurance.company">
+            <field name="code">5151</field>
+            <field name="name">XL Insurance Company SE (sucursal na Alemanha)</field>
+        </record>
+        <record id="insurance_company_5152" model="hr.insurance.company">
+            <field name="code">5152</field>
+            <field name="name">XL Insurance Company SE (sucursal na Áustria)</field>
+        </record>
+        <record id="insurance_company_5153" model="hr.insurance.company">
+            <field name="code">5153</field>
+            <field name="name">XL Insurance Company SE (sucursal na Holanda)</field>
+        </record>
+        <record id="insurance_company_5154" model="hr.insurance.company">
+            <field name="code">5154</field>
+            <field name="name">XL Insurance Company SE (sucursal na Suécia)</field>
+        </record>
+        <record id="insurance_company_5155" model="hr.insurance.company">
+            <field name="code">5155</field>
+            <field name="name">Alandia Försäkring Abp</field>
+        </record>
+        <record id="insurance_company_5156" model="hr.insurance.company">
+            <field name="code">5156</field>
+            <field name="name">Wagram Insurance Company dac</field>
+        </record>
+        <record id="insurance_company_5157" model="hr.insurance.company">
+            <field name="code">5157</field>
+            <field name="name">EUROMEX</field>
+        </record>
+        <record id="insurance_company_5158" model="hr.insurance.company">
+            <field name="code">5158</field>
+            <field name="name">Sincera Insurance</field>
+        </record>
+        <record id="insurance_company_5159" model="hr.insurance.company">
+            <field name="code">5159</field>
+            <field name="name">Nordic Guarantee Försäkringsaktiebolag</field>
+        </record>
+        <record id="insurance_company_5160" model="hr.insurance.company">
+            <field name="code">5160</field>
+            <field name="name">XL Insurance Company SE (sucursal na Bélgica)</field>
+        </record>
+        <record id="insurance_company_5161" model="hr.insurance.company">
+            <field name="code">5161</field>
+            <field name="name">XL Insurance Company SE (sucursal na Noruega)</field>
+        </record>
+        <record id="insurance_company_5162" model="hr.insurance.company">
+            <field name="code">5162</field>
+            <field name="name">XL Insurance Company SE (sucursal na Dinamarca)</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="unique_report_annex_0">
+        <relatorio_unico XML_DATA="3.2.13"
+                         xmlns="http://www.gep.msess.gov.pt/sguri/ru"
+                         xmlns:t="http://www.gep.msess.gov.pt/sguri/tipos_comuns"
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         xsi:schemaLocation="
+                     http://www.gep.msess.gov.pt/sguri/ru relatorio-zero-3.2.13.xsd
+                     http://www.gep.msess.gov.pt/sguri/tipos_comuns tipos-comuns-1.3.13.xsd
+                     http://www.gep.msess.gov.pt/sguri/ru/anexo_zero anexo-zero-1.3.13.xsd">
+
+            <header>
+                <aplicacao>
+                    <nome>Odoo Relatório Único</nome>
+                    <versao>18.0</versao>
+                    <empresa>Arxi</empresa>
+                </aplicacao>
+            </header>
+
+            <body>
+                <anexos>
+                    <anexo_zero xmlns="http://www.gep.msess.gov.pt/sguri/ru/anexo_zero"
+                                XML_DATA="1.3.13"
+                                t-att-ano="o.reference_year"
+                                t-att-entidade="o.company_vat">
+
+                        <nome_entidade><t t-esc="o.company_name.strip()"/></nome_entidade>
+                        <cae_31Dez tbl="RU_CAE_5DIG"><t t-esc="o.main_activity_cae.code"/></cae_31Dez>
+                        <pessoas_servico_31Dez><t t-esc="o.employees_in_service_december"/></pessoas_servico_31Dez>
+                        <pessoas_servico_medio><t t-esc="o.employee_in_service_december_avg"/></pessoas_servico_medio>
+                        <trab_conta_outrem_31Dez><t t-esc="o.employees_in_service_december"/></trab_conta_outrem_31Dez>
+                        <trab_conta_outrem_medio><t
+                                t-esc="o.employee_in_service_december_avg"/></trab_conta_outrem_medio>
+                        <trab_destacados><t t-esc="o.deslocated_employees"/></trab_destacados>
+                        <n_destacamentos><t t-esc="o.deslocation_nr"/></n_destacamentos>
+                        <n_trab_sindic_31Out><t t-esc="o.unionized_employees_in_october"/></n_trab_sindic_31Out>
+                        <associacoes t-att-inscrita="'S' if o.employer_association else 'N'"/>
+                        <trab_suplementar t-att-horas_realizadas="'S' if o.has_supplementary_work else 'N'">
+                            <t t-if="o.has_supplementary_work">
+                                <relacao_nominal_visada><t
+                                        t-esc="'S' if o.supp_hours_descrimination else 'N'"/></relacao_nominal_visada>
+                            </t>
+                        </trab_suplementar>
+
+                        <n_trab_temp_31Out><t t-esc="o.temporary_workers_in_october"/></n_trab_temp_31Out>
+                        <n_trab_temp_31Dez><t t-esc="o.temporary_workers_in_december"/></n_trab_temp_31Dez>
+                        <n_trab_temp_medio><t t-esc="o.temporary_workers_avg"/></n_trab_temp_medio>
+
+                        <fluxo_entradas_saidas>
+                            <entradas>
+                                <h><t t-esc="o.temporary_worker_entries_male"/></h>
+                                <m><t t-esc="o.temporary_worker_entries_female"/></m>
+                            </entradas>
+                            <saidas>
+                                <h><t t-esc="o.temporary_worker_exits_male"/></h>
+                                <m><t t-esc="o.temporary_worker_exits_female"/></m>
+                            </saidas>
+                        </fluxo_entradas_saidas>
+
+                        <t t-set="summary" t-value="o.get_annex_0_employee_summary()"/>
+
+                        <dist_grupos_etarios_total>
+                            <men_18>
+                                <h><t t-esc="summary['age_totals']['lt18']['1']"/></h>
+                                <m><t t-esc="summary['age_totals']['lt18']['2']"/></m>
+                            </men_18>
+                            <de_18_a_34>
+                                <h><t t-esc="summary['age_totals']['18_34']['1']"/></h>
+                                <m><t t-esc="summary['age_totals']['18_34']['2']"/></m>
+                            </de_18_a_34>
+                            <de_35_a_44>
+                                <h><t t-esc="summary['age_totals']['35_44']['1']"/></h>
+                                <m><t t-esc="summary['age_totals']['35_44']['2']"/></m>
+                            </de_35_a_44>
+                            <de_45_a_64>
+                                <h><t t-esc="summary['age_totals']['45_64']['1']"/></h>
+                                <m><t t-esc="summary['age_totals']['45_64']['2']"/></m>
+                            </de_45_a_64>
+                            <de_65_a_mais>
+                                <h><t t-esc="summary['age_totals']['65_plus']['1']"/></h>
+                                <m><t t-esc="summary['age_totals']['65_plus']['2']"/></m>
+                            </de_65_a_mais>
+                        </dist_grupos_etarios_total>
+
+                        <dist_grupos_etarios_incap_inf60>
+                            <men_18>
+                                <h><t t-esc="summary['age_groups']['lt18']['1']['lt60']"/></h>
+                                <m><t t-esc="summary['age_groups']['lt18']['2']['lt60']"/></m>
+                            </men_18>
+                            <de_18_a_34>
+                                <h><t t-esc="summary['age_groups']['18_34']['1']['lt60']"/></h>
+                                <m><t t-esc="summary['age_groups']['18_34']['2']['lt60']"/></m>
+                            </de_18_a_34>
+                            <de_35_a_44>
+                                <h><t t-esc="summary['age_groups']['35_44']['1']['lt60']"/></h>
+                                <m><t t-esc="summary['age_groups']['35_44']['2']['lt60']"/></m>
+                            </de_35_a_44>
+                            <de_45_a_64>
+                                <h><t t-esc="summary['age_groups']['45_64']['1']['lt60']"/></h>
+                                <m><t t-esc="summary['age_groups']['45_64']['2']['lt60']"/></m>
+                            </de_45_a_64>
+                            <de_65_a_mais>
+                                <h><t t-esc="summary['age_groups']['65_plus']['1']['lt60']"/></h>
+                                <m><t t-esc="summary['age_groups']['65_plus']['2']['lt60']"/></m>
+                            </de_65_a_mais>
+                        </dist_grupos_etarios_incap_inf60>
+
+                        <dist_grupos_etarios_incap_60_a80>
+                            <men_18>
+                                <h><t t-esc="summary['age_groups']['lt18']['1']['60_80']"/></h>
+                                <m><t t-esc="summary['age_groups']['lt18']['2']['60_80']"/></m>
+                            </men_18>
+                            <de_18_a_34>
+                                <h><t t-esc="summary['age_groups']['18_34']['1']['60_80']"/></h>
+                                <m><t t-esc="summary['age_groups']['18_34']['2']['60_80']"/></m>
+                            </de_18_a_34>
+                            <de_35_a_44>
+                                <h><t t-esc="summary['age_groups']['35_44']['1']['60_80']"/></h>
+                                <m><t t-esc="summary['age_groups']['35_44']['2']['60_80']"/></m>
+                            </de_35_a_44>
+                            <de_45_a_64>
+                                <h><t t-esc="summary['age_groups']['45_64']['1']['60_80']"/></h>
+                                <m><t t-esc="summary['age_groups']['45_64']['2']['60_80']"/></m>
+                            </de_45_a_64>
+                            <de_65_a_mais>
+                                <h><t t-esc="summary['age_groups']['65_plus']['1']['60_80']"/></h>
+                                <m><t t-esc="summary['age_groups']['65_plus']['2']['60_80']"/></m>
+                            </de_65_a_mais>
+                        </dist_grupos_etarios_incap_60_a80>
+
+                        <dist_grupos_etarios_sup80>
+                            <men_18>
+                                <h><t t-esc="summary['age_groups']['lt18']['1']['gt80']"/></h>
+                                <m><t t-esc="summary['age_groups']['lt18']['2']['gt80']"/></m>
+                            </men_18>
+                            <de_18_a_34>
+                                <h><t t-esc="summary['age_groups']['18_34']['1']['gt80']"/></h>
+                                <m><t t-esc="summary['age_groups']['18_34']['2']['gt80']"/></m>
+                            </de_18_a_34>
+                            <de_35_a_44>
+                                <h><t t-esc="summary['age_groups']['35_44']['1']['gt80']"/></h>
+                                <m><t t-esc="summary['age_groups']['35_44']['2']['gt80']"/></m>
+                            </de_35_a_44>
+                            <de_45_a_64>
+                                <h><t t-esc="summary['age_groups']['45_64']['1']['gt80']"/></h>
+                                <m><t t-esc="summary['age_groups']['45_64']['2']['gt80']"/></m>
+                            </de_45_a_64>
+                            <de_65_a_mais>
+                                <h><t t-esc="summary['age_groups']['65_plus']['1']['gt80']"/></h>
+                                <m><t t-esc="summary['age_groups']['65_plus']['2']['gt80']"/></m>
+                            </de_65_a_mais>
+                        </dist_grupos_etarios_sup80>
+
+
+                        <dist_habil_lit_total>
+                            <inf_3ciclo>
+                                <h><t t-esc="summary['literacy_totals']['basic']['1']"/></h>
+                                <m><t t-esc="summary['literacy_totals']['basic']['2']"/></m>
+                            </inf_3ciclo>
+                            <_3ciclo>
+                                <h><t t-esc="summary['literacy_totals']['third_cycle']['1']"/></h>
+                                <m><t t-esc="summary['literacy_totals']['third_cycle']['2']"/></m>
+                            </_3ciclo>
+                            <ens_secundario>
+                                <h><t t-esc="summary['literacy_totals']['secondary']['1']"/></h>
+                                <m><t t-esc="summary['literacy_totals']['secondary']['2']"/></m>
+                            </ens_secundario>
+                            <ens_pos_secundario>
+                                <h><t t-esc="summary['literacy_totals']['post_secondary']['1']"/></h>
+                                <m><t t-esc="summary['literacy_totals']['post_secondary']['2']"/></m>
+                            </ens_pos_secundario>
+                            <ens_superior>
+                                <h><t t-esc="summary['literacy_totals']['higher']['1']"/></h>
+                                <m><t t-esc="summary['literacy_totals']['higher']['2']"/></m>
+                            </ens_superior>
+                        </dist_habil_lit_total>
+
+                        <dist_habil_incap_inf60>
+                            <inf_3ciclo>
+                                <h><t t-esc="summary['literacy_groups']['basic']['1']['lt60']"/></h>
+                                <m><t t-esc="summary['literacy_groups']['basic']['2']['lt60']"/></m>
+                            </inf_3ciclo>
+                            <_3ciclo>
+                                <h><t t-esc="summary['literacy_groups']['third_cycle']['1']['lt60']"/></h>
+                                <m><t t-esc="summary['literacy_groups']['third_cycle']['2']['lt60']"/></m>
+                            </_3ciclo>
+                            <ens_secundario>
+                                <h><t t-esc="summary['literacy_groups']['secondary']['1']['lt60']"/></h>
+                                <m><t t-esc="summary['literacy_groups']['secondary']['2']['lt60']"/></m>
+                            </ens_secundario>
+                            <ens_pos_secundario>
+                                <h><t t-esc="summary['literacy_groups']['post_secondary']['1']['lt60']"/></h>
+                                <m><t t-esc="summary['literacy_groups']['post_secondary']['2']['lt60']"/></m>
+                            </ens_pos_secundario>
+                            <ens_superior>
+                                <h><t t-esc="summary['literacy_groups']['higher']['1']['lt60']"/></h>
+                                <m><t t-esc="summary['literacy_groups']['higher']['2']['lt60']"/></m>
+                            </ens_superior>
+                        </dist_habil_incap_inf60>
+
+                        <dist_habil_incap_60_a80>
+                            <inf_3ciclo>
+                                <h><t t-esc="summary['literacy_groups']['basic']['1']['60_80']"/></h>
+                                <m><t t-esc="summary['literacy_groups']['basic']['2']['60_80']"/></m>
+                            </inf_3ciclo>
+                            <_3ciclo>
+                                <h><t t-esc="summary['literacy_groups']['third_cycle']['1']['60_80']"/></h>
+                                <m><t t-esc="summary['literacy_groups']['third_cycle']['2']['60_80']"/></m>
+                            </_3ciclo>
+                            <ens_secundario>
+                                <h><t t-esc="summary['literacy_groups']['secondary']['1']['60_80']"/></h>
+                                <m><t t-esc="summary['literacy_groups']['secondary']['2']['60_80']"/></m>
+                            </ens_secundario>
+                            <ens_pos_secundario>
+                                <h><t t-esc="summary['literacy_groups']['post_secondary']['1']['60_80']"/></h>
+                                <m><t t-esc="summary['literacy_groups']['post_secondary']['2']['60_80']"/></m>
+                            </ens_pos_secundario>
+                            <ens_superior>
+                                <h><t t-esc="summary['literacy_groups']['higher']['1']['60_80']"/></h>
+                                <m><t t-esc="summary['literacy_groups']['higher']['2']['60_80']"/></m>
+                            </ens_superior>
+                        </dist_habil_incap_60_a80>
+
+                        <dist_habil_sup80>
+                            <inf_3ciclo>
+                                <h><t t-esc="summary['literacy_groups']['basic']['1']['gt80']"/></h>
+                                <m><t t-esc="summary['literacy_groups']['basic']['2']['gt80']"/></m>
+                            </inf_3ciclo>
+                            <_3ciclo>
+                                <h><t t-esc="summary['literacy_groups']['third_cycle']['1']['gt80']"/></h>
+                                <m><t t-esc="summary['literacy_groups']['third_cycle']['2']['gt80']"/></m>
+                            </_3ciclo>
+                            <ens_secundario>
+                                <h><t t-esc="summary['literacy_groups']['secondary']['1']['gt80']"/></h>
+                                <m><t t-esc="summary['literacy_groups']['secondary']['2']['gt80']"/></m>
+                            </ens_secundario>
+                            <ens_pos_secundario>
+                                <h><t t-esc="summary['literacy_groups']['post_secondary']['1']['gt80']"/></h>
+                                <m><t t-esc="summary['literacy_groups']['post_secondary']['2']['gt80']"/></m>
+                            </ens_pos_secundario>
+                            <ens_superior>
+                                <h><t t-esc="summary['literacy_groups']['higher']['1']['gt80']"/></h>
+                                <m><t t-esc="summary['literacy_groups']['higher']['2']['gt80']"/></m>
+                            </ens_superior>
+                        </dist_habil_sup80>
+
+
+                        <vol_negocios t-att-ano="o.business_volume_year"><t
+                                t-esc="int(o.business_volume) or 0"/></vol_negocios>
+
+                        <capital_social><t t-esc="int(o.social_capital) or 0"/></capital_social>
+                        <cap_social_priv_nac><t
+                                t-esc="o.social_capital_rep_private_national * 100 or 0.0"/></cap_social_priv_nac>
+                        <cap_social_estrang><t t-esc="o.social_capital_rep_foreign * 100 or 0.0"/></cap_social_estrang>
+                        <cap_social_pub_nac><t
+                                t-esc="o.social_capital_rep_public_national * 100 or 0.0"/></cap_social_pub_nac>
+
+                        <finan_ent><t t-esc="int(o.company_funded_amount) or 0"/></finan_ent>
+                        <mont_remun_horas_form><t
+                                t-esc="int(o.company_funded_amount_hours) or 0"/></mont_remun_horas_form>
+                        <rest_finan_ent><t t-esc="int(o.company_funded_amount_remaining) or 0"/></rest_finan_ent>
+                        <finan_ext_ent><t t-esc="int(o.external_funded_amount) or 0"/></finan_ext_ent>
+                        <finan_fse><t t-esc="int(o.external_funded_amount_esf) or 0"/></finan_fse>
+                        <finan_outras_fontes><t t-esc="int(o.external_funded_amount_other) or 0"/></finan_outras_fontes>
+
+                        <encarg_globais_form_prof><t
+                                t-esc="int(o.total_training_charges) or 0"/></encarg_globais_form_prof>
+                        <encarg_org_sst><t t-esc="int(o.safety_health_management_charges) or 0"/></encarg_org_sst>
+                        <encarg_org_esp_trab><t t-esc="int(o.workspace_management_charges) or 0"/></encarg_org_esp_trab>
+                        <encarg_aqui_bens><t t-esc="int(o.goods_services_aquisition_charges) or 0"/></encarg_aqui_bens>
+                        <encarg_form><t t-esc="int(o.consulting_info_training_charges) or 0"/></encarg_form>
+                        <encarg_outros><t t-esc="int(o.other_charges) or 0"/></encarg_outros>
+                        <encarg_total><t t-esc="int(o.total_charges) or 0"/></encarg_total>
+
+                        <outros_dados_comp_31Out t-if="o.had_ten_employees_in_october">
+                            <vab t-att-ano="o.gross_added_value_year or 2025">
+                                <t t-esc="int(o.gross_added_value) or 0"/>
+                            </vab>
+
+                            <custos_pessoal><t t-esc="int(o.personnel_cost) or 0"/></custos_pessoal>
+                            <amort_exerc><t t-esc="int(o.year_amortization) or 0"/></amort_exerc>
+                            <provi_exerc><t t-esc="int(o.year_provision) or 0"/></provi_exerc>
+                            <custos_perdas><t t-esc="int(o.financial_costs_and_losses) or 0"/></custos_perdas>
+                            <impost_rend><t t-esc="int(o.income_tax) or 0"/></impost_rend>
+                            <res_liquido><t t-esc="int(o.net_income) or 0"/></res_liquido>
+
+                            <encarg_admin>
+                                <subs_doenca>
+                                    <valor><t t-esc="int(o.sick_allowance)"/></valor>
+                                    <origem_encargo tbl="RU_ORIENC"><t
+                                            t-esc="o.sick_allowance_code.code if o.sick_allowance_code else 0"/></origem_encargo>
+                                </subs_doenca>
+                                <pensoes>
+                                    <valor><t t-esc="int(o.age_allowance)"/></valor>
+                                    <origem_encargo tbl="RU_ORIENC"><t
+                                            t-esc="o.age_allowance_code.code if o.age_allowance_code else 0"/></origem_encargo>
+                                </pensoes>
+                                <outras>
+                                    <valor><t t-esc="int(o.other_ss_charges)"/></valor>
+                                    <origem_encargo tbl="RU_ORIENC"><t
+                                            t-esc="o.other_ss_charges_code.code if o.other_ss_charges_code else 0"/></origem_encargo>
+                                </outras>
+                            </encarg_admin>
+
+
+                            <encarg_n_admin>
+                                <subs_doenca>
+                                    <valor><t t-esc="int(o.not_supported_sick_allowance)"/></valor>
+                                    <origem_encargo tbl="RU_ORIENC"><t
+                                            t-esc="o.not_supported_sick_allowance_code.code if o.not_supported_sick_allowance_code else 0"/></origem_encargo>
+                                </subs_doenca>
+                                <pensoes>
+                                    <valor><t t-esc="int(o.not_supported_age_allowance)"/></valor>
+                                    <origem_encargo tbl="RU_ORIENC"><t
+                                            t-esc="o.not_supported_age_allowance_code.code if o.not_supported_age_allowance_code else 0"/></origem_encargo>
+                                </pensoes>
+                                <outras>
+                                    <valor><t t-esc="int(o.not_supported_other_ss_charges)"/></valor>
+                                    <origem_encargo tbl="RU_ORIENC"><t
+                                            t-esc="o.not_supported_other_ss_charges_code.code if o.not_supported_other_ss_charges_code else 0"/></origem_encargo>
+                                </outras>
+                            </encarg_n_admin>
+
+                            <encarg_accao><t t-esc="int(o.social_support_charges) or 0"/></encarg_accao>
+
+                            <poten_max_anual><t t-esc="int(o.max_annual_potential) or 0"/></poten_max_anual>
+
+                            <t t-if="o.not_worked_hours_table">
+                                <horas_n_trab_ano>
+                                    <t t-foreach="o.not_worked_hours_table" t-as="line">
+                                        <horas_n_trab>
+                                            <motivo tbl="RU_MHNT">
+                                                <t t-esc="line.not_worked_hours_reason.code"/>
+                                            </motivo>
+                                            <horas_aus_remun>
+                                                <h><t t-esc="int(line.paid_leave_hours_male) or 0"/></h>
+                                                <m><t t-esc="int(line.paid_leave_hours_female) or 0"/></m>
+                                            </horas_aus_remun>
+                                            <horas_aus_n_remun_h>
+                                                <h><t t-esc="int(line.unpaid_leave_hours_male) or 0"/></h>
+                                                <m><t t-esc="int(line.unpaid_leave_hours_female) or 0"/></m>
+                                            </horas_aus_n_remun_h>
+                                        </horas_n_trab>
+                                    </t>
+                                </horas_n_trab_ano>
+                            </t>
+
+                        </outros_dados_comp_31Out>
+
+
+                    </anexo_zero>
+                </anexos>
+            </body>
+
+        </relatorio_unico>
+
+    </template>
+</odoo>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><!-- E-Fatura menu inside Accounting --><menuitem id="menu_l10n_pt_efatura_root" name="E-Fatura" parent="accountant.menu_accounting" sequence="20" groups="group_l10n_pt_efatura_user"/></odoo>

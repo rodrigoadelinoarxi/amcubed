@@ -1,0 +1,22 @@
+<odoo>
+
+    <template id="inline_form">
+        <div align="center">
+            <img style="width: 100px; height: 100px;"
+                 src="/payment_eupago_mbway/static/src/img/mbway_icon.jpg"/>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4 form-group">
+                <label class="col-form-label">Mobile number</label>
+                <div class="input-group">
+                    <input type="text" id="alias" name="alias" style="width: 100%"/>
+                </div>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+    </template>
+
+</odoo>

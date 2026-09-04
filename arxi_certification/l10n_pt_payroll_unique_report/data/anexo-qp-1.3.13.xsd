@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:t="http://www.gep.msess.gov.pt/sguri/tipos_comuns"
+           xmlns="http://www.gep.msess.gov.pt/sguri/ru/anexo_qp"
+           targetNamespace="http://www.gep.msess.gov.pt/sguri/ru/anexo_qp"
+           elementFormDefault="qualified"
+           version="1.3.13">
+    <xs:import namespace="http://www.gep.msess.gov.pt/sguri/tipos_comuns" schemaLocation="tipos-comuns-1.3.13.xsd"/>
+    <xs:element name="anexo_qp" type="anexo_qpType">
+        <xs:annotation>
+            <xs:documentation>ANEXO A - QUADROS DE PESSOAL</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="anexo_qpType">
+        <xs:sequence>
+            <!-- I - UNIDADE LOCAL (ESTABELECIMENTO) SEDE  -->
+            <xs:element name="nome_entidade" type="t:max70Type">
+                <xs:annotation>
+                    <xs:documentation>I - Nome ou Designação social</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="total_pess_servico_31Out" type="t:num5Type">
+                <xs:annotation>
+                    <xs:documentation>I - 3.1 Total de pessoas ao serviço em 31 de Outubro.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="cae_31Out" type="t:caeType">
+                <xs:annotation>
+                    <xs:documentation>
+                        I - 3.2 Actividade económica principal (CAE).
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="natJur_31Out" type="t:lnType">
+                <xs:annotation>
+                    <xs:documentation>I - 3.3 Natureza jurídica</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="estabs">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="estab" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <!-- I - UNIDADE LOCAL (ESTABELECIMENTO) -->
+                                    <xs:element name="pess_servico_31Out" type="t:num5Type">
+                                        <xs:annotation>
+                                            <xs:documentation>I - 1. Número de pessoas ao serviço na unidade local em 31
+                                                de Outubro.
+                                            </xs:documentation>
+                                        </xs:annotation>
+                                    </xs:element>
+                                    <xs:element name="cae_31Out" type="t:caeType">
+                                        <xs:annotation>
+                                            <xs:documentation>I - 2. Actividade económica principal (CAE) da unidade
+                                                local em 31 de Outubro.
+                                            </xs:documentation>
+                                        </xs:annotation>
+                                    </xs:element>
+                                    <xs:element name="trabalhadores" minOccurs="0">
+                                        <xs:annotation>
+                                            <xs:documentation>II - TRABALHADORES.</xs:documentation>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="trabalhador" type="trabalhadorType" minOccurs="0"
+                                                            maxOccurs="unbounded"/>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                                <xs:attribute name="id" use="required" type="xs:long">
+                                    <xs:annotation>
+                                        <xs:documentation>ID Unidade Local</xs:documentation>
+                                    </xs:annotation>
+                                </xs:attribute>
+                                <xs:attribute name="sede" use="required" type="t:choiceType">
+                                    <xs:annotation>
+                                        <xs:documentation>Unidade Local é sede para a data de referência do anexo.
+                                        </xs:documentation>
+                                    </xs:annotation>
+                                </xs:attribute>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="XML_DATA" use="required" fixed="1.3.13" type="xs:string">
+            <xs:annotation>
+                <xs:documentation>Versão da estrutura XML.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="ano" use="required" type="t:yearType">
+            <xs:annotation>
+                <xs:documentation>Ano de referência.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="entidade" use="required" type="xs:long">
+            <xs:annotation>
+                <xs:documentation>ID Entidade.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="trabalhadorType">
+        <xs:sequence>
+            <xs:element name="nome" type="t:max70Type">
+                <xs:annotation>
+                    <xs:documentation>II - 3. Nome</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <!-- II - 3. Regime de reforma aplicado (de segurança social ou outro) -->
+            <xs:element name="ident_reg_apli">
+                <xs:annotation>
+                    <xs:documentation>II - 4.1 Identificação do Regime Aplicado.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:restriction base="t:codigoType">
+                            <xs:attribute name="tbl" use="required" fixed="RU_REREAP" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>Tabela Nº 11 - Regime de reforma aplicado.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:restriction>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="niss" type="t:nissWorkerType">
+                <xs:annotation>
+                    <xs:documentation>II - 4.2 Nº de identificação social (NISS) ou equiparado.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="sexo" type="t:sexType">
+                <xs:annotation>
+                    <xs:documentation>II - 5. Sexo</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="data_nasc" type="t:yearmonthType">
+                <xs:annotation>
+                    <xs:documentation>II - 6. Data de nascimento.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="data_entr_emp" type="t:yearmonthType">
+                <xs:annotation>
+                    <xs:documentation>II - 7. Data de entrada na entidade empregadora.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="data_ult_prom" type="t:yearmonthType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 8. Data da última promoção.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="tipo_contr" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 9. Tipo de contrato.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:restriction base="t:codigoType">
+                            <xs:attribute name="tbl" use="required" fixed="RU_TIPCON" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>TABELA Nº 13 - Tipo de Contrato.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:restriction>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="nacionalidade" type="t:countryType">
+                <xs:annotation>
+                    <xs:documentation>II - 10. Nacionalidade.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="habil_lit" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 11. Habilitação literária.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:restriction base="t:codigoType">
+                            <xs:attribute name="tbl" use="required" fixed="RU_HABLIT" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>TABELA Nº 14 - Habilitações literárias.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:restriction>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="sit_prof">
+                <xs:annotation>
+                    <xs:documentation>II - 12. Situação na profissão (SP).</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:restriction base="t:codigoType">
+                            <xs:attribute name="tbl" use="required" fixed="RU_SITPROF" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>Tabela Nº 15 - Situação na Profissão.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:restriction>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="profissao">
+                <xs:annotation>
+                    <xs:documentation>II - 13. Profissão.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:restriction base="t:codigoType">
+                            <xs:attribute name="tbl" use="required" fixed="RU_CPP" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>TABELA Nº 16 - Classificação Portuguesa de Profissões (CPP
+                                        2010).
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:restriction>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="irct">
+                <xs:annotation>
+                    <xs:documentation>II - 14. Instrumento de regulamentação colectiva de trabalho (IRCT).
+                    </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:restriction base="t:codigoType">
+                            <xs:attribute name="tbl" use="required" fixed="RU_IRCT" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>TABELA Nº 17 - IRCT.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:restriction>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="aplic_irct">
+                <xs:annotation>
+                    <xs:documentation>II - 15. Aplicabilidade do IRCT.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:restriction base="t:codigoType">
+                            <xs:attribute name="tbl" use="required" fixed="RU_APLICIRCT" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>TABELA Nº 19- Aplicabilidade do IRCT.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:restriction>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="cat_prof">
+                <xs:annotation>
+                    <xs:documentation>II - 16. Categoria profissional.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:restriction base="t:codigoType">
+                            <xs:attribute name="tbl" use="required" fixed="RU_CATPROF" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>TABELA Nº 20 - Categoria profissional.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:restriction>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="nivel_qual">
+                <xs:annotation>
+                    <xs:documentation>II - 17. Nível de qualificação (NQ).</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:restriction base="t:codigoType">
+                            <xs:attribute name="tbl" use="required" fixed="RU_NVLQLF" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>TABELA Nº 21 - Nível de Qualificação.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:restriction>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="rdt" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 18. Regime de duração do trabalho (RDT).</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:restriction base="t:codigoType">
+                            <xs:attribute name="tbl" use="required" fixed="RU_RG_DU_TRB" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>TABELA Nº 22 - Regime de Duração do Trabalho.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:restriction>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="pnt" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 19. Período normal de tabalho semanal.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:token">
+                        <xs:pattern value="500|[0-4][0-9][05]">
+                            <xs:annotation>
+                                <xs:documentation>HHM (H - hora ; M=0 para horas completas ou M=5 para meia hora)
+                                </xs:documentation>
+                            </xs:annotation>
+                        </xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="dur_temp_trab" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 20. Duração do tempo de trabalho.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:restriction base="t:codigoType">
+                            <xs:attribute name="tbl" use="required" fixed="RU_DU_TMP_TRB" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>TABELA Nº 23 - Duração do Tempo de Trabalho.</xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:restriction>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="org_temp_trab" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 21. Organização do tempo de trabalho.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:restriction base="t:codigoType">
+                            <xs:attribute name="tbl" use="required" fixed="RU_ORG_TMP_TRB" type="xs:string">
+                                <xs:annotation>
+                                    <xs:documentation>TABELA Nº 24 - Organização do Tempo de Trabalho.
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:attribute>
+                        </xs:restriction>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <!-- II - Remuneração base referente ao mês de Outubro -->
+            <xs:element name="rem_devida_Out" type="t:decimal8Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 22. Remuneração base devida referente à totalidade do mês de Outubro (RBd).
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="rem_paga_Out" type="t:decimal8Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 23. Remuneração base paga referente a Outubro (RBp).</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="mot_rem_inf_Out" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 24. Motivo pelo qual a remuneração paga é inferior à devida.
+                    </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="motivo" minOccurs="1" maxOccurs="3">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:restriction base="t:codigoType">
+                                        <xs:attribute name="tbl" use="required" fixed="RU_MOT_H_NREM" type="xs:string">
+                                            <xs:annotation>
+                                                <xs:documentation>TABELA Nº 25 - Motivo das horas normais não
+                                                    remuneradas.
+                                                </xs:documentation>
+                                            </xs:annotation>
+                                        </xs:attribute>
+                                    </xs:restriction>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="horas_remun_Out" type="t:num3Type">
+                <xs:annotation>
+                    <xs:documentation>II - 25. Nº de horas normais remuneradas em Outubro.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <!-- II - Prémios e subsídios regulares referentes ao mês de Outubro -->
+            <xs:element name="sub_ref_Out" type="t:decimal8Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 26. Subsídio regular de refeição referente a Outubro (SubRef).
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="sub_turn_Out" type="t:decimal8Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 27. Subsídio regular por turnos referente a Outubro (SubTurn).
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="out_sub_Out" type="t:decimal8Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 28. Outros prémios e subsídios regulares referentes a Outubro (OutSub).
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="prest_ir_Out" type="t:decimal8Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 29. Prestações irregulares pagas em Outubro.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <!-- Trabalho suplementar efectuado no mês de Outubro -->
+            <xs:element name="r_supl_Out" type="t:decimal8Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 30. Remuneração referente às horas suplementares efectuadas em Outubro
+                        (Rsupl).
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="horas_supl_Out" type="t:num3Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 31. Nº de Horas suplementares efectuadas em Outubro.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <!-- Total de horas suplementares efectuadas no ano civil -->
+            <xs:element name="t_horas_1art227" type="t:num3Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 32. Total de horas suplementares efectuadas no ano civil Nº. 1 do Art.º 227.º
+                        da Lei n.º 7/2009 de 12 de Fevereiro.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="t_horas_2art227" type="t:num3Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>II - 33. Total de horas suplementares efectuadas no ano civil Nº. 2 do Art.º 227.º
+                        da Lei n.º 7/2009 de 12 de Fevereiro.
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

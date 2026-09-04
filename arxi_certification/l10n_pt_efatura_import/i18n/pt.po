@@ -1,0 +1,780 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_efatura_import
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 14:46+0000\n"
+"PO-Revision-Date: 2026-02-17 14:46+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid ""
+"%(in_c)s invoices created. %(in_u)s invoices updated.\n"
+"%(cn_c)s credit notes created. %(cn_u)s credit notes updated."
+msgstr ""
+"%(in_c)s faturas criadas. %(in_u)s faturas atualizadas.\n"
+"%(cn_c)s notas de crédito criadas. %(cn_u)s notas de crédito atualizadas."
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.res_config_settings_view_form_pt_efatura_v2
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\"/>"
+msgstr ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Valores definidos aqui são "
+"específicos da empresa.\"/>"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.view_move_form_efatura
+msgid ""
+"<strong>Please verify the invoice lines to correct the "
+"discrepancies.</strong>"
+msgstr ""
+"<strong>Por favor, verifique as linhas da fatura para corrigir as "
+"divergências.</strong>"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__tax_auth_doc_id
+msgid "AT ID"
+msgstr "ID AT"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.dataport_import_form_efatura
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields.selection,name:l10n_pt_efatura_import.selection__account_move__imported_status__cancel
+#: model:ir.model.fields.selection,name:l10n_pt_efatura_import.selection__l10n_pt_dataport_import_efatura_line__status__cancel
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid "Check document discrepancy"
+msgstr "Verificar Divergência de Documento"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields.selection,name:l10n_pt_efatura_import.selection__l10n_pt_dataport_import_efatura__state__choose
+msgid "Choose"
+msgstr "Escolher Ficheiro/Sincronizar"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model,name:l10n_pt_efatura_import.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model,name:l10n_pt_efatura_import.model_res_config_settings
+msgid "Config Settings"
+msgstr "Definições de Configuração"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model,name:l10n_pt_efatura_import.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid ""
+"Couldn't obtain the list of documents for the chosen period. This may be a "
+"temporary condition. Try again later. If the problem persists, please "
+"contact your support team."
+msgstr ""
+"Não foi possível obter a lista de documentos para o período escolhido. Esta "
+"pode ser uma condição temporária. Tente novamente mais tarde. Se o problema "
+"persistir, contacte a sua equipa de suporte."
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.dataport_import_form_efatura
+msgid "Create Vendor Bills"
+msgstr "Criar Faturas de Fornecedor"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.dataport_import_form_efatura
+msgid "Create/update vendor bills from selected documents"
+msgstr ""
+"Criar/atualizar faturas de fornecedor a partir dos documentos selecionados"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura__create_uid
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura__create_date
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__currency_id
+msgid "Currency"
+msgstr "Moeda"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__date
+msgid "Date"
+msgstr "Data"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura__date_from
+msgid "Date From"
+msgstr "Data Inicial"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura__date_to
+msgid "Date To"
+msgstr "Data Final"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_company__imported_exempt_tax_id
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_config_settings__imported_exempt_tax_id
+msgid "Default Import Exempt Tax"
+msgstr "Imposto Isento Default Importação"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_company__imported_interm_tax_id
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_config_settings__imported_interm_tax_id
+msgid "Default Import Intermediate Tax"
+msgstr "Imposto Intermédio Default Importação"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_company__imported_journal_id
+msgid "Default Import Journal"
+msgstr "Diário de Importação"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_company__imported_product_id
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_config_settings__imported_product_id
+msgid "Default Import Product"
+msgstr "Produto Default Importação"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_company__imported_reduced_tax_id
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_config_settings__imported_reduced_tax_id
+msgid "Default Import Reduced Tax"
+msgstr "Imposto Reduzido Default Importação"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_company__imported_tax_id
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_config_settings__imported_tax_id
+msgid "Default Import Standard Tax"
+msgstr "Imposto Default Importação"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_res_config_settings__imported_journal_id
+msgid "Default purchase journal where imported invoices will be registered"
+msgstr "Diário de Compras onde as faturas importadas serão registadas"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.res_config_settings_view_form_pt_efatura_v2
+msgid "Default values for imported documents"
+msgstr "Valores default para documentos importados"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.dataport_import_form_efatura
+msgid "Deselect All"
+msgstr "Deselecionar Tudo"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_account_move__imported_mismatch_disable
+msgid "Disable Imported Status Mismatch"
+msgstr "Desabilitar Divergência de Estado Importado"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura__display_name
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__display_name
+msgid "Display Name"
+msgstr "Nome a Exibir"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.ui.menu,name:l10n_pt_efatura_import.menu_l10n_pt_efatura_root
+msgid "E-Fatura"
+msgstr ""
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura__line_ids
+msgid "E-Fatura Documents"
+msgstr "Documentos E-Fatura"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.dataport_import_form_efatura
+msgid "E-Fatura Import"
+msgstr "Importação E-Fatura"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model,name:l10n_pt_efatura_import.model_l10n_pt_dataport_import_efatura_line
+msgid "E-Fatura Import Line"
+msgstr "Linha de Importação E-Fatura"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model,name:l10n_pt_efatura_import.model_l10n_pt_dataport_import_efatura
+msgid "E-Fatura Import Wizard"
+msgstr "Assistente de Importação E-Fatura"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid "E-Fatura Line"
+msgstr "Linha E-Fatura"
+
+#. module: l10n_pt_efatura_import
+#: model:res.groups,name:l10n_pt_efatura_import.group_l10n_pt_efatura_user
+msgid "E-Fatura User"
+msgstr "Utilizador E-Fatura"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid ""
+"E-Fatura integration is not enabled for company \"%s\".\n"
+"\n"
+"Please enable it in: Settings > Accounting > E-Fatura"
+msgstr ""
+"A integração E-Fatura não está ativada para a empresa \"%s\".\n"
+"\n"
+"Por favor, ative em: Definições > Contabilidade > E-Fatura"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_res_company__imported_enabled
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_res_config_settings__imported_enabled
+msgid "Enable AT portal import features for this company"
+msgstr "Ativar a integração com a AT para importação de Faturas"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_company__imported_enabled
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_config_settings__imported_enabled
+msgid "Enable Portal Import"
+msgstr "Ativar Importação E-Fatura"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.res_config_settings_view_form_pt_efatura_v2
+msgid "Enable Portuguese Tax Authority import integration"
+msgstr "Ativar a integração com o E-Fatura para importação de Faturas"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid "Error during synchronization: %s"
+msgstr "Erro durante a sincronização: %s"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid "Error fetching documents: "
+msgstr "Erro ao buscar documentos: "
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.res_config_settings_view_form_pt_efatura_v2
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.vendor_efatura_field_add
+msgid "Exempt Tax"
+msgstr "Taxa Isenta"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__existing_invoice_id
+msgid "Existing Invoice"
+msgstr "Fatura Existente"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid ""
+"Failed to extract CSRF token from AT portal. The portal structure may have "
+"changed or there may be connection issues. Please check the server logs for "
+"more details."
+msgstr ""
+"Falha ao extrair o token CSRF do portal da AT. A estrutura do portal pode "
+"ter mudado ou pode haver problemas de ligação. Por favor, verifique os logs "
+"do servidor para mais detalhes."
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid ""
+"Failed to extract login redirect data. The portal structure may have "
+"changed. Error: %s"
+msgstr ""
+"Falha ao extrair os dados de redirecionamento de login. A estrutura do "
+"portal pode ter mudado. Erro: %s"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid "Failed to login to Tax Authority portal"
+msgstr "Falha ao fazer login no portal da Autoridade Tributária"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.dataport_import_form_efatura
+msgid "Fetch e-fatura data from Tax Authority portal"
+msgstr "Obter dados e-fatura do portal da Autoridade Tributária"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura__id
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_pt_efatura_import
+#. odoo-javascript
+#: code:addons/l10n_pt_efatura_import/static/src/xml/efatura_list_button.xml:0
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__selected
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.dataport_import_form_efatura
+msgid "Import"
+msgstr "Importar"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.vendor_efatura_field_add
+msgid "Import Default Values"
+msgstr "Valores Default"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.actions.act_window,name:l10n_pt_efatura_import.dataport_import_efatura_action
+#: model:ir.ui.menu,name:l10n_pt_efatura_import.menu_l10n_pt_efatura_import
+msgid "Import E-Fatura"
+msgstr "Importar E-Fatura"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_partner__property_imported_exempt_tax_id
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_users__property_imported_exempt_tax_id
+msgid "Import Exempt Tax"
+msgstr "Imposto Isento Importação"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_partner__property_imported_interm_tax_id
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_users__property_imported_interm_tax_id
+msgid "Import Intermediate Tax"
+msgstr "Imposto Intermediário Importação"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_config_settings__imported_journal_id
+msgid "Import Journal"
+msgstr "Diário de Importação"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.view_move_form_efatura
+msgid "Import Metadata"
+msgstr "Importar Metadados"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_partner__property_imported_product_id
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_users__property_imported_product_id
+msgid "Import Product"
+msgstr "Produto Default Importação"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_partner__property_imported_reduced_tax_id
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_users__property_imported_reduced_tax_id
+msgid "Import Reduced Tax"
+msgstr "Imposto Reduzido Importação"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_partner__property_imported_tax_id
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_res_users__property_imported_tax_id
+msgid "Import Standard Tax"
+msgstr "Imposto Normal Importação"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_account_move__imported_tax_auth_doc_id
+msgid "Imported AT ID"
+msgstr "AT ID Importado"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_account_move__imported_date
+msgid "Imported Date"
+msgstr "Data Importada"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_account_move__imported_total_mismatch
+msgid "Imported Mismatch"
+msgstr "Discrepância Importada"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_account_move__imported_reference
+msgid "Imported Reference"
+msgstr "Referência Importada"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_account_move__imported_status
+msgid "Imported Status"
+msgstr "Estado Importado"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_account_move__imported_tax_base
+msgid "Imported Tax Base"
+msgstr "Base Tributável Importada"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_account_move__imported_total
+msgid "Imported Total"
+msgstr "Total Importado"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_account_move__imported_doc_type
+msgid "Imported Type"
+msgstr "Tipo Importado"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_account_move__imported_vat_amount
+msgid "Imported VAT Amount"
+msgstr "Valor de Imposto Importado"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_account_move__imported_vat_mismatch
+msgid "Imported VAT Mismatch"
+msgstr "Discrepancia de Imposto Importado"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid "Imported Vendor Bills"
+msgstr "Faturas de Fornecedor Importadas"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_account_move__imported_vendor_name
+msgid "Imported Vendor Name"
+msgstr "Nome do Fornecedor Importado"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_account_move__imported_vendor_vat
+msgid "Imported Vendor VAT"
+msgstr "NIF Importado"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_account_move__imported_warning
+msgid "Imported Warning"
+msgstr "Aviso de Importação"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_account_move__imported_reference
+msgid "Imported document reference"
+msgstr "Referência do documento importado"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_account_move__imported_doc_type
+msgid "Imported document type (FT, FR, etc)"
+msgstr "Tipo do documento importado (FT, FR, etc)"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.res_config_settings_view_form_pt_efatura_v2
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.vendor_efatura_field_add
+msgid "Interm. Tax"
+msgstr "Taxa Interm."
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__invoice_state
+msgid "Invoice State"
+msgstr "Estado da Fatura"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_account_move__imported_vat_mismatch
+msgid "Invoice VAT differs from imported document VAT"
+msgstr "Imposto da fatura difere do imposto do documento importado"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__existing_invoice_id
+msgid "Invoice that already exists with this reference"
+msgstr "Fatura que já existe com esta referência"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_account_move__imported_total_mismatch
+msgid "Invoice total differs from imported document total"
+msgstr "O total da fatura difere do total do documento importado"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__line_data
+msgid "JSON data with tax lines details"
+msgstr "Dados JSON com detalhes das linhas de impostos"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura__journal_id
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.res_config_settings_view_form_pt_efatura_v2
+msgid "Journal"
+msgstr "Diário"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model,name:l10n_pt_efatura_import.model_account_move
+msgid "Journal Entry"
+msgstr "Lançamento em Diário"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura__write_uid
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__write_uid
+msgid "Last Updated by"
+msgstr "Última Atualização por"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura__write_date
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__write_date
+msgid "Last Updated on"
+msgstr "Última Atualização em"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__line_data
+msgid "Line Data"
+msgstr "Dados da Linha"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura__info
+msgid "Messages"
+msgstr "Informação"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid "No documents found for the selected period."
+msgstr "Nenhum documento encontrado para o período selecionado."
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid "Open Settings"
+msgstr "Abrir Configurações"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_account_move__imported_date
+msgid "Original date from imported document"
+msgstr "Data original do documento importado"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields.selection,name:l10n_pt_efatura_import.selection__account_move__imported_status__pending
+#: model:ir.model.fields.selection,name:l10n_pt_efatura_import.selection__l10n_pt_dataport_import_efatura_line__status__pending
+msgid "Pending"
+msgstr "Pendente"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid ""
+"Please configure your AT API username and password in Settings > Accounting "
+"> Customer Invoices. These credentials must have the proper permissions on "
+"the AT portal."
+msgstr ""
+"Configure o seu nome de utilizador e palavra-passe da AT em Configurações > Contabilidade > Faturas de Cliente. "
+"Estas credenciais devem ter as permissões apropriadas no portal AT."
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid "Please select a date range for synchronization."
+msgstr "Por favor, selecione um intervalo de datas para sincronização."
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid "Please select at least one document to import."
+msgstr "Por favor, selecione pelo menos um documento para importar."
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.res_config_settings_view_form_pt_efatura_v2
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.vendor_efatura_field_add
+msgid "Product"
+msgstr "Produto"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.res_config_settings_view_form_pt_efatura_v2
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.vendor_efatura_field_add
+msgid "Red. Tax"
+msgstr "Taxa Red."
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__reference
+msgid "Reference"
+msgstr "Referência"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields.selection,name:l10n_pt_efatura_import.selection__l10n_pt_dataport_import_efatura_line__status__register
+msgid "Registered"
+msgstr "Registado"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.dataport_import_form_efatura
+msgid "Select All"
+msgstr "Selecionar Tudo"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields.selection,name:l10n_pt_efatura_import.selection__l10n_pt_dataport_import_efatura__state__selection
+msgid "Select Documents"
+msgstr "Selecionar Documentos"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__selected
+msgid "Select to import this document as vendor bill"
+msgstr "Selecione para importar este documento como fatura de fornecedor"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.res_config_settings_view_form_pt_efatura_v2
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.vendor_efatura_field_add
+msgid "Stand. Tax"
+msgstr "Taxa Normal"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid "Start date must be before end date."
+msgstr "A data de início deve ser anterior à data de fim."
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura__state
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__status
+msgid "Status"
+msgstr "Estado"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_account_move__imported_mismatch_disable
+msgid "Suppress status mismatch warnings"
+msgstr ""
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__tax_auth_doc_id
+msgid "Tax Authority document ID (from online sync)"
+msgstr "ID do documento da Autoridade Tributária (da sincronização online)"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_account_move__imported_tax_auth_doc_id
+msgid "Tax Authority unique document ID (from online sync)"
+msgstr "ID único do documento da Autoridade Tributária (da sincronização online)"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__tax_base
+msgid "Tax Base"
+msgstr "Base Tributável"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_account_move__imported_tax_base
+msgid "Tax base from imported document"
+msgstr "Base Tributável do documento importado"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid "The imported bill has discrepancies. Please review it."
+msgstr "O documento importado tem discrepâncias. Por favor, analise-o."
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__total_amount
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.dataport_import_form_efatura
+msgid "Total"
+msgstr "Total"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.dataport_import_form_efatura
+msgid "Total Tax Base"
+msgstr "Total Tributável"
+
+#. module: l10n_pt_efatura_import
+#: model_terms:ir.ui.view,arch_db:l10n_pt_efatura_import.dataport_import_form_efatura
+msgid "Total VAT"
+msgstr "Total Impostos"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_account_move__imported_total
+msgid "Total amount from imported document"
+msgstr "Valor total do documento importado"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/models/account_move.py:0
+msgid "Total: Imported %.2f€ ≠ Invoice %.2f€ (difference: %.2f€)"
+msgstr "Total: Importado %.2f€ ≠ Fatura %.2f€ (diferença: %.2f€)"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__doc_type
+msgid "Type"
+msgstr "Tipo Doc."
+
+#. module: l10n_pt_efatura_import
+#: model:res.groups,comment:l10n_pt_efatura_import.group_l10n_pt_efatura_user
+msgid "Users with access to E-Fatura features"
+msgstr "Utilizadores com acesso às funcionalidades E-Fatura"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__vat_amount
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__vendor_vat
+msgid "VAT"
+msgstr "Valor IVA"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_account_move__imported_vat_amount
+msgid "VAT amount from imported document"
+msgstr "Montante IVA do documento importado"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/models/account_move.py:0
+msgid "VAT: Imported %.2f€ ≠ Invoice %.2f€ (difference: %.2f€)"
+msgstr "Impostos: Importado %.2f€ ≠ Fatura %.2f€ (diferença: %.2f€)"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__vendor_id
+msgid "Vendor"
+msgstr "Fornecedor"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__vendor_name
+msgid "Vendor Name"
+msgstr "Nome do Fornecedor"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_account_move__imported_vendor_vat
+msgid "Vendor VAT from imported document"
+msgstr "NIF do Fornecedor"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_account_move__imported_vendor_name
+msgid "Vendor name from imported document"
+msgstr "Nome do Fornecedor"
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,help:l10n_pt_efatura_import.field_account_move__imported_warning
+msgid "Warning message when imported amounts do not match"
+msgstr "Mensagem de aviso quando os montantes importados não coincidem"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid "Warning: %s documents failed to process. Check logs for details."
+msgstr ""
+"Aviso: %s documentos falharam no processamento. Verifique os logs para mais "
+"detalhes."
+
+#. module: l10n_pt_efatura_import
+#: model:ir.model.fields,field_description:l10n_pt_efatura_import.field_l10n_pt_dataport_import_efatura_line__wizard_id
+msgid "Wizard"
+msgstr "Assistente"
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/wizards/l10n_pt_dataport_import_efatura.py:0
+msgid "Your session has expired. Please log in again later to continue."
+msgstr ""
+"A sua sessão expirou. Por favor, faça login novamente mais tarde para "
+"continuar."
+
+#. module: l10n_pt_efatura_import
+#. odoo-python
+#: code:addons/l10n_pt_efatura_import/models/account_move.py:0
+msgid "⚠️ Imported Document Discrepancy:\n"
+msgstr "⚠️ Discrepância no documento importado:\n"

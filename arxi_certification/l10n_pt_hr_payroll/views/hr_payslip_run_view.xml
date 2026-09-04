@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_payslip_run_form" model="ir.ui.view">
+            <field name="name">hr.payslip.run.form</field>
+            <field name="model">hr.payslip.run</field>
+            <field name="inherit_id" ref="hr_payroll.hr_payslip_run_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='action_validate']" position="after">
+                    <button name="action_payslips_send"
+                            string="Send all by Email"
+                            type="object"
+                            invisible="state not in ['close', 'paid']"/>
+                </xpath>
+                <xpath expr="//field[@name='payment_report']" position="after">
+                    <field name="currency_id" invisible="1"/>
+                    <field name="payslip_type" widget="radio"
+                           readonly="state != 'draft'"/>
+                    <field name="extraordinary_rubric"
+                           invisible="payslip_type != 'extraordinary'"
+                           required="payslip_type == 'extraordinary'"
+                           readonly="state != 'draft'"/>
+                    <field name="bonus_application_rule"
+                           invisible="payslip_type != 'extraordinary' or extraordinary_rubric != 'bonus'"
+                           required="payslip_type == 'extraordinary' and extraordinary_rubric == 'bonus'"
+                           readonly="state != 'draft'"/>
+                    <field name="bonus_value_type"
+                           invisible="payslip_type != 'extraordinary' or extraordinary_rubric != 'bonus'"
+                           required="payslip_type == 'extraordinary' and extraordinary_rubric == 'bonus'"
+                           readonly="state != 'draft'"/>
+                    <field name="bonus_general_amount"
+                           invisible="payslip_type != 'extraordinary' or extraordinary_rubric != 'bonus' or bonus_application_rule != 'general' or bonus_value_type != 'fixed'"
+                           required="payslip_type == 'extraordinary' and extraordinary_rubric == 'bonus' and bonus_application_rule == 'general' and bonus_value_type == 'fixed'"
+                           readonly="state != 'draft'"/>
+                    <field name="bonus_general_percentage" widget="percentage"
+                           invisible="payslip_type != 'extraordinary' or extraordinary_rubric != 'bonus' or bonus_application_rule != 'general' or bonus_value_type != 'percentage'"
+                           required="payslip_type == 'extraordinary' and extraordinary_rubric == 'bonus' and bonus_application_rule == 'general' and bonus_value_type == 'percentage'"
+                           readonly="state != 'draft'"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

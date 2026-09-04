@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><template id="qr_code_container_payment"><t t-if="o.payment_type == 'inbound' and o.partner_type == 'customer' and o.country_code == 'PT'"><div name="atcud_qr_code" style="page-break-inside: avoid;"><span t-if="o.journal_id.l10n_cert" class="small">ATCUD:
+                    <t t-out="o.pt_arxi_atcud or '0'"/>
+                </span><div id="row_div" class="d-flex flex-row"><div id="qrcode_pt" name="qrcode_pt_payment_bottom" t-if="o.journal_id.l10n_cert and o.payment_name and o.company_id.qr_code_pt" style="height: 150px; width: 150px" class="border border-dark rounded"><img t-att-src="image_data_uri(o.move_id.build_qr_code())" style="height: 100%; width: 100%;"/></div></div><t t-if="o.company_id.country_id.code == 'PT' and not o.journal_id.l10n_cert"><div class="text-nowrap"><p>Posted by certified software no. 2790/AT</p></div></t><t t-elif="o.company_id.country_id.code == 'PT' and o.journal_id.l10n_cert"><!-- hash characters: 1st, 11th, 21st, 31st, 41st--><span t-if="o.journal_id.l10n_cert" class="small">
+                        Processed
+                        by
+                        certified
+                        software no. 2790/AT
+                    </span></t></div></t></template><template id="report_payment_inherit" inherit_id="account.report_payment_receipt_document"><xpath expr="//div[@name='payment_partner_address']" position="before"><t t-if="o.qr_code_position == 'top'"><div class="col-6"><t t-call="l10n_pt_certificate.qr_code_container_payment"/></div></t></xpath><xpath expr="//div[hasclass('page')]" position="inside"><t t-if="o.qr_code_position == 'bottom'"><div class="mt-2"><t t-call="l10n_pt_certificate.qr_code_container_payment"/></div></t></xpath><xpath expr="//div[hasclass('page')]" position="attributes"><attribute name="t-att-style">'margin-top:30px;' if o.qr_code_position == 'top' else 'margin-top:0px;'</attribute></xpath><xpath expr="//h3" position="attributes"><attribute name="t-att-style">'margin-top:0px;' if o.partner_id.street else 'margin-top:70px;'</attribute></xpath><xpath expr="//div[@id='total']/div" position="inside"><span class="small" t-if="o.company_currency_id != o.currency_id">
+                Exchange rate:
+                <t t-esc="o.rate_string"/>
+            </span></xpath></template></odoo>

@@ -1,0 +1,275 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pt_ao_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-02 11:18+0000\n"
+"PO-Revision-Date: 2022-08-02 11:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pt_ao_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.report_option_products
+msgid "% discount"
+msgstr "% descuento"
+
+#. module: l10n_pt_ao_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.report_option_products
+msgid "<span>Optional Products</span>"
+msgstr "<span>Productos Opcionales</span>"
+
+#. module: l10n_pt_ao_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.invoice_form
+msgid "Addresses"
+msgstr "Moradas"
+
+#. module: l10n_pt_ao_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.invoice_form
+msgid "City"
+msgstr "Cuidad"
+
+#. module: l10n_pt_ao_sale
+#: model:ir.model,name:l10n_pt_ao_sale.model_res_config_settings
+msgid "Config Settings"
+msgstr "Opciones de configuración"
+
+#. module: l10n_pt_ao_sale
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale.field_arxi_sale_order_cancel_wizard__convert_proforma
+msgid "Convert Proforma"
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: model:ir.actions.server,name:l10n_pt_ao_sale.convert_to_proforma
+msgid "Convert to Proforma"
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/wizard/sale_order_cancel.py:0
+#, python-format
+msgid "Converted Into Proforma"
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.invoice_form
+msgid "Country"
+msgstr "País"
+
+#. module: l10n_pt_ao_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.report_option_products
+msgid "Description"
+msgstr "Descripción"
+
+#. module: l10n_pt_ao_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.report_option_products
+msgid "Disc.%"
+msgstr "Desc.%s"
+
+#. module: l10n_pt_ao_sale
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale.field_account_bank_statement_line__document_shipping_address_id
+msgid "Document Shipping Address"
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale.field_account_bank_statement_line__downpayment_origin
+msgid "Downpayment Origin"
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale.field_arxi_sale_order_cancel_wizard__is_rewrite
+msgid "Is a Rewrite"
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: model:ir.model,name:l10n_pt_ao_sale.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: l10n_pt_ao_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.invoice_form
+msgid "Loading Address"
+msgstr "Dirección de Carga"
+
+#. module: l10n_pt_ao_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.view_order_form
+msgid "Post"
+msgstr "Emitir"
+
+#. module: l10n_pt_ao_sale
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale.field_arxi_sale_order_cancel_wizard__reason
+msgid "Reason"
+msgstr "Razón"
+
+#. module: l10n_pt_ao_sale
+#: model:ir.actions.server,name:l10n_pt_ao_sale.rewrite
+msgid "Rewrite"
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#, python-format
+msgid "Sale Order %s"
+msgstr "Presupuesto %s"
+
+#. module: l10n_pt_ao_sale
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale.field_res_config_settings__downpayment_sale_update
+msgid "Sale Order Downpayment Update"
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: model:ir.model.constraint,message:l10n_pt_ao_sale.constraint_sale_order_line_check_name_size
+msgid "Sale Order Line descriptions must not have more than 200 characters!"
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: model:ir.model,name:l10n_pt_ao_sale.model_sale_advance_payment_inv
+msgid "Sales Advance Payment Invoice"
+msgstr "Ventas. Anticipo pago factura"
+
+#. module: l10n_pt_ao_sale
+#: model:ir.model,name:l10n_pt_ao_sale.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: l10n_pt_ao_sale
+#: model:ir.model,name:l10n_pt_ao_sale.model_arxi_sale_order_cancel_wizard
+msgid "Sales Order Cancel"
+msgstr "Cancelar pedido de venta"
+
+#. module: l10n_pt_ao_sale
+#: model:ir.model,name:l10n_pt_ao_sale.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de venta"
+
+#. module: l10n_pt_ao_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.invoice_form
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_pt_ao_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.invoice_form
+msgid "Street 2..."
+msgstr "Calle 2..."
+
+#. module: l10n_pt_ao_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.invoice_form
+msgid "Street..."
+msgstr "Calle..."
+
+#. module: l10n_pt_ao_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.report_terms_and_conditions
+msgid "Terms &amp; Conditions"
+msgstr "Términos y Condiciones"
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#, python-format
+msgid "The discount field must be a value between 0 and 100."
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#, python-format
+msgid "The price unit field must be a non-negative value."
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#, python-format
+msgid "The quantity field must be a non-negative value."
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#, python-format
+msgid ""
+"The selected partner doesn't have a commercial entity with a reference code."
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#, python-format
+msgid "The selected product does not have an Internal Reference."
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: model:ir.model.fields,field_description:l10n_pt_ao_sale.field_sale_order_line__price_unit
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.report_option_products
+msgid "Unit Price"
+msgstr "Precio Unitario"
+
+#. module: l10n_pt_ao_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.res_config_settings_view_form
+msgid "Update Sale With Down Payment Line"
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#, python-format
+msgid "Warning!"
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#, python-format
+msgid "You can not cancel a sales order that was invoiced."
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#, python-format
+msgid "You can not confirm an order without any lines"
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/wizard/sale_order_cancel.py:0
+#, python-format
+msgid "You can not convert a proforma."
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#, python-format
+msgid "You can not delete a line from a posted document."
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#, python-format
+msgid "You can not delete a sent quotation or a confirmed sales order."
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#, python-format
+msgid "You can not modify this document after being posted."
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#, python-format
+msgid ""
+"You can not validate quotations with products without Internal Reference."
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: code:addons/l10n_pt_ao_sale/models/sale_order.py:0
+#, python-format
+msgid ""
+"You can not validate sale orders for a commercial entity without a reference"
+" code."
+msgstr ""
+
+#. module: l10n_pt_ao_sale
+#: model_terms:ir.ui.view,arch_db:l10n_pt_ao_sale.invoice_form
+msgid "ZIP"
+msgstr ""

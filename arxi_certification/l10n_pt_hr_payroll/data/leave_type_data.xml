@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<odoo>
+    <data noupdate="0">
+        <record id="unjustified_absence" model="hr.leave.type">
+            <field name="name">Unjustified Absence</field>
+            <field name="company_id" eval="False"/>
+            <field name="requires_allocation">no</field>
+            <field name="leave_validation_type">no_validation</field>
+            <field name="employee_requests">no</field>
+            <!--            <field name="color_name">red</field>-->
+            <field name="leave_notif_subtype_id" ref="hr_holidays.mt_leave"/>
+            <field name="responsible_ids" eval="[(6, 0, [ref('base.user_admin')])]"/>
+        </record>
+
+        <record id="justified_absence" model="hr.leave.type">
+            <field name="name">Justified Absence</field>
+            <field name="company_id" eval="False"/>
+            <field name="requires_allocation">no</field>
+            <field name="leave_validation_type">no_validation</field>
+            <field name="employee_requests">no</field>
+            <!--            <field name="color_name">red</field>-->
+            <field name="leave_notif_subtype_id" ref="hr_holidays.mt_leave"/>
+            <field name="responsible_ids" eval="[(6, 0, [ref('base.user_admin')])]"/>
+        </record>
+
+        <record id="holiday_status_paid" model="hr.leave.type">
+            <field name="name">Holiday</field>
+            <field name="company_id" eval="False"/>
+            <field name="requires_allocation">no</field>
+            <field name="leave_validation_type">both</field>
+            <field name="allocation_validation_type">hr</field>
+            <field name="request_unit">hour</field>
+            <field name="unpaid" eval="True"/>
+            <field name="leave_notif_subtype_id" ref="hr_holidays.mt_leave_unpaid"/>
+            <field name="responsible_ids" eval="[(6, 0, [ref('base.user_admin')])]"/>
+            <field name="icon_id" ref="hr_holidays.icon_28"/>
+            <field name="color">5</field>
+        </record>
+
+        <record id="marriage_leave_status_paid" model="hr.leave.type">
+            <field name="name">Marriage Leave</field>
+            <field name="company_id" eval="False"/>
+            <field name="requires_allocation">yes</field>
+            <field name="employee_requests">no</field>
+            <field name="leave_validation_type">both</field>
+            <field name="allocation_validation_type">hr</field>
+            <field name="request_unit">hour</field>
+            <field name="unpaid" eval="True"/>
+            <field name="leave_notif_subtype_id" ref="hr_holidays.mt_leave_unpaid"/>
+            <field name="responsible_ids" eval="[(6, 0, [ref('base.user_admin')])]"/>
+            <field name="icon_id" ref="hr_holidays.icon_28"/>
+            <field name="color">5</field>
+        </record>
+
+
+        <record id="hr_holidays.leave_type_sick_time_off" model="hr.leave.type">
+            <field name="name">Sick Time Off</field>
+            <field name="company_id" eval="False"/>
+            <field name="requires_allocation">no</field>
+            <field name="leave_validation_type">both</field>
+            <field name="allocation_validation_type">hr</field>
+            <field name="request_unit">hour</field>
+            <field name="unpaid" eval="True"/>
+            <field name="leave_notif_subtype_id" ref="hr_holidays.mt_leave_unpaid"/>
+            <field name="responsible_ids" eval="[(6, 0, [ref('base.user_admin')])]"/>
+            <field name="icon_id" ref="hr_holidays.icon_28"/>
+            <field name="color">5</field>
+        </record>
+
+        <record id="hr_holidays.leave_type_unpaid" model="hr.leave.type">
+            <field name="active">False</field>
+        </record>
+
+        <!--        Stage II Leaves -->
+
+        <record id="maternity_leave_days_status_paid" model="hr.leave.type">
+            <field name="name">Maternity Leave</field>
+            <field name="company_id" eval="False"/>
+            <field name="requires_allocation">yes</field>
+            <field name="employee_requests">no</field>
+            <field name="leave_validation_type">both</field>
+            <field name="allocation_validation_type">hr</field>
+            <field name="request_unit">hour</field>
+            <field name="unpaid" eval="True"/>
+            <field name="leave_notif_subtype_id" ref="hr_holidays.mt_leave_unpaid"/>
+            <field name="responsible_ids" eval="[(6, 0, [ref('base.user_admin')])]"/>
+            <field name="icon_id" ref="hr_holidays.icon_28"/>
+            <field name="color">5</field>
+        </record>
+
+        <record id="parental_leave_days_status_paid" model="hr.leave.type">
+            <field name="name">Parental Leave</field>
+            <field name="company_id" eval="False"/>
+            <field name="requires_allocation">yes</field>
+            <field name="employee_requests">no</field>
+            <field name="leave_validation_type">both</field>
+            <field name="allocation_validation_type">hr</field>
+            <field name="request_unit">hour</field>
+            <field name="unpaid" eval="True"/>
+            <field name="leave_notif_subtype_id" ref="hr_holidays.mt_leave_unpaid"/>
+            <field name="responsible_ids" eval="[(6, 0, [ref('base.user_admin')])]"/>
+            <field name="icon_id" ref="hr_holidays.icon_28"/>
+            <field name="color">5</field>
+        </record>
+
+        <record id="paternity_leave_days_status_paid" model="hr.leave.type">
+            <field name="name">Paternity Leave</field>
+            <field name="company_id" eval="False"/>
+            <field name="requires_allocation">yes</field>
+            <field name="employee_requests">no</field>
+            <field name="leave_validation_type">both</field>
+            <field name="allocation_validation_type">hr</field>
+            <field name="request_unit">hour</field>
+            <field name="unpaid" eval="True"/>
+            <field name="leave_notif_subtype_id" ref="hr_holidays.mt_leave_unpaid"/>
+            <field name="responsible_ids" eval="[(6, 0, [ref('base.user_admin')])]"/>
+            <field name="icon_id" ref="hr_holidays.icon_28"/>
+            <field name="color">5</field>
+        </record>
+
+        <record id="training_time_off_status" model="hr.leave.type">
+            <field name="name">Training Time Off</field>
+            <field name="company_id" eval="False"/>
+            <field name="requires_allocation">no</field>
+            <field name="leave_validation_type">both</field>
+            <field name="allocation_validation_type">hr</field>
+            <field name="support_document">True</field>
+            <field name="request_unit">hour</field>
+            <field name="unpaid" eval="True"/>
+            <field name="is_training">True</field>
+            <field name="leave_notif_subtype_id" ref="hr_holidays.mt_leave_unpaid"/>
+            <field name="responsible_ids" eval="[(6, 0, [ref('base.user_admin')])]"/>
+            <field name="icon_id" ref="hr_holidays.icon_26"/>
+            <field name="color">6</field>
+        </record>
+
+        <record id="strike_time_off_status" model="hr.leave.type">
+            <field name="name">Strike</field>
+            <field name="company_id" eval="False"/>
+            <field name="requires_allocation">no</field>
+            <field name="leave_validation_type">hr</field>
+            <field name="allocation_validation_type">hr</field>
+            <field name="support_document">True</field>
+            <field name="request_unit">day</field>
+            <field name="unpaid" eval="True"/>
+            <field name="is_strike">True</field>
+            <field name="leave_notif_subtype_id" ref="hr_holidays.mt_leave_unpaid"/>
+            <field name="responsible_ids" eval="[(6, 0, [ref('base.user_admin')])]"/>
+            <field name="icon_id" ref="hr_holidays.icon_28"/>
+            <field name="color">7</field>
+        </record>
+
+    </data>
+</odoo>

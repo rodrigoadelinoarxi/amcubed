@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="payslip_by_employees_form_inherit" model="ir.ui.view">
+            <field name="name">hr.payroll.payslip.employees.wizard</field>
+            <field name="model">hr.payslip.employees</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_by_employees"/>
+            <field name="arch" type="xml">
+                <xpath expr="//separator[2]" position="before">
+                    <separator string="Contract Type"/>
+                    <div class="o_row" colspan="2">
+                        <p class="text-muted w-50">Set a specific contract type if you wish to select all the employees
+                            with this contract type.
+                        </p>
+                        <field name="contract_type" no_label="1"/>
+                    </div>
+                </xpath>
+                <xpath expr="//field[@name='employee_ids']" position="before">
+                    <field name="payslip_run_id" invisible="1"/>
+                    <field name="payslip_run_type" invisible="1"/>
+                    <field name="extraordinary_rubric" invisible="1"/>
+                    <field name="bonus_application_rule" invisible="1"/>
+                    <field name="bonus_value_type" invisible="1"/>
+                    <div class="alert alert-warning" role="alert"
+                         invisible="not extraordinary_eligibility_info">
+                        <strong>Employees not eligible for this extraordinary batch:</strong>
+                        <field name="extraordinary_eligibility_info" nolabel="1" readonly="1"/>
+                    </div>
+                </xpath>
+                <xpath expr="//field[@name='employee_ids']" position="after">
+                    <separator string="Bonus Values"
+                               invisible="payslip_run_type != 'extraordinary' or extraordinary_rubric != 'bonus' or bonus_application_rule != 'per_employee'"/>
+                    <field name="extraordinary_line_ids" nolabel="1"
+                           invisible="payslip_run_type != 'extraordinary' or extraordinary_rubric != 'bonus' or bonus_application_rule != 'per_employee'">
+                        <list editable="bottom" create="0" delete="0">
+                            <field name="currency_id" column_invisible="1"/>
+                            <field name="bonus_value_type" column_invisible="1"/>
+                            <field name="version_id" column_invisible="1"/>
+                            <field name="employee_id" readonly="1" force_save="1"/>
+                            <field name="wage"/>
+                            <field name="amount" column_invisible="parent.bonus_value_type != 'fixed'"/>
+                            <field name="percentage" widget="percentage"
+                                   column_invisible="parent.bonus_value_type != 'percentage'"/>
+                            <field name="total" column_invisible="parent.bonus_value_type != 'percentage'"/>
+                        </list>
+                    </field>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

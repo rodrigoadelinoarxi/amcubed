@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><template id="report_saleorder_document" inherit_id="sale.report_saleorder_document" priority="200"><xpath expr="//div[@id='informations']" position="inside"><div t-if="doc.purchase_request_nr" class="col-auto col-3 mw-100 mb-2"><strong>Purchase Request Nr:</strong><br/><span class="m-0" t-field="doc.purchase_request_nr"/></div></xpath></template></odoo>

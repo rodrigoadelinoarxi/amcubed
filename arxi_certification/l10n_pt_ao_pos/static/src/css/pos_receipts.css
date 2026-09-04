@@ -1,0 +1,16 @@
+diagonal-text {
+    position: relative;
+    display: inline-block;
+}
+
+.diagonal-text.cancelled::before {
+    content: "Cancelled";
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    color: red;
+    font-size: 3em;
+    font-weight: bold;
+    opacity: 0.5;
+}

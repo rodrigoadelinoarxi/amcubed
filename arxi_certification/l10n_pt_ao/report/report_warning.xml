@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><template id="report_staging_warning"><t t-if="o and o.company_id.check_staging_instance() or doc and doc.company_id.check_staging_instance()"><p class="diagonal-text-warning">Staging</p></t></template></odoo>

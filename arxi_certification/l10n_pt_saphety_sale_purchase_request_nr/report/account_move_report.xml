@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo><template id="report_invoice_document_purchase_request_nr" inherit_id="account.report_invoice_document"><xpath expr="//div[@name='customer_code']" position="after"><div t-attf-class="#{'col-auto col-3 mw-100' if report_type != 'html' else 'col'} mb-2" t-if="o.purchase_request_nr" name="purchase_request_nr"><strong>Purchase Request Nr.</strong><span t-field="o.purchase_request_nr"/></div></xpath></template></odoo>
