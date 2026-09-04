@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <record id="product_category_service" model="product.category">
+            <field name="name">Fees Service</field>
+        </record>
+
+        <record id="product_product_extra_fees" model="product.product">
+            <field name="name">Fees Service</field>
+            <field name="default_code">Fees_01</field>
+            <field name="type">service</field>
+            <field name="categ_id" ref="product_category_service"/>
+            <field name="sale_ok" eval="False"/>
+            <field name="purchase_ok" eval="False"/>
+            <field name="taxes_id" eval="[(5, 0, 0)]"/>
+            <field name="list_price">0.0</field>
+            <field name="invoice_policy">order</field>
+        </record>
+    </data>
+</odoo>
