@@ -1,0 +1,6 @@
+
+pycryptodome
+xmlschema
+pdftotext
+openai
+pygount
