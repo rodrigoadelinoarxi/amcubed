@@ -4,3 +4,4 @@ xmlschema
 pdftotext
 openai
 pygount
+google-auth
