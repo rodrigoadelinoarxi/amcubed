@@ -308,3 +308,122 @@ confirmado no dump de origem, também já estavam `uninstalled` antes da migraç
 não é uma regressão urgente). Antes de considerar a migração concluída: correr o teste de
 qualidade (`quality_test.js`) e a validação de fluxos de negócio contra esta instância já
 corrigida.
+
+## Atualização 2026-09-08 (continuação) — instância "muito lenta" após login: causa raiz real e correção completa
+
+Depois de C1-C3, o utilizador conseguiu fazer login mas reportou a instância "muito
+lenta" (ecrã "Apps" preso a carregar). Diagnóstico ao vivo: a BD tinha **20 módulos
+custom genuinamente instalados na origem** presos em `to upgrade` (nunca chegavam a
+`installed`), e um módulo com estado nesse limbo faz o Odoo repetir o carregamento
+COMPLETO do registo de módulos em CADA pedido HTTP (via
+`odoo.addons.base.models.ir_cron: Skipping database ... because of modules to
+install/upgrade/remove` + reload síncrono do registo) — por isso a lentidão extrema, não
+era um processo pesado a correr, era isto.
+
+### D1. 22 módulos com `version` de manifesto ainda "17.0.x" (ou "18.0.x"/"1.0") — RESOLVIDO
+
+O Odoo recusa completar o upgrade de um módulo cujo `version` no manifesto não começa
+pela série do servidor (`19.0`) — marca `installable=False` e o módulo fica preso em
+`to upgrade` para sempre (nunca chega a `installed` nem a `uninstalled`, porque nunca
+termina o upgrade). Confirmado que TODOS estes 20 estavam `installed` na origem (dump
+`db_backups/amcubed-master-...zip`) — regressão real, não módulos obsoletos. Corrigido:
+bump do campo `version` para `19.0.x` (só metadado, sem alterar lógica) em:
+
+`custom_website_sale_stock`, `hide_menu_user`, `import_bill_of_materials_in_mrp`,
+`payment_date`, `payment_eupago`, `payment_eupago_arxi`, `payment_eupago_cc`,
+`payment_eupago_mbref`, `payment_eupago_mbref_sale`, `payment_eupago_mbway`,
+`product_assortment`, `product_pricelist_assortment`, `product_pricelist_by_contact`,
+`statement_report`, `stock_no_negative`, `vies_integration`, `arxi_amcubed`,
+`arxi_quality_instance_client`, `l10n_pt_account_batch_payment` (era `'1.0'`) — e por
+consistência, também `l10n_pt_efatura_import` (era `18.0.x`, estava `uninstalled` na
+origem, não bloqueava nada mas ficou coerente) e `arxi_openai_client`/
+`arxi_quality_payroll_api_client` (idem, bloqueados por B2, não pela versão).
+
+### D2. Incompatibilidades reais de código Python/XML v17→v19 nos módulos acima — RESOLVIDAS
+
+Depois do bump de versão, cada módulo revelou o seu próprio erro de carregamento
+(iterado um de cada vez, corrigido, relançado — nunca abortado a meio):
+
+- **`arxi_quality_instance_client`**: `from odoo import ... registry` — o símbolo
+  `odoo.registry` foi removido no v19 (mudou para `odoo.orm.registry.Registry`).
+  Import nunca era usado no ficheiro — removido (`controllers/main.py`).
+- **`hide_menu_user`**: `@api.returns('self')` — decorator removido no v19. Método já
+  devolve o tipo certo via `super()`, decorator era só uma anotação — removido
+  (`models/res_users.py`).
+- **`<tree>` → `<list>`** (renomeação global do v19, raiz de list views E `<field><tree>`
+  aninhados dentro de forms — confirmado 0 ocorrências de `<tree` em todo o core v19):
+  `hide_menu_user/views/res_users_views.xml`,
+  `product_pricelist_assortment/views/product_pricelist.xml` (+ um xpath
+  `.../field[@name='item_ids']/tree` → `.../list`),
+  `product_pricelist_assortment/views/product_pricelist_assortment_item.xml`,
+  `product_assortment/views/product_assortment.xml`,
+  `statement_report/views/res_partner_views.xml`.
+- **`view_mode` com `'tree'`** (mesma renomeação, mas como valor de string em ações):
+  `product_pricelist_assortment_item.xml` (`tree,form`→`list,form`) e
+  `product_assortment.xml` (dict Python inline `'view_mode': 'tree'`→`'list'`).
+- **`<group expand="0" string="Group By">` em vista `search`** — o v19 removeu os
+  atributos `expand`/`string` do elemento `<group>` dentro de `<search>` (confirmado:
+  nenhuma vista search do core v19 usa esse padrão antigo; agora é só `<group>` a
+  envolver os `<filter>` de group-by). Corrigido em
+  `product_pricelist_assortment_item.xml`.
+- **`base.module_category_manufacturing_manufacturing`** — XML ID de categoria
+  reorganizado no v19 (categorias agora aninhadas sob "Supply Chain"). Novo ID:
+  `base.module_category_supply_chain_manufacturing`
+  (`import_bill_of_materials_in_mrp/security/import_bom_security.xml`).
+- **`res.groups.category_id`** — o campo foi removido do modelo `res.groups` no v19; a
+  categorização de grupos de segurança passou a usar `privilege_id` (many2one a
+  `res.groups.privilege`, populado por módulo). Corrigido para
+  `privilege_id` = `mrp.res_groups_privilege_manufacturing` (mesmo ficheiro).
+
+### D3. Três módulos ficaram presos por razões distintas — dois resolvidos, um por decidir
+
+- **`l10n_pt_account_batch_payment`**: **não é bug nenhum** — o próprio manifesto já
+  tinha `'installable': False` com um comentário datado de 2026-07-10 a explicar que o
+  modelo alvo foi removido no v19 e a funcionalidade (imutabilidade de pagamentos
+  certificados) passou a ser garantida pelos guards do core
+  (`l10n_pt_ao`/`l10n_pt_certificate`) — decisão já tomada, só nunca tinha sido
+  propagada ao estado da BD desta instância. Estado corrigido para `uninstalled`
+  (SQL direto, sem alterar código).
+- **`whatsapp_oauth`**: **não estava instalado na origem** (confirmado no dump) e o
+  módulo não existe em lado nenhum do addons_path acessível (nem custom, nem
+  Enterprise montado) — provavelmente um artefacto do próprio `upgrade.odoo.com`
+  a tentar modernizar uma integração WhatsApp antiga que não faz parte deste bundle
+  Enterprise self-hosted. Sem perda de funcionalidade real (nunca esteve ativo para o
+  AMCUBED). Estado corrigido para `uninstalled` (SQL direto).
+- **`credit_note_specific_account`** — ⚠️ **POR DECIDIR, não resolvido**: este SIM
+  estava `installed` na origem (confirmado no dump) — é uma regressão real, ao
+  contrário dos dois acima. O módulo (adiciona escolha de conta ao criar uma nota de
+  crédito) simplesmente **não existe no repo do AMCUBED** — mas existe, já adaptado
+  para v19 (`version: '19.0.1.0.0'`, sem `installable: False`, ainda ativo), no repo
+  doutro cliente (`admincore`, pasta `arxi_certification/credit_note_specific_account`)
+  — é claramente um módulo partilhado da família `arxi_certification` que ficou de
+  fora do checkout do AMCUBED por engano. Como é código de negócio financeiro (afeta
+  notas de crédito), não copiei o módulo de outro cliente para aqui sem revisão. Como
+  stop-gap TEMPORÁRIO para desbloquear a lentidão (estado preso em `to upgrade`
+  impedia o registo de assentar), o estado foi posto a `uninstalled` por SQL direto —
+  isto NÃO é a decisão final, precisa de: (a) confirmar que o módulo do admincore é
+  genérico/reutilizável e não específico desse cliente, (b) copiá-lo para
+  `arxi_certification/credit_note_specific_account/` no repo do AMCUBED, (c)
+  reinstalar.
+
+### Resultado
+
+`odoo -u all` conclui limpo (382/382 módulos, "Modules loaded", ~2 min), **zero**
+módulos em estado não-terminal, container reiniciado para o processo principal também
+ficar com o registo fresco (o reload incremental via sinalização da BD tinha ficado com
+cache parcial/obsoleta de tentativas anteriores da sessão — reiniciar resolveu). Tempo
+de resposta de `/web/login` caiu de ~0.7-0.8s (registo a recarregar em cada pedido) para
+~0.05s.
+
+### Resumo atualizado
+
+| # | Assunto | Estado |
+|---|---|---|
+| D1 | 20 módulos com `version` de manifesto pré-v19 (bloqueava upgrade permanentemente) | **RESOLVIDO** |
+| D2 | ~7 incompatibilidades reais de código Python/XML v17→v19 nesses módulos | **RESOLVIDAS** |
+| D3a | `l10n_pt_account_batch_payment` preso — já obsoleto por decisão documentada | **RESOLVIDO** (estado corrigido) |
+| D3b | `whatsapp_oauth` preso — nunca esteve na origem, módulo indisponível | **RESOLVIDO** (estado corrigido) |
+| D3c | `credit_note_specific_account` preso — módulo real em falta no repo | **STOP-GAP aplicado, decisão humana pendente** |
+
+**Próximo passo:** decidir e executar D3c (copiar módulo do admincore, se aplicável), depois
+continuar para o teste de qualidade + validação de fluxos de negócio já mencionados acima.

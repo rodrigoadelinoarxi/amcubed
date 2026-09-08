@@ -8,7 +8,7 @@
     'website'     : "https://www.arxi.pt",
 
     'category'    : 'Accounting & Finance',
-    'version'     : '1.0',
+    'version'     : '19.0.1.0',
     # Etapa 4.4 (2026-07-10): o modelo alvo (account.batch.payment.rejection)
     # foi removido na v19; a imutabilidade dos pagamentos certificados passou a
     # ser garantida pelos guards do core (l10n_pt_ao/l10n_pt_certificate).

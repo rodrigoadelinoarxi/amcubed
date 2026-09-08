@@ -16,7 +16,7 @@
                     </button>
 
                     <field name="customer_report_ids" class="mt16">
-                        <tree create='false' delete="false">
+                        <list create='false' delete="false">
                             <field name="currency_id" column_invisible="1"/>
                             <field name="invoice_date"
                                    string="Invoice Date"/>
@@ -32,7 +32,7 @@
                             <field name="amount_residual" sum="Balance Due"
                                    string="Balance" widget="monetary"
                                    options="{'currency_field': 'currency_id'}"/>
-                        </tree>
+                        </list>
                     </field>
                 </page>
                 <page name="supplier_statement"
@@ -43,7 +43,7 @@
                     </button>
 
                     <field name="vendor_statement_ids" class="mt16">
-                        <tree create="false" delete="false">
+                        <list create="false" delete="false">
                             <field name="currency_id" column_invisible="1"/>
                             <field name="invoice_date" string="Bill Date"/>
                             <field name="name" string="Bill No."/>
@@ -58,7 +58,7 @@
                             <field name="amount_residual" sum="Balance Due"
                                    string="Balance" widget="monetary"
                                    options="{'currency_field': 'currency_id'}"/>
-                        </tree>
+                        </list>
                     </field>
                 </page>
             </xpath>

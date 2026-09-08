@@ -1,6 +1,6 @@
 {
     'name': 'Custom Website Sale Stock',
-    'version': '17.0.1.0.0',
+    'version': '19.0.1.0.0',
     'category': 'Website',
     'summary': 'Override website_sale_stock translations',
     'author': "Arxi",

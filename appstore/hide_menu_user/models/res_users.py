@@ -74,7 +74,6 @@ class IrUiMenu(models.Model):
         'res.users', string="Restricted Users",
         help='Users restricted from accessing this menu.')
 
-    @api.returns('self')
     def _filter_visible_menus(self):
         """
         Override to filter out menus restricted for current user.

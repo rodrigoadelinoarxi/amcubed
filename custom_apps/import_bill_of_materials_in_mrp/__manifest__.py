@@ -21,7 +21,7 @@
 #############################################################################
 {
     'name': 'Import Bill Of Materials',
-    'version': '17.0.1.0.1',
+    'version': '19.0.1.0.1',
     'category': 'Manufacturing',
     'summary': """Import Bill of materials using CSV, Excel file""",
     'description': 'Using this module we can import bom by searching'

@@ -4,7 +4,7 @@
     'author': "ARXILEAD",
     'website': "http://www.arxi.pt",
     'category': 'Accounting',
-    'version': '17.0.0.0.0',
+    'version': '19.0.0.0.0',
     'depends': ['base'],
     'license': 'OPL-1',
     'sequence': 200,

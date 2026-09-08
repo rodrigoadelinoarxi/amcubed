@@ -4,7 +4,7 @@
     'author'        : 'Arxi',
     'website'       : 'http://www.arxi.pt',
     'category'      : 'Payment Acquirer',
-    'version'       : '17.0.0.0.2',
+    'version'       : '19.0.0.0.2',
     'license'       : 'OPL-1',
     'depends'       : [
         'payment_eupago_mbref', 'account'

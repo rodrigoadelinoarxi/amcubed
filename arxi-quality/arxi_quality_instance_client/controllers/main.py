@@ -1,4 +1,4 @@
-from odoo import http, api, _, fields, SUPERUSER_ID, registry
+from odoo import http, api, _, fields, SUPERUSER_ID
 from odoo.http import Response, request
 import subprocess
 from odoo.exceptions import UserError

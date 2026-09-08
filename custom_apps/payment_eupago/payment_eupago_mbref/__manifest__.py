@@ -4,7 +4,7 @@
     'author'        : 'Arxi',
     'website'       : 'http://www.arxi.pt',
     'category'      : 'Payment Acquirer',
-    'version'       : '17.0.0.0.17',
+    'version'       : '19.0.0.0.17',
     'license'       : 'OPL-1',
     # 'price'      : 450.00,
     # 'currency'   : 'EUR',

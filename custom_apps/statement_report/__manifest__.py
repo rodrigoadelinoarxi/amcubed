@@ -21,7 +21,7 @@
 #############################################################################
 {
     'name': 'Customer/ Supplier Payment Statement Report',
-    'version': '17.0.2.0.1',
+    'version': '19.0.2.0.1',
     'category': 'Productivity',
     'summary': """Customer/ Supplier Payment Statement Report is designed to 
      manage all customer and/or supplier payment statement reports.""",

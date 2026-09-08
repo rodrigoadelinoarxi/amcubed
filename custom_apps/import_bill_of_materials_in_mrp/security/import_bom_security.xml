@@ -4,7 +4,7 @@
     <record id="import_bom_group_id" model="res.groups">
         <field name="name">Import BOM</field>
         <field name="implied_ids" eval="[(4, ref('mrp.group_mrp_user'))]"/>
-        <field name="category_id" ref="base.module_category_manufacturing_manufacturing"/>
+        <field name="privilege_id" ref="mrp.res_groups_privilege_manufacturing"/>
     </record>
 
     <record id="mrp.group_mrp_manager" model="res.groups">

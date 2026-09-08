@@ -96,7 +96,7 @@
         >product.pricelist.assortment.item.tree (in product_pricelist_assortment)</field>
         <field name="model">product.pricelist.assortment.item</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="pricelist_id" />
                 <field name="assortment_filter_id" />
                 <field name="min_quantity" />
@@ -106,7 +106,7 @@
                 <field name="base" column_invisible="1" />
                 <field name="price_discount" column_invisible="1" />
                 <field name="compute_price" column_invisible="1" />
-            </tree>
+            </list>
         </field>
     </record>
     <record model="ir.ui.view" id="product_pricelist_assortment_item_search">
@@ -118,7 +118,7 @@
             <search>
                 <field name="pricelist_id" />
                 <field name="assortment_filter_id" />
-                <group expand="0" string="Group By">
+                <group>
                     <filter
                         string="Pricelist"
                         name="groupby_pricelist"
@@ -136,7 +136,7 @@
     <record model="ir.actions.act_window" id="product_pricelist_assortment_item_action">
         <field name="name">Pricelist Assortment Items</field>
         <field name="res_model">product.pricelist.assortment.item</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
         <field name="context">{'display_pricelist': True}</field>
     </record>
 </odoo>

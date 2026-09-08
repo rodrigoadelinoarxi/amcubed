@@ -8,7 +8,7 @@
     'website'    : "https://www.arxi.pt",
 
     'category'   : 'Manufacturing/Quality',
-    'version'    : '17.0.0.0.6',
+    'version'    : '19.0.0.0.6',
 
     # 'depends'    : [
     #     'arxi_openai_client',
