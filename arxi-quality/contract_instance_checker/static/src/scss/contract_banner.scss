@@ -1,0 +1,180 @@
+// Add padding to body when banner is visible
+body:has(.contract-status-banner) {
+    .o_action_manager {
+        padding-bottom: 60px !important;
+    }
+}
+
+.contract-status-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; // Lower z-index so it doesn't cover loading spinners
+    margin: 0 !important;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+    animation: slideUp 0.3s ease-out;
+    border-radius: 0 !important;
+    border: none !important;
+
+    &.alert-danger {
+        background-color: #dc3545;
+        color: white;
+        border-top: 3px solid #c82333 !important;
+    }
+
+    &.alert-warning {
+        background-color: #ffc107;
+        color: #212529;
+        border-top: 3px solid #e0a800 !important;
+    }
+
+    i {
+        margin-right: 8px;
+        font-size: 16px;
+    }
+
+    a:not(.btn) {
+        color: inherit;
+        text-decoration: underline;
+        margin-left: 10px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    a.btn {
+        text-decoration: none !important;
+        color: #fff !important;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+// Block modal
+.contract-block-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease-out;
+
+    .contract-block-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(5px);
+    }
+
+    .contract-block-content {
+        position: relative;
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        max-width: 600px;
+        text-align: center;
+        z-index: 1;
+        animation: modalSlideIn 0.4s ease-out;
+
+        .contract-block-icon {
+            color: #dc3545;
+            margin-bottom: 20px;
+
+            i {
+                animation: pulse 2s infinite;
+            }
+        }
+
+        h2 {
+            color: #212529;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .contract-block-message {
+            color: #495057;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .contract-block-info {
+            color: #6c757d;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            }
+
+            i {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}

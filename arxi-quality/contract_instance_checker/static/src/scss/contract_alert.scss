@@ -1,0 +1,60 @@
+/* Contract Instance Checker - Alert Styles */
+
+.contract-alert-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin: 0;
+    border-radius: 0;
+    animation: slideDown 0.3s ease-out;
+
+    .alert {
+        margin-bottom: 0;
+        border-radius: 0;
+        border: none;
+        padding: 12px 20px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+
+        i {
+            margin-right: 8px;
+        }
+
+        strong {
+            margin-right: 4px;
+        }
+    }
+
+    .contract-alert-warning {
+        background-color: #fff3cd;
+        border-bottom: 2px solid #ffc107;
+        color: #856404;
+    }
+
+    .contract-alert-danger {
+        background-color: #f8d7da;
+        border-bottom: 2px solid #dc3545;
+        color: #721c24;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Ajustar o conteúdo principal quando há alerta */
+body.contract-alert-active {
+    .o_main {
+        padding-top: 50px;
+    }
+}

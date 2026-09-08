@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="contract_instance_checker.ContractStatusBanner" owl="1">
+        <!-- Banner de aviso (sempre visível quando há problema) -->
+        <div t-if="!state.loading and shouldShowBanner"
+             t-attf-class="contract-status-banner alert {{bannerClass}}"
+             role="alert">
+            <i t-attf-class="fa {{bannerIcon}}"/>
+            <span t-esc="bannerMessage"/>
+            <button class="btn btn-sm btn-primary ms-2" t-on-click="onValidateNow">
+                <i class="fa fa-refresh"/> <t t-esc="checkNowLabel"/>
+            </button>
+            <a t-attf-href="mailto:{{accountManagerEmail}}?subject=Renovação de Contrato ARXI"
+               class="btn btn-sm btn-primary ms-2">
+                <i class="fa fa-envelope"/> <t t-esc="contactAccountManagerLabel"/>
+            </a>
+        </div>
+
+        <!-- Modal de bloqueio (apenas quando block_instance é true) -->
+        <div t-if="!state.loading and shouldShowBlockModal"
+             class="contract-block-modal">
+            <div class="contract-block-overlay"></div>
+            <div class="contract-block-content">
+                <div class="contract-block-icon">
+                    <i class="fa fa-ban fa-5x"></i>
+                </div>
+                <h2><t t-esc="accessBlockedLabel"/></h2>
+                <p class="contract-block-message" t-esc="blockModalMessage"></p>
+                <p class="contract-block-info" t-esc="contactManagerInfo"></p>
+                <div class="d-flex gap-2 justify-content-center">
+                    <button class="btn btn-success btn-lg" t-on-click="onValidateNow">
+                        <i class="fa fa-refresh"></i> <t t-esc="checkContractNowLabel"/>
+                    </button>
+                    <a t-attf-href="mailto:{{accountManagerEmail}}?subject=Contrato Bloqueado - Necessita Renovação"
+                       class="btn btn-primary btn-lg">
+                        <i class="fa fa-envelope"></i> <t t-esc="contactAccountManagerLabel"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </t>
+
+</templates>

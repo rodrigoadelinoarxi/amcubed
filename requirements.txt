@@ -5,3 +5,4 @@ pdftotext
 openai
 pygount
 google-auth
+html5lib

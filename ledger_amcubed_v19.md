@@ -15,13 +15,73 @@ Registo das correções feitas na migração para v19 do `AMCUBED`, dividido em 
 - **Data:** 2026-09-07
 - **Branch com o código já corrigido:** `odoo-sh-migration-v19-20260907153055` (pushed)
 
-## Estado atual — MIGRAÇÃO NÃO CONCLUÍDA
+## Estado atual (atualizado 2026-09-08 13:20) — MIGRAÇÃO EM PROGRESSO, AINDA NÃO CONCLUÍDA
 
-A última run (logs `AMCUBED_odoo_sh_production_19_20260907_145836.log` /
-`AMCUBED_odoo_sh_upgrade_19_20260907_145836.log`, terminada 2026-09-07 15:35) **parou**
-durante a reconciliação de módulos custom, com um erro real de vista (B3, por resolver) e
-**35 módulos custom por instalar**. Não há atualmente nenhum container Docker do AMCUBED
-em execução (`docker ps -a --filter name=amcubed` vazio) — o trabalho ficou por retomar.
+Correção 2026-09-08: a nota anterior ("nenhum container em execução") estava ERRADA — foi
+um falso negativo do meu próprio comando de diagnóstico (`docker ps --filter name=amcubed`
+em minúsculas não apanha os nomes reais, que são `AMCUBED_19_odoo`/`AMCUBED_19_db`/
+`AMCUBED_odoo_sh_prod_db`, maiúsculas). A instância real **está no ar e estável há mais de
+22h** (`AMCUBED_19_odoo`, sem restarts, HTTP 303 normal em `:8022/odoo/login`, cron jobs a
+correr sem erros). O upgrade oficial pago (`upgrade.odoo.com production`) tinha terminado
+com sucesso — o que faltava era só a reconciliação de Enterprise + módulos próprios.
+
+**Diagnosticado e corrigido ao vivo hoje (2026-09-08), com efeito imediato no container em
+produção — este repo está montado como volume live, por isso as correções de código
+aplicam-se sem rebuild:**
+
+- **B5. `account_debit_note` não era instalado automaticamente** — módulo standard Odoo
+  (installable=True, só depende de `account`), presente em
+  `/usr/lib/python3/dist-packages/odoo/addons/account_debit_note`, mas ficava preso em
+  `uninstalled` e o resolvedor de dependências saltava `l10n_pt_certificate` com "some
+  depends are not loaded (account_debit_note)". **Corrigido:** instalado diretamente
+  (`odoo -i account_debit_note`) — depois disso `l10n_pt_certificate` deixou de ser
+  bloqueado.
+- **B6. `contract_instance_checker` em falta no repo do AMCUBED** — mesmo padrão já
+  documentado no ledger do admincore_sh (decisão 2026-07-08: é dependência REAL de
+  `l10n_pt_ao`, vive em `arxi-quality/`, não deve ser stubado). Só faltava na cópia deste
+  cliente. **Corrigido:** copiado de
+  `projects/admincore_sh/repo/arxi-quality/contract_instance_checker` para
+  `arxi-quality/contract_instance_checker` deste repo (commit nesta entrada).
+- **Resultado das duas correções acima:** toda a cadeia fiscal PT-AO ficou desbloqueada e
+  **está `installed` agora**: `l10n_pt_ao`, `l10n_pt_ao_access`, `l10n_pt_ao_saft`,
+  `l10n_pt_ao_sale`, `l10n_pt_sale`, `l10n_pt_stock`, `l10n_pt_delivery`,
+  `l10n_pt_reports_arxi`, `ARXI_CERTIFICATION_PATCH`, `contract_instance_checker`,
+  `account_debit_note` (confirmado por SQL direto à BD em produção).
+- **B7. Dependência Python `html5lib` em falta** (bloqueava `l10n_pt_efatura_import`):
+  `odoo.exceptions.UserError: Unable to install module "l10n_pt_efatura_import" because an
+  external dependency is not met: html5lib`. **Corrigido** — instalado no container e
+  adicionado a `requirements.txt` (commit nesta entrada).
+- **B2 (retomado). `openai`** — a falha de instalação de ontem não se repetiu ao tentar de
+  novo hoje (parece ter sido um problema de rede transitório); instalado com sucesso no
+  container. `requirements.txt` já o tinha listado desde antes, não precisou de alteração.
+
+**Ainda por resolver:**
+
+- Os restantes **34 módulos** próprios do AMCUBED (`l10n_pt_saphety*`, `l10n_pt_pos`,
+  `l10n_pt_hr_payroll`, `payment_eupago*`, `arxi_openai_client`,
+  `arxi_quality_payroll_api_client`, etc. — ver lista completa em B4) continuam
+  `uninstalled`. Tentativa de instalação em lote hoje falhou com um erro NOVO e mais
+  profundo, ainda não resolvido:
+  ```
+  odoo.sql_db: bad query: ...SELECT ... "ir_ui_view"."protected" ...
+  ERROR: column ir_ui_view.protected does not exist
+  odoo.registry: Failed to load registry
+  ```
+  Hipótese mais provável (não confirmada): o campo `protected` é nativo do `ir.ui.view` no
+  Odoo 19 core, mas o `-u base` nunca completou 100% nesta base — uma tentativa de correr
+  `odoo -u base` isoladamente falhou com um `ParseError` a carregar
+  `base/data/res_lang_data.xml` (imagem de bandeira em falta para `sr@latin`, `rs.png` —
+  mesma família de "erros de imagem em falta" já vista noutras migrações, mas aqui parece
+  estar a impedir a sincronização do schema, não só um erro cosmético). Precisa de
+  investigação dedicada: confirmar se `ir_ui_view.protected` é mesmo um campo nativo do v19
+  core, e se sim, corrigir/contornar o `ParseError` do `res_lang_data.xml` para o `-u base`
+  completar e a coluna ser criada.
+- Depois disso, reavaliar item a item os 34 módulos (alguns podem ter bugs próprios, não só
+  esta dependência de schema).
+- B3 (XPath `check_out_inherit`) e B4 original ficam supersedidos por esta atualização —
+  `website_payment_method_fees` já está `installed` na BD atual, o crash de ontem não se
+  repetiu nesta instância viva (possivelmente porque a run de ontem que crashou era um
+  container de teste efémero da reconciliação, distinto deste `AMCUBED_19_odoo`).
 
 ## Resumo
 

@@ -1,0 +1,856 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* contract_instance_checker
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-26 12:26+0000\n"
+"PO-Revision-Date: 2026-03-28 12:26+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid ") exceeds the limit ("
+msgstr ") excede o limite ("
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.contract_status_alert_banner
+msgid ""
+").\n"
+"                    Please contact support to renew."
+msgstr ""
+").\n"
+"                    Por favor contacte o suporte para renovar."
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.contract_status_alert_banner
+msgid ""
+".\n"
+"                    Please contact support immediately."
+msgstr ""
+".\n"
+"                    Por favor contacte o suporte imediatamente."
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.contract_status_alert_banner
+msgid ""
+".\n"
+"                    Please contact support."
+msgstr ""
+".\n"
+"                    Por favor contacte o suporte."
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.contract_status_alert_banner
+msgid ""
+"/\n"
+"                    Limit:"
+msgstr ""
+"/\n"
+"                    Limite:"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "123456789"
+msgstr ""
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.contract_status_alert_banner
+msgid ""
+"<i class=\"fa fa-ban\"/>\n"
+"                    <strong>Contract Expired!</strong>\n"
+"                    Your contract expired on"
+msgstr ""
+"<i class=\"fa fa-ban\"/><strong>Contrato Expirado!</strong>\n"
+"                    Seu contrato expirou em"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.contract_status_alert_banner
+msgid ""
+"<i class=\"fa fa-exclamation-circle\"/>\n"
+"                    <strong>Contract Validation Error!</strong>\n"
+"                    Unable to validate contract with central server.\n"
+"                    Please check your configuration."
+msgstr ""
+"<i class=\"fa fa-exclamation-circle\"/><strong>Erro ao Validar Contrato!</strong>\n"
+"                    Impossível validar contrato com a central do servidor.\n"
+"                    Por favor valide a sua configuração."
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.contract_status_alert_banner
+msgid ""
+"<i class=\"fa fa-exclamation-triangle\"/>\n"
+"                    <strong>Warning:</strong> Your contract will expire in"
+msgstr ""
+"<i class=\"fa fa-exclamation-triangle\"/><strong>Aviso:</strong> Seu "
+"contrato vai expirar em"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.contract_status_alert_banner
+msgid ""
+"<i class=\"fa fa-users\"/>\n"
+"                    <strong>Warning:</strong> User limit exceeded!\n"
+"                    Current users:"
+msgstr ""
+"<i class=\"fa fa-users\"/><strong>Warning:</strong> User limit exceeded!\n"
+"                    Current users:"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid ""
+"<strong>Automatic Validation:</strong> The system performs a daily automatic validation\n"
+"                                with the central ARXI server. If the contract expires and is configured to block\n"
+"                                the instance, users will not be able to access the system."
+msgstr ""
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "<strong>Contract Active</strong>"
+msgstr "<strong>Contrato Ativo</strong>"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "<strong>Contract Blocked or Expired!</strong>"
+msgstr "<strong>Contrato Bloqueado ou Expirado!</strong>"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "<strong>Error Validating Contract</strong>"
+msgstr "<strong>Erro ao Validar Contrato</strong>"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "<strong>No Contract Status Available</strong>"
+msgstr "<strong>Sem Status de Contrato Disponível</strong>"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid ""
+"<strong>Security:</strong> All validations are performed securely using your NIF and\n"
+"                                contract code. Never share your data."
+msgstr ""
+"<strong>Security:</strong> Todas validações são feitas de forma segura com o seu NIF e\n"
+"                                código de contrato. Nunca compartilhe seus dados."
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid ""
+"<strong>Support:</strong> For any issues or questions, please contact ARXI "
+"support."
+msgstr ""
+"<strong>Suporte:</strong> Para qualquer questão ou problema, por favor "
+"contacte o suporte ARXI."
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "<strong>Warning: Contract Expiring Soon!</strong>"
+msgstr "<strong>Warning: Contrato Expira em Breve!</strong>"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "<strong>Warning: User Limit Exceeded!</strong>"
+msgstr "<strong>Warning: Limite de Utilizadores Excedido!</strong>"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_res_company__contract_token
+#: model:ir.model.fields,help:contract_instance_checker.field_res_config_settings__instance_token
+msgid "Access token provided by the central server"
+msgstr "Token de acesso fornecido pelo servidor central"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__account_manager_email
+msgid "Account Manager Email"
+msgstr "Email do Gestor de Conta"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__account_manager_name
+msgid "Account Manager Name"
+msgstr "Nome do Gestor de Conta"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields.selection,name:contract_instance_checker.selection__contract_instance_status__contract_status__active
+#: model:ir.model.fields.selection,name:contract_instance_checker.selection__res_config_settings__contract_status__active
+msgid "Active"
+msgstr "Ativo"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__block_instance
+msgid "Block Instance"
+msgstr "Bloquear Instância"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_company__contract_central_server_url
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_config_settings__central_server_url
+msgid "Central Server URL"
+msgstr "URL do Servidor Central"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_res_company__contract_central_server_url
+#: model:ir.model.fields,help:contract_instance_checker.field_res_config_settings__central_server_url
+msgid ""
+"Central server URL for contract validation (e.g. https://contract.arxi.pt)"
+msgstr ""
+"URL do servidor central para validação de contrato (ex: "
+"https://contract.arxi.pt)"
+
+#. module: contract_instance_checker
+#: model:ir.model,name:contract_instance_checker.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__company_id
+msgid "Company"
+msgstr ""
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Company NIF"
+msgstr "NIF da Empresa"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Company NIF for contract validation (provided by ARXI)"
+msgstr "NIF da empresa para validação de contrato (fornecido pela ARXI)"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_res_company__contract_nif
+#: model:ir.model.fields,help:contract_instance_checker.field_res_config_settings__instance_nif
+msgid "Company NIF for contract validation with the central server"
+msgstr "NIF da empresa para validação do contrato no servidor central"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_contract_instance_status__company_id
+msgid "Company for which this contract status applies"
+msgstr ""
+
+#. module: contract_instance_checker
+#: model:ir.model,name:contract_instance_checker.model_res_config_settings
+msgid "Config Settings"
+msgstr "Definições de Configuração"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_config_settings__instance_token
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Contract Code"
+msgstr "Token da Instância"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__end_date
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_config_settings__contract_end_date
+msgid "Contract End Date"
+msgstr "Data de Fim do Contrato"
+
+#. module: contract_instance_checker
+#: model:ir.model,name:contract_instance_checker.model_contract_instance_status
+msgid "Contract Instance Status"
+msgstr "Estado do Contrato da Instância"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_company__contract_nif
+msgid "Contract NIF"
+msgstr ""
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__contract_name
+msgid "Contract Name"
+msgstr "Nome do Contrato"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Contract Number provided by ARXI"
+msgstr "Número de Contrato fornecido pela ARXI"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_config_settings__is_contract_ok
+msgid "Contract OK"
+msgstr "Contrato OK"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__contract_status
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_config_settings__contract_status
+msgid "Contract Status"
+msgstr "Estado do Contrato"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_company__contract_token
+msgid "Contract Token"
+msgstr ""
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__contract_type
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_company__contract_type
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_config_settings__contract_type
+msgid "Contract Type"
+msgstr "Tipo de Contrato"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_contract_instance_status__end_date
+msgid "Contract end date"
+msgstr "Data de fim do contrato"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_res_config_settings__contract_end_date
+msgid "Contract expiration date"
+msgstr "Data de fim do contrato"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_contract_instance_status__contract_status
+msgid "Contract status returned by the central server"
+msgstr "Estado do contrato devolvido pelo servidor central"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_res_company__contract_type
+msgid ""
+"Contract type code from central server (e.g. flybyodoo, certification, "
+"payroll). Updated automatically during contract validation."
+msgstr ""
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Current Contract Status"
+msgstr "Estado Atual do Contrato"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__current_user_count
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_config_settings__current_user_count
+msgid "Current User Count"
+msgstr "Utilizadores Atuais"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_res_config_settings__contract_status
+msgid "Current contract status"
+msgstr "Estado atual do contrato"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Current users ("
+msgstr ""
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_contract_instance_status__last_check_date
+msgid "Date and time of last check with the central server"
+msgstr "Data e hora da última verificação com o servidor central"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_contract_instance_status__grace_period_end
+msgid ""
+"Date and time when the grace period ends (48h after first problem detection)"
+msgstr ""
+"Data e hora quando o período de graça termina (48h após a detecção do "
+"primeiro problema)"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Days Remaining:"
+msgstr "Dias Restantes:"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__days_until_expiration
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_config_settings__days_until_expiration
+msgid "Days Until Expiration"
+msgstr "Dias até Expiração"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_contract_instance_status__days_until_expiration
+#: model:ir.model.fields,help:contract_instance_checker.field_res_config_settings__days_until_expiration
+msgid "Days remaining until expiration"
+msgstr "Dias restantes até à expiração"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "End Date:"
+msgstr "Data de Fim:"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Enter your contract code"
+msgstr "Insira o seu código de contrato"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields.selection,name:contract_instance_checker.selection__contract_instance_status__contract_status__error
+#: model:ir.model.fields.selection,name:contract_instance_checker.selection__res_config_settings__contract_status__error
+msgid "Error"
+msgstr "Erro"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__error_message
+msgid "Error Message"
+msgstr "Mensagem de Erro"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_contract_instance_status__error_message
+msgid "Error message from last validation (if any)"
+msgstr "Mensagem de erro da última validação (se houver)"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields.selection,name:contract_instance_checker.selection__contract_instance_status__contract_status__expired
+#: model:ir.model.fields.selection,name:contract_instance_checker.selection__res_config_settings__contract_status__expired
+msgid "Expired"
+msgstr "Expirado"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__is_expiring_soon
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_config_settings__is_expiring_soon
+msgid "Expiring Soon"
+msgstr "Expira em Breve"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_res_config_settings__show_user_info
+msgid ""
+"False for certification/payroll contracts where user count is irrelevant"
+msgstr ""
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Force immediate contract validation"
+msgstr "Forçar validação imediata do contrato"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__grace_period_end
+msgid "Grace Period End"
+msgstr "Fim do Período de Graça"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__id
+msgid "ID"
+msgstr ""
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__is_in_grace_period
+msgid "In Grace Period"
+msgstr "Em Período de Graça"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_contract_instance_status__is_in_grace_period
+msgid "Indicates if still within the 48h grace period"
+msgstr "Indica se ainda está dentro do período de graça de 48h"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_contract_instance_status__is_expiring_soon
+msgid "Indicates if the contract is close to expiration (less than 30 days)"
+msgstr "Indica se o contrato está perto de expirar (menos de 30 dias)"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_contract_instance_status__is_instance_blocked
+msgid "Indicates if the instance is blocked"
+msgstr "Indica se a instância está bloqueada"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_contract_instance_status__block_instance
+msgid "Indicates if the instance should be blocked when contract expires"
+msgstr "Indica se a instância deve ser bloqueada quando o contrato expirar"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_contract_instance_status__is_user_limit_exceeded
+msgid "Indicates if the number of users exceeds the limit"
+msgstr "Indica se o número de utilizadores excede o limite"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Information"
+msgstr "Informação"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__is_instance_blocked
+msgid "Instance Blocked"
+msgstr "Instância Bloqueada"
+
+#. module: contract_instance_checker
+#: model:ir.actions.server,name:contract_instance_checker.cron_validate_instance_contract_ir_actions_server
+msgid "Instance Checker: Validate Contract Daily"
+msgstr "Validador de Instância: Validar Contrato Diariamente"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Instance Configuration"
+msgstr "Configuração da Instância"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_config_settings__instance_nif
+msgid "Instance NIF"
+msgstr "NIF da Instância"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__last_check_date
+msgid "Last Check Date"
+msgstr "Última Verificação"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_config_settings__last_check_date
+msgid "Last Validation"
+msgstr "Última Validação"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Last check:"
+msgstr "Última verificação:"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_res_config_settings__last_check_date
+msgid "Last contract check date"
+msgstr "Data da última validação do contrato"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_contract_instance_status__user_limit
+#: model:ir.model.fields,help:contract_instance_checker.field_res_config_settings__user_limit
+msgid "Maximum number of allowed users"
+msgstr "Número máximo de utilizadores permitidos"
+
+#. module: contract_instance_checker
+#: model:ir.model,name:contract_instance_checker.model_ir_ui_menu
+msgid "Menu"
+msgstr "Menu"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "NIF"
+msgstr ""
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "No contract validation has been performed yet."
+msgstr "Ainda não foi realizada nenhuma validação de contrato."
+
+#. module: contract_instance_checker
+#: model:ir.model.fields.selection,name:contract_instance_checker.selection__contract_instance_status__contract_status__not_found
+#: model:ir.model.fields.selection,name:contract_instance_checker.selection__res_config_settings__contract_status__not_found
+msgid "Not Found"
+msgstr "Não Encontrado"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_res_config_settings__current_user_count
+msgid "Number of active users"
+msgstr "Número de utilizadores ativos"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_contract_instance_status__current_user_count
+msgid "Number of active users at last check"
+msgstr ""
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Please check your configuration and try again."
+msgstr "Por favor verifique a sua configuração e tente novamente."
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Please configure your instance settings and click \"Validate Now\"."
+msgstr ""
+"Por favor configure as definições da sua instância e clique em \"Validar "
+"Agora\"."
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Please contact ARXI sales to renew your contract."
+msgstr ""
+"Por favor contacte o departamento comercial ARXI para renovar o seu "
+"contrato."
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Please contact ARXI support immediately."
+msgstr "Por favor contacte o suporte ARXI imediatamente."
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Please contact ARXI support to increase your user limit."
+msgstr ""
+"Por favor contacte o suporte ARXI para aumentar o seu limite de "
+"utilizadores."
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_config_settings__show_user_info
+msgid "Show User Info"
+msgstr ""
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "There was an error validating your contract with the central server."
+msgstr "Ocorreu um erro ao validar o seu contrato com o servidor central."
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_res_config_settings__is_expiring_soon
+msgid "True if contract is active but expires in less than 30 days"
+msgstr "Verdadeiro se o contrato está ativo mas expira em menos de 30 dias"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_res_config_settings__is_contract_ok
+msgid ""
+"True if contract is active, not expiring soon and does not exceed user limit"
+msgstr ""
+"Verdadeiro se o contrato está ativo, não expira em breve e não excede o "
+"limite de utilizadores"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,help:contract_instance_checker.field_res_config_settings__is_user_limit_exceeded
+msgid "True if number of users exceeds the limit"
+msgstr "Verdadeiro se o número de utilizadores excede o limite"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Unique contract code (provided by ARXI)"
+msgstr "Código único de contrato (fornecido pela ARXI)"
+
+#. module: contract_instance_checker
+#: model:ir.model,name:contract_instance_checker.model_res_users
+msgid "User"
+msgstr "Utilizador"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__user_limit
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_config_settings__user_limit
+msgid "User Limit"
+msgstr "Limite de Utilizadores"
+
+#. module: contract_instance_checker
+#: model:ir.model.fields,field_description:contract_instance_checker.field_contract_instance_status__is_user_limit_exceeded
+#: model:ir.model.fields,field_description:contract_instance_checker.field_res_config_settings__is_user_limit_exceeded
+msgid "User Limit Exceeded"
+msgstr "Limite de Utilizadores Excedido"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Users:"
+msgstr "Utilizadores:"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Validate Now"
+msgstr "Validar Agora"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Your contract is active and valid."
+msgstr "O seu contrato está ativo e válido."
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Your contract is no longer valid. Access may be blocked."
+msgstr "O seu contrato já não é válido. O acesso pode estar bloqueado."
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "Your contract will expire in"
+msgstr "O seu contrato expira em"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.contract_status_alert_banner
+msgid ""
+"days\n"
+"                    (on"
+msgstr ""
+"dias\n"
+"                    (em"
+
+#. module: contract_instance_checker
+#: model_terms:ir.ui.view,arch_db:contract_instance_checker.res_config_settings_view_form_inherit_instance_checker
+msgid "days."
+msgstr "dias."
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:153
+msgid "[TEST MODE] "
+msgstr "[MODO DE TESTE] "
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:154
+msgid ""
+" | WARNING: Generated hashes are NOT valid for SAF-T or tax purposes!"
+msgstr ""
+" | AVISO: Os hashes gerados NÃO são válidos para fins de SAF-T ou fiscais!"
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:160
+msgid "CONTRACT NOT FOUND - Grace period: %s hours remaining. Resolve urgently!"
+msgstr ""
+"CONTRATO NÃO ENCONTRADO - Período de graça: %s horas restantes. Resolva "
+"urgentemente!"
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:162
+msgid ""
+"CONTRACT NOT FOUND - Grace period expired! Contact support immediately!"
+msgstr ""
+"CONTRATO NÃO ENCONTRADO - Período de graça expirado! Contacte o suporte "
+"imediatamente!"
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:165
+msgid "ARXI CONTRACT BLOCKED/EXPIRED - Contact ARXI support immediately!"
+msgstr ""
+"CONTRATO ARXI BLOQUEADO/EXPIRADO - Contacte o suporte ARXI imediatamente!"
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:167
+msgid "CONTRACT VALIDATION ERROR - Check your settings"
+msgstr "ERRO DE VALIDAÇÃO DE CONTRATO - Verifique as suas definições"
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:169
+msgid "ARXI CONTRACT EXPIRES IN %s DAYS - Renew your contract"
+msgstr "CONTRATO ARXI EXPIRA EM %s DIAS - Renove o seu contrato"
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:171
+msgid "USER LIMIT EXCEEDED (%s/%s) - Contact your account manager"
+msgstr ""
+"LIMITE DE UTILIZADORES EXCEDIDO (%s/%s) - Contacte o seu gestor de conta"
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:183
+msgid "unknown date"
+msgstr "data desconhecida"
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:184
+msgid ""
+"Your ARXI contract expired on %s. System access is blocked until contract "
+"renewal."
+msgstr ""
+"O seu contrato ARXI expirou em %s. O acesso ao sistema está bloqueado até "
+"à renovação do contrato."
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:189
+msgid ""
+"No valid contract was found for this instance. The 48-hour grace period "
+"expired on %s. System access is blocked until this situation is resolved."
+msgstr ""
+"Não foi encontrado um contrato válido para esta instância. O período de "
+"grace de 48 horas expirou em %s. O acesso ao sistema está bloqueado até "
+"esta situação ser resolvida."
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:191
+msgid "No valid contract was found for this instance. System access is blocked."
+msgstr ""
+"Não foi encontrado um contrato válido para esta instância. O acesso ao "
+"sistema está bloqueado."
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:194
+msgid ""
+"Your ARXI contract is blocked. System access is temporarily unavailable."
+msgstr ""
+"O seu contrato ARXI está bloqueado. O acesso ao sistema está temporariamente "
+"indisponível."
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:196
+msgid "System access is blocked due to contract status."
+msgstr "O acesso ao sistema está bloqueado devido ao estado do contrato."
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:208
+msgid "Validating contract with central server..."
+msgstr "A validar contrato com o servidor central..."
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:222
+msgid "Contract validation completed. Check updated status."
+msgstr "Validação de contrato concluída. Verifique o estado atualizado."
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:228
+msgid "Error validating contract. Try again."
+msgstr "Erro ao validar o contrato. Tente novamente."
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:199
+msgid "Check now"
+msgstr "Verificar agora"
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:203
+msgid "Contact Account Manager"
+msgstr "Contactar Gestor de Conta"
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:207
+msgid "Access Blocked"
+msgstr "Acesso Bloqueado"
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:211
+msgid "Please contact the Account Manager to fix this situation."
+msgstr ""
+"Por favor contacte o Gestor de Conta para resolver esta situação."
+
+#. module: contract_instance_checker
+#. odoo-javascript
+#: code:addons/contract_instance_checker/static/src/js/contract_banner.js:215
+msgid "Check Contract Now"
+msgstr "Verificar Contrato Agora"
+
+#. module: contract_instance_checker
+#: code:addons/contract_instance_checker/models/ir_actions.py:85
+msgid ""
+"Contract restriction: this feature is unavailable while the contract is "
+"expired/not found (%s)."
+msgstr ""
+"Restrição de contrato: esta funcionalidade não está disponível enquanto o "
+"contrato está expirado/não encontrado (%s)."
