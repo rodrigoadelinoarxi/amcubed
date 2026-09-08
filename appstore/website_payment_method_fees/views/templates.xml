@@ -2,7 +2,7 @@
 <odoo>
 
     <template id="check_out_inherit" inherit_id="website_sale.total">
-        <xpath expr="//div[@id='cart_total']//table//tr[@id='order_total_taxes']" position="after">
+        <xpath expr="//table//tr[@name='o_order_total_taxes']" position="after">
             <tr id="order_total_fees" t-if="request.httprequest.path != '/shop/cart'">
                 <t t-set="fees_t"
                    t-value="sum(l.price_subtotal for l in website_sale_order.order_line.filtered(lambda l: l.is_extra_fees))"/>
@@ -41,7 +41,7 @@
                 </td>
             </tr>
         </xpath>
-        <xpath expr="//tr[@id='order_total']//td[2]" position="attributes">
+        <xpath expr="//tr[@name='o_order_total']//td[2]" position="attributes">
             <attribute name="t-att-data-totals">website_sale_order.amount_total</attribute>
         </xpath>
     </template>

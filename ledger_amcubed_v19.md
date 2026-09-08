@@ -202,3 +202,109 @@ depois de B3 e B2 estarem resolvidos.
    de B2/B3).
 4. Só depois disso — teste de qualidade + validação de negócio antes de considerar esta
    migração concluída.
+
+## Atualização 2026-09-08 — B3 resolvido, causa raiz real de B4 encontrada (não era código)
+
+O utilizador reportou dois sintomas na instância `disk_odoo_sh_production_AMCUBED_19_20260907_145836`
+(porta 8022): a lista "não instalados" do painel continuava a mostrar ~34 módulos, e o
+botão "Login as" não aparecia (só "Prepare test logins"). Diagnóstico ao vivo no
+container `AMCUBED_19_odoo` revelou que ambos os sintomas tinham a MESMA causa raiz, e que
+a lista B4 nunca tinha sido o que parecia.
+
+### C1. Causa raiz real: `docker cp` do filestore Odoo.sh deixa ficheiros donos de `ubuntu`, chown sem `-u root` falha em silêncio (RESOLVIDO no motor)
+
+`deploy_odoo_sh_real_instance()` em `migrate.sh` copia o filestore do backup Odoo.sh para
+o container via `docker cp` e faz `docker exec "$real_odoo" chown -R odoo:odoo ...` a
+seguir — mas o container corre com utilizador por omissão `odoo` (não root), que não tem
+permissão para fazer chown a ficheiros que não lhe pertencem. O `docker exec` falhava
+sempre em silêncio (sem verificação de exit code). Confirmado ao vivo: **136 dos 141
+diretórios** do filestore `AMCUBED` pertenciam a `ubuntu:ubuntu`, não a `odoo:odoo`.
+
+Isto causava uma cadeia de falhas:
+1. `odoo -u base` crashava com `PermissionError` ao tentar fazer GC de um anexo (imagem de
+   bandeira `rs.png` em `res_lang_data.xml`) num diretório do filestore sem permissão de
+   escrita para `odoo` — o `-u base` nunca completava.
+2. Sem `-u base` completar, a coluna `ir_ui_view.protected` (nativa do v19) nunca era
+   criada no schema.
+3. Qualquer escrita em `res.users` (ex.: reset de password no "Prepare test logins")
+   disparava `_notify_security_setting_update` → render do template
+   `mail.account_security_alert`, que consulta `ir_ui_view.protected` → `UndefinedColumn`
+   → `UserError: Failed to render template` → o "Login as" nunca aparecia no painel.
+4. Sem `-u base` completar, o `-u all` da reconciliação (`reconcile_odoo_sh_custom_modules`)
+   também nunca chegava a processar a maioria dos 365 módulos — parava muito cedo.
+
+**Correção aplicada (motor, `migrate.sh` linha ~4862):** `docker exec -u root "$real_odoo"
+chown -R odoo:odoo ...` (mesmo padrão já usado corretamente no caminho on-premise, linhas
+880 e 905 — só o caminho Odoo.sh production tinha ficado sem `-u root`). Corrigido também
+ao vivo no container `AMCUBED_19_odoo` (`docker exec -u root ... chown -R odoo:odoo
+/var/lib/odoo/filestore/AMCUBED`).
+
+### C2. B3 (XPath `check_out_inherit`) — RESOLVIDO
+
+Confirmada a causa: `website_sale.total` no v19 deixou de ter `<div id="cart_total">` e as
+`<tr>` deixaram de ter `id="order_total_taxes"`/`id="order_total"` — passaram a usar
+`name="o_order_total_taxes"`/`name="o_order_total"` sem `id` nenhum na div envolvente.
+XPath adaptado em `appstore/website_payment_method_fees/views/templates.xml` (ver
+[[feedback_xpath_adaptar_nao_desativar]], funcionalidade preservada, não desativada):
+
+```diff
+- <xpath expr="//div[@id='cart_total']//table//tr[@id='order_total_taxes']" position="after">
++ <xpath expr="//table//tr[@name='o_order_total_taxes']" position="after">
+...
+- <xpath expr="//tr[@id='order_total']//td[2]" position="attributes">
++ <xpath expr="//tr[@name='o_order_total']//td[2]" position="attributes">
+```
+
+Com C1 + C2 corrigidos, `odoo -u all` completa: "Modules loaded" em 146s,
+`website_payment_method_fees` fica `installed`, "Prepare test logins" e "Login as" passam
+a funcionar (testado: `login-as?user=admin` devolve 302 + cookie de sessão válido).
+
+### C3. A lista "34 módulos não instalados" era um falso positivo do motor, não uma regressão desta migração (RESOLVIDO no motor)
+
+Depois de C1+C2, `odoo -u all` correu completo e os 34 módulos continuaram
+`uninstalled` — porque `-u` só atualiza módulos já instalados, nunca instala módulos
+novos. Isto levantou a pergunta do utilizador: talvez estes módulos tenham sido
+**fundidos/consolidados** durante a reescrita da certificação e já não façam sentido
+isolados.
+
+Confirmado por comparação direta com o backup de origem
+(`db_backups/amcubed-master-26852963_2026-09-02_181858_test_nofs.zip`, dump.sql, tabela
+`ir_module_module`): **33 dos 34 módulos "em falta" já estavam `uninstalled` na BD de
+origem, antes de qualquer migração** (2 nem sequer existiam lá:
+`cert_vies_integration`, `l10n_pt_ao_industry_fsm_sale`). Só `website_payment_method_fees`
+estava genuinamente `installed` na origem — e esse é precisamente o único que a
+reconciliação corrigiu (C1/C2). Ou seja: **não há regressão nenhuma** nos restantes 33 —
+a sua funcionalidade já não estava ativa no AMCUBED antes da migração (consolidada nos
+módulos de certificação como `l10n_pt_ao`, `l10n_pt_certificate`, `l10n_pt_reports_arxi`,
+`arxi_amcubed`, que esses sim estão instalados).
+
+**Causa raiz do falso positivo:** `custom_modules` em `deploy_odoo_sh_real_instance()` é
+construído a partir de TODAS as pastas com `__manifest__.py` encontradas no repo
+(`find "$repo_dir" -iname "__manifest__.py"`), sem verificar se esse módulo alguma vez
+esteve instalado na origem. Um módulo mantido no repo por histórico/reutilização parcial
+de código, mas já obsoleto/fundido, era sempre reportado como "não instalado" mesmo sem
+nunca ter sido suposto instalar.
+
+**Correção aplicada (motor, `migrate.sh`):** `deploy_odoo_sh_real_instance()` agora extrai,
+do próprio `dump.sql` do zip descarregado (`ir_module_module`, coluna `state`), a lista de
+módulos que já estavam `installed` na origem, e só reporta em
+`RESULT_CUSTOM_MODULES_NOT_INSTALLED` os módulos que estavam nessa lista e deixaram de
+estar instalados — nunca módulos que já não estavam instalados na origem. Não há
+desinstalação nem alteração de comportamento de instalação, só correção do relatório (ver
+[[feedback_nao_desinstalar_modulos_da_origem]] — este ajuste está alinhado com essa regra,
+só deixa de alarmar sobre módulos que a origem já não tinha).
+
+### Resumo do estado atual
+
+| # | Assunto | Estado |
+|---|---|---|
+| C1 | `docker cp` filestore Odoo.sh + chown sem `-u root` (causa raiz real de B3/B4/login-as) | **RESOLVIDO no motor + ao vivo no container** |
+| C2 | B3 — XPath `check_out_inherit` obsoleto no v19 | **RESOLVIDO** |
+| C3 | Lista "módulos não instalados" incluía módulos nunca instalados na origem | **RESOLVIDO no motor** (relatório corrigido, não é uma migração de dados) |
+
+**Por fazer:** B2 (`openai` pip install) continua por resolver — não bloqueia mais nada
+crítico, só os dois módulos `arxi_openai_client`/`arxi_quality_payroll_api_client` (que,
+confirmado no dump de origem, também já estavam `uninstalled` antes da migração, portanto
+não é uma regressão urgente). Antes de considerar a migração concluída: correr o teste de
+qualidade (`quality_test.js`) e a validação de fluxos de negócio contra esta instância já
+corrigida.
