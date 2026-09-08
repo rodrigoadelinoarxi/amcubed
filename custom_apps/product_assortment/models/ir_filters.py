@@ -145,10 +145,16 @@ class IrFilters(models.Model):
             record.record_count = self.env[record.model_id].search_count(domain)
 
     @api.model
-    def _get_action_domain(self, action_id=None):
+    def _get_action_domain(
+        self, action_id=None, embedded_action_id=None, embedded_parent_res_id=None
+    ):
         # tricky way to act on get_filter method to prevent returning
         # assortment in search view filters
-        domain = super()._get_action_domain(action_id=action_id)
+        domain = super()._get_action_domain(
+            action_id=action_id,
+            embedded_action_id=embedded_action_id,
+            embedded_parent_res_id=embedded_parent_res_id,
+        )
         domain = expression.AND([[("is_assortment", "=", False)], domain])
 
         return domain

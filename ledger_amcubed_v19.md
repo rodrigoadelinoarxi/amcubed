@@ -427,3 +427,23 @@ de resposta de `/web/login` caiu de ~0.7-0.8s (registo a recarregar em cada pedi
 
 **Próximo passo:** decidir e executar D3c (copiar módulo do admincore, se aplicável), depois
 continuar para o teste de qualidade + validação de fluxos de negócio já mencionados acima.
+
+## Atualização 2026-09-08 (continuação 2) — "nem consigo entrar em módulos" depois da instância ficar rápida
+
+Com a lentidão resolvida, o utilizador reportou que agora nem conseguia abrir nenhum
+módulo. Causa: `product_assortment/models/ir_filters.py` sobrepõe
+`ir.filters._get_action_domain()` com a assinatura antiga do v17
+(`_get_action_domain(self, action_id=None)`). O core do v19 passou a chamar este método
+com mais dois argumentos (`embedded_action_id`, `embedded_parent_res_id`, para suportar
+embedded views/actions) — `TypeError: _get_action_domain() takes from 1 to 2 positional
+arguments but 4 were given`, disparado em `get_filters()`, que é chamado por
+`ir.ui.view.get_views()` para **qualquer** modelo com vista de pesquisa — ou seja,
+partia a abertura de todos os módulos, não só um.
+
+**Correção:** assinatura do override atualizada para aceitar e repassar os dois novos
+parâmetros ao `super()._get_action_domain(...)`, mantendo o comportamento original
+(excluir `is_assortment=True` dos filtros). Testado ao vivo: `get_views` confirmado OK
+em `res.partner`, `sale.order`, `account.move`, `product.template`, `project.task`,
+`hr.employee`, `stock.picking` depois de reiniciar o container (mudança em ficheiro
+`.py` exige reinício — só recarregar a registo por sinalização da BD não chega, o
+Python já está importado em memória).
