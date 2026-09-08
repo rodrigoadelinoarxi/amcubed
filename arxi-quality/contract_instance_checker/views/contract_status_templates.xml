@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Template para alerta no topo da interface (WebClient) -->
+    <template id="contract_status_alert_banner" name="Contract Status Alert Banner">
+        <t t-name="contract_instance_checker.alert_banner">
+            <div class="contract-alert-banner" t-if="contract_status">
+                <!-- Alerta de expiração próxima -->
+                <div class="alert alert-warning contract-alert-warning"
+                     t-if="contract_status.get('is_expiring_soon')">
+                    <i class="fa fa-exclamation-triangle"/>
+                    <strong>Warning:</strong> Your contract will expire in
+                    <t t-esc="contract_status.get('days_until_expiration')"/> days
+                    (on <t t-esc="contract_status.get('end_date')"/>).
+                    Please contact support to renew.
+                </div>
+
+                <!-- User limit exceeded alert -->
+                <div class="alert alert-warning contract-alert-warning"
+                     t-if="contract_status.get('is_user_limit_exceeded')">
+                    <i class="fa fa-users"/>
+                    <strong>Warning:</strong> User limit exceeded!
+                    Current users: <t t-esc="contract_status.get('current_user_count')"/> /
+                    Limit: <t t-esc="contract_status.get('user_limit')"/>.
+                    Please contact support.
+                </div>
+
+                <!-- Expired contract alert -->
+                <div class="alert alert-danger contract-alert-danger"
+                     t-if="contract_status.get('contract_status') == 'expired'">
+                    <i class="fa fa-ban"/>
+                    <strong>Contract Expired!</strong>
+                    Your contract expired on <t t-esc="contract_status.get('end_date')"/>.
+                    Please contact support immediately.
+                </div>
+
+                <!-- Validation error alert -->
+                <div class="alert alert-danger contract-alert-danger"
+                     t-if="contract_status.get('contract_status') == 'error'">
+                    <i class="fa fa-exclamation-circle"/>
+                    <strong>Contract Validation Error!</strong>
+                    Unable to validate contract with central server.
+                    Please check your configuration.
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

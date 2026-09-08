@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Extend Settings Form View -->
+    <record id="res_config_settings_view_form_inherit_instance_checker" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.instance.checker</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app string="Contract" name="contract_instance_checker" groups="base.group_system">
+                    <!-- Status atual do contrato -->
+                    <block title="Current Contract Status">
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- Sempre mostra pelo menos um alerta -->
+                                <div class="alert alert-success" role="alert" invisible="contract_status != 'active' or days_until_expiration &lt;= 30 or (show_user_info and current_user_count > user_limit)">
+                                    <strong>Contract Active</strong>
+                                    <p>Your contract is active and valid.</p>
+                                    <ul>
+                                        <li>End Date: <field name="contract_end_date" readonly="1"/></li>
+                                        <li>Days Remaining: <field name="days_until_expiration" readonly="1"/></li>
+                                        <li invisible="not show_user_info">Users: <field name="current_user_count" readonly="1"/> / <field name="user_limit" readonly="1"/></li>
+                                    </ul>
+                                </div>
+
+                                <div class="alert alert-warning" role="alert" invisible="contract_status != 'active' or days_until_expiration > 30">
+                                    <strong>Warning: Contract Expiring Soon!</strong>
+                                    <p>Your contract will expire in <field name="days_until_expiration" readonly="1"/> days.</p>
+                                    <p>Please contact ARXI sales to renew your contract.</p>
+                                </div>
+
+                                <div class="alert alert-warning" role="alert" invisible="contract_status != 'active' or current_user_count &lt;= user_limit or not show_user_info">
+                                    <strong>Warning: User Limit Exceeded!</strong>
+                                    <p>Current users (<field name="current_user_count" readonly="1"/>) exceeds the limit (<field name="user_limit" readonly="1"/>).</p>
+                                    <p>Please contact ARXI support to increase your user limit.</p>
+                                </div>
+
+                                <div class="alert alert-danger" role="alert" invisible="contract_status not in ['expired', 'not_found', 'blocked'] or hide_contract_danger">
+                                    <strong>Contract Blocked or Expired!</strong>
+                                    <p>Your contract is no longer valid. Access may be blocked.</p>
+                                    <p>Please contact ARXI support immediately.</p>
+                                </div>
+
+                                <div class="alert alert-danger" role="alert" invisible="contract_status != 'error'">
+                                    <strong>Error Validating Contract</strong>
+                                    <p>There was an error validating your contract with the central server.</p>
+                                    <p>Please check your configuration and try again.</p>
+                                </div>
+
+                                <div class="alert alert-info" role="alert" invisible="contract_status in ['active', 'expired', 'not_found', 'blocked', 'error']">
+                                    <strong>No Contract Status Available</strong>
+                                    <p>No contract validation has been performed yet.</p>
+                                    <p>Please configure your instance settings and click "Validate Now".</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt16">
+                            <div class="col-12">
+                                <button name="action_validate_now"
+                                        string="Validate Now"
+                                        type="object"
+                                        class="btn-primary"
+                                        help="Force immediate contract validation"/>
+                                <span class="ml8 text-muted">
+                                    Last check: <field name="last_check_date" readonly="1"/>
+                                </span>
+                            </div>
+                        </div>
+                    </block>
+
+                    <!-- Configuração da instância -->
+                    <block title="Instance Configuration">
+                        <setting id="instance_nif_setting" help="Company NIF">
+                            <field name="instance_nif" class="oe_inline" placeholder="123456789"/>
+                            <div class="content-group">
+                                <div class="mt8">
+                                    <label for="instance_nif" string="NIF"/>
+                                    <div class="text-muted">
+                                        Company NIF for contract validation (provided by ARXI)
+                                    </div>
+                                </div>
+                            </div>
+                        </setting>
+
+                        <setting id="instance_token_setting" help="Contract Number provided by ARXI">
+                            <field name="instance_token" password="True" class="oe_inline" placeholder="Enter your contract code"/>
+                            <div class="content-group">
+                                <div class="mt8">
+                                    <label for="instance_token" string="Contract Code"/>
+                                    <div class="text-muted">
+                                        Unique contract code (provided by ARXI)
+                                    </div>
+                                </div>
+                            </div>
+                        </setting>
+                    </block>
+
+                    <!-- Informação adicional -->
+                    <block title="Information">
+                        <div class="text-muted">
+                            <p>
+                                <strong>Automatic Validation:</strong> The system performs a daily automatic validation
+                                with the central ARXI server. If the contract expires and is configured to block
+                                the instance, users will not be able to access the system.
+                            </p>
+                            <p>
+                                <strong>Security:</strong> All validations are performed securely using your NIF and
+                                contract code. Never share your data.
+                            </p>
+                            <p>
+                                <strong>Support:</strong> For any issues or questions, please contact ARXI support.
+                            </p>
+                        </div>
+                    </block>
+
+                    <!-- Campos ocultos para computação -->
+                    <field name="contract_status" invisible="1"/>
+                    <field name="is_contract_ok" invisible="1"/>
+                    <field name="is_expiring_soon" invisible="1"/>
+                    <field name="is_user_limit_exceeded" invisible="1"/>
+                    <field name="contract_type" invisible="1"/>
+                    <field name="show_user_info" invisible="1"/>
+                    <field name="central_server_url" invisible="1"/>
+                    <field name="hide_contract_danger" invisible="1"/>
+                </app>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
